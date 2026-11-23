@@ -11,49 +11,49 @@
    "addr": "006A",
    "size": 206,
    "jp": "「あんた 風の玉って{nl} 知ってるかい？{page}「なんでも 風の精が{nl} 固まったものらしいぜ。{page}「風の玉さえあれば{nl} 魔物なんか恐くねえんだがなぁ・・{page}「でも 魔物より{nl} 山のタタリのほうが{nl} おっかないからなぁ。",
-   "en": ""
+   "en": "\"Ever heard of the Wind Orb?{page}\"Seems it's the spirit of the wind,{nl} hardened.{page}\"With a Wind Orb, I wouldn't fear{nl} monsters...{page}\"But a mountain curse is scarier than{nl} monsters."
   },
   {
    "id": "r199_013A",
    "addr": "013A",
    "size": 134,
    "jp": "「ウワサじゃ 風の玉は{nl} 北の山にあるってんだがね。{page} このへんじゃ 山に入ると{nl} タタリがあるって言われてて{nl} 誰も近よらねえのさ。",
-   "en": ""
+   "en": "\"Rumor says the Wind Orb is in the{nl} northern mountains.{page} Round here they say if you go into the{nl} mountains you'll be cursed, so nobody{nl} goes near."
   },
   {
    "id": "r199_01C8",
    "addr": "01C8",
    "size": 54,
    "jp": "「あんたたち そこの船つき場で{nl} 娘さんに会ったかい？",
-   "en": ""
+   "en": "\"Did you meet the girl at the landing{nl} there?"
   },
   {
    "id": "r199_0204",
    "addr": "0204",
    "size": 288,
    "jp": "「あの娘の恋人は{nl} グルド水軍に志願したんだ。{page}「風のウワサじゃ 水軍の隊長に{nl} 出世して ハンスタッドに{nl} 送られたって聞いたが・・・{page}「あんたたちも知ってるだろ？{nl} ハンスタッドのグルド水軍が{nl} どうなったか。{page}「あの娘は それでもああして{nl} 待ち続けているんだ。{nl} かわいそうにな。",
-   "en": ""
+   "en": "\"Her sweetheart joined the Guld navy.{page}\"Word on the wind is he rose to captain{nl} and was sent to Hanstad...{page}\"You know what happened to the Guld{nl} navy at Hanstad, don't you?{page}\"Even so, she keeps waiting there like{nl} that. Poor girl."
   },
   {
    "id": "r199_0328",
    "addr": "0328",
    "size": 86,
    "jp": "「あの娘は まい日{nl} ああして恋人の帰りを{nl} 待っているんだ。{page} かわいそうにな・・・",
-   "en": ""
+   "en": "\"She waits like that every day for her{nl} sweetheart to come back.{page} Poor girl..."
   },
   {
    "id": "r199_0386",
    "addr": "0386",
    "size": 100,
    "jp": "マリア{nl}「あの人は 遠くの海で{nl} 働いています。{page}「いつか 偉くなって{nl} むかえにくると言って・・・",
-   "en": ""
+   "en": "Maria{nl}\"He works on a faraway sea.{page}\"He said one day he'd make good and{nl} come for me..."
   },
   {
    "id": "r199_03EC",
    "addr": "03EC",
    "size": 150,
    "jp": "マリア{nl}「海に生き 海で死ぬのは{nl} ハントヴォ－の男の ほこり・・・{page}「でも私は・・・{page} 私はただ こうして{nl} あの人の帰りを{nl} 待っているだけ・・・",
-   "en": ""
+   "en": "Maria{nl}\"To live by the sea and die at sea is the{nl} pride of Hantvo's men...{page}\"But I...{page} I can only wait here like this for him to{nl} come back..."
   }
  ]
 }

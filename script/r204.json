@@ -11,77 +11,77 @@
    "addr": "0038",
    "size": 346,
    "jp": "「なんじゃ おぬしらは！？{nl} こんな所まで 何しにきおった！{page}「わしは 偉大な魔法を{nl} 研究中なんじゃ。{nl} 邪魔する者は許さんぞ！！{page}{FB00}「うぬ？ おぬしら よそ者じゃな？{nl} ならば 山のタタリなど{nl} 恐くなかろう？{page}「どうじゃ 北の山の洞窟から{nl} 風の玉を 取ってきてくれんか？{page} 町のやつらめ タタリをおそれ{nl} 誰も 山に行こうとせんのじゃ！{page2}",
-   "en": ""
+   "en": "\"What are you lot?! What are you doing{nl} all the way out here!{page}\"I'm researching great magic. I won't{nl} stand for anyone getting in my way!!{page}{FB00}\"Hm? You're outsiders, aren't you? Then{nl} you won't fear a mountain curse, eh?{page}\"How about it? Fetch me the Wind Orb{nl} from the cave in the northern{nl} mountains?{page} The townsfolk fear the curse, and not{nl} one will go to the mountains!{page2}"
   },
   {
    "id": "r204_01A6",
    "addr": "01A6",
    "size": 108,
    "jp": "「う～ぬぬぬ・・・{nl} 風の玉さえ あればのう・・・{page} いっぱつ！！{wait}{wait}{wait}{wait}{nl} ・・で 研究は完成なんじゃが。",
-   "en": ""
+   "en": "\"Grrrr... If only I had the Wind Orb...{page} Just one!! {wait}{wait}{wait}{wait}..and my research{nl} would be done."
   },
   {
    "id": "r204_0220",
    "addr": "0220",
    "size": 216,
    "jp": "「風の玉は 北の山の洞窟にある！{nl}{D328} 必ず ある！{nl}{D328} ・・・きっと あるはずじゃ。{page}「なに？{wait}{wait}{nl} わしが自分で 取りにいけば{nl} いいじゃと？{page}「ばかも～ん！{wait}{wait}{nl} わしが タタリを受けたら{nl} どうするんじゃい！！",
-   "en": ""
+   "en": "\"The Wind Orb is in the{nl} northern mountain cave!{page}{D328}\"It's there for sure!{nl} {D328} ...It ought to be, anyway.{page}\"What? {wait}{wait}I should go get it myself?{page}\"Fooool! {wait}{wait}What if I got cursed?!"
   },
   {
    "id": "r204_02FA",
    "addr": "02FA",
    "size": 190,
    "jp": "「うおおお－っ！{wait}{wait}{nl} おぬしの持っている それ！{nl}{D318} あれじゃないか ほれ え－と{nl} {wait}{wait}・{wait}{wait}・{wait}{wait}・{wait}{wait}{wait}{wait}風の玉！！{page} それを わしに よこすんじゃ！{nl} もちろん タダとは言わん！{page}",
-   "en": ""
+   "en": "\"Whoooa! {wait}{wait}That thing you've got!{nl} {D318} Isn't that, oh, what's it{nl} {wait}{wait}.{wait}{wait}.{wait}{wait}.{wait}{wait}{wait}{wait}the Wind Orb!!{page} Give it to me! Not for nothing, of{nl} course!{page}"
   },
   {
    "id": "r204_03B8",
    "addr": "03B8",
    "size": 70,
    "jp": "「わしの 研究が生んだ{nl} すばらしい品を くれてやる！{nl} どうじゃっ？",
-   "en": ""
+   "en": "\"I'll give you a splendid thing my{nl} research produced! How about it?"
   },
   {
    "id": "r204_0404",
    "addr": "0404",
    "size": 456,
    "jp": "クルトたちは 風の玉を{nl}わたした。{C11E}{C1FF}{C101}{page2}{F9FF}{B8C8}{B02C}「うおおお－っ！{wait}{wait}{nl} これじゃ これじゃ{nl} これで 研究は完成じゃあ－っ！{page2}{F9FF}{D328}「なに 約束の品だと？{nl}{D318} ちっ{wait}{wait} 覚えとったか。{nl} せこいやつじゃい。{page}「ほれ この風のペンダントを{nl} くれてやるわい。{page} おぬしらには もったいない{nl} 宝じゃろうて。{page2}{F9FF}クルトたちは 風のペンダントを{nl}手にいれた。{C11E}{C1FF}{C101}{page2}{F9FF}{B7C7}「さぁ 研究のしあげに{nl} 取りかかるぞ！{page}「おぬしらは 邪魔じゃ{nl} とっとと 出て行かんかい！",
-   "en": ""
+   "en": "Kurt and the others handed over{nl}the Wind Orb.{C11E}{C1FF}{C101}{page2}{F9FF}{B8C8}{B02C}\"Whoooa! {wait}{wait}This is it, this is it!{nl} Now my research is complete!{page2}{F9FF}{D328}\"What, the promised item?{nl} {D318} Tch.{wait}{wait} You remembered.{nl} Stingy lot.{page}\"Here, I'll give you this Wind Pendant.{page} It's a treasure too good for the likes of{nl} you.{page2}{F9FF}Kurt and the others got{nl}the Wind Pendant.{C11E}{C1FF}{C101}{page2}{F9FF}{B7C7}\"Now, on to finishing my research!{page}\"You're in the way. Get out of here!"
   },
   {
    "id": "r204_05D2",
    "addr": "05D2",
    "size": 130,
    "jp": "「う～ぬぬぬ・・・{nl} どうしても だめかっ？{nl} う～む・・・{page}「では 気が変わったら{nl} すぐ もどってくるんじゃ。{nl} よいなっ！！",
-   "en": ""
+   "en": "\"Grrrr... No way at all? Hmmm...{page}\"Then if you change your mind, come{nl} straight back. Understand?!"
   },
   {
    "id": "r204_0656",
    "addr": "0656",
    "size": 108,
    "jp": "「おおっ 気が変わったか！？{page} さ 早く風の玉を{nl} わしに よこすんじゃ！{nl} もちろん タダとは言わんぞ！{page}",
-   "en": ""
+   "en": "\"Oh, changed your mind?!{page} Now, hurry and give me the Wind Orb!{nl} Not for nothing, of course!{page}"
   },
   {
    "id": "r204_06C6",
    "addr": "06C6",
    "size": 156,
    "jp": "「うぬっ！{wait}{wait} うぬぬぬっ！{nl}{D328} お{wait}{wait} おぬしら 風の玉を{nl} 持っておらんではないか！？{page} ど{wait}{wait} どこで なくしたんじゃ？{nl} 早く 取りもどしてこ～い！",
-   "en": ""
+   "en": "\"Grr! {wait}{wait}Grrrr!{nl} {D328} Y{wait}{wait}you don't have the{nl} Wind Orb, do you?!{page} Wh{wait}{wait}where did you lose it? Go get it{nl} back, now!"
   },
   {
    "id": "r204_0764",
    "addr": "0764",
    "size": 44,
    "jp": "「気が早いのう{nl} まだ 完成しておらんわい！",
-   "en": ""
+   "en": "\"Too eager. It's not done yet!"
   },
   {
    "id": "r204_0792",
    "addr": "0792",
    "size": 114,
    "jp": "「ええい こうるさいやつらじゃ！{nl} わしの研究は おまえたちと{nl} 何の閑係もないじゃろ。{page} ほっといてくれんか！！",
-   "en": ""
+   "en": "\"Bah, what a pesky lot! My research has{nl} nothing to do with you.{page} Leave me alone!!"
   }
  ]
 }

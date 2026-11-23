@@ -11,98 +11,98 @@
    "addr": "00B1",
    "size": 60,
    "jp": "「いらっしゃい！{nl} ここは酒場だ。{nl} 上は宿になってるよ。{page}",
-   "en": ""
+   "en": "\"Welcome! This is the tavern. The inn's{nl} upstairs.{page}"
   },
   {
    "id": "r205_00F8",
    "addr": "00F8",
    "size": 118,
    "jp": "「ねえ ちょっと聞いてよ。{page} このあいだ{nl} ハンスタッドの船乗りが{nl} あたいに 指輪をくれたの。{page} 何のつもりかしら？",
-   "en": ""
+   "en": "\"Hey, listen to this.{page} The other day a sailor from Hanstad{nl} gave me a ring.{page} What does he mean by it?"
   },
   {
    "id": "r205_0170",
    "addr": "0170",
    "size": 106,
    "jp": "「あの船乗り{nl} あたいのこと 好きなのかな？{page}「でも あたい 結婚するなら{nl} お金もちの商人が いいなあ。",
-   "en": ""
+   "en": "\"Does that sailor like me, I wonder?{page}\"But if I marry, I'd rather have a rich{nl} merchant."
   },
   {
    "id": "r205_01E6",
    "addr": "01E6",
    "size": 78,
    "jp": "「・・・・・・ん？{page} なんだい 聞いてたのかよ？{nl} 立ち聞きは よくねえな。{page}",
-   "en": ""
+   "en": "\"......Hm?{page} What, you were listening?{nl} Eavesdropping's not nice.{page}"
   },
   {
    "id": "r205_0238",
    "addr": "0238",
    "size": 80,
    "jp": "「なにを 話してたって？{nl} よそ者には閑係ねえことだよ。{nl} それでも知りてえか？",
-   "en": ""
+   "en": "\"What were we talking about? Nothing{nl} to do with outsiders. You still want to{nl} know?"
   },
   {
    "id": "r205_028E",
    "addr": "028E",
    "size": 194,
    "jp": "「町はずれの ボロ家にな{nl} すごく へんくつな{nl} じいさんが いるんだよ。{page} なんでも 新しい魔法を{nl} 研究してるんだと。{page}「そんなことを するより{nl} こつこつ働くほうが{nl} ずっと いいのにな。",
-   "en": ""
+   "en": "\"In a shack at the edge of town,{nl} there's a real cranky old man.{page} They say he's researching new magic.{page}\"Better to just work steady than do{nl} stuff like that."
   },
   {
    "id": "r205_0354",
    "addr": "0354",
    "size": 26,
    "jp": "「なら あっちへ行ってな。",
-   "en": ""
+   "en": "\"Then go on over there."
   },
   {
    "id": "r205_0370",
    "addr": "0370",
    "size": 148,
    "jp": "「へっへっへ～{nl} いやぁ～ ンまいっ！！{nl} 労働の後の いっぱい！{page}「どうだい？ にぃちゃんたち{nl} ラム酒でも のんでいけや{nl} 力がわいてくるぞぉ～",
-   "en": ""
+   "en": "\"Heh heh heh~ Ahh, deeelicious!! A drink{nl} after a day's work!{page}\"How about it, kids? Have some rum. It'll{nl} give you strength~"
   },
   {
    "id": "r205_0406",
    "addr": "0406",
    "size": 80,
    "jp": "「よっぱらって ほ～い{nl} 気持ちいいぞ へ～い{nl} どんなもんだ ふ～ぃぃぃ・・・",
-   "en": ""
+   "en": "\"Drunk as can be, ho-ee! Feels so good,{nl} hey-ee! How 'bout that, whoo-eee..."
   },
   {
    "id": "r205_0462",
    "addr": "0462",
    "size": 50,
    "jp": "「ん？ あんた{nl} 見かけない顔だが{nl} よそ者かい？",
-   "en": ""
+   "en": "\"Hm? Don't know your face. You an{nl} outsider?"
   },
   {
    "id": "r205_049A",
    "addr": "049A",
    "size": 98,
    "jp": "「そうか 旅の人かい！{page} へぇ－っ ずいぶん{nl} 遠くから来たんだねえ。{nl} 大変だったろうなあ！！{page}",
-   "en": ""
+   "en": "\"So you're travelers!{page} Wow, you've come a long way. Must've{nl} been hard!!{page}"
   },
   {
    "id": "r205_04FE",
    "addr": "04FE",
    "size": 78,
    "jp": "「でも おれは{nl} よそ者は 大きらいなんだ。{nl} とっとと あっちへ行ってくれ！",
-   "en": ""
+   "en": "\"But I hate outsiders. Get away from{nl} me!"
   },
   {
    "id": "r205_0550",
    "addr": "0550",
    "size": 76,
    "jp": "「おいおい かくすことは{nl} ないじゃないか。{page} あんた よそから来たんだろ？",
-   "en": ""
+   "en": "\"Come on, no need to hide it.{page} You came from somewhere else, right?"
   },
   {
    "id": "r205_05A8",
    "addr": "05A8",
    "size": 96,
    "jp": "「なんだよ！{nl} あっちへ行けって言ったろ！{page} あんまり でしゃばると{nl} ただじゃ おかねえぞ！！",
-   "en": ""
+   "en": "\"What! I told you to go away!{page} Push your luck and you'll be sorry!!"
   },
   {
    "id": "r205_060E",

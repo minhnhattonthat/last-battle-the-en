@@ -11,7 +11,7 @@
    "addr": "002C",
    "size": 64,
    "jp": "「ようこそ 旅の人{nl} あなたの助けになれれば{nl} よいのですが。{page}",
-   "en": ""
+   "en": "\"Welcome, traveler. I hope I can be of{nl} help.{page}"
   }
  ]
 }

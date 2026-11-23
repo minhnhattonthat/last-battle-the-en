@@ -11,14 +11,14 @@
    "addr": "0034",
    "size": 166,
    "jp": "マリア{nl}「ハンスタッドのグルド水軍が{nl} 負けたことは私も知ってるわ。{page}「でも あの人は必ず帰ってくると{nl} 約束したの。{page}「だから私 待ちます。{nl} 待っていたいんです。",
-   "en": ""
+   "en": "Maria{nl}\"I know the Guld navy at Hanstad was{nl} beaten.{page}\"But he promised he'd come back for{nl} sure.{page}\"So I'll wait. I want to wait."
   },
   {
    "id": "r202_00E2",
    "addr": "00E2",
    "size": 172,
    "jp": "「おれだって いつも{nl} 彼女のそばに いてやりたいと{nl} 思ってるさ。でもな・・{page}「おれは{nl} 海で生きることしか{nl} 知らないんだ。{page}「他の生き方が{nl} できればいいんだが・・・",
-   "en": "",
+   "en": "\"I want to be by her side all the time{nl} too. But...{page}\"All I know is how to live on the sea.{page}\"If only I could live some other way...",
    "reached": false
   }
  ]

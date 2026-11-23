@@ -95,49 +95,49 @@
    "addr": "0892",
    "size": 66,
    "jp": "クルトは『傭兵列伝』{nl}の本を 手に取った。{nl}{wait}{wait}読んで みますか？",
-   "en": ""
+   "en": "Kurt picked up the book{nl}'Lives of the Mercenaries'.{nl}{wait}{wait}Read it?"
   },
   {
    "id": "r198_08DA",
    "addr": "08DA",
    "size": 196,
    "jp": "傭兵  第０３ ５８７１Ａ{nl}    スヴァルト ヤ－ク族  男{nl}通り名 『まるめこみのスヴァルト』{page}    元 グルド王妃付 警護隊長{nl}    王女の死後 傭兵になる。{nl}    ほうろうへき アリ",
-   "en": ""
+   "en": "Mercenary No. 03 5871A{nl}Svart  Yaak  male{nl}Known as 'Svart the Smooth-Talker'{page}Former captain of the Guld{nl}Queen's guard. Turned mercenary{nl}after her death. Wanderlust."
   },
   {
    "id": "r198_09A0",
    "addr": "09A0",
    "size": 596,
    "jp": "クルトは『真の言葉の使い手』の本を{nl}見つけて 読んだ。{page}{FB00}この長い エットミランシェルの{nl}歴史の中で もっとも 言葉の使い手{nl}として 完成を見た者は{page}火のフェナムンを おのれの{nl}通り名として 勇名をはせた{nl}ウ－ドの建国王 エルドであろう。{page}しかし 真なる言葉の使い手に{nl}までには 彼も達することはできず{page}王の後継者たちは 言葉の力を{nl}もてあそび ついにはウ－ド王国を{nl}崩壊に 導いた。{page}{FB00}ただ わずかな救いとして 崩壊前に{nl}言葉の力を正しく使おうとする者達が{nl}新たな 国づくりをはじめていた。{page}かれらが 正しき言葉の使い手として{nl}道を 歩まんことを いのる。{page}{nl}  大ウ－ド王国崩壊より ３年・記",
-   "en": ""
+   "en": "Kurt found and read the book{nl}'Masters of the True Word'.{page}{FB00}In the long history of Ettmiranshel,{nl}the one who came nearest to mastery{nl}of the word was likely{page}Eld, founding king of Ude, famed{nl}for taking the Fenamun of fire{nl}as his own name.{page}Yet even he could not become{nl}a true master of the word,{page}and the kings after him toyed with{nl}the power of words, and at last{nl}led the Ude kingdom to its fall.{page}{FB00}One small mercy: before the fall,{nl}some who would use words rightly{nl}had begun to build new nations.{page}I pray they walk the path{nl}of true masters of the word.{page}{nl}Written 3 years after Ude's fall"
   },
   {
    "id": "r198_0BF6",
    "addr": "0BF6",
    "size": 78,
    "jp": "クルトは『ノルドリクの黄金』の{nl}本を手に 取った。{nl}{wait}{wait}{wait}{wait}読んで みますか？",
-   "en": ""
+   "en": "Kurt picked up the book{nl}'The Gold of Nordrig'.{nl}{wait}{wait}{wait}{wait}Read it?"
   },
   {
    "id": "r198_0C4A",
    "addr": "0C4A",
    "size": 84,
    "jp": "ノルドリク村の者よ こころせよ{nl}放置された 黄金は 魔性の者を{nl}呼び寄せるであろう。",
-   "en": ""
+   "en": "People of Nordrig, beware.{nl}Gold left lying about will call{nl}creatures of evil."
   },
   {
    "id": "r198_0CA0",
    "addr": "0CA0",
    "size": 70,
    "jp": "クルトは『魔剣のうた』の本を{nl}手に取った。{nl}{wait}{wait}{wait}{wait}読んで みますか？",
-   "en": ""
+   "en": "Kurt picked up the book{nl}'Song of the Magic Sword'.{nl}{wait}{wait}{wait}{wait}Read it?"
   },
   {
    "id": "r198_0CEC",
    "addr": "0CEC",
    "size": 410,
    "jp": "いつから ウワサが たったのか{nl}{nl}  オ－ラソ－ドは あるという。{page}{FB00}どこに あるのか 気配もないが{nl}{nl}  オ－ラソ－ドは あるという。{page}{FB00}だれも 造った かじ屋はいない{nl}{nl}  オ－ラソ－ドは あるという。{page}{FB00}なにを 切るため 剣がいる？{nl}{nl}  オ－ラソ－ドは あるという。{page}{FB00}どうすりゃ 使える 魔法の剣？{nl}{nl}  オ－ラソ－ドは あるという。{page}{FB00}そんな 剣は 見た事ないが{nl}{nl}  オ－ラソ－ドは あるという。",
-   "en": ""
+   "en": "When did the rumor start?{nl}{nl}They say the Aura Sword exists.{page}{FB00}Where it is, there's not a trace,{nl}{nl}yet they say the Aura Sword exists.{page}{FB00}No smith ever forged it,{nl}{nl}yet they say the Aura Sword exists.{page}{FB00}What needs cutting by that sword?{nl}{nl}They say the Aura Sword exists.{page}{FB00}How do you use a magic sword?{nl}{nl}They say the Aura Sword exists.{page}{FB00}No one has seen such a sword,{nl}{nl}yet they say the Aura Sword exists."
   }
  ]
 }
