@@ -265,7 +265,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "{2094}    {2094}   {nl}ふき そうひ なし",
-   "en": ""
+   "en": "No weapon{nl}equipped"
   },
   {
    "id": "bt_18640A",
@@ -276,7 +276,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "{20AE}{20AE}{20E6}{20AE}{20AE}{nl}こうけき {nl}     {nl} {60A0}   {nl}しゅ{2118}  {nl}     {nl} {60A0}   {nl}す{2119}やさ {nl}     {nl} {60A0}   {nl}かしこさ {nl}     {nl} {60A0}   {nl}うん {60A0} ",
-   "en": ""
+   "en": "{20AE}{20AE}{20E6}{20AE}{20AE}{nl}Atk  {nl}     {nl} {60A0}   {nl}Def  {nl}     {nl} {60A0}   {nl}Agi  {nl}     {nl} {60A0}   {nl}Wis  {nl}     {nl} {60A0}   {nl}Lck{60A0}"
   },
   {
    "id": "bt_186512",
@@ -287,7 +287,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "   {2094}      {nl}まほうか きえました",
-   "en": ""
+   "en": "Magic{nl}faded away"
   },
   {
    "id": "bt_18653A",
@@ -298,7 +298,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094}        {nl}すはやさ   ＵＰ！",
-   "en": ""
+   "en": "Agility{nl}up!"
   },
   {
    "id": "bt_186562",
@@ -309,7 +309,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "        {2094}          {nl}まほうの ちからか うすれていく・・・",
-   "en": ""
+   "en": "Magic power is{nl}fading..."
   },
   {
    "id": "bt_1865AE",
@@ -320,7 +320,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "   {2094} {2094}         {nl}アイストラコンには きかない！",
-   "en": ""
+   "en": "No effect on{nl}Ice Dragon!"
   },
   {
    "id": "bt_1865EA",
@@ -331,7 +331,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094} {2094}    {nl}とくか ぬけた",
-   "en": ""
+   "en": "Poison{nl}cured"
   },
   {
    "id": "bt_186606",
@@ -342,7 +342,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "  {2094}     {nl}まひか なおった",
-   "en": ""
+   "en": "Can move{nl}again"
   },
   {
    "id": "bt_186626",
@@ -353,7 +353,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "    {2094}      {nl}こんらんか おさまった",
-   "en": ""
+   "en": "Confusion{nl}cleared"
   },
   {
    "id": "bt_186662",
@@ -364,7 +364,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "  {2094}      {nl}しゅひ   ＵＰ！",
-   "en": ""
+   "en": "Defense{nl}up!"
   },
   {
    "id": "bt_198045",
@@ -397,7 +397,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "    {nl}たたかう",
-   "en": ""
+   "en": "{nl}Atk"
   },
   {
    "id": "bt_1987B5",
@@ -408,7 +408,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "    {nl}めいれい",
-   "en": ""
+   "en": "{nl}Cmd"
   },
   {
    "id": "bt_1987C5",
@@ -419,7 +419,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "    {nl}さくせん",
-   "en": ""
+   "en": "{nl}Plan"
   },
   {
    "id": "bt_1987D5",
@@ -430,7 +430,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094}  {nl}にける ",
-   "en": ""
+   "en": "{nl}Run"
   },
   {
    "id": "bt_198835",
@@ -441,7 +441,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "   {nl}ねらう",
-   "en": ""
+   "en": "{nl}Aim"
   },
   {
    "id": "bt_198841",
@@ -452,7 +452,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "    {nl}まほう ",
-   "en": ""
+   "en": "{nl}Cast"
   },
   {
    "id": "bt_198851",
@@ -463,7 +463,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "    {nl}アイテム",
-   "en": ""
+   "en": "{nl}Item"
   },
   {
    "id": "bt_198861",
@@ -474,7 +474,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "  {2094} {nl}そうひ ",
-   "en": ""
+   "en": "{nl}Gear"
   },
   {
    "id": "bt_1988A6",
@@ -485,7 +485,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "              {2094}    {nl}テキの スキみて イッキに タッシュ！",
-   "en": ""
+   "en": "See an opening,{nl}dash in at once!"
   },
   {
    "id": "bt_198916",
@@ -496,7 +496,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "    {nl}クルト ",
-   "en": ""
+   "en": "{nl}Kurt"
   },
   {
    "id": "bt_198926",
@@ -507,7 +507,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "    {nl}メイ  ",
-   "en": ""
+   "en": "{nl}Mei"
   },
   {
    "id": "bt_198936",
@@ -518,7 +518,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094} {2094} {nl}ホルク ",
-   "en": ""
+   "en": "{nl}Borg"
   },
   {
    "id": "bt_198946",
@@ -529,7 +529,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094}  {nl}レシ{20A7}ナ",
-   "en": ""
+   "en": "{nl}Regi"
   },
   {
    "id": "bt_19895C",
@@ -540,7 +540,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": " たれか？",
-   "en": ""
+   "en": "Who?"
   },
   {
    "id": "bt_198988",
@@ -551,7 +551,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": "   たれを？",
-   "en": ""
+   "en": "Whom?"
   },
   {
    "id": "bt_1989AE",
@@ -562,7 +562,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": "・・・？さくせんセレクト",
-   "en": ""
+   "en": "Pick tactic"
   },
   {
    "id": "bt_198E35",
@@ -573,7 +573,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "せんとう {nl}     {nl}ちゅうには{nl}     {nl}しよう  {nl}{2094}    {nl}てきません",
-   "en": ""
+   "en": "Can't{nl}use{nl}while{nl}in a{nl}fight"
   },
   {
    "id": "bt_1991BB",
@@ -584,7 +584,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "   {2094}      {nl}まほうか ありません",
-   "en": ""
+   "en": "{nl}No spells."
   },
   {
    "id": "bt_1991EC",
@@ -595,7 +595,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "なにを？",
-   "en": ""
+   "en": "What"
   },
   {
    "id": "bt_19920D",
@@ -606,7 +606,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "{60AD}{2000}{20AD}{20AE}{20AE}{60AD}{nl}{60AF}{2000}{20AF}  {60AF}{nl}{60AF}{2000}{20AF}を？{60AF}{nl}{60AF}{2000}{A0AD}{A0AE}{A0AE}{E0AD}",
-   "en": ""
+   "en": "{60AD}{2000}{20AD}{20AE}{20AE}{60AD}{nl}{60AF}{2000}{20AF}  {60AF}{nl}{60AF}{2000}{20AF}? {60AF}{nl}{60AF}{2000}{A0AD}{A0AE}{A0AE}{E0AD}"
   },
   {
    "id": "bt_19923D",
@@ -617,7 +617,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "{60AD}{2000}{20AD}{20AE}{20AD}{60AD}{nl}{60AF}{2000}{20AF}{2094}{20AF}{60AF}{nl}{60AF}{2000}{20AF}た{20AF}{60AF}{nl}{60AF}{2000}{A0AD}{A0AE}{A0AD}{E0AD}",
-   "en": ""
+   "en": "{60AD}{2000}{20AD}{20AE}{20AD}{60AD}{nl}{60AF}{2000}{20AF} {20AF}{60AF}{nl}{60AF}{2000}{20AF} {20AF}{60AF}{nl}{60AF}{2000}{A0AD}{A0AE}{A0AD}{E0AD}"
   },
   {
    "id": "bt_19926D",
@@ -628,7 +628,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "{60AD}{2000}{20AD}{20AE}{20AE}{20AE}{nl}{60AF}{2000}{20AF}{2094} {2094}{nl}{60AF}{2000}{20AF}たれか{nl}{60AF}{2000}{A0AD}{A0AE}{A0AE}{A0AE}",
-   "en": ""
+   "en": "{60AD}{2000}{20AD}{20AE}{20AE}{20AE}{nl}{60AF}{2000}{20AF}   {nl}{60AF}{2000}{20AF}Who{nl}{60AF}{2000}{A0AD}{A0AE}{A0AE}{A0AE}"
   },
   {
    "id": "bt_1992A6",
@@ -639,7 +639,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "  {2094}        {nl}ここては つかえません",
-   "en": ""
+   "en": "Can't use{nl}here."
   },
   {
    "id": "bt_1992DB",
@@ -650,7 +650,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "   {2094}       {nl} ＭＰか たりません ",
-   "en": ""
+   "en": "Not enough{nl}MP."
   },
   {
    "id": "bt_199310",
@@ -661,7 +661,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "{2094}   {nl}たれに？",
-   "en": ""
+   "en": "{nl}Who?"
   },
   {
    "id": "bt_19D4BB",
@@ -716,7 +716,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "      {nl}ほのおのマナ",
-   "en": ""
+   "en": "Fire{nl}Mana"
   },
   {
    "id": "bt_19E0B4",
@@ -727,7 +727,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094}    {nl}かせのマナ ",
-   "en": ""
+   "en": "Wind{nl}Mana"
   },
   {
    "id": "bt_19E0CC",
@@ -738,7 +738,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094}    {nl}みすのマナ ",
-   "en": ""
+   "en": "Water{nl}Mana"
   },
   {
    "id": "bt_19E0E4",
@@ -749,7 +749,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}     {nl}たいちのマナ",
-   "en": ""
+   "en": "Earth{nl}Mana"
   },
   {
    "id": "bt_19E0FC",
@@ -760,7 +760,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "      {nl} ネファ  ",
-   "en": ""
+   "en": "{nl}Nepha"
   },
   {
    "id": "bt_19E114",
@@ -771,7 +771,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "    {nl}ほのお ",
-   "en": ""
+   "en": "{nl}Fire"
   },
   {
    "id": "bt_19E124",
@@ -782,7 +782,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094}  {nl}かせ  ",
-   "en": ""
+   "en": "{nl}Wind"
   },
   {
    "id": "bt_19E144",
@@ -793,7 +793,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}   {nl}たいち ",
-   "en": ""
+   "en": "{nl}Soil"
   },
   {
    "id": "bt_19E4FB",
@@ -804,7 +804,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "いりょく",
-   "en": ""
+   "en": "Pow"
   },
   {
    "id": "bt_19E503",
@@ -815,7 +815,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "しゃていきょり",
-   "en": ""
+   "en": "Range"
   },
   {
    "id": "bt_19E511",
@@ -826,7 +826,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "    {2094}  {2094}{nl}ひとりにタメ{20A7}シ",
-   "en": ""
+   "en": "Damage:{nl}one foe"
   },
   {
    "id": "bt_19E531",
@@ -837,7 +837,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "こうかはんい",
-   "en": ""
+   "en": "Area"
   },
   {
    "id": "bt_19E53D",
@@ -848,7 +848,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "     {2094}  {2094}{nl}ふくすうにタメ{20A7}シ",
-   "en": ""
+   "en": "Damage:{nl}all foes"
   },
   {
    "id": "bt_19E561",
@@ -859,7 +859,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}  {nl}しかん",
-   "en": ""
+   "en": "Dur"
   },
   {
    "id": "bt_19E56D",
@@ -870,7 +870,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}   {nl}ふんしん",
-   "en": ""
+   "en": "Imgs"
   },
   {
    "id": "bt_19E57D",
@@ -881,7 +881,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}{2094}  {2094}  {nl}しふん たけに{nl}       {nl} つかえます ",
-   "en": ""
+   "en": "Usable{nl}on self{nl}only"
   },
   {
    "id": "bt_19E5B5",
@@ -892,7 +892,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "かくりつ",
-   "en": ""
+   "en": "Rate"
   },
   {
    "id": "bt_19E5BD",
@@ -903,7 +903,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "ふくすうにこうか",
-   "en": ""
+   "en": "All foes"
   },
   {
    "id": "bt_19E5CD",
@@ -914,7 +914,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "まほう ＋",
-   "en": ""
+   "en": "Mag+"
   },
   {
    "id": "bt_19E5D7",
@@ -925,7 +925,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "ひとりに こうか",
-   "en": ""
+   "en": "One foe"
   },
   {
    "id": "bt_19E5E7",
@@ -936,7 +936,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}{2094}   {nl}たけき ＋",
-   "en": ""
+   "en": "Hit +"
   },
   {
    "id": "bt_19E605",
@@ -947,7 +947,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "{2094}        {nl}せんいんに こうか",
-   "en": ""
+   "en": "Whole{nl}party"
   },
   {
    "id": "bt_19E629",
@@ -958,7 +958,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094} {nl}レヘル",
-   "en": ""
+   "en": "Lv."
   },
   {
    "id": "bt_19E635",
@@ -969,7 +969,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}        {nl}せんたいに こうか",
-   "en": ""
+   "en": "Whole{nl}group"
   },
   {
    "id": "bt_19E659",
@@ -980,7 +980,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "よわい テキたちを そくしさせます",
-   "en": ""
+   "en": "Kills weak foes"
   },
   {
    "id": "bt_19E681",
@@ -991,7 +991,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094} {2094}        {nl}タンションから そとへ{nl} {2094}         {nl} たっしゅつします  ",
-   "en": ""
+   "en": "Escape from{nl}a dungeon."
   },
   {
    "id": "bt_19E6D9",
@@ -1002,7 +1002,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "      {2094}     {2094}   {nl}かこに おとすれた ことか ある{nl}        {2095}{2094}      {nl}  まちへ ワ{20A7}フてきます   ",
-   "en": ""
+   "en": "Warp to a town{nl}visited before."
   },
   {
    "id": "bt_19E759",
@@ -1013,7 +1013,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "   {2094}         {nl}  きせつした なかまを {nl}             {nl}ひとり かいふく させます",
-   "en": ""
+   "en": "Revives one{nl}fallen ally."
   },
   {
    "id": "bt_19E7C1",
@@ -1024,7 +1024,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "ほすう",
-   "en": ""
+   "en": "Stp"
   },
   {
    "id": "bt_19E7C7",
@@ -1035,7 +1035,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "よわい テキとの{nl}  {2094}     {nl}そうくうを   {nl}        {nl}かいひ します ",
-   "en": ""
+   "en": "Repels{nl}weak{nl}enemies"
   },
   {
    "id": "bt_19E817",
@@ -1046,7 +1046,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "  {2094}  {nl}こうけき＋",
-   "en": ""
+   "en": "Atk +"
   },
   {
    "id": "bt_19E82B",
@@ -1057,7 +1057,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094}   {nl}すはやさ＋",
-   "en": ""
+   "en": "Agi +"
   },
   {
    "id": "bt_19E83F",
@@ -1068,7 +1068,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "          {2094}   {nl}しゃていきょり せいけんなし",
-   "en": ""
+   "en": "Unlimited{nl}range"
   },
   {
    "id": "bt_19E877",
@@ -1079,7 +1079,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "        {nl}ひのたまをはなつ",
-   "en": ""
+   "en": "Throws a{nl}fireball"
   },
   {
    "id": "bt_19E897",
@@ -1090,7 +1090,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}       {nl}はくはつをおこす",
-   "en": ""
+   "en": "Sets off{nl}a blast"
   },
   {
    "id": "bt_19E8B7",
@@ -1101,7 +1101,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}     {2094} {nl}ふんしんを たす",
-   "en": ""
+   "en": "Creates{nl}doubles"
   },
   {
    "id": "bt_19E8D7",
@@ -1112,7 +1112,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "        {nl} まひ させる ",
-   "en": ""
+   "en": "Paralyze{nl}foes"
   },
   {
    "id": "bt_19E8F7",
@@ -1123,7 +1123,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "        {nl}たつまきをおこす",
-   "en": ""
+   "en": "Makes a{nl}tornado"
   },
   {
    "id": "bt_19E917",
@@ -1134,7 +1134,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "        {nl} こおりあらし ",
-   "en": ""
+   "en": "Ice{nl}storm"
   },
   {
    "id": "bt_19E937",
@@ -1145,7 +1145,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "  {2094}     {nl}しゅひりょくＵＰ",
-   "en": ""
+   "en": "Defense{nl}up"
   },
   {
    "id": "bt_19E957",
@@ -1156,7 +1156,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "        {nl} ＨＰかいふく ",
-   "en": ""
+   "en": "Restores{nl}HP"
   },
   {
    "id": "bt_19E977",
@@ -1167,7 +1167,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094} {2094}     {nl}てんけきをおとす",
-   "en": ""
+   "en": "Strikes{nl}from sky"
   },
   {
    "id": "bt_19E997",
@@ -1178,7 +1178,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}       {nl}ししんを おこす",
-   "en": ""
+   "en": "Shakes{nl}ground"
   },
   {
    "id": "bt_19E9B7",
@@ -1189,7 +1189,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "      {2094} {nl} まほうふうし ",
-   "en": ""
+   "en": "Seals{nl}magic"
   },
   {
    "id": "bt_19E9D7",
@@ -1200,7 +1200,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "        {nl}テキを こんらん",
-   "en": ""
+   "en": "Confuses{nl}foes"
   },
   {
    "id": "bt_19E9F7",
@@ -1211,7 +1211,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "        {nl}まほうをはんしゃ",
-   "en": ""
+   "en": "Reflects{nl}magic"
   },
   {
    "id": "bt_19EA17",
@@ -1222,7 +1222,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "      {2095} {nl} そとへワ{20A7}フ ",
-   "en": ""
+   "en": "Warp{nl}outside"
   },
   {
    "id": "bt_19EA37",
@@ -1233,7 +1233,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "        {nl}せんこうをはなつ",
-   "en": ""
+   "en": "Flash of{nl}light"
   },
   {
    "id": "bt_19EA57",
@@ -1244,7 +1244,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "      {2095} {nl} まちへワ{20A7}フ ",
-   "en": ""
+   "en": "Warp to{nl}a town"
   },
   {
    "id": "bt_19EA77",
@@ -1255,7 +1255,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094}      {nl}きせつをかいふく",
-   "en": ""
+   "en": "Revives{nl}KO'd"
   },
   {
    "id": "bt_19EA97",
@@ -1266,7 +1266,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "  {2094}     {nl}そうくうをへらす",
-   "en": ""
+   "en": "Fewer{nl}battles"
   },
   {
    "id": "bt_19EAB7",
@@ -1277,7 +1277,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "   {2094}    {nl} こうけきＵＰ ",
-   "en": ""
+   "en": "Attack{nl}up"
   },
   {
    "id": "bt_19EAD7",
@@ -1288,7 +1288,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "  {2094}     {nl} すはやさＵＰ ",
-   "en": ""
+   "en": "Agility{nl}up"
   },
   {
    "id": "bt_19EAF7",
@@ -1299,7 +1299,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "   {2094}  {2094} {nl}オ{20A7}ラてこうけき",
-   "en": ""
+   "en": "Aura{nl}attack"
   },
   {
    "id": "bt_19EB17",
@@ -1310,7 +1310,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "        {nl} ほしをふらす ",
-   "en": ""
+   "en": "Rains{nl}stars"
   },
   {
    "id": "bt_19EF8D",
@@ -1321,7 +1321,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{20AD}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{60AD}{nl}{20AF}                 {60AF}{nl}{20AF} この まほうは         {60AF}{nl}{20AF}        {2094}   {2094}    {60AF}{nl}{20AF} あなたの さいたいＭＰか    {60AF}{nl}{20AF}               {2094} {60AF}{nl}{20AF} もっと おおきく ならなけれは {60AF}{nl}{20AF}                 {60AF}{nl}{20AF} つかえません{209F}         {60AF}{nl}{20AF}   {2094}      {2094}      {60AF}{nl}{20AF} それても よろしいてすか？   {60AF}{nl}{20AF}                 {60AF}{nl}{A0AD}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{E0AD}",
-   "en": ""
+   "en": "{20AD}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{60AD}{nl}{20AF}                 {60AF}{nl}{20AF} This spell can't{60AF}{nl}{20AF}                 {60AF}{nl}{20AF} be used until   {60AF}{nl}{20AF}                 {60AF}{nl}{20AF} your max MP is  {60AF}{nl}{20AF}                 {60AF}{nl}{20AF} higher.         {60AF}{nl}{20AF}                 {60AF}{nl}{20AF} Continue anyway?{60AF}{nl}{20AF}                 {60AF}{nl}{A0AD}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{E0AD}"
   },
   {
    "id": "bt_19F1F3",
@@ -1332,7 +1332,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "{20AD}{20AE}{20AE}{20AE}{20AE}{60AD}{nl}{20AF}    {60AF}{nl}{20AF}{2000}はい {60AF}{nl}{20AF}    {60AF}{nl}{20AF} いいえ{60AF}{nl}{20AF}    {60AF}{nl}{A0AD}{A0AE}{A0AE}{A0AE}{A0AE}{E0AD}",
-   "en": ""
+   "en": "{20AD}{20AE}{20AE}{20AE}{20AE}{60AD}{nl}{20AF}    {60AF}{nl}{20AF}{2000}Yes{60AF}{nl}{20AF}    {60AF}{nl}{20AF} No {60AF}{nl}{20AF}    {60AF}{nl}{A0AD}{A0AE}{A0AE}{A0AE}{A0AE}{E0AD}"
   },
   {
    "id": "bt_19F247",
@@ -1343,7 +1343,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "{20AD}{20AE}{20AE}{20AE}{20AE}{60AD}{nl}{20AF}    {60AF}{nl}{20AF} はい {60AF}{nl}{20AF}    {60AF}{nl}{20AF}{2000}いいえ{60AF}{nl}{20AF}    {60AF}{nl}{A0AD}{A0AE}{A0AE}{A0AE}{A0AE}{E0AD}",
-   "en": ""
+   "en": "{20AD}{20AE}{20AE}{20AE}{20AE}{60AD}{nl}{20AF}    {60AF}{nl}{20AF} Yes{60AF}{nl}{20AF}    {60AF}{nl}{20AF}{2000}No {60AF}{nl}{20AF}    {60AF}{nl}{A0AD}{A0AE}{A0AE}{A0AE}{A0AE}{E0AD}"
   },
   {
    "id": "bt_19F39F",
@@ -1354,7 +1354,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "{20AD}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{60AD}{nl}{20AF}   {2094}     {2094}    {60AF}{nl}{20AF} これて よろしいてすか？ {60AF}{nl}{20AF}              {60AF}{nl}{A0AD}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{E0AD}",
-   "en": ""
+   "en": "{20AD}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{60AD}{nl}{20AF}              {60AF}{nl}{20AF} Is this okay?{60AF}{nl}{20AF}              {60AF}{nl}{A0AD}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{E0AD}"
   },
   {
    "id": "bt_19F6FF",
@@ -1365,7 +1365,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "{20AD}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{60AD}{nl}{20AF}                {60AF}{nl}{20AF} この まほうを つくるには  {60AF}{nl}{20AF}                {60AF}{nl}{20AF} もっと たくさんの マナを  {60AF}{nl}{20AF}                {60AF}{nl}{20AF} つかわなくては いけません{209F} {60AF}{nl}{20AF}                {60AF}{nl}{20AF} このまま やめちゃいますか？ {60AF}{nl}{20AF}                {60AF}{nl}{A0AD}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{E0AD}",
-   "en": ""
+   "en": "{20AD}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{60AD}{nl}{20AF}                {60AF}{nl}{20AF} To create this {60AF}{nl}{20AF}                {60AF}{nl}{20AF} spell, you need{60AF}{nl}{20AF}                {60AF}{nl}{20AF} more mana.     {60AF}{nl}{20AF}                {60AF}{nl}{20AF} Quit for now?  {60AF}{nl}{20AF}                {60AF}{nl}{A0AD}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{E0AD}"
   },
   {
    "id": "bt_19FA10",
@@ -1376,7 +1376,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{20AD}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{60AD}{nl}{20AF} {2094}      {60AF}{nl}{20AF} きんのネファ {60AF}{nl}{20AF}        {60AF}{nl}{20AF}        {60AF}{nl}{20AF}        {60AF}{nl}{20AF}        {60AF}{nl}{A0AD}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{E0AD}",
-   "en": ""
+   "en": "{20AD}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{20AE}{60AD}{nl}{20AF}        {60AF}{nl}{20AF} Gold   {60AF}{nl}{20AF} Nepha  {60AF}{nl}{20AF}        {60AF}{nl}{20AF}        {60AF}{nl}{20AF}        {60AF}{nl}{A0AD}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{A0AE}{E0AD}"
   },
   {
    "id": "bt_19FAB0",
@@ -1387,7 +1387,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "ひかりのネファ",
-   "en": ""
+   "en": "Light"
   },
   {
    "id": "bt_19FABE",
@@ -1398,7 +1398,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "きんのネファ",
-   "en": ""
+   "en": "Gold"
   },
   {
    "id": "bt_1D8281",
@@ -1409,7 +1409,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "        {2094}   {2094}   {nl}まほうの ちからか ふうしられた",
-   "en": ""
+   "en": "Magic power{nl}was sealed"
   },
   {
    "id": "bt_1D82C1",
@@ -1420,7 +1420,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "             {2094}  {nl}まほうの ちからを とりもとした",
-   "en": ""
+   "en": "Magic power{nl}restored"
   },
   {
    "id": "bt_1D8301",
@@ -1431,7 +1431,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "ミス！",
-   "en": ""
+   "en": "Nil"
   },
   {
    "id": "bt_1D8307",
@@ -1442,7 +1442,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "まひ",
-   "en": ""
+   "en": "Pz"
   },
   {
    "id": "bt_1D830B",
@@ -1453,7 +1453,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "              {2094}    {nl}まほうを はねかえす ちからか きえた",
-   "en": ""
+   "en": "Magic reflection{nl}has faded"
   },
   {
    "id": "bt_1D8357",
@@ -1464,7 +1464,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "{2094} {nl}とく",
-   "en": ""
+   "en": "{nl}Ps"
   }
  ]
 }
