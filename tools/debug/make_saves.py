@@ -23,6 +23,12 @@ SAVES = ROOT / "work" / "saves"
 # name -> (ram writes {addr: bytes}, room, x, y); room 77 = a house whose menus open at once (scenes menu_*)
 STRESS = {
     "stress_money.srm": ({0x1DD1: (9999999).to_bytes(3, "little")}, 0x4D, 10, 6),
+    # longest text: Kurt's 16 item slots ($19CF+, record 0 +$CF) hold 9-letter names (D18 cap) with no space; the
+    # file name ($0024, 8 bytes, shown on the load screen; character names are fixed ROM strings) the widest 8
+    "stress_items.srm": ({0x19CF: bytes([0x02, 0x0B, 0x0C, 0x0D, 0x0E, 0x11, 0x12, 0x13, 0x14, 0x15, 0x18, 0x19,
+                                         0x1B, 0x1D, 0x1F, 0x20]),
+                          0x0024: b"WWWWWWWW", 0x1DD1: (9999999).to_bytes(3, "little")},
+                         0x4D, 10, 6),
 }
 
 

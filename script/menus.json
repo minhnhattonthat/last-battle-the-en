@@ -649,7 +649,7 @@
    "addr": "8F96",
    "size": 252,
    "jp": "  ネ－ム{nl}  フェナムン{nl} ＬＶ{00A3}{nl} ＨＰ      ／     ＭＰ      ／{nl} こうげき    {009E}   {FA31} しゅび     {009E}   {FA31}{nl} すばやさ    {009E}   {FA31} かしこさ    {009E}   {FA31}{nl} ＥＸ{00A3}           うん{nl} ＮＥＸＴ{FA07}",
-   "en": "  Name{nl}  Fenamun{nl} LV{00A3}{nl} HP      /     MP      /{nl} Atk     {009E}   {FA31} Def     {009E}   {FA31}{nl} Agi     {009E}   {FA31} Wis     {009E}   {FA31}{nl} EX{00A3}           Luck{nl} NEXT{FA07}",
+   "en": "  Name{nl} Fenamun{nl} LV{00A3}{nl} HP      /     MP      /{nl} Atk     {009E}   {FA31} Def     {009E}   {FA31}{nl} Agi     {009E}   {FA31} Wis     {009E}   {FA31}{nl} EX{00A3}           Luck{nl} NEXT{FA07}",
    "file": "020F96",
    "tiles": 24
   },
@@ -771,13 +771,13 @@
    "tiles": 3
   },
   {
-   "id": "bg3_915C",
-   "addr": "915C",
-   "size": 4,
-   "jp": "ほう",
-   "en": "Mg",
-   "file": "02115C",
-   "tiles": 2
+   "id": "bg3_9158",
+   "addr": "9158",
+   "size": 8,
+   "jp": "{00A1}まほう",
+   "en": "{00A1}Mag",
+   "file": "021158",
+   "tiles": 3
   },
   {
    "id": "bg3_91BC",

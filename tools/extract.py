@@ -251,7 +251,13 @@ def bg3_strings(rom, lo=B04_BG3[0], hi=B04_BG3[1]):
         try:
             ins = S.decode(rom, pos)
         except ValueError:
-            pos += 1
+            # a window script after an FF00 end starts with a 4-byte header (`xx yy hh ww`): skip it whole, as a
+            # byte-at-a-time resync can swallow the script's first tiles (the status screen's `↓まほう` lost its ま)
+            prev = instrs.get(pos - 2)
+            hdr = rom[pos:pos + 4]
+            header = (prev and prev.get("word") == 0xFF00 and hdr[0] < 0x20 and hdr[1] < 0x20
+                      and 0 < hdr[2] <= 0x20 and 0 < hdr[3] <= 0x20)
+            pos += 4 if header else 1
             continue
         if pos + ins["size"] > hi:
             break
