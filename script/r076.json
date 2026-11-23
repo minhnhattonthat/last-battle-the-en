@@ -369,7 +369,7 @@
    "addr": "2716",
    "size": 92,
    "jp": "レジ－ナ{nl}「それより老魔法使い殿{nl} どうか考えなおして下さい！{page} この子たちでは無理です！{page2}",
-   "en": "Regina{nl}\"More importantly, old wizard, please{nl} reconsider!{page} These children can't do it!{page2}"
+   "en": "Regina{nl}\"More importantly, honored wizard,{nl} please reconsider!{page} These children can't do it!{page2}"
   },
   {
    "id": "r076_2788",
@@ -383,7 +383,7 @@
    "addr": "2801",
    "size": 68,
    "jp": "「そして{nl} 我がグルドリ－ケを救えるのは{nl} あなたしか いません！{page2}",
-   "en": "\"And the only one who can save our{nl} Guldrike, is you!{page2}"
+   "en": "\"And the only one who can save our{nl} Guldrike is you!{page2}"
   },
   {
    "id": "r076_284D",
@@ -432,7 +432,7 @@
    "addr": "2B51",
    "size": 44,
    "jp": "レジ－ナ{nl}「ですから{nl} 老魔法使い殿・・・{page2}",
-   "en": "Regina{nl}\"That is why, old wizard...{page2}"
+   "en": "Regina{nl}\"That is why, honored wizard...{page2}"
   },
   {
    "id": "r076_2B8A",
@@ -544,14 +544,14 @@
    "addr": "334A",
    "size": 90,
    "jp": "レジ－ナ{nl}「老魔法使い殿・・・{page} やはり いっしょに来ては{nl} いただけないのですか・・・{page2}",
-   "en": "Regina{nl}\"Old wizard...{page} So you really won't come with us...{page2}"
+   "en": "Regina{nl}\"Honored wizard...{page} So you really won't come with us...{page2}"
   },
   {
    "id": "r076_33AB",
    "addr": "33AB",
    "size": 274,
    "jp": "フェ－ベンネルス{nl}「レジ－ナ姫{nl} この２人の力は 見たじゃろ？{page} わしのような 老いぼれより{nl} 役に立つじゃろうよ。{page}「それに わしは しばらく{nl} 旅に出ようと思っておる。{page} 少し気になることがあってな。{nl} 調べてみたいのじゃ。{page2}{F9FF}レジ－ナ{nl}「わかりました 老魔法使い殿。{page2}",
-   "en": "Febennels{nl}\"Princess Regina, you have seen what{nl} these two can do, yes?{page} They will be more use than an old{nl} fogey like me.{page}\"Besides, I mean to go on a journey for{nl} a while.{page} Something is on my mind. I want to look{nl} into it.{page2}{F9FF}Regina{nl}\"I understand, old wizard.{page2}"
+   "en": "Febennels{nl}\"Princess Regina, you have seen what{nl} these two can do, yes?{page} They will be more use than an old{nl} fogey like me.{page}\"Besides, I mean to go on a journey for{nl} a while.{page} Something is on my mind. I want to look{nl} into it.{page2}{F9FF}Regina{nl}\"I understand, honored wizard.{page2}"
   },
   {
    "id": "r076_34CB",

@@ -38,3 +38,15 @@ the style reference), "Cardinal-sama" -> "Your Eminence" / "His Eminence" (`r248
 | b013 | ok | minor fixed in b055: r041_01E2 "the cell" | - |
 | b014 | ok | minor fixed in b055: r064_0693 だ・か・ら emphasis | - |
 | b015 | ok | minor fixed in b055: r064_097F repeated "So" | - |
+| b016 | ok | - | - |
+| b017 | ok | minors fixed in b056: Regina addresses 老魔法使い殿 as "honored wizard", not "old wizard" (r076_2716, r076_2B51, r076_334A, r076_33AB); r076_2801 stray comma | - |
+| b018 | ok | - | - |
+| b019 | ok | Ritten old man のぅ reworked (r085_0D58, r085_0DDA, r085_0EDC, b056); minors r085_0498, r085_084A punctuation (b056) | r085_0C94 ("eh" on every sentence) |
+| b020 | ok | minors fixed in b056: r085_168C, r086_03AF, r089_003C punctuation | - |
+| b021 | ok | minors fixed in b056: r095_06D4 punctuation, r095_0DE6 caption tense | - |
+| b022 | ok | - | - |
+| b023 | ok | r109_0667 長いモン "long things" (unwanted double meaning) -> "long swords" (b056) | - |
+| b024 | ok | Landburg item-shop granny じゃ/のう voice flattened: r110_0053, r110_024D, r110_03AB, r111_0127, r111_0205 ("dearie", "mark me", b056) | - |
+| b025 | ok | r116_0062 garbled "in see, that house" (b056) | r118_0067 (caption tense) |
+| b026 | ok | r118_0B57 hyphen-split "crafts-men", r118_074D caption tense (b056) | - |
+| b027 | ok | minor fixed in b056: r121_006F "Borg, and his friends" | - |

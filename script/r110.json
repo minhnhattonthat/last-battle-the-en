@@ -11,7 +11,7 @@
    "addr": "0053",
    "size": 116,
    "jp": "「畑の仕事もなぁ{nl} この年になるとな{nl} ちょいと きつ－なってな。{page}「じいさんと ２人で{nl} 道具屋を 始めたんじゃ。",
-   "en": "\"Field work, you know, at my age it gets{nl} a bit hard.{page}\"So the old man and I started an item{nl} shop."
+   "en": "\"Field work, dearie, it gets a mite hard{nl} at my age.{page}\"So me and the old man started an item{nl} shop, eh."
   },
   {
    "id": "r110_00CD",
@@ -32,14 +32,14 @@
    "addr": "024D",
    "size": 348,
    "jp": "「村の みながしたことはのぅ{nl} どこにでもあった グルド軍への{nl} 抵抗の ひとつにすぎんのじゃ。{page}「こんな話は 後の時代の本には{nl}『全ての人ヶは その支配に対して{nl} 勇気をもって 抵抗しました。{page}「こんな １行のなかに うもれて{nl} いってしまうもんかもしれん。{page}{FB00} しかし グルドの支配を{nl} くつがえしていくのはな{nl} このような ことからなのじゃ。",
-   "en": "\"What the village did was just one of{nl} the many stands against the Guld army,{nl} the kind seen everywhere.{page}\"In the books of later days, it'll say, 'All{nl} the people bravely stood against that{nl} rule.'{page}\"It may be buried in a single line like{nl} that.{page}{FB00} But it's things like this that overturn{nl} Guld's rule, you know."
+   "en": "\"What the village did was just one of{nl} many stands against the Guld army, the{nl} kind seen everywhere, dearie.{page}\"In the books of later days, it'll say, 'All{nl} the people bravely stood against that{nl} rule.'{page}\"It may be buried in a single line like{nl} that.{page}{FB00} But mark me, it's things like this that{nl} overturn Guld's rule."
   },
   {
    "id": "r110_03AB",
    "addr": "03AB",
    "size": 104,
    "jp": "「あんたらの かつやくは{nl} わしも聞いとる。{page}「これからも あんたがたの{nl} 思うとおりに することじゃ。",
-   "en": "\"I've heard of your deeds too.{page}\"From here on, do just as you think{nl} best."
+   "en": "\"Oh, I've heard of your deeds, dearie.{page}\"From here on, you do just as you think{nl} best, eh."
   },
   {
    "id": "r110_0415",

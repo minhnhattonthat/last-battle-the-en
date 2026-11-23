@@ -53,7 +53,7 @@
    "addr": "074D",
    "size": 128,
    "jp": "クルトは『ドラゴンの本』の本を{nl}手に取った。{page}{FB00}トカゲなんて 大っきらい！{nl}と すべてのペ－ジに{nl}落書きがされていて 読めない。",
-   "en": "Kurt picked up 'The Dragon Book'.{page}{FB00}Every page is scribbled over with{nl}'I HATE LIZARDS!', and he{nl}can't read it."
+   "en": "Kurt picked up 'The Dragon Book'.{page}{FB00}Every page was scribbled over with{nl}'I HATE LIZARDS!', so he{nl}couldn't read it."
   },
   {
    "id": "r118_07CF",
@@ -109,7 +109,7 @@
    "addr": "0B57",
    "size": 150,
    "jp": "最強のヨロイ ミランシェル。{nl}このヨロイは 鉱石をきたえて{nl}作るにあらず。{page}鳥人の羽と シルヴェル糸によって{nl}織りあげられる 職人芸のたまもの{nl}なり。",
-   "en": "Miranchel, the strongest armor.{nl}It is not forged from ore.{page}It is the work of master crafts-{nl}men, woven from birdman feathers{nl}and Silvel thread."
+   "en": "Miranchel, the strongest armor.{nl}It is not forged from ore.{page}It is the work of master{nl}craftsmen, woven from birdman{nl}feathers and Silvel thread."
   },
   {
    "id": "r118_0BEF",

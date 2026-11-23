@@ -33,3 +33,5 @@ script refuses to run while any line is unticked. Sources: `docs/review-phase6.m
 - [ ] cr_E2BD - composer 岡本 智郎 romanised "Tomoro"; confirm the reading (Tomoo / Tomorou) from an official credit
 - [ ] item_D3 - クロスオブマナ "Mana Cloth" vs item_3B "Mage's Cloth" and item_1E "Cloth of Law": one pattern for the "Cloth of X" family
 - [ ] b050 - 11 untranslated entries in `work/tl/b050.tsv` (battle particles, equip-slot labels): translate in phase 7 and re-run `batches.py check b050`
+- [ ] r085_0C94 - Ritten old man (r085_0C94..r085_11B0) and Gulva old man (r092_0127..r092_03EB): のぅ rendered as "eh" on nearly every sentence; vary the tag ("lad", "heh", dropped g's) so it reads less mechanical (b056 reworked r085_0D58/0DDA/0EDC)
+- [ ] r118_0067 - library narration in present tense ("you find a grubby book") between past-tense captions; pick one tense for the library book captions

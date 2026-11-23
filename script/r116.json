@@ -11,7 +11,7 @@
    "addr": "0062",
    "size": 272,
    "jp": "「シルヴェルの 王妃様は{nl} この村で生まれ 育ったんだ。{page} 小さいころ 親を亡くして{nl} じいさんと {wait}{wait}ほら いまは{nl} グルドの兵隊のいる あの家{wait}{page} あそこに 住んでいたのさ。{page}「なかなか きだてのいい娘で{nl} 年ごろになると 遠くのほうまで{nl} ひょうばんになったもんさ。",
-   "en": "\"The Queen of Silvel was born and{nl} raised in this village.{page} She lost her parents when she was{nl} little, and lived with her grandpa{page} in {wait}{wait}see, that house where the Guld{nl} soldier is now.{wait}{page} That's where she lived.{page}\"She was a good-natured girl, and when{nl} she came of age, word of her spread{nl} far and wide."
+   "en": "\"The Queen of Silvel was born and{nl} raised in this village.{page} She lost her parents when she was{nl} little, and lived with her grandpa{page} in that house, {wait}{wait}see, where the Guld{nl} soldier is now.{wait}{page} That's where she lived.{page}\"She was a good-natured girl, and when{nl} she came of age, word of her spread{nl} far and wide."
   },
   {
    "id": "r116_0178",

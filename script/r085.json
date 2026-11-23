@@ -67,7 +67,7 @@
    "addr": "0498",
    "size": 192,
    "jp": "「お城から来た みなさんに{nl} ユ－リ様のことは 伝えたかい？{page}{FB00}「ところで{wait}・{wait}・{wait}・{nl} うちの 娘にも{nl} 伝えてもらえたかな？{page}「いや {wait}たいしたことじゃないんだ{nl} {wait}うん{wait}{wait} ちょっとね。",
-   "en": "\"Did you tell the folks from the castle{nl} about Yuri-sama?{page}{FB00}\"By the way{wait}.{wait}.{wait}. did you tell my{nl} daughter too?{page}\"No, {wait}it's nothing much. {wait}Just{wait}{wait}{nl} you know."
+   "en": "\"Did you tell the folks from the castle{nl} about Yuri-sama?{page}{FB00}\"By the way{wait}.{wait}.{wait}. did you tell my{nl} daughter too?{page}\"No, {wait}it's nothing much. {wait}Just,{wait}{wait}{nl} you know."
   },
   {
    "id": "r085_055A",
@@ -102,7 +102,7 @@
    "addr": "084A",
    "size": 242,
    "jp": "「うふっ{wait}{wait}{wait}{wait}{nl} この村には ね～{wait}{wait}{page} ときどき 宰相のユ－リ様が{nl} おしのびで 休みをすごしに{nl} いらっしゃるの。{page}「その時は まる１日{nl} ただ{wait} もう{wait}ぼ－っと{nl} していらっしゃるの。{page}「よっぽど お城の仕事が{nl} 大変なんでしょうね。",
-   "en": "\"Tee hee{wait}{wait}{wait}{wait} this village, you{nl} know~{wait}{wait}{page} Chancellor Yuri-sama sometimes comes{nl} here in secret on his days off.{page}\"Then he just{wait} spends{wait} the whole{nl} day staring into space.{page}\"His work at the castle must be really{nl} hard."
+   "en": "\"Tee hee,{wait}{wait}{wait}{wait} this village, you{nl} know~{wait}{wait}{page} Chancellor Yuri-sama sometimes comes{nl} here in secret on his days off.{page}\"Then he just{wait} spends{wait} the whole{nl} day staring into space.{page}\"His work at the castle must be really{nl} hard."
   },
   {
    "id": "r085_094A",
@@ -193,14 +193,14 @@
    "addr": "0D58",
    "size": 128,
    "jp": "「あはっ！{wait}{wait}{nl} こんな じじい相手に{nl} ばか 言うもんではないのぅ。{page}「こんな ところが{nl} シルヴェル城なわけは{nl} ないのぅ。",
-   "en": "\"Ahah! {wait}{wait}Don't go telling an old man{nl} such nonsense, eh.{page}\"This place can't be Silvel Castle, eh."
+   "en": "\"Heh heh! {wait}{wait}Don't go tellin' an old{nl} man such nonsense, lad.{page}\"This place, Silvel Castle? Not likely, eh."
   },
   {
    "id": "r085_0DDA",
    "addr": "0DDA",
    "size": 120,
    "jp": "「わしは ながく{nl} 生きすぎたようじゃのぅ。{page}「まさか こんな日が来るのを{nl} この目で 見ようとはのぅ。{page} つらいのぅ。",
-   "en": "\"Seems I've lived too long, eh.{page}\"To think I'd see a day like this with my{nl} own eyes, eh.{page} It's hard, eh."
+   "en": "\"Seems I've lived too long, eh.{page}\"To think these old eyes would see a{nl} day like this.{page} Hard, it is."
   },
   {
    "id": "r085_0E54",
@@ -221,7 +221,7 @@
    "addr": "0EDC",
    "size": 226,
    "jp": "「ユ－リ様が 囚人島から脱出！{nl} グルドの魔手から 逃れて{nl} 生きていなさるとのぅ。{page}{FB00}「あ{wait}・{wait}あるところで{nl} 戦いの準備を していなさるとな！{page}「老いたりとはいえ{nl} もと戦士の 血がさわぐのぅ{nl} あと３・４才若ければのぅ。",
-   "en": "\"Yuri-sama escaped from Prison Island!{nl} He got away from Guld's clutches and is{nl} alive, eh.{page}{FB00}\"And at a{wait}.{wait}certain place, he's getting{nl} ready for battle!{page}\"Old as I am, my old warrior blood stirs,{nl} eh. If only I were three or four years{nl} younger, eh."
+   "en": "\"Yuri-sama escaped from Prison Island!{nl} Slipped out of Guld's clutches and lives,{nl} they say.{page}{FB00}\"And at a{wait}.{wait}.{wait}. certain place, he's{nl} gettin' ready for battle!{page}\"Old as I am, my warrior blood still stirs,{nl} eh. If only I were three or four years{nl} younger!"
   },
   {
    "id": "r085_0FC0",
@@ -340,7 +340,7 @@
    "addr": "168C",
    "size": 46,
    "jp": "「わしは {wait}{wait}わしは・・・{nl} わしは やる－！",
-   "en": "\"I'll{wait}{wait} I'll... I'll do iiit!"
+   "en": "\"I'll...{wait}{wait} I'll... I'll do iiit!"
   },
   {
    "id": "r085_16C0",

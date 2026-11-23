@@ -102,7 +102,7 @@
    "addr": "06D4",
    "size": 104,
    "jp": "「あんた ほかで グルドの連中に{nl} つまらないことを しゃべったら{nl} ただじゃおかないよ{wait}{wait}{nl} べしっ！",
-   "en": "\"If you blab to those Guld folks{nl} anywhere else, you'll get it{wait}{wait} Smack!"
+   "en": "\"If you blab to those Guld folks{nl} anywhere else, you'll get it.{wait}{wait} Smack!"
   },
   {
    "id": "r095_0752",
@@ -186,7 +186,7 @@
    "addr": "0DE6",
    "size": 80,
    "jp": "クルトは イスの下をしらべた。{page}{FB00}かすかに 最近 穴を掘ったような{nl}あとがある。",
-   "en": "Kurt searched under the chair.{page}{FB00}There are faint signs that a hole was{nl}dug here recently."
+   "en": "Kurt searched under the chair.{page}{FB00}There were faint signs that a hole had{nl}been dug there recently."
   }
  ]
 }

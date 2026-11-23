@@ -11,7 +11,7 @@
    "addr": "003C",
    "size": 166,
    "jp": "「生きている。{wait}{wait}死んでいる。{page}「生きている。{wait}{wait}死んでいる。{page}「もちろん 生きている{wait}・{wait}・{wait}・{wait}{nl} 死んでいる。{wait}{wait}生きている！{page}「ああっ{wait}{wait} 眠れそうもないわ。",
-   "en": "\"He's alive. {wait}{wait}He's dead.{page}\"He's alive. {wait}{wait}He's dead.{page}\"Of course he's alive{wait}.{wait}.{wait}.{wait} he's{nl} dead. {wait}{wait}He's alive!{page}\"Oh{wait}{wait} I'll never get to sleep."
+   "en": "\"He's alive. {wait}{wait}He's dead.{page}\"He's alive. {wait}{wait}He's dead.{page}\"Of course he's alive{wait}.{wait}.{wait}.{wait} he's{nl} dead. {wait}{wait}He's alive!{page}\"Oh,{wait}{wait} I'll never get to sleep."
   },
   {
    "id": "r089_00E4",
