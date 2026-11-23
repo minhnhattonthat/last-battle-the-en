@@ -10,7 +10,7 @@
    "addr": "8600",
    "size": 32,
    "jp": "         どうしますか？",
-   "en": "       What now?",
+   "en": "        What now?",
    "file": "020600",
    "tiles": 16
   },
@@ -19,7 +19,7 @@
    "addr": "8622",
    "size": 46,
    "jp": "   ステレオ／モノラルを えらんでください{009F}",
-   "en": "Choose stereo or mono.",
+   "en": "  Choose stereo or mono.",
    "file": "020622",
    "tiles": 22
   },
@@ -28,7 +28,7 @@
    "addr": "8652",
    "size": 38,
    "jp": "      アイテムを どうしますか？",
-   "en": "Do what with items?",
+   "en": "   Do what with items?",
    "file": "020652",
    "tiles": 19
   },
@@ -73,7 +73,7 @@
    "addr": "8724",
    "size": 44,
    "jp": "    だれの アイテムを そうびしますか？",
-   "en": "  Whose item to equip?",
+   "en": "   Whose item to equip?",
    "file": "020724",
    "tiles": 22
   },
@@ -91,7 +91,7 @@
    "addr": "877E",
    "size": 38,
    "jp": "      だれに そうびさせますか？",
-   "en": " Who will equip it?",
+   "en": "    Who will equip it?",
    "file": "02077E",
    "tiles": 19
   },
@@ -109,7 +109,7 @@
    "addr": "87D2",
    "size": 44,
    "jp": "     だれの アイテムを しらべますか？",
-   "en": "Whose item to examine?",
+   "en": "   Whose item to examine?",
    "file": "0207D2",
    "tiles": 22
   },
@@ -118,7 +118,7 @@
    "addr": "8800",
    "size": 42,
    "jp": "     どの アイテムを しらべますか？",
-   "en": "  Examine which item?",
+   "en": "    Examine which item?",
    "file": "020800",
    "tiles": 21
   },
@@ -127,7 +127,7 @@
    "addr": "882C",
    "size": 44,
    "jp": "     だれの アイテムを わたしますか？",
-   "en": "   Whose item to give?",
+   "en": "    Whose item to give?",
    "file": "02082C",
    "tiles": 22
   },
@@ -154,7 +154,7 @@
    "addr": "88B0",
    "size": 42,
    "jp": "     だれの アイテムを すてますか？",
-   "en": "  Whose item to drop?",
+   "en": "    Whose item to drop?",
    "file": "0208B0",
    "tiles": 21
   },
@@ -172,7 +172,7 @@
    "addr": "8906",
    "size": 34,
    "jp": "         よろしいですか？",
-   "en": "    Are you sure?",
+   "en": "       Are you sure?",
    "file": "020906",
    "tiles": 17
   },
@@ -181,7 +181,7 @@
    "addr": "892A",
    "size": 30,
    "jp": "    {FA18}は すてられません{009F}",
-   "en": " Can't drop {FA18}.",
+   "en": "   Can't drop {FA18}.",
    "file": "02092A",
    "tiles": 13
   },
@@ -190,7 +190,7 @@
    "addr": "894A",
    "size": 44,
    "jp": "    だれの いちを へんこう しますか？",
-   "en": "  Move whose position?",
+   "en": "   Move whose position?",
    "file": "02094A",
    "tiles": 22
   },
@@ -217,7 +217,7 @@
    "addr": "89D2",
    "size": 38,
    "jp": "       これで よろしいですか？",
-   "en": " Is this all right?",
+   "en": "    Is this all right?",
    "file": "0209D2",
    "tiles": 19
   },
@@ -235,7 +235,7 @@
    "addr": "8A12",
    "size": 42,
    "jp": "     どのファイルに セ－ブしますか？",
-   "en": "  Save to which file?",
+   "en": "    Save to which file?",
    "file": "020A12",
    "tiles": 21
   },
@@ -244,7 +244,7 @@
    "addr": "8A3E",
    "size": 34,
    "jp": "         セ－ブしました{009F}",
-   "en": "     Game saved.",
+   "en": "        Game saved.",
    "file": "020A3E",
    "tiles": 16
   },
@@ -253,7 +253,7 @@
    "addr": "8A62",
    "size": 34,
    "jp": "         セ－ブしますか？",
-   "en": "   Save the game?",
+   "en": "      Save the game?",
    "file": "020A62",
    "tiles": 17
   },
@@ -262,7 +262,7 @@
    "addr": "8A86",
    "size": 38,
    "jp": "       まほうを どうしますか？",
-   "en": "Do what with magic?",
+   "en": "    Do what with magic?",
    "file": "020A86",
    "tiles": 19
   },
@@ -280,7 +280,7 @@
    "addr": "8ADA",
    "size": 42,
    "jp": "    {FA0F}は まほうを おぼえていません{009F}",
-   "en": "   {FA0F} knows no magic.",
+   "en": "  {FA0F} knows no magic.",
    "file": "020ADA",
    "tiles": 19
   },
@@ -289,7 +289,7 @@
    "addr": "8B06",
    "size": 40,
    "jp": "     どの まほうを となえますか？",
-   "en": "   Cast which spell?",
+   "en": "    Cast which spell?",
    "file": "020B06",
    "tiles": 20
   },
@@ -298,7 +298,7 @@
    "addr": "8B30",
    "size": 38,
    "jp": "      どこへ いどう しますか？",
-   "en": "    Teleport where?",
+   "en": "     Teleport where?",
    "file": "020B30",
    "tiles": 19
   },
@@ -307,7 +307,7 @@
    "addr": "8B58",
    "size": 46,
    "jp": "   だれの まほうの なまえを かえますか？",
-   "en": " Whose spell to rename?",
+   "en": "  Whose spell to rename?",
    "file": "020B58",
    "tiles": 23
   },
@@ -334,7 +334,7 @@
    "addr": "8BCC",
    "size": 44,
    "jp": "     だれに アイテムを わたしますか？",
-   "en": "Give the item to whom?",
+   "en": "   Give the item to whom?",
    "file": "020BCC",
    "tiles": 22
   },
@@ -343,7 +343,7 @@
    "addr": "8BFA",
    "size": 30,
    "jp": "   {FA18}は そうびできません{009F}",
-   "en": "Can't equip {FA18}.",
+   "en": "  Can't equip {FA18}.",
    "file": "020BFA",
    "tiles": 13
   },
@@ -388,7 +388,7 @@
    "addr": "8CB2",
    "size": 40,
    "jp": "     どの そうびを はずしますか？",
-   "en": " Unequip which item?",
+   "en": "   Unequip which item?",
    "file": "020CB2",
    "tiles": 20
   },
@@ -397,7 +397,7 @@
    "addr": "8CDC",
    "size": 38,
    "jp": "       そうびを はずしました{009F}",
-   "en": "     Gear removed.",
+   "en": "       Gear removed.",
    "file": "020CDC",
    "tiles": 18
   },
@@ -415,7 +415,7 @@
    "addr": "8D30",
    "size": 36,
    "jp": "        ＭＰが たりません{009F}",
-   "en": "   Not enough MP.",
+   "en": "      Not enough MP.",
    "file": "020D30",
    "tiles": 17
   },
@@ -424,7 +424,7 @@
    "addr": "8D56",
    "size": 34,
    "jp": "  {FA18}を わたします{009F}いいですか？",
-   "en": "   Give {FA18}. OK?",
+   "en": "    Give {FA18}. OK?",
    "file": "020D56",
    "tiles": 15
   },
@@ -442,7 +442,7 @@
    "addr": "8DA4",
    "size": 40,
    "jp": "     だれの ぶきを ささげますか？",
-   "en": " Offer whose weapon?",
+   "en": "   Offer whose weapon?",
    "file": "020DA4",
    "tiles": 20
   },
@@ -451,7 +451,7 @@
    "addr": "8DCE",
    "size": 40,
    "jp": "      どの ぶきを ささげますか？",
-   "en": " Offer which weapon?",
+   "en": "    Offer which weapon?",
    "file": "020DCE",
    "tiles": 20
   },
@@ -469,7 +469,7 @@
    "addr": "8E26",
    "size": 28,
    "jp": "     {FA18}を すてました{009F}",
-   "en": "   Dropped {FA18}.",
+   "en": "     Dropped {FA18}.",
    "file": "020E26",
    "tiles": 12
   },
@@ -1009,7 +1009,7 @@
    "addr": "985C",
    "size": 28,
    "jp": "  しゅうりょう する   ",
-   "en": "      Done",
+   "en": "     Done",
    "file": "02185C",
    "tiles": 14
   },
@@ -1018,7 +1018,7 @@
    "addr": "987A",
    "size": 28,
    "jp": "   どうしますか？    ",
-   "en": "    What now?",
+   "en": "  What now?",
    "file": "02187A",
    "tiles": 14
   },

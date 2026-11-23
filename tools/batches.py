@@ -56,7 +56,12 @@ REPOINTED = {"bg3_9EF0": 1, "bg3_9EF8": 1, "bg3_A687": 7, "bg3_A729": 1, "bg3_A7
 INSERT_TILES = {"{FA18}": NAME_CAP, "{FA0F}": 8, "{FA42}": 8, "{FA2B}": 8, "{FA2F}": 8}
 # The one-line prompt box at the top of the field menus ("Do what with items?", "Gave X to Y."): 26 tiles inside
 # (measured: work/qa/i1d, text column 0 at x=24, right border tile at x=232)
-MSG_BOX = {f"bg3_{a}": 26 for a in "86A6 87A6 8886 892A 8ADA 8BFA 8C1A 8C3A 8C64 8D56 8E26 8E44".split()}
+# Also the centred prompts shown there: wrap() centres them on the JP text's centre, up to this width (not the JP
+# string's own tile count, which put "Are you sure?" 2.5 tiles left of the JP; inkbox on work/qa/tour2, b067).
+MSG_BOX = {f"bg3_{a}": 26 for a in (
+    "86A6 87A6 8886 892A 8ADA 8BFA 8C1A 8C3A 8C64 8D56 8E26 8E44 "
+    "8600 8622 8652 8724 877E 87D2 8800 882C 88B0 8906 894A 89D2 8A12 8A3E 8A62 8A86 8B06 8B30 8B58 8BCC 8C3A 8CB2 "
+    "8CDC 8D30 8DA4 8DCE").split()}
 _ROM = None
 
 
@@ -163,7 +168,12 @@ def wrap(e, en):
     if form(e) == "banner":
         return " " * max(0, (144 - px(en.strip())) // 8) + en.strip()
     if form(e) == "menu" and not e.get("max_tiles"):
-        # each line centred where the JP line was centred (JP pads with leading spaces), never past its right edge
+        # each line centred where the JP line was centred (JP pads with leading spaces), never past its right edge;
+        # a name insert counts at its longest (character 8 tiles, item NAME_CAP) on both sides, a glyph token
+        # ({009F} 。) as one tile
+        def tiles(s):
+            s = re.sub(r"\{FA[0-9A-F]{2}\}", lambda m: "#" * INSERT_TILES.get(m[0], 0), s)
+            return len(TOKEN.sub("", re.sub(r"\{00[0-9A-F]{2}\}", "#", s)))
         jl = e["jp"].split("{nl}")
         el = en.split("{nl}")
         if len(jl) == len(el):
@@ -171,8 +181,8 @@ def wrap(e, en):
             for j, x in zip(jl, el):
                 n = len(j) - len(j.lstrip(" "))
                 if n and not x.startswith(" "):
-                    jw, xw = len(TOKEN.sub("", j)), len(TOKEN.sub("", x))
-                    pad = max(0, min(n + (jw - n - xw) // 2, e["tiles"] - xw))
+                    jw, xw = tiles(j.rstrip(" ")), tiles(x)
+                    pad = max(0, min(n + (jw - n - xw + 1) // 2, max(e["tiles"], MSG_BOX.get(e["id"], 0)) - xw))
                     x = " " * pad + x
                 out.append(x)
             return "{nl}".join(out)
@@ -266,7 +276,7 @@ def width_problems(e, en):
     elif f == "menu":
         plain = TOKEN.sub(lambda m: "" if m[0] != "{nl}" else "\n", en)
         lines = plain.split("\n")
-        cap = MENU_CAP.get(e["id"]) or e.get("max_tiles") or e["tiles"]
+        cap = MENU_CAP.get(e["id"]) or e.get("max_tiles") or max(e["tiles"], MSG_BOX.get(e["id"], 0))
         if e.get("max_tiles") or e["id"] in REPOINTED:
             most = e.get("max_lines") or REPOINTED[e["id"]]
             if len(lines) > most:
