@@ -1,5 +1,8 @@
 # Skill gotchas (one line each: reference file it belongs in, then the fact)
 
+- translation.md §Review / SKILL.md ground rules: in an Orca run the `codex exec` fallback can be out of quota ("You've hit your usage limit"); check it with a one-line prompt before planning on it. The context-mode hook stubs Bash output and Reads over ~4 KB, so batch files must be read with `limit` (60-75 rows) and probes must print little.
+- translation.md §Batch design / assets/batches.py: slot-based inserters with a far-jump relocation can't grow slots shorter than the jump (here 5 bytes: 2-tile menu words); the batch check needs that rule, or `build.py` fails after the merge.
+
 - graphics.md §Survey / platform-snes.md: a game can keep a second copy of its font in another compression format for one mode (here battle: its own LZ and load list), so patching the field font block changes nothing there; find it by the VRAM DMA source (`snes_dmalog.lua`) and the writers of that WRAM buffer, not by `decomp_src`-style LZ logs.
 - SKILL.md Step 0 / guard hook: in a fresh Orca worker session the plugin's guard did not block the canary; adding the `hooks` block with `python "$HOME/.claude/plugins/marketplaces/..."` worked (a `~` path inside quotes is not expanded and fails).
 - emulator-qa.md: `emu.py --state-in` replays without the route/mash that made the state; a probe expecting the same events must pass the same `--mash` too (a WRAM dump without it showed the map never loaded).
