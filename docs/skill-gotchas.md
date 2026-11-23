@@ -1,5 +1,9 @@
 # Skill gotchas (one line each: reference file it belongs in, then the fact)
 
+- pipeline.md §Checks: a menu template's number op can draw right-aligned *backwards* over the blanks before it (status screen `{009E}`: "Attack  {009E}" showed "Attac"); the tile-count lint passed. Lint: blanks before each such op >= the JP's.
+- pipeline.md §Checks / translation.md: English byte names stored as plain ASCII print any `[XX]` token literally ("Power[FF]Attack"); the control-code-multiset rule pushed the translator to keep it. Names: require zero tokens instead.
+- pipeline.md §Checks: "non-empty jp with empty en fails unless keep-listed" was not wired in this repo until phase 7; the batch check only counted translated entries, so 14 untranslated lines passed phase 6 silently.
+
 - translation.md §Review / SKILL.md ground rules: in an Orca run the `codex exec` fallback can be out of quota ("You've hit your usage limit"); check it with a one-line prompt before planning on it. The context-mode hook stubs Bash output and Reads over ~4 KB, so batch files must be read with `limit` (60-75 rows) and probes must print little.
 - translation.md §Batch design / assets/batches.py: slot-based inserters with a far-jump relocation can't grow slots shorter than the jump (here 5 bytes: 2-tile menu words); the batch check needs that rule, or `build.py` fails after the merge.
 
