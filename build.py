@@ -95,7 +95,7 @@ def build(out=OUT, recompress=False, orig_path=ORIG_PATH, script_dir=insert.SCRI
     region = blocks.unpack(orig)
     files = insert.load(script_dir)
     if marker:
-        insert.mark(files)
+        insert.mark(files, insert.ruler_text if marker == "ruler" else insert.marker_text)
     insert.override(files, qa or {})
     if asm:
         w.rom.extend(b"\xff" * (ROM_SIZE - len(w.rom)))
@@ -128,11 +128,15 @@ def main():
     ap.add_argument("--marker", action="store_true",
                     help="marker build: every string -> [id] + filler as wide as its Japanese line (default out "
                          "build/marker.sfc)")
+    ap.add_argument("--ruler", action="store_true",
+                    help="ruler build: every text line -> 40 digits of 6 px (the last digit seen = the box width / 6; "
+                         "default out build/ruler.sfc); docs/re/windows.md")
     a = ap.parse_args()
     check_rom.check()
     qa = dict(s.split("=", 1) for s in a.qa)
-    out = ROOT / "build" / "marker.sfc" if a.marker and a.out == str(OUT) else a.out
-    rom, log = build(out, a.recompress, qa=qa, marker=a.marker)
+    mode = "ruler" if a.ruler else a.marker
+    out = ROOT / "build" / f"{'ruler' if a.ruler else 'marker'}.sfc" if mode and a.out == str(OUT) else a.out
+    rom, log = build(out, a.recompress, qa=qa, marker=mode)
     import hashlib
     print(f"{out}: {len(rom)} bytes, {len(log)} writes, sha1 {hashlib.sha1(rom).hexdigest()}")
 

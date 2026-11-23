@@ -11,6 +11,13 @@ the shot) or guess. The fit lint (phase 7) reads this table.
 | shop item description | right-hand box of the shop (`つかうと HPを 30ほど かいふく`) | ~5 tiles x 4 lines (8x8 BG3 tiles) | 4 | guess from `work/qa/shop2/p00_0x4D_10_6/f002400.png`: not extracted yet (BG3 tile-word strings in bank 04, see status) |
 | staff roll | `credits` scene after the epilogue (`cr_*`, bank-02 renderer + `cr_glyph` VWF) | 192 (screen x 32-223) | 5 slots of 32 px (`{nl}` = next slot; the JP entries leave slot 1 blank) | measured: `work/qa/cr2/credits/f013500.png` (2026-11-23); a longer line wraps into the start of the next slot |
 
+| place-name banner | `place_*` on room entry (bank-04 `b04_B3B0`...) | 144 (24 ruler digits, the 24th ends at the border) | 1 | measured: `work/qa/rb/banner.png` (2026-11-23, `build.py --qa b04_B3B0=<40-digit ruler>`); JP names are centred with leading spaces: centre English the same way (space = 4 px) |
+| epilogue text | `ending` (white text on black, no box) | >= 192 (a 32-digit ruler line showed whole) | free | partly measured: `work/qa/ruler_tour/ending/final.png`; the screen is 256 px, measure the edge with a 40-digit `--qa` line |
+
+Ruler build: `python -X utf8 build.py --ruler` (every text segment -> 6 px digits, the 10th/20th/30th digit is the decade,
+as wide as the JP segment + 36 px: the full 40 digits for every string overflow `insert.TEXT_AREA`); tour with
+`run_scenes.py build/ruler.sfc --out work/qa/ruler_tour --only ...`. A box wider than JP + 36 px needs a `--qa` line.
+
 Canvas notes: each text line owns 32 VRAM tile columns (256 px) at `$6600 + line * $200`; text past 256 px wraps
 into the line's bottom-row tiles and the next line (seen in the ruler shot), so overflow shows as garbage, not a clip.
 The longest Japanese dialogue lines are 18 glyphs = 216 px, matching the box.

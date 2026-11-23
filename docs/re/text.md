@@ -109,7 +109,9 @@ Not yet walked: top entries 14-28 (other formats: 18/19 hold plain text, 20-27 t
   | `0x24AD1` / `0x25201` | **item records, 20 bytes, name = first 8 bytes in the byte encoding** (0-terminated if shorter); index < $C0 at `$04:CAD1`, >= $C0 at `$04:D201` (01:8B2D). Items $01-$5B ($5C+ alias the key-item table), key items $C0-$D8, $E0-$E2, $F0-$FF | byte names |
 - **Spell names**: `0x14E20F`, 28 records of 9 bytes (8-byte name in the byte encoding, then 1 byte), ファイアボール ...
   スターブラスト (`tools/re_names.py at 14E20F 9 8 28`; record layout a guess from the stride, verify with the
-  FA4F handler in phase 4).
+  FA4F handler in phase 4). Two more copies, not extracted yet (found by the phase-5 marker tour, `menu_magic` showed
+  ファイアボールA): an FF-terminated name list at `0x19D3F1-0x19D4A0` (22 names, reader unknown) and the new-game
+  character record at `0x1FE36` (7-byte name + rank letter `A`, then `12 50`): character records carry name copies.
 - **Byte-encoded names** are capped at 8 characters by the record: English names need a wider record or a pointer
   (engine work, phase 5).
 - **Credits**: `0x16245-0x16877`, script words with FF00 per line (シナリオ・ゲームデザイン, staff names).

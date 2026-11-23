@@ -3,11 +3,18 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 5. Engine spike and marker build in progress (VWF, far jumps, staff roll and item/spell name escapes
-  work; BG3 font has English lowercase; per-screen BG3 name caps, party names / name entry, extracting the BG3
-  tile-word strings (shop descriptions), the rest of the width gate and the marker tour left). Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) boots (smoke
+  work; BG3 font has English lowercase; marker tour done (113/113); left: extract the BG3 tile-word prompts/labels
+  and the two spell-name copies, per-screen BG3 name caps, party names / name entry, the rest of the width gate). Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) boots (smoke
   ok) and reaches name_entry, newgame, menu_item, place_00, svc_00_00, battle_win, variant_ec01 (`work/qa/marker2`)
   and the staff roll (`work/qa/cr1`) with `[id]` markers.
 - **Done:**
+  - **Phase 5, session 2026-11-23 (4):** marker tour of all 113 scenes (`work/qa/marker_tour`, sheets of the final
+    frames `work/qa/mt_sheets/sheet*.png`): every scene reached, dialogue, shop/inn/healer talk, place banners,
+    ending and variants show `[id]` markers. **Japanese / garbled left** (text not extracted yet), see Next 1a-1c.
+    `build.py --ruler` (`insert.ruler_text`, test `test_ruler_text`) + ruler tour (`work/qa/ruler_tour`, 30 scenes):
+    place banner measured 144 px, epilogue >= 192 px (`docs/re/windows.md`). `tools/lua/stack_log.lua` (return
+    addresses at entry to a routine, for the per-caller BG3 caps). Size check: 127k JP glyphs ~ 550 KB of English
+    words at 2.2 letters per glyph, `TEXT_AREA` is 896 KB (fits; watch it in phase 7).
   - **Phase 5, session 2026-11-23 (3):** 8x8 BG3 font gets English lowercase + `',.-!?&/:+` (`tools/font_bg3.py`,
     drawn over hiragana tiles `$25-$48` of LZ block 319; `insert.bg3_table` maps them; test in `tests/test_vwf.py`).
     Shop list shows mixed case: `work/qa/bg3t/p00_0x4D_10_6/f002400.png`. Chose fixed 8 px tiles over a BG3 tile
@@ -66,7 +73,24 @@ Updated at the end of every session. Keep it to what the next session needs; his
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
   1. **Finish phase 5** (done-when: marker ROM boots, every text box shows its id, non-text strings excluded, every
-     box variant measured):
+     box variant measured). Japanese the marker tour still shows (`work/qa/mt_sheets`):
+     - **1a. BG3 tile-word prompts and labels** (the biggest gap): window prompts どれを つかいますか? / だれが
+       つかいますか? / どれを すてますか?, クルト は アイテムを もっていません。, セーブしますか? / よろしいですか? /
+       どの ファイルを ロードしますか?, はい/いいえ, ステレオ/モノラル, the battle command label たたかう, menu
+       command labels (セーブ, つよさ...), status labels (ネーム, フェナムン, ノーマル...), ? (gold), shop
+       description box. They now show as garbled lowercase (the hiragana tiles carry English letters). They are
+       words < `$0300` (BG3 tiles, `ORA #$2000`, 01:B7D1) in bank 04 (`0x20400-0x22300`, `0x22CA7` rows). Write a
+       BG3 tile codec (tile -> kana via the `$04:AEAB` byte map reversed, English via `font_bg3.TILE`, capitals and
+       digits `$01-$24`), extract them into `script/` (new kind `bg3`), mark them in the marker build, re-tour.
+       Each label's field width is its tile count unless its window is resized (check the window-open op).
+     - **1b. Spell names, two unextracted copies:** an FF-terminated list at file `0x19D3F1-0x19D4A0` (22 names,
+       ファイアボール ... スターブラスト; find its reader with `tools/lua/romreads_addr.lua` in a battle casting a
+       spell or the spell-learn message) and the new-game character record at `0x1FE36` (`ファイアボールA`: 7-byte
+       name + a rank letter `A` in the 8th byte; English escape `02 01` must keep the rank letter: make `nm_fee3`/
+       `nm_feaa` print the record's last byte after the English name, or move the rank to its own field). The
+       spell menu (`menu_magic`) and battle magic list read the character record, so they showed Japanese.
+     - **1c. Party names and save-file name** show garbled lowercase (`title_load`: `bbbbbbbb`; name entry grid):
+       the name-entry remap below.
      - **BG3 name fields** (01:FEAA path; `docs/re/vwf.md` §Names): lowercase done; English names are still capped
        at the caller's count (8; 01:FE59 item records = shop list, 01:FE3B character names, both `LDA #$0008`).
        The shop row has room for 13 tiles (x 24 to the price at ~128; check the longest price). Raise the cap for
@@ -86,9 +110,12 @@ Updated at the end of every session. Keep it to what the next session needs; his
        the box (~5 tiles x 4 lines looks too small for English: plan engine work, e.g. a wider box or the VWF canvas).
      - `b04_B2E2` (メイ, 4-byte slot, pointer `0x232D4`): too short for a far jump; move it by its pointer into
        dead space of another bank-04 string (marker build writes the id tail meanwhile).
-     - Width gate for the variants listed in `docs/re/windows.md` (ruler builds via `--qa`); the page-wait arrow.
-     - Tour the marker build over all scenes (`run_scenes.py build/marker.sfc`) and list any Japanese left (text not
-       extracted) and markers in odd places (non-text): mark those `data` in `script/`.
+     - Width gate still to measure (`docs/re/windows.md` "Still to measure"): the page-wait arrow on line 3 (the
+       arrow sits below the text row in `svc_06_00`, so likely no cost: confirm with a 36-digit `--qa` line), the
+       epilogue right edge, the item-description box (`common`/bank-04 descriptions, `menu_item` > item > info),
+       battle message box, BG3 name fields per screen (`stack_log.lua --var "ADDRS='01FEAA'"` over the menu, shop
+       and battle scenes gives each caller; then the per-caller cap table in `nm_feaa`).
+     - No marker showed in an odd place in the tour (no non-text found yet); re-check after 1a.
      - Tests so far: `tests/test_vwf.py` (font, EN codec, far-jump fit); add one that boots nothing but checks the
        marker build's writes stay in `tools/ranges.txt` (build.py already refuses others).
   2. The 23 unreached runs (`"reached": false`): check at runtime with a ROM-read probe or textcoverage; menu

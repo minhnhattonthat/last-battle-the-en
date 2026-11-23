@@ -66,15 +66,39 @@ def marker_text(e, jp_px=12):
     return "".join(out)
 
 
-def mark(files):
-    """Marker build: every script string and byte name gets marker_text."""
+RULER = "".join("123456789" + str(d % 10) for d in range(1, 5))  # 40 digits, 6 px each: char k ends at 6k px
+
+
+def ruler_text(e, n=len(RULER)):
+    """Ruler build: every text segment of the Japanese line becomes RULER digits (6 px each; the 10th, 20th... digit
+    is the decade, so the last digit seen in a shot gives the box width in px), as wide as the Japanese segment
+    + 36 px (at most n digits; all of them would overflow the text area); tokens stay."""
+    from textcodec import TOKEN
+    out, i, text, seen = [], 0, e["jp"], False
+    while i <= len(text):
+        m = TOKEN.search(text, i)
+        seg = text[i:m.start() if m else len(text)]
+        if seg:
+            out.append(RULER[:min(n, 2 * len(seg) + 6)])
+            seen = True
+        if not m:
+            break
+        out.append(m.group(0))
+        i = m.end()
+    if not seen:
+        out.insert(0, RULER[:n])
+    return "".join(out)
+
+
+def mark(files, fn=marker_text):
+    """Marker build: every script string and byte name gets marker_text (ruler build: ruler_text)."""
     for doc in files.values():
         if doc["source"]["kind"] == "names":
             for e in doc["entries"]:
-                e["en"] = marker_text(e)
+                e["en"] = fn(e)
             continue
         for e in doc["entries"]:  # a slot too short for a far jump gets as much of its id as fits
-            e["en"] = marker_text(e) if e["size"] >= FAR_LEN else e["id"][-(e["size"] // 2):]
+            e["en"] = fn(e) if e["size"] >= FAR_LEN else e["id"][-(e["size"] // 2):]
 
 
 def text_of(e):

@@ -81,3 +81,13 @@ def test_name_escape_and_table():
     assert blob[ptr(5):ptr(5) + 11] == b"Long Sword\0"
     assert blob[ptr(7)] == 0  # unused -> empty name
     assert max(ptr(i) for i in range(512)) < len(blob)
+
+
+def test_ruler_text():
+    """Ruler build lines: 6 px digits, decade digit every 10th, as wide as the JP segment + 36 px, tokens kept."""
+    assert all(font_en.width(c) == 6 for c in insert.RULER)
+    assert insert.RULER[9] == "1" and insert.RULER[19] == "2" and len(insert.RULER) == 40
+    e = {"jp": "あいう{nl}かきくけこさしすせそたちつてとなにぬねの", "id": "x"}
+    a, b = insert.ruler_text(e).split("{nl}")
+    assert a == insert.RULER[:12] and b == insert.RULER
+    assert insert.ruler_text({"jp": "{nl}", "id": "y"}).endswith("{nl}")
