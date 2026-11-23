@@ -151,7 +151,7 @@
    "addr": "057E",
    "size": 160,
    "jp": "「右手に太陽 左手には月{wait}{wait}{nl} 光あふれ{wait} いにしえの力は{nl} ここに よみがえる・・・{page}「オ－ト{wait} ラップ{wait} リヴァス・・・{wait}{wait}{nl} フォルンティド ステュルカ！",
-   "en": "\"Sun in the right hand,{nl} moon in the left...{wait}{wait}{nl} Light overflows{wait}, and the{page}\"ancient power returns...{nl} Ort...{wait} Lapp...{wait} Rivas...{wait}{wait}{nl} Forntid Styrka!"
+   "en": "\"Sun in right hand, moon in left...{wait}{wait}{nl} Light overflows...{wait}{nl} Ancient power, awaken here...{page}\"Ort...{wait} Lapp...{wait} Rivas...{wait}{wait}{nl} Forntid Styrka!"
   },
   {
    "id": "top21_0622",

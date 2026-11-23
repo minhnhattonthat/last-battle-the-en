@@ -49,3 +49,5 @@ script refuses to run while any line is unticked. Sources: `docs/review-phase6.m
 - [ ] r074_00FB - "It's locked." vs "It is locked." x3: pick one (M1)
 - [ ] b04_B65C - "There's nothing there." vs "There is nothing there." x10: pick one (M1)
 - [ ] bg3_98B6 - same JP as bg3_89D2: unify (M1)
+- [ ] r075_01FE - Guld captain's archaic ござる/つかまつる register rendered plain (session 18 re-read)
+- [ ] top21_02FE, top23_0244, top23_03A4 - 合成 "combine" vs glossary 魔法合成 "spell synthesis": pick one wording with the menu label (session 18 re-read)

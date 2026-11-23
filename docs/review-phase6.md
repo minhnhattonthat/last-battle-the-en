@@ -72,3 +72,20 @@ the style reference), "Cardinal-sama" -> "Your Eminence" / "His Eminence" (`r248
 | b047 | ok | r322_02AE リダール殿 "Lord Lidar" -> "Lidar-dono" (D1, matches the other 3 uses; b058) | - |
 | b048 | ok | - | minor: top15_00E0 servile ハイ！ tag dropped (polish.md) |
 | b049 | ok | - | - |
+
+## Session 18 (2026-11-24): external phase-6 review fixes and full re-read
+The external review (`.harness/reviews/last-battle-the-en-phase6.md`) found C1 (pass not independent / not every pair
+read), I1 (honorific check empty), I2 (先生 as "Mr."), I3 (グルド王 two labels).
+- I1: `tools/batches.py` `HONORIFICS` filled (D1) with `honorific_problems()` + waivers for title+name forms; 24 hits
+  re-translated in fix batch b059; `tests/test_batches.py`.
+- I2: キューケンホフ先生 = "Keukenhof-sensei", pupils' 先生 = "Sensei" (D12, glossary), b059.
+- I3: `r322_02AE` "Guld King" -> "King of Guld" (glossary), b059.
+- C1: a fresh read of every pair in `work/review/b001.txt`-`b049.txt` (all 49 batches, every entry) by this session,
+  verdicts per batch unchanged (`ok`) except the new fixes below, merged as fix batch b060:
+  - `r095_03AE` (b021) グルド/ヨーグルト pun was dead -> "If I feared Guld, I couldn't eat yo-GULD-urt!"
+  - `r123_00A2` (b028) きつけのハーブ "smelling herbs" -> "Revive Herbs" (item name, item_49)
+  - `top21_057E` (b049) synthesis chant: page break left a mid-sentence `"ancient power` -> each page whole
+  - minors fixed in passing: `r187_0612` word order, `r204_01A6` いっぱつ "One shot!!", `r319_0068` "Queen of Ice"
+    (matches the other Iskar lines)
+  New minors to `docs/polish.md`: `r075_01FE` Guld captain's ござる register, shop lines' 合成 "combine" vs glossary
+  "spell synthesis".

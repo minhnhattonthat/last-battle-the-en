@@ -4,9 +4,15 @@ Updated at the end of every session. Keep it to what the next session needs; his
 
 - **Phase:** 7. Insert, fit, check: phase 6 done (3071/3085 translated, reviewer pass complete, every batch
   b001-b049 has a row in `docs/review-phase6.md`; the 14 left are b050's engine-bound fragments, phase-7 work).
-  Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24 session 17, sha1
-  36f9e294).
+  Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24 session 18, sha1
+  3bbeaa3c).
 - **Done:**
+  - **Phase 6, session 2026-11-24 (18):** external phase-6 review (`.harness/reviews/last-battle-the-en-phase6.md`)
+    Critical/Important fixed: honorific check on in `tools/batches.py` (D1, waivers for title+name; tests), 24 hits
+    re-translated, 先生 = "Keukenhof-sensei"/"Sensei" (D12), "King of Guld" everywhere (b059); D12-D17 recorded.
+    C1: a fresh full re-read of every pair b001-b049 found 3 more Important (dead Guld/yogurt pun `r095_03AE`,
+    "smelling herbs" vs item Revive Herb `r123_00A2`, broken chant page `top21_057E`) plus 3 minors, fixed in b060;
+    log in `docs/review-phase6.md` "Session 18". Check 0 problems, 39 tests; smoke ok. Next free fix batch: b061.
   - **Phase 6, session 2026-11-24 (17):** reviewer pass b009-b049 done (self-review, read-only pass per batch; codex
     quota out). Fix batches b055-b058: old castle official / Ritten / Gulva / Kroket / Ude old-man voices restored,
     Regina's "honored wizard", garbled Svart and stutter lines re-punctuated, "master of the true word" ->
