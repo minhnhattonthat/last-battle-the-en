@@ -49,6 +49,11 @@ def test_roundtrip(ext):
                 a = int(e["addr"], 16)
                 want = region.blocks[src["block"]].orig_data[a:a + e["size"]]
                 got = JP.encode(e["jp"])
+            elif src["kind"] == "battle":
+                import battle_text
+                f = int(e["file"], 16)
+                want = rom[f:f + e["size"]]
+                got = battle_text.encode(rom, {**e, "en": ""})
             else:
                 f = int(e["file"], 16)
                 want = rom[f:f + e["size"]]

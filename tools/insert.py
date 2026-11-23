@@ -122,7 +122,12 @@ def bg3_marker_text(e):
 def mark(files, fn=marker_text):
     """Marker build: every script string and byte name gets marker_text (ruler build: ruler_text); BG3 tile strings
     get bg3_marker_text in the marker build and stay Japanese in the ruler build (their width is their tile count)."""
+    import battle_text
     for doc in files.values():
+        if doc["source"]["kind"] == "battle":
+            for e in doc["entries"]:
+                e["en"] = battle_text.marker_text(e) if fn is marker_text else ""
+            continue
         if doc["source"]["kind"] == "bg3":
             for e in doc["entries"]:
                 e["en"] = bg3_marker_text(e) if fn is marker_text else ""
@@ -421,6 +426,12 @@ def apply(orig, region, writer, files, alloc=None):
     names = NameTable(orig) if alloc is not None else None
     for name, doc in files.items():
         src = doc["source"]
+        if src["kind"] == "battle":  # in place, same tile count (tools/battle_text.py)
+            import battle_text
+            for e in doc["entries"]:
+                changed += bool(e["en"])
+                writer.put(int(e["file"], 16), battle_text.encode(orig, e), f"text:{e['id']}")
+            continue
         if src["kind"] == "bg3":
             for e in doc["entries"]:
                 changed += bool(e["en"])

@@ -18,6 +18,13 @@ FB04-FB04     name entry row count (display, operand of CMP #$2B at 01:FB03)
 1FEF0-1FF4F   new-game tactics records 12 bytes each, names = first 8 bytes (script/tactics.json)
 140C38-140D57 battle name byte -> tile pair tables (insert.battle_bytes: ASCII party names)
 19D3F1-19D4A0 default battle spell names, 22 x 8 bytes (insert.battle_spells: English escapes)
+140017-140042 battle tile text in place (script/battle.json, tools/battle_text.py): victory line
+16EF84-16F51D battle tile text: mana / spell info screen labels (bank $2D)
+185DF1-186685 battle tile text: battle item descriptions, equip/status labels, battle messages (bank $30)
+198045-1980E6 battle tile text: particles (bank $33)
+1987A5-19F88A battle tile text: command menu, windows and messages (bank $33)
+19FA10-19FAC9 battle tile text (bank $33)
+1D8281-1D835E battle tile text (bank $3A)
 150000-150B33 battle BG3 font, battle LZ (font_bg3.battle_patch: English tiles, re-encoded in place)
 1404A4-1404A5 battle load list: battle font compressed length
 14736C-14736D battle load list (second copy): battle font compressed length

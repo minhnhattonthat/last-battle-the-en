@@ -330,6 +330,8 @@ def extract_all(rom):
     tactics = [(f"{i}", TACTICS + TACTIC_STRIDE * i) for i in range(TACTIC_N)]
     files["tactics"] = {"source": {"kind": "names", "record": TACTIC_STRIDE, "pad": "FF"},
                         "entries": padded_entries(rom, bc, "tactic", tactics)}
+    import battle_text
+    files["battle"] = {"source": {"kind": "battle"}, "entries": battle_text.entries(rom)}
     return files
 
 

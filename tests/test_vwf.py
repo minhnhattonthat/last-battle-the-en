@@ -117,6 +117,29 @@ def test_battle_name_table_and_bytes():
 
 
 @pytest.mark.skipif(not ORIG.exists(), reason="no ROM")
+def test_battle_text_rects():
+    import json
+    import battle_text
+    import font_bg3
+    orig = ORIG.read_bytes()
+    es = {e["id"]: e for e in json.loads((ROOT / "script" / "battle.json").read_text(encoding="utf-8"))["entries"]}
+    cmd = es["bt_1987A5"]                                      # command label たたかう: 4x2 rect read by a table script
+    assert (cmd["w"], cmd["h"], cmd["geom"]) == (4, 2, "table") and cmd["jp"].endswith("たたかう")
+    assert es["bt_186606"]["geom"] == "script"                 # まひが なおった, direct LDA #; JSL $29A1EA
+    for e in es.values():                                      # markers keep the tile count; borders kept
+        m = battle_text.encode(orig, {**e, "en": battle_text.marker_text(e)})
+        assert len(m) == e["size"], e["id"]
+    got = battle_text.encode(orig, {**cmd, "en": "{nl}Atk"})
+    a = 0x2000
+    assert got == b"".join(x.to_bytes(2, "little") for x in
+                           [a | 0x93] * 4 + [a | 0x0B, a | font_bg3.TILE["t"], a | font_bg3.TILE["k"], a | 0x93])
+    with pytest.raises(ValueError):
+        battle_text.encode(orig, {**cmd, "en": "Fight!"})       # 6 tiles > 4
+    with pytest.raises(ValueError):
+        battle_text.encode(orig, {**cmd, "en": "A{nl}B{nl}C"})  # 3 rows > 2
+
+
+@pytest.mark.skipif(not ORIG.exists(), reason="no ROM")
 def test_battle_lz_roundtrip_and_font():
     import blz
     import font_bg3
