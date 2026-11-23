@@ -11,21 +11,21 @@
    "addr": "0089",
    "size": 156,
    "jp": "「うっ{wait}・{wait}・{wait}・{wait}・{wait}！！{nl} こしをヒネって 動けないんで{nl} こんなところに おいてけぼりさ。{page} 鉱山村の仲間は みんな{nl} グルド城に 行ったというのに。",
-   "en": ""
+   "en": "\"Ugh{wait}.{wait}.{wait}.{wait}.{wait}!! I twisted my back{nl} and can't move, so they left me behind{nl} here.{page} All my mates from the mining village{nl} went to Guld Castle."
   },
   {
    "id": "r244_012B",
    "addr": "012B",
    "size": 134,
    "jp": "「ちょうぼをつけるしごと ばかり{nl} してたからな～。{page} からだが なまってたかな？{page}{FB00}「帰ったら か－ちゃんに{nl} 何て 言おう・・・。",
-   "en": ""
+   "en": "\"All I did was keep the books.{page} I guess I got soft?{page}{FB00}\"What'll I tell the missus when I get{nl} home..."
   },
   {
    "id": "r244_01C1",
    "addr": "01C1",
    "size": 100,
    "jp": "シルヴェル兵{nl}「いてててて・・・{page} ケガより あの魔法司に{nl} 押えつけられた ところが{nl} いたいぞ。",
-   "en": ""
+   "en": "Silvel Soldier{nl}\"Ow ow ow...{page} Where that mage held me down hurts{nl} more than my wound."
   },
   {
    "id": "r244_0235",

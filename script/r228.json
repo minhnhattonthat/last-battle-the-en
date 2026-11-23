@@ -11,35 +11,35 @@
    "addr": "0051",
    "size": 26,
    "jp": "「オレは グルド騎士だぞ！",
-   "en": ""
+   "en": "\"I'm a knight of Guld!"
   },
   {
    "id": "r228_0073",
    "addr": "0073",
    "size": 44,
    "jp": "「もう後ろがないぞ{nl} 剣をすてて 降伏しろ！",
-   "en": ""
+   "en": "\"There's nowhere left to run. Drop your{nl} sword and surrender!"
   },
   {
    "id": "r228_00A7",
    "addr": "00A7",
    "size": 50,
    "jp": "「どうしてなんだ－{nl} 内部の者の うらぎりか－！！",
-   "en": ""
+   "en": "\"How did this happen?! Treachery from{nl} inside?!!"
   },
   {
    "id": "r228_00DB",
    "addr": "00DB",
    "size": 48,
    "jp": "「おまえたち{nl} どこから 城塞に入ったんだ－！？",
-   "en": ""
+   "en": "\"You lot, how did you get into the{nl} fortress?!"
   },
   {
    "id": "r228_0113",
    "addr": "0113",
    "size": 58,
    "jp": "「気をつけろ！{nl} となりの部屋へ{nl} 何人か 走りこんだぞ！",
-   "en": ""
+   "en": "\"Careful! Some of them ran into the{nl} next room!"
   }
  ]
 }

@@ -11,28 +11,28 @@
    "addr": "0055",
    "size": 12,
    "jp": "「ひえ～～～",
-   "en": ""
+   "en": "\"Eeeek~~~"
   },
   {
    "id": "r232_0063",
    "addr": "0063",
    "size": 18,
    "jp": "「きゃ～～～っ！！",
-   "en": ""
+   "en": "\"Kyaaaah!!"
   },
   {
    "id": "r232_007D",
    "addr": "007D",
    "size": 72,
    "jp": "「わたしたちは{nl} ただの 食事の係の者です！{page} 武器なんか持ってません。",
-   "en": ""
+   "en": "\"We're just the kitchen staff!{page} We don't have any weapons."
   },
   {
    "id": "r232_00C7",
    "addr": "00C7",
    "size": 68,
    "jp": "「せっかく{nl} ここまで 逃げてきたんです。{nl} 見逃してくださいよう！",
-   "en": ""
+   "en": "\"We got all the way here running away.{nl} Please let us go!"
   }
  ]
 }

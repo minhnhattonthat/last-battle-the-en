@@ -11,42 +11,42 @@
    "addr": "00A2",
    "size": 54,
    "jp": "「さすがに 戦闘の連続で{nl} ちょいと つかれた・・・。",
-   "en": ""
+   "en": "\"All this nonstop fighting's worn me out{nl} a bit..."
   },
   {
    "id": "r230_00E0",
    "addr": "00E0",
    "size": 48,
    "jp": "「はやく 城門の扉を開く{nl} レバ－を 探すんだ！",
-   "en": ""
+   "en": "\"Hurry and find the lever that opens{nl} the castle gate!"
   },
   {
    "id": "r230_0118",
    "addr": "0118",
    "size": 78,
    "jp": "「戦いだ 戦いだ・・・・{nl} ・・ヤ－ク族の血が・・・・{nl} ハァ ハァ ハァ！！",
-   "en": ""
+   "en": "\"Battle, battle.... ..the Yaak blood.... huff,{nl} huff, huff!!"
   },
   {
    "id": "r230_016E",
    "addr": "016E",
    "size": 80,
    "jp": "「なんで こんな{nl} ひろい家なんか 建てるんだ！{nl} {wait}{wait}{wait}{wait}つかれるぜ・・・・。",
-   "en": ""
+   "en": "\"Why build such a huge house?!{nl} {wait}{wait}{wait}{wait}It wears me out...."
   },
   {
    "id": "r230_01C8",
    "addr": "01C8",
    "size": 32,
    "jp": "「油断したな{nl} シルヴェル！！{page2}",
-   "en": ""
+   "en": "\"You let your guard down, Silvel!!{page2}"
   },
   {
    "id": "r230_020D",
    "addr": "020D",
    "size": 26,
    "jp": "「うお－－－－－－っ！！{page2}",
-   "en": ""
+   "en": "\"Wooooooooh!!{page2}"
   }
  ]
 }

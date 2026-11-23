@@ -11,63 +11,63 @@
    "addr": "005C",
    "size": 18,
    "jp": "「うおりゃ～～！！",
-   "en": ""
+   "en": "\"Hrrraaah~~!!"
   },
   {
    "id": "r222_0076",
    "addr": "0076",
    "size": 62,
    "jp": "「うははははっ！{nl} このかれいな 剣さばき{nl} うけてみよっ！！",
-   "en": ""
+   "en": "\"Wahahahaha! Taste my elegant{nl} swordplay!!"
   },
   {
    "id": "r222_00B6",
    "addr": "00B6",
    "size": 72,
    "jp": "「それ それ それっ！{nl} くやしかったら{nl} あんたも 上に登ってこいよ！",
-   "en": ""
+   "en": "\"Take that, and that, and that! If{nl} you're sore about it, climb up here too!"
   },
   {
    "id": "r222_0106",
    "addr": "0106",
    "size": 68,
    "jp": "「ここは グルドの守りのかなめだ{nl} シルヴェルなんかにこえさせるか！",
-   "en": ""
+   "en": "\"This is the keystone of Guld's defense.{nl} No Silvel lot gets past!"
   },
   {
    "id": "r222_014C",
    "addr": "014C",
    "size": 94,
    "jp": "「うお～～～！{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}  てや～～～{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}   だ～～～っ{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}",
-   "en": ""
+   "en": "\"Wooo~~~!{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} Hyaaa~~~{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} Daaah~~~{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}"
   },
   {
    "id": "r222_01B2",
    "addr": "01B2",
    "size": 70,
    "jp": "「きっさま－－－っ！{nl} 高いとこから ひきょうだぞ！{nl} 降りてこい！！",
-   "en": ""
+   "en": "\"Yooou! Fighting from up high is{nl} cowardly! Get down here!!"
   },
   {
    "id": "r222_01FA",
    "addr": "01FA",
    "size": 26,
    "jp": "「テ－ブルから降りてこい！",
-   "en": ""
+   "en": "\"Get down off the table!"
   },
   {
    "id": "r222_021C",
    "addr": "021C",
    "size": 42,
    "jp": "「やっぱり この城塞は{nl} 迷路みたいだぜ！",
-   "en": ""
+   "en": "\"This fortress really is like a maze!"
   },
   {
    "id": "r222_0248",
    "addr": "0248",
    "size": 78,
    "jp": "「ラバン将軍とかいう つわものが{nl} どこかに いるって話だ。{page} 油断するなよ！",
-   "en": ""
+   "en": "\"They say some tough guy called{nl} General Laban is around somewhere.{page} Stay sharp!"
   }
  ]
 }

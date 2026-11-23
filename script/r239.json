@@ -11,91 +11,91 @@
    "addr": "0063",
    "size": 114,
    "jp": "ロ－グ{nl}「あの奥に ラバン将軍が{nl} いるらしいぜ。{page}「もったいね－が このてがら{nl} あんたたちに ゆずってやるぜ！",
-   "en": ""
+   "en": "Rogue{nl}\"They say General Laban's back there.{page}\"It's a shame, but I'll let you have this{nl} honor!"
   },
   {
    "id": "r239_00D7",
    "addr": "00D7",
    "size": 78,
    "jp": "ロ－グ{nl}「え－い！{page} この かんじんな時に{nl} ヘ－グのアニキは どこなんだ～！",
-   "en": ""
+   "en": "Rogue{nl}\"Argh!{page} At a time like this, where's my brother{nl} Heeg~!"
   },
   {
    "id": "r239_012D",
    "addr": "012D",
    "size": 60,
    "jp": "スレ－ク{nl}「オレ達のことは いいから{nl} はやく さきに進め！",
-   "en": ""
+   "en": "Sleek{nl}\"Never mind us. Hurry on ahead!"
   },
   {
    "id": "r239_0171",
    "addr": "0171",
    "size": 70,
    "jp": "グルド兵{nl}「ふん おまえたちになんかに{nl} ラバン将軍が 倒せるものか！",
-   "en": ""
+   "en": "Guld Soldier{nl}\"Hmph, as if you lot could beat General{nl} Laban!"
   },
   {
    "id": "r239_01BF",
    "addr": "01BF",
    "size": 38,
    "jp": "「ヴェム{wait}{wait} スト－ル{wait}{wait} ダ－ド！！",
-   "en": ""
+   "en": "\"Vem...{wait}{wait} Stor...{wait}{wait} Dod!!"
   },
   {
    "id": "r239_01E9",
    "addr": "01E9",
    "size": 56,
    "jp": "{page2}{FB00}「ちかよるんじゃない{nl} 魔法のとばっちりが いくぞ！",
-   "en": ""
+   "en": "{page2}{FB00}\"Stay back! You'll get caught in the{nl} magic!"
   },
   {
    "id": "r239_022B",
    "addr": "022B",
    "size": 38,
    "jp": "「エット{wait}{wait} トヴォ－{wait}{wait} トレ－！！",
-   "en": ""
+   "en": "\"Ett...{wait}{wait} tva...{wait}{wait} tre!!"
   },
   {
    "id": "r239_025B",
    "addr": "025B",
    "size": 120,
    "jp": "「この魔法使いは{nl} 私が 相手をします！{page}「早く 城塞の扉を{nl} 開いてください！！{page}「ヴェム{wait}{wait} スト－ル{wait}{wait}ダ－ド！！",
-   "en": ""
+   "en": "\"I'll deal with this mage!{page}\"Hurry and open the fortress door!!{page}\"Vem...{wait}{wait} Stor...{wait}{wait}Dod!!"
   },
   {
    "id": "r239_02DD",
    "addr": "02DD",
    "size": 46,
    "jp": " ヴァテン{wait}{nl} ブレックフェ－ル{wait}{nl} レ－カ！",
-   "en": ""
+   "en": "Vatten...{wait}{nl}Bleckfel...{wait}{nl}Reka!"
   },
   {
    "id": "r239_031B",
    "addr": "031B",
    "size": 38,
    "jp": "「エット{wait}{wait} トヴォ－{wait}{wait} トレ－！！",
-   "en": ""
+   "en": "\"Ett...{wait}{wait} tva...{wait}{wait} tre!!"
   },
   {
    "id": "r239_0353",
    "addr": "0353",
    "size": 36,
    "jp": "「ヴェム{wait}{wait} スト－ル{wait}{wait}ダ－ド！！",
-   "en": ""
+   "en": "\"Vem...{wait}{wait} Stor...{wait}{wait}Dod!!"
   },
   {
    "id": "r239_0381",
    "addr": "0381",
    "size": 46,
    "jp": " ヴァテン{wait}{nl} ブレックフェ－ル{wait}{nl} レ－カ！",
-   "en": ""
+   "en": "Vatten...{wait}{nl}Bleckfel...{wait}{nl}Reka!"
   },
   {
    "id": "r239_03B9",
    "addr": "03B9",
    "size": 70,
    "jp": "「エット{wait}{wait} トヴォ－{wait}{wait} トレ－！！{C02F}{page2}{F9FF} しまった～ 不発だ～！！",
-   "en": ""
+   "en": "\"Ett...{wait}{wait} tva...{wait}{wait} tre!!{C02F}{page2}{F9FF} Oh no~, it fizzled~!!"
   }
  ]
 }

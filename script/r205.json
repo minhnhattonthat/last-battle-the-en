@@ -109,21 +109,21 @@
    "addr": "060E",
    "size": 76,
    "jp": "「やあ 旅の人 元気かい？{nl} そうか そりゃあよかった！{nl} はっはっは！！{page}",
-   "en": ""
+   "en": "\"Hey, traveler, doing well? Yeah? Glad{nl} to hear it! Hahaha!!{page}"
   },
   {
    "id": "r205_065E",
    "addr": "065E",
    "size": 96,
    "jp": "「は－っはっはっは！！{nl} いや～ よっぱらった～！{page}「よう にいちゃん{nl} けいきは どうだい？{page}",
-   "en": ""
+   "en": "\"Hahahahaha!! Whoo~, I'm drunk~!{page}\"Hey, kid, how's business?{page}"
   },
   {
    "id": "r205_06BE",
    "addr": "06BE",
    "size": 202,
    "jp": "「そうだ！{nl} いいこと 教えてやろう！{page}「北の海に氷の島があるのさ。{nl} そこの洞窟に{nl} ふしぎな場所があるんだ。{page}「そこへ行けば 武器と引きかえに{nl} すごい魔法の剣をくれるんだぜ。{nl} 一度 行ってみな。",
-   "en": ""
+   "en": "\"I know! I'll tell you something good!{page}\"There's an island of ice in the northern{nl} sea. There's a strange place in its cave.{page}\"Go there and they'll give you an{nl} amazing magic sword in exchange for a{nl} weapon. Go try it sometime."
   }
  ]
 }

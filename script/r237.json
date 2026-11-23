@@ -11,21 +11,21 @@
    "addr": "0057",
    "size": 48,
    "jp": "「へへへへっ！{nl} 気がついてないと思ったかい？{page2}",
-   "en": ""
+   "en": "\"Heh heh heh! Thought I hadn't noticed?{page2}"
   },
   {
    "id": "r237_00A1",
    "addr": "00A1",
    "size": 30,
    "jp": "「素通りとは つれないね～。{page2}",
-   "en": ""
+   "en": "\"Walking right past? That's cold~.{page2}"
   },
   {
    "id": "r237_00D9",
    "addr": "00D9",
    "size": 48,
    "jp": "「へへへへっ！{nl} 気がついてないと思ったかい？{page2}",
-   "en": ""
+   "en": "\"Heh heh heh! Thought I hadn't noticed?{page2}"
   }
  ]
 }

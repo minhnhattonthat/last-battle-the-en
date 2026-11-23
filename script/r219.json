@@ -11,28 +11,28 @@
    "addr": "004A",
    "size": 146,
    "jp": "スヴァルト{nl}「おう！ きみたちか。{nl} わたしも奥へ 行きたいんだが。{page} ほっておくと この将軍{nl} 敵の将軍と さしで勝負しに{nl} いきかねないんだ。",
-   "en": ""
+   "en": "Svart{nl}\"Oh! It's you. I'd like to go further in{nl} too, but...{page} leave this general alone and he's liable{nl} to go fight the enemy general one on{nl} one."
   },
   {
    "id": "r219_00DE",
    "addr": "00DE",
    "size": 126,
    "jp": "スヴァルト{nl}「ユ－リ殿は わたしがここで{nl} おさえて おくから・・・{page}「いや 守っているから{nl} きみたちは さきへ進んでくれ！",
-   "en": ""
+   "en": "Svart{nl}\"I'll hold Yuri-dono back here...{page}\"I mean, guard him, so you go on ahead!"
   },
   {
    "id": "r219_0164",
    "addr": "0164",
    "size": 94,
    "jp": "ユ－リ{nl}「私は 戦いの指揮官ではあるが{nl} 一人の戦士でもある。{page}「たのむ！{nl} いかせてくれ－。",
-   "en": ""
+   "en": "Yuri{nl}\"I may be the commander of this battle,{nl} but I'm a warrior too.{page}\"Please! Let me go!"
   },
   {
    "id": "r219_01CA",
    "addr": "01CA",
    "size": 140,
    "jp": "「はやく 城門の扉を開く{nl} レバ－を 探すんだ！{page}「門を開き 外で戦ってる{nl} 仲間が中へ なだれこめば{nl} この城塞は 落ちる！{page}「いそげ！！",
-   "en": ""
+   "en": "\"Hurry and find the lever that opens{nl} the castle gate!{page}\"Open the gate so our friends fighting{nl} outside can pour in, and this fortress{nl} will fall!{page}\"Hurry!!"
   }
  ]
 }

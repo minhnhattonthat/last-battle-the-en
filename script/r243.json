@@ -11,14 +11,14 @@
    "addr": "0061",
    "size": 84,
    "jp": "「ここから 奥へは{nl} 入ってはいけません。{page}「ケガの重い 人たちが{nl} 休んでいます。",
-   "en": ""
+   "en": "\"You mustn't go further in from here.{page}\"The badly wounded are resting."
   },
   {
    "id": "r243_00B7",
    "addr": "00B7",
    "size": 118,
    "jp": "「城塞の門をあけるレバ－には{nl} 開いたままの 位置で{nl} くさびが打ちこまれている。{page} クルトの 力では動きそうもない。",
-   "en": ""
+   "en": "\"A wedge is driven into the lever that{nl} opens the fortress gate, holding it{nl} open.{page} It doesn't look like Kurt's strength could{nl} move it."
   }
  ]
 }
