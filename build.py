@@ -104,6 +104,7 @@ def build(out=OUT, recompress=False, orig_path=ORIG_PATH, script_dir=insert.SCRI
     if asm:  # English lowercase in the 8x8 BG3 font (tools/font_bg3.py); the identity build leaves it alone
         b = region.blocks[font_bg3.BLOCK]
         b.data = font_bg3.patch(b.data)
+        font_bg3.battle_patch(orig, w)
     region.pack(w.rom, w.put, recompress=recompress, free=blocks.FREE + ([blocks.EXPANSION] if asm else []))
     if asm:
         apply_asm(w)

@@ -189,7 +189,9 @@ def fit(enc, size, ret, alloc, writer, eid, space=None):
 
 
 NAMES_AREA = 0x3E0000     # $FC:8000: ASCII -> BG3 tile table, name pointers, English names (asm/vwf.asm nm_*)
-NAME_KIND = {"items": 1, "spells": 2}   # kind byte of the escape in a record's name field: kind, n (1-255)
+NAME_KIND = {"items": 1, "spells": 2, "enemies": 3, "tactics": 4}  # escape in a record's name field: kind, n (1-255)
+NAME_KINDS_MAX = 8        # pointer tables are sized for this many kinds (fixed addresses in asm/vwf.asm)
+BT_W = 8                  # battle name windows: 8 tiles, two rows (29:B2B6; the top row is the dakuten row)
 BG3_MAP_OFF = 0x22EAB     # byte -> BG3 tile word map of 01:FEAA (bytes $2C+)
 
 
@@ -224,26 +226,68 @@ def bg3_table(orig):
     return struct.pack("<128H", *out)
 
 
+RANK_MARK = "\x01"        # in a battle form: the record's rank capital goes here (asm/vwf.asm bt_tile)
+
+
+def battle_rows(text, w=BT_W):
+    """(top, bottom) rows of a battle name window, each w chars: a name that fits sits centred on the bottom row,
+    a longer one is split at a space (or after a marker's `[id]`) into two centred rows; with no such split it is
+    cut at w (battle_fits() says whether it fits)."""
+    def centre(s):
+        return (" " * ((w - len(s)) // 2) + s).ljust(w)
+
+    if len(text) <= w:
+        return " " * w, centre(text)
+    if text.startswith("[") and "]" in text:  # marker: the id on top
+        i = text.index("]")
+        return centre(text[1:i][:w]), centre(text[i + 1:].strip()[:w])
+    best = None
+    for i, c in enumerate(text):
+        if c == " " and i <= w and len(text) - i - 1 <= w:
+            if best is None or max(i, len(text) - i - 1) < max(best, len(text) - best - 1):
+                best = i
+    if best is None:
+        return text[:w], text[w:2 * w].ljust(w)
+    return centre(text[:best]), centre(text[best + 1:])
+
+
+def battle_fits(text, w=BT_W):
+    top, bottom = battle_rows(text, w)
+    return (top + bottom).replace(" ", "") == text.replace(" ", "")
+
+
 class NameTable:
-    """English byte names (4 MB build): escape bytes for the record, ASCII in NAMES_AREA."""
+    """English byte names (4 MB build): escape bytes for the record, ASCII in NAMES_AREA.
+    Layout ($FC:8000): NM_BG3 (128 words ASCII -> BG3 tile), NM_PTRS (256 words per kind, NAME_KINDS_MAX kinds),
+    BT_PTRS (the same, to each name's battle form: rows top + bottom without rank, then top + bottom of
+    name + " " + RANK_MARK, BT_W bytes each), then the data."""
 
     def __init__(self, orig):
         self.orig = orig
         self.ptrs = {}
+        self.bt = {}
         self.data = bytearray(b"\0")  # offset 0 = the empty name every unused pointer gets
+        self.data += b" " * (4 * BT_W)  # offset 1 = the blank battle form
 
     def add(self, kind, n, text, eid):
         if not text.isascii() or any(not 0x20 <= ord(c) < 0x7F for c in text):
             raise ValueError(f"{eid}: byte names take printable ASCII only")
         self.ptrs[(kind - 1) * 256 + n] = len(self.data)
         self.data += text.encode("ascii") + b"\0"
+        self.bt[(kind - 1) * 256 + n] = len(self.data)
+        for t in (text, text + " " + RANK_MARK):
+            self.data += "".join(battle_rows(t)).encode("ascii")
         return bytes([kind, n])
 
     def write(self, writer):
-        base = 0x8000 + 0x100 + 2 * 256 * len(NAME_KIND)
+        assert len(NAME_KIND) <= NAME_KINDS_MAX
+        n = 256 * NAME_KINDS_MAX
+        base = 0x8000 + 0x100 + 2 * 2 * n
         ptrs = bytearray()
-        for i in range(256 * len(NAME_KIND)):
+        for i in range(n):
             ptrs += (base + self.ptrs.get(i, 0)).to_bytes(2, "little")
+        for i in range(n):
+            ptrs += (base + self.bt.get(i, 1)).to_bytes(2, "little")
         blob = bg3_table(self.orig) + ptrs + self.data
         assert len(blob) <= 0x8000, "name table past bank $FC"
         writer.put(NAMES_AREA, blob, "names:en")
@@ -293,6 +337,41 @@ def name_entry(writer):
     writer.put(NE_BYTES_OFF, bytes(cells), "ne:grid bytes")
     for off, d in NE_ROW_COUNT:
         writer.put(off, bytes([len(NE_GRID) + d]), "ne:row count")
+
+
+# Battle names (docs/re/battle.md): 29:B2B6 maps a name byte b to a (top, bottom) BG3 tile pair, b < $30 from 4-byte
+# entries at BT_LO ($28:8C38 + 4 * (b - $28)), else 2 tile bytes at BT_HI ($28:8C58 + 2 * (b - $30), palette $2000).
+# English party names are ASCII bytes (name entry): lowercase and NE_PUNCT get the English BG3 tiles.
+BT_LO, BT_HI = 0x140C38, 0x140C58
+BT_SPELLS, BT_SPELL_N = 0x19D3F1, 22   # default battle spell names, FF-centred 8-byte slots ($30:ACD5)
+
+
+def battle_bytes(writer):
+    import font_bg3
+    for b in list(range(0x61, 0x7B)) + sorted(NE_PUNCT):
+        c = chr(b) if b >= 0x61 else NE_PUNCT[b]
+        t = 0x93 if c == " " else font_bg3.TILE[c]
+        if b < 0x30:
+            writer.put(BT_LO + 4 * (b - 0x28), (0x2093).to_bytes(2, "little") + (0x2000 | t).to_bytes(2, "little"),
+                       f"bt:byte {c!r}")
+        else:
+            writer.put(BT_HI + 2 * (b - 0x30), bytes([0x93, t]), f"bt:byte {c!r}")  # top blank, bottom tile
+
+
+def battle_spells(orig, writer, bc, spells):
+    """Default battle spell names: a slot whose name is an English spell becomes that spell's escape."""
+    if not any(e["en"] for e in spells):
+        return
+    by_name = {}
+    for n, e in enumerate(spells, 1):
+        by_name.setdefault(e["jp"], n)
+    for i in range(BT_SPELL_N):
+        off = BT_SPELLS + 8 * i
+        jp = bc.decode(orig[off:off + 8].strip(b"\xff"))
+        n = by_name.get(jp)
+        assert n, f"battle spell slot {i} ({jp}) has no spells.json entry"
+        if spells[n - 1]["en"]:
+            writer.put(off, bytes([NAME_KIND["spells"], n]).ljust(8, b"\0"), f"btspell:{i}")
 
 
 RANK_FIELD = 8
@@ -362,7 +441,7 @@ def apply(orig, region, writer, files, alloc=None):
                     raise ValueError(f"{e['id']}: English byte names need the 4 MB build")
                 assert n < 256, f"{name}: more than 255 names"
                 esc = names.add(NAME_KIND[name], n, e["en"], e["id"])
-                writer.put(int(e["file"], 16), esc.ljust(e["max"], b"\0"), f"text:{e['id']}")
+                writer.put(int(e.get("field", e["file"]), 16), esc.ljust(e["max"], b"\0"), f"text:{e['id']}")
                 continue
             enc = (bc if src["kind"] == "names" else EN if e["en"] else JP).encode(text_of(e))
             if src["kind"] == "names":
@@ -382,7 +461,9 @@ def apply(orig, region, writer, files, alloc=None):
     if names is not None:
         names.write(writer)
         name_entry(writer)
+        battle_bytes(writer)
         spells = files.get("spells", {"entries": []})["entries"]
+        battle_spells(orig, writer, bc, spells)
         if any(e["en"] for e in spells):
             for bi, off, n, rank in spell_refs(orig, region, bc, spells):
                 if not spells[n - 1]["en"]:

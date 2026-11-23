@@ -1,5 +1,6 @@
 # Skill gotchas (one line each: reference file it belongs in, then the fact)
 
+- graphics.md §Survey / platform-snes.md: a game can keep a second copy of its font in another compression format for one mode (here battle: its own LZ and load list), so patching the field font block changes nothing there; find it by the VRAM DMA source (`snes_dmalog.lua`) and the writers of that WRAM buffer, not by `decomp_src`-style LZ logs.
 - SKILL.md Step 0 / guard hook: in a fresh Orca worker session the plugin's guard did not block the canary; adding the `hooks` block with `python "$HOME/.claude/plugins/marketplaces/..."` worked (a `~` path inside quotes is not expanded and fails).
 - emulator-qa.md: `emu.py --state-in` replays without the route/mash that made the state; a probe expecting the same events must pass the same `--mash` too (a WRAM dump without it showed the map never loaded).
 - platform-snes.md / pipeline.md §Recon: `dis65816.py` is linear only; a flow-following walk that lists every access to the script pointer along all paths (this repo's `tools/re_flow.py`) gave each control code's argument layout, including byte-sized args and indirect sub-tables, in one pass. Candidate for the skill.

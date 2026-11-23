@@ -1,0 +1,846 @@
+{
+ "source": {
+  "kind": "names",
+  "record": 40,
+  "pad": "FF"
+ },
+ "entries": [
+  {
+   "id": "enemy_00",
+   "file": "152634",
+   "field": "152634",
+   "size": 7,
+   "max": 8,
+   "jp": "ブル－スライム",
+   "en": ""
+  },
+  {
+   "id": "enemy_01",
+   "file": "15265C",
+   "field": "15265C",
+   "size": 8,
+   "max": 8,
+   "jp": "グリ－ンスライム",
+   "en": ""
+  },
+  {
+   "id": "enemy_02",
+   "file": "152684",
+   "field": "152684",
+   "size": 5,
+   "max": 8,
+   "jp": "エルダリア",
+   "en": ""
+  },
+  {
+   "id": "enemy_03",
+   "file": "1526AC",
+   "field": "1526AC",
+   "size": 6,
+   "max": 8,
+   "jp": "ヘルハウンド",
+   "en": ""
+  },
+  {
+   "id": "enemy_04",
+   "file": "1526D4",
+   "field": "1526D4",
+   "size": 4,
+   "max": 8,
+   "jp": "グルド ",
+   "en": ""
+  },
+  {
+   "id": "enemy_05",
+   "file": "1526FC",
+   "field": "1526FC",
+   "size": 6,
+   "max": 8,
+   "jp": "ライトフット",
+   "en": ""
+  },
+  {
+   "id": "enemy_06",
+   "file": "152724",
+   "field": "152724",
+   "size": 7,
+   "max": 8,
+   "jp": "ブラックヘッド",
+   "en": ""
+  },
+  {
+   "id": "enemy_07",
+   "file": "15274C",
+   "field": "15274C",
+   "size": 8,
+   "max": 8,
+   "jp": "パ－プルスライム",
+   "en": ""
+  },
+  {
+   "id": "enemy_08",
+   "file": "152774",
+   "field": "152774",
+   "size": 6,
+   "max": 8,
+   "jp": "マンドラゴラ",
+   "en": ""
+  },
+  {
+   "id": "enemy_09",
+   "file": "15279C",
+   "field": "15279C",
+   "size": 5,
+   "max": 8,
+   "jp": "ラフレシア",
+   "en": ""
+  },
+  {
+   "id": "enemy_10",
+   "file": "1527C4",
+   "field": "1527C4",
+   "size": 5,
+   "max": 8,
+   "jp": "ファイタ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_11",
+   "file": "1527EC",
+   "field": "1527EC",
+   "size": 6,
+   "max": 8,
+   "jp": "ストライカ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_12",
+   "file": "152814",
+   "field": "152814",
+   "size": 5,
+   "max": 8,
+   "jp": "ソルジャ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_13",
+   "file": "15283C",
+   "field": "15283C",
+   "size": 3,
+   "max": 8,
+   "jp": "タロス",
+   "en": ""
+  },
+  {
+   "id": "enemy_14",
+   "file": "152864",
+   "field": "152864",
+   "size": 7,
+   "max": 8,
+   "jp": "アイスビ－スト",
+   "en": ""
+  },
+  {
+   "id": "enemy_15",
+   "file": "15288C",
+   "field": "15288C",
+   "size": 7,
+   "max": 8,
+   "jp": "フレイムドッグ",
+   "en": ""
+  },
+  {
+   "id": "enemy_16",
+   "file": "1528B4",
+   "field": "1528B4",
+   "size": 3,
+   "max": 8,
+   "jp": "ナイト",
+   "en": ""
+  },
+  {
+   "id": "enemy_17",
+   "file": "1528DC",
+   "field": "1528DC",
+   "size": 5,
+   "max": 8,
+   "jp": "トル－パ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_18",
+   "file": "152904",
+   "field": "152904",
+   "size": 7,
+   "max": 8,
+   "jp": "ダ－クライダ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_19",
+   "file": "15292C",
+   "field": "15292C",
+   "size": 6,
+   "max": 8,
+   "jp": "ガ－ディアン",
+   "en": ""
+  },
+  {
+   "id": "enemy_20",
+   "file": "152954",
+   "field": "152954",
+   "size": 3,
+   "max": 8,
+   "jp": "グッベ",
+   "en": ""
+  },
+  {
+   "id": "enemy_21",
+   "file": "15297C",
+   "field": "15297C",
+   "size": 8,
+   "max": 8,
+   "jp": "ストロングシェル",
+   "en": ""
+  },
+  {
+   "id": "enemy_22",
+   "file": "1529A4",
+   "field": "1529A4",
+   "size": 4,
+   "max": 8,
+   "jp": "ランサ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_23",
+   "file": "1529CC",
+   "field": "1529CC",
+   "size": 6,
+   "max": 8,
+   "jp": "ハイランサ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_24",
+   "file": "1529F4",
+   "field": "1529F4",
+   "size": 6,
+   "max": 8,
+   "jp": "ヘルランサ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_25",
+   "file": "152A1C",
+   "field": "152A1C",
+   "size": 7,
+   "max": 8,
+   "jp": "エレキニ－ドル",
+   "en": ""
+  },
+  {
+   "id": "enemy_26",
+   "file": "152A44",
+   "field": "152A44",
+   "size": 6,
+   "max": 8,
+   "jp": "ヘルダンサ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_27",
+   "file": "152A6C",
+   "field": "152A6C",
+   "size": 4,
+   "max": 8,
+   "jp": "シンシア",
+   "en": ""
+  },
+  {
+   "id": "enemy_28",
+   "file": "152A94",
+   "field": "152A94",
+   "size": 3,
+   "max": 8,
+   "jp": "ラバン",
+   "en": ""
+  },
+  {
+   "id": "enemy_29",
+   "file": "152ABC",
+   "field": "152ABC",
+   "size": 8,
+   "max": 8,
+   "jp": "ゴ－ルドイ－タ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_30",
+   "file": "152AE4",
+   "field": "152AE4",
+   "size": 8,
+   "max": 8,
+   "jp": "シャド－ドラゴン",
+   "en": ""
+  },
+  {
+   "id": "enemy_31",
+   "file": "152B0C",
+   "field": "152B0C",
+   "size": 7,
+   "max": 8,
+   "jp": "ヒ－トドレイク",
+   "en": ""
+  },
+  {
+   "id": "enemy_32",
+   "file": "152B34",
+   "field": "152B34",
+   "size": 6,
+   "max": 8,
+   "jp": "リンドブルム",
+   "en": ""
+  },
+  {
+   "id": "enemy_33",
+   "file": "152B5C",
+   "field": "152B5C",
+   "size": 5,
+   "max": 8,
+   "jp": "ヴィ－ヴル",
+   "en": ""
+  },
+  {
+   "id": "enemy_34",
+   "file": "152B84",
+   "field": "152B84",
+   "size": 4,
+   "max": 8,
+   "jp": "エキドナ",
+   "en": ""
+  },
+  {
+   "id": "enemy_35",
+   "file": "152BAC",
+   "field": "152BAC",
+   "size": 8,
+   "max": 8,
+   "jp": "ブラディ－マリ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_36",
+   "file": "152BD4",
+   "field": "152BD4",
+   "size": 6,
+   "max": 8,
+   "jp": "バンディット",
+   "en": ""
+  },
+  {
+   "id": "enemy_37",
+   "file": "152BFC",
+   "field": "152BFC",
+   "size": 8,
+   "max": 8,
+   "jp": "サンダ－ドラゴン",
+   "en": ""
+  },
+  {
+   "id": "enemy_38",
+   "file": "152C24",
+   "field": "152C24",
+   "size": 5,
+   "max": 8,
+   "jp": "ワイバ－ン",
+   "en": ""
+  },
+  {
+   "id": "enemy_39",
+   "file": "152C4C",
+   "field": "152C4C",
+   "size": 5,
+   "max": 8,
+   "jp": "スウォ－ム",
+   "en": ""
+  },
+  {
+   "id": "enemy_40",
+   "file": "152C74",
+   "field": "152C74",
+   "size": 3,
+   "max": 8,
+   "jp": "[2A][29] ",
+   "en": ""
+  },
+  {
+   "id": "enemy_41",
+   "file": "152C9C",
+   "field": "152C9C",
+   "size": 8,
+   "max": 8,
+   "jp": "スカイウォ－カ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_42",
+   "file": "152CC4",
+   "field": "152CC4",
+   "size": 8,
+   "max": 8,
+   "jp": "スカイソ－サラ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_43",
+   "file": "152CEC",
+   "field": "152CEC",
+   "size": 5,
+   "max": 8,
+   "jp": "ヴァジェト",
+   "en": ""
+  },
+  {
+   "id": "enemy_44",
+   "file": "152D14",
+   "field": "152D14",
+   "size": 4,
+   "max": 8,
+   "jp": "ケッテリ",
+   "en": ""
+  },
+  {
+   "id": "enemy_45",
+   "file": "152D3C",
+   "field": "152D3C",
+   "size": 4,
+   "max": 8,
+   "jp": "ケッテリ",
+   "en": ""
+  },
+  {
+   "id": "enemy_46",
+   "file": "152D64",
+   "field": "152D64",
+   "size": 5,
+   "max": 8,
+   "jp": "キラ－ビ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_47",
+   "file": "152D8C",
+   "field": "152D8C",
+   "size": 6,
+   "max": 8,
+   "jp": "インセクタ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_48",
+   "file": "152DB4",
+   "field": "152DB4",
+   "size": 3,
+   "max": 8,
+   "jp": "キメラ",
+   "en": ""
+  },
+  {
+   "id": "enemy_49",
+   "file": "152DDC",
+   "field": "152DDC",
+   "size": 3,
+   "max": 8,
+   "jp": "ガ－プ",
+   "en": ""
+  },
+  {
+   "id": "enemy_50",
+   "file": "152E04",
+   "field": "152E04",
+   "size": 4,
+   "max": 8,
+   "jp": "サハギン",
+   "en": ""
+  },
+  {
+   "id": "enemy_51",
+   "file": "152E2C",
+   "field": "152E2C",
+   "size": 5,
+   "max": 8,
+   "jp": "ソ－サラ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_52",
+   "file": "152E54",
+   "field": "152E54",
+   "size": 3,
+   "max": 8,
+   "jp": "ウィチ",
+   "en": ""
+  },
+  {
+   "id": "enemy_53",
+   "file": "152E7C",
+   "field": "152E7C",
+   "size": 5,
+   "max": 8,
+   "jp": "イルレ－ア",
+   "en": ""
+  },
+  {
+   "id": "enemy_54",
+   "file": "152EA4",
+   "field": "152EA4",
+   "size": 5,
+   "max": 8,
+   "jp": "オアンネス",
+   "en": ""
+  },
+  {
+   "id": "enemy_55",
+   "file": "152ECC",
+   "field": "152ECC",
+   "size": 8,
+   "max": 8,
+   "jp": "プラチナドラゴン",
+   "en": ""
+  },
+  {
+   "id": "enemy_56",
+   "file": "152EF4",
+   "field": "152EF4",
+   "size": 3,
+   "max": 8,
+   "jp": "オ－ガ",
+   "en": ""
+  },
+  {
+   "id": "enemy_57",
+   "file": "152F1C",
+   "field": "152F1C",
+   "size": 5,
+   "max": 8,
+   "jp": "イスカ－ル",
+   "en": ""
+  },
+  {
+   "id": "enemy_58",
+   "file": "152F44",
+   "field": "152F44",
+   "size": 5,
+   "max": 8,
+   "jp": "イスカ－ル",
+   "en": ""
+  },
+  {
+   "id": "enemy_59",
+   "file": "152F6C",
+   "field": "152F6C",
+   "size": 6,
+   "max": 8,
+   "jp": "オルムヘッド",
+   "en": ""
+  },
+  {
+   "id": "enemy_60",
+   "file": "152F94",
+   "field": "152F94",
+   "size": 3,
+   "max": 8,
+   "jp": "ワイト",
+   "en": ""
+  },
+  {
+   "id": "enemy_61",
+   "file": "152FBC",
+   "field": "152FBC",
+   "size": 5,
+   "max": 8,
+   "jp": "スペクタ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_62",
+   "file": "152FE4",
+   "field": "152FE4",
+   "size": 3,
+   "max": 8,
+   "jp": "レイス",
+   "en": ""
+  },
+  {
+   "id": "enemy_63",
+   "file": "15300C",
+   "field": "15300C",
+   "size": 4,
+   "max": 8,
+   "jp": "ゴブリン",
+   "en": ""
+  },
+  {
+   "id": "enemy_64",
+   "file": "153034",
+   "field": "153034",
+   "size": 4,
+   "max": 8,
+   "jp": "コボルト",
+   "en": ""
+  },
+  {
+   "id": "enemy_65",
+   "file": "15305C",
+   "field": "15305C",
+   "size": 3,
+   "max": 8,
+   "jp": "グ－ル",
+   "en": ""
+  },
+  {
+   "id": "enemy_66",
+   "file": "153084",
+   "field": "153084",
+   "size": 6,
+   "max": 8,
+   "jp": "マンティコア",
+   "en": ""
+  },
+  {
+   "id": "enemy_67",
+   "file": "1530AC",
+   "field": "1530AC",
+   "size": 4,
+   "max": 8,
+   "jp": "マ－マン",
+   "en": ""
+  },
+  {
+   "id": "enemy_68",
+   "file": "1530D4",
+   "field": "1530D4",
+   "size": 7,
+   "max": 8,
+   "jp": "ア－スドラゴン",
+   "en": ""
+  },
+  {
+   "id": "enemy_69",
+   "file": "1530FC",
+   "field": "1530FC",
+   "size": 3,
+   "max": 8,
+   "jp": "[28][29][2B]",
+   "en": ""
+  },
+  {
+   "id": "enemy_70",
+   "file": "153124",
+   "field": "153124",
+   "size": 4,
+   "max": 8,
+   "jp": "トロ－ル",
+   "en": ""
+  },
+  {
+   "id": "enemy_71",
+   "file": "15314C",
+   "field": "15314C",
+   "size": 7,
+   "max": 8,
+   "jp": "ポイズンバット",
+   "en": ""
+  },
+  {
+   "id": "enemy_72",
+   "file": "153174",
+   "field": "153174",
+   "size": 8,
+   "max": 8,
+   "jp": "ウィルオウィスプ",
+   "en": ""
+  },
+  {
+   "id": "enemy_73",
+   "file": "15319C",
+   "field": "15319C",
+   "size": 5,
+   "max": 8,
+   "jp": "ルサ－ルカ",
+   "en": ""
+  },
+  {
+   "id": "enemy_74",
+   "file": "1531C4",
+   "field": "1531C4",
+   "size": 5,
+   "max": 8,
+   "jp": "ドエルガル",
+   "en": ""
+  },
+  {
+   "id": "enemy_75",
+   "file": "1531EC",
+   "field": "1531EC",
+   "size": 5,
+   "max": 8,
+   "jp": "セイレ－ン",
+   "en": ""
+  },
+  {
+   "id": "enemy_76",
+   "file": "153214",
+   "field": "153214",
+   "size": 3,
+   "max": 8,
+   "jp": "ラミア",
+   "en": ""
+  },
+  {
+   "id": "enemy_77",
+   "file": "15323C",
+   "field": "15323C",
+   "size": 4,
+   "max": 8,
+   "jp": "スキュラ",
+   "en": ""
+  },
+  {
+   "id": "enemy_78",
+   "file": "153265",
+   "field": "153264",
+   "size": 6,
+   "max": 8,
+   "jp": "サンドワ－ム",
+   "en": ""
+  },
+  {
+   "id": "enemy_79",
+   "file": "15328C",
+   "field": "15328C",
+   "size": 6,
+   "max": 8,
+   "jp": "ナイトヘッド",
+   "en": ""
+  },
+  {
+   "id": "enemy_80",
+   "file": "1532B4",
+   "field": "1532B4",
+   "size": 8,
+   "max": 8,
+   "jp": "アイアンゴ－レム",
+   "en": ""
+  },
+  {
+   "id": "enemy_81",
+   "file": "1532DC",
+   "field": "1532DC",
+   "size": 3,
+   "max": 8,
+   "jp": "シ－フ",
+   "en": ""
+  },
+  {
+   "id": "enemy_82",
+   "file": "153304",
+   "field": "153304",
+   "size": 5,
+   "max": 8,
+   "jp": "パイレ－ツ",
+   "en": ""
+  },
+  {
+   "id": "enemy_83",
+   "file": "15332C",
+   "field": "15332C",
+   "size": 8,
+   "max": 8,
+   "jp": "バンパイヤバット",
+   "en": ""
+  },
+  {
+   "id": "enemy_84",
+   "file": "153354",
+   "field": "153354",
+   "size": 5,
+   "max": 8,
+   "jp": "ヘルバット",
+   "en": ""
+  },
+  {
+   "id": "enemy_85",
+   "file": "15337C",
+   "field": "15337C",
+   "size": 5,
+   "max": 8,
+   "jp": "グラビトン",
+   "en": ""
+  },
+  {
+   "id": "enemy_86",
+   "file": "1533A4",
+   "field": "1533A4",
+   "size": 8,
+   "max": 8,
+   "jp": "ブラックスフィア",
+   "en": ""
+  },
+  {
+   "id": "enemy_87",
+   "file": "1533CC",
+   "field": "1533CC",
+   "size": 7,
+   "max": 8,
+   "jp": "ハンマ－ヘッド",
+   "en": ""
+  },
+  {
+   "id": "enemy_88",
+   "file": "1533F4",
+   "field": "1533F4",
+   "size": 7,
+   "max": 8,
+   "jp": "ガムリンヘッド",
+   "en": ""
+  },
+  {
+   "id": "enemy_89",
+   "file": "15341C",
+   "field": "15341C",
+   "size": 6,
+   "max": 8,
+   "jp": "クラスヘッド",
+   "en": ""
+  },
+  {
+   "id": "enemy_90",
+   "file": "153444",
+   "field": "153444",
+   "size": 7,
+   "max": 8,
+   "jp": "デストロイヤ－",
+   "en": ""
+  },
+  {
+   "id": "enemy_91",
+   "file": "15346C",
+   "field": "15346C",
+   "size": 7,
+   "max": 8,
+   "jp": "スト－ンガ－ド",
+   "en": ""
+  },
+  {
+   "id": "enemy_92",
+   "file": "153494",
+   "field": "153494",
+   "size": 5,
+   "max": 8,
+   "jp": "グレンデル",
+   "en": ""
+  }
+ ]
+}

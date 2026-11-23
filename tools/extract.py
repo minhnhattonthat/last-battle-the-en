@@ -7,6 +7,7 @@ Sources
   bank04         uncompressed script in bank $04, walked from its pointer tables (B04_TABLES) and code immediates.
   credits        bank $02 staff roll, 24 pointers at 02:E215.
   items, spells  byte-encoded names in fixed 8-byte fields (ByteCodec).
+  enemies, tactics  the same, FF-padded (battle name windows, 29:B2B6).
 
 A string is a maximal run of walked instructions that are glyph words or no-argument controls (newline, page,
 wait, name inserts...), trimmed to start and end on text; it is split at every entry point and jump target, so no
@@ -52,6 +53,9 @@ CREDITS_TEXT = (0x16245, 0x16878)
 ITEM_LO, ITEM_HI, ITEM_STRIDE = 0x24AD1, 0x25201, 20
 SPELLS, SPELL_N, SPELL_STRIDE = 0x14E20F, 28, 9
 NAME_LEN = 8
+# Battle names (docs/re/battle.md): FF-padded 8-byte fields, FF = blank (also inside a name and to centre it).
+ENEMIES, ENEMY_N, ENEMY_STRIDE = 0x152634, 93, 40   # $2A:A632 + 40 * i (30:A915), name at record + 2
+TACTICS, TACTIC_N, TACTIC_STRIDE = 0x1FEF0, 8, 12    # new-game copy to $1C91 (03:F8E9), name = first 8 bytes
 
 
 def u16(d, i):
@@ -280,6 +284,21 @@ def name_entries(rom, bc, src, offsets):
     return out
 
 
+def padded_entries(rom, bc, src, offsets):
+    """FF-padded name fields: the string is the field without its leading and trailing FF ("field" = the field's
+    start, where the English escape goes)."""
+    out = []
+    for key, off in offsets:
+        raw = rom[off:off + NAME_LEN]
+        lead = len(raw) - len(raw.lstrip(b"\xff"))
+        body = raw.strip(b"\xff")
+        if not body:
+            continue
+        out.append({"id": f"{src}_{key}", "file": f"{off + lead:06X}", "field": f"{off:06X}", "size": len(body),
+                    "max": NAME_LEN, "jp": bc.decode(body), "en": ""})
+    return out
+
+
 def extract_all(rom):
     """{file name: {"source": ..., "entries": [...]}}"""
     files = {}
@@ -305,6 +324,12 @@ def extract_all(rom):
     spells = [(f"{i:02d}", SPELLS + SPELL_STRIDE * i) for i in range(SPELL_N)]
     files["spells"] = {"source": {"kind": "names", "record": SPELL_STRIDE},
                        "entries": name_entries(rom, bc, "spell", spells)}
+    enemies = [(f"{i:02d}", ENEMIES + ENEMY_STRIDE * i) for i in range(ENEMY_N)]
+    files["enemies"] = {"source": {"kind": "names", "record": ENEMY_STRIDE, "pad": "FF"},
+                        "entries": padded_entries(rom, bc, "enemy", enemies)}
+    tactics = [(f"{i}", TACTICS + TACTIC_STRIDE * i) for i in range(TACTIC_N)]
+    files["tactics"] = {"source": {"kind": "names", "record": TACTIC_STRIDE, "pad": "FF"},
+                        "entries": padded_entries(rom, bc, "tactic", tactics)}
     return files
 
 

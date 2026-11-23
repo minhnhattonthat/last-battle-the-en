@@ -3,10 +3,19 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 5. Engine spike and marker build in progress (VWF, far jumps, staff roll, item/spell name escapes,
-  BG3 menu strings, spell ranks and the English name-entry grid work; left: battle text (bank $30/$33), per-caller
-  BG3 name caps, the rest of the width gate, a full re-tour). Builds are 4 MB with `asm/vwf.asm`:
-  `build/marker.sfc` (`build.py --marker`) boots (smoke ok, 2026-11-23 session 5).
+  BG3 menu strings, spell ranks, the English name-entry grid, battle names and the battle font work; left: battle
+  messages (BG3 tile words in window scripts), per-caller BG3 name caps, the rest of the width gate, a full
+  re-tour). Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) and
+  `build/lastbattle_en.sfc` boot (smoke ok, 2026-11-23 session 6).
 - **Done:**
+  - **Phase 5, session 2026-11-23 (6):** battle names (`docs/re/battle.md`): enemies (93) and tactics (8) extracted
+    (`script/enemies.json`, `script/tactics.json`, FF-padded fields, `"field"` = where the escape goes); hook 29:B2B6
+    (`bt_name`) draws English escapes as two 8-tile rows (`insert.battle_rows`: names up to 16 chars, split at a
+    space); default battle spell slots `0x19D3F1` become spell escapes; ASCII party-name bytes in the battle byte
+    tables. The battle BG3 font is its own copy in a **battle LZ** (`tools/blz.py` decode/encode, re-encoded in
+    place with the English tiles by `font_bg3.battle_patch`). Marker build shows "enemy 07 / The qui" in the enemy
+    window (`work/qa/mbat3`). Survey of battle message text: `tools/re_battle_text.py` (264 runs). Tests:
+    `test_battle_rows`, `test_battle_name_table_and_bytes`, `test_battle_lz_roundtrip_and_font`.
   - **Phase 5, session 2026-11-23 (5b):** English name entry (`insert.name_entry`, `docs/re/vwf.md` §Name entry):
     15-row grid A-Z / a-z / digits / punctuation, ASCII name bytes in both byte maps, row count patched in 5 places;
     new scene `name_type` types "ABbc2" (`work/qa/ne2`); test `test_name_entry_grid`.
@@ -82,15 +91,21 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   1. **Finish phase 5** (done-when: marker ROM boots, every text box shows its id, non-text strings excluded, every
      box variant measured). Left:
-     - **1a. Battle text** (bank $29/$30/$33, its own byte interpreter, `docs/re/text.md` §BG3 strings last item):
-       battle party names (8-byte FF-padded slots at file `0x182C57`: クルト, メイ `0x182C5F`?, ボルグ `0x182C67`,
-       レジーナ `0x182C6F`; shown in the battle status box), default spell names `0x19D3F1` (22 slots, `$30:ACD5`),
-       battle message script `$33:D4A1` run by 29:A1EA (bytes < FD = chars via 30:F28C...). Find how 30:F28C turns a
-       byte into a tile (its own map?), extract these lists (new kind, byte names), escape or remap, mark. Needs a
-       scene that casts a spell in battle (the battle command menu: たたかう + 4 icons; the 3 probe routes in
-       `work/qa/bmag` did not cast). The battle command label たたかう has no text copy anywhere: graphics (phase 8).
+     - **1a. Battle messages** (`docs/re/battle.md` §Battle messages): BG3 tile words with palette bits in window
+       scripts run by 29:A1EA (`$33:D4A1` is one). `python -X utf8 tools/re_battle_text.py work/qa/battle_text.txt`
+       lists 264 candidate runs in banks $28-$33 (victory "を やっつけた！！" `0x140017`, mana/spell info screens bank
+       $2D `0x16EF44+`, battle equip/status labels bank $30 `0x186344+`). Walk the window-script ops, find how each
+       run is reached, add a `battle` kind (tile words keep their palette bits; marker = tile-count-preserving like
+       `bg3_marker_text`; English needs far jumps or relocation in that interpreter) and mark them. Tiles >= $100
+       are kanji / two-row pieces: decode them for the jp text. Still unverified in game: the spell-cast name window
+       (30:ACB0) and the rank form: add a scene that casts a spell (battle command menu: the 4 icons; the 3 probe
+       routes in `work/qa/bmag` did not cast). The 8-byte table at `0x182C57` (クルト, メイ, ボルグ, レジーナ) had no
+       reader in `battle_field`; find its user. Enemy names `enemy_40` / `enemy_69` use two-row kanji bytes: shoot
+       them in battle for the translator (warp pokes `@1DDF` pick the encounter).
      - **1b. Re-run the full marker tour** (113 + `name_type`) on the current marker build and list what is still
        Japanese (`work/qa/mt_sheets` is from before the BG3 strings).
+     - Name entry opens with rows `56789` / `: +` above the cursor row `ABCDE` (the view shows 2 rows before row 0,
+       as the kana grid did): consider reordering `insert.NE_GRID` so the first view starts on letters.
      - **BG3 caps for FA inserts**: names inserted into BG3 strings (FA0F/FA18/FA2B/FA2F/FA42) all reach 01:FEAA
        through the same handlers (FA2F -> FA8A -> FE09, return FE1E/FA8F), so a return-address cap table can't tell
        screens apart there; key on the FA op instead (VM pointer `$10` - 2) or let translators lay out rows for an
@@ -119,7 +134,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
   2. The 23 unreached runs (`"reached": false`): check at runtime with a ROM-read probe or textcoverage; menu
      labels and window texts are bank-04 BG3 tile words (file `0x20400-0x22300`) and tile rows `0x22CA7`:
      graphics text, not in `script/`; enemy names not shown in battle (confirm in the phase-8 tour).
-  3. Carried to phase 8: graphics tour (graphics.md "Tour half": VRAM dump per scene, classify every Japanese
+  3. Carried to phase 8: battle status party names (tiles in the second battle LZ stream, `docs/re/battle.md`), the
+     battle command label たたかう (now garbled by the lowercase tiles); graphics tour (graphics.md "Tour half": VRAM dump per scene, classify every Japanese
      element as font text or tiles; the scene list now reaches every screen it names); stress saves for full party,
      all items/spells and long names (`save.py` can write them once the record fields are mapped: record widths
      `03:FA3E`, items live in the character records, "クルト は アイテムを もっていません"); re-run

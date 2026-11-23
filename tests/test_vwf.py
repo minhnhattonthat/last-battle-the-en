@@ -83,6 +83,56 @@ def test_name_escape_and_table():
     assert max(ptr(i) for i in range(512)) < len(blob)
 
 
+def test_battle_rows():
+    """Battle name windows: 8 tiles x 2 rows (asm/vwf.asm bt_name)."""
+    assert insert.battle_rows("Kobold") == (" " * 8, " Kobold ")
+    assert insert.battle_rows("Purple Slime") == (" Purple ", " Slime  ")
+    assert insert.battle_rows("[enemy_07]The quick") == ("enemy_07", "The quic")
+    assert insert.battle_fits("Thunder Dragon") and not insert.battle_fits("Will-o'-the-Wisp Lord")
+    assert insert.battle_rows("Fire " + insert.RANK_MARK)[1].strip() == "Fire " + insert.RANK_MARK
+
+
+@pytest.mark.skipif(not ORIG.exists(), reason="no ROM")
+def test_battle_name_table_and_bytes():
+    orig = ORIG.read_bytes()
+    t = insert.NameTable(orig)
+    t.add(3, 8, "Purple Slime", "enemy_07")
+    w = W()
+    t.write(w)
+    (_, blob), = w.puts
+    bt = 0x100 + 2 * 256 * insert.NAME_KINDS_MAX          # BT_PTRS ($FC9100 in asm/vwf.asm)
+    assert bt == 0x1100
+    p = int.from_bytes(blob[bt + 2 * (2 * 256 + 8):bt + 2 * (2 * 256 + 8) + 2], "little") - 0x8000
+    assert blob[p:p + 16] == b" Purple  Slime  "
+    assert blob[p + 16:p + 32] == "".join(insert.battle_rows("Purple Slime \x01")).encode()  # the rank form
+    blank = int.from_bytes(blob[bt:bt + 2], "little") - 0x8000
+    assert blob[blank:blank + 32] == b" " * 32
+    w = W()
+    insert.battle_bytes(w)
+    got = dict(w.puts)
+    import font_bg3
+    hi = lambda b: got[insert.BT_HI + 2 * (b - 0x30)]  # noqa: E731
+    assert hi(ord("a")) == bytes([0x93, font_bg3.TILE["a"]])     # top blank, bottom = the English tile
+    assert got[insert.BT_LO + 4 * (0x2D - 0x28)] == b"\x93\x20" + (0x2000 | font_bg3.TILE["-"]).to_bytes(2, "little")
+
+
+@pytest.mark.skipif(not ORIG.exists(), reason="no ROM")
+def test_battle_lz_roundtrip_and_font():
+    import blz
+    import font_bg3
+    orig = ORIG.read_bytes()
+    d = blz.decode(orig[font_bg3.BATTLE_FONT:], font_bg3.BATTLE_LEN)
+    assert d[0] | d[1] << 8 == len(d) - 2 == 0x11A0           # size word = the DMA length (30:F445)
+    e = blz.encode(d)
+    assert blz.decode(e, len(e)) == d and len(e) <= font_bg3.BATTLE_LEN
+    w = W()
+    font_bg3.battle_patch(orig, w)
+    font = w.puts[0][1]
+    p = blz.decode(font, len(font))
+    t = font_bg3.TILE["a"]
+    assert p[2 + 16 * t:2 + 16 * (t + 1)] == font_bg3.tile_bytes(font_bg3.GLYPHS["a"])
+
+
 def test_ruler_text():
     """Ruler build lines: 6 px digits, decade digit every 10th, as wide as the JP segment + 36 px, tokens kept."""
     assert all(font_en.width(c) == 6 for c in insert.RULER)

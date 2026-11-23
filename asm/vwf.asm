@@ -44,6 +44,9 @@ org $02D7A8             ; was LDA [$B2],y / CMP #$FE00: the staff roll's fetch (
 org $02D7F9             ; was PHA / LDA $1A8015 (5 bytes): the staff roll's glyph draw (bank-02 renderer)
     jml cr_glyph
     nop
+org $29B2B6             ; was PHY / STA $3C / LDA [$30]: battle name -> two BG3 tile rows (enemy, spell, tactics)
+    jml bt_name
+    nop
 
 ; ---- code -----------------------------------------------------------------------------------------------------
 org $FD8000
@@ -354,6 +357,75 @@ nm_feaa:                ; as nm_fee3, for the BG3 tile map ($04:AEAB)
     jml $01FED8
 .norm:
     jml $01FEC1
+
+; Battle names (docs/re/battle.md): 29:B2B6 writes A (= 8) tile pairs, the top row (dakuten in Japanese) to [$34] and
+; the bottom row to [$38]. An English escape draws the name's battle form instead: two 8-char ASCII rows laid out by
+; tools/insert.py (battle_rows; long names use both rows), the second form when the field holds a rank capital.
+!BT_PTRS = $FC9100      ; NM_PTRS + 2 * 256 * NAME_KINDS_MAX (8)
+
+bt_name:                ; M=16 X=16; A = tile count, [$30] = name field, [$34] / [$38] = top / bottom tile rows
+    phy
+    sta $3C
+    lda [$30]
+    and #$00FF
+    beq .orig
+    cmp #$0010
+    bcc .en
+.orig:
+    jml $29B2B9         ; the game's loop (LDA [$30] ...)
+.en:
+    dec
+    xba                 ; (kind - 1) * 256
+    sep #$20
+    ldy #$0001
+    lda [$30],y         ; + n
+    rep #$20
+    asl
+    tax
+    lda.l !BT_PTRS,x
+    tax                 ; X = battle form in bank $FC
+    ldy #$0002
+    lda [$30],y
+    and #$00FF
+    cmp #$0041
+    bcc .draw
+    cmp #$005B
+    bcs .draw
+    sta.l !tmp          ; rank capital: the form with " RANK"
+    txa
+    clc
+    adc #$0010
+    tax
+.draw:
+-   lda.l $FC0000,x
+    jsr bt_tile
+    sta [$34]
+    lda.l $FC0008,x
+    jsr bt_tile
+    sta [$38]
+    inx
+    inc $30
+    inc $34
+    inc $34
+    inc $38
+    inc $38
+    dec $3C
+    bne -
+    jml $29B307         ; PLY / RTS
+
+bt_tile:                ; A low byte = ASCII (1 = the rank in !tmp) -> BG3 tile word with the battle palette $2000
+    and #$00FF
+    cmp #$0001
+    bne +
+    lda.l !tmp
++   phx
+    asl
+    tax
+    lda.l !NM_BG3,x
+    plx
+    and #$03FF
+    ora #$2000
+    rts
 
 nm_ptr:                 ; A = kind 1-15, X = index of the kind byte -> X = address of the ASCII name in bank $FC
     dec

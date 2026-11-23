@@ -1,0 +1,81 @@
+{
+ "source": {
+  "kind": "names",
+  "record": 12,
+  "pad": "FF"
+ },
+ "entries": [
+  {
+   "id": "tactic_0",
+   "file": "01FEF0",
+   "field": "01FEF0",
+   "size": 8,
+   "max": 8,
+   "jp": "ベ－シックタイプ",
+   "en": ""
+  },
+  {
+   "id": "tactic_1",
+   "file": "01FEFC",
+   "field": "01FEFC",
+   "size": 7,
+   "max": 8,
+   "jp": "バランスタイプ",
+   "en": ""
+  },
+  {
+   "id": "tactic_2",
+   "file": "01FF08",
+   "field": "01FF08",
+   "size": 8,
+   "max": 8,
+   "jp": "マジックアタック",
+   "en": ""
+  },
+  {
+   "id": "tactic_3",
+   "file": "01FF14",
+   "field": "01FF14",
+   "size": 8,
+   "max": 8,
+   "jp": "パワ－[FF]アタック",
+   "en": ""
+  },
+  {
+   "id": "tactic_4",
+   "file": "01FF20",
+   "field": "01FF20",
+   "size": 8,
+   "max": 8,
+   "jp": "わがままコウモリ",
+   "en": ""
+  },
+  {
+   "id": "tactic_5",
+   "file": "01FF2C",
+   "field": "01FF2C",
+   "size": 8,
+   "max": 8,
+   "jp": "あなぐまぼうぎょ",
+   "en": ""
+  },
+  {
+   "id": "tactic_6",
+   "file": "01FF38",
+   "field": "01FF38",
+   "size": 8,
+   "max": 8,
+   "jp": "エルフのためいき",
+   "en": ""
+  },
+  {
+   "id": "tactic_7",
+   "file": "01FF44",
+   "field": "01FF44",
+   "size": 8,
+   "max": 8,
+   "jp": "ゴブリンのしっぽ",
+   "en": ""
+  }
+ ]
+}

@@ -56,3 +56,7 @@ names, menu labels and save labels (not found as strings, status.md) are the pri
 - **Better route than reading 70 sheets by eye:** on each screen the tour reaches, dump VRAM (`ppudump.lua`),
   `tiles.py map` the BG layers, and `vramfind.py` the text tiles against the ROM and `work/chain/*.bin`; then read
   only the sheets of blocks that feed VRAM (`decomp_src.lua` log, dest = VRAM upload buffer).
+- **Battle** (`battle.md`): battle graphics use their own LZ (`tools/blz.py`, `tools/lua/battle_lz.lua` logs the
+  runs), not the field LZ, so `decomp_src.lua` misses them. Party names in the battle status box are tiles
+  (クルト = BG3 tiles $1A4-$1A6, second battle stream `0x150B34` to VRAM `$6C00`); the command label たたかう uses the
+  hiragana tiles now holding English lowercase ("uukf" in the 4 MB build): both graphics text for phase 8.

@@ -65,6 +65,22 @@ def tile_bytes(rows):
     return bytes(out)
 
 
+BATTLE_FONT, BATTLE_LEN = 0x150000, 0xB34   # battle copy of this font, battle LZ ($2A:8000, tools/blz.py)
+BATTLE_LEN_AT = [0x1404A4, 0x14736C]      # its compressed length in the two battle load lists (entry + 7)
+
+
+def battle_patch(orig, writer):
+    """The battle BG3 font (its own copy, battle LZ, loaded by 30:F410 to VRAM $6000) with the English tiles."""
+    import blz
+    d = blz.decode(orig[BATTLE_FONT:], BATTLE_LEN)
+    enc = blz.encode(d[:2] + patch(d[2:]))
+    assert len(enc) <= BATTLE_LEN, f"battle font {len(enc)} bytes > {BATTLE_LEN}"
+    writer.put(BATTLE_FONT, enc, "battle font: English BG3 tiles")
+    for at in BATTLE_LEN_AT:
+        assert orig[at:at + 2] == BATTLE_LEN.to_bytes(2, "little"), f"battle load list moved ({at:X})"
+        writer.put(at, len(enc).to_bytes(2, "little"), "battle font length")
+
+
 def patch(data):
     """Return block 319's data with the English tiles written in."""
     d = bytearray(data)
