@@ -2,21 +2,25 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: phase 7 done (build green with romdiff, `batches.py check` 0 problems incl. the
-  new keep-list and `{009E}` rules, 40 tests; 3077/3085 translated, the 8 left are battle-only in
-  `script/keep_jp.txt`). `build/lastbattle_en.sfc` smoke ok, 2026-11-24 session 19, sha1 489d308c.
+- **Phase:** 8. QA in the emulator, in progress: 3079/3085 translated (the 6 left: battle particles in
+  `script/keep_jp.txt`), 41 tests green. `build/lastbattle_en.sfc` smoke ok, 2026-11-24 session 21, sha1 7879eacb.
 - **Done:**
+  - **Phase 8, session 2026-11-24 (21):** JP reference tour `work/qa/tour_jp` done (119 scenes). Battle status-box
+    party names English (`font_bg3.battle_names_patch`): second battle LZ stream redrawn in a compact 4 px font,
+    re-encoded right after the battle font (both load lists repointed), Borg on 2 new tiles $1FB-$1FC (zero and
+    unused in battle VRAM) since ボルグ shared Kurt's kana; tilemap rows raw at `0x1F084A` (+0x1E per member). Shot
+    Kurt/Regina/Borg via scratch variants that point Kurt's row at the other tiles (`work/qa/names_*`). enemy_40/69
+    read from the battle-font kanji: 鬼人 "Oni", 戦人機 "War Machine" (glossary). The status-screen ま is gone
+    (`↓Mag`, session 20). Battle command label reads "Atk" (no longer garbled). Codex quota is out until
+    2026-11-26, so verdicts are written by the worker itself.
   - **Phase 8, session 2026-11-24 (20), started:** status screen bottom-right `↓まほう` was `↓まMg`: the extractor's
     byte-at-a-time resync swallowed a window header and the first tile; `extract.bg3_strings` now skips a 4-byte
     header after FF00 (only change ROM-wide: `bg3_915C` -> `bg3_9158` "{00A1}Mag"). Status "Fenamun" label one
     column left (it touched its dot field). Stress save `stress_items.srm` (16 slots of 9-letter items, file name
     WWWWWWWW, money 9,999,999; character names are fixed ROM strings, `$0024` is only the file name) and scenes
     `stress_load/status/itemlist/itemuse/equip`: all read ok (`work/qa/stress`). `docs/visual-qa-brief.md` with
-    the game's standing non-bugs. Full tour `work/qa/tour` on build sha1 8b50fe77: 119/119 scenes reached. The
-    JP reference tour (`work/qa/tour_jp`) was killed by Claude Code for low system memory; **resume here**: re-run
-    `run_scenes.py "rom/Last Battle, The (Japan).sfc" --jobs 3 --out work/qa/tour_jp`, then `qa_gate.py init
-    work/qa/manifest.tsv work/qa/tour --build build/lastbattle_en.sfc`, `todo ... --size 30`, verdicts per chunk
-    (fresh read-only pass, `docs/visual-qa-brief.md`). Use `--jobs 3` (5 jobs + the session ran memory out).
+    the game's standing non-bugs. Full tour `work/qa/tour` on build sha1 8b50fe77: 119/119 scenes reached. Use `--jobs 3` for tours (5 jobs plus the session ran
+    the machine out of memory).
   - **Phase 7 review, session 2026-11-24 (20):** `.harness/reviews/last-battle-the-en-phase7.md` I1: FA18 item
     names in BG3 messages now print 9 (asm `nm_feaa`, return $FC70; FC55 is reached only from the op table), shot
     "Gave Kurt Longsword." / "Equipped Longsword." / "Dropped Rare Herb." (`work/qa/i1e`, `work/qa/i1d`). M1: lint
@@ -218,11 +222,21 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   0. **Phase 8: QA in the emulator** (done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
      `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
-     Phase-8 items from phase 7: the 8 ids in `script/keep_jp.txt` (battle particles and `bt_19D4BB`: see them in a
-     battle, then translate or blank; enemy_40/69: shoot the encounter, `@1DDF`); find the screen of the equip labels
-     `bg3_A729/A737/A73D` (Wpn/Shld/Feet, 4 tiles assumed) and the teleport list at 9 letters (`MENU_CAP`); the
-     Japanese ま in the status screen's bottom-right window (`work/qa/p7/menu_status/final.png`). Minors in
-     `docs/polish.md`; worth a `codex exec -s read-only` story pass once its quota is back (2026-11-26).
+     **Resume here:** the English tour on build 7879eacb was started into `work/qa/tour` (`run_scenes.py
+     build/lastbattle_en.sfc --jobs 3 --out work/qa/tour`, log `work/qa/tour_run.log`); if it didn't finish, re-run
+     it. Then `qa_gate.py init work/qa/manifest.tsv work/qa/tour --build build/lastbattle_en.sfc` (the manifest
+     exists from build 8b50fe77; init re-hashes), `todo work/qa/manifest.tsv work/qa/verdicts --size 30 --out-dir
+     work/qa/chunks`, and write verdicts chunk by chunk to `work/qa/verdicts/<chunk>.tsv` (brief
+     `docs/visual-qa-brief.md`; compare `work/qa/tour_jp/<scene>`). Budget: 261 sheets are 520x456 with 128x112
+     tiles, too small to read text, so for each scene zoom the text boxes (`sheet.py DIR --changed 0.03 --crop
+     0,150,256,74 --div 1 --cols 3`; battle top boxes `--crop 0,0,256,64`) and read `final.png`; about 3 chunks
+     fit in one worker context, so hand back with the verdicts written so far.
+     Phase-8 items left: the 6 particle ids in `script/keep_jp.txt` (`bt_19D4BB` and the の/に/し/ま/た pieces: see
+     them in a battle, then translate or blank); the spell info labels right of the battle magic window
+     (いりょく/しゃていきょり/MP, tiles from a WRAM block: graphics); find the screen of the equip labels
+     `bg3_A729/A737/A73D` (Wpn/Shld/Feet, 4 tiles assumed) and the teleport list at 9 letters (`MENU_CAP`);
+     `inkbox.py` on Yes/No and centred boxes; `textcover.py`. Minors in `docs/polish.md`; worth a `codex exec -s
+     read-only` story pass once its quota is back (2026-11-26).
   1. **Carried from phase 5** (not blocking translation; the battle part belongs to the phase-8 coverage pass):
      - **1a. Battle-window marker tour** (`battle_cover.py`, 40/133 read; consolidated run `work/qa/bcov_all` done,
        use `--jobs 3`). Still unread and why: `19E09C-19FABE` + `16EF84+` = magic synthesis screen (bank-29 code
