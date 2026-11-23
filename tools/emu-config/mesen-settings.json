@@ -1,0 +1,17 @@
+{
+  "Preferences": {
+    "OverrideSaveDataFolder": true,
+    "SaveDataFolder": "C:\\Users\\nathan\\Documents\\translation\\last-battle-the-en\\work\\qa\\orig_boot\\saves-bbwnssie"
+  },
+  "Debug": {
+    "ScriptWindow": {
+      "AllowIoOsAccess": true
+    }
+  },
+  "Snes": {
+    "Port1": {
+      "Type": "SnesController"
+    }
+  },
+  "ConfigUpgrade": 1
+}
