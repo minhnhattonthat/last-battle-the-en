@@ -32,7 +32,7 @@
    "addr": "0448",
    "size": 124,
    "jp": "ユ－リ{nl}「ああ この女の子は{nl} エルフ族のメイといってね。{page} 実は この密書と同じことを{nl} 伝えにきて くれたのだが・・・{page2}",
-   "en": "Yuri{nl}\"Ah, this girl is Mei, of the elves.{page} In fact, she came to tell me the very{nl} same thing as this letter, but...{page2}"
+   "en": "Yuri{nl}\"Ah, this girl is Mei, of the elves.{page} In fact, she came to tell me the very{nl} same thing as this secret letter, but...{page2}"
   },
   {
    "id": "r022_04D2",
@@ -46,7 +46,7 @@
    "addr": "05E7",
    "size": 210,
    "jp": "ユ－リ{nl}「わかったから{nl} そう おこるな。{page} とにかく これで{nl} グルド軍が攻めてくるのは{nl} はっきりしたんだ。{page}「この密書によると{nl} グルド軍の攻撃は ３日後だ。{page}「急いで 防戦の準備を{nl} しなければ・・・{page2}",
-   "en": "Yuri{nl}\"All right, all right, don't be so angry.{page} In any case, this makes it clear the Guld{nl} army is coming.{page}\"According to this letter, the Guld{nl} attack comes in three days.{page}\"We must hurry and prepare our{nl} defenses...{page2}"
+   "en": "Yuri{nl}\"All right, all right, don't be so angry.{page} In any case, this makes it clear the Guld{nl} army is coming.{page}\"According to this secret letter, the{nl} Guld attack comes in three days.{page}\"We must hurry and prepare our{nl} defenses...{page2}"
   },
   {
    "id": "r022_06CA",
@@ -221,35 +221,35 @@
    "addr": "1286",
    "size": 396,
    "jp": "ユ－リ{nl}「どうやら 敵は{nl} ひとまず 兵を ひいたようだ。{page}「君たちも{nl} よく がんばってくれたね。{page}「そういえば 君の名を{nl} まだ 聞いてなかったな。{page}「えっ{wait}{wait} クルト！？{page}{FB00}「エルダ－ル村の{nl} イェルトの息子 クルトか！{page}「そうだったのか・・・{wait}{nl} ・・・イェルトのことなら{nl} 私も知っているよ。{page}「かつては シルヴェルで{nl} 一番 勇かんな{nl} 騎士だったからね。{page}{FB00}「・・・・・・・・・。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"It seems the enemy has pulled back its{nl} troops for now.{page}\"You both fought very well.{page}\"Come to think of it, I haven't asked{nl} your name yet.{page}\"What? {wait}{wait}Kurt?!{page}{FB00}\"Kurt, son of Yelt, from Eldar Village?!{page}\"So that's who you are... {wait}...I know of{nl} Yelt too.{page}\"He was once the bravest knight in all{nl} of Silvel.{page}{FB00}\"..........{page2}"
   },
   {
    "id": "r022_141E",
    "addr": "141E",
    "size": 534,
    "jp": "メイ{nl}「ところで ユ－リ様{nl} 王様は だいじょうぶですか？{page} ご病気は あいかわらず{nl} なんでしょう？{page}「エルフ族の みんなも{nl} 言葉には 出さないけど{nl} ほんとは 心配してるんです。{page2}{F9FF}ユ－リ{nl}「ありがとう・・・{page} おかげで 今のところは{nl} お元気にして いらっしゃるよ。{page}「だが それも長くは続くまい。{nl} 王様が お元気なうちに{nl} 何とか 手を うたねばな・・・{page}{FB00}ユ－リ{nl}「そうそう 大切なことを{nl} 忘れていたよ。{page}「王様が 君たちに{nl} ぜひ 会いたいと{nl} おっしゃって いるんだ。{page}「さあ ２人とも{nl} いっしょに きなさい。{page2}",
-   "en": ""
+   "en": "Mei{nl}\"By the way, Yuri-sama, is the King all{nl} right?{page} He's still ill, isn't he?{page}\"The elves don't say it out loud, but{nl} they're truly worried.{page2}{F9FF}Yuri{nl}\"Thank you...{page} For now, thankfully, he is in good{nl} spirits.{page}\"But that won't last long. We must do{nl} something while the King is still well...{page}{FB00}Yuri{nl}\"Oh yes, I nearly forgot something{nl} important.{page}\"The King says he very much wishes to{nl} meet you.{page}\"Come, both of you, come with me.{page2}"
   },
   {
    "id": "r022_16C0",
    "addr": "16C0",
    "size": 438,
    "jp": "ユ－リ{nl}「みんな ごくろうだった。{page} シルヴェル城は{nl} 完全に取りもどせた。{page} だが これでグルドの野望が{nl} 終ったわけではない。{page}「この戦乱を一日も早く{nl} 終らせるためには 我ヶの手で{nl} グルドを攻めるしかあるまい。{page}「それには まず{nl} 難攻不落の城塞ベルグデレンを{nl} 攻略せねばならん。{page}「全軍 ただちに戦いの準備をして{nl} 出発にそなえよ。{nl} これより北の荒れ地に向かう。{page} はいきょの町ウ－ドに集結し{nl} グルドに総攻撃をかけるぞ！{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Well done, everyone.{page} Silvel Castle is fully back in our hands.{page} But this is not the end of Guld's{nl} ambitions.{page}\"To end this war as soon as we can, we{nl} have no choice but to attack Guld{nl} ourselves.{page}\"For that, we must first take{nl} Bergdelen, the impregnable fortress.{page}\"All troops, prepare for battle and{nl} stand ready to march. We head for the{nl} northern wastes.{page} We will gather at Ude, the ruined town,{nl} and launch an all-out attack on Guld!{page2}"
   },
   {
    "id": "r022_195D",
    "addr": "195D",
    "size": 170,
    "jp": "ユ－リ{nl}「クルト・・・さま。{page} こちらへ来て下さい。{nl} 王様が お呼びです。{page}「王様は すでに{nl} お部屋に おもどりです。{page} まだ お体は{nl} よろしくないんですが・・・{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Kurt...-sama.{page} Please come this way. The King is asking{nl} for you.{page}\"The King has already returned to his{nl} room.{page} He is still not well, but...{page2}"
   },
   {
    "id": "r022_1A87",
    "addr": "1A87",
    "size": 358,
    "jp": "ユ－リ{nl}「私は これよりただちに{nl} はいきょの町ウ－ドへ向かいます。{page} ウ－ドは 北の荒れ地にある{nl} いにしえの都の跡で{nl} ベルグデレンにも近い。{page}「そこで あの難攻不落の城塞を{nl} 攻略するための{nl} 作戦会議をする予定です。{page}「クルト王子様たちには{nl} その会議に出席して{page} その後の作戦行動に{nl} 協力していただきたい。{page}「では ウ－ドで{nl} 待っております。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"I leave at once for Ude, the ruined{nl} town.{page} Ude lies in the northern wastes, the{nl} remains of an ancient capital, near{nl} Bergdelen.{page}\"There we will hold a war council to{nl} plan how to take that impregnable{nl} fortress.{page}\"Prince Kurt, I would ask you and your{nl} companions to attend that council{page} and then aid us in the operations that{nl} follow.{page}\"I will be waiting for you in Ude.{page2}"
   }
  ]
 }

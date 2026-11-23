@@ -11,140 +11,140 @@
    "addr": "00FF",
    "size": 80,
    "jp": "「王様が お倒れになってから{nl} このお城は まるで{nl} あかりが 消えたみたいよ。",
-   "en": ""
+   "en": "\"Since the King collapsed, it's as if the{nl} lights went out in this castle."
   },
   {
    "id": "r024_0151",
    "addr": "0151",
    "size": 122,
    "jp": "「王国の 難しいお仕事は{nl} ユ－リ様が いらっしゃるから{nl} いいんだけど・・・{page} やっぱり 王様が{nl} お元気でないとねえ。",
-   "en": ""
+   "en": "\"The hard work of running the kingdom{nl} is fine, with Yuri-sama here...{page} but still, the King really needs to be{nl} well."
   },
   {
    "id": "r024_01D3",
    "addr": "01D3",
    "size": 142,
    "jp": "「こらこら！{nl} こんなところで なにをしとる！？{page} お城は 子供が{nl} ウロウロするところじゃないぞ！{page}「なに ユ－リ様に{nl} 話があるじゃと？{page}",
-   "en": ""
+   "en": "\"Now, now! What are you doing in a{nl} place like this?!{page} The castle is no place for children to{nl} wander about!{page}\"What, you have something to tell{nl} Yuri-sama?{page}"
   },
   {
    "id": "r024_0261",
    "addr": "0261",
    "size": 52,
    "jp": "「ユ－リ様なら 玉座の間じゃ。{nl} こっちではないぞ。",
-   "en": ""
+   "en": "\"Yuri-sama is in the throne room. Not{nl} this way."
   },
   {
    "id": "r024_029D",
    "addr": "029D",
    "size": 172,
    "jp": "ユ－リ{nl}「君たちは 本当に{nl} よく戦ってくれたよ。{page} だが これ以上{nl} 戦いに まきこむわけには{nl} いかない。{page} 敵が 再び攻めてくる前に{nl} 君たちは ここから逃げてくれ。",
-   "en": ""
+   "en": "Yuri{nl}\"You two truly fought well.{page} But I can't drag you any further into{nl} this war.{page} Get away from here before the enemy{nl} attacks again."
   },
   {
    "id": "r024_034B",
    "addr": "034B",
    "size": 62,
    "jp": "ユ－リ{nl}「なにを してるんだ{nl} ２人とも 早く いきなさい！！",
-   "en": ""
+   "en": "Yuri{nl}\"What are you doing? Go, both of you,{nl} quickly!!"
   },
   {
    "id": "r024_0391",
    "addr": "0391",
    "size": 76,
    "jp": "「われわれは 城に残る。{wait}{nl} わずかでも 時間をかせがねば{nl} ならんからな。",
-   "en": ""
+   "en": "\"We'll stay in the castle. {wait}We have to{nl} buy even a little time."
   },
   {
    "id": "r024_03E5",
    "addr": "03E5",
    "size": 58,
    "jp": "「時間がないんだ！{wait}{nl} 死にたくなければ{nl} さっさと行け！",
-   "en": ""
+   "en": "\"There's no time! {wait}If you don't want to{nl} die, get going!"
   },
   {
    "id": "r024_0427",
    "addr": "0427",
    "size": 50,
    "jp": "「ユ－リ様の おっしゃることを{nl} 聞いてください。",
-   "en": ""
+   "en": "\"Please do as Yuri-sama says."
   },
   {
    "id": "r024_0461",
    "addr": "0461",
    "size": 232,
    "jp": "「ごめんなさい 私もいっしょに{nl} 戦うつもりで きたんですが・・・{nl} これ以上 進む勇気がなくて・・・{page} でも ここから帰る気は{nl} ありません。{page} 回復が必要なら{nl} いつでもきて下さい。{page}「それとも今すぐ{nl} 回復してあげましょうか？",
-   "en": ""
+   "en": "\"I'm sorry. I came meaning to fight{nl} alongside you... but I don't have the{nl} courage to go any further...{page} Still, I won't go back from here.{page} If you need healing, come any time.{page}\"Or shall I heal you right now?"
   },
   {
    "id": "r024_0551",
    "addr": "0551",
    "size": 36,
    "jp": "「あなた方{nl} 回復しにきたんですか？",
-   "en": ""
+   "en": "\"Have you come to be healed?"
   },
   {
    "id": "r024_057B",
    "addr": "057B",
    "size": 84,
    "jp": "「わかりました では・・・{wait}{wait}{wait}{wait}{page}「ヴァテン{wait}{wait}{nl} ブレックフェ－ル{nl} レ－カ！{page2}",
-   "en": ""
+   "en": "\"Very well, then... {wait}{wait}{wait}{wait}{page}\"Vatten... {wait}{wait}{nl} Bleckfel...{nl} Reka!{page2}"
   },
   {
    "id": "r024_05DD",
    "addr": "05DD",
    "size": 74,
    "jp": "「これで だいじょうぶです。{nl} あなたに マナの加護が{nl} ありますように。",
-   "en": ""
+   "en": "\"There, you'll be fine. The blessing of{nl} mana be with you."
   },
   {
    "id": "r024_062B",
    "addr": "062B",
    "size": 28,
    "jp": "「そうですか お気をつけて。",
-   "en": ""
+   "en": "\"I see. Take care."
   },
   {
    "id": "r024_06A5",
    "addr": "06A5",
    "size": 148,
    "jp": "ユ－リ{nl}「クルト すまんが 君に{nl} もうひとつだけ たのみがある。{page}「この手紙を ルドムの森の{nl} 老魔法使いフェ－ベンネルス殿に{nl} とどけてくれ。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Kurt, I'm sorry, but I have one more{nl} favor to ask of you.{page}\"Take this letter to Febennels-dono,{nl} the old wizard of the Forest of Rudom.{page2}"
   },
   {
    "id": "r024_073F",
    "addr": "073F",
    "size": 338,
    "jp": "クルトたちは{nl}ユ－リの手紙を 手に入れた。{page2}{F9FF}{B7C3}「ルドムの森は{nl} 東のみさきにある 魔法の森だ。{page} フェ－ベンネルス殿は{nl} その近くの 小さな家に{nl} すんでおられる。{page} とても重要な 手紙だから{nl} まちがいの ないようにな。{page}{FB00}「それから メイ{nl} 君も クルトと いっしょに{nl} 行ってくれ。{page} クルトを いろいろ{nl} 助けてやってほしい。{page2}",
-   "en": ""
+   "en": "Kurt's party received Yuri's letter.{page2}{F9FF}{B7C3}\"The Forest of Rudom is a magic{nl} forest on the eastern cape.{page} Febennels-dono lives in a small house{nl} near there.{page} It's a very important letter, so make no{nl} mistake with it.{page}{FB00}\"And Mei, you go along with Kurt.{page} I want you to help Kurt in every way{nl} you can.{page2}"
   },
   {
    "id": "r024_089D",
    "addr": "089D",
    "size": 156,
    "jp": "メイ{nl}「でも ユ－リ様。{page} お城の まわりには まだ{nl} 敵が たくさん いるはずです。{nl} いったい どうやって？{page2}{F9FF}ユ－リ{nl}「だいじょうぶだ 方法はある。{page2}",
-   "en": ""
+   "en": "Mei{nl}\"But Yuri-sama...{page} There must still be lots of enemies{nl} around the castle. How are we{nl} supposed to get out?{page2}{F9FF}Yuri{nl}\"Don't worry. There's a way.{page2}"
   },
   {
    "id": "r024_09B3",
    "addr": "09B3",
    "size": 62,
    "jp": "ユ－リ{nl}「この 抜け道なら{nl} 敵に気づかれず 外に出られる。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Through this secret passage, you can{nl} get out without the enemy noticing.{page2}"
   },
   {
    "id": "r024_09FC",
    "addr": "09FC",
    "size": 322,
    "jp": "ユ－リ{nl}「クルト そしてメイ。{page} この戦いでは ２人とも{nl} 本当に よくやってくれたね。{page} しかし これ以上{nl} 君たちを まきこむわけには{nl} いかないんだ。{page}{FB00}「まもなく 敵は{nl} 再び攻撃してくるだろう。{page} だが この城には{nl} もう敵を防ぐ力は 残っていない。{page} だから 君たちは{nl} ここから逃げてくれ。{wait}{nl} さあ 早く！",
-   "en": ""
+   "en": "Yuri{nl}\"Kurt, and Mei.{page} You both truly did well in this battle.{page} But I can't drag you any further into{nl} this.{page}{FB00}\"The enemy will attack again soon.{page} And this castle no longer has the{nl} strength to hold them off.{page} So get away from here, both of you.{nl} {wait}Now, quickly!"
   },
   {
    "id": "r024_0B40",
    "addr": "0B40",
    "size": 142,
    "jp": "ユ－リ{nl}「おや？ 君は{nl} 持ち物が いっぱいだね。{page} それじゃ なにか{nl} 私に あずけなさい。{page} そこの宝箱に しまっておいて{nl} あげよう。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Hm? Your pack is full.{page} Then leave something with me.{page} I'll put it away in that chest for you.{page2}"
   }
  ]
 }

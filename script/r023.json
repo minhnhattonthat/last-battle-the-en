@@ -11,14 +11,14 @@
    "addr": "005C",
    "size": 202,
    "jp": "「遠くへ いきたい・・・{page} きびしい 訓練・・・{wait}{nl} いそがしい まい日・・・{page} なにもかも 忘れて{nl} どこかに 消えてしまいたい・・・{wait}{page}{FB00}「と{wait}{wait} ゆ－わけで{nl} ぼくは ここに{nl} かくれてるんです。",
-   "en": ""
+   "en": "\"I want to go far away...{page} Hard training... {wait}busy, busy days...{page} I want to forget it all and just vanish{nl} somewhere... {wait}{page}{FB00}\"And {wait}{wait}that's why I'm hiding here."
   },
   {
    "id": "r023_0128",
    "addr": "0128",
    "size": 184,
    "jp": "「あんな きびしい 訓練なんか{nl} まじめに やってられませんよ。{page} どうせ 戦うことなんか{nl} ありゃしないのに！{page}「ね そう思うでしょ？{nl} だから ぼくは ここに{nl} かくれてるんです。",
-   "en": ""
+   "en": "\"I can't take that harsh training{nl} seriously.{page} We'll never have to fight anyway!{page}\"Don't you think so? That's why I'm{nl} hiding here."
   }
  ]
 }

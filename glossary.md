@@ -28,7 +28,11 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
 | クルト | Kurt | | hero, a boy from Eldar | Curt |
-| メイ | Mei | | girl mage, Kurt's friend ("あたし") | May |
+| メイ | Mei | | elf girl and mage ("あたし"), joins Kurt at Silvel Castle | May |
+| ユース | Yuse | | Kurt's mother | |
+| グラッド | Glad | | Yuri's man, carries the Guld letter | |
+| キューケンホフ先生 | Mr. Keukenhof | | Eldar schoolteacher (speaker label; "sir" when addressed) | |
+| 長老 | Elder | | speaker label; "the Elder" in narration | |
 | ボルグ | Borg | | | |
 | レジーナ | Regina | | | |
 | コンラート | Konrad | | soldier, the boy's big brother | Conrad |
@@ -94,5 +98,14 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ネファ | Nepha | | | |
 | オーラソード | Aura Sword | | | |
 | ハーブ | herb / Herb | | | |
+| ソル | Sol | | currency | |
+| エットミランシェル | Ettmiranshel | | the world | |
+| フェナムン | Fenamun | | a person's true name; フェナムンの儀式 = the Fenamun rite; フェナムンの宝珠 = Fenamun Orb | |
+| 宰相 | Chancellor | | Chancellor Yuri-sama | |
+| 魔法司 | mage | | castle/town healer-mages | |
+| 鳥人兵 | birdmen | | Guld flying troops | |
+| いやしの館 | House of Healing | | | |
+| 密書 | secret letter / Missive | | in talk "the secret letter"; the item and "received" messages: Guld Missive | |
+| ヴァテン ブレックフェール レーカ | Vatten... Bleckfel... Reka! | | healing chant; エット トヴォー トレー = Ett, tva, tre! (fireball) | |
 
 ## Decisions from earlier batches

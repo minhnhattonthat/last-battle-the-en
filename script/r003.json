@@ -116,7 +116,7 @@
    "addr": "0633",
    "size": 124,
    "jp": "クルトは グルドの密書を{nl}手に入れた。{C11E}{C1FF}{C101}{page2}{F9FF}{B7C2}長老{nl}「たのんだぞ クルト。{page}「かならず ユ－リ様に{nl} とどけるのじゃぞ。",
-   "en": "Kurt received the Guld secret{nl}letter.{C11E}{C1FF}{C101}{page2}{F9FF}{B7C2}Elder{nl}\"I'm counting on you, Kurt.{page}\"Be sure to deliver it to Yuri-sama."
+   "en": "Kurt received the Guld Missive.{C11E}{C1FF}{C101}{page2}{F9FF}{B7C2}Elder{nl}\"I'm counting on you, Kurt.{page}\"Be sure to deliver it to Yuri-sama."
   },
   {
    "id": "r003_06B1",
