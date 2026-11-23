@@ -11,84 +11,84 @@
    "addr": "00A2",
    "size": 178,
    "jp": "「図書館にこもり いく年月・・・{nl} いまさら 世間のことに{nl} きょうみなどは ない。{wait}{wait}{wait}{wait}{page}{FB00}「見たい本があれば かってに{nl} しらべるがよい{nl} わしのことは ほっておいてくれ。",
-   "en": ""
+   "en": "\"Shut up in the library for years on{nl} end... I've no interest in the world now.{nl} {wait}{wait}{wait}{wait}{page}{FB00}\"If there's a book you want, look it up{nl} yourself. Leave me be."
   },
   {
    "id": "r198_015A",
    "addr": "015A",
    "size": 78,
    "jp": "クルトは『栄光の都・ウ－ド』の{nl}本を 手に取った。{nl}{wait}{wait}{wait}{wait}読んで みますか？",
-   "en": ""
+   "en": "Kurt picked up the book{nl}'Ude, City of Glory'.{nl}{wait}{wait}{wait}{wait}Read it?"
   },
   {
    "id": "r198_01AE",
    "addr": "01AE",
    "size": 288,
    "jp": "『第四章 ウ－ドの滅亡』{page}前章で さしものウ－ド王国も{nl}代をかさねると 国は乱れ{nl}都は 戦場と化したことを語った。{page}{FB00}現在でも ウ－ドのはいきょの{nl}まわりには その時代が もたらした{nl}荒野が広がる。{page}この荒野は 人ヶの争いが{nl}大地に いかなる えいきょうを{nl}与えるかを しめす ものなり。",
-   "en": ""
+   "en": "'Chapter 4: The Fall of Ude'{page}The last chapter told how even{nl}the Ude kingdom fell into disorder{nl}and its capital became a battlefield.{page}{FB00}Even today, the wasteland that age{nl}brought spreads around the ruins{nl}of Ude.{page}This wasteland shows what harm{nl}the strife of people can do{nl}to the earth."
   },
   {
    "id": "r198_02D2",
    "addr": "02D2",
    "size": 50,
    "jp": "クルトは 手に取った本を{nl}もとの場所に もどした。",
-   "en": ""
+   "en": "Kurt put the book back where it was."
   },
   {
    "id": "r198_0306",
    "addr": "0306",
    "size": 74,
    "jp": "クルトは『ある農夫の日記』の本を{nl}手に取った。{nl}{wait}{wait}{wait}{wait}読んで みますか？",
-   "en": ""
+   "en": "Kurt picked up the book{nl}'A Farmer's Diary'.{nl}{wait}{wait}{wait}{wait}Read it?"
   },
   {
    "id": "r198_0356",
    "addr": "0356",
    "size": 454,
    "jp": "ウ－ド王国末期 我ヶは新たな王国を{nl}築くべく デュナス王子とともに{nl}ウ－ドの都を離れた。{page}{FB00}デュナス王の治世 ３年{nl}我ヶは どうやら北の王国のきそを{nl}きずくことができたようだ。{page}南でもトルン王子が新たな王国を{nl}きずきつつあるという。{nl}われらが 兄弟国に幸あれ。{page}{FB00}デュナス王の治世 ７年{nl}父なるウ－ド王国の崩壊がはじまった。{page}我ヶは 国の守りとして{nl}ベルグデレンを 築いた。{page}この城塞が このグルドリ－ケの{nl}永久の平和を 約束するものに{nl}なりますように。",
-   "en": ""
+   "en": "In the last days of Ude, we left{nl}its capital with Prince Dunas to{nl}build a new kingdom.{page}{FB00}Year 3 of King Dunas: it seems{nl}we have laid the foundations of{nl}the northern kingdom.{page}They say Prince Torn too is building{nl}a new kingdom in the south.{nl}Good fortune to our brother nation.{page}{FB00}Year 7 of King Dunas: the fall of{nl}our father kingdom Ude has begun.{page}We built Bergdelen to guard our land.{page}We pray this fortress will be{nl}the promise of lasting peace{nl}for Guldrike."
   },
   {
    "id": "r198_051E",
    "addr": "051E",
    "size": 86,
    "jp": "クルトは『氷の女王』の本を{nl}見つけて 読んだ。{page}{FB00}{wait}{wait}{wait}{wait}{wait}中は すべて白紙であった。",
-   "en": ""
+   "en": "Kurt found and read the book{nl}'The Ice Queen'.{page}{FB00}{wait}{wait}{wait}{wait}{wait}Every page was blank."
   },
   {
    "id": "r198_0576",
    "addr": "0576",
    "size": 64,
    "jp": "クルトは『氷の島』の{nl}本を 手に取った。{nl}{wait}{wait}読んで みますか？",
-   "en": ""
+   "en": "Kurt picked up the book{nl}'The Isle of Ice'.{nl}{wait}{wait}Read it?"
   },
   {
    "id": "r198_05BC",
    "addr": "05BC",
    "size": 120,
    "jp": "そこは 天と地の 始まりの時より{nl}終ることなく 続く 氷と炎の{nl}たたかいの土地。{page}命ある者の おもむくところに{nl}あらず。",
-   "en": ""
+   "en": "A land where, since heaven and earth{nl}began, a battle of ice and fire{nl}has raged without end.{page}No place for the living to go."
   },
   {
    "id": "r198_0636",
    "addr": "0636",
    "size": 86,
    "jp": "『現在 整理中につき{nl} 手をふれないで くだささい。』{nl}と 書かれた紙が はられている",
-   "en": ""
+   "en": "A paper is stuck on it:{nl}'Being sorted now.{nl}Please do not touch.'"
   },
   {
    "id": "r198_068E",
    "addr": "068E",
    "size": 262,
    "jp": "クルトは『工業大全集』の本を{nl}手に取ろうとした{wait}{wait}{wait}{wait}{wait} が！{page}{C035} ガサ {wait}ガサ {wait}ガサ {wait}ガサ{wait}{wait}{page}{FB00}なにやら 奥のほうで{nl}虫の はいまわる音がする。{wait}{wait}{wait}{page}{FB00}メイと レジ－ナの まゆが{wait}{nl}ぴく ぴくしている。{page}{FB00}クルトは あわてて{nl}本を 手に取るのをやめた。",
-   "en": ""
+   "en": "Kurt tried to pick up the book{nl}'Complete Industry' {wait}{wait}{wait}{wait}{wait}but!{page}{C035}Rustle {wait}rustle {wait}rustle {wait}rustle{wait}{wait}{page}{FB00}Something sounds like bugs{nl}crawling around in the back.{wait}{wait}{wait}{page}{FB00}Mei's and Regina's eyebrows{wait}{nl}are twitching.{page}{FB00}Kurt hastily gave up on{nl}taking the book."
   },
   {
    "id": "r198_0796",
    "addr": "0796",
    "size": 250,
    "jp": "クルトは『獣人族』の本を{nl}手に取った。{page}{FB00}獣人族に 出会ったら{nl}戦うか 逃げるか しかない。{page}彼らにとって 動くものはみな 敵。{nl}自分たちの エサにすぎない。{page}彼らは きらきら光るもの・・・{nl}光れば 何でも良いらしい を{nl}集める みょうなクセもある。",
-   "en": ""
+   "en": "Kurt picked up the book{nl}'The Beastmen'.{page}{FB00}If you meet beastmen, you can{nl}only fight or run.{page}To them everything that moves is{nl}an enemy, nothing but food.{page}They have an odd habit of{nl}collecting shiny things... anything{nl}that shines, it seems."
   },
   {
    "id": "r198_0892",

@@ -11,14 +11,14 @@
    "addr": "0048",
    "size": 124,
    "jp": "「村の者は みんな{nl} グルドリ－ケの兵隊に{nl} なってしもうた・・・。{page}「残されたのは 老いたものと{nl} この 図書館だけじゃ。",
-   "en": ""
+   "en": "\"Everyone in the village became soldiers{nl} of Guldrike...{page}\"All that's left are the old ones and this{nl} library."
   },
   {
    "id": "r195_00C6",
    "addr": "00C6",
    "size": 234,
    "jp": "「わしらは ここで静かに{nl} 本を読んで くらしてたのにのぅ。{page}「なぜ いきなり 枢機卿様のため{nl} とか イスカ－ル様のためになどと{nl} 言いだしたんじゃ？{page}「魔法じゃろうか？{nl} 呪いなのじゃろうか・・・{nl} イスカ－ルとは だれなんじゃ？",
-   "en": ""
+   "en": "\"We lived quietly here, reading books.{page}\"Why did they suddenly start saying 'for{nl} the Cardinal' and 'for Iskar-sama'?{page}\"Is it magic? Is it a curse... Who is this{nl} Iskar?"
   }
  ]
 }

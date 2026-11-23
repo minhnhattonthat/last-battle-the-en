@@ -11,14 +11,14 @@
    "addr": "002C",
    "size": 112,
    "jp": "「ここは いやしの手をもとめる{nl} すべての人ヶのための館じゃ。{page}「どの国に属するかは{nl} ここでは とわぬ・・・{page}",
-   "en": ""
+   "en": "\"This is a house for all who seek healing{nl} hands.{page}\"Here we don't ask what country you{nl} belong to...{page}"
   },
   {
    "id": "r197_00A1",
    "addr": "00A1",
    "size": 42,
    "jp": "「・・・・・ふぅ{nl} わしゃ つかれたわい。",
-   "en": ""
+   "en": "\".....Whew. I'm tired."
   }
  ]
 }

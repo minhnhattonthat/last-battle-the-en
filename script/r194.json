@@ -11,119 +11,119 @@
    "addr": "00E1",
    "size": 206,
    "jp": "「あなたは エルダ－ル村の{nl} クルト様ですね。{wait}{wait}{wait}{wait}{page} お話は ユ－リ様から{nl} うかがって おります。{page}「わたしは グラットと おなじく{nl} ユ－リ様のもとで いろいろな{nl} 任務についている者でございます。",
-   "en": ""
+   "en": "\"You are Kurt-sama of Eldar Village.{nl} {wait}{wait}{wait}{wait}{page} I have heard of you from Yuri-sama.{page}\"Like Glad, I serve under Yuri-sama on{nl} various missions."
   },
   {
    "id": "r194_01B5",
    "addr": "01B5",
    "size": 238,
    "jp": "「ユ－リ様は つねに{nl} １歩先の事を 考えておいでです。{page}「わたしが ここをしらべているのも{nl} シルヴェル城を とり返した後を{nl} 考えての ご命令です。{page}{FB00}「はやく この場所が 反撃のための{nl} 拠点となる日が来ることを{nl} 願っております。",
-   "en": ""
+   "en": "\"Yuri-sama always thinks one step{nl} ahead.{page}\"My looking into this place is also by his{nl} order, thinking of what comes after{nl} taking back Silvel Castle.{page}{FB00}\"I hope the day soon comes when this{nl} place becomes a base for our{nl} counterattack."
   },
   {
    "id": "r194_02A5",
    "addr": "02A5",
    "size": 128,
    "jp": "「クルト様 そろそろ{nl} ユ－リ様のほうも 準備をおえて{nl} おられるのでは？{page}「エルダ－ル村へ もどられては{nl} いかがでしょうか。",
-   "en": ""
+   "en": "\"Kurt-sama, isn't Yuri-sama about ready{nl} by now?{page}\"Why not go back to Eldar Village?"
   },
   {
    "id": "r194_0327",
    "addr": "0327",
    "size": 58,
    "jp": "「ここには ウ－ド王国時代の{nl} 亡霊が 出るって話ですよ。",
-   "en": ""
+   "en": "\"They say ghosts from the days of the{nl} Ude kingdom appear here."
   },
   {
    "id": "r194_0363",
    "addr": "0363",
    "size": 194,
    "jp": "「こんな夜は 妻と娘のことを{nl} 思い出します。{page}「ラントブルク村が グルドの手に{nl} おちた時 わたしは そばに{nl} いてやれませんでしたから・・・{page} さぞ こころぼそい{nl} 思いをしたことでしょう。",
-   "en": ""
+   "en": "\"On nights like this, I think of my wife{nl} and daughter.{page}\"When Landburg village fell into Guld's{nl} hands, I couldn't be by their side...{page} They must have felt so alone."
   },
   {
    "id": "r194_0431",
    "addr": "0431",
    "size": 116,
    "jp": "「ラントブルク村の 人たちに{nl} 分けてもらった 材料で{nl} 作った パン・・・・・。{page}「コゲてたけど うまかったな～。",
-   "en": ""
+   "en": "\"The bread we made with the{nl} ingredients the Landburg village folk{nl} shared with us....{page}\"It was burnt, but it sure was good~."
   },
   {
    "id": "r194_04AB",
    "addr": "04AB",
    "size": 208,
    "jp": "「あんときゃ 城は落ちて{nl} 王様も ユ－リ様も 行方不明で{page} ベ－テブルク山脈の奥に ひそんで{nl} ただ ただ 王国の再興だけを{nl} 夢みていたっけ・・・{page}{FB00}「あのとき 食ったパンの味{nl} オレは一生 忘れないぜ。",
-   "en": ""
+   "en": "\"Back then the castle had fallen, the{nl} King and Yuri-sama were missing,{page} and we hid deep in the Betteburg{nl} Mountains, just dreaming of rebuilding{nl} the kingdom...{page}{FB00}\"I'll never forget the taste of the{nl} bread we ate then."
   },
   {
    "id": "r194_057D",
    "addr": "057D",
    "size": 152,
    "jp": "「ラントブルク村に 本の行商の{nl} ふりをして 食料を受け取りに{nl} 行ったことも あったっけ。{page}「本物と かちあいそうになって{nl} ひやあせ かいたけどな。",
-   "en": ""
+   "en": "\"I even went to Landburg village{nl} dressed as a book peddler to pick up{nl} food.{page}\"I nearly bumped into a real one and{nl} broke out in a cold sweat."
   },
   {
    "id": "r194_0617",
    "addr": "0617",
    "size": 120,
    "jp": "「山奥にかくれて{nl} ひたすら この時を待った。{page}「わたしの 怒りのいちげき{nl} グルドの兵隊どもに{nl} たたきつけてくれる。",
-   "en": ""
+   "en": "\"We hid deep in the mountains and{nl} waited for this moment.{page}\"I'll smash the Guld soldiers with the{nl} blow of my wrath."
   },
   {
    "id": "r194_0697",
    "addr": "0697",
    "size": 184,
    "jp": "「そこの 若いのはそのまま{nl} 寝かしといてやんなさい。{wait}{wait}{wait}{wait}{nl} 幸せな夢を 見ているようだよ。{page}「決戦の前で ありながら{nl} 恋しい娘の夢を見られるなど{nl} 頼もしい かぎりではないか。",
-   "en": ""
+   "en": "\"Let that young one sleep. {wait}{wait}{wait}{wait}He{nl} seems to be having a happy dream.{page}\"Dreaming of the girl he loves right{nl} before the decisive battle. What a{nl} reliable fellow."
   },
   {
    "id": "r194_075D",
    "addr": "075D",
    "size": 82,
    "jp": "「カッテル オレは英雄になって{nl} 帰るからな・・・・・{nl} むにゃ むにゃ ウフッ！",
-   "en": ""
+   "en": "\"Kattel, I'll come home a hero..... mumble,{nl} mumble, hee hee!"
   },
   {
    "id": "r194_07B1",
    "addr": "07B1",
    "size": 82,
    "jp": "「ル－スル オレは手がら立てて{nl} 帰るからな・・・・・{nl} むにゃ むにゃ ウフッ！",
-   "en": ""
+   "en": "\"Rusl, I'll come home with glory.....{nl} mumble, mumble, hee hee!"
   },
   {
    "id": "r194_080B",
    "addr": "080B",
    "size": 212,
    "jp": "「今度の戦いは{nl} どうも こちらの分が悪いな。{page}「敵は 危なくなれば{nl} いつでも 中へ逃げこめば{nl} いいのだからな。{page}「へたをすると 何日も戦いの{nl} 決着がつかずに 我ヶのほうが{nl} 弱っていくことになるぞ・・・。",
-   "en": ""
+   "en": "\"This battle doesn't look good for us.{page}\"Whenever things get dangerous, the{nl} enemy can just run back inside.{page}\"If we're not careful, the fight will drag{nl} on for days and we'll be the ones who{nl} weaken..."
   },
   {
    "id": "r194_08E7",
    "addr": "08E7",
    "size": 72,
    "jp": "「おおきな戦いを 前にして{nl} 血が さわいじまって{nl} 眠れないぞ～～～！",
-   "en": ""
+   "en": "\"With a big battle ahead, my blood's up{nl} and I can't sleeeep~!"
   },
   {
    "id": "r194_0937",
    "addr": "0937",
    "size": 416,
    "jp": "シルヴェル兵{nl}「これは シルヴェル・ハンスタット{nl} 連合軍だよな。{page}{FB00}水夫{nl}「うんにゃ これは ハンスタット・{nl} シルヴェル連合軍。{page}{FB00}ヤ－ク族戦士{nl}「ヤ－クと ベルクスタットを{nl} わすれとる！{page}{FB00}鉱夫{nl}「グルヴァ村も 入れてくれよ。{page}{FB00}シルヴェル兵{nl}「じゃ シルヴェル・ハンスタット・{nl} ベルク・・・{page}{FB00}ヤ－ク族戦士{nl}「まった～！{wait}{wait}{wait}{wait}{nl} 反 グルド連合軍が いいな。{page}{FB00}みんな{nl}『まあ そんなところになるかな。",
-   "en": ""
+   "en": "Silvel Soldier{nl}\"This is the Silvel-Hanstad Allied Army,{nl} right?{page}{FB00}Sailor{nl}\"Nope, it's the Hanstad-Silvel Allied{nl} Army.{page}{FB00}Yaak Warrior{nl}\"You forgot the Yaak and Bergstadt!{page}{FB00}Miner{nl}\"Put Gulva Village in too.{page}{FB00}Silvel Soldier{nl}\"Then the Silvel-Hanstad-Berg...{page}{FB00}Yaak Warrior{nl}\"Hold it~! {wait}{wait}{wait}{wait}The Anti-Guld Allied{nl} Army sounds good.{page}{FB00}Everyone{nl}\"Well, that'll about do."
   },
   {
    "id": "r194_0ADF",
    "addr": "0ADF",
    "size": 438,
    "jp": "シルヴェル兵{nl}「名前が どうなろうとだ！{page} わしが シルヴェル騎士なのは{nl} かわらん。{page}{FB00}水夫{nl}「これだ{nl} 兵隊さんは 頭が かたくていかん。{page}{FB00}シルヴェル兵{nl}「あたりまえだ 兵士のあたまは{nl} 頭突きを くらわすためにあるのだ。{page}{FB00}みんな{nl}『・{wait}・{wait}・{wait}・{wait}・{wait}！！{page}{FB00}シルヴェル兵{nl}「・・・！！{page}「戦いの前の きんちょうを{nl} じょうだんで ほぐそうと{nl} してるのが わからんのか？{page}{FB00}鉱夫{nl}「さっすが 戦いになれてる人は{nl} ちがうね～。",
-   "en": ""
+   "en": "Silvel Soldier{nl}\"Whatever the name is!{page} I'm still a Silvel knight.{page}{FB00}Sailor{nl}\"See? Soldiers are so hardheaded.{page}{FB00}Silvel Soldier{nl}\"Of course. A soldier's head is for{nl} headbutting.{page}{FB00}Everyone{nl}\".{wait}.{wait}.{wait}.{wait}.{wait}!!{page}{FB00}Silvel Soldier{nl}\"...!!{page}\"Can't you tell I'm joking to ease the{nl} tension before the battle?{page}{FB00}Miner{nl}\"That's a man used to battle for you~."
   },
   {
    "id": "r194_0C97",
    "addr": "0C97",
    "size": 50,
    "jp": "みんな{nl}『打倒 グルド！{nl} えい えい お～っ！！",
-   "en": ""
+   "en": "Everyone{nl}\"Down with Guld! Hip, hip, hooray!!"
   }
  ]
 }

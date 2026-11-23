@@ -165,42 +165,42 @@
    "addr": "11E7",
    "size": 102,
    "jp": "スレ－ク{nl}「ベルグデレン城塞や グルド城が{nl} 海の近くにあればな。{page} オレたちが 船で攻撃できるのに。",
-   "en": ""
+   "en": "Sleek{nl}\"If only Bergdelen Fortress and Guld{nl} Castle were near the sea.{page} We could attack by ship."
   },
   {
    "id": "r193_1255",
    "addr": "1255",
    "size": 88,
    "jp": "「グルヴァの 鉱山村から{nl} 来たことを話したら・・・{page} いきなり ここに連れこまたんだ。",
-   "en": ""
+   "en": "\"I told them I came from the mining{nl} village of Gulva...{page} and they dragged me straight in here."
   },
   {
    "id": "r193_12AF",
    "addr": "12AF",
    "size": 166,
    "jp": "「あの城塞の よこっぱらに大穴を{nl} あけられるかなんて聞かれて・・・{page}「まあ 突然の話で まごついたが{nl} それで この戦争が早く終るなら{nl} ひきうけると 答えたんだ。",
-   "en": ""
+   "en": "\"They asked if we could blow a big hole{nl} in the side of that fortress...{page}\"Well, it was sudden and threw me, but{nl} if it ends this war sooner, I said I'd take{nl} it on."
   },
   {
    "id": "r193_1357",
    "addr": "1357",
    "size": 142,
    "jp": "「グルヴァ村の者なら{nl} ガキのころから トンネル掘りは{nl} なれてるからな。{page}「キケンな 任務だと言われたが{nl} どんな事にも 危険はつきものさ。",
-   "en": ""
+   "en": "\"Gulva Village folk have been used to{nl} digging tunnels since we were kids.{page}\"They said it's a dangerous job, but{nl} every job has its dangers."
   },
   {
    "id": "r193_13ED",
    "addr": "13ED",
    "size": 210,
    "jp": "「わたしとしては この戦いで{nl} 我が軍の 圧倒的な勝利を{nl} 勝ち取っておきたいですね。{page}「ここで ぐうの音も出ないほど{nl} うち負かす ことができれば{page} 戦いの後 グルド王に降伏を{nl} すすめることもできるのです。",
-   "en": ""
+   "en": "\"For my part, I want our army to win{nl} an overwhelming victory in this battle.{page}\"If we beat them so badly here they{nl} can't even squeak,{page} then after the battle we can urge the{nl} King of Guld to surrender."
   },
   {
    "id": "r193_14C1",
    "addr": "14C1",
    "size": 96,
    "jp": "「グルドに 降伏の意思がなければ{nl} グルド城を取り囲み 城攻めを{nl} おこなわなくてはなりません。",
-   "en": ""
+   "en": "\"If Guld has no will to surrender, we{nl} must surround Guld Castle and lay siege{nl} to it."
   }
  ]
 }
