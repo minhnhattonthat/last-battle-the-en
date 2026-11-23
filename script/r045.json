@@ -32,84 +32,84 @@
    "addr": "0242",
    "size": 218,
    "jp": "「くそっ！！{nl} グルド本国の連中は{nl} いったい何をしてたんだ！！{page} せっかく捕えたユ－リを{nl} 逃がしてしまうなんて！{page}「やつが シルヴェルに帰ってきたら{nl} 大きな反乱が起きることくらい{nl} わかりそうな もんじゃないか！",
-   "en": ""
+   "en": "\"Dammit!! What were those fools in the{nl} Guld homeland doing?!{page} They let Yuri go after we finally caught{nl} him!{page}\"Anyone could see that if he came back{nl} to Silvel, there'd be a huge revolt!"
   },
   {
    "id": "r045_0328",
    "addr": "0328",
    "size": 76,
    "jp": "「なんだ おまえたちは！{nl} 勝手に出歩くなと{nl} 命令されて いるだろうが！！",
-   "en": ""
+   "en": "\"What are you doing?! You've been{nl} ordered not to wander about!!"
   },
   {
    "id": "r045_037A",
    "addr": "037A",
    "size": 172,
    "jp": "「いいか シルヴェル城の連中なら{nl} いくら探したって ムダだぞ！{page}「シルヴェル城内にいた者は{nl} みんな とらえるか{nl} 戦いの中で 死んだんだ。{page}「おまえも そうなりたいか！",
-   "en": ""
+   "en": "\"Listen, it's no use looking for the folk{nl} from Silvel Castle!{page}\"Everyone inside Silvel Castle was either{nl} captured or killed in the fighting.{page}\"Want to end up the same?!"
   },
   {
    "id": "r045_0428",
    "addr": "0428",
    "size": 170,
    "jp": "「おのれ！{nl} シルヴェルの むほん人どもめ！！{page}「我がグルド王国のもと{nl} やっと 全世界に平和が{nl} おとずれたのだぞ。{page} それなのに まだ{nl} ムダな戦いを やめぬとは！！",
-   "en": ""
+   "en": "\"Curse you, Silvel traitors!!{page}\"Under our Kingdom of Guld, peace has{nl} finally come to the whole world.{page} And still you won't stop your pointless{nl} fighting!!"
   },
   {
    "id": "r045_04D4",
    "addr": "04D4",
    "size": 138,
    "jp": "「やはり シルヴェル人を{nl} 滅ぼさぬかぎり{nl} この世に 平和は ないのだな！{page} グルド王や 枢機卿ケッテリ殿の{nl} おっしゃったとおりだ！！",
-   "en": ""
+   "en": "\"So there can be no peace in this world{nl} until the Silvel folk are wiped out!{page} Just as the King of Guld and Cardinal{nl} Ketteri said!!"
   },
   {
    "id": "r045_056A",
    "addr": "056A",
    "size": 116,
    "jp": "「ウイ－ッ ヒック！{wait}{wait}{nl} シルヴェルの酒も{nl} なかなか いけるじゃねぇか！{page}「おい こぞう！{nl} おまえも のむか？",
-   "en": ""
+   "en": "\"Hic! Hic! {wait}{wait}This Silvel booze ain't half{nl} bad!{page}\"Hey, kid! Want a drink too?"
   },
   {
    "id": "r045_05E4",
    "addr": "05E4",
    "size": 420,
    "jp": "「よしよし{nl} 話が わかるじゃねえか。{page} それじゃ ついでに{nl} いいこと教えてやらあ。{page}{FB00}「今 この第２グルド城を{nl} 治めていらっしゃる城将は{nl} グッベ様ってんだがよ。{page} このお方 強いことは強いが{nl} 性格が悪くてな。{page} シルヴェル人ばかりか{nl} おれたち グルドの兵士まで{nl} 虫ケラくらいに思ってやがる。{page} まったく・・・苦労して戦って{nl} このシルヴェルを手に入れたのは{nl} おれたち兵士だってのによ！{page} ちくしょ－っ！！",
-   "en": ""
+   "en": "\"Atta boy, you get it.{page} Then while we're at it, I'll tell you{nl} something good.{page}{FB00}\"The commander who runs this Second{nl} Guld Castle now is called Gubbe.{page} He's strong, sure, but he's nasty.{page} He treats not just the Silvel folk but{nl} even us Guld soldiers like bugs.{page} Honestly... it was us soldiers who fought{nl} hard to take this Silvel!{page} Dammit all!!"
   },
   {
    "id": "r045_078E",
    "addr": "078E",
    "size": 66,
    "jp": "「ウイ－ッ ヒック！{wait}{wait}{nl} おい こぞう！{nl} おまえも のめよ！！",
-   "en": ""
+   "en": "\"Hic! Hic! {wait}{wait}Hey, kid! Have a drink, you!!"
   },
   {
    "id": "r045_07D6",
    "addr": "07D6",
    "size": 426,
    "jp": "「よしよし{nl} 話が わかるじゃねえか。{page} で・・そのグッベ様だがな。{nl} もともと 城将なんてできる{nl} 器じゃねえんだ。{page}「それが なぜか{nl} 枢機卿ケッテリ様のお力で{nl} 城将にしてもらったのさ。{page}「なにせ ケッテリ卿といやあ{nl} グルド王が 誰よりも信頼している{nl} １番の重臣だ。{page} そのケッテリ卿に{nl} 一体 どんな手を使って{nl} とりいったんだか・・・{page}「まったく お偉い方なんてな{nl} どいつもこいつも{nl} ロクなモンじゃねぇぜ！！",
-   "en": ""
+   "en": "\"Atta boy, you get it.{page} So.. about this Gubbe. He was never cut{nl} out to be a commander.{page}\"But somehow, through Cardinal{nl} Ketteri's power, they made him one.{page}\"Lord Ketteri, see, is the King of Guld's{nl} most trusted chief minister.{page} How on earth did Gubbe worm his way{nl} into Lord Ketteri's favor...{page}\"Honestly, these bigwigs, every last one{nl} of them is no good!!"
   },
   {
    "id": "r045_0984",
    "addr": "0984",
    "size": 54,
    "jp": "「ちっ！{nl} つまらねぇガキだぜ。{nl} とっとと帰んな！！",
-   "en": ""
+   "en": "\"Tch! What a dull brat. Get lost!!"
   },
   {
    "id": "r045_09BC",
    "addr": "09BC",
    "size": 196,
    "jp": "「ユ－リは兵力を 近くの村に{nl} 集めているらしいな。{page}「それが わかっているなら{nl} こっちから 攻めれば{nl} いいのに・・・{page} もっとも 城将グッベ様は{nl} そんなことの わかるお人では{nl} ないがな。",
-   "en": ""
+   "en": "\"Seems Yuri's gathering troops in a{nl} nearby village.{page}\"If we know that much, we should just{nl} attack first...{page} Not that Commander Gubbe is the sort{nl} to understand that."
   },
   {
    "id": "r045_0A82",
    "addr": "0A82",
    "size": 126,
    "jp": "「グッベ様は ユ－リ軍の力を{nl} あまく見ているのさ。{page} 本格的に攻めてこないのは{nl} 敵に戦力がないからだと{nl} 思っているんだ。",
-   "en": ""
+   "en": "\"Gubbe takes Yuri's army too lightly.{page} He thinks they don't attack in earnest{nl} because they've got no strength."
   }
  ]
 }

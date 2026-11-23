@@ -11,21 +11,21 @@
    "addr": "0051",
    "size": 186,
    "jp": "「お城が いきなり{nl} 炎につつまれて・・・・{page} 奥の部屋まで 人の争う声が{nl} 聞こえてきたわ。{page}「気がついたら そのまんま{nl} お城から 逃げ出していたの。{page}「恐かった・・・{wait}{wait}とっても。",
-   "en": ""
+   "en": "\"The castle was suddenly wrapped in{nl} flames....{page} I could hear people fighting even in the{nl} back rooms.{page}\"Before I knew it, I had run straight{nl} out of the castle.{page}\"I was scared... {wait}{wait}so scared."
   },
   {
    "id": "r048_0111",
    "addr": "0111",
    "size": 70,
    "jp": "「エルダ－ル村も{nl} グルドの大軍に{nl} やられて しまったらしいわ・・・",
-   "en": ""
+   "en": "\"I hear Eldar Village was struck by the{nl} great Guld army too..."
   },
   {
    "id": "r048_015D",
    "addr": "015D",
    "size": 104,
    "jp": "「ああ・・・{wait}{wait}{nl} エルダ－ルの あの人は{nl} どうしたのかしら・・・{page}「生きててくれれば いいけど・・・",
-   "en": ""
+   "en": "\"Oh... {wait}{wait}I wonder what became of{nl} that man in Eldar...{page}\"I hope he's alive..."
   }
  ]
 }

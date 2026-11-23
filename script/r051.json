@@ -11,21 +11,21 @@
    "addr": "0049",
    "size": 140,
    "jp": "「家から出ては いけないって{nl} グルド兵が ふれまわったんだ。{page}「そのとき チラッと聞いたんだが{nl} どうも 王様が{nl} 行方不明らしいんだよ。",
-   "en": ""
+   "en": "\"The Guld soldiers went around telling{nl} us not to leave our homes.{page}\"I overheard something then. It seems{nl} the King has gone missing."
   },
   {
    "id": "r051_00DB",
    "addr": "00DB",
    "size": 132,
    "jp": "「もしかすると グスタフ王は{nl} どこかに 逃げのびてるかも{nl} しれないな。{page}「いや ユ－リ様だって{nl} ほんとは 生きているかも・・・",
-   "en": ""
+   "en": "\"Maybe King Gustav escaped somewhere.{page}\"No, maybe even Yuri-sama is really{nl} alive..."
   },
   {
    "id": "r051_0165",
    "addr": "0165",
    "size": 138,
    "jp": "「生きのこった シルヴェル兵は{nl} とらえられて どこかに{nl} 送られちまったらしいな。{page}「あんたたちも あまり{nl} 出歩かないほうが いいよ。",
-   "en": ""
+   "en": "\"It seems the surviving Silvel soldiers{nl} were captured and sent off somewhere.{page}\"You'd better not wander about too{nl} much either."
   }
  ]
 }

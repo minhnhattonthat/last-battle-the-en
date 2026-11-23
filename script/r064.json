@@ -11,98 +11,98 @@
    "addr": "0105",
    "size": 58,
    "jp": "「なんだ おまえは？{nl} この村に 知り合いでもいたのか？{page}",
-   "en": ""
+   "en": "\"What are you? Did you know someone{nl} in this village?{page}"
   },
   {
    "id": "r064_013F",
    "addr": "013F",
    "size": 80,
    "jp": "「この村は われらグルド軍に{nl} はむかった 見せしめとして{nl} 焼き討ちにしたぞ！",
-   "en": ""
+   "en": "\"We burned this village to the ground{nl} as a lesson for defying the Guld army!"
   },
   {
    "id": "r064_0197",
    "addr": "0197",
    "size": 110,
    "jp": "「村の連中のことだと？{wait}{nl} 知らんな。{page} どいつも こいつも{nl} ちりぢりに逃げ出したからな。{nl} はっはっは！！",
-   "en": ""
+   "en": "\"The villagers, you say? {wait}No idea.{page} Every last one of them scattered and{nl} ran. Ha ha ha!!"
   },
   {
    "id": "r064_0207",
    "addr": "0207",
    "size": 118,
    "jp": "「われらに さからうとは{nl} この村のやつらも バカな連中だ。{page}「おまえも{nl} いつまでも ウロウロせず{nl} さっさと帰れ！",
-   "en": ""
+   "en": "\"These villagers were fools to defy us.{page}\"And you, stop loitering and get going!"
   },
   {
    "id": "r064_0289",
    "addr": "0289",
    "size": 408,
    "jp": "コンラ－ト{nl}「クルト・・・！？{nl} ・・クルトじゃないか！！{page} おれだよ{nl} エルダ－ルのコンラ－トだよ！{page} びっくりしたなぁ・・・{nl} おまえ 無事だったのか！！{page}「え？{wait}{wait}{nl} 村の みんなのことか・・・{wait}{wait}{wait}{wait}{page} わからない。{nl} あの後 グルドが また襲ってきて{nl} 村を 焼き討ちにしたんだ。{page} とにかく 逃げるのが やっとで{nl} 気がついたら１人になってたのさ。{page} でも おれは{nl} みんな無事だって信じてるよ。",
-   "en": ""
+   "en": "Konrad{nl}\"Kurt...?! ..Isn't that Kurt?!{page} It's me, Konrad, from Eldar!{page} What a surprise... you're safe!!{page}\"Huh? {wait}{wait}The people from the village...{nl} {wait}{wait}{wait}{wait}{page} I don't know. After that, Guld attacked{nl} again and burned the village down.{page} It was all I could do to run, and when I{nl} came to, I was all alone.{page} But I believe everyone is safe."
   },
   {
    "id": "r064_0427",
    "addr": "0427",
    "size": 136,
    "jp": "コンラ－ト{nl}「エルダ－ル村の みんなも{nl} きっと 無事に 決まってるさ。{page}「今に 平和が もどったら{nl} みんなも 村に もどってくるさ。",
-   "en": ""
+   "en": "Konrad{nl}\"I'm sure everyone from Eldar Village is{nl} safe.{page}\"Once peace comes back, they'll all come{nl} home to the village."
   },
   {
    "id": "r064_04B5",
    "addr": "04B5",
    "size": 146,
    "jp": "コンラ－ト{nl}「おれ 騎士になったんだぜ！{nl} 今 剣の特訓を うけてんだ。{page}「見てろよ おれの剣で{nl} グルド兵を １人残らず{nl} 追っぱらってやる！！",
-   "en": ""
+   "en": "Konrad{nl}\"I've become a knight! I'm in sword{nl} training right now.{page}\"Just watch, I'll chase off every last{nl} Guld soldier with my sword!!"
   },
   {
    "id": "r064_0549",
    "addr": "0549",
    "size": 96,
    "jp": "コンラ－ト{nl}「おれ 城の仕事をやめたんだ。{page} ここで 村のみんなが{nl} 帰ってくるのを待ってるよ。",
-   "en": ""
+   "en": "Konrad{nl}\"I quit my job at the castle.{page} I'm waiting here for everyone from the{nl} village to come home."
   },
   {
    "id": "r064_05AB",
    "addr": "05AB",
    "size": 116,
    "jp": "コンラ－ト{nl}「村のみんなも きっとどこかで{nl} 生きているよ。{page} シルヴェルが平和になったと知れば{nl} もどってくるさ。",
-   "en": ""
+   "en": "Konrad{nl}\"Everyone from the village is surely{nl} alive somewhere.{page} Once they hear Silvel is at peace, they'll{nl} come back."
   },
   {
    "id": "r064_062B",
    "addr": "062B",
    "size": 98,
    "jp": "「こらこら じゃまをするな！{nl} 今 こいつに剣の訓練を{nl} してるんだ。{page}「危ないから はなれてろ！",
-   "en": ""
+   "en": "\"Now, now, don't get in the way! I'm{nl} training this fellow in the sword.{page}\"It's dangerous, so stand back!"
   },
   {
    "id": "r064_0693",
    "addr": "0693",
    "size": 90,
    "jp": "「だ・{wait}{wait}か・{wait}{wait}ら・・{wait}{wait}{nl} じゃまを するんじゃないっ！{page} ケガしても 知らんぞっ！！",
-   "en": ""
+   "en": "\"I.{wait}{wait}said.{wait}{wait}don't.. {wait}{wait}get in the{nl} way!{page} Don't blame me if you get hurt!!"
   },
   {
    "id": "r064_06F3",
    "addr": "06F3",
    "size": 238,
    "jp": "「コンラ－トは なかなか{nl} いいカンを している。{page} 上達も早いし{nl} やる気も じゅうぶんだ。{page}「でも まだまだ実力不足だな。{nl} もっと 訓練をしなきゃ{nl} 一人前の騎士とは言えん。{page}「だから おまえたちと{nl} 遊んでいるヒマは ないんだよ。",
-   "en": ""
+   "en": "\"Konrad has good instincts.{page} He learns fast and he's eager enough.{page}\"But he still lacks skill. He needs more{nl} training before he can be called a true{nl} knight.{page}\"So we've no time to play around with{nl} you."
   },
   {
    "id": "r064_07E3",
    "addr": "07E3",
    "size": 94,
    "jp": "「あたし お城の侍女をやめたの。{nl} ここで コンラ－トと いっしょに{nl} くらすことに決めたわ。",
-   "en": ""
+   "en": "\"I quit being a castle maid. I've decided{nl} to live here with Konrad."
   },
   {
    "id": "r064_0843",
    "addr": "0843",
    "size": 122,
    "jp": "「シルヴェルが{nl} まだまだ 大変だってことは{nl} わかってるわ。{page} でも今は コンラ－トのそばに{nl} ついていて あげたいの。",
-   "en": ""
+   "en": "\"I know Silvel still has a long way to go.{page} But right now, I want to stay by{nl} Konrad's side."
   },
   {
    "id": "r064_08C5",

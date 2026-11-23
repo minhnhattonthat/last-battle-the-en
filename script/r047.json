@@ -11,21 +11,21 @@
    "addr": "0045",
    "size": 168,
    "jp": "「ユ－リ様ですか？・・・。{page} ユ－リ様も 最後には{nl} 剣をとって 戦いの中に{nl} とびこんでいかれて・・・。{page}「そのときが ユ－リ様を{nl} お見かけした 最後でした・・・。",
-   "en": ""
+   "en": "\"Yuri-sama?...{page} In the end, Yuri-sama took up a sword{nl} and charged into the fighting too...{page}\"That was the last time I saw{nl} Yuri-sama..."
   },
   {
    "id": "r047_00F3",
    "addr": "00F3",
    "size": 168,
    "jp": "「王様の行方については{nl} 私には さっぱり・・・。{page}「ユ－リ様が{nl} なにか 手を うっていると{nl} 思うのですが・・・{page}「あの 混乱の中ですから{nl} 私には わかりません。",
-   "en": ""
+   "en": "\"As for where the King went, I have no{nl} idea at all...{page}\"I believe Yuri-sama had some plan...{page}\"But in all that chaos, I just don't know."
   },
   {
    "id": "r047_01A1",
    "addr": "01A1",
    "size": 50,
    "jp": "「みなさま ご無事なら{nl} よろしいのですが・・・。",
-   "en": ""
+   "en": "\"I only hope everyone is safe..."
   }
  ]
 }

@@ -104,6 +104,11 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | エットミランシェル | Ettmiranshel | | the world | |
 | フェナムン | Fenamun | | a person's true name; フェナムンの儀式 = the Fenamun rite; フェナムンの宝珠 = Fenamun Orb | |
 | 宰相 | Chancellor | | Chancellor Yuri-sama | |
+| 枢機卿 | Cardinal | | Cardinal Ketteri; ケッテリ卿 = Lord Ketteri | |
+| 城将 | Commander | | Commander Gubbe (castle commander) | |
+| 第２グルド城 | Second Guld Castle | | occupied Silvel Castle | |
+| 囚人島 | Prison Island | | | |
+| 魔法合成 | spell synthesis | | magic healers' service | |
 | 魔法司 | mage | | castle/town healer-mages | |
 | 鳥人兵 | birdmen | | Guld flying troops | |
 | いやしの館 | House of Healing | | | |

@@ -11,42 +11,42 @@
    "addr": "0065",
    "size": 82,
    "jp": "「グルドの ドロボ－どもめ！{wait}{wait}{wait}{wait}{nl} 商品を ぜ～んぶ{nl} もっていかれちまった！",
-   "en": ""
+   "en": "\"Those Guld thieves! {wait}{wait}{wait}{wait}They took{nl} every last thing I had to sell!"
   },
   {
    "id": "r050_00BD",
    "addr": "00BD",
    "size": 52,
    "jp": "「これから どうやって{nl} くらしていけば いいんだ？",
-   "en": ""
+   "en": "\"How am I supposed to make a living{nl} now?"
   },
   {
    "id": "r050_00F7",
    "addr": "00F7",
    "size": 66,
    "jp": "「いくら うちが{nl} 武器屋だからって・・{wait}{wait}{wait}{wait}{nl} あんまりだ－！",
-   "en": ""
+   "en": "\"Sure, we're a weapon shop..{nl} {wait}{wait}{wait}{wait}but this is too much!"
   },
   {
    "id": "r050_0149",
    "addr": "0149",
    "size": 82,
    "jp": "「これは ウワサなんだが・・・{wait}{wait}{nl} ユ－リ様は どうやら{nl} 戦死なさったらしい。",
-   "en": ""
+   "en": "\"This is only a rumor... {wait}{wait}but it seems{nl} Yuri-sama died in battle."
   },
   {
    "id": "r050_01A1",
    "addr": "01A1",
    "size": 52,
    "jp": "「グルド軍め！{wait}{wait}{wait}{wait}{nl} ひどいことを するよなあ。",
-   "en": ""
+   "en": "\"Curse the Guld army! {wait}{wait}{wait}{wait}What a{nl} cruel thing to do."
   },
   {
    "id": "r050_01DB",
    "addr": "01DB",
    "size": 102,
    "jp": "「おれも シルヴェルのために{nl} 戦いたかったんだが・・・。{page}「町の人を 助けるのが{nl} やっとだったよ。",
-   "en": ""
+   "en": "\"I wanted to fight for Silvel too...{page}\"But helping the townsfolk was all I{nl} could manage."
   }
  ]
 }

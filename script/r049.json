@@ -11,28 +11,28 @@
    "addr": "0061",
    "size": 72,
    "jp": "「わ－ん！！{nl} シルヴェルの 兵隊さんたち{nl} どこへ いっちゃったの？！",
-   "en": ""
+   "en": "\"Waaah!! Where did all the Silvel soldiers{nl} go?!"
   },
   {
    "id": "r049_00B9",
    "addr": "00B9",
    "size": 98,
    "jp": "「この先 シルヴェルは{nl} どうなるんでしょう？{page}「心配で 心配で{nl} だまってなんか いられないわ。",
-   "en": ""
+   "en": "\"What will become of Silvel now?{page}\"I'm so worried, I can't keep quiet."
   },
   {
    "id": "r049_0121",
    "addr": "0121",
    "size": 96,
    "jp": "「どうしましょう。{nl} いったい どうしたらいいの？{page}「ユ－リ様が{nl} 戦死して しまったなんて！！",
-   "en": ""
+   "en": "\"What do I do? What on earth do I do?{page}\"To think Yuri-sama died in battle!!"
   },
   {
    "id": "r049_0187",
    "addr": "0187",
    "size": 52,
    "jp": "「うちの子は これから{nl} 誰を手本にすれば いいの？",
-   "en": ""
+   "en": "\"Who will my child look up to now?"
   }
  ]
 }
