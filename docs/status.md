@@ -2,9 +2,25 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator, in progress: 3137/3143 translated (the 6 left in `script/keep_jp.txt`: 2 no
-  longer read, 4 battle particles), 42 tests green. 2026-11-24 session 22.
+- **Phase:** 8. QA in the emulator, in progress: 3138/3143 translated (the 5 left in `script/keep_jp.txt` are
+  particle columns no longer read), 43 tests green. 2026-11-24 session 23.
 - **Done:**
+  - **Phase 8, session 2026-11-24 (23), part 2:** QA gate passes on tour3 (43 scenes re-shot after a full disk).
+    Text coverage: `build.py` writes `build/strings.tsv` (`tools/strings_tsv.py`, block strings keyed by stream),
+    `tools/debug/textcover.lua` (block-aware probe + script chaining), `tools/debug/textcover_run.py` (every room
+    and the 14 story-variant blocks), warp.lua ad-hoc `RUN`; test in `test_english_build_moves`. Partial run only.
+  - **Phase 8, session 2026-11-24 (23):** full visual pass of the re-tour (`work/qa/tour2`, then `tour3` on the
+    fixed build; page-end extraction for the long scenes, inkbox on the prompt bar). Fixed: (1) party wipeout
+    "全滅しました・・・" was garbled kana columns: `battle_text.column_messages` now walks any column script to its FF
+    (column from the op's VRAM dest) -> "All have / fallen..."; column data moved to `$FE:8000` (0x3F0000, the
+    `$2A:8FF0` spare was too small); `bt_19D4BB` グルド軍に遭遇! = "Guld's / army!" (29:8256, unseen: needs
+    `$180A`=0x14). (2) Battle item drop "Mana / Herbを y.dれu": 30:ADF8 stored を_てにいれた as immediates ->
+    `battle_text.found_message` stores "found!". (3) 32 field prompts sat up to 2.5 tiles left of the JP centre
+    (`batches.wrap` capped them at the JP string's tile count): cap now the 26-tile prompt box (`MSG_BOX`), half
+    rounds up, JP trailing blanks ignored, `{009F}` counts (b067; inkbox save_confirm 36/79 -> 60/55). (4) The
+    item-name label beside the menu icons (FA18 windows `0x21656`/`0x21660`) widened 8 -> 9 tiles: "Longsword" was
+    under its border. Seen OK: battle spell info Flame / 1 foe / Pow / Rng / MP (field magic), Basic tactic box,
+    Fireball / A cast box, all 33 place banners, all shops/inns/healers, stress saves, epilogue. Minors to polish.md.
   - **Phase 8, session 2026-11-24 (22):** visual review of the tour found battle bugs, all fixed and shot:
     (1) `tools/blz.py` encoder emitted self-overlapping copies the game's decoder (30:F5C1) reads as old window bytes:
     every battle had garbage tiles (lines in all box borders, `!` as a cross); decoder now models it, encoder keeps
@@ -234,17 +250,23 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   0. **Phase 8: QA in the emulator** (done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
      `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
-     **Resume here:** the build changed after the last tour (`work/qa/tour`, build a4c004d, gate chunks
-     `chunk_d370dd40b303_*`): re-run the tour (`run_scenes.py build/lastbattle_en.sfc --out work/qa/tour --jobs 3`),
-     `qa_gate.py init ... --build`, `todo`, then `review_sheets.py` per chunk and write verdicts. Reviewed so far
-     on the old tour: battle_field, battle_room, battle_win (all fixed above).
+     **Resume here:** visual-QA gate PASSES on `work/qa/tour3` (263/263 sheets ok, `qa_gate.py check` exit 0;
+     scene notes in `work/qa/verdict_notes.tsv`). Text coverage is wired (`docs/re/debug.md` §Text coverage,
+     AGENTS.md Coverage line) but only partly run: the session-23 runs were stopped by Claude Code for low memory
+     (18 emulators on a 16 GB machine: keep the total to ~4 jobs). Partial: 89/323 rooms, 912/3143 strings shown
+     (`work/qa/cover`, report `work/qa/cover_report.txt`). Re-run, one at a time, ~4 jobs: (1) rooms not finished
+     (`textcover_run.py work/qa/cover --jobs 4 --rooms <list>`: rooms already done = r<id>_* dirs with ALLDONE);
+     (2) `run_scenes.py build/lastbattle_en.sfc --out work/qa/cover/scenes --jobs 4 --script tools/debug/textcover.lua
+     --var "RANGES='<textcover_run.rom_ranges>'"` (menus, shops, names); (3) the battle routes through `probe.py`
+     with the same script (`work/qa/cover/battle`). Then waive what is shown unreachable in `docs/text_unshown.tsv`.
+     Known gaps that will remain: the magic-synthesis battle screen (item 1a), conditional branches inside room
+     scripts (flags), and the graphics-text cold-boot check (chapter cards, game over, credits).
      Write verdicts chunk by chunk to `work/qa/verdicts/<chunk>.tsv` (brief
      `docs/visual-qa-brief.md`; compare `work/qa/tour_jp/<scene>`). Budget: 261 sheets are 520x456 with 128x112
      tiles, too small to read text, so for each scene zoom the text boxes (`sheet.py DIR --changed 0.03 --crop
      0,150,256,74 --div 1 --cols 3`; battle top boxes `--crop 0,0,256,64`) and read `final.png`; about 3 chunks
      fit in one worker context, so hand back with the verdicts written so far.
-     Phase-8 items left: the 6 particle ids in `script/keep_jp.txt` (`bt_19D4BB` and the の/に/し/ま/た pieces: see
-     them in a battle, then translate or blank); the spell info labels right of the battle magic window
+     Phase-8 items left: the spell info labels right of the battle magic window
      (いりょく/しゃていきょり/MP, tiles from a WRAM block: graphics); find the screen of the equip labels
      `bg3_A729/A737/A73D` (Wpn/Shld/Feet, 4 tiles assumed) and the teleport list at 9 letters (`MENU_CAP`);
      `inkbox.py` on Yes/No and centred boxes; `textcover.py`. Minors in `docs/polish.md`; worth a `codex exec -s
@@ -309,7 +331,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
   4. Chapter 4 recap (room 198 NPC talk `$7F:015A`) has no scene: talking to that NPC needs its position; text
      coverage will flag it if missed.
 - **Open bugs:** none.
-- **Waiting on the user:** non-blocking: item names are 9 letters (D18; a few abbreviated, listed in
+- **Waiting on the user:** BLOCKING (phase 8 text coverage): Claude Code stopped the session-23 coverage runs because
+  the machine ran low on memory (my fault: 18 emulators at once on 16 GB; the C: drive was also full and has
+  been cleared to 170 GB free). Say to re-run them at ~4 emulators (commands under Next, item 0). Non-blocking: item names are 9 letters (D18; a few abbreviated, listed in
   `docs/polish.md`): say if you want the bigger engine change (one-column item lists, new cursor logic) for full
   12-letter names. Non-blocking: item/spell description boxes are 6 x 7 and 7 x 4 fixed 8 px tiles; the
   default (D9) writes terse English to them; say if you want the engine change that draws descriptions through the

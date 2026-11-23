@@ -61,24 +61,36 @@ def parse_rooms(spec):
     return out
 
 
+def emu_run(a, d, rid, pokes, ranges, extra, frames):
+    d.mkdir(parents=True, exist_ok=True)
+    cmd = [sys.executable, "-X", "utf8", str(Path(SKILL) / "scripts" / "emu.py"), a.rom, "--out", str(d),
+           "--script", str(ROOT / "tools" / "debug" / "warp.lua"),
+           "--script", str(ROOT / "tools" / "debug" / "textcover.lua"),
+           "--frames", str(frames), "--timeout", "900",
+           "--var", f"ROOM={rid}", "--var", f"X={a.x}", "--var", f"Y={a.y}", "--var", "GOD=1", "--var", "WIN=1",
+           "--var", f"POKES='{pokes}'", "--var", f"RANGES='{ranges}'"] + extra
+    subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+    return (d / "log.txt").read_text(encoding="utf-8", errors="replace") if (d / "log.txt").exists() else ""
+
+
 def run_room(a, idx, entries, ranges):
     rid, pokes = VARIANTS.get(idx, (idx + 1, "-"))
     todo, n, notes = list(entries), 0, []
     while todo and n < len(entries) + 2:
         d = Path(a.out) / f"r{idx + 1:03d}_{n}"
-        d.mkdir(parents=True, exist_ok=True)
-        cmd = [sys.executable, "-X", "utf8", str(Path(SKILL) / "scripts" / "emu.py"), a.rom, "--out", str(d),
-               "--script", str(ROOT / "tools" / "debug" / "warp.lua"),
-               "--script", str(ROOT / "tools" / "debug" / "textcover.lua"),
-               "--frames", str(a.frames), "--timeout", "900",
-               "--var", f"ROOM={rid}", "--var", f"X={a.x}", "--var", f"Y={a.y}", "--var", "GOD=1", "--var", "WIN=1",
-               "--var", f"POKES='{pokes}'", "--var", f"RANGES='{ranges}'", "--var", "RUNS='" + ",".join(f"{e:04X}" for e in todo) + "'"]
-        subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
-        log = (d / "log.txt").read_text(encoding="utf-8", errors="replace") if (d / "log.txt").exists() else ""
+        log = emu_run(a, d, rid, pokes, ranges, ["--var", "RUNS='" + ",".join(f"{e:04X}" for e in todo) + "'"],
+                      a.frames)
         if "ALLDONE" in log:
             return idx + 1, notes + [f"{n}: all done"]
         m = re.search(r"^(LEFT|STUCK|NOSTART) ([0-9A-F]{4})", log, re.M)
         ended = re.findall(r"^END ([0-9A-F]{4})", log, re.M)
+        if m and m.group(1) == "NOSTART" and not ended:
+            # the field loop never takes an injected script here (an event holds it): run each entry in place of
+            # the room's entry script instead, one boot each, A mashed for a fixed time
+            for e in todo:
+                emu_run(a, Path(a.out) / f"r{idx + 1:03d}_e{e:04X}", rid, pokes, ranges,
+                        ["--var", f"RUN=0x{e:04X}", "--mash", "12"], 5500)
+            return idx + 1, notes + [f"{n}: NOSTART, {len(todo)} entries run as the entry script"]
         if m:
             bad = int(m.group(2), 16)
             notes.append(f"{n}: {m.group(1)} {bad:04X}")
@@ -104,7 +116,8 @@ def main():
     a = ap.parse_args()
     orig = ORIG.read_bytes()
     ranges = rom_ranges(Path(a.strings))
-    jobs = [(n - 1, room_entries(orig, n - 1)) for n in parse_rooms(a.rooms)]
+    jobs = [(n - 1, room_entries(orig, n - 1)) for n in parse_rooms(a.rooms)
+            if (ROOT / "script" / f"r{n - 1:03d}.json").exists()]  # rooms with no text have no script file
     with cf.ThreadPoolExecutor(a.jobs) as ex:
         for rid, notes in ex.map(lambda j: run_room(a, j[0], j[1], ranges), jobs):
             print(f"room {rid}: {'; '.join(notes)}", flush=True)

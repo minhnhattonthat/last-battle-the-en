@@ -48,12 +48,12 @@ end
 local function num(s) if s == nil or s == "-" or s == "" then return nil end return tonumber(s) end
 
 local scene
--- Ad-hoc probe without a scenes.tsv row: --var ROOM=0x4D --var X=10 --var Y=6 [--var DIR=2]
+-- Ad-hoc probe without a scenes.tsv row: --var ROOM=0x4D --var X=10 --var Y=6 [--var DIR=2] [--var RUN=0x0123]
 --   [--var "KEYS='60 -;6 a'"] [--var "OPS='06E400'"] [--var "POKES='0200=1'"]
 if ROOM then
   SCENE = "adhoc"
   scene = { name = SCENE, room = ROOM, x = X, y = Y, dir = DIR or 2, pokes = POKES or "-", keys = KEYS or "-",
-            ops = OPS }
+            ops = OPS, run = RUN }  -- RUN: $7F address run instead of the room's entry script
 end
 for line in io.lines(SCENES) do
   if not (scene and scene.name == "adhoc") and line:sub(1, 1) ~= "#" and line:match("%S") then
