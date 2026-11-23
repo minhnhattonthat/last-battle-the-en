@@ -46,112 +46,112 @@
    "addr": "0678",
    "size": 172,
    "jp": "フェ－ベンネルス{nl}「そうか・・・{wait}{wait}{nl} まあ それも よかろう。{page} 時間は あるのだ。{nl} ゆっくり考えるがよい。{page}「おまえが やる気になるまで{nl} わしは まっておるからな。",
-   "en": ""
+   "en": "Febennels{nl}\"I see... {wait}{wait}Well, that is fine too.{page} There is time. Think it over slowly.{page}\"I shall wait for you until you are{nl} ready."
   },
   {
    "id": "r076_0726",
    "addr": "0726",
    "size": 150,
    "jp": "フェ－ベンネルス{nl}「どうした クルト{nl} 修行する気になったのか？{nl} それとも休みにきたのか{page}{FB00}{F400}「どうするのだ？{nl}{F600}修行させてもらう{nl}{F600}一晩 休ませて",
-   "en": ""
+   "en": "Febennels{nl}\"What is it, Kurt? Ready to train now?{nl} Or have you come to rest?{page}{FB00}{F400}\"What will you do?{nl}{F600}I want to train{nl}{F600}Let me rest tonight"
   },
   {
    "id": "r076_07C8",
    "addr": "07C8",
    "size": 64,
    "jp": "フェ－ベンネルス{nl}「そうか{wait}{wait}{nl} では ゆっくり 休むがよい。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"I see. {wait}{wait}Then rest well.{page2}"
   },
   {
    "id": "r076_0810",
    "addr": "0810",
    "size": 58,
    "jp": "「おまえが やる気になるまで{nl} わしは まっておるからな。",
-   "en": ""
+   "en": "\"I shall wait for you until you are{nl} ready."
   },
   {
    "id": "r076_084C",
    "addr": "084C",
    "size": 260,
    "jp": "フェ－ベンネルス{nl}「おや ２人とも{nl} どこに いっていたのじゃ？{page} 急に いなくなったから{nl} 心配したではないか。{page}「まあ 無事ならば それでよいが{nl} おまえたちには{nl} まだ 大事な話があるのじゃ。{page} 忘れたわけでは あるまい？{nl} ユ－リ殿の手紙の話じゃよ。{page}",
-   "en": ""
+   "en": "Febennels{nl}\"Oh, you two! Where have you been?{page} You vanished all of a sudden. I was{nl} worried!{page}\"Well, as long as you are safe. But I still{nl} have something important to tell you.{page} You haven't forgotten? The matter of{nl} Yuri-dono's letter.{page}"
   },
   {
    "id": "r076_0954",
    "addr": "0954",
    "size": 98,
    "jp": "フェ－ベンネルス{nl}「どうしたのじゃ クルト？{wait}{wait}{page}{FB00}{F400}{F600}質問が あるんだけど{nl}{F600}今日は もう寝るよ",
-   "en": ""
+   "en": "Febennels{nl}\"What is it, Kurt? {wait}{wait}{page}{FB00}{F400}{F600}I have a question{nl}{F600}I'm going to bed"
   },
   {
    "id": "r076_09C0",
    "addr": "09C0",
    "size": 98,
    "jp": "フェ－ベンネルス{nl}「どうしたのじゃ クルト？{wait}{wait}{page}{FB00}{F400}{F600}質問が あるんだけど{nl}{F600}今日は もう寝るよ",
-   "en": ""
+   "en": "Febennels{nl}\"What is it, Kurt? {wait}{wait}{page}{FB00}{F400}{F600}I have a question{nl}{F600}I'm going to bed"
   },
   {
    "id": "r076_0A2E",
    "addr": "0A2E",
    "size": 126,
    "jp": "フェ－ベンネルス{nl}「２人とも 無理はするでないぞ。{nl} 修行に無理は 禁物じゃ。{page} つかれたら いつでも{nl} もどってくるがよい。",
-   "en": ""
+   "en": "Febennels{nl}\"Don't push yourselves, you two.{nl} Overdoing it is no good in training.{page} Come back whenever you are tired."
   },
   {
    "id": "r076_0AB0",
    "addr": "0AB0",
    "size": 116,
    "jp": "「なにが 聞きたいんじゃね？{wait}{wait}{page}{FB00}{F400}{F600}マナって なに？{nl}{F600}マナと魔法について教えて{nl}{F600}魔法を作るには どうするの？",
-   "en": ""
+   "en": "\"What would you like to know? {wait}{wait}{page}{FB00}{F400}{F600}What is mana?{nl}{F600}Tell me about mana and magic{nl}{F600}How do I make spells?"
   },
   {
    "id": "r076_0B38",
    "addr": "0B38",
    "size": 94,
    "jp": "「なにが 聞きたいんじゃね？{wait}{wait}{nl}{F600}魔法を作るには どうするの？{nl}{F600}修行は いつまで続けるの？",
-   "en": ""
+   "en": "\"What would you like to know? {wait}{wait}{nl}{F600}How do I make spells?{nl}{F600}How long does training last?"
   },
   {
    "id": "r076_0BA2",
    "addr": "0BA2",
    "size": 128,
    "jp": "「なにが 聞きたいんじゃね？{wait}{wait}{wait}{wait}{page}{FB00}{F400}{F600}魔法を作るには どうするの？{nl}{F600}修行は いつまで続けるの？{nl}{F600}銀のネファって なに？",
-   "en": ""
+   "en": "\"What would you like to know?{nl} {wait}{wait}{wait}{wait}{page}{FB00}{F400}{F600}How do I make spells?{nl}{F600}How long does training last?{nl}{F600}What is the Silver Nepha?"
   },
   {
    "id": "r076_0C30",
    "addr": "0C30",
    "size": 310,
    "jp": "「マナとは{nl} 魔法の元になる力のことで{nl} 火・水・風・大地の４つがある。{page}「マナを手に入れるには{nl} 魔物と戦ったりして{nl} 自分を きたえていけばよい。{page} しかし それには{nl} 各ヶのマナのフェナムンを知り{nl} マナの加護を 受けねばならん。{page}「そのため マナの精霊像に{nl} いのりを ささげる必要が{nl} あるのじゃよ。",
-   "en": ""
+   "en": "\"Mana is the power that magic is made{nl} from. There are four kinds: fire, water,{nl} wind and earth.{page}\"To gain mana, you fight monsters and{nl} train yourself.{page} But first you must learn the Fenamun{nl} of each mana and receive its blessing.{page}\"For that, you must offer prayers at{nl} the mana spirit statues."
   },
   {
    "id": "r076_0D6A",
    "addr": "0D6A",
    "size": 242,
    "jp": "「ほとんどの魔法は {nl} １種類か２種類のマナから{nl} 成り立っている。{page} そして その種類と分量の{nl} 組み合わせ方を 変えることで{nl} 様ヶな魔法が 作れるのじゃ。{page}「しかし これは説明するより{nl} あれこれ試してみる方が{nl} わかりやすいじゃろう。",
-   "en": ""
+   "en": "\"Most spells are made of one or two{nl} kinds of mana.{page} By changing the kinds and the amounts{nl} you combine, you can make all sorts of{nl} spells.{page}\"But rather than hear me explain, you{nl} will learn faster by trying things out."
   },
   {
    "id": "r076_0E60",
    "addr": "0E60",
    "size": 292,
    "jp": "「魔法を作るには{nl} マナを合成するのじゃが{nl} これは魔法司に頼めばよい。{page}「ただし それができるのは{nl} 特別な修行をした魔法司だけじゃ。{page}「このあたりで その修行をした者は{nl} 今のところ うちのビ－ボォしか{nl} おらんじゃろう。{page} だから 新しい魔法を作りたいなら{nl} ビ－ボォに頼むがよかろう。",
-   "en": ""
+   "en": "\"To make a spell, you combine mana. A{nl} mage can do that for you.{page}\"But only mages with special training{nl} can do it.{page}\"Around here, the only one with that{nl} training is our Beebo.{page} So if you want to make new spells, ask{nl} Beebo."
   },
   {
    "id": "r076_0F8A",
    "addr": "0F8A",
    "size": 354,
    "jp": "「なんじゃ もう修行が{nl} いやになったのか？{nl} 困ったものじゃ・・・{page}「よいか 修行に終りなどない！{nl} 人生とは修行の連続なのじゃ！！{wait}{wait}{wait}{page} ・・・とはいえ{nl} ルドムの塔の修行にかぎれば{nl} 終りはある。{page}「じつは ルドムの塔のどこかに{nl} 銀のネファという品物が{nl} かくしてあるのじゃ。{page} それを見つけてきたら{nl} ルドムの塔での修行は{nl} おしまいじゃよ。",
-   "en": ""
+   "en": "\"What, tired of training already? Dear{nl} me...{page}\"Listen! Training never ends! Life is one{nl} long training!! {wait}{wait}{wait}{page} ...That said, the training in the Tower of{nl} Rudom does have an end.{page}\"Somewhere in the Tower of Rudom, an{nl} item called the Silver Nepha is hidden.{page} Find it and bring it back, and your{nl} training in the tower is over."
   },
   {
    "id": "r076_10F0",
    "addr": "10F0",
    "size": 184,
    "jp": "「ネファは{nl} 特別な魔法を作るのに必要な{nl} 魔宝石じゃ。{page}「ただし マナと違って{nl} ネファだけで 魔法を作ることは{nl} できん。{page} そのかわり 使っても{nl} なくなることは ないんじゃよ。",
-   "en": "",
+   "en": "\"Nepha is a magic gem needed to make{nl} special spells.{page}\"But unlike mana, Nepha alone cannot{nl} make a spell.{page} In return, it never runs out, however{nl} much you use it.",
    "reached": false
   },
   {
@@ -159,133 +159,133 @@
    "addr": "11AA",
    "size": 144,
    "jp": "フェ－ベンネルス{nl}「わしは しばらく{nl} 旅に出ようと思う。{page} レジ－ナ姫の話を聞いて{nl} 気になることを思い出してな。{nl} 少し調べてみたいのじゃ。",
-   "en": ""
+   "en": "Febennels{nl}\"I think I shall go on a journey for a{nl} while.{page} Hearing Princess Regina's story reminded{nl} me of something. I want to look into it."
   },
   {
    "id": "r076_123C",
    "addr": "123C",
    "size": 246,
    "jp": "フェ－ベンネルス{nl}「何が気になるかじゃと？{page}「今は まだ言えん。{nl} 思いすごしかもしれんのじゃ。{page}「じゃが あるいは{nl} いずれ そなたらと力を合せて{nl} 戦うこともあろう。{page}「わしは いつでも{nl} そなたらに マナの加護があるよう{nl} いのっておるぞ。",
-   "en": ""
+   "en": "Febennels{nl}\"What is on my mind, you ask?{page}\"I cannot say yet. I may be wrong.{page}\"But perhaps one day we will fight side{nl} by side.{page}\"I will always pray that the mana{nl} watches over you."
   },
   {
    "id": "r076_134A",
    "addr": "134A",
    "size": 106,
    "jp": "ビ－ボォ{nl}「キキッ キ－！{nl} ただの リスじゃないわよ。{nl} これでもフェ－ベン様の{nl} 一番弟子なんだから！",
-   "en": ""
+   "en": "Beebo{nl}\"Kik-kee! I'm no ordinary squirrel. I'm{nl} Febennels-sama's top pupil, you know!"
   },
   {
    "id": "r076_13C6",
    "addr": "13C6",
    "size": 114,
    "jp": "ビ－ボォ{nl}「あんた なかなか{nl} いい素質を 持ってるわよ。{page} ちゃんと修行すれば{nl} いい魔法使いに なれるかもね。",
-   "en": ""
+   "en": "Beebo{nl}\"You've got pretty good talent, you{nl} know.{page} Train properly and you might make a{nl} good mage."
   },
   {
    "id": "r076_144E",
    "addr": "144E",
    "size": 98,
    "jp": "ビ－ボォ{nl}「たいへんよっ！{nl} シルヴェル城が攻められた！{page} えっ！？{nl} なんだ もう知ってるの？{page}",
-   "en": ""
+   "en": "Beebo{nl}\"Big news! Silvel Castle was attacked!{page} Huh?! What, you already know?{page}"
   },
   {
    "id": "r076_14B0",
    "addr": "14B0",
    "size": 100,
    "jp": "ビ－ボォ{nl}「グルド人って{nl} やっぱり乱暴なのかなあ・・・{page} まさか リスを{nl} 食べたりしないわよね？",
-   "en": ""
+   "en": "Beebo{nl}\"I bet the Guld people are rough, huh...{page} They wouldn't eat squirrels, would{nl} they?"
   },
   {
    "id": "r076_1516",
    "addr": "1516",
    "size": 74,
    "jp": "ビ－ボォ{nl}「な－に？ 新しい魔法を作るの？{nl} それとも 治療してほしい？{page}",
-   "en": ""
+   "en": "Beebo{nl}\"Wha-at? Making a new spell? Or do you{nl} want healing?{page}"
   },
   {
    "id": "r076_1565",
    "addr": "1565",
    "size": 104,
    "jp": "ビ－ボォ{nl}「グルド人がきた！{nl} グルド人がきた！{page} どうしよう！？{nl} あたし 食べられちゃうよ－っ！！{page}",
-   "en": ""
+   "en": "Beebo{nl}\"The Guld people are here! The Guld{nl} people are here!{page} What do I do?! They're gonna eat me!!{page}"
   },
   {
    "id": "r076_15CF",
    "addr": "15CF",
    "size": 128,
    "jp": "ビ－ボォ{nl}「なによ！{nl} グルド人が きたのよ！{page} あたし 食べられちゃうかも{nl} しんないのよ！{page} こんなときに なんの用なの？{page}",
-   "en": ""
+   "en": "Beebo{nl}\"What?! The Guld people are here!{page} They might eat me, you know!{page} What do you want at a time like this?{page}"
   },
   {
    "id": "r076_1654",
    "addr": "1654",
    "size": 350,
    "jp": "ビ－ボォ{nl}「ねねっ 聞いた？{page} グルド人は リスは{nl} 食べないんだってさ。{nl} あ－ よかった！{page}「ところで{nl} あたしに 何か用なの？{page}「なによ？ まだ あたしに{nl} 魔法司がわりを やらせるつもり？{page} 人間のくせに{nl} いつまでも リスに あまえて{nl} はずかしくないのっ！{page}「・・まあ しょうがないから{nl} やってあげるけど これが最後よ。{nl} いいわね！{page}",
-   "en": ""
+   "en": "Beebo{nl}\"Hey, hey, did you hear?{page} Guld people don't eat squirrels! Phew,{nl} what a relief!{page}\"Anyway, did you want something?{page}\"What? You still want me to stand in{nl} for a mage?{page} You're human, and you keep leaning on{nl} a squirrel! Aren't you ashamed?!{page}\"..Well, I'll do it, since I have to. But this{nl} is the last time. Got it?!{page}"
   },
   {
    "id": "r076_17B7",
    "addr": "17B7",
    "size": 126,
    "jp": "ビ－ボォ{nl}「まっ あんたたちも{nl} 大変だろうけどさ{page} あたしたち リスが{nl} 平和に くらせるように{nl} がんばんのよ。いいわね。",
-   "en": ""
+   "en": "Beebo{nl}\"Well, I know it's hard for you too.{page} But do your best, so us squirrels can{nl} live in peace. Got it?"
   },
   {
    "id": "r076_1837",
    "addr": "1837",
    "size": 290,
    "jp": "ビ－ボォ{nl}「なによ？ まだ あたしに{nl} 魔法司がわりを やらせるつもり？{page}「ずっと西の 大きな町にいけば{nl} 人間の魔法司が いるじゃない。{page} そのくらい{nl} ちゃんと お金はらって{nl} やってもらいなさいよ！{page}「もう・・しょうがないわね。{nl} やってあげるけど{nl} これで本当に最後よ いいわね！{page}",
-   "en": ""
+   "en": "Beebo{nl}\"What? You still want me to stand in{nl} for a mage?{page}\"Go to the big town far to the west.{nl} There are human mages there!{page} At least pay them proper money for it!{page}\"Oh... fine. I'll do it, but this is REALLY{nl} the last time. Got it?!{page}"
   },
   {
    "id": "r076_1972",
    "addr": "1972",
    "size": 84,
    "jp": "レジ－ナ{nl}「だれだ おまえたちは？{page} どうして 子供やエルフが{nl} ここに いるんだ？",
-   "en": ""
+   "en": "Regina{nl}\"Who are you?{page} Why are a child and an elf here?"
   },
   {
    "id": "r076_19C8",
    "addr": "19C8",
    "size": 142,
    "jp": "レジ－ナ{nl}「とにかく おまえたちに用はない。{nl} 邪魔しないでくれ。{page} 私は 老魔法使い殿に{nl} 大事な たのみが あって{nl} ここまで きたんだ。",
-   "en": ""
+   "en": "Regina{nl}\"Anyway, I have no business with you.{nl} Stay out of my way.{page} I came all this way with an important{nl} request for the old wizard."
   },
   {
    "id": "r076_1A58",
    "addr": "1A58",
    "size": 98,
    "jp": "レジ－ナ{nl}「まさか 老魔法使い殿の{nl} 弟子というのは おまえたち・・？{wait}{wait}{page} いや まさかな・・・",
-   "en": ""
+   "en": "Regina{nl}\"Don't tell me the old wizard's pupils{nl} are you two..? {wait}{wait}{page} No, surely not..."
   },
   {
    "id": "r076_1AC2",
    "addr": "1AC2",
    "size": 110,
    "jp": "フェ－ベンネルス{nl}「うぬ？{wait}{wait} クルト{wait}{wait}{nl} クルトではないか！{page} おや？{nl} エルフ族のメイも いっしょか。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Hm? {wait}{wait}Kurt? {wait}{wait}It's Kurt!{page} Oh? And Mei of the elves with you.{page2}"
   },
   {
    "id": "r076_1B4C",
    "addr": "1B4C",
    "size": 236,
    "jp": "フェ－ベンネルス{nl}「こんな夜中に どうしたのじゃ？{nl} ２人とも ひどく つかれて・・・{page}{FB00}「・・・もしや・・・{wait}{wait}{nl} おまえたち シルヴェル城から{nl} 逃げてきたのか！？{page} そうか・・・{nl} よくぞ ここまで{nl} 無事に たどりついたのう！{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"What brings you here so late at night?{nl} You both look worn out...{page}{FB00}\"...Could it be... {wait}{wait}you fled from Silvel{nl} Castle?!{page} I see... You did well to make it here{nl} safely!{page2}"
   },
   {
    "id": "r076_1C59",
    "addr": "1C59",
    "size": 678,
    "jp": "フェ－ベンネルス{nl}「シルヴェル城が{nl} 攻め落とされたようじゃな。{page} 夜空が 炎で照らされておった。{nl} あれはシルヴェル城の方角じゃ。{page} どうやら{nl} ユ－リ殿の心配した通りに{nl} なったようじゃのう・・・{page}{FB00}「ところで クルト{nl} わしに なにか用かな？{page2}{F9FF}クルトたちは{nl}フェ－ベンネルスに{nl}ユ－リの手紙を わたした。{page2}{F9FF}{B8C3}フェ－ベンネルス{nl}「なに？{nl} ユ－リ殿が わしに手紙を？{page} ・・・・{wait}{wait}・・{wait}{wait}・・・・・・{wait}{wait}{wait}{wait}{nl} ・・・・・・・{wait}{wait}・・・・・{wait}{wait}{wait}{wait}{nl} ふむ・・・{wait}{wait}なるほど。{page}{FB00}「クルト メイ{nl} これは おまえたちに閑係のある{nl} 手紙じゃぞ。{page}「しかし 今は２人とも{nl} つかれておるじゃろう。{page} くわしい話は{nl} 明日にするとしよう。{nl} 今夜は ひとまず休むがよい。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"So Silvel Castle has fallen.{page} The night sky was lit with flames, in the{nl} direction of Silvel Castle.{page} It seems things went just as Yuri-dono{nl} feared...{page}{FB00}\"By the way, Kurt, did you need me for{nl} something?{page2}{F9FF}Kurt and Mei gave Febennels Yuri's{nl}letter.{page2}{F9FF}{B8C3}Febennels{nl}\"What? A letter for me from Yuri-dono?{page} ....{wait}{wait}..{wait}{wait}......{wait}{wait}{wait}{wait}{nl} .......{wait}{wait}.....{wait}{wait}{wait}{wait}{nl} Hmm... {wait}{wait}I see.{page}{FB00}\"Kurt, Mei, this letter concerns you{nl} both.{page}\"But you are both tired now.{page} We will talk it over tomorrow. Rest for{nl} tonight.{page2}"
   },
   {
    "id": "r076_1F17",
    "addr": "1F17",
    "size": 212,
    "jp": "フェ－ベンネルス{nl}「そうか よく決心した！{page} ならば これより{nl} おまえたちは わしの弟子じゃ。{page} これで きっと{nl} ユ－リ殿も よろこばれよう。{page2}{F9FF}「さて ではまず{nl} 魔法の基本を{nl} 説明せねば なるまいな。{page}",
-   "en": ""
+   "en": "Febennels{nl}\"So, you have made up your minds!{page} Then from now on, you are my pupils.{page} Yuri-dono will surely be glad.{page2}{F9FF}\"Now then, first I must explain the{nl} basics of magic.{page}"
   },
   {
    "id": "r076_1FED",
