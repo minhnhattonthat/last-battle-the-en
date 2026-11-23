@@ -11,42 +11,42 @@
    "addr": "023C",
    "size": 232,
    "jp": "「見てみなされ この はいきょを。{nl} いにしえの都も 時の流れには{nl} 勝てぬのじゃ。{page}「ウ－ドの都と いえば{nl} かつては はんえいを極めた{nl} 大きな都だったらしいが・・・。{page}「もはや このような形で{nl} わずかな部分を 残るのみじゃ。",
-   "en": "\"Look at these ruins. Even an ancient{nl} capital can't beat the passing of time.{page}\"The capital of Ude, they say, was once{nl} a great city at the height of its glory...{page}\"Now only a small part remains, like this."
+   "en": "\"Look at these ruins, eh. Even an{nl} ancient capital can't beat the passing of{nl} time.{page}\"The capital of Ude, they say, was once{nl} a great city at the height of its glory...{page}\"Now only this little bit remains, mark{nl} you."
   },
   {
    "id": "r192_0332",
    "addr": "0332",
    "size": 162,
    "jp": "「この はいきょのことか？{nl} わしも よくは知らんのじゃ{nl} くわしく 知りたいのならば{page} この荒野を こえて{nl} クロケット村の 図書館で{nl} しらべてみるがよいな。",
-   "en": "\"About these ruins? I don't know much{nl} myself. If you want to know more,{page} cross this wilderness and look it up in{nl} the library at Kroket village."
+   "en": "\"These ruins, eh? I don't know much{nl} myself. If you want to know more, lad,{page} cross this wilderness and look it up in{nl} the library at Kroket village."
   },
   {
    "id": "r192_03DE",
    "addr": "03DE",
    "size": 120,
    "jp": "「このウ－ドの はいきょに{nl} すんでる者なぞ おりゃせんよ。{page}「みんな 昼間だけ{nl} ふらっと ここに現れる{nl} だけじゃ。",
-   "en": "\"No one lives in these ruins of Ude.{page}\"Everyone just wanders in here during{nl} the day."
+   "en": "\"Nobody lives in these ruins of Ude, eh.{page}\"Folk just wander in here in the{nl} daytime, that's all."
   },
   {
    "id": "r192_0458",
    "addr": "0458",
    "size": 74,
    "jp": "「いらっしゃい。{nl} ここは 特別営業中の{nl} ウ－ドの なんでも屋じゃよ。{page}",
-   "en": "\"Welcome. This is Ude's general store,{nl} open for special business.{page}"
+   "en": "\"Welcome, welcome. This is Ude's general{nl} store, open for special business, eh.{page}"
   },
   {
    "id": "r192_04A7",
    "addr": "04A7",
    "size": 50,
    "jp": "「この はいきょも{nl} 静けさを とりもどしたのぅ。",
-   "en": "\"These ruins have found their quiet{nl} again."
+   "en": "\"These ruins have found their quiet{nl} again, eh."
   },
   {
    "id": "r192_04DB",
    "addr": "04DB",
    "size": 70,
    "jp": "「やあれ やれじゃのぅ{nl} これで みんな{nl} やすらかに 眠れるかのぅ。",
-   "en": "\"Well, well, well. Now everyone can rest{nl} in peace."
+   "en": "\"Well, well, well. Now everyone can rest{nl} in peace, eh."
   },
   {
    "id": "r192_0527",
@@ -180,7 +180,7 @@
    "addr": "1095",
    "size": 146,
    "jp": "「グルドに 時間をあたえると{nl} また力をためて シルヴェルまで{nl} 攻めてくる やもしれん。{page} やはり あの城塞は{nl} おとさねば ならんのう・・・。",
-   "en": "\"Give Guld time, and they may build up{nl} their strength and attack Silvel again.{page} We must take that fortress after all..."
+   "en": "\"Give Guld time, and they may build up{nl} their strength and attack Silvel again.{page} We must take that fortress after all,{nl} eh..."
   },
   {
    "id": "r192_1129",

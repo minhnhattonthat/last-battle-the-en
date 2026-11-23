@@ -123,14 +123,14 @@
    "addr": "0660",
    "size": 68,
    "jp": "長老{nl}「クルト 気をつけるんじゃぞ。{nl} じっとしていると狙われるぞ！",
-   "en": "Elder{nl}\"Kurt, be careful. Stand still and they'll{nl} target you!"
+   "en": "Elder{nl}\"Careful now, Kurt, my boy! Stand still{nl} and they'll pick you off, eh!"
   },
   {
    "id": "r309_06A6",
    "addr": "06A6",
    "size": 72,
    "jp": "長老{nl}「敵は次ヶに襲ってくるのじゃ！{nl} 戦いの時はボ－っとするでないぞ！",
-   "en": "Elder{nl}\"The enemy will keep attacking! Don't{nl} stand around dazed in battle!"
+   "en": "Elder{nl}\"They'll keep comin' at you, lad! No{nl} standin' about in a daze in battle, now!"
   },
   {
    "id": "r309_0702",

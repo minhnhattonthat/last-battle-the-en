@@ -60,7 +60,7 @@
    "addr": "073F",
    "size": 316,
    "jp": "「わかった わかった！{nl} みなまで言わずとも けっこう。{page}{FB00}{wait}{wait}{wait}{wait}{wait}「キミたちは{nl} 心の中ではすでに 手を借すことに{nl} 決めている{wait}{wait}{wait}{wait} しかし！{page}「秘密がもれる 恐れがあるため{nl} いいえと こたえている。{wait}{wait}{wait}{wait}{nl} この 用心深さ！！{wait}{wait}{wait}{wait}{page}「この スヴァルト{nl} １本 取られましたな。{nl} わっはっは・・・{page}",
-   "en": "\"I know, I know! No need to say more.{page}{FB00}{wait}{wait}{wait}{wait}{wait}\"In your hearts, you've{nl}already decided to help{wait}{wait}{wait}{wait} but!{page}\"You answer no for fear the secret{nl} might leak. {wait}{wait}{wait}{wait}Such caution!!{nl} {wait}{wait}{wait}{wait}{page}\"You've got one over on me, Svart. Ha{nl} ha ha...{page}"
+   "en": "\"I know, I know! No need to say more.{page}{FB00}{wait}{wait}{wait}{wait}{wait}\"In your hearts, you've{nl}already decided to help.{wait}{wait}{wait}{wait} But!{page}\"You answer no for fear the secret{nl} might leak. {wait}{wait}{wait}{wait}Such caution!!{nl} {wait}{wait}{wait}{wait}{page}\"You've bested old Svart this time. Ha{nl} ha ha...{page}"
   },
   {
    "id": "r121_0885",

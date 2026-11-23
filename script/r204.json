@@ -67,7 +67,7 @@
    "addr": "06C6",
    "size": 156,
    "jp": "「うぬっ！{wait}{wait} うぬぬぬっ！{nl}{D328} お{wait}{wait} おぬしら 風の玉を{nl} 持っておらんではないか！？{page} ど{wait}{wait} どこで なくしたんじゃ？{nl} 早く 取りもどしてこ～い！",
-   "en": "\"Grr! {wait}{wait}Grrrr!{nl} {D328} Y{wait}{wait}you don't have the{nl} Wind Orb, do you?!{page} Wh{wait}{wait}where did you lose it? Go get it{nl} back, now!"
+   "en": "\"Grr! {wait}{wait}Grrrr!{nl} {D328} Y-{wait}{wait}you don't have the{nl} Wind Orb, do you?!{page} Wh-{wait}{wait}where did you lose it? Go get it{nl} back, now!"
   },
   {
    "id": "r204_0764",

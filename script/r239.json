@@ -60,7 +60,7 @@
    "addr": "025B",
    "size": 120,
    "jp": "「この魔法使いは{nl} 私が 相手をします！{page}「早く 城塞の扉を{nl} 開いてください！！{page}「ヴェム{wait}{wait} スト－ル{wait}{wait}ダ－ド！！",
-   "en": "\"I'll deal with this mage!{page}\"Hurry and open the fortress door!!{page}\"Vem...{wait}{wait} Stor...{wait}{wait}Dod!!"
+   "en": "\"I'll deal with this mage!{page}\"Hurry and open the fortress door!!{page}\"Vem...{wait}{wait} Stor...{wait}{wait} Dod!!"
   },
   {
    "id": "r239_02DD",
@@ -81,7 +81,7 @@
    "addr": "0353",
    "size": 36,
    "jp": "「ヴェム{wait}{wait} スト－ル{wait}{wait}ダ－ド！！",
-   "en": "\"Vem...{wait}{wait} Stor...{wait}{wait}Dod!!"
+   "en": "\"Vem...{wait}{wait} Stor...{wait}{wait} Dod!!"
   },
   {
    "id": "r239_0381",

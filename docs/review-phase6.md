@@ -50,3 +50,22 @@ the style reference), "Cardinal-sama" -> "Your Eminence" / "His Eminence" (`r248
 | b025 | ok | r116_0062 garbled "in see, that house" (b056) | r118_0067 (caption tense) |
 | b026 | ok | r118_0B57 hyphen-split "crafts-men", r118_074D caption tense (b056) | - |
 | b027 | ok | minor fixed in b056: r121_006F "Borg, and his friends" | - |
+| b028 | ok | r121_073F Svart garbled ("decided to help but!", "one over on me, Svart"), b057 | - |
+| b029 | ok | Yaak shaman じゃ voice: r135_0305, r135_0417, r135_04B9 (b057) | - |
+| b030 | ok | - | - |
+| b031 | ok | - | - |
+| b032 | ok | minor fixed in b057: r144_04BB run-on | - |
+| b033 | ok | - | - |
+| b034 | ok | - | - |
+| b035 | ok | - | - |
+| b036 | ok | - | - |
+| b037 | ok | minor fixed in b057: r187_0612 "tell Yuri-sama in Eldar so" | - |
+| b038 | ok | Ude ruins old man (Eld's ghost) じゃ/のぅ voice: r192_023C, r192_0332, r192_03DE, r192_0458, r192_04A7, r192_04DB, r192_1095 (b057) | - |
+| b039 | ok | - | - |
+| b040 | ok | Kroket old men じゃ/のぅ voice: r195_0048, r195_00C6, r197_00A1; r198_068E caption tense (b057) | - |
+| b041 | ok | r198_09A0 book 『真の言葉の使い手』 said "master(s) of the (true) word": now "true word-speaker" (glossary); r204_06C6 stutter typos (b057) | - |
+| b042 | ok | minor fixed in b057: chant "Stor...Dod" spacing r239_025B, r239_0353 | - |
+| b043 | ok | minor: r244_07AF mage じゃ tag (b057) | - |
+| b044 | ok | r255_098C Lidar "is about me alone" (b057) | - |
+| b045 | ok | Nordrig old man じゃ voice: r257_0044, r257_018A (b057) | - |
+| b046 | ok | r293_00AE Iskar "rightful/real master of the true words" -> "true word-speaker" (matches b054); Eldar Elder じゃ voice r309_0660, r309_06A6 (b057) | - |

@@ -81,7 +81,7 @@
    "addr": "068E",
    "size": 262,
    "jp": "クルトは『工業大全集』の本を{nl}手に取ろうとした{wait}{wait}{wait}{wait}{wait} が！{page}{C035} ガサ {wait}ガサ {wait}ガサ {wait}ガサ{wait}{wait}{page}{FB00}なにやら 奥のほうで{nl}虫の はいまわる音がする。{wait}{wait}{wait}{page}{FB00}メイと レジ－ナの まゆが{wait}{nl}ぴく ぴくしている。{page}{FB00}クルトは あわてて{nl}本を 手に取るのをやめた。",
-   "en": "Kurt tried to pick up the book{nl}'Complete Industry' {wait}{wait}{wait}{wait}{wait}but!{page}{C035}Rustle {wait}rustle {wait}rustle {wait}rustle{wait}{wait}{page}{FB00}Something sounds like bugs{nl}crawling around in the back.{wait}{wait}{wait}{page}{FB00}Mei's and Regina's eyebrows{wait}{nl}are twitching.{page}{FB00}Kurt hastily gave up on{nl}taking the book."
+   "en": "Kurt tried to pick up the book{nl}'Complete Industry' {wait}{wait}{wait}{wait}{wait}but!{page}{C035}Rustle {wait}rustle {wait}rustle {wait}rustle{wait}{wait}{page}{FB00}Something sounded like bugs{nl}crawling around in the back.{wait}{wait}{wait}{page}{FB00}Mei's and Regina's eyebrows{wait}{nl}twitched.{page}{FB00}Kurt hastily gave up on{nl}taking the book."
   },
   {
    "id": "r198_0796",
@@ -109,7 +109,7 @@
    "addr": "09A0",
    "size": 596,
    "jp": "クルトは『真の言葉の使い手』の本を{nl}見つけて 読んだ。{page}{FB00}この長い エットミランシェルの{nl}歴史の中で もっとも 言葉の使い手{nl}として 完成を見た者は{page}火のフェナムンを おのれの{nl}通り名として 勇名をはせた{nl}ウ－ドの建国王 エルドであろう。{page}しかし 真なる言葉の使い手に{nl}までには 彼も達することはできず{page}王の後継者たちは 言葉の力を{nl}もてあそび ついにはウ－ド王国を{nl}崩壊に 導いた。{page}{FB00}ただ わずかな救いとして 崩壊前に{nl}言葉の力を正しく使おうとする者達が{nl}新たな 国づくりをはじめていた。{page}かれらが 正しき言葉の使い手として{nl}道を 歩まんことを いのる。{page}{nl}  大ウ－ド王国崩壊より ３年・記",
-   "en": "Kurt found and read the book{nl}'Masters of the True Word'.{page}{FB00}In the long history of Ettmiranshel,{nl}the one who came nearest to mastery{nl}of the word was likely{page}Eld, founding king of Ude, famed{nl}for taking the Fenamun of fire{nl}as his own name.{page}Yet even he could not become{nl}a true master of the word,{page}and the kings after him toyed with{nl}the power of words, and at last{nl}led the Ude kingdom to its fall.{page}{FB00}One small mercy: before the fall,{nl}some who would use words rightly{nl}had begun to build new nations.{page}I pray they walk the path{nl}of true masters of the word.{page}{nl}Written 3 years after Ude's fall"
+   "en": "Kurt found and read the book{nl}'The True Word-Speaker'.{page}{FB00}In the long history of Ettmiranshel,{nl}the one who came nearest to being{nl}a perfect word-speaker was likely{page}Eld, founding king of Ude, famed{nl}for taking the Fenamun of fire{nl}as his own name.{page}Yet even he could not become{nl}a true word-speaker,{page}and the kings after him toyed with{nl}the power of words, and at last{nl}led the Ude kingdom to its fall.{page}{FB00}One small mercy: before the fall,{nl}some who would use words rightly{nl}had begun to build new nations.{page}I pray they walk the path{nl}of true word-speakers.{page}{nl}Written 3 years after Ude's fall"
   },
   {
    "id": "r198_0BF6",

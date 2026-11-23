@@ -53,7 +53,7 @@
    "addr": "04BB",
    "size": 150,
    "jp": "ヤ－ク魔法司{nl}「おねがいです{nl} 助けて あげてください。{page}「道具屋の奥さん{wait}{wait}{wait}{wait}{nl} きっと わたしを逃がすために{nl} 自分が残ったに 違いないんです。",
-   "en": "Yaak Mage{nl}\"Please, save her.{page}\"The item shop's missus{wait}{wait}{wait}{wait} I'm{nl} sure she stayed behind so I could{nl} escape."
+   "en": "Yaak Mage{nl}\"Please, save her.{page}\"The item shop's missus...{wait}{wait}{wait}{wait} I'm{nl} sure she stayed behind so I could{nl} escape."
   },
   {
    "id": "r144_0553",
