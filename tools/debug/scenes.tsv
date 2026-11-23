@@ -1,0 +1,18 @@
+# name	room	x	y	dir	pokes	run	keys	notes
+newgame	-	-	-	-	-	-	-	first room as the game starts it (room 2, Kurt's house, intro)
+room_4d	0x4D	10	6	2	-	-	-	test
+t_e400	0x4D	10	6	2	-	ops:00E400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -	test shop
+t_e404	0x4D	10	6	2	-	ops:04E401	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -	test inn
+t_e406	0x4D	10	6	2	-	ops:06E400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -	test healer
+t_e409	0x4D	10	6	2	-	ops:09E400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -	test 9
+walk_0c	0x0C	8	8	2	-	-	200 down;200 left;200 up;200 right;200 down;200 right;200 up;200 left;200 down;200 left;200 up;200 right	walk for an encounter
+walk_01	0x01	10	10	2	-	-	300 down;200 left;300 down;300 right;300 down;200 left;300 down	walk out of village 1
+walk_4d	0x4D	10	6	2	-	-	100 down;100 left;200 down;100 right;200 down;100 right;200 down;200 down;200 left;300 down;200 right;300 down	walk out of house 4D
+walk_00	0x00	30	30	2	-	-	200 down;200 left;200 up;200 right;200 down;200 right;200 up;200 left;200 down;200 left;200 up;200 right	overworld walk
+menu_cmd	0x4D	10	6	2	-	-	60 -;6 a;60 -	field command menu (A): どうしますか? + 8 icons
+menu_search	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 right;40 -;6 a;120 -	search: nobody/nothing here
+menu_magic	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;120 -	magic
+menu_item	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;120 -	items
+menu_equip	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;120 -	equipment
+menu_status	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;120 -	status
+menu_system	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 left;40 -;6 a;90 -	system (save, config)
