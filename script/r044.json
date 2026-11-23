@@ -11,35 +11,35 @@
    "addr": "005D",
    "size": 46,
    "jp": "「は・{wait}{wait}{wait}{wait}さ・{wait}{wait}{wait}{wait}ん・{wait}{wait}{wait}{wait}だ－！！",
-   "en": ""
+   "en": "\"I'm.{wait}{wait}{wait}{wait}.ru.{wait}{wait}{wait}{wait}.ined.{wait}{wait}{wait}{wait}.!!"
   },
   {
    "id": "r044_0095",
    "addr": "0095",
    "size": 34,
    "jp": "「わ・・{wait}{wait} わしの 商売が－！！",
-   "en": ""
+   "en": "\"M..{wait}{wait}my business!!"
   },
   {
    "id": "r044_00C3",
    "addr": "00C3",
    "size": 60,
    "jp": "「お父様は{nl} 朝から あの様子なの。{nl} だいじょうぶかしら？",
-   "en": ""
+   "en": "\"Father has been like that since this{nl} morning. I wonder if he's all right."
   },
   {
    "id": "r044_0105",
    "addr": "0105",
    "size": 50,
    "jp": "「このまま この町で{nl} くらして いけるのかしら？",
-   "en": ""
+   "en": "\"I wonder if we can go on living in this{nl} town."
   },
   {
    "id": "r044_013D",
    "addr": "013D",
    "size": 78,
    "jp": "「ねえ 聞いてよ。{nl} 商売ものを み～んな{nl} グルド兵に とられてしまったの。",
-   "en": ""
+   "en": "\"Listen to this. The Guld soldiers took{nl} every last thing we had to sell."
   }
  ]
 }

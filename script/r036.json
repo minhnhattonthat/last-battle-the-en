@@ -11,35 +11,35 @@
    "addr": "0058",
    "size": 104,
    "jp": "「なんだ おまえ{nl} 弱そうな ぼうずだなあ。{page} オレ様みたいに{nl} 腕を みがかなきゃ{nl} 強くなれないぞ！",
-   "en": ""
+   "en": "\"Huh, you look like a weak little kid.{page} You won't get strong unless you hone{nl} your skills like me!"
   },
   {
    "id": "r036_00C6",
    "addr": "00C6",
    "size": 98,
    "jp": "「世の中きびしいんだ。{page} 強くなけりゃ ほしい物も{nl} 手に入らないし{nl} 大事なものも 守れないぞ。",
-   "en": ""
+   "en": "\"The world's a tough place.{page} If you're not strong, you can't get{nl} what you want, or protect what{nl} matters."
   },
   {
    "id": "r036_012E",
    "addr": "012E",
    "size": 76,
    "jp": "「おっ！{nl} また会ったな ぼうず。{page} どうだ 少しは{nl} 腕を みがいたのか？",
-   "en": ""
+   "en": "\"Oh! We meet again, kid.{page} Well? Have you honed your skills a bit?"
   },
   {
    "id": "r036_0180",
    "addr": "0180",
    "size": 104,
    "jp": "「このシルヴェルの町も{nl} やっと もとにもどったよ。{page}「グルドに占領されるなんて{nl} 二度と ごめんだね。",
-   "en": ""
+   "en": "\"This town of Silvel is finally back to{nl} normal.{page}\"I never want to be occupied by Guld{nl} again."
   },
   {
    "id": "r036_01EE",
    "addr": "01EE",
    "size": 142,
    "jp": "「このシルヴェルの町は{nl} おれたち シルヴェル人の手で{nl} 取り返したんだ！！{page}「世の中 あきらめさえしなきゃ{nl} どんなことだって できるのさ！",
-   "en": ""
+   "en": "\"We Silvel folk took this town of Silvel{nl} back with our own hands!!{page}\"As long as you never give up, you can{nl} do anything in this world!"
   }
  ]
 }

@@ -11,21 +11,21 @@
    "addr": "004A",
    "size": 96,
    "jp": "「なんだ おまえら{nl} シルヴェル人のガキか？{page} どおりで 品のねぇツラ{nl} してやがると思ったぜ。",
-   "en": ""
+   "en": "\"What, you're Silvel brats?{page} No wonder you've got such common{nl} faces."
   },
   {
    "id": "r045_00B0",
    "addr": "00B0",
    "size": 156,
    "jp": "「いいか 勝負はついたんだ。{page} 反乱なんて ばかげたことを{nl} 考えるんじゃねぇぞ！{page}「もっとも 反乱がおきたって{nl} すぐに ひねりつぶして{nl} やるけどな！！",
-   "en": ""
+   "en": "\"Listen, it's all settled.{page} Don't go thinking any fool thoughts{nl} about a rebellion!{page}\"Not that it'd matter. If there's a{nl} rebellion, we'll crush it in no time!!"
   },
   {
    "id": "r045_014E",
    "addr": "014E",
    "size": 242,
    "jp": "「くそっ！{nl} 城将グッベ様は{nl} なにも わかっちゃいない！！{page} 港町ハンスタッドの反乱で{nl} ただでさえ グルド本国との{nl} 連絡が とだえているのに・・・{page}「こうしてる間に 敵が攻めてきたら{nl} どうすんだよ！{nl} 戦うのは おれたち兵士なんだぞ！",
-   "en": ""
+   "en": "\"Dammit! Commander Gubbe doesn't{nl} understand a thing!!{page} With the revolt in the port town of{nl} Hanstad, we've already lost contact{nl} with the Guld homeland...{page}\"What if the enemy attacks while we're{nl} like this?! It's us soldiers who do the{nl} fighting!"
   },
   {
    "id": "r045_0242",

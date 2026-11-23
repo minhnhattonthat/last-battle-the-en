@@ -11,35 +11,35 @@
    "addr": "00F3",
    "size": 168,
    "jp": "「いらっしゃいませ－{nl} こちらは宿屋です{wait}{wait}・・・が{wait}{nl} もうしわけありません。{page}「今日は もう{nl} お部屋が あいてないんです。{page}「また どうぞ{nl} お立ちよりください。",
-   "en": ""
+   "en": "\"Welcome! This is the inn {wait}{wait}...but {wait}I'm{nl} terribly sorry.{page}\"We have no rooms free today.{page}\"Please do stop by again."
   },
   {
    "id": "r039_019D",
    "addr": "019D",
    "size": 76,
    "jp": "「よくいらっしゃいました！{nl} どうぞ この宿屋で{nl} おくつろぎ ください。{page}",
-   "en": ""
+   "en": "\"Welcome, welcome! Please make{nl} yourself at home here at our inn.{page}"
   },
   {
    "id": "r039_01F4",
    "addr": "01F4",
    "size": 380,
    "jp": "「ざんねんだったな ぼうず。{nl} この宿屋は 今日{nl} おれたちの かしきりだ。{page} 悪いが 他を あたるんだな。{page}{FB00}「そうだ おまえ{nl} グラッドという男を 知らないか？{page} おれたちゃ そいつに{nl} 大事な物を 盗まれちまってなあ。{page} 仲間と手わけして{nl} あちこち{nl} さがしてるんだが・・・。{page}「・・・いや 知らねえんなら{nl} べつに いいんだ。{page}「さあ あかるいうちに{nl} とっとと帰んな。",
-   "en": ""
+   "en": "\"Tough luck, kid. We've got this inn all to{nl} ourselves today.{page} Sorry, but try somewhere else.{page}{FB00}\"Oh yeah, kid, do you know a man called{nl} Glad?{page} He stole something important from us.{page} We split up with our mates and we're{nl} searching all over...{page}\"...Nah, if you don't know, never mind.{page}\"Now get on home while it's still light."
   },
   {
    "id": "r039_0372",
    "addr": "0372",
    "size": 148,
    "jp": "「しつこい ぼうずだな！{nl} おまえの とまれる部屋は{nl} ないんだよ。{page}「悪いが ほかを あたるんだな。{nl} {wait}といっても ほかに宿屋は{nl} ねえけどな。",
-   "en": ""
+   "en": "\"You're a pesky kid! There's no room for{nl} you here.{page}\"Sorry, but try somewhere else. {wait}Not{nl} that there's any other inn."
   },
   {
    "id": "r039_0408",
    "addr": "0408",
    "size": 82,
    "jp": "「また きたのか ぼうず。{nl} この宿屋は おれたちの{nl} かしきりだって 言ったろ？",
-   "en": ""
+   "en": "\"You again, kid? I told you, we've got{nl} this inn all to ourselves."
   }
  ]
 }

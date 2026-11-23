@@ -11,182 +11,182 @@
    "addr": "019C",
    "size": 60,
    "jp": "「こらっ！{page}「勝手に 外に出ては ならぬと{nl} 命じただろう！",
-   "en": ""
+   "en": "\"Hey!{page}\"Didn't we order you not to go outside{nl} without leave?!"
   },
   {
    "id": "r041_01E2",
    "addr": "01E2",
    "size": 60,
    "jp": "「さっさと 帰らぬと{nl} ひっとらえて{nl} 牢に ぶちこむぞ！！",
-   "en": ""
+   "en": "\"Get home now, or we'll grab you and{nl} throw you in the cell!!"
   },
   {
    "id": "r041_0220",
    "addr": "0220",
    "size": 58,
    "jp": "「こらっ おまえたち！{nl} こんな夜中に なにをしている！！",
-   "en": ""
+   "en": "\"Hey, you two! What are you doing out{nl} in the middle of the night?!"
   },
   {
    "id": "r041_025C",
    "addr": "025C",
    "size": 166,
    "jp": "「ええい こうるさい{nl} シルヴェルの 残党どもめっ！{page} 攻めてきたかと思えば{nl} すぐ 逃げおって{nl} ひきょうな やつらだ！！{page}「攻めてくるなら{nl} 正面から堂ヶと来い！",
-   "en": ""
+   "en": "\"Blast it, these pesky Silvel stragglers!{page} They attack, then run off the next{nl} moment. Cowards!!{page}\"If you're going to attack, come at us{nl} head-on!"
   },
   {
    "id": "r041_0304",
    "addr": "0304",
    "size": 156,
    "jp": "「町の連中め どこに行ったんだ！{nl} 戦いの どさくさまぎれに{nl} み～んな 逃げ出しやがって！{page}「我らの目を盗み 町を逃げ出すとは{nl} ふとどきな やつらだ！！",
-   "en": ""
+   "en": "\"Where did the townsfolk go?! They all{nl} ran off in the chaos of the battle!{page}\"Slipping out of town behind our backs,{nl} the insolent lot!!"
   },
   {
    "id": "r041_03A2",
    "addr": "03A2",
    "size": 78,
    "jp": "「うぬっ！{nl} きさまらもシルヴェル軍か！？{nl} ならば ようしゃしないぞっ！！{page2}",
-   "en": ""
+   "en": "\"Grr! Are you Silvel troops too?! Then{nl} I'll show no mercy!!{page2}"
   },
   {
    "id": "r041_0406",
    "addr": "0406",
    "size": 208,
    "jp": "「シルヴェル攻撃は{nl} だまし討ちみたいで気が重くてな。{page} そのかわり すべての国が{nl} １つになったんだ。{page} これで 何もかも良くなると{nl} 思いたいんだが・・・{page}「あの枢機卿を見ていると{nl} どうも心配でな・・・",
-   "en": ""
+   "en": "\"Attacking Silvel felt like a sneak attack,{nl} and it weighs on me.{page} But in exchange, every nation has{nl} become one.{page} I'd like to think everything will get{nl} better now...{page}\"But when I look at that Cardinal, I{nl} can't help worrying..."
   },
   {
    "id": "r041_04E0",
    "addr": "04E0",
    "size": 216,
    "jp": "「・・・いったい あの枢機卿は{nl} 何者なんだろう？{page}「彼が現われてから{nl} おれたちグルド人は{nl} 変わっちまった気がする。{page}「戦いには勝った。{wait}{wait}でも それで{nl} 本当に良かったのか・・{nl} おれは・・・なんだか恐いんだ。",
-   "en": ""
+   "en": "\"...Who on earth is that Cardinal?{page}\"Ever since he showed up, I feel like we{nl} Guld folk have changed.{page}\"We won the war. {wait}{wait}But was that{nl} really a good thing.. I'm... somehow{nl} scared."
   },
   {
    "id": "r041_05BA",
    "addr": "05BA",
    "size": 370,
    "jp": "「まさか 宰相ユ－リが{nl} 生きていたとはな。{page} 囚人島に送られて{nl} とっくに 処刑されたものと{nl} 思っていたが・・・{page}「彼が帰ってきたと知って{nl} シルヴェル人たちは まるで{nl} 生き返った ようだったよ。{page} その住民たちも{nl} ユ－リ軍との 戦いのどさくさに{nl} みんな 逃げてしまったがね。{page}「いや 今までの小さな戦闘は{nl} 住民を逃がすための{nl} ユ－リの作戦だったんだろう。",
-   "en": ""
+   "en": "\"Who'd have thought Chancellor Yuri{nl} was alive.{page} I thought he'd been sent to Prison{nl} Island and executed long ago...{page}\"When they learned he'd come back, the{nl} Silvel folk seemed to come back to life.{page} Then, in the chaos of fighting Yuri's{nl} army, all those townsfolk got away.{page}\"No, those small skirmishes so far must{nl} have been Yuri's plan to let the{nl} townsfolk escape."
   },
   {
    "id": "r041_072E",
    "addr": "072E",
    "size": 240,
    "jp": "「これまでは ユ－リ軍も{nl} 小さな戦闘しか{nl} しかけてこなかった。{page} この町に シルヴェル人の{nl} 住民たちが いたからな。{wait}{wait}{nl} だが 今度は違う。{page}「いよいよ 本当の{nl} シルヴェルの逆襲が始まるのか・・{nl} いつかは来ると思っていたが・・・",
-   "en": ""
+   "en": "\"Until now, Yuri's army only fought small{nl} skirmishes.{page} Because there were Silvel townsfolk in{nl} this town. {wait}{wait}But this time it's{nl} different.{page}\"Is Silvel's real counterattack finally{nl} starting.. I knew it would come{nl} someday..."
   },
   {
    "id": "r041_0832",
    "addr": "0832",
    "size": 100,
    "jp": "「エットミランシェルの すべてが{nl} グルド王国に 統一されたのだ。{page}「もう 恐いものなんか ないぞ！",
-   "en": ""
+   "en": "\"All of Ettmiranshel has been united{nl} under the Kingdom of Guld.{page}\"There's nothing to fear anymore!"
   },
   {
    "id": "r041_08A4",
    "addr": "08A4",
    "size": 116,
    "jp": "「こら おまえたち！{nl} 早く家に 帰れよ！{page} 今日の ところは{nl} おおめに 見てやるから{nl} ありがたく 思うのだぞ！",
-   "en": ""
+   "en": "\"Hey, you two! Get on home!{page} I'll let it slide just for today, so be{nl} grateful!"
   },
   {
    "id": "r041_091A",
    "addr": "091A",
    "size": 98,
    "jp": "「ウイ－ッ ヒック！{page}「ん？ なんだ おまえら？{nl} おれたち グルド軍に{nl} さからおうってのか！？",
-   "en": ""
+   "en": "\"Hic! Hic!{page}\"Hm? What're you lot? Want to pick a{nl} fight with us Guld troops?!"
   },
   {
    "id": "r041_097E",
    "addr": "097E",
    "size": 88,
    "jp": "「おれたちゃ グルド軍だぞ！{nl} 恐いものなんか ないんだぞ！{page}「は－っはっは！ ヒック！",
-   "en": ""
+   "en": "\"We're the Guld army! We ain't scared of{nl} nothin'!{page}\"Ha ha ha! Hic!"
   },
   {
    "id": "r041_09D8",
    "addr": "09D8",
    "size": 104,
    "jp": "「きさまら 何者だっ！{nl} シルヴェル軍の 残党かっ！？{page}「ん？ なんだ子供か{nl} おどかし やがって・・・",
-   "en": ""
+   "en": "\"Who goes there?! Silvel stragglers?!{page}\"Hm? Just kids. Gave me a fright..."
   },
   {
    "id": "r041_0A42",
    "addr": "0A42",
    "size": 204,
    "jp": "「いいか おまえら{nl} シルヴェル人に 気を許すなよ！{page} やつらは 戦いが好きなんだ！{nl} とくに ユ－リには気をつけろ！{page}「あいつは 戦うためなら{nl} 地獄の底からだって 帰ってくる{nl} 恐ろしい やつなんだ！",
-   "en": ""
+   "en": "\"Listen, you lot. Don't let your guard{nl} down around Silvel folk!{page} They love a fight! Watch out for Yuri{nl} most of all!{page}\"He's a frightful man who'd come back{nl} from the depths of hell just to fight!"
   },
   {
    "id": "r041_0B1A",
    "addr": "0B1A",
    "size": 180,
    "jp": "「われらは 城将グッベ様から{nl} きびしく命令されているんだ。{page}「たとえ 女や子供であろうと{nl} シルヴェル人は １歩たりとも{nl} 城に入れるなとな。{page}「さあ わかったら さっさと帰れ！",
-   "en": ""
+   "en": "\"We have strict orders from Commander{nl} Gubbe.{page}\"Not one Silvel person is to set foot in{nl} the castle, even women and children.{page}\"Now that you understand, get going!"
   },
   {
    "id": "r041_0BD4",
    "addr": "0BD4",
    "size": 128,
    "jp": "「城将グッベ様のご命令は{nl} グルド王のご命令と 同じことだ。{page}「これに従わぬ者は 子供といえど{nl} 反逆者として ひっとらえるぞ！",
-   "en": ""
+   "en": "\"Commander Gubbe's orders are the{nl} same as the King of Guld's.{page}\"Anyone who disobeys will be seized as{nl} a rebel, child or not!"
   },
   {
    "id": "r041_0C56",
    "addr": "0C56",
    "size": 134,
    "jp": "「なんだ おまえたちは{nl} 流れ者か？{nl} う～ん 怪しいやつめ・・・{page}「さっさと帰れ！{nl} ここは おまえたちなどの{nl} 来る所ではないぞ！",
-   "en": ""
+   "en": "\"What are you, drifters? Hmm, a{nl} suspicious lot...{page}\"Get going! This is no place for the likes{nl} of you!"
   },
   {
    "id": "r041_0CE8",
    "addr": "0CE8",
    "size": 126,
    "jp": "「この城は いまや{nl} われら グルド軍の支配する{nl} 第２のグルド城だ。{page} おまえたちのような{nl} いなか者を入れることはできん！",
-   "en": ""
+   "en": "\"This castle is now the Second Guld{nl} Castle, ruled by our Guld army.{page} We can't let country bumpkins like you{nl} inside!"
   },
   {
    "id": "r041_0D6C",
    "addr": "0D6C",
    "size": 170,
    "jp": "「この城も そのうち{nl} わが グルド王国のために{nl} 作りなおされるだろう。{page}「いずれ 第２のグルド城として{nl} われわれグルド軍が ほこる{nl} りっぱな城に なるに違いない。",
-   "en": ""
+   "en": "\"Before long this castle will be rebuilt{nl} for our Kingdom of Guld.{page}\"Someday, as the Second Guld Castle,{nl} it's sure to be a fine castle the Guld{nl} army can be proud of."
   },
   {
    "id": "r041_0E18",
    "addr": "0E18",
    "size": 106,
    "jp": "「この城は 我らグルド軍のほこる{nl} 第２グルド城である！{page}「グルド軍以外の者が{nl} 立ち入ることは 許さん！",
-   "en": ""
+   "en": "\"This castle is the Second Guld Castle,{nl} pride of our Guld army!{page}\"No one but the Guld army may enter!"
   },
   {
    "id": "r041_0E8A",
    "addr": "0E8A",
    "size": 130,
    "jp": "ユ－リ{nl}「クルトっ！ 君たちも{nl} 地下道に向かってくれっ！！{page} 狙いは城将グッベだ。{nl} 彼を倒せば この戦い{nl} 我ヶの勝ちだぞ！！",
-   "en": ""
+   "en": "Yuri{nl}\"Kurt! You two head for the{nl} underground passage as well!!{page} Our target is Commander Gubbe. Defeat{nl} him, and this battle is ours!!"
   },
   {
    "id": "r041_0F14",
    "addr": "0F14",
    "size": 56,
    "jp": "「さあ 行ってくれっ！{nl} ユ－リ様は わしがお守りする！",
-   "en": ""
+   "en": "\"Go on, then! I'll protect Yuri-sama!"
   },
   {
    "id": "r041_0F54",
    "addr": "0F54",
    "size": 52,
    "jp": "コンラ－ト{nl}「ここは まかせろっ{nl} 行けっ クルト！",
-   "en": ""
+   "en": "Konrad{nl}\"Leave this to me. Go, Kurt!"
   },
   {
    "id": "r041_0F90",
    "addr": "0F90",
    "size": 90,
    "jp": "「ぬおお－っ！！{page} かくごしろ グルド軍め！{nl} シルヴェル騎士団の力を{nl} 見せてやるっ！！",
-   "en": ""
+   "en": "\"Raaaagh!!{page} Prepare yourselves, Guld army! I'll show{nl} you the might of the Silvel Knights!!"
   }
  ]
 }

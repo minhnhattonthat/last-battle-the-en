@@ -11,14 +11,14 @@
    "addr": "0038",
    "size": 60,
    "jp": "「ここは 魔法司の館{nl} どんなキズも 治してあげましょう。{page}",
-   "en": ""
+   "en": "\"This is the mage's house. I can heal any{nl} wound.{page}"
   },
   {
    "id": "r038_0079",
    "addr": "0079",
    "size": 170,
    "jp": "「いやしの館に ようこそ。{page}「私も 少しでも{nl} 新しいシルヴェルの役に立てるよう{nl} 修行を やり直したんです。{page}「これからは 治療だけでなく{nl} 魔法合成も受付けますよ。{page}",
-   "en": ""
+   "en": "\"Welcome to the House of Healing.{page}\"I've gone back to my training so I can{nl} be of some use to the new Silvel.{page}\"From now on I take spell synthesis as{nl} well as healing.{page}"
   }
  ]
 }
