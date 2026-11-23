@@ -4,11 +4,20 @@ Updated at the end of every session. Keep it to what the next session needs; his
 
 - **Phase:** 5. Engine spike and marker build in progress (VWF, far jumps, staff roll, item/spell name escapes,
   BG3 menu strings, spell ranks, the English name-entry grid, battle names, the battle font and battle tile text
-  done; battle-window tour started (20/133 ids seen); left: the rest of the battle tour, per-caller BG3 name caps,
-  description boxes, the rest of the width gate, a full re-tour).
+  done; battle-window tour 40/133 ids seen; left: the rest of the battle tour (needs mana/party/afflicted state),
+  per-caller BG3 name caps, description boxes, the rest of the width gate, a full re-tour).
   Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) and `build/lastbattle_en.sfc` boot
   (smoke ok, 2026-11-23 session 8).
 - **Done:**
+  - **Phase 5, session 2026-11-24 (9):** battle tour 20 -> 40/133 ids read (union of `work/qa/bcov2..9`): orders
+    sub-commands まほう/ねらう/アイテム/そうび (left/right before A picks one), たれを？, item descriptions (11),
+    "no weapon to equip", equip stat box `18640A`, use messages `18653A`/`186562`, victory `140017`. Inventory by
+    poke: item ids at record +$CF (`docs/re/debug.md`); 9 routes added to `battle_routes.tsv`; `battle_cover.py`
+    takes an optional 7th column (ops hex, no `ops:` prefix). The field scene tour with `rect_reads.lua`
+    (`work/qa/rcov_scenes`, 114/114 reached) reads no battle rect beyond the battle scenes: `battle.json` is
+    battle-only plus the magic-healer synthesis screen. Spell info column source traced (not a ROM rect: WRAM
+    tiles, phase 8; `docs/re/battle.md` §Coverage) with new `tools/lua/bank_reads.lua`. A consolidated
+    `battle_cover.py work/qa/bcov_all` run was stopped by the host for low memory; re-run it first.
   - **Phase 5, session 2026-11-23 (8):** battle coverage tool: `tools/debug/battle_cover.py OUT` runs the routes in
     `tools/debug/battle_routes.tsv` on `build/marker.sfc` with `tools/lua/rect_reads.lua` (logs the first CPU read of
     each `script/battle.json` rect) and writes `OUT/cover.tsv` (id, route, frame). Run `work/qa/bcov2`: 20/133 read:
@@ -108,11 +117,14 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   1. **Finish phase 5** (done-when: marker ROM boots, every text box shows its id, non-text strings excluded, every
      box variant measured). Left:
-     - **1a. Battle-window marker tour** (started, `battle_cover.py`, 20/133 read): add routes to
-       `battle_routes.tsv` for the 113 ids still unread (`work/qa/bcov2/cover.tsv` lists them: items in battle
-       `185xxx` descriptions, equip/status, run, mana screen `16EFxx`, the `19E5xx-19EBxx` message family,
-       `1D82xx`); deeper menus need longer key chains after the command menu, other encounters (`@1DDF`), and a
-       party with items/spells (stress save). If whole families never fire a CPU read, check for DMA from ROM.
+     - **1a. Battle-window marker tour** (`battle_cover.py`, 40/133 read): first re-run
+       `battle_cover.py work/qa/bcov_all --frames 5200` (all routes; killed for memory last session). Still unread
+       and why: `19E09C-19FABE` + `16EF84+` = magic synthesis screen at the magic healers (`svc_06_00`/`svc_07_00`,
+       icons after 3 A; needs mana + money: find where mana counts live, likely `$1C90-$1DD8`, and poke them);
+       `198926/36/46` other members' names (needs a 4-member party: `$3E`/`$0600` pokes at READY did not do it;
+       find what the battle unit setup 29:B216 reads, or use a story save); `1D82xx` status effects, `1865xx`/
+       `1866xx` use messages, `1991BB`/`1992DB` no spells / not enough MP, `19F1F3/19F247/19F39F` yes/no
+       confirms, `19D4BB` (クルトに...). If whole families never fire a CPU read, check for DMA from ROM.
        Old notes: with pokes
        `god,@1DDF:0053` from room 0x00 40 30, READY is f2149 and the gray command menu is up at ~f3390, so keys
        start with `1100 -` (`tools/debug/probe.py work/qa/bcmd --rom build/marker.sfc --frames 4400 "0x00 40 30 1100

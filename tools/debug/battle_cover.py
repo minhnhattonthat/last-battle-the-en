@@ -28,8 +28,8 @@ def load_routes(path):
         if not line.strip() or line.startswith("#"):
             continue
         cols = line.split("\t")
-        assert len(cols) == 6, f"{path}: 6 columns expected: {line!r}"
-        routes.append(cols)
+        assert len(cols) in (6, 7), f"{path}: 6 or 7 columns expected: {line!r}"
+        routes.append(cols + ["-"] * (7 - len(cols)))
     return routes
 
 
@@ -48,13 +48,13 @@ def main():
         keep = set(a.only.split(","))
         routes = [r for r in routes if r[0] in keep]
     out = Path(a.out)
-    specs = [f"{room} {x} {y} {keys}|-|{pokes}" for _, room, x, y, keys, pokes in routes]
+    specs = [f"{room} {x} {y} {keys}|{ops}|{pokes}" for _, room, x, y, keys, pokes, ops in routes]
     cmd = [sys.executable, "-X", "utf8", str(ROOT / "tools" / "debug" / "probe.py"), str(out), *specs,
            "--rom", a.rom, "--frames", str(a.frames), "--jobs", str(a.jobs),
            "--script", str(ROOT / "tools" / "lua" / "rect_reads.lua"), "--var", rect_var(entries)]
     subprocess.run(cmd, check=True)
     first = {}
-    for i, (name, room, x, y, _, _) in enumerate(routes):
+    for i, (name, room, x, y, *_) in enumerate(routes):
         log = out / f"p{i:02d}_{room}_{x}_{y}" / "log.txt"
         if not log.exists():
             print(f"{name}: no log")

@@ -30,7 +30,11 @@ Everything `tools/debug/warp.lua` relies on. Addresses are WRAM (`$7E`) unless a
 - Field loop `00:979E`: `$1DDF` != `$FFFF` starts a battle with that encounter group (`00:A1F2`; engine in banks
   `$28-$30`). Random encounters: `30:EBD9` walks `$2A:A080` (zone key, pointer) pairs -> (weight, group) lists
   (`tools/re_encounters.py`). warp.lua forces a battle with a READY poke `@1DDF:00gg`.
-- Character records `$1900 + slot * $E4` (`01:8B14`): +0/+2/+4 stat words, +9 HP, +B max HP, +D MP, +F max MP.
+- Character records `$1900 + slot * $E4` (`01:8B14`): +0/+2/+4 stat words, +9 HP, +B max HP, +D MP, +F max MP,
+  **+$CF.. item ids** (one byte per slot, 0 = empty; two herbs bought in a shop wrote `$42` to `$19CF/$19D0`).
+  Poking them at READY (`@19CF:4342,...`) gives Kurt that inventory in battle (`battle_routes.tsv` `s*`/`iscroll*`).
+  Poking `$3E` = 4 and `$0600-03` = 1 at READY did not add party members to the battle (unit setup reads something
+  else; not found yet).
 - Battle units `$1298 + i * $28` (party 0-3, enemies from `$1338`; copied by `29:B216`): +E HP, +10 max, +12 MP,
   +14 max, +16/+18/+1A the record's first three stats. GOD gives the party units 999 HP (a refill each frame lost to a
   killing blow); WIN sets their stats to 999 (the level-1 hero does no damage to group `$53` otherwise).

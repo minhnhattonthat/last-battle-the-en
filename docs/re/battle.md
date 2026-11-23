@@ -57,5 +57,17 @@ Verified on the marker build (`work/qa/bcmd`): command label `bt_1987A5` (4x2) s
 (30:ACB0) shows `spell 00 / The qui`. Excluded as data (`battle_text.EXCLUDE`): the name tile table and 5 short
 odd-aligned matches. Single-tile particles (`bt_198045` の, `bt_1980E3` に, `bt_19D534+` し/ま/た) are pieces of
 messages built at run time: English needs engine work there (phase 7).
+Coverage (`tools/debug/battle_cover.py`, routes `tools/debug/battle_routes.tsv`): the command, orders sub-command
+(まほう/ねらう/アイテム/そうび: only the selected label is drawn, so left/right before A picks it), who/what/whom
+prompts, target frames, item descriptions (5 x n box right of the 2-column item list) and some item-use messages
+are read in game. Not reachable from a new-game state: the 19E09C-19FABE family and 16EF84+ (mana names, spell
+power/range labels, spell effect lines, "need more mana"/"max MP too low" boxes: the magic synthesis screen of the
+magic healers, E4 06/07, which needs mana and money), the other party members' names (198926/36/46: needs a
+party), status-effect messages 1D82xx and most use messages (need a damaged or afflicted party).
+The spell info column right of the battle magic window (いりょく/しゃていきょり/MP, garbled "&:uま" by the
+lowercase tiles) is not read from any ROM rect: 29:C910/CD7C read only the layout tables at `0x198E7B` and
+`0x198F57` (destination lists), so its labels are tiles from a decompressed block in WRAM (phase 8, with the
+battle status names). `tools/lua/bank_reads.lua` (every distinct address read in one bank) found this where
+`snes_romreads.lua` (one line per PC) hid the copies.
 The battle command label たたかう is drawn with the hiragana tiles that now hold English lowercase: it reads "uukf"
 in the 4 MB build until phase 8 redraws it.
