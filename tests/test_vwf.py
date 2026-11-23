@@ -322,3 +322,16 @@ def test_english_build_moves(tmp_path):
             assert rom[at:at + len(enc) + 2] == enc + b"\x00\xff", eid
     for off, (_, new) in insert.WINDOW_HEADERS.items():
         assert rom[off:off + 4] == new
+    import battle_text                                    # column-typed messages read back as their English rows
+    for at, _, top, bottom in battle_text.COLUMN_MSGS:
+        ops = battle_text.column_ops(orig, at)
+        v0, rows = word(orig, ops[0] + 1), {}
+        for o in ops:
+            src = (rom[o + 5] & 0x7F) << 15 | word(rom, o + 3) & 0x7FFF
+            assert battle_text.COLUMN_DATA <= src < battle_text.COLUMN_DATA + battle_text.COLUMN_LEN, hex(o)
+            rows[(word(orig, o + 1) - v0) // 2] = (word(rom, src), word(rom, src + 2))
+        c = battle_text.en_codec(orig, word(rom, src) & battle_text.ATTR_MASK)
+        n = len(rows)
+        for r, text in enumerate((top, bottom)):
+            want = c.words(text) + [word(rom, src) & battle_text.ATTR_MASK | battle_text.SPACE] * (n - len(text))
+            assert [rows[i][r] for i in range(n)] == want, text

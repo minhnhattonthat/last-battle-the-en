@@ -199,38 +199,56 @@ def encode(rom, e):
     return out
 
 
-# Battle-start messages typed one 1x2 column per frame: 8 copy ops (8 bytes each: op, dest(2), src(3), w=1, h=2)
-# whose sources are kanji columns shared between the two messages (and the particles bt_198045 の, bt_1980E3 に).
-# English columns go to font_bg3.COLUMN_AT and each op is repointed there; the old columns stay unused.
-COLUMN_MSGS = [  # (script file offset, JP, top row, bottom row), each row <= 8 tiles
+# Messages typed one 1x2 column per frame: copy ops (8 bytes each: delay, VRAM dest(2), src(3), w=1, h=2, up to an
+# FF) whose sources are kanji/kana columns shared between messages (the particles bt_198045 の, bt_1980E3 に,
+# bt_19D534/38/3C し/ま/た). The column an op fills is its VRAM dest (2 bytes per column) from the first op's;
+# an op may refill a column (the wipeout's last dot). English columns go to font_bg3.COLUMN_AT and each op is
+# repointed there; the old columns stay unused.
+COLUMN_MSGS = [  # (script file offset, JP, top row, bottom row), each row <= the message's column count
     (0x198000, "敵の奇襲攻撃!!", "Enemy", "ambush!!"),
     (0x1980A2, "奇襲攻撃に成功!", "Surprise", "attack!"),
+    (0x19D4DB, "全滅しました・・・", "All have", "fallen..."),  # party wiped out (29:84CB)
 ]
+
+
+COLUMN_DATA, COLUMN_LEN = 0x3F0000, 0x100  # $FE:8000 (FastROM mirror: bank $7E would be WRAM); tools/ranges.txt
+
+
+def column_ops(orig, at):
+    ops = []
+    while orig[at] != 0xFF:
+        assert orig[at + 5] == SCRIPT_BANK and orig[at + 6:at + 8] == b"\x01\x02", f"script moved {at:X}"
+        ops.append(at)
+        at += 8
+    return ops
 
 
 def column_messages(orig, writer):
     import font_bg3
     cols, data = {}, bytearray()
     for at, _, top, bottom in COLUMN_MSGS:
-        ops = [at + 8 * i for i in range(8)]
-        assert all(orig[o + 5] == SCRIPT_BANK and orig[o + 6:o + 8] == b"\x01\x02" for o in ops), f"script moved {at:X}"
+        ops = column_ops(orig, at)
+        v0 = u16(orig, ops[0] + 1)
+        idx = [(u16(orig, o + 1) - v0) // 2 for o in ops]
+        n = max(idx) + 1
         attr = u16(orig, off(SCRIPT_BANK, u16(orig, ops[0] + 3))) & ATTR_MASK
         c = en_codec(orig, attr)
         t, b = c.words(top), c.words(bottom)
-        assert len(t) <= 8 and len(b) <= 8, (top, bottom)
-        t += [attr | SPACE] * (8 - len(t))
-        b += [attr | SPACE] * (8 - len(b))
-        for o, pair in zip(ops, zip(t, b)):
+        assert len(t) <= n and len(b) <= n, (top, bottom, n)
+        t += [attr | SPACE] * (n - len(t))
+        b += [attr | SPACE] * (n - len(b))
+        for o, i in zip(ops, idx):
+            pair = (t[i], b[i])
             if pair not in cols:
-                cols[pair] = font_bg3.COLUMN_AT + len(data)
+                cols[pair] = COLUMN_DATA + len(data)
                 data += b"".join(w.to_bytes(2, "little") for w in pair)
             f = cols[pair]
-            writer.put(o + 3, ((f // 0x8000) << 16 | 0x8000 | f & 0x7FFF).to_bytes(3, "little"),
+            writer.put(o + 3, ((0x80 | f // 0x8000) << 16 | 0x8000 | f & 0x7FFF).to_bytes(3, "little"),
                        f"battle column message {at:X}")
-    end = font_bg3.NAME_STREAM + font_bg3.NAME_LEN
-    assert font_bg3.COLUMN_AT + len(data) <= end, f"column messages {len(data)} bytes"
-    writer.put(font_bg3.COLUMN_AT, bytes(data) + bytes(end - font_bg3.COLUMN_AT - len(data)),
-               "battle column messages: English columns")
+    assert len(data) <= COLUMN_LEN, f"column messages {len(data)} bytes"
+    writer.put(COLUMN_DATA, bytes(data), "battle column messages: English columns")
+    end = font_bg3.NAME_STREAM + font_bg3.NAME_LEN  # the old column area after the names stream, unused now
+    writer.put(font_bg3.COLUMN_AT, bytes(end - font_bg3.COLUMN_AT), "battle column messages: old area cleared")
 
 
 def marker_text(e):
