@@ -3,12 +3,23 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 5. Engine spike and marker build in progress (VWF, far jumps, staff roll, item/spell name escapes,
-  BG3 menu strings, spell ranks, the English name-entry grid, battle names, the battle font and battle tile text
-  done; battle-window tour 40/133 ids seen; left: the rest of the battle tour (needs mana/party/afflicted state),
-  per-caller BG3 name caps, description boxes, the rest of the width gate, a full re-tour).
+  BG3 menu strings, spell ranks, the English name-entry grid, battle names, the battle font and battle tile text,
+  item list name fields per list, the full marker re-tour done; battle-window tour 40/133 ids seen; left: the rest
+  of the battle tour (needs mana/party/afflicted state), description boxes, the rest of the width gate).
   Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) and `build/lastbattle_en.sfc` boot
-  (smoke ok, 2026-11-23 session 8).
+  (smoke ok, 2026-11-24 session 11, en sha1 `a18fbf0f`).
 - **Done:**
+  - **Phase 5, session 2026-11-24 (11):** marker re-tour `work/qa/marker_tour2` reviewed at full size (final frames
+    of all 114 scenes, sheets rebuilt with `sheet.py --div 1 --cols 4 --max 12`): every dialogue, menu, shop, save,
+    banner, ending and credits box shows its id. Still Japanese: only the battle status party name (クルト, phase 8,
+    known). The `KLT` tile on the HP box portrait and the `YES/NO` icons are the original's own graphics; stray
+    `よらw` tiles at the right edge of `svc_0B_00`/`svc_0D_00` are leftover BG3 map from the room scroll, not text.
+    **Item name fields per list** (`asm/vwf.asm`: hook `nm_f3c3` at 01:F3C3 + table `nm_icap`, also the cap in
+    `nm_feaa`; `docs/re/windows.md`): each list drawn by 01:F3C0 gets its own width: 9 tiles in the shop buy list
+    (the price follows the name; 12 pushed it out of the window) and in FA11/FA16/FA09/FA4B (which hand the space
+    before the name to it), 8 in the field item window FA0E (no spare tile). Test
+    `test_item_name_fields_fit_their_windows` checks every window script row against its header width. Shots:
+    `work/qa/cap` (item window, shop), `work/qa/cap2` (shop at 12).
   - **Phase 5, session 2026-11-24 (10):** consolidated battle tour `work/qa/bcov_all` (all 23 routes, `--jobs 3`,
     5200 frames): 39/133 (40 with the earlier runs; the 94 unread are the state-gated families below). Width gate
     rows added to `docs/re/windows.md`: epilogue = 216 px (40-digit ruler, `work/qa/epi`), shop/inn/healer talk and
@@ -142,31 +153,27 @@ Updated at the end of every session. Keep it to what the next session needs; his
        `snes_romreads.lua`. Rank form of the spell-cast window still unseen. The 8-byte table at `0x182C57`
        (クルト, メイ, ボルグ, レジーナ) had no reader in `battle_field`; find its user. Enemy names `enemy_40` /
        `enemy_69` use two-row kanji bytes: shoot them in battle for the translator (`@1DDF` picks the encounter).
-     - **1b. Full marker tour** (113 + `name_type`) ran on marker build sha1 `b72968db` into `work/qa/marker_tour2`
-       (session 10): 114/114 reached; sheets of the final frames in `work/qa/mt2_sheets/sheet*.png` (not yet
-       reviewed): list what is still Japanese (send sheets to a read-only
-       pass in chunks; `work/qa/mt_sheets` is from before the BG3 strings).
-     - **Per-caller BG3 cap, worked out (session 10), not yet coded:** 01:FE59 (item record names, return `$FE76`)
-       is called only from 01:F3C0, which the field item list (`$19CF,x` = character record items) and the shop
-       use; F3C0 then draws with 01:B6FA count `#$0008` at **01:F3CD** (B6FA pads with space `$93` up to the count,
-       so a raised count pads short names). In `nm_feaa` after its `pha` the stack is kind(1,s) X(3,s) count(5,s)
-       B(7) P(8) return(9,s): cap = 10 when `9,s == $FE76`. Also needed: the empty-slot advance `ADC #$0010` at
-       01:F3B8 (8 tiles x 2) -> `#$0014`, and find what puts the 2nd column at x 183 (3-tile gap after 8 tiles;
-       with 10 tiles it must stay at 11 tiles per column). Verify in `menu_item` (items poked) and the shop.
+     - **1b. Full marker tour: done** (session 11, see Done). Re-run it after the battle work if any new text kind
+       gets extracted.
+     - **Item lists, left:** find the screens behind FA11/FA16/FA09/FA4B and shoot each with 9-letter names. The
+       callers of 01:F3C0 over 22 menu/shop scenes (`work/qa/icap`, `run_scenes.py build/marker.sfc --script
+       tools/lua/stack_log.lua --var "ADDRS='01F3C0'" --var DEPTH=4`) were only `F2EB` (FA3C shop): the scene
+       saves hold no items, so re-run with the item pokes `@19CF:4342,@19D1:4544` (give/trade, equip, sell, item
+       use target) to reach the other lists. Japanese byte names (not
+       escapes) in a list that gives its space to the name would draw one tile left; only the identity build has
+       them.
      - Name entry opens with rows `56789` / `: +` above the cursor row `ABCDE` (the view shows 2 rows before row 0,
        as the kana grid did): consider reordering `insert.NE_GRID` so the first view starts on letters.
      - **BG3 caps for FA inserts**: names inserted into BG3 strings (FA0F/FA18/FA2B/FA2F/FA42) all reach 01:FEAA
        through the same handlers (FA2F -> FA8A -> FE09, return FE1E/FA8F), so a return-address cap table can't tell
        screens apart there; key on the FA op instead (VM pointer `$10` - 2) or let translators lay out rows for an
        8-tile name. Shop list (FE76 <- F3C2) and character names (FE55 <- EF07) can use the return-address table.
-     - **BG3 name fields** (01:FEAA path; `docs/re/vwf.md` §Names): lowercase done; English names are still capped
-       at the caller's count (8; 01:FE59 item records = shop list, 01:FE3B character names, both `LDA #$0008`).
-       The shop row has room for 13 tiles (x 24 to the price at ~128; check the longest price). Raise the cap for
-       English only (never the JP loop, which reads `$6D80` past its 8 bytes): in `nm_feaa`, pick the cap from the
-       return address (a small table: caller -> tiles), after finding every screen each caller serves (inventory,
-       equip, status, battle) and measuring its field. Shop probe: `tools/debug/probe.py OUT "0x4D 10 6 30 -;6 a;60
-       -;6 a;60 -;6 a;60 -;6 a;90 -;6 a;90 -;6 a;90 -;6 a;120 -|01E402|-" --rom build/bg3t.sfc --frames 2600`
-       (list at ~f2400; build it with `build.py --marker --out build/bg3t.sfc --qa item_42=...`).
+     - **BG3 name fields** (01:FEAA path; `docs/re/vwf.md` §Names): item record names done per list (above).
+       Character names (01:FE3B, `LDA #$0008`) still 8. Probes for the item window and the shop with poked items:
+       `tools/debug/probe.py work/qa/cap --rom build/cap.sfc --frames 3000 "0x4D 10 6 60 -;6 a;40 -;6 right;40 -;6
+       right;40 -;6 right;40 -;6 a;90 -;6 a;120 -|-|@19CF:4342,@19D1:4544" "0x4D 10 6 30 -;6 a;60 -;6 a;60 -;6
+       a;60 -;6 a;90 -;6 a;90 -;6 a;90 -;6 a;120 -|00E400|@19CF:4342,@19D1:4544"` (build `build/cap.sfc` with
+       `build.py --out build/cap.sfc --qa item_42=Abcdefghijkl ...`).
      - **Description boxes** (item/spell descriptions in the shop and spell screens, now `bg3_A3xx`-`bg3_ACxx` in
        `menus.json`): 5 tiles per line x 4 lines of 8 px fixed tiles, far too small for English. Plan engine work
        (wider box via the window op, or draw them through the VWF canvas) and measure the result.

@@ -38,6 +38,10 @@ org $01FEB9             ; was LDA $6D80,x / AND #$00FF: byte name -> BG3 tile wo
     jml nm_feaa
     nop
     nop
+org $01F3C3             ; was LDA #$007E / STA $16 / LDA #$6C80 / STA $14 / LDA #$0008 before JSR $B6FA / RTS:
+    jsl nm_f3c3         ; 01:F3C0's name field width per list (nm_icap); F3CB-F3D3 are left unreachable
+    jsr $B6FA
+    rts
 org $02D7A8             ; was LDA [$B2],y / CMP #$FE00: the staff roll's fetch (02:D789)
     jml cr_fetch
     nop
@@ -302,13 +306,21 @@ nm_feaa:                ; as nm_fee3, for the BG3 tile map ($04:AEAB)
     lda $6D80,x
     and #$00FF
     cmp #$0010
-    bcs .norm
-    cmp #$0000
-    beq .end
-    pha
+    bcc +
+    jml $01FEC1         ; the game's map (.norm, out of branch range)
++   cmp #$0000
+    bne +
+    jml $01FED8         ; .end
++   pha
     lda 5,s             ; the caller's count (stack: kind, X, count): the BG3 field is that many tiles
     sta.l !tmp
-    pla
+    lda 9,s             ; return into 01:FE59: item record names, drawn by 01:F3C0 in a field nm_icap sizes per list
+    cmp #$FE76
+    bne +
+    lda 15,s            ; return into 01:F3C0's caller
+    jsr nm_icap
+    sta.l !tmp
++   pla
     phx                 ; index of the kind byte
     jsr nm_ptr
 -   lda.l !tmp
@@ -357,6 +369,54 @@ nm_feaa:                ; as nm_fee3, for the BG3 tile map ($04:AEAB)
     jml $01FED8
 .norm:
     jml $01FEC1
+
+; Item record name fields (01:F3C0, called by the list ops below; docs/re/windows.md). The game draws every list
+; with 8 tiles; nm_icap gives each list its own width, and lists with a space before each name hand that space to
+; the name (01:B6FA starts the field at the VM position $20, so the field ends where the 8 tiles did).
+nm_f3c3:                ; M=16; stack: RTL(3), return into F3C0's caller (4,s)
+    lda #$007E
+    sta $16
+    lda #$6C80
+    sta $14
+    lda 4,s
+    jsr nm_icap
+    bcc +
+    dec $20
+    dec $20
++   rtl
+
+nm_icap:                ; A = return address into F3C0's caller -> A = field tiles, carry set = take the space before
+    phx
+    sta.l !tmp
+    ldx #$0000
+-   lda.l .tab,x
+    beq .none
+    cmp.l !tmp
+    beq .hit
+    inx
+    inx
+    inx
+    inx
+    bra -
+.none:
+    lda #$0008
+    clc
+    plx
+    rts
+.hit:
+    lda.l .tab+2,x
+    cmp #$8000          ; carry = $8000 flag
+    and #$00FF
+    plx
+    rts
+.tab:                   ; return address, tiles | $8000 when the script puts a space before the name
+    dw $EE73, $8009     ; FA09: space, name (window 9 wide)
+    dw $EEB9, $8009     ; FA16: cursor, space, name (10)
+    dw $F385, $8009     ; FA11: 2 x (cursor, space, name, space) (21)
+    dw $F3B2, $0008     ; FA0E: 2 x (space, name) (18): the field item window; the space is the cursor's
+    dw $F2EB, $0009     ; FA3C: shop buy list, cursor, name, then the price (it follows the name: 9 is the most)
+    dw $F331, $0009     ; FA4B: cursor, name (18)
+    dw $0000
 
 ; Battle names (docs/re/battle.md): 29:B2B6 writes A (= 8) tile pairs, the top row (dakuten in Japanese) to [$34] and
 ; the bottom row to [$38]. An English escape draws the name's battle form instead: two 8-char ASCII rows laid out by

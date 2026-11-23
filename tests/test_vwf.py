@@ -229,3 +229,43 @@ def test_spell_rank_records():
     refs = insert.spell_refs(orig, blocks.unpack(orig), ByteCodec(orig, JP), spells)
     assert refs[0] == (None, 0x1FE36, 1, 0x41)
     assert len(refs) == 11 and {r[0] for r in refs[1:]} == {14, 23, 36, 81}
+
+
+def test_item_name_fields_fit_their_windows():
+    """asm nm_icap: every return address follows a `JSR $F3C0` inside its FA op's handler, and with each list's
+    name field (tiles; $8000 = the name takes the space before it) every row of every bank-04 window script using
+    that op stays within the window's width (low byte of the header's second word)."""
+    import re
+    rom = ORIG.read_bytes()
+    word = lambda o: int.from_bytes(rom[o:o + 2], "little")  # noqa: E731
+    src = (ROOT / "asm" / "vwf.asm").read_text(encoding="utf-8")
+    tab = re.findall(r"dw \$([0-9A-F]{4}), \$([0-9A-F]{4})\s+; (FA[0-9A-F]{2})", src)
+    assert len(tab) == 6
+    scripts = 0
+    for ret, field, op in tab:
+        ret, field, op = int(ret, 16), int(field, 16), int(op, 16)
+        assert rom[ret - 2:ret + 1] == b"\x20\xc0\xf3"      # bank 01: file offset = CPU address
+        handler = word(0xE679 + 2 * (op & 0xFF))
+        assert handler < ret - 2 < handler + 0x50
+        tiles = (field & 0xFF) - (1 if field & 0x8000 else 0)
+        heads = set()
+        for m in re.finditer(op.to_bytes(2, "little"), rom[0x20000:0x28000]):
+            s = 0x20000 + m.start()
+            while word(s - 2) != 0xFF00:
+                s -= 2
+            heads.add(s)
+        assert heads
+        for s in heads:
+            width, o, row = word(s + 2) & 0xFF, s + 4, 0
+            while True:
+                w = word(o)
+                o += 2
+                if w in (0xFE00, 0xFF00):
+                    assert row <= width, (hex(s), op)
+                    row = 0
+                    if w == 0xFF00:
+                        break
+                else:
+                    row += tiles if w == op else 1
+            scripts += 1
+    assert scripts >= 8

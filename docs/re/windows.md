@@ -7,7 +7,7 @@ the shot) or guess. The fit lint (phase 7) reads this table.
 | Variant | Where | px per line | Lines | Status |
 |---|---|---|---|---|
 | dialogue | bottom box: NPC talk, events, name-entry prompt | 216 (screen x 24-239; canvas column 27+ is under the border) | 3, a 4th `{nl}` scrolls | measured: `work/qa/ruler/name_entry/final.png` (2026-11-23), `#` row ends at x 238 |
-| BG3 name field | shop buy list (and other FEAA lists): item names | 8 characters (8x8 fixed tiles, upper and lowercase + `',.-!?&/:+` from `tools/font_bg3.py`); the shop row has room from x 24 to the price at x ~128 (13 tiles) once the cap is raised per screen | 1 | measured: `work/qa/bg3t/p00_0x4D_10_6/f002400.png` (2026-11-23, "Long gap", "Bad-Day!") |
+| BG3 name field | item names in the lists drawn by 01:F3C0 (8x8 fixed tiles, upper and lowercase + `',.-!?&/:+` from `tools/font_bg3.py`) | per list, asm `nm_icap` (test `test_item_name_fields_fit_their_windows`): **9** in the shop buy list FA3C (the price follows the name: at 12 it leaves the window), FA11, FA16, FA09, FA4B; **8** in the field item window FA0E (2 columns of space + name in 18 tiles; the space is the cursor's) | 1 | measured 2026-11-24: `work/qa/cap/p00_0x4D_10_6/final.png` (item window, 8), `work/qa/cap/p01_0x4D_10_6/final.png` (shop, 9), `work/qa/cap2` (shop at 12: price pushed out); FA11/FA16/FA09/FA4B by the test only (screens below) |
 | shop item description | right-hand box of the shop (`つかうと HPを 30ほど かいふく`) | ~5 tiles x 4 lines (8x8 BG3 tiles) | 4 | guess from `work/qa/shop2/p00_0x4D_10_6/f002400.png`: not extracted yet (BG3 tile-word strings in bank 04, see status) |
 | staff roll | `credits` scene after the epilogue (`cr_*`, bank-02 renderer + `cr_glyph` VWF) | 192 (screen x 32-223) | 5 slots of 32 px (`{nl}` = next slot; the JP entries leave slot 1 blank) | measured: `work/qa/cr2/credits/f013500.png` (2026-11-23); a longer line wraps into the start of the next slot |
 
@@ -15,7 +15,7 @@ the shot) or guess. The fit lint (phase 7) reads this table.
 | epilogue text | `ending` (white text on black, no box) | 216 (screen x 24-239, the dialogue canvas; a 37th ruler digit wraps as garbage into the next line) | free | measured: `work/qa/epi/ending/f013020.png` (2026-11-24, `build.py --out build/qa_epi.sfc --qa "r320_0368=<40 digits>{nl}<40 W>"`) |
 | shop / inn / healer talk | `svc_*` bottom box | 216, same box as dialogue | 3 | measured: `work/qa/ruler_tour/svc_00_00/final.png` (2026-11-24) |
 | item-use message | `menu_item` > item > use: bottom box (`[b04_B2DA][b04_B9DA]` + item name) | 216, same box as dialogue | 3 | measured: `work/qa/mitem/p00_0x4D_10_6/f003060.png` (2026-11-24, items poked `@19CF:4342,@19D1:4544`) |
-| field item list | `menu_item` item window, 2 columns (BG3 name field) | 11 tiles per column (x 95 to the next column at x 183); names capped at 8 until the per-caller cap | 1 | measured: `work/qa/mitem/p00_0x4D_10_6/f002820.png` (2026-11-24) |
+| field item list | `menu_item` item window (FA0E), 2 columns (BG3 name field) | 8 tiles per name (window 18 = 2 x (space, name)) | 1 | measured: `work/qa/cap/p00_0x4D_10_6/final.png` (2026-11-24, 12-letter names cut at 8) |
 | BG3 menu strings | `menus.json` (`bg3_*`): command lists, prompts, labels | the JP tile count: the window around them is a fixed size | per string | by construction (`test_bg3_marker_keeps_tile_count`); widening one is window work (phase 7) |
 | battle rects | `battle.json` (`bt_*`) | `w` tiles of 8 px per row, `h` rows (the rect the window script copies; a 2-row rect holds two English rows) | `h` | by construction (`battle_text.encode` refuses overflow); 12 `scan` rects have guessed geometry |
 
@@ -32,5 +32,12 @@ two{nl}<36 digits>{page}End."`, scene `svc_06_00`, `work/qa/arrow/x.png`): the a
 so a full 216 px third line keeps its whole width; the `{page}` then scrolls the box one line ("End." on the new
 line 3).
 
-Still to measure: BG3 name fields per caller once the per-caller cap exists (shop list 13, field item list 11;
-status window, equip, battle item list), the description boxes (5 tiles x 4 lines, needs engine work).
+Item list window scripts (bank 04, header `xxyy hhww`: low byte of the second word = inner width in tiles; `F600` =
+cursor tile, `0093` = space, `FE00` row end, `FF00` script end): FA0E `0x21320` (18) and `0x21F80` (19), FA11
+`0x2139E` (21: cursor, space, name, space, cursor, space, name), FA16 `0x2160C` (10), FA09 `0x2112C` (9), FA3C
+`0x21F10`, FA4B `0x21F44` (18). 01:F3C0 = FE59 (record name -> `$6C80` tiles, 01:FEAA) then B6FA, which pads with
+`$93` until `$20` = start + count x 2 (it compares for equality: a name longer than the count never ends).
+
+Still to measure: the screens behind FA11/FA16/FA09/FA4B (in-game check of their 9-tile names), character
+names (01:FE3B, 8) in the status window, equip, battle item list, the description boxes (5 tiles x 4 lines, needs
+engine work).
