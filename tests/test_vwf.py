@@ -47,3 +47,25 @@ def test_fit_same_pad_jump_move():
     assert insert.cpu_of(0x308000) == 0xE18000
     with pytest.raises(ValueError):
         insert.fit(long, 4, 0, a, w, "x")
+
+
+ORIG = ROOT / "rom" / "Last Battle, The (Japan).sfc"
+
+
+@pytest.mark.skipif(not ORIG.exists(), reason="no ROM")
+def test_name_escape_and_table():
+    orig = ORIG.read_bytes()
+    t = insert.NameTable(orig)
+    assert t.add(1, 5, "Long Sword", "item_05") == b"\x01\x05"
+    with pytest.raises(ValueError):
+        t.add(1, 6, "ソード", "x")
+    w = W()
+    t.write(w)
+    (off, blob), = w.puts
+    assert off == insert.NAMES_AREA
+    bg3 = [int.from_bytes(blob[2 * c:2 * c + 2], "little") for c in range(128)]
+    assert bg3[ord("A")] == 0x0B and bg3[ord("a")] == 0x0B and bg3[ord("0")] == 0x01  # the byte map's own tiles
+    ptr = lambda i: int.from_bytes(blob[0x100 + 2 * i:0x102 + 2 * i], "little") - 0x8000  # noqa: E731
+    assert blob[ptr(5):ptr(5) + 11] == b"Long Sword\0"
+    assert blob[ptr(7)] == 0  # unused -> empty name
+    assert max(ptr(i) for i in range(512)) < len(blob)

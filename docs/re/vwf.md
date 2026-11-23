@@ -44,8 +44,23 @@ Strings shorter than 5 bytes can't hold a jump: `r095_00FE` (「) and `b04_B2E2`
 | 01:B13C | LDA $5C / STA $24 | odd window width = 4 px start offset |
 | 01:BA96 | PHP / REP / XBA / PHA | control dispatch: far jump F7 |
 | 01:B485 | LDA [$10] / CMP #$FF00 | menu string fetch: far jump |
+| 01:FEF2 | LDA $6D80,x / AND #$00FF | byte name -> glyph words: English name escape (`nm_fee3`) |
+| 01:FEB9 | LDA $6D80,x / AND #$00FF | byte name -> BG3 tile words: English name escape (`nm_feaa`) |
 | 02:D7A8 | LDA [$B2],y / CMP #$FE00 | staff roll fetch: far jump |
 | 02:D7F9 | PHA / LDA $1A8015 | staff roll glyph: English VWF (`cr_glyph`) |
+
+## Names (byte encoding; verified: shop list on the marker build, `work/qa/shop2`)
+Every byte name (8-byte fields) goes through one of two decoders in bank 01, both copy 8 bytes to `$7E6D80` first:
+- 01:FEE3: map `$04:B053` -> glyph words (bitmap text, so VWF): FA38 actor (`$0024`), FA3A item (01:FC2B, ROM
+  records `$04:CAD1`), FC01 character records `$1904`, FBED `$1CF5` + n*14 (spells/enemies in WRAM?).
+- 01:FEAA: map `$04:AEAB` -> **BG3 tile words** (8 px tiles; digits and capitals = tiles `$01-$24`, no lowercase):
+  item lists (shop buy list: FC55 / FE59), character names (FBC0, FE3B `$192B`), FE09 `$0C98`, FE22 `$0024`,
+  FE7A `$1C91` + n*12, and two direct callers at 01:E766 / 01:E80A.
+Name bytes `$30-$39` and `$41-$5A` are ASCII (digits, capitals). English item and spell names: the record's name
+field holds `kind, n` (`$01` items, `$02` spells, n = entry order + 1 in `script/items.json` / `spells.json`) and the
+hooks read ASCII from `$FC:8000` (`insert.NameTable`: 128-word ASCII -> BG3 tile table, then 512 word pointers, then
+the names). FEE3 emits `$0800+c` (any length); FEAA emits BG3 tiles, capped at the caller's count (8 tiles = 64 px;
+lowercase shows as capitals). Party names stay plain bytes (the name-entry grid is the map order).
 
 ## Staff roll (bank 02, verified: `credits` scene on the marker and ruler builds)
 02:D71F draws entry `$C2` (pointer table `02:E215`, bank `$B4` = 2) with 02:D789: clears the 2bpp tile image

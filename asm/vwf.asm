@@ -30,6 +30,14 @@ org $01BA96             ; was PHP / REP #$20 / XBA / PHA: script control-word di
 org $01B485             ; was LDA [$10] / CMP #$FF00: the menu string drawer's fetch (01:B467)
     jml menu_fetch
     nop
+org $01FEF2             ; was LDA $6D80,x / AND #$00FF: byte name -> glyph words (01:FEE3)
+    jml nm_fee3
+    nop
+    nop
+org $01FEB9             ; was LDA $6D80,x / AND #$00FF: byte name -> BG3 tile words (01:FEAA)
+    jml nm_feaa
+    nop
+    nop
 org $02D7A8             ; was LDA [$B2],y / CMP #$FE00: the staff roll's fetch (02:D789)
     jml cr_fetch
     nop
@@ -238,6 +246,81 @@ menu_fetch:             ; M=16 X=16 D=$0C00: next word of a menu string, followi
     bra menu_fetch
 +   cmp #$FF00
     jml $01B48A         ; BNE $B490 / end
+
+; ---- English byte names (docs/re/vwf.md §Names) -----------------------------------------------------------------
+; A name field (item and spell records, 8 bytes) starting with a kind byte $01-$0F (never a name byte: the maps start
+; at $2C) is followed by an index n; the English name is ASCII at the word pointer NM_PTRS[(kind-1)*256 + n] in bank
+; $FC, written by tools/insert.py with the ASCII -> BG3 tile table NM_BG3. No length limit from the record.
+!NM_BG3  = $FC8000
+!NM_PTRS = $FC8100
+
+nm_fee3:                ; M=16 X=16 DB=$7E; stack: count, X; X = byte index in $6D80, Y = word offset in $6C80
+    lda $6D80,x
+    and #$00FF
+    cmp #$0010
+    bcs .norm
+    cmp #$0000
+    beq .end
+    jsr nm_ptr
+-   lda.l $FC0000,x
+    and #$00FF
+    beq .end
+    ora #$0800          ; English glyph word
+    sta $6C80,y
+    iny
+    iny
+    inx
+    bra -
+.end:
+    jml $01FF11         ; PLX / PLA / FF00 end / return
+.norm:
+    jml $01FEFA         ; the game's map at $04:B053
+
+nm_feaa:                ; as nm_fee3, for the BG3 tile map ($04:AEAB)
+    lda $6D80,x
+    and #$00FF
+    cmp #$0010
+    bcs .norm
+    cmp #$0000
+    beq .end
+    pha
+    lda 5,s             ; the caller's count (stack: kind, X, count): the BG3 field is that many tiles
+    sta.l !tmp
+    pla
+    jsr nm_ptr
+-   lda.l !tmp
+    beq .end
+    dec
+    sta.l !tmp
+    lda.l $FC0000,x
+    and #$007F
+    beq .end
+    phx
+    asl
+    tax
+    lda.l !NM_BG3,x
+    plx
+    sta $6C80,y
+    iny
+    iny
+    inx
+    bra -
+.end:
+    jml $01FED8
+.norm:
+    jml $01FEC1
+
+nm_ptr:                 ; A = kind 1-15, X = index of the kind byte -> X = address of the ASCII name in bank $FC
+    dec
+    xba
+    sep #$20
+    lda $6D81,x
+    rep #$20
+    asl
+    tax
+    lda.l !NM_PTRS,x
+    tax
+    rts
 
 ; ---- staff roll (bank 02, docs/re/vwf.md §Staff roll) -------------------------------------------------------------
 ; The staff roll draws each line into a 2bpp tile image at $7E6C80 (16 tiles per row, $10 bytes per tile, the bottom

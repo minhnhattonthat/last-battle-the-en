@@ -67,9 +67,11 @@ def marker_text(e, jp_px=12):
 
 
 def mark(files):
-    """Marker build: every script string (not byte names yet) gets marker_text."""
+    """Marker build: every script string and byte name gets marker_text."""
     for doc in files.values():
         if doc["source"]["kind"] == "names":
+            for e in doc["entries"]:
+                e["en"] = marker_text(e)
             continue
         for e in doc["entries"]:  # a slot too short for a far jump gets as much of its id as fits
             e["en"] = marker_text(e) if e["size"] >= FAR_LEN else e["id"][-(e["size"] // 2):]
@@ -127,22 +129,85 @@ def fit(enc, size, ret, alloc, writer, eid):
     return far(cpu_of(off)).ljust(size, b"\0")
 
 
+NAMES_AREA = 0x3E0000     # $FC:8000: ASCII -> BG3 tile table, name pointers, English names (asm/vwf.asm nm_*)
+NAME_KIND = {"items": 1, "spells": 2}   # kind byte of the escape in a record's name field: kind, n (1-255)
+BG3_MAP_OFF = 0x22EAB     # byte -> BG3 tile word map of 01:FEAA (bytes $2C+)
+
+
+def bg3_table(orig):
+    """128 words: ASCII -> BG3 tile word. Digits and capitals are their own bytes in the name encoding; lowercase
+    uses the capital (the BG3 font has no lowercase yet); other characters their full-width form, else a space."""
+    import struct
+    bmap = struct.unpack_from("<212H", orig, BG3_MAP_OFF)
+    gmap = struct.unpack_from("<212H", orig, 0x23053)
+    by_glyph = {}
+    for i, w in enumerate(gmap):
+        by_glyph.setdefault(w, i)
+    out = []
+    for c in range(128):
+        ch = chr(c).upper()
+        i = None
+        if ch.isascii() and ch.isalnum():
+            i = ord(ch) - 0x2C
+        elif 0x21 <= c < 0x7F:
+            try:
+                w = int.from_bytes(JP.encode(chr(c + 0xFEE0))[:2], "little")
+                i = by_glyph.get(w)
+            except (KeyError, ValueError):
+                i = None
+        out.append(bmap[i] if i is not None else bmap[by_glyph[0x0300]])
+    return struct.pack("<128H", *out)
+
+
+class NameTable:
+    """English byte names (4 MB build): escape bytes for the record, ASCII in NAMES_AREA."""
+
+    def __init__(self, orig):
+        self.orig = orig
+        self.ptrs = {}
+        self.data = bytearray(b"\0")  # offset 0 = the empty name every unused pointer gets
+
+    def add(self, kind, n, text, eid):
+        if not text.isascii() or any(not 0x20 <= ord(c) < 0x7F for c in text):
+            raise ValueError(f"{eid}: byte names take printable ASCII only")
+        self.ptrs[(kind - 1) * 256 + n] = len(self.data)
+        self.data += text.encode("ascii") + b"\0"
+        return bytes([kind, n])
+
+    def write(self, writer):
+        base = 0x8000 + 0x100 + 2 * 256 * len(NAME_KIND)
+        ptrs = bytearray()
+        for i in range(256 * len(NAME_KIND)):
+            ptrs += (base + self.ptrs.get(i, 0)).to_bytes(2, "little")
+        blob = bg3_table(self.orig) + ptrs + self.data
+        assert len(blob) <= 0x8000, "name table past bank $FC"
+        writer.put(NAMES_AREA, blob, "names:en")
+
+
 def apply(orig, region, writer, files, alloc=None):
     """Splice every entry into region (block data) or writer (raw bytes). Strings longer than their slot move to
     TEXT_AREA through alloc, behind a far jump (and back); shorter ones jump over the rest. Returns the number of
     changed strings."""
     changed = 0
     bc = ByteCodec(orig, JP)
+    names = NameTable(orig) if alloc is not None else None
     for name, doc in files.items():
         src = doc["source"]
         if src["kind"] == "block":
             b = region.blocks[src["block"]]
             assert f"{b.orig_off:06X}" == src["file"], f"{name}: block {src['block']} moved; re-run extract.py"
             data = bytearray(b.data)
-        for e in doc["entries"]:
-            enc = (bc if src["kind"] == "names" else EN if e["en"] else JP).encode(text_of(e))
+        for n, e in enumerate(doc["entries"], 1):
             size = e["size"]
             changed += bool(e["en"])
+            if src["kind"] == "names" and e["en"]:
+                if names is None:
+                    raise ValueError(f"{e['id']}: English byte names need the 4 MB build")
+                assert n < 256, f"{name}: more than 255 names"
+                esc = names.add(NAME_KIND[name], n, e["en"], e["id"])
+                writer.put(int(e["file"], 16), esc.ljust(e["max"], b"\0"), f"text:{e['id']}")
+                continue
+            enc = (bc if src["kind"] == "names" else EN if e["en"] else JP).encode(text_of(e))
             if src["kind"] == "names":
                 if len(enc) > e["max"]:
                     raise ValueError(f"{e['id']}: {len(enc)} bytes > field {e['max']}")
@@ -157,4 +222,6 @@ def apply(orig, region, writer, files, alloc=None):
                 writer.put(int(e["file"], 16), fit(enc, size, ret, alloc, writer, e["id"]), f"text:{e['id']}")
         if src["kind"] == "block":
             b.data = bytes(data)
+    if names is not None:
+        names.write(writer)
     return changed
