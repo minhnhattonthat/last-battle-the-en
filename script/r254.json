@@ -11,7 +11,7 @@
    "addr": "00E2",
    "size": 158,
    "jp": "ケッテリ{nl}「まさか あの城門をやぶることが{nl} できようとは・・・。{page}{D319}「しかし {wait}{wait}{wait}{wait}まだ手はある{nl} いでよ 魔物たち！{nl} こいつらをかたずけてしまえ！！{page2}",
-   "en": ""
+   "en": "Ketteri{nl}\"To think you could break that castle{nl} gate...{page}{D319}\"But {wait}{wait}{wait}{wait}I still have a move. Come{nl} forth, monsters! Finish them off!!{page2}"
   },
   {
    "id": "r254_01AA",

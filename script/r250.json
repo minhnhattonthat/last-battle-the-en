@@ -11,14 +11,14 @@
    "addr": "006C",
    "size": 62,
    "jp": "「おまえも わたしの魔法で{nl} この世から 消え去るがいい！！{page2}",
-   "en": ""
+   "en": "\"You too will vanish from this world by{nl} my magic!!{page2}"
   },
   {
    "id": "r250_00C7",
    "addr": "00C7",
    "size": 44,
    "jp": "「わたしには 後ろにも{nl} 目があるのさっ！{page2}",
-   "en": ""
+   "en": "\"I've got eyes in the back of my head!{page2}"
   }
  ]
 }

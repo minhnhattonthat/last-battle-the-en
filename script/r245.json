@@ -11,161 +11,161 @@
    "addr": "016A",
    "size": 148,
    "jp": "「グルドはこちらの 降伏の{nl} すすめを ことわってきた。{page}「グルド王が 自分の野心のために{nl} 戦争なんか 始めたせいで{nl} この町も 戦場になるのか。",
-   "en": ""
+   "en": "\"Guld turned down our offer to{nl} surrender.{page}\"Because the King of Guld started a war{nl} for his own ambition, this town becomes{nl} a battlefield too?"
   },
   {
    "id": "r245_0200",
    "addr": "0200",
    "size": 30,
    "jp": "「戦争とはいえ 気がおもいな。",
-   "en": ""
+   "en": "\"War or not, it weighs on me."
   },
   {
    "id": "r245_0226",
    "addr": "0226",
    "size": 84,
    "jp": "「グルド王には われら{nl} シルヴェル人を あまくみた{nl} ツケを はらってもらおうか。",
-   "en": ""
+   "en": "\"The King of Guld will pay for taking us{nl} Silvel folk lightly."
   },
   {
    "id": "r245_027C",
    "addr": "027C",
    "size": 80,
    "jp": "「この エットミランシェルの{nl} 平和を みだしたんだ{wait}{wait}{nl} これは 高くつくぜ。",
-   "en": ""
+   "en": "\"He disturbed the peace of{nl} Ettmiranshel.{wait}{wait} That'll cost him dear."
   },
   {
    "id": "r245_02D4",
    "addr": "02D4",
    "size": 136,
    "jp": "「みてくれよ シルヴェル軍の{nl} ヨロイと カブトだぜ。{page}「いろんな ところから{nl} かき集めてきて さっき{nl} みんなに 配られたところさ。",
-   "en": ""
+   "en": "\"Look at this, Silvel army armor and{nl} helmets.{page}\"Scraped together from all over and{nl} handed out to everyone just now."
   },
   {
    "id": "r245_035E",
    "addr": "035E",
    "size": 120,
    "jp": "「戦いも これからが{nl} 最後の山だからな。{page}「ヨロイとカブトをつけてれば{nl} それだけ ケガしないで{nl} すむってもんだぜ。",
-   "en": ""
+   "en": "\"This is the last hill of the war.{page}\"With armor and a helmet on, you're{nl} that much less likely to get hurt."
   },
   {
    "id": "r245_03E2",
    "addr": "03E2",
    "size": 204,
    "jp": "「こんどは 城塞と同じように{nl} トンネル作戦は できねえよな。{page}「城のなかには ラントブルクから{nl} とりあげた くいモンが{nl} ためこまれているって話だし。{page}「こりゃ へたすると{nl} これからが 長いかもな。",
-   "en": ""
+   "en": "\"We can't use the tunnel trick this time,{nl} like at the fortress.{page}\"And they say the castle's stocked with{nl} food taken from Landburg.{page}\"If we're not careful, this could drag on{nl} a long time."
   },
   {
    "id": "r245_04B0",
    "addr": "04B0",
    "size": 100,
    "jp": "「おれたちゃ 船乗りだぜ{nl} ヨロイ カブトにゃ{nl} えんがねえんだ。{page}「支給されたが 断っちまったぜ。",
-   "en": ""
+   "en": "\"We're sailors. Armor and helmets aren't{nl} for us.{page}\"They handed some out, but I turned{nl} them down."
   },
   {
    "id": "r245_0516",
    "addr": "0516",
    "size": 26,
    "jp": "「海が 恋しいぜ・・・・。",
-   "en": ""
+   "en": "\"I miss the sea...."
   },
   {
    "id": "r245_053C",
    "addr": "053C",
    "size": 116,
    "jp": "「ここから先へ でてはいけません。{page}「扉を あけられるという{nl} 保証がないかぎりは{nl} 先へ 進んでも危険なだけです。",
-   "en": ""
+   "en": "\"You mustn't go out past here.{page}\"Unless we're sure we can open the{nl} door, going ahead is only dangerous."
   },
   {
    "id": "r245_05B6",
    "addr": "05B6",
    "size": 126,
    "jp": "「あの扉に ついては{nl} ユ－リ様たちが なにか良い考えを{nl} だしてくださるに違いありません。{page} わたしは そう信じております。",
-   "en": ""
+   "en": "\"About that door, Yuri-sama and the{nl} others are sure to come up with a good{nl} idea.{page} That's what I believe."
   },
   {
    "id": "r245_0636",
    "addr": "0636",
    "size": 82,
    "jp": "「動きがないな・・・{nl} 城にこもって じっと反撃の機会を{nl} 狙っているのだろうか。",
-   "en": ""
+   "en": "\"No movement... Are they holed up in{nl} the castle, waiting for a chance to{nl} strike back?"
   },
   {
    "id": "r245_0690",
    "addr": "0690",
    "size": 124,
    "jp": "「あの扉には ドラゴンの皮が{nl} はられてる そうだ。{page}「ヤ－クの連中が{nl} 破城つちじゃ はがたたないと{nl} くやしがってたよ。",
-   "en": ""
+   "en": "\"They say that door is covered with{nl} dragon hide.{page}\"The Yaak lot were sore that their{nl} battering ram can't make a dent."
   },
   {
    "id": "r245_070E",
    "addr": "070E",
    "size": 60,
    "jp": "「城塞さえ落とせば あとは{nl} いっきに 決戦だと思ったのに。",
-   "en": ""
+   "en": "\"I thought once the fortress fell, it'd{nl} be straight to the final battle."
   },
   {
    "id": "r245_0752",
    "addr": "0752",
    "size": 134,
    "jp": "「この先の 町なみには{nl} 入ってはいけません。{page}「逃げだした グルドの人ヶの家に{nl} 勝手に入ることは ユ－リ様が{nl} 禁止なさいました。",
-   "en": ""
+   "en": "\"You mustn't enter the streets ahead.{page}\"Yuri-sama has forbidden going into the{nl} houses of Guld folk who fled."
   },
   {
    "id": "r245_07E4",
    "addr": "07E4",
    "size": 128,
    "jp": "「もうすこしで 逃げだした{nl} グルド軍を追かけて 城の中へ{nl} なだれこめたのに！{page}「おしいところで{nl} あの扉を 閉じらちまった。",
-   "en": ""
+   "en": "\"We nearly chased the fleeing Guld{nl} army right into the castle!{page}\"They shut that door just in time."
   },
   {
    "id": "r245_086A",
    "addr": "086A",
    "size": 136,
    "jp": "「あの扉が ふつうの武器じゃ{nl} 手が出ないって 知っていれば{page} グルド兵を ふみこえてでも{nl} いっしょに 城の中に{nl} 飛びこんだのによ！",
-   "en": ""
+   "en": "\"If I'd known ordinary weapons can't{nl} touch that door,{page} I'd have jumped into the castle with{nl} them, even if I had to trample Guld{nl} soldiers!"
   },
   {
    "id": "r245_08F4",
    "addr": "08F4",
    "size": 108,
    "jp": "「人間族は なんであんな{nl} 城なんて－ ものを{nl} 作るんだろうな。{page}「やっぱり{nl} 洞窟のくらしが 一番だぜ！",
-   "en": ""
+   "en": "\"Why do humans build things like{nl} castles?{page}\"Cave life is best, after all!"
   },
   {
    "id": "r245_096C",
    "addr": "096C",
    "size": 124,
    "jp": "「グルドの町の人たちは{nl} ベルグデレン城塞が{nl} 危ないと 報告が入った時に{page} 身の回りの物だけ持って{nl} 逃げだしたって話だ。",
-   "en": ""
+   "en": "\"They say when word came that{nl} Bergdelen Fortress was in danger,{page} the Guld townsfolk grabbed what they{nl} could carry and fled."
   },
   {
    "id": "r245_09EE",
    "addr": "09EE",
    "size": 72,
    "jp": "「少なくとも{nl} 町の人間を まきこんでの{nl} 戦いにならなくてよかったよ。",
-   "en": ""
+   "en": "\"At least the fighting didn't drag the{nl} townsfolk in."
   },
   {
    "id": "r245_0A38",
    "addr": "0A38",
    "size": 94,
    "jp": "「この戦いも あとしばらくで{nl} 終るんだ・・・・。{page}「早く ふつうのくらしに{nl} もどりたいな。",
-   "en": ""
+   "en": "\"This war will be over soon....{page}\"I want to get back to normal life."
   },
   {
    "id": "r245_0A98",
    "addr": "0A98",
    "size": 24,
    "jp": "カギが かかっています。",
-   "en": ""
+   "en": "It is locked."
   },
   {
    "id": "r245_0AC2",
    "addr": "0AC2",
    "size": 56,
    "jp": "クルトたちは 扉に向かって{nl}ドラゴンの涙を ふりかけた。",
-   "en": ""
+   "en": "Kurt and the others sprinkled{nl}the Dragon Tear on the door."
   }
  ]
 }

@@ -129,6 +129,6 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 鳥人兵 | birdmen | | Guld flying troops | |
 | いやしの館 | House of Healing | | | |
 | 密書 | secret letter / Missive | | in talk "the secret letter"; the item and "received" messages: Guld Missive | |
-| ヴァテン ブレックフェール レーカ | Vatten... Bleckfel... Reka! | | healing chant; エット トヴォー トレー = Ett, tva, tre! (fireball) | |
+| ヴァテン ブレックフェール レーカ | Vatten... Bleckfel... Reka! | | healing chant; エット トヴォー トレー = Ett, tva, tre! (fireball); Guld mage chant = Vem... Stor... Dod! | |
 
 ## Decisions from earlier batches

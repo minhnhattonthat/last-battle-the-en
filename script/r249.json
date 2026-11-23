@@ -11,14 +11,14 @@
    "addr": "006C",
    "size": 30,
    "jp": "「ここからさきは 通さん！！{page2}",
-   "en": ""
+   "en": "\"You shall not pass!!{page2}"
   },
   {
    "id": "r249_00A7",
    "addr": "00A7",
    "size": 48,
    "jp": "「もう こんなとこまで{nl} 敵兵が はいったか！{page2}",
-   "en": ""
+   "en": "\"Enemy soldiers this far in already!{page2}"
   }
  ]
 }

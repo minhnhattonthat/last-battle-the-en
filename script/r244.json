@@ -32,70 +32,70 @@
    "addr": "0235",
    "size": 104,
    "jp": "グルド兵士{nl}「まだ 生きている。{wait}{wait}{wait}{wait}{nl} ケガをして 倒れたはずだが。{page}「わたしの 戦争は終った・・・",
-   "en": ""
+   "en": "Guld Soldier{nl}\"I'm still alive. {wait}{wait}{wait}{wait}I was hurt and{nl} fell, I thought.{page}\"My war is over..."
   },
   {
    "id": "r244_02AD",
    "addr": "02AD",
    "size": 180,
    "jp": "「降伏した グルド兵は{nl} みんな 武器・防具をすてて{nl} グルドへ 帰ってもらったぜ。{page}「なにしろ こちらには 彼らを{nl} やしなうだけの 食料はないし{nl} 入れとく 場所もないからな。",
-   "en": ""
+   "en": "\"The Guld soldiers who surrendered all{nl} dropped their weapons and armor, and{nl} we sent them home to Guld.{page}\"After all, we've no food to feed them{nl} and no place to keep them."
   },
   {
    "id": "r244_0367",
    "addr": "0367",
    "size": 106,
    "jp": "「グルドの連中{nl} ようすが 変なんだぜ。{page}「ここは どこか？{nl} 自分は なにをしていたのか？{nl} だってよ！",
-   "en": ""
+   "en": "\"Those Guld folks are acting strange.{page}\"'Where am I? What was I doing?' they{nl} say!"
   },
   {
    "id": "r244_03D3",
    "addr": "03D3",
    "size": 310,
    "jp": "「戦争が 終ったら{nl} こんな城塞 いらないよな。{page}{FB00}「オレ 考えたんだけど・・・{nl} ここを 壊わして その材料で{page} 北と 南をへだてる{nl} エンティラン河に{nl} じょうぶな橋を かけようぜ！{page}「シルヴェル人と グルド人が{nl} もっと カンタンに行き来して{page} おたがいを 知り合えば{nl} 戦争なんか起きないんじゃないか？",
-   "en": ""
+   "en": "\"Once the war's over, we won't need{nl} this fortress.{page}{FB00}\"I've been thinking... let's tear it down{nl} and use the stone{page} to build a sturdy bridge over the{nl} Entiran River that divides north and{nl} south!{page}\"If Silvel folk and Guld folk can come{nl} and go more easily{page} and get to know each other, maybe{nl} wars won't happen?"
   },
   {
    "id": "r244_050B",
    "addr": "050B",
    "size": 136,
    "jp": "「エンティラン河に{nl} 橋ができれば 便利になるし。{page}{FB00}「何より これを考えた{nl} オレの名前が その橋に{nl} つくかも しれないじゃないか。",
-   "en": ""
+   "en": "\"A bridge over the Entiran River would{nl} be handy.{page}{FB00}\"Best of all, the bridge might get named{nl} after me, the one who thought it up."
   },
   {
    "id": "r244_059F",
    "addr": "059F",
    "size": 238,
    "jp": "グルド兵{nl}「う－ん ここは どこだ？{nl} 枢機卿は 我ヶに何をしたのだ？{page}{FB00}「部屋に 入ってきた枢機卿に{nl} 何か言われたと思ったら{nl} 急に 眠くなって{wait}・{wait}・{wait}・{page}{FB00}「はっ！？{wait}{wait}{wait}{nl} なんで 我がグルドは{nl} シルヴェルと 戦っているのだ？",
-   "en": ""
+   "en": "Guld Soldier{nl}\"Hmmm, where am I? What did the{nl} Cardinal do to us?{page}{FB00}\"The Cardinal came into the room and{nl} said something, then I suddenly got{nl} sleepy{wait}.{wait}.{wait}.{page}{FB00}\"Huh?! {wait}{wait}{wait}Why is our Guld fighting{nl} Silvel?"
   },
   {
    "id": "r244_0693",
    "addr": "0693",
    "size": 178,
    "jp": "グルド兵{nl}「レジ－ナ様 こんなところで{nl} なにをして おいでです？{page}「リダ－ル様なら{wait}・{wait}・{wait}・{wait}{nl} リダ－ル様は どうしたんですか？{page} う－ん・・・{nl} あたまが いたい・・・。",
-   "en": ""
+   "en": "Guld Soldier{nl}\"Regina-sama, what are you doing in a{nl} place like this?{page}\"General Lidar{wait}.{wait}.{wait}.{wait} what{nl} happened to General Lidar?{page} Mmm... my head hurts..."
   },
   {
    "id": "r244_0751",
    "addr": "0751",
    "size": 86,
    "jp": "「ここから 奥へは{nl} はいらないでください。{page}「ケガの重い 人たちが{nl} 休んでいます。",
-   "en": ""
+   "en": "\"Please don't go further in from here.{page}\"The badly wounded are resting."
   },
   {
    "id": "r244_07AF",
    "addr": "07AF",
    "size": 150,
    "jp": "魔法司{nl}「あんたたち ここでは静かにな。{nl} 寝ている者が 目をさますでな。{page}「この部屋では シルヴェル人も{nl} グルド人もない。{nl} みんな ケガ人じゃ。",
-   "en": ""
+   "en": "Mage{nl}\"Keep quiet in here, you lot. You'll wake{nl} the sleepers.{page}\"In this room there's no Silvel or Guld.{nl} Everyone's just wounded."
   },
   {
    "id": "r244_0847",
    "addr": "0847",
    "size": 182,
    "jp": "魔法司{nl}「あばれる者は 死なないくらいに{nl} 雷撃の呪文を ブチこんで・・・{page}「その後 ねむりの呪文を{nl} かけてから 回復じゃ。{page}{FB00}「あぁ！ わしはなんて親切な{nl} 魔法司なんじゃろぅ。",
-   "en": ""
+   "en": "Mage{nl}\"Anyone who struggles gets a lightning{nl} spell, just short of killing them...{page}\"Then a sleep spell, then healing.{page}{FB00}\"Ahh! What a kind mage I am."
   }
  ]
 }
