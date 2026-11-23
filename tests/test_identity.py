@@ -30,7 +30,7 @@ def test_compress_roundtrip_synthetic():
 @need_rom
 def test_identity_build(tmp_path):
     import build
-    rom, log = build.build(tmp_path / "id.sfc")
+    rom, log = build.build(tmp_path / "id.sfc", asm=False)
     assert log == []
     assert rom == ROM.read_bytes()
     assert (tmp_path / "id.sfc").read_bytes() == rom
@@ -50,7 +50,7 @@ def _decode_all(rom):
 def test_recompress_relocates(tmp_path):
     import build
     orig = ROM.read_bytes()
-    rom, log = build.build(tmp_path / "re.sfc", recompress=True)
+    rom, log = build.build(tmp_path / "re.sfc", recompress=True, asm=False)
     assert log, "recompressing should move blocks"
     want = _decode_all(orig)
     got = _decode_all(rom)

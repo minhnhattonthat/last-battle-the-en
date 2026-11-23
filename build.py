@@ -10,6 +10,7 @@ With no edits the output is byte-identical to the original (tests/test_identity.
     python -X utf8 build.py [--out FILE] [--recompress]
 --recompress runs every block through lz.compress (blocks move; the game must still run): a relocation check."""
 import argparse
+import subprocess
 import sys
 from pathlib import Path
 
@@ -17,11 +18,15 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "tools"))
 import blocks  # noqa: E402
 import check_rom  # noqa: E402
+import font_en  # noqa: E402
 import insert  # noqa: E402
 import romdiff  # noqa: E402
 
 ORIG_PATH = ROOT / "rom" / "Last Battle, The (Japan).sfc"
 OUT = ROOT / "build" / "lastbattle_en.sfc"
+ASAR = ROOT / "tools" / "asar" / "asar.exe"
+ASM = ["vwf.asm"]
+ROM_SIZE = 0x400000  # expanded to 4 MB: code, font and moved text go past 0x200000 ($C0:8000+)
 
 
 def load_ranges(path=ROOT / "tools" / "ranges.txt"):
@@ -55,12 +60,46 @@ class Writer:
         self.rom[off:end] = data
 
 
-def build(out=OUT, recompress=False, orig_path=ORIG_PATH, script_dir=insert.SCRIPT):
+def apply_asm(w, asm_files=ASM):
+    """Assemble asm/*.asm with asar onto a copy of w.rom and replay every changed run through w.put."""
+    if not ASAR.exists():
+        sys.exit(f"{ASAR} missing: unzip asar 1.91 from github.com/RPGHacker/asar/releases into tools/asar/")
+    font_en.write(ROOT / "build")
+    tmp = ROOT / "build" / "asar_tmp.sfc"
+    tmp.write_bytes(w.rom)
+    for asm in asm_files:
+        r = subprocess.run([str(ASAR), "--fix-checksum=off", str(ROOT / "asm" / asm), str(tmp)],
+                           capture_output=True, text=True)
+        if r.returncode:
+            sys.exit(f"asar failed on {asm}:\n{r.stdout}{r.stderr}")
+    new = tmp.read_bytes()
+    tmp.unlink()
+    assert len(new) == len(w.rom), "asar changed the image size"
+    i, n = 0, len(new)
+    while i < n:
+        if new[i] == w.rom[i]:
+            i += 1
+            continue
+        j = i
+        while j < n and new[j:j + 8] != w.rom[j:j + 8]:  # runs closer than 8 bytes join
+            j += 1
+        w.put(i, new[i:j], "asm")
+        i = j
+
+
+def build(out=OUT, recompress=False, orig_path=ORIG_PATH, script_dir=insert.SCRIPT, asm=True, qa=None):
     orig = orig_path.read_bytes()
     w = Writer(orig, load_ranges())
     region = blocks.unpack(orig)
-    insert.apply(orig, region, w, insert.load(script_dir))
-    region.pack(w.rom, w.put, recompress=recompress)
+    files = insert.load(script_dir)
+    insert.override(files, qa or {})
+    if asm:
+        w.rom.extend(b"\xff" * (ROM_SIZE - len(w.rom)))
+        w.put(0x7FD7, b"\x0c", "header: 4 MB")
+    insert.apply(orig, region, w, files, insert.TextAlloc() if asm else None)
+    region.pack(w.rom, w.put, recompress=recompress, free=blocks.FREE + ([blocks.EXPANSION] if asm else []))
+    if asm:
+        apply_asm(w)
     rom = bytes(w.rom)
     errs, _ = romdiff.check(orig, rom, [], w.log)
     if errs:
@@ -77,9 +116,12 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--out", default=str(OUT))
     ap.add_argument("--recompress", action="store_true")
+    ap.add_argument("--qa", action="append", default=[], metavar="ID=TEXT",
+                    help="QA build: replace one string's English (repeatable; build/ only, never script/)")
     a = ap.parse_args()
     check_rom.check()
-    rom, log = build(a.out, a.recompress)
+    qa = dict(s.split("=", 1) for s in a.qa)
+    rom, log = build(a.out, a.recompress, qa=qa)
     import hashlib
     print(f"{a.out}: {len(rom)} bytes, {len(log)} writes, sha1 {hashlib.sha1(rom).hexdigest()}")
 

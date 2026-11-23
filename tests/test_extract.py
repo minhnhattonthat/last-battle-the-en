@@ -84,10 +84,10 @@ def test_insert_size_change_refused(tmp_path):
     d = tmp_path / "script"
     d.mkdir()
     src = json.loads((ROOT / "script" / "bank04.json").read_text(encoding="utf-8"))
-    src["entries"][0]["en"] = src["entries"][0]["jp"] + "ト"
+    src["entries"][0]["en"] = "x" * (src["entries"][0]["size"] // 2 + 1)
     (d / "bank04.json").write_text(json.dumps(src, ensure_ascii=False), encoding="utf-8")
-    with pytest.raises(NotImplementedError):
-        build.build(tmp_path / "x.sfc", script_dir=d)
+    with pytest.raises(ValueError):  # the 2 MB build has nowhere to move it
+        build.build(tmp_path / "x.sfc", script_dir=d, asm=False)
 
 
 @need_rom
@@ -95,13 +95,13 @@ def test_insert_same_size_edit(tmp_path):
     """A same-size edit in a block and in bank 04 lands in the ROM (block recompressed, raw bytes put)."""
     import blocks
     import build
-    from textcodec import JP
+    from textcodec import EN as JP  # English text goes through the EN codec
     d = tmp_path / "script"
     d.mkdir()
     for name in ("bank04", "r010"):
         doc = json.loads((ROOT / "script" / f"{name}.json").read_text(encoding="utf-8"))
         e = doc["entries"][0]
-        e["en"] = "ア" * (e["size"] // 2)
+        e["en"] = "A" * (e["size"] // 2)
         (d / f"{name}.json").write_text(json.dumps(doc, ensure_ascii=False), encoding="utf-8")
     rom, log = build.build(tmp_path / "x.sfc", script_dir=d)
     b04 = json.loads((d / "bank04.json").read_text(encoding="utf-8"))["entries"][0]

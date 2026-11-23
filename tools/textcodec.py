@@ -121,3 +121,7 @@ class ByteCodec:
 
 
 JP = WordCodec(load_tbl())
+
+# English: printable ASCII c -> word EN_BASE + c, drawn by the VWF (asm/vwf.asm, font tools/font_en.txt)
+EN_BASE = 0x0800
+EN = WordCodec({EN_BASE + c: chr(c) for c in range(0x20, 0x7F)})

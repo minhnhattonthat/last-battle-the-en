@@ -27,6 +27,9 @@ ROOMS, ROOMS_N = 0xD0081, 309
 REGION_START, REGION_END = 0xD0420, 0x107CF3
 FIXED = [(0x1068B9, 0x1068F9)]  # top entry 1: raw data inside the block run, stays put
 FREE = [(0xD0420, 0x1068B9), (0x1068F9, 0x107CF3)]
+# 4 MB build: blocks that no longer fit go past 0x200000 (FDDF maps linear pointers there, banks $40-$7C).
+# 0x300000-0x3DFFFF holds moved strings (insert.TEXT_AREA), 0x3E8000+ ($FD:8000) asm/vwf.asm.
+EXPANSION = (0x200000, 0x300000)
 
 
 def to_file(ptr):
@@ -93,8 +96,8 @@ class Region:
             put(off, s, f"block{b.index:03d}")
             placed[b.index] = off
             areas[a][0] += len(s)
-        for start, end in areas:  # unused tails
-            if start < end and any(rom[start:end]):
+        for start, end in areas:  # unused tails (the expansion stays 0xFF)
+            if start < end and start < EXPANSION[0] and any(rom[start:end]):
                 put(start, bytes(end - start), "block-free")
         for b in self.blocks:
             for slot in b.slots:
