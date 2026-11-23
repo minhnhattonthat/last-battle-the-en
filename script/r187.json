@@ -130,49 +130,49 @@
    "addr": "0CF6",
    "size": 266,
    "jp": "ユ－リ{nl}「我ヶは これから{nl} エルダ－ル村に向かう。{page} あそこなら{nl} シルヴェル城にも近いし{nl} 我が軍の集結には もってこいだ。{page}{FB00}「君たちにも{nl} 力を かしてほしいが{nl} 無理にとは言わん。{page}「もし 共に戦ってくれるなら{nl} エルダ－ルに来てくれ。{nl} まっているぞ。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"We'll head for Eldar Village now.{page} It's close to Silvel Castle, perfect for{nl} gathering our army.{page}{FB00}\"I'd like your help too, but I won't force{nl} you.{page}\"If you'll fight with us, come to Eldar.{nl} I'll be waiting.{page2}"
   },
   {
    "id": "r187_0E88",
    "addr": "0E88",
    "size": 48,
    "jp": "スレ－ク{nl}「あんた クルトって{nl} いったかな？{page2}",
-   "en": ""
+   "en": "Sleek{nl}\"Your name was Kurt, was it?{page2}"
   },
   {
    "id": "r187_0EC8",
    "addr": "0EC8",
    "size": 250,
    "jp": "スレ－ク{nl}「あんたたちには{nl} ヒルダとリリヤのことで{nl} 世話に なっちまったね。{page}「うけた恩は 必ず返すのが{nl} ハンスタッドの しきたりだ。{page}「そこで 船を１せき{nl} 自由に使ってもらおうと{nl} 思ってるんだ。{page} もちろん{nl} 腕のいい船長を つけてな。{page2}",
-   "en": ""
+   "en": "Sleek{nl}\"You did a lot for Hilda and Lilja.{page}\"Repaying every kindness is the custom{nl} in Hanstad.{page}\"So I'd like you to use a ship as you{nl} please.{page} With a skilled captain, of course.{page2}"
   },
   {
    "id": "r187_0FEA",
    "addr": "0FEA",
    "size": 30,
    "jp": "スレ－ク{nl}「いいだろ 船長？{page2}",
-   "en": ""
+   "en": "Sleek{nl}\"All right, Captain?{page2}"
   },
   {
    "id": "r187_1010",
    "addr": "1010",
    "size": 48,
    "jp": "「よろこんで ひきうけますよ{nl} スレ－クさん。{page2}",
-   "en": ""
+   "en": "\"I'd be glad to take it on, Sleek-san.{page2}"
   },
   {
    "id": "r187_106D",
    "addr": "106D",
    "size": 102,
    "jp": "「じゃあ わしは先にいって{nl} まってるよ。{page}「船は 町の外に用意しておくから{nl} いつでも きてくれ。{page2}",
-   "en": ""
+   "en": "\"Then I'll go on ahead and wait.{page}\"The ship will be ready outside town.{nl} Come anytime.{page2}"
   },
   {
    "id": "r187_10FB",
    "addr": "10FB",
    "size": 202,
    "jp": "スレ－ク{nl}「ほんとは私も ユ－リ様と{nl} いっしょに戦いたいんだが・・{page} しかし 今の私には{nl} グルドに荒らされた この町を{nl} 立て直す仕事が あるからね。{page}「あんたたちも 大変だろうが{nl} がんばれよ。{page2}",
-   "en": ""
+   "en": "Sleek{nl}\"Truth is, I'd like to fight beside{nl} Yuri-sama too..{page} But right now I have to rebuild this{nl} town Guld tore apart.{page}\"I know it's hard for you too, but hang{nl} in there.{page2}"
   }
  ]
 }

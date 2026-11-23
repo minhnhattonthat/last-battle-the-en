@@ -11,14 +11,14 @@
    "addr": "0073",
    "size": 128,
    "jp": "スレ－ク{nl}「シルヴェル奪回作戦は{nl} うまく いっているだろうか？{page} 聞くところによると{nl} 敵も なかなか{nl} 手強いらしいが・・・",
-   "en": ""
+   "en": "Sleek{nl}\"I wonder if the campaign to take back{nl} Silvel is going well.{page} I hear the enemy is pretty tough..."
   },
   {
    "id": "r188_00F5",
    "addr": "00F5",
    "size": 66,
    "jp": "スレ－ク{nl}「ああっ 私も早く ユ－リ様と{nl} いっしょに戦いたいっ！",
-   "en": ""
+   "en": "Sleek{nl}\"Ahh, I want to hurry and fight beside{nl} Yuri-sama!"
   }
  ]
 }
