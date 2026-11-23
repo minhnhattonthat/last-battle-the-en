@@ -11,119 +11,119 @@
    "addr": "0116",
    "size": 84,
    "jp": "メイ{nl}「クルト{nl} クルト！！{page}{FB00}「死んじゃいやよ・・・{nl} 目を あけて クルト！！{page2}",
-   "en": ""
+   "en": "Mei{nl}\"Kurt, Kurt!!{page}{FB00}\"Don't die... Open your eyes, Kurt!!{page2}"
   },
   {
    "id": "r269_017D",
    "addr": "017D",
    "size": 224,
    "jp": "メイ{nl}「よかった ずっと意識が{nl} もどらなかったから・・・。{page}{FB00}「みんな 無事よ・・・・・・{page} なにか とてつもない魔法の力で{nl} お城にいた者は みんな{nl} ここに 連れてこられたみたい。{page}{FB00}「みんなのところへ いきましょ。{page2}",
-   "en": ""
+   "en": "Mei{nl}\"Thank goodness. You were out so long...{page}{FB00}\"Everyone's safe......{page} It looks like some tremendous magic{nl} brought everyone in the castle here.{page}{FB00}\"Let's go to the others.{page2}"
   },
   {
    "id": "r269_0273",
    "addr": "0273",
    "size": 200,
    "jp": "グルド王{nl}「すまぬ わしが あのような者に{nl} あやつられていたばかりに・・・。{page}{FB00}「ここは 多分 イスカ－ルが{nl} 支配する島 エルディスじゃろう。{page} 北の外れに 位置する{nl} 火と氷の島じゃ・・・・。{page2}",
-   "en": ""
+   "en": "King of Guld{nl}\"Forgive me. Because I was controlled{nl} by such a man...{page}{FB00}\"This is probably Eldis, the island Iskar{nl} rules.{page} An island of fire and ice, at the far{nl} north....{page2}"
   },
   {
    "id": "r269_0349",
    "addr": "0349",
    "size": 122,
    "jp": "「リダ－ル将軍！{nl} グルドリ－ケの兵士に 争いを{nl} 止めるように ふれまわってくれ。{page}{FB00}リダ－ル{nl}「はっ わかりました。{page2}",
-   "en": ""
+   "en": "\"General Lidar! Go round and tell the{nl} soldiers of Guldrike to stop fighting.{page}{FB00}Lidar{nl}\"Yes, sire.{page2}"
   },
   {
    "id": "r269_03CC",
    "addr": "03CC",
    "size": 300,
    "jp": "グルド王{nl}「わしの処分は{nl} あとで いかようにもなろう。{page}「いまは シルヴェルリ－ケと{nl} グルドリ－ケが 手をたずさえて{nl} ことに あたる時！{page}「ユ－リ将軍{wait}・{wait}・{wait}・{nl} それで よろしいかな。{page}{FB00}ユ－リ{nl}「わかりました。{nl} 停戦に 同意いたします。{page}「うちの者にも おなじ命令を{nl} 出しましょう。{page2}",
-   "en": ""
+   "en": "King of Guld{nl}\"What becomes of me can be settled{nl} later.{page}\"Now is the time for Silvelrike and{nl} Guldrike to join hands and face this!{page}\"General Yuri{wait}.{wait}.{wait}. will that do?{page}{FB00}Yuri{nl}\"Understood. I agree to a ceasefire.{page}\"I'll give my people the same order.{page2}"
   },
   {
    "id": "r269_053E",
    "addr": "053E",
    "size": 130,
    "jp": "「申し上げます！{nl} 奥の方より 魔物達が現われ{nl} こちらを めざして進んできます。{page}「その数は 多すぎて{nl} 確認ができません！！{page2}",
-   "en": ""
+   "en": "\"Report! Monsters have appeared from{nl} deeper in and are heading this way.{page}\"There are too many to count!!{page2}"
   },
   {
    "id": "r269_05CA",
    "addr": "05CA",
    "size": 72,
    "jp": "フェ－ベンネルス{nl}「イスカ－ルめ こんなところに{nl} かくれておったか。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"So Iskar was hiding in a place like this.{page2}"
   },
   {
    "id": "r269_0619",
    "addr": "0619",
    "size": 120,
    "jp": "「わしの 調査が もう少し{nl} はやくすんでおったら・・・。{nl} この事態は さけられたかもしれん{page} {wait}{wait}{wait}{wait}ぬかったわ！{page}",
-   "en": ""
+   "en": "\"If only my investigation had finished a{nl} little sooner... we might have avoided{nl} this.{page} {wait}{wait}{wait}{wait}A blunder!{page}"
   },
   {
    "id": "r269_069A",
    "addr": "069A",
    "size": 126,
    "jp": "「魔物達は わしの持てる力の{nl} すべてを つぎこんででも{nl} おさえつけておく。{page2}{F9FF}「まずは 兵をまとめて{nl} かけつけてくれ！{page2}",
-   "en": ""
+   "en": "\"I will hold the monsters back with{nl} every bit of power I have.{page2}{F9FF}\"First, gather the soldiers and hurry to{nl} me!{page2}"
   },
   {
    "id": "r269_072B",
    "addr": "072B",
    "size": 60,
    "jp": "ユ－リ{nl}「わたしは 両軍をまとめて{nl} 敵を 迎え撃ちます。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"I'll unite both armies and meet the{nl} enemy.{page2}"
   },
   {
    "id": "r269_076E",
    "addr": "076E",
    "size": 72,
    "jp": "「いま ここにいる者は{nl} ここに残って グルド王を{nl} お守りしてくれ。{page2}",
-   "en": ""
+   "en": "\"Those of you here now, stay and{nl} protect the King of Guld.{page2}"
   },
   {
    "id": "r269_07BF",
    "addr": "07BF",
    "size": 76,
    "jp": "ユ－リ{nl}「きみ達も 今度ばかりは{nl} ここにいてくれたまえ。{page} たのんだぞ。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"You too, just this once, stay here.{page} I'm counting on you.{page2}"
   },
   {
    "id": "r269_0839",
    "addr": "0839",
    "size": 86,
    "jp": "「枢機卿のやつめ{nl} われら グルドの者を{nl} 好きなように 操りおって！{page} ゆるさん！！",
-   "en": ""
+   "en": "\"That Cardinal, controlling us Guld folk{nl} as he pleased!{page} Unforgivable!!"
   },
   {
    "id": "r269_0897",
    "addr": "0897",
    "size": 248,
    "jp": "グルド王{wait}{wait}{wait}{nl}「イスカ－ルは 自分にはむかう{nl} ことのできる すべての者を{nl} 滅ぼしてしまうつもりだ。{page}「戦うがいい 少年よ{nl} ワシのことなど 守らずともよい。{page}{FB00}「エットミランシェルに生きる{nl} すべての 生命のために{nl} イスカ－ルを倒してくれ。",
-   "en": ""
+   "en": "King of Guld{wait}{wait}{wait}{nl}\"Iskar means to destroy all who can{nl} stand against her.{page}\"Fight, young man. You need not{nl} protect me.{page}{FB00}\"For all the lives in Ettmiranshel, defeat{nl} Iskar."
   },
   {
    "id": "r269_0991",
    "addr": "0991",
    "size": 306,
    "jp": "グルド王{nl}「すべての言葉のもつ 守りの力が{nl} おまえたちと共にあるように・・・{page}{FB00}「グルドリ－ケを 建国した{nl} デュナスが 伝えた言葉じゃ。{page}「今の わたしには{nl} このような ものしか{nl} 与えることができぬ・・・・。{page} 生きて 帰ってくるのだ{nl} きみたち{wait}・{wait}・{wait}・{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait} そして 我が娘よ。",
-   "en": ""
+   "en": "King of Guld{nl}\"Let the guarding power of all words{nl} be with you...{page}{FB00}\"These are words passed down by{nl} Dunas, who founded Guldrike.{page}\"This is all I can give you now....{page} Come back alive, all of you{wait}.{wait}.{wait}.{wait}{nl} {wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait} and my daughter."
   },
   {
    "id": "r269_0ACB",
    "addr": "0ACB",
    "size": 138,
    "jp": "スヴァルト{nl}「ユ－リ殿は ああ言っていたが{nl} きみ達は いくつもりだね？{page}「王様は わたしがお守りしよう。{nl} かまわないから いきなさい。",
-   "en": ""
+   "en": "Svart{nl}\"Yuri-dono said that, but you mean to{nl} go, don't you?{page}\"I'll protect the King. Go on, it's fine."
   },
   {
    "id": "r269_0B57",
    "addr": "0B57",
    "size": 72,
    "jp": "スヴァルト{nl}「４人のフェナムンが 幸運と栄光と{nl} ともに あらんことを。",
-   "en": ""
+   "en": "Svart{nl}\"I pray all four of your Fenamuns are{nl} blessed with luck and glory."
   },
   {
    "id": "r269_0BA7",

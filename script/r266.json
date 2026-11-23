@@ -11,28 +11,28 @@
    "addr": "0057",
    "size": 182,
    "jp": "「よくぞ{nl} ここまで たどりついた・・・{page}「我ら ここに降りて{nl} その勇気をたたえん・・・{page}「さあ 戦士の魂をささげよ・・・{nl}{D318} 我ら 光の剣もちて{nl} その勇気に むくいよう・・・{page2}",
-   "en": ""
+   "en": "\"You have come this far...{page}\"We descend here to praise your{nl} courage...{page}\"Now, offer the soul of a warrior...{nl} {D318} We shall reward that courage{nl} with the sword of light...{page2}"
   },
   {
    "id": "r266_014D",
    "addr": "014D",
    "size": 30,
    "jp": "「さあ 受け取るがよい・・・{page2}",
-   "en": ""
+   "en": "\"Now, take it...{page2}"
   },
   {
    "id": "r266_017D",
    "addr": "017D",
    "size": 50,
    "jp": "クルトたちは{nl}オ－ラソ－ドを 手に入れた！{C11E}{C1FF}{C111}{page2}",
-   "en": ""
+   "en": "Kurt and the others got{nl}the Aura Sword!{C11E}{C1FF}{C111}{page2}"
   },
   {
    "id": "r266_01B5",
    "addr": "01B5",
    "size": 86,
    "jp": "クルトたちは オ－ラソ－ドを{nl}見つけた！{page}しかし 持ち物が{nl}いっぱいで 持てなかった。",
-   "en": "",
+   "en": "Kurt and the others found{nl}the Aura Sword!{page}But their bags were full{nl}and they couldn't carry it.",
    "reached": false
   },
   {
@@ -40,7 +40,7 @@
    "addr": "020D",
    "size": 24,
    "jp": "そこには何もありません。",
-   "en": ""
+   "en": "There is nothing there."
   }
  ]
 }

@@ -11,84 +11,84 @@
    "addr": "0057",
    "size": 214,
    "jp": "ちびドラゴン{nl}「おまえたちは何者だ？{page} ぼくたちドラゴン族に{nl} 用でもあるのか？{page}「だったら{nl} デュナスの腕輪と トルンの腕輪を{nl} 見せろ。{page}「２つの腕輪を持ってなきゃ{nl} ここから中に入れることは{nl} できないぞ。{page}",
-   "en": ""
+   "en": "Little Dragon{nl}\"Who are you?{page} You have business with us dragons?{page}\"Then show me the Dunas Bracelet and{nl} the Torn Bracelet.{page}\"Unless you have both bracelets, I can't{nl} let you in.{page}"
   },
   {
    "id": "r264_012D",
    "addr": "012D",
    "size": 42,
    "jp": "「おまえたち{nl} ２つの腕輪を持ってるのか？",
-   "en": ""
+   "en": "\"You have the two bracelets?"
   },
   {
    "id": "r264_0165",
    "addr": "0165",
    "size": 90,
    "jp": "「うん・・・ それはたしかに{nl} デュナスとトルンの腕輪だ。{page} じゃあ ぼくについてこい。{page2}",
-   "en": ""
+   "en": "\"Mm... Those are the Dunas and Torn{nl} Bracelets, all right.{page} Then follow me.{page2}"
   },
   {
    "id": "r264_01C7",
    "addr": "01C7",
    "size": 42,
    "jp": "「じゃあ 中に入れることは{nl} できないな。",
-   "en": ""
+   "en": "\"Then I can't let you in."
   },
   {
    "id": "r264_01F5",
    "addr": "01F5",
    "size": 36,
    "jp": "「ウソをつくな！{nl} さあ 帰れ帰れ！",
-   "en": ""
+   "en": "\"Don't lie! Now go home, go home!"
   },
   {
    "id": "r264_021F",
    "addr": "021F",
    "size": 108,
    "jp": "ちびドラゴン{nl}「なんだ また来たのか。{page}「中に入りたきゃ{nl} デュナスの腕輪と トルンの腕輪を{nl} 見せろよ。{page}",
-   "en": ""
+   "en": "Little Dragon{nl}\"What, you again?{page}\"If you want in, show me the Dunas{nl} Bracelet and the Torn Bracelet.{page}"
   },
   {
    "id": "r264_028F",
    "addr": "028F",
    "size": 254,
    "jp": "デュケン{nl}「ドラゴンの涙は ドラゴンの女王が{nl} 卵を生む時に流す涙なんだ。{page}「ぼくの持っていたのは{nl} 母上が ぼくを生んだ時の涙だ。{page}「母上は ぼくを生むと{nl} すぐに死んでしまった。{page}「だからドラゴンの涙は{nl} ぼくにとって{nl} とても大切なものだったんだ。",
-   "en": ""
+   "en": "Duken{nl}\"A Dragon Tear is the tear the dragon{nl} queen sheds when she lays an egg.{page}\"The one I had is the tear Mother shed{nl} when she gave birth to me.{page}\"Mother died right after I was born.{page}\"So the Dragon Tear was very precious{nl} to me."
   },
   {
    "id": "r264_039F",
    "addr": "039F",
    "size": 66,
    "jp": "ちびドラゴン{nl}「よくきたな。{nl} ぼくがドラゴン王デュケン７世だ。{page2}",
-   "en": ""
+   "en": "Little Dragon{nl}\"Welcome. I am Duken VII, King of{nl} Dragons.{page2}"
   },
   {
    "id": "r264_03FA",
    "addr": "03FA",
    "size": 264,
    "jp": "デュケン{nl}「おどろいたか？{page} 実は ぼくは正統なドラゴン族の{nl} 最後の生き残りなんだ。{page}{FB00}デュケン{nl}「ところで{nl} 何か用があるんじゃないのか？{page}「なに？ ドラゴンの涙がほしい？{nl} う－ん・・あるにはあるが・・・{page}「あれは ぼくにとって{nl} とても大切なものなんだ。{page}",
-   "en": ""
+   "en": "Duken{nl}\"Surprised?{page} The truth is, I'm the last of the true{nl} dragon line.{page}{FB00}Duken{nl}\"By the way, didn't you come here for{nl} something?{page}\"What? You want the Dragon Tear?{nl} Hmm.. I do have one, but...{page}\"It's very precious to me.{page}"
   },
   {
    "id": "r264_0504",
    "addr": "0504",
    "size": 92,
    "jp": "「いったい ドラゴンの涙を{nl} どうするつもりだ？{page}{FB00}{F400}{F600}グルド城の城門を開ける{nl}{F600}売りはらう",
-   "en": ""
+   "en": "\"What are you going to do with the{nl} Dragon Tear?{page}{FB00}{F400}{F600}Open Guld Castle's gate{nl}{F600}Sell it"
   },
   {
    "id": "r264_056C",
    "addr": "056C",
    "size": 214,
    "jp": "デュケン{nl}「そうか・・グルドのことは{nl} ぼくも知ってる。{page}「じゃあ その左の宝箱を{nl} のぞいてごらん。{page}「ほしければ{nl} 右の宝箱も開けていいぞ。{page} 昔 巨人のエント族にもらった{nl} ガラクタが入ってるだけだけどな。{page2}",
-   "en": ""
+   "en": "Duken{nl}\"I see.. I know about Guld too.{page}\"Then look in the treasure chest on the{nl} left.{page}\"If you want, you can open the one on{nl} the right too.{page} It's just junk the giant Ents gave me{nl} long ago.{page2}"
   },
   {
    "id": "r264_064A",
    "addr": "064A",
    "size": 226,
    "jp": "デュケン{nl}「なんだって！？{nl} 本気で言ってるのか！！{page}「おまえたち ぼくがまだ{nl} 空も飛べない子供だと思って{nl} バカにするなよ。{page} おまえたちなんか{nl} ひとひねりなんだぞ！{page}「いいか もう一度聞くから{nl} よ－く考えて答えろ。{page}",
-   "en": ""
+   "en": "Duken{nl}\"What?! Are you serious?!{page}\"Don't make fun of me just because I'm{nl} a kid who can't fly yet.{page} I could crush you in a twist!{page}\"Listen, I'll ask once more, so think hard{nl} before you answer.{page}"
   }
  ]
 }

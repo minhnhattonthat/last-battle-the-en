@@ -95,21 +95,21 @@
    "addr": "076C",
    "size": 224,
    "jp": "ビ－ボォ{nl}「いま この人にね。{page} あなたも 正義のために{nl} いっしょに 戦いなさいって{nl} すすめてたのよ。{page}{FB00}「だけど この人{nl} 商売をやりにいく つもりに{nl} なっちゃったらしいわ。{page}「人間って やっぱり{nl} よくわかんない。",
-   "en": ""
+   "en": "Beebo{nl}\"I was just telling this man{page} he should fight with us for justice.{page}{FB00}\"But it seems he's decided to go do{nl} business instead.{page}\"Humans, I just don't get them."
   },
   {
    "id": "r256_084E",
    "addr": "084E",
    "size": 52,
    "jp": "「クルトも だんだん{nl} 大人の顔に なってきたわね。",
-   "en": ""
+   "en": "\"Kurt, your face is starting to look{nl} grown-up."
   },
   {
    "id": "r256_0884",
    "addr": "0884",
    "size": 64,
    "jp": "ビ－ボォ{nl}「あんたたち まだおきてるの？{nl} 元気ねえ・・・・・。",
-   "en": ""
+   "en": "Beebo{nl}\"You're still up? So much energy....."
   }
  ]
 }

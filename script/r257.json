@@ -11,28 +11,28 @@
    "addr": "0044",
    "size": 188,
    "jp": "「あんたらが 何者なのかは{nl} 知りたくもない・・・・。{page}「じゃが これだけは 言うとく{wait}{wait}{wait}{wait}{nl} 働く者のいなくなった鉱山は{nl} いまでは 怪物の巣じゃ。{page}「金なんぞ 掘れるもんじゃないぞ。",
-   "en": ""
+   "en": "\"I don't even want to know who you{nl} are....{page}\"But I'll tell you this much.{wait}{wait}{wait}{wait} A{nl} mine with no one working it is a monster{nl} den now.{page}\"You won't dig any gold there."
   },
   {
    "id": "r257_0102",
    "addr": "0102",
    "size": 134,
    "jp": "「若いもんは{nl} みんな 兵隊にとられた。{page}「残された 女子供も みな逃げた。{page} こわい シルヴェルの人間が{nl} 攻めてくると 言ってな。",
-   "en": ""
+   "en": "\"The young ones were all taken as{nl} soldiers.{page}\"The women and children left behind all{nl} fled.{page} Saying scary Silvel folk were coming to{nl} attack."
   },
   {
    "id": "r257_018A",
    "addr": "018A",
    "size": 190,
    "jp": "「なまじ 金なぞ掘っておったから{nl} シルヴェルに ねらわれると{nl} ウワサが流れたのじゃ。{page}「村を守れる者などおらん{nl} みんな 家をしめて{nl} にげだした・・・。{page}「この村はもう おしまいじゃ。",
-   "en": ""
+   "en": "\"Because we dug gold, a rumor spread{nl} that Silvel would target us.{page}\"There's no one to defend the village.{nl} Everyone shut up their houses and ran...{page}\"This village is finished."
   },
   {
    "id": "r257_024A",
    "addr": "024A",
    "size": 50,
    "jp": "ドアには じょうぶそうな{nl}かぎが かけられている。",
-   "en": ""
+   "en": "A sturdy-looking lock{nl}is on the door."
   }
  ]
 }
