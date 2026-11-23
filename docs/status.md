@@ -2,13 +2,22 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build in progress (VWF, far jumps, staff roll, item/spell name escapes,
-  BG3 menu strings, spell ranks, the English name-entry grid, battle names, the battle font and battle tile text,
-  item list name fields per list, the full marker re-tour done; battle-window tour 40/133 ids seen; left: the rest
-  of the battle tour (needs mana/party/afflicted state), description boxes, the rest of the width gate).
+- **Phase:** 6. Translate (phase 5 closed 2026-11-24 session 12: marker build boots, all 114 scenes show ids,
+  every box variant has a width budget in `docs/re/windows.md`; the 93 state-gated battle rects are carried to the
+  phase-8 coverage pass, see Next 3).
   Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) and `build/lastbattle_en.sfc` boot
-  (smoke ok, 2026-11-24 session 11, en sha1 `a18fbf0f`).
+  (smoke ok, 2026-11-24 session 12).
 - **Done:**
+  - **Phase 5, session 2026-11-24 (12), phase closed:** description boxes measured with a ruler build
+    (`build/qa_desc.sfc`, every description = 12-digit lines x 7): item descriptions **6 tiles x 7 lines** (field item
+    menu box, `work/qa/desc2/item_z.png`; the shop box is 8 x 7, `work/qa/desc/p00_0x4D_10_6/final.png`), spell
+    descriptions **7 tiles x 4 lines**, stat label lines tiles 0-3 with the game's value at tiles 4-5
+    (`work/qa/desc3/z.png`). `extract.bg3_strings` now tags the 58 description strings with `box`/`max_tiles`/
+    `max_lines` (`DESC_BOXES`; `$A6ED` equip stat labels excluded), test `test_description_boxes`. No engine change
+    (D9, agent default: BG3 has no free tiles, list windows fill the screen; alternative = descriptions through the
+    dialogue VWF in a bottom box). Width gate rows for FA lists, character names (8 = name-entry max) and battle
+    rects recorded as by construction. A zero-MP poke at READY (`@190D:0000`) did not bring up the not-enough-MP
+    battle message (routes dropped).
   - **Phase 5, session 2026-11-24 (11):** marker re-tour `work/qa/marker_tour2` reviewed at full size (final frames
     of all 114 scenes, sheets rebuilt with `sheet.py --div 1 --cols 4 --max 12`): every dialogue, menu, shop, save,
     banner, ending and credits box shows its id. Still Japanese: only the battle status party name (クルト, phase 8,
@@ -134,8 +143,12 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
-  1. **Finish phase 5** (done-when: marker ROM boots, every text box shows its id, non-text strings excluded, every
-     box variant measured). Left:
+  0. **Phase 6: translate** (`references/translation.md`; done-when: batch check 0 errors, glossary updated, reviewer
+     pass with no Critical/Important). Budgets per kind: `docs/re/windows.md` (dialogue 216 px x 3 lines, banners 144
+     px, staff roll 192 px, BG3 strings = JP tile count, item names 8-9 tiles, descriptions `max_tiles` x
+     `max_lines` in `menus.json`, battle rects `w` x `h`, enemy/battle names 16 chars in two 8-tile rows). Orca
+     run: no subagents, so translate and review in this session (or `codex exec` for the independent review).
+  1. **Carried from phase 5** (not blocking translation; the battle part belongs to the phase-8 coverage pass):
      - **1a. Battle-window marker tour** (`battle_cover.py`, 40/133 read; consolidated run `work/qa/bcov_all` done,
        use `--jobs 3`). Still unread and why: `19E09C-19FABE` + `16EF84+` = magic synthesis screen (bank-29 code
        29:D4xx-E8xx, not run by the healer scripts E4 06 00/01/02, E4 07 01: find its entry, `docs/re/battle.md`
@@ -195,5 +208,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
   4. Chapter 4 recap (room 198 NPC talk `$7F:015A`) has no scene: talking to that NPC needs its position; text
      coverage will flag it if missed.
 - **Open bugs:** none.
-- **Waiting on the user:** non-blocking: BG3 list names (shop list etc.) use a fixed 8 px font with lowercase rather
+- **Waiting on the user:** non-blocking: item/spell description boxes are 6 x 7 and 7 x 4 fixed 8 px tiles; the
+  default (D9) writes terse English to them; say if you want the engine change that draws descriptions through the
+  dialogue VWF in a wide bottom box instead. Non-blocking: BG3 list names (shop list etc.) use a fixed 8 px font with lowercase rather
   than a VWF, since BG3 has no free tiles for one; default kept, say if you want the bigger engine change.

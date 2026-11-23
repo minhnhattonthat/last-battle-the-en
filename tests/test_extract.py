@@ -91,6 +91,23 @@ def test_bg3_strings(ext):
 
 
 @need_rom
+def test_description_boxes(ext):
+    """Item and spell descriptions carry their measured box (docs/re/windows.md): item 6 x 7, spell 7 x 4; the
+    stat-label template $A6ED is not one. English already written must fit (tokens like {FA51} are not counted)."""
+    import re
+    rom, files = ext
+    es = {e["id"]: e for e in files["menus"]["entries"]}
+    assert (es["bg3_A331"]["box"], es["bg3_A331"]["max_tiles"], es["bg3_A331"]["max_lines"]) == ("desc_item", 6, 7)
+    assert es["bg3_AC7D"]["box"] == "desc_spell" and "box" not in es["bg3_A6ED"]
+    assert sum("box" in e for e in es.values()) == 58
+    for doc in files["menus"]["entries"]:
+        if "box" in doc and doc["en"]:
+            lines = doc["en"].split("{nl}")
+            assert len(lines) <= doc["max_lines"], doc["id"]
+            assert max(len(re.sub(r"\{[^}]*\}", "", ln)) for ln in lines) <= doc["max_tiles"], doc["id"]
+
+
+@need_rom
 def test_coverage(ext):
     import extract
     rom, files = ext

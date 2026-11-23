@@ -1497,7 +1497,10 @@
    "jp": "つかうと{nl}ＨＰを{nl}３０ほど{nl}かいふく",
    "en": "",
    "file": "022331",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A357",
@@ -1506,7 +1509,10 @@
    "jp": "つかうと{nl}ＨＰを{nl}１００ほど{nl}かいふく",
    "en": "",
    "file": "022357",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A37F",
@@ -1515,7 +1521,10 @@
    "jp": "どく{nl}まひ{nl}こんらん{nl}をなおす",
    "en": "",
    "file": "02237F",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A39F",
@@ -1524,7 +1533,10 @@
    "jp": "つかうと{nl}ＭＰを{nl}３０ほど{nl}かいふく",
    "en": "",
    "file": "02239F",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A3C5",
@@ -1533,7 +1545,10 @@
    "jp": "つかうと{nl}ＭＰを{nl}かんぜん{nl}かいふく",
    "en": "",
    "file": "0223C5",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A3EB",
@@ -1542,7 +1557,10 @@
    "jp": "つかうと{nl}ＨＰ{nl}ＭＰ{nl}かんぜん{nl}かいふく",
    "en": "",
    "file": "0223EB",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A415",
@@ -1551,7 +1569,10 @@
    "jp": "つかうと{nl}なかま{nl}ぜんいん{nl}かんぜん{nl}かいふく",
    "en": "",
    "file": "022415",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A445",
@@ -1560,7 +1581,10 @@
    "jp": "つかうと{nl}きぜつを{nl}かいふく",
    "en": "",
    "file": "022445",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A463",
@@ -1569,7 +1593,10 @@
    "jp": "きぜつを{nl}じどうで{nl}かいふく",
    "en": "",
    "file": "022463",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A481",
@@ -1578,7 +1605,10 @@
    "jp": "つかうと{nl}まものを{nl}おいはらう",
    "en": "",
    "file": "022481",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A4A1",
@@ -1587,7 +1617,10 @@
    "jp": "つかうと{nl}すばやさ{nl}１５ＵＰ",
    "en": "",
    "file": "0224A1",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A4BF",
@@ -1596,7 +1629,10 @@
    "jp": "つかうと{nl}すべての{nl}まほうを{nl}うちけす",
    "en": "",
    "file": "0224BF",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A4E7",
@@ -1605,7 +1641,10 @@
    "jp": "つかうと{nl}まものを{nl}あつめる",
    "en": "",
    "file": "0224E7",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A505",
@@ -1614,7 +1653,10 @@
    "jp": "うると{nl}おかねに{nl}なる",
    "en": "",
    "file": "022505",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A51D",
@@ -1623,7 +1665,10 @@
    "jp": "つかうと{nl}ちからが{nl}すこし{nl}あがる",
    "en": "",
    "file": "02251D",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A541",
@@ -1632,7 +1677,10 @@
    "jp": "つかうと{nl}かしこさが{nl}すこし{nl}あがる",
    "en": "",
    "file": "022541",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A567",
@@ -1641,7 +1689,10 @@
    "jp": "つかうと{nl}しゅびが{nl}すこし{nl}あがる",
    "en": "",
    "file": "022567",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A58B",
@@ -1650,7 +1701,10 @@
    "jp": "つかうと{nl}すばやさが{nl}すこし{nl}あがる",
    "en": "",
    "file": "02258B",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A5B1",
@@ -1659,7 +1713,10 @@
    "jp": "つかうと{nl}さいだい{nl}ＨＰが{nl}すこし{nl}あがる",
    "en": "",
    "file": "0225B1",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A5DD",
@@ -1668,7 +1725,10 @@
    "jp": "つかうと{nl}さいだい{nl}ＭＰが{nl}すこし{nl}あがる",
    "en": "",
    "file": "0225DD",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A609",
@@ -1677,7 +1737,10 @@
    "jp": "フェナムン{nl}のぎしき{nl}でひつよう",
    "en": "",
    "file": "022609",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A62B",
@@ -1686,7 +1749,10 @@
    "jp": "シルヴェル{nl}こうりゃく{nl}について{nl}かかれて{nl}いる",
    "en": "",
    "file": "02262B",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A65D",
@@ -1704,7 +1770,10 @@
    "jp": "ぎんいろの{nl}いと",
    "en": "",
    "file": "022665",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A677",
@@ -1713,7 +1782,10 @@
    "jp": "ろうやの{nl}かぎ",
    "en": "",
    "file": "022677",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A687",
@@ -1731,7 +1803,10 @@
    "jp": "かぜの{nl}ちからで{nl}ひめたたま",
    "en": "",
    "file": "02268D",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A6AB",
@@ -1740,7 +1815,10 @@
    "jp": "りゅうの{nl}なみだ",
    "en": "",
    "file": "0226AB",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A6BD",
@@ -1749,7 +1827,10 @@
    "jp": "とくべつな{nl}まほうを{nl}つくれる{nl}ほうじゅ",
    "en": "",
    "file": "0226BD",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A6ED",
@@ -1812,7 +1893,10 @@
    "jp": "まほうを{nl}ふうにゅう{nl}できる{nl}アイテム",
    "en": "",
    "file": "022751",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A779",
@@ -1821,7 +1905,10 @@
    "jp": "{FA51}{nl}のまほうが{nl}ふうにゅう{nl}されて{nl}います",
    "en": "",
    "file": "022779",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_item",
+   "max_tiles": 6,
+   "max_lines": 7
   },
   {
    "id": "bg3_A7D1",
@@ -2028,7 +2115,10 @@
    "jp": " ひのたま{nl}ひとり",
    "en": "",
    "file": "0228EB",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_A8FF",
@@ -2037,7 +2127,10 @@
    "jp": "いりょく{nl}きょり{nl}ＭＰ",
    "en": "",
    "file": "0228FF",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_A917",
@@ -2046,7 +2139,10 @@
    "jp": " ばくはつ{nl}いりょく{nl}{FEFF}はんい{nl}ＭＰ",
    "en": "",
    "file": "022917",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_A93D",
@@ -2055,7 +2151,10 @@
    "jp": " ぶんしん{nl}じぶんのみ{nl} じかん",
    "en": "",
    "file": "02293D",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_A95F",
@@ -2064,7 +2163,10 @@
    "jp": "ぶんしん{nl}ＭＰ",
    "en": "",
    "file": "02295F",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_A96F",
@@ -2073,7 +2175,10 @@
    "jp": "  まひ{nl}かくりつ{nl}{FEFF}はんい{nl}ＭＰ",
    "en": "",
    "file": "02296F",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_A993",
@@ -2082,7 +2187,10 @@
    "jp": " たつまき{nl}ひとり",
    "en": "",
    "file": "022993",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_A9A7",
@@ -2091,7 +2199,10 @@
    "jp": "いりょく{nl}きょり{nl}ＭＰ",
    "en": "",
    "file": "0229A7",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_A9BF",
@@ -2100,7 +2211,10 @@
    "jp": "こおりあらし{nl}いりょく{nl}{FEFF}はんい{nl}ＭＰ",
    "en": "",
    "file": "0229BF",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_A9E7",
@@ -2109,7 +2223,10 @@
    "jp": "しゅびＵＰ{nl}ひとり{nl}だげき",
    "en": "",
    "file": "0229E7",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AA03",
@@ -2118,7 +2235,10 @@
    "jp": "まほう{nl}ＭＰ",
    "en": "",
    "file": "022A03",
-   "tiles": 3
+   "tiles": 3,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AA11",
@@ -2127,7 +2247,10 @@
    "jp": "ＨＰかいふく{nl}ひとり{nl}いりょく{nl}{FEFF}ＭＰ",
    "en": "",
    "file": "022A11",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AA39",
@@ -2136,7 +2259,10 @@
    "jp": "ＨＰかいふく{nl}ぜんたい{nl}いりょく{nl}{FEFF}ＭＰ",
    "en": "",
    "file": "022A39",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AA63",
@@ -2145,7 +2271,10 @@
    "jp": " でんげき{nl}いりょく{nl}{FEFF}はんい{nl}ＭＰ",
    "en": "",
    "file": "022A63",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AA89",
@@ -2163,7 +2292,10 @@
    "jp": "そくしさせる{nl}ぜんたい{nl}レベル{nl}ＭＰ",
    "en": "",
    "file": "022A93",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AAB9",
@@ -2172,7 +2304,10 @@
    "jp": "まほうふうじ{nl}ぜんたい{nl}かくりつ{nl}{FEFF}ＭＰ",
    "en": "",
    "file": "022AB9",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AAE3",
@@ -2181,7 +2316,10 @@
    "jp": " こんらん{nl}ひとり",
    "en": "",
    "file": "022AE3",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AAF7",
@@ -2190,7 +2328,10 @@
    "jp": "かくりつ{nl}きょり{nl}ＭＰ",
    "en": "",
    "file": "022AF7",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AB0F",
@@ -2208,7 +2349,10 @@
    "jp": "  はんしゃ{nl}じぶんのみ{nl}じかん{nl}ＭＰ",
    "en": "",
    "file": "022B19",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AB41",
@@ -2226,7 +2370,10 @@
    "jp": " ワ－プする{nl}{nl}{nl}ＭＰ",
    "en": "",
    "file": "022B49",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AB61",
@@ -2235,7 +2382,10 @@
    "jp": " せんこう{nl}ぜんたい{nl}いりょく{nl}{FEFF}ＭＰ",
    "en": "",
    "file": "022B61",
-   "tiles": 5
+   "tiles": 5,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AB89",
@@ -2253,7 +2403,10 @@
    "jp": " ワ－プする{nl}{nl}{nl}ＭＰ",
    "en": "",
    "file": "022B91",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_ABA9",
@@ -2271,7 +2424,10 @@
    "jp": "  かいふく{nl}ひとり{nl}{nl}ＭＰ",
    "en": "",
    "file": "022BB3",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_ABD1",
@@ -2289,7 +2445,10 @@
    "jp": "   へらす{nl}ほすう{nl}{nl}ＭＰ",
    "en": "",
    "file": "022BDD",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_ABFB",
@@ -2298,7 +2457,10 @@
    "jp": "こうげきＵＰ{nl}ひとり{nl}いりょく{nl}{FEFF}ＭＰ",
    "en": "",
    "file": "022BFB",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AC23",
@@ -2307,7 +2469,10 @@
    "jp": "すばやさＵＰ{nl}ひとり{nl}いりょく{nl}{FEFF}ＭＰ",
    "en": "",
    "file": "022C23",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AC4B",
@@ -2325,7 +2490,10 @@
    "jp": " やきつくす{nl}ひとり",
    "en": "",
    "file": "022C55",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AC6B",
@@ -2334,7 +2502,10 @@
    "jp": "いりょく{nl}{FEFF}ＭＰ",
    "en": "",
    "file": "022C6B",
-   "tiles": 4
+   "tiles": 4,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   },
   {
    "id": "bg3_AC7D",
@@ -2343,7 +2514,10 @@
    "jp": "ほしをふらす{nl}ぜんたい{nl}いりょく{nl}{FEFF}ＭＰ",
    "en": "",
    "file": "022C7D",
-   "tiles": 6
+   "tiles": 6,
+   "box": "desc_spell",
+   "max_tiles": 7,
+   "max_lines": 4
   }
  ]
 }

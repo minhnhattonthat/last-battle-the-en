@@ -225,6 +225,17 @@ def raw_strings(rom, file_base, ptr_slots, data_ranges, text_range, src):
 B04_BG3 = (0x20600, 0x22CA7)  # BG3 tile-word strings (menu prompts/labels, description boxes); 0x20400-0x205FF
 # is the debug flag viewer (hex grid) and 0x22CA7 on the name-entry grid rows (graphics, handled with the name maps)
 BG3_MIN_KANA = 2
+# Description boxes (width gate, docs/re/windows.md; measured 2026-11-24, work/qa/desc*): $04 address ranges ->
+# (box, tiles per line, lines). Item descriptions show in the shop (8 x 7) and the field item menu (6 x 7): the
+# narrower one binds. Spell descriptions: 7 tiles; label lines keep tiles 0-3, the game draws the value at 4-5.
+# $A6ED (equip stat labels) is a template, not a description.
+DESC_BOXES = [(0xA331, 0xA6ED, ("desc_item", 6, 7)), (0xA751, 0xA8EB, ("desc_item", 6, 7)),
+              (0xA8EB, 0xAC9F, ("desc_spell", 7, 4))]
+
+
+def desc_box(addr):
+    """(box, tiles, lines) of the description box a BG3 string at $04 `addr` shows in, or None."""
+    return next((b for lo, hi, b in DESC_BOXES if lo <= addr < hi), None)
 
 
 def bg3_strings(rom, lo=B04_BG3[0], hi=B04_BG3[1]):
@@ -267,8 +278,13 @@ def bg3_strings(rom, lo=B04_BG3[0], hi=B04_BG3[1]):
         pos, size = r[0], r[-1] + 2 - r[0]
         text = jp.decode(rom[pos:pos + size])
         width = max(len(TOKEN.sub("", ln)) for ln in text.split("{nl}"))
-        out.append({"id": f"bg3_{pos - B04_FILE + BANK_BASE:04X}", "addr": f"{pos - B04_FILE + BANK_BASE:04X}",
-                    "size": size, "jp": text, "en": "", "file": f"{pos:06X}", "tiles": width})
+        addr = pos - B04_FILE + BANK_BASE
+        e = {"id": f"bg3_{addr:04X}", "addr": f"{addr:04X}",
+             "size": size, "jp": text, "en": "", "file": f"{pos:06X}", "tiles": width}
+        box = desc_box(addr)
+        if box and "{nl}" in text:
+            e["box"], e["max_tiles"], e["max_lines"] = box
+        out.append(e)
     return out
 
 

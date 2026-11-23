@@ -8,7 +8,8 @@ the shot) or guess. The fit lint (phase 7) reads this table.
 |---|---|---|---|---|
 | dialogue | bottom box: NPC talk, events, name-entry prompt | 216 (screen x 24-239; canvas column 27+ is under the border) | 3, a 4th `{nl}` scrolls | measured: `work/qa/ruler/name_entry/final.png` (2026-11-23), `#` row ends at x 238 |
 | BG3 name field | item names in the lists drawn by 01:F3C0 (8x8 fixed tiles, upper and lowercase + `',.-!?&/:+` from `tools/font_bg3.py`) | per list, asm `nm_icap` (test `test_item_name_fields_fit_their_windows`): **9** in the shop buy list FA3C (the price follows the name: at 12 it leaves the window), FA11, FA16, FA09, FA4B; **8** in the field item window FA0E (2 columns of space + name in 18 tiles; the space is the cursor's) | 1 | measured 2026-11-24: `work/qa/cap/p00_0x4D_10_6/final.png` (item window, 8), `work/qa/cap/p01_0x4D_10_6/final.png` (shop, 9), `work/qa/cap2` (shop at 12: price pushed out); FA11/FA16/FA09/FA4B by the test only (screens below) |
-| shop item description | right-hand box of the shop (`つかうと HPを 30ほど かいふく`) | ~5 tiles x 4 lines (8x8 BG3 tiles) | 4 | guess from `work/qa/shop2/p00_0x4D_10_6/f002400.png`: not extracted yet (BG3 tile-word strings in bank 04, see status) |
+| item description | `menus.json` `box: desc_item` (29 strings, `$A331-$A8EA` minus the `$A6ED` stat template): the same strings show in the shop (right box) and the field item menu (left box) | **6 tiles** (8x8 BG3, fixed): the item menu box is 6 wide (a 7th tile sits on the border); the shop box is 8 | **7** (16 px pitch; both boxes) | measured: `work/qa/desc/p00_0x4D_10_6/final.png` (shop, 8 x 7) and `work/qa/desc2/item_z.png` (item menu, 6 x 7), 2026-11-24, ruler build `build/qa_desc.sfc` (every description = `1234567890AB{nl}abcdefghijkl{nl}...` 7 lines). `$A779` starts with a `{FA51}` spell name (8 tiles) and can't fit 6: give it its own line and accept a cut, or shorten (phase 7) |
+| spell description | `menus.json` `box: desc_spell` (29 strings, `$A8EB-$AC9E`), magic menu left box: an effect string (2 lines) then a stats string (labels いりょく/きょり/はんい/かくりつ/じかん/レベル/ほすう/ＭＰ) whose values the game draws | **7 tiles** (an 8th is under the magic window); **label lines: tiles 0-3**, the value is drawn at tiles 4-5 (right-aligned, tile 6 free) | 4 (2 effect + stats; 16 px pitch, the stats string starts 8 px under the effect's 2nd line) | measured: `work/qa/desc/magic_z.png` (ruler) and `work/qa/desc3/z.png` (`build/qa_sp.sfc`: `bg3_A8EB=AAAAAAAA{nl}BBBBBBBB`, `bg3_A8FF=P.......{nl}R.......{nl}M.......`, values 18 / 5 / 3 land at tiles 4-5), 2026-11-24 |
 | staff roll | `credits` scene after the epilogue (`cr_*`, bank-02 renderer + `cr_glyph` VWF) | 192 (screen x 32-223) | 5 slots of 32 px (`{nl}` = next slot; the JP entries leave slot 1 blank) | measured: `work/qa/cr2/credits/f013500.png` (2026-11-23); a longer line wraps into the start of the next slot |
 
 | place-name banner | `place_*` on room entry (bank-04 `b04_B3B0`...) | 144 (24 ruler digits, the 24th ends at the border) | 1 | measured: `work/qa/rb/banner.png` (2026-11-23, `build.py --qa b04_B3B0=<40-digit ruler>`); JP names are centred with leading spaces: centre English the same way (space = 4 px) |
@@ -38,6 +39,11 @@ cursor tile, `0093` = space, `FE00` row end, `FF00` script end): FA0E `0x21320` 
 `0x21F10`, FA4B `0x21F44` (18). 01:F3C0 = FE59 (record name -> `$6C80` tiles, 01:FEAA) then B6FA, which pads with
 `$93` until `$20` = start + count x 2 (it compares for equality: a name longer than the count never ends).
 
-Still to measure: the screens behind FA11/FA16/FA09/FA4B (in-game check of their 9-tile names), character
-names (01:FE3B, 8) in the status window, equip, battle item list, the description boxes (5 tiles x 4 lines, needs
-engine work).
+By construction (no shot needed): the lists behind FA11/FA16/FA09/FA4B get 9-tile names from their window-script
+widths (`test_item_name_fields_fit_their_windows`); character names (01:FE3B) are capped at 8 tiles and the name
+entry stores at most 8 bytes, so every name fits; battle item list rows are battle rects (`w` tiles).
+
+Description boxes: no engine change. BG3 has no free tiles for a narrower font, and the list windows beside both
+boxes already fill the screen width (item window 2 x (space + 8) tiles, shop list name 9 + price). The Japanese is
+itself terse (4-5 kana per line); English writes to the budgets above (`box`/`max_tiles`/`max_lines` in
+`menus.json`, test `test_description_boxes`). Ruling and the alternative: `docs/decisions.md`.
