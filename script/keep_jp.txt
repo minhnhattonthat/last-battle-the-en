@@ -6,5 +6,3 @@ bt_19D4BB クルトに + kanji pieces, a battle message never shown yet; transla
 bt_19D534 one-tile particle し (with ま/た: a run-time ...しました ending); unseen in game (phase 8)
 bt_19D538 one-tile particle ま of the same run-time message (phase 8)
 bt_19D53C one-tile particle た of the same run-time message (phase 8)
-enemy_40 name in two-row kanji bytes [2A][29]: shoot it in battle to read it (phase 8, docs/re/battle.md)
-enemy_69 name in two-row kanji bytes [28][29][2B]: shoot it in battle to read it (phase 8, docs/re/battle.md)

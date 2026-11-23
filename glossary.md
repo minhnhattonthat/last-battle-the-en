@@ -135,6 +135,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ファイアボール / エクスプロード / ミラーイメージ / パラライズ | Fireball / Explode / Mirror / Paralyze | | spell names, 8 tiles | |
 | トーネード / アイスストーム / プロテクション / リストアヘルス / ライトニング | Tornado / Icestorm / Protect / Restore / Thunder | | spell names, 8 tiles | |
 | ヤーク族魔法司 / 族長の娘 / グルド隊長 | Yaak Mage / Chief's Daughter / Guld Captain | | speaker labels | |
+| 鬼人 / 戦人機 | Oni / War Machine | | enemy_40 / enemy_69, kanji tiles in the battle name table (read from the battle font, phase 8); オーガ is "Ogre" | |
 
 ## Decisions from earlier batches
 - Speaker pages are `Name{nl}"speech` (b006): the name line is one of the box's 3 lines; the batch tool wraps the

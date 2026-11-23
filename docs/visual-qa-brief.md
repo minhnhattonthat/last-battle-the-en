@@ -37,8 +37,9 @@ Standing non-bugs, `ok` (the controller adds the game's own below):
   info headers keep the long form (`Dragon Tear/`). Status labels `Atk Def Agi Wis Lck` are deliberate (D11).
 - Stray kana tiles at the right screen edge of `svc_0B_00`/`svc_0D_00` are leftover BG3 map from the room scroll.
 - Speaker pages are `Name` on line 1, then the speech indented after a `"`; dialogue has no closing quote mark.
-- Known and tracked (still mark them `issue` the first time, with a note "known"): a Japanese `ま` in the status
-  screen's bottom-right window; battle particles in `script/keep_jp.txt`.
+- Battle status-box names (`Kurt`, `Mei`, `Borg`, `Regina`) are a compact 4 px font with no descender on `g`: by design.
+- Known and tracked (still mark them `issue` the first time, with a note "known"): battle particles in
+  `script/keep_jp.txt`.
 
 ## Verdicts
 Write your verdict file once you have read every sheet, one line per id in the chunk:
