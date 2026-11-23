@@ -2,7 +2,7 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress (session 14: 1304/3085 strings, batches b001-b015 merged; b016-b049 left).
+- **Phase:** 6. Translate in progress (session 15: batches b001-b030 merged; b031-b049 left).
   Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24 session 14, sha1
   8909f4fa).
 - **Done:**
@@ -163,8 +163,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
   0. **Phase 6: translate** (done-when: batch check 0 errors, glossary updated, reviewer pass with no
-     Critical/Important). Follow `docs/translator-brief.md`: next batch **b016** (r076 Febennels' training talk, then
-     story order through b046; spells/tactics/shops in b047-b049). `sh tools/merge_batch.sh bNNN` after each batch; add new names to `glossary.md` as they appear (all names so far are there). When all are
+     Critical/Important). Follow `docs/translator-brief.md`: next batch **b031** (story order through b046; spells/tactics/shops in b047-b049). `sh tools/merge_batch.sh bNNN` after each batch; add new names to `glossary.md` as they appear (all names so far are there). When all are
      merged: `batches.py split` again (picks up anything left; skip enemy_40/69, bg3_9EF0/9EF8/A687), write
      `docs/synopsis.md` + `docs/style-reference.md` from the merged script, then the review pass (`codex exec -s
      read-only` once its quota is back on 2026-11-26, else a fresh read-only pass of your own) on pairs files;
