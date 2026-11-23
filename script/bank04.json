@@ -66,7 +66,7 @@
    "addr": "B3C4",
    "size": 16,
    "jp": "   儀式の洞窟",
-   "en": "         Cave of Rites",
+   "en": "          Cave of Rites",
    "file": "0233C4",
    "ptrs": [
     "023304"
@@ -90,7 +90,7 @@
    "addr": "B3EA",
    "size": 16,
    "jp": "    西の閑所",
-   "en": "       Western Retreat",
+   "en": "        Western Retreat",
    "file": "0233EA",
    "ptrs": [
     "023314"
@@ -112,7 +112,7 @@
    "addr": "B414",
    "size": 16,
    "jp": "   ルドムの塔",
-   "en": "       Tower of Rudom",
+   "en": "        Tower of Rudom",
    "file": "023414",
    "ptrs": [
     "02331C"
@@ -123,7 +123,7 @@
    "addr": "B426",
    "size": 16,
    "jp": "   リッテン村",
-   "en": "         Ritten Village",
+   "en": "          Ritten Village",
    "file": "023426",
    "ptrs": [
     "023320"
@@ -156,7 +156,7 @@
    "addr": "B45E",
    "size": 16,
    "jp": "    鉱山洞窟",
-   "en": "           Mine Cave",
+   "en": "            Mine Cave",
    "file": "02345E",
    "ptrs": [
     "02332C",
@@ -170,7 +170,7 @@
    "addr": "B470",
    "size": 18,
    "jp": "  ラントブルグ村",
-   "en": "       Landburg Village",
+   "en": "        Landburg Village",
    "file": "023470",
    "ptrs": [
     "02333C"
@@ -181,7 +181,7 @@
    "addr": "B484",
    "size": 18,
    "jp": "  ベルクスタット",
-   "en": "           Bergstadt",
+   "en": "            Bergstadt",
    "file": "023484",
    "ptrs": [
     "023340"
@@ -192,7 +192,7 @@
    "addr": "B498",
    "size": 18,
    "jp": "   ヤ－ク族の村",
-   "en": "          Yaak Village",
+   "en": "           Yaak Village",
    "file": "023498",
    "ptrs": [
     "023344"
@@ -203,7 +203,7 @@
    "addr": "B4AC",
    "size": 20,
    "jp": "  港町ハンスタッド",
-   "en": "         Port Hanstad",
+   "en": "          Port Hanstad",
    "file": "0234AC",
    "ptrs": [
     "023348"
@@ -225,7 +225,7 @@
    "addr": "B4D2",
    "size": 16,
    "jp": "   鳥人族の村",
-   "en": "        Birdfolk Village",
+   "en": "         Birdfolk Village",
    "file": "0234D2",
    "ptrs": [
     "023350"
@@ -236,7 +236,7 @@
    "addr": "B4E4",
    "size": 18,
    "jp": "   獣人族の洞窟",
-   "en": "        Beastfolk Cave",
+   "en": "         Beastfolk Cave",
    "file": "0234E4",
    "ptrs": [
     "023354"
@@ -258,7 +258,7 @@
    "addr": "B50E",
    "size": 14,
    "jp": "    難破船",
-   "en": "           Shipwreck",
+   "en": "            Shipwreck",
    "file": "02350E",
    "ptrs": [
     "02335C"
@@ -269,7 +269,7 @@
    "addr": "B51E",
    "size": 14,
    "jp": "    ウ－ド",
-   "en": "               Ude",
+   "en": "                Ude",
    "file": "02351E",
    "ptrs": [
     "023360"
@@ -280,7 +280,7 @@
    "addr": "B52E",
    "size": 20,
    "jp": " 西の港ハントヴォ－",
-   "en": "      Hantvo, West Port",
+   "en": "       Hantvo, West Port",
    "file": "02352E",
    "ptrs": [
     "023364"
@@ -324,7 +324,7 @@
    "addr": "B580",
    "size": 20,
    "jp": "  ベルグデレン城塞",
-   "en": "     Bergdelen Fortress",
+   "en": "      Bergdelen Fortress",
    "file": "023580",
    "ptrs": [
     "023374",
@@ -348,7 +348,7 @@
    "addr": "B5AA",
    "size": 16,
    "jp": "    金鉱洞窟",
-   "en": "        Gold Mine Cave",
+   "en": "         Gold Mine Cave",
    "file": "0235AA",
    "ptrs": [
     "023384"
@@ -370,7 +370,7 @@
    "addr": "B5CE",
    "size": 18,
    "jp": "   エントの足跡",
-   "en": "        Ent's Footprint",
+   "en": "         Ent's Footprint",
    "file": "0235CE",
    "ptrs": [
     "02338C",
@@ -396,7 +396,7 @@
    "addr": "B5F4",
    "size": 16,
    "jp": "    神秘の島",
-   "en": "         Mystic Island",
+   "en": "          Mystic Island",
    "file": "0235F4",
    "ptrs": [
     "0233A4"
@@ -418,7 +418,7 @@
    "addr": "B61E",
    "size": 18,
    "jp": "  イスカ－ルの城",
-   "en": "         Iskar's Castle",
+   "en": "          Iskar's Castle",
    "file": "02361E",
    "ptrs": [
     "0233AC"

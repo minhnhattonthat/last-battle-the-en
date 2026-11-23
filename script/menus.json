@@ -10,7 +10,7 @@
    "addr": "8600",
    "size": 32,
    "jp": "         どうしますか？",
-   "en": "        What now?",
+   "en": "         What now?",
    "file": "020600",
    "tiles": 16
   },
@@ -37,7 +37,7 @@
    "addr": "867A",
    "size": 42,
    "jp": "    だれの アイテムを つかいますか？",
-   "en": "   Whose item to use?",
+   "en": "      Use whose item?",
    "file": "02067A",
    "tiles": 21
   },
@@ -55,7 +55,7 @@
    "addr": "86D2",
    "size": 42,
    "jp": "     どの アイテムを つかいますか？",
-   "en": "     Use which item?",
+   "en": "      Use which item?",
    "file": "0206D2",
    "tiles": 21
   },

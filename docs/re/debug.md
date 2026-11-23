@@ -96,6 +96,12 @@ Everything `tools/debug/warp.lua` relies on. Addresses are WRAM (`$7E`) unless a
   ended when the field loop calls `00:D634` again. A place-name label (rooms entered from the map) holds the field
   loop until a button: the probe taps B while a run is armed. A mashed through text; B after 1500 frames backs
   out of shops (E4).
+- Names: items, enemies and tactics are keyed by their ROM record's name field (read when a list draws them).
+  Spell names live only in the character records in WRAM (copied from the new-game record / joining blocks), so
+  their key is the English name in the `$FC:8000` name table (`insert.NameTable`, pointer per kind * 256 + n).
+  `tools/debug/names_cover.py` pokes unseen item ids into Kurt's 16 slots (`$19CF`) and opens the item list.
+- Any text edit can shift every block stream (session 24: -1 byte), so a coverage set is tied to one build: keep the
+  ROM and its `strings.tsv` together (`work/qa/cover_build/`) and run every probe of the set on that ROM.
 - `tools/debug/textcover_run.py OUT` runs every room (and the 14 story-variant blocks with their pokes), restarting
   after any entry that leaves the room or sticks. Report: `textcover.py OUT build/strings.tsv --waive
   docs/text_unshown.tsv --mask 0xFFFFFFFFFFFF`.

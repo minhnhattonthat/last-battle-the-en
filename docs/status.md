@@ -3,8 +3,23 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 8. QA in the emulator, in progress: 3138/3143 translated (the 5 left in `script/keep_jp.txt` are
-  particle columns no longer read), 43 tests green. 2026-11-24 session 23.
+  particle columns no longer read), 43 tests green. 2026-11-24 session 24.
 - **Done:**
+  - **Phase 8, session 2026-11-24 (24):** text coverage re-run at 3-4 emulators: all 323 rooms + 14 variants done
+    (`work/qa/cover_rooms2.log`; `textcover_run.py --skip-done` skips rooms an earlier run finished), menu/scene pass
+    (`work/qa/cover/scenes`), item lists with every unseen item id poked into Kurt's 16 slots (`work/qa/cover/names`
+    p00-p03: all 135 item names now shown). **Coverage set is frozen to build 84d80ad0**: `work/qa/cover_build/rom.sfc`
+    + its `strings.tsv` (spell keys fixed, see below); later builds shift every block key by a byte, so run all
+    further coverage probes with `--rom work/qa/cover_build/rom.sfc` and report against that `strings.tsv`.
+    `strings_tsv.py`: spell names are read from the character records in WRAM, never from the ROM slot, so their
+    key is now the English name in NAMES_AREA (`$FC:8000` table, kind 2). inkbox pass (tol: BG3 text is 8 px tiles,
+    so the best centring is +-8 px; VWF banners +-4 px): 33 place banners were 2-4 px left (pad now rounds to nearest,
+    `batches.wrap`, fix batch b068, 19 changed); "What now?" (bg3_8600) and "Use which item?" (bg3_86D2) moved a tile
+    right, bg3_867A reworded "Use whose item?" to centre in its 21-tile slot; prompt bars, Yes/Save/Cast/Ster/Pick
+    Plan label boxes and the item-menu message bar all within a tile (script: scratch, rects `21,59,214,16` prompt
+    bar, label boxes found by their white borders at y 119-141, banners `53,180,150,22` / top `53,28,150,22`, all
+    `--ink 239,239,239 --diff 20`). Graphics text: none left in Japanese (title/logo English already, no chapter-card
+    or game-over graphics; spell info labels seen in session 23).
   - **Phase 8, session 2026-11-24 (23), part 2:** QA gate passes on tour3 (43 scenes re-shot after a full disk).
     Text coverage: `build.py` writes `build/strings.tsv` (`tools/strings_tsv.py`, block strings keyed by stream),
     `tools/debug/textcover.lua` (block-aware probe + script chaining), `tools/debug/textcover_run.py` (every room
@@ -250,17 +265,22 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   0. **Phase 8: QA in the emulator** (done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
      `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
-     **Resume here:** visual-QA gate PASSES on `work/qa/tour3` (263/263 sheets ok, `qa_gate.py check` exit 0;
-     scene notes in `work/qa/verdict_notes.tsv`). Text coverage is wired (`docs/re/debug.md` §Text coverage,
-     AGENTS.md Coverage line) but only partly run: the session-23 runs were stopped by Claude Code for low memory
-     (18 emulators on a 16 GB machine: keep the total to ~4 jobs). Partial: 89/323 rooms, 912/3143 strings shown
-     (`work/qa/cover`, report `work/qa/cover_report.txt`). Re-run, one at a time, ~4 jobs: (1) rooms not finished
-     (`textcover_run.py work/qa/cover --jobs 4 --rooms <list>`: rooms already done = r<id>_* dirs with ALLDONE);
-     (2) `run_scenes.py build/lastbattle_en.sfc --out work/qa/cover/scenes --jobs 4 --script tools/debug/textcover.lua
-     --var "RANGES='<textcover_run.rom_ranges>'"` (menus, shops, names); (3) the battle routes through `probe.py`
-     with the same script (`work/qa/cover/battle`). Then waive what is shown unreachable in `docs/text_unshown.tsv`.
-     Known gaps that will remain: the magic-synthesis battle screen (item 1a), conditional branches inside room
-     scripts (flags), and the graphics-text cold-boot check (chapter cards, game over, credits).
+     **Resume here:** visual-QA gate PASSES on `work/qa/tour3` (263/263 sheets ok; the session-24 text fixes
+     (banners b068, 3 prompts) need their scenes re-shot: `place_*`, `camp_menu`, `ow_menu`, `menu_*`, `stress_itemlist`,
+     then verdicts). Text coverage: report `python -X utf8 $SKILL/scripts/textcover.py work/qa/cover
+     work/qa/cover_build/strings.tsv --waive docs/text_unshown.tsv --mask 0xFFFFFFFFFFFF` -> **2422/3143 shown, 721
+     failing** (before the session-24 scene pass finished: re-run the report first). Keep the total to ~4 emulators
+     (16 GB machine). Missing by family: 197 room strings (`r###`: conditional branches/flags in room scripts:
+     group by room, find the flag, add `textcover_run.VARIANTS`-style pokes), 192 `bg3` (menu messages for actions
+     not taken, item/spell description boxes `bg3_A3C5-AC7D`: item info per id with poked inventory, like the item
+     lists), 177 `bt` (battle: synthesis/mana screen 1a below, status effects, use messages), 92 `b04` (party names
+     Mei/Borg/Regina need a party, a few banners (scene pass may cover), item descriptions `b04_B69E+`), 33 `common`
+     (shared NPC lines: find which rooms call them), 28 `spell` (the field spell list shows only one entry with
+     Kurt's spell fields poked at `$192A + 8i` (`02 n 41`): the spell count lives elsewhere; or show them in battle /
+     the magic healer screens), `top15_03EC`, `top28_0006`. Probe recipe: `tools/debug/names_cover.py` pattern =
+     `probe.py OUT "0x4D 10 6 KEYS|-|@19CF:...,..." --rom work/qa/cover_build/rom.sfc --frames 3200 --jobs 3
+     --script tools/debug/textcover.lua --var "RANGES='<textcover_run.rom_ranges(cover_build/strings.tsv)>'"`.
+     Waive only what is shown unreachable in `docs/text_unshown.tsv` (created, empty).
      Write verdicts chunk by chunk to `work/qa/verdicts/<chunk>.tsv` (brief
      `docs/visual-qa-brief.md`; compare `work/qa/tour_jp/<scene>`). Budget: 261 sheets are 520x456 with 128x112
      tiles, too small to read text, so for each scene zoom the text boxes (`sheet.py DIR --changed 0.03 --crop
@@ -331,9 +351,12 @@ Updated at the end of every session. Keep it to what the next session needs; his
   4. Chapter 4 recap (room 198 NPC talk `$7F:015A`) has no scene: talking to that NPC needs its position; text
      coverage will flag it if missed.
 - **Open bugs:** none.
-- **Waiting on the user:** BLOCKING (phase 8 text coverage): Claude Code stopped the session-23 coverage runs because
-  the machine ran low on memory (my fault: 18 emulators at once on 16 GB; the C: drive was also full and has
-  been cleared to 170 GB free). Say to re-run them at ~4 emulators (commands under Next, item 0). Non-blocking: item names are 9 letters (D18; a few abbreviated, listed in
+- **Waiting on the user:** BLOCKING (phase 8 text coverage): Claude Code stopped the session-24 scene coverage pass
+  (`run_scenes.py ... --out work/qa/cover/scenes --jobs 1`) for low system memory while 3 room-run emulators had
+  just finished (the machine has ~3.5 GB free with no emulators running); it reached `place_21`, so `place_22`+
+  and every `svc_*` scene are not logged, and the harness says not to restart it unasked. Say to resume it (one
+  emulator, e.g. `run_scenes.py work/qa/cover_build/rom.sfc --out work/qa/cover/scenes --jobs 1 --only <rest>`),
+  or free memory first. Non-blocking: item names are 9 letters (D18; a few abbreviated, listed in
   `docs/polish.md`): say if you want the bigger engine change (one-column item lists, new cursor logic) for full
   12-letter names. Non-blocking: item/spell description boxes are 6 x 7 and 7 x 4 fixed 8 px tiles; the
   default (D9) writes terse English to them; say if you want the engine change that draws descriptions through the

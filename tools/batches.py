@@ -166,7 +166,9 @@ def wrap_page(text, width):
 def wrap(e, en):
     """English as stored: dialogue pages wrapped, quote indent added, banners centred. Other forms unchanged."""
     if form(e) == "banner":
-        return " " * max(0, (144 - px(en.strip())) // 8) + en.strip()
+        # 4 px spaces, pad (144 - px) / 2 rounded to the nearest space: floor put every banner's ink 2-4 px left
+        # of the box centre (inkbox on work/qa/tour3/place_*, phase 8)
+        return " " * max(0, (148 - px(en.strip())) // 8) + en.strip()
     if form(e) == "menu" and not e.get("max_tiles"):
         # each line centred where the JP line was centred (JP pads with leading spaces), never past its right edge;
         # a name insert counts at its longest (character 8 tiles, item NAME_CAP) on both sides, a glyph token

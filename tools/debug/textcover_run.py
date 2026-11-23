@@ -102,6 +102,14 @@ def run_room(a, idx, entries, ranges):
     return idx + 1, notes
 
 
+def room_done(out, rid):
+    """True when an earlier run of room rid in out finished (ALLDONE, or the per-entry fallback ran)."""
+    if any(out.glob(f"r{rid:03d}_e*")):
+        return True
+    return any("ALLDONE" in p.read_text(encoding="utf-8", errors="replace")
+               for p in out.glob(f"r{rid:03d}_*/log.txt"))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("out")
@@ -113,11 +121,16 @@ def main():
     ap.add_argument("--frames", type=int, default=40000)
     ap.add_argument("--x", default="10")
     ap.add_argument("--y", default="8")
+    ap.add_argument("--skip-done", action="store_true",
+                    help="skip rooms whose earlier run in OUT ended with ALLDONE or ran entries one by one (same build)")
     a = ap.parse_args()
     orig = ORIG.read_bytes()
     ranges = rom_ranges(Path(a.strings))
     jobs = [(n - 1, room_entries(orig, n - 1)) for n in parse_rooms(a.rooms)
             if (ROOT / "script" / f"r{n - 1:03d}.json").exists()]  # rooms with no text have no script file
+    if a.skip_done:
+        jobs = [j for j in jobs if not room_done(Path(a.out), j[0] + 1)]
+        print(f"{len(jobs)} rooms to run", flush=True)
     with cf.ThreadPoolExecutor(a.jobs) as ex:
         for rid, notes in ex.map(lambda j: run_room(a, j[0], j[1], ranges), jobs):
             print(f"room {rid}: {'; '.join(notes)}", flush=True)
