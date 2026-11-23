@@ -11,56 +11,56 @@
    "addr": "005A",
    "size": 104,
    "jp": "氷の女王イスカ－ルは{nl}{D318}１６年前{nl}{D318}シルヴェルの王子の誕生を恐れて{nl}{D318}シルヴェルを襲ったのではなかった。",
-   "en": ""
+   "en": "Iskar, the Ice Queen,{nl}{D318}had not attacked Silvel 16 years ago{nl}{D318}out of fear of the birth{nl}{D318}of Silvel's prince."
   },
   {
    "id": "r009_00D8",
    "addr": "00D8",
    "size": 86,
    "jp": "イスカ－ルは{nl}{D318}真の言葉の使い手の誕生を恐れて{nl}{D318}１６年前シルヴェルを{nl}{D318}襲ったのだ。",
-   "en": ""
+   "en": "Iskar had attacked Silvel{nl}{D318}16 years ago in fear of the birth{nl}{D318}of one who could wield{nl}{D318}the true words."
   },
   {
    "id": "r009_0144",
    "addr": "0144",
    "size": 102,
    "jp": "平和がもどった{nl}{D318}エットミランシェルでは{nl}{D318}真の言葉の使い手の誕生の物語が{nl}{D318}ひっそりと語り継がれた。",
-   "en": ""
+   "en": "In Ettmiranshel,{nl}{D318}where peace had returned, the tale{nl}{D318}of the birth of the true words' wielder{nl}{D318}was quietly passed down."
   },
   {
    "id": "r009_01C0",
    "addr": "01C0",
    "size": 100,
    "jp": "そしてあの最後の戦いは{nl}{D318}ザ・ラストバトルとして{nl}{D318}長く みんなの心に{nl}{D318}明るい光を ともし続けた。",
-   "en": ""
+   "en": "And that final battle{nl}{D318}lived on for a long time as{nl}{D318}The Last Battle, a bright light{nl}{D318}burning in everyone's hearts."
   },
   {
    "id": "r009_023A",
    "addr": "023A",
    "size": 138,
    "jp": "しかしクルトとメイの消息は{nl}{D318}エットミランシェルでは{nl}{D318}もう２度と{nl}{D318}聞かれることはなかった・・・。{D350}{F9FF}{B270}{B271}{B272}{B273}{B274}{B275}{D320}  ＴＨＥ ＥＮＤ{page2}",
-   "en": ""
+   "en": "But of Kurt and Mei,{nl}{D318}in Ettmiranshel,{nl}{D318}nothing was ever{nl}{D318}heard again...{D350}{F9FF}{B270}{B271}{B272}{B273}{B274}{B275}{D320}  THE END{page2}"
   },
   {
    "id": "r009_033E",
    "addr": "033E",
    "size": 82,
    "jp": "フラグ００をオフにして{nl}１度マップチェンジしてから{nl}ここ調べると ＰＣが４人になる",
-   "en": ""
+   "en": "Turn flag 00 off, change maps once,{nl}then examine this spot and the party{nl}becomes 4 PCs."
   },
   {
    "id": "r009_0397",
    "addr": "0397",
    "size": 34,
    "jp": "クルトは{nl}１０万ソルを手に入れた。",
-   "en": ""
+   "en": "Kurt received{nl}100,000 Sol."
   },
   {
    "id": "r009_03C5",
    "addr": "03C5",
    "size": 52,
    "jp": "「あら？ この いやしの館に{nl} ごようでしょうか？{page}",
-   "en": ""
+   "en": "\"Oh? Do you have business here at the{nl} House of Healing?{page}"
   }
  ]
 }

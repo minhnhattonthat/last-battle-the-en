@@ -11,21 +11,21 @@
    "addr": "0056",
    "size": 114,
    "jp": "イェルト{nl}「どうしたんだ クルト？{nl} ２つとも おまえのものだよ。{page}「えんりょ するなんて{nl} おまえらしくないぞ。",
-   "en": ""
+   "en": "Yelt{nl}\"What's the matter, Kurt? Both of them{nl} are yours.{page}\"Holding back isn't like you at all."
   },
   {
    "id": "r008_00CA",
    "addr": "00CA",
    "size": 400,
    "jp": "イェルト{nl}「その剣とヨロイは 父さんが{page} フェナムンの儀式を うけたとき{nl} 使ったものなんだ。{page} 今夜の儀式には{nl} それを 使いなさい。{page2}{FB00}「いいか 儀式は{nl} 日がくれたら すぐに始めるぞ。{page}「父さんは これから{nl} ある人を むかえに行ってくるが{page} そのあいだに{nl} 母さんと 相談して{nl} ちゃんと準備を すませておけよ。{page2}{FB00}「この儀式が 終われば{nl} おまえも一人前だ。{wait}{nl} がんばるんだぞ クルト。{page2}",
-   "en": ""
+   "en": "Yelt{nl}\"That sword and armor are what I used{page} when I took the Fenamun rite myself.{nl} Use them in tonight's rite.{page2}{FB00}\"Listen. The rite begins as soon as the{nl} sun goes down.{page}\"I'm going out now to meet someone,{page} so while I'm gone, talk it over with your{nl} mother and get yourself ready.{page2}{FB00}\"Once this rite is over, you'll be a grown{nl} man. {wait}Do your best, Kurt.{page2}"
   },
   {
    "id": "r008_0277",
    "addr": "0277",
    "size": 58,
    "jp": "イェルト{nl}「さあ そこに置いてある箱を{nl} あけてごらん。{page2}",
-   "en": ""
+   "en": "Yelt{nl}\"Go on, open the box sitting there.{page2}"
   }
  ]
 }

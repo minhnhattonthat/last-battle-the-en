@@ -11,21 +11,21 @@
    "addr": "012A",
    "size": 96,
    "jp": "「知ってるかい？{wait}{nl} 王様の ご病気は{nl} ずいぶん 悪いらしいよ。{page} まあ ウワサなんだけどね。",
-   "en": ""
+   "en": "\"You know what? {wait}They say the King's{nl} illness is quite bad.{page} Mind you, it's only a rumor."
   },
   {
    "id": "r020_0190",
    "addr": "0190",
    "size": 98,
    "jp": "「もうすぐ お世継ぎが{nl} 生れるかも しれないってのに{page} かんじんの王様が{nl} 病気なんてねえ・・・",
-   "en": ""
+   "en": "\"With an heir maybe on the way soon,{page} and the King himself falling ill, of all{nl} things..."
   },
   {
    "id": "r020_01F8",
    "addr": "01F8",
    "size": 132,
    "jp": "「なんでも 王様の病気は{nl} 原因も わからないらしいね。{page}「突然 たおれちゃって{nl} そのまま おきあがることも{nl} できないそうだよ。",
-   "en": ""
+   "en": "\"They say nobody even knows what's{nl} causing the King's illness.{page}\"He just collapsed all of a sudden, and{nl} he can't even get out of bed."
   },
   {
    "id": "r020_027E",

@@ -121,7 +121,9 @@ def px(text):
     w = 0
     for m in re.finditer(r"\{[0-9A-Za-z]+\}|.", text):
         t = m[0]
-        w += INSERT_PX.get(t, 12 if len(t) == 6 and t[0] == "{" else 0) if t[0] == "{" and len(t) > 1 else ADVANCE.get(t, 8)
+        # {XXXX} words: $C000+ are script controls (wait, page, sound, position: no width), the rest 12 px glyphs
+        glyph = len(t) == 6 and t[1] not in "CDEF"
+        w += INSERT_PX.get(t, 12 if glyph else 0) if t[0] == "{" and len(t) > 1 else ADVANCE.get(t, 8)
     return w
 
 
@@ -194,7 +196,7 @@ def wrap(e, en):
         if "{nl}" in body:
             lines = [ln.strip() for ln in body.split("{nl}")]
         else:
-            lines = wrap_page(body.strip(), DLG_PX - 4 * speech)
+            lines = wrap_page(body.strip(), DLG_PX - 4 * speech - (0 if head else px(lead)))
         # choice lines ({F600} = choice cursor) keep their place
         lines = [ln if not speech or ln.startswith(('"', "{F600}")) or ln == "" else " " + ln for ln in lines]
         out.append(lead + "{nl}".join(head + lines))

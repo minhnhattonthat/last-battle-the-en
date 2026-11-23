@@ -11,84 +11,84 @@
    "addr": "009F",
    "size": 46,
    "jp": "「ここは お城の許可がなけりゃ{nl} 通れないよ。",
-   "en": ""
+   "en": "\"You can't pass here without the{nl} castle's permission."
   },
   {
    "id": "r018_00D3",
    "addr": "00D3",
    "size": 80,
    "jp": "「何回きても おんなじさ。{nl} ゆるしのない者を 通すわけには{nl} いかないんだよ。",
-   "en": ""
+   "en": "\"Come as often as you like, it's all the{nl} same. I can't let anyone through{nl} without leave."
   },
   {
    "id": "r018_0129",
    "addr": "0129",
    "size": 72,
    "jp": "「あなた方のことは{nl} ユ－リ様に聞いてます。{page} どうぞ お通りください。",
-   "en": ""
+   "en": "\"Yuri-sama told us about you.{page} Please, go on through."
   },
   {
    "id": "r018_017D",
    "addr": "017D",
    "size": 94,
    "jp": "「シルヴェル城に いきたいって？{wait}{wait}{nl} それじゃ道が反対だよ。{wait}{nl} この道を もどってごらん。",
-   "en": ""
+   "en": "\"You want to go to Silvel Castle?{nl} {wait}{wait}You're going the wrong way.{nl} {wait}Head back down this road."
   },
   {
    "id": "r018_01E1",
    "addr": "01E1",
    "size": 82,
    "jp": "「だから シルヴェルの城は{nl} こっちじゃないってば！{wait}{wait}{nl} もどらなきゃダメだよ。",
-   "en": ""
+   "en": "\"Like I said, Silvel Castle isn't this way!{nl} {wait}{wait}You have to go back."
   },
   {
    "id": "r018_0239",
    "addr": "0239",
    "size": 84,
    "jp": "「この道は{nl} どこまで 通じているかって？{page}「ずうっと進めば{nl} 港町ハンスタッドさ。",
-   "en": ""
+   "en": "\"Where does this road lead, you ask?{page}\"Keep going and you'll reach the port{nl} town of Hanstad."
   },
   {
    "id": "r018_0295",
    "addr": "0295",
    "size": 112,
    "jp": "「ここは今 われらグルド軍の{nl} 支配下にある。{page}「グルド軍でない者は{nl} いっさい 通りぬけることは{nl} ゆるさん！",
-   "en": ""
+   "en": "\"This area is now under the rule of our{nl} Guld army.{page}\"No one but the Guld army is allowed{nl} through!"
   },
   {
    "id": "r018_0307",
    "addr": "0307",
    "size": 64,
    "jp": "「シルヴェル人は 町にもどり{nl} グルド軍の命令に したがうのだ！",
-   "en": ""
+   "en": "\"Silvel folk, go back to town and obey{nl} the Guld army's orders!"
   },
   {
    "id": "r018_034F",
    "addr": "034F",
    "size": 44,
    "jp": "「子供は 家に帰って{nl} おとなしくしていろ！",
-   "en": ""
+   "en": "\"Kids go home and stay quiet!"
   },
   {
    "id": "r018_037D",
    "addr": "037D",
    "size": 82,
    "jp": "「いたいめに あう前に{nl} さっさと帰れ！{page}「子供だからって{nl} ようしゃ しねえぞ！",
-   "en": ""
+   "en": "\"Get lost before you get hurt!{page}\"Don't think we'll go easy on you just{nl} 'cause you're a kid!"
   },
   {
    "id": "r018_03D7",
    "addr": "03D7",
    "size": 58,
    "jp": "「おまえたちも これからは{nl} グルド王国の人間になるんだ！",
-   "en": ""
+   "en": "\"From now on, you lot are people of{nl} the Kingdom of Guld!"
   },
   {
    "id": "r018_0413",
    "addr": "0413",
    "size": 48,
    "jp": "「シルヴェルなんて国は{nl} もう ないんだからな！",
-   "en": ""
+   "en": "\"There's no such country as Silvel{nl} anymore!"
   }
  ]
 }

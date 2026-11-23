@@ -11,140 +11,140 @@
    "addr": "00C7",
    "size": 88,
    "jp": "コンラ－ト{nl}「クルト{nl} よく がんばったな。{page}「あれだけ 戦えれば{nl} たいしたもんだぞ。",
-   "en": ""
+   "en": "Konrad{nl}\"Kurt, you did well.{page}\"Fighting like that is really something."
   },
   {
    "id": "r010_0121",
    "addr": "0121",
    "size": 144,
    "jp": "コンラ－ト{nl}「一刻も早く このことを{nl} お城のユ－リ様にお伝えしてくれ。{page}「ケガしてなけりゃ{nl} おれが 行くべきなんだが。{nl} すまんな クルト。",
-   "en": ""
+   "en": "Konrad{nl}\"Tell Yuri-sama at the castle about this{nl} as soon as you can.{page}\"If I weren't hurt, I'd go myself. Sorry,{nl} Kurt."
   },
   {
    "id": "r010_01B9",
    "addr": "01B9",
    "size": 42,
    "jp": "「シルヴェルの お城に{nl} いくんですって？",
-   "en": ""
+   "en": "\"You're going to Silvel Castle?"
   },
   {
    "id": "r010_01E5",
    "addr": "01E5",
    "size": 86,
    "jp": "「気をつけるのよ クルト。{wait}{nl} まだ近くに あいつらの{nl} 仲間が いるかもしれないわ。",
-   "en": ""
+   "en": "\"Be careful, Kurt. {wait}Some of their{nl} friends might still be nearby."
   },
   {
    "id": "r010_023D",
    "addr": "023D",
    "size": 66,
    "jp": "「より道なんか しちゃダメよ。{wait}{nl} まっすぐ お城まで 行くのよ。",
-   "en": ""
+   "en": "\"No dawdling along the way. {wait}Go{nl} straight to the castle."
   },
   {
    "id": "r010_0287",
    "addr": "0287",
    "size": 142,
    "jp": "「グルドのやつら{nl} やっぱり あのグラッドって男を{nl} 追ってきたんだろうな。{page} あいつ だいじょうぶかな？{nl} だいぶひどい ケガだったが・・・",
-   "en": ""
+   "en": "\"Those Guld men must have been{nl} chasing that fellow Glad after all.{page} Will he be all right? He was hurt pretty{nl} badly..."
   },
   {
    "id": "r010_0317",
    "addr": "0317",
    "size": 112,
    "jp": "「おまえが無事でよかったよ。{page} おまえが 大ケガでもしてたら{nl} イェルトやユ－スが{nl} どんなに悲しむことか・・・",
-   "en": ""
+   "en": "\"I'm glad you're safe.{page} If you'd been badly hurt, think how sad{nl} Yelt and Yuse would be..."
   },
   {
    "id": "r010_0389",
    "addr": "0389",
    "size": 88,
    "jp": "「おまえの おやじのことなら{nl} 心配するな。{page}「イェルトのことだ{nl} きっと元気になるさ。",
-   "en": ""
+   "en": "\"Don't worry about your father.{page}\"It's Yelt we're talking about. He'll pull{nl} through."
   },
   {
    "id": "r010_03E9",
    "addr": "03E9",
    "size": 64,
    "jp": "グラッド{nl}「・・・・・・・・・・・{page}グラッドは{nl}気を失っている。",
-   "en": ""
+   "en": "Glad{nl}\"...........{page}Glad has lost consciousness."
   },
   {
    "id": "r010_0431",
    "addr": "0431",
    "size": 134,
    "jp": "「あ－ 急がしい。{nl} 一度に こんな たくさんの{nl} ケガ人が 出るなんて！{page}「おや？{nl} あなたも どこか{nl} 治して ほしいんですか？{page}",
-   "en": ""
+   "en": "\"Oh, so busy! So many wounded all at{nl} once!{page}\"Hm? Do you need something healed{nl} too?{page}"
   },
   {
    "id": "r010_04C2",
    "addr": "04C2",
    "size": 102,
    "jp": "キュ－ケンホフ先生{nl}「グルドは はるか北の王国。{page} そのグルドの兵士が{nl} なぜ こんなところに・・・？",
-   "en": ""
+   "en": "Mr. Keukenhof{nl}\"Guld is a kingdom far to the north.{page} What would Guld soldiers be doing in a{nl} place like this...?"
   },
   {
    "id": "r010_052A",
    "addr": "052A",
    "size": 126,
    "jp": "キュ－ケンホフ先生{nl}「とにかく これは{nl} ただ事では ないぞ！{page}「クルト！{nl} 早く このことを{nl} シルヴェル城に 伝えるんだ！",
-   "en": ""
+   "en": "Mr. Keukenhof{nl}\"In any case, this is no small matter!{page}\"Kurt! Hurry and take word of this to{nl} Silvel Castle!"
   },
   {
    "id": "r010_05CA",
    "addr": "05CA",
    "size": 318,
    "jp": "長老{nl}「しっかりせい！{nl} いったい どうしたんじゃ！？{page2}{F9FF}シルヴェル兵{nl}「・・わ{wait}・・{wait}私は{wait}グラッド{wait}{wait}{nl} ・・シルヴェル城の{wait}{nl} ユ－リ様の部下だ・・{page} こ・・{wait}この・・{wait}{wait}グルドの密書を・・{nl} ・・早く・・{wait}ユ－リ様に・・・{wait}{nl} とどけてくれ・・・{page} 急がないと・・{wait}{wait}シルヴェルが{nl} {wait}{wait}・・あぶな・{wait}・{wait}・{page2}",
-   "en": ""
+   "en": "Elder{nl}\"Hold on! What on earth happened?!{page2}{F9FF}Silvel soldier{nl}\"..I{wait}..{wait}am {wait}Glad... {wait}{wait}..one of{nl} Yuri-sama's men {wait}..at Silvel Castle..{page} Th..{wait}this.. {wait}{wait}Guld secret letter..{nl} {wait}take it..{wait}to Yuri-sama.. quickly...{page} Hurry.. {wait}{wait}or Silvel {wait}{wait}..is in dan.{wait}.{wait}.{page2}"
   },
   {
    "id": "r010_0716",
    "addr": "0716",
    "size": 38,
    "jp": "長老は グルドの密書を{nl}手に入れた。{page2}",
-   "en": ""
+   "en": "The Elder received the Guld secret{nl}letter.{page2}"
   },
   {
    "id": "r010_0747",
    "addr": "0747",
    "size": 30,
    "jp": "「たいへんだ！たいへんだよ！{page2}",
-   "en": ""
+   "en": "\"Trouble! There's trouble!{page2}"
   },
   {
    "id": "r010_07BE",
    "addr": "07BE",
    "size": 78,
    "jp": "「たいへんだよ！{nl} グルドの兵隊が 攻めてきた！！{page2}{F9FF}長老{nl}「なんじゃと！？{page2}",
-   "en": ""
+   "en": "\"Trouble! Guld soldiers are attacking!!{page2}{F9FF}Elder{nl}\"What did you say?!{page2}"
   },
   {
    "id": "r010_0822",
    "addr": "0822",
    "size": 154,
    "jp": "「どういうことか わからんが{nl} わしらも もとは{nl} ほこりたかいシルヴェル騎士じゃ。{page}「グルド兵などに だまって村を{nl} ふみにじられるわけには いかん！{page2}",
-   "en": ""
+   "en": "\"I don't know what's going on, but we{nl} were once proud knights of Silvel{nl} ourselves.{page}\"We can't just stand by while Guld{nl} soldiers trample our village!{page2}"
   },
   {
    "id": "r010_08F6",
    "addr": "08F6",
    "size": 116,
    "jp": "「女と子供 魔法司殿は{nl} ここに いてくれ。{page} キズをおった者の手当ては{nl} キュ－ケンホフ先生に{nl} お願いしよう。{page2}",
-   "en": ""
+   "en": "\"Women, children and the honored{nl} mage, stay here.{page} We'll ask Mr. Keukenhof to tend to the{nl} wounded.{page2}"
   },
   {
    "id": "r010_098F",
    "addr": "098F",
    "size": 52,
    "jp": "「みんなで グルドのやつらを{nl} 追い返すのじゃ！！{page2}",
-   "en": ""
+   "en": "\"Everyone, let's drive those Guld men{nl} back!!{page2}"
   },
   {
    "id": "r010_0A27",
    "addr": "0A27",
    "size": 198,
    "jp": "イェルト{nl}「まさか こんなことに{nl} なるとはな。{page}「おまえに 危険なことは{nl} させたくなかったが{nl} これも運命かもしれん。{page}「いいかクルト ムリはするなよ。{nl} 命だけは 大事にするんだ{nl} いいな。{page2}",
-   "en": ""
+   "en": "Yelt{nl}\"Who'd have thought it would come to{nl} this.{page}\"I never wanted to put you in danger,{nl} but perhaps this is fate.{page}\"Listen, Kurt, don't overdo it. Take care{nl} of your life above all, understand?{page2}"
   }
  ]
 }

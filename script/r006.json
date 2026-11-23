@@ -130,49 +130,49 @@
    "addr": "093C",
    "size": 56,
    "jp": "「さあ フェ－ベンネルス様{nl} どうぞ お入りください。{page2}",
-   "en": ""
+   "en": "\"Please, Febennels-sama, do come in.{page2}"
   },
   {
    "id": "r006_0996",
    "addr": "0996",
    "size": 100,
    "jp": "イェルト{nl}「フェ－ベンネルス様{nl} この子が クルトです。{page}「いかがですか{nl} 大きくなったでしょう？{page2}",
-   "en": ""
+   "en": "Yelt{nl}\"Febennels-sama, this is Kurt.{page}\"What do you think? He's grown, hasn't{nl} he?{page2}"
   },
   {
    "id": "r006_0A01",
    "addr": "0A01",
    "size": 118,
    "jp": "フェ－ベンネルス{nl}「ほう・・・{wait}{nl} これが あのクルトか。{page}「しばらく見ぬあいだに{nl} りっぱに なったものじゃのう。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Oh ho... {wait}So this is little Kurt.{page}\"How fine you have grown since I last{nl} saw you.{page2}"
   },
   {
    "id": "r006_0A7E",
    "addr": "0A7E",
    "size": 166,
    "jp": "イェルト{nl}「クルト こちらは{nl} ルドムの森の 偉大な老魔法使い{nl} フェ－ベンネルス様だよ。{page}「この儀式のために{nl} きてくださったんだ。{page}「さあ ごあいさつしなさい。{page2}",
-   "en": ""
+   "en": "Yelt{nl}\"Kurt, this is Febennels-sama, the great{nl} old wizard of the Forest of Rudom.{page}\"He has come here for the rite.{page}\"Now, say hello.{page2}"
   },
   {
    "id": "r006_0B2F",
    "addr": "0B2F",
    "size": 154,
    "jp": "フェ－ベンネルス{nl}「わしは おまえの名付け親の{nl} フェ－ベンネルスじゃ。{page}「今夜は おまえが{nl} どれほど たくましく育ったか{nl} じっくり見せてもらうぞ。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"I am Febennels, the one who named{nl} you.{page}\"Tonight I shall see for myself just how{nl} strong you have grown.{page2}"
   },
   {
    "id": "r006_0BD0",
    "addr": "0BD0",
    "size": 56,
    "jp": "イェルト{nl}「では フェ－ベンネルス様{nl} さっそく・・・{page2}",
-   "en": ""
+   "en": "Yelt{nl}\"Then, Febennels-sama, shall we begin...{page2}"
   },
   {
    "id": "r006_0C0D",
    "addr": "0C0D",
    "size": 146,
    "jp": "フェ－ベンネルス{nl}「うむ よかろう。{page} 日も くれたようじゃし{nl} ゆっくりしては おれぬからな。{page}「さあ クルトよ{nl} わしに ついてくるがよい。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Mm, very well.{page} The sun has set, and we have no time{nl} to waste.{page}\"Come, Kurt. Follow me.{page2}"
   }
  ]
 }
