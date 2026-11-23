@@ -11,154 +11,154 @@
    "addr": "0042",
    "size": 14,
    "jp": "「どうするの？",
-   "en": ""
+   "en": "\"What'll it be?"
   },
   {
    "id": "top23_0054",
    "addr": "0054",
    "size": 28,
    "jp": "「他にも 何か ようはある？",
-   "en": ""
+   "en": "\"Anything else?"
   },
   {
    "id": "top23_0074",
    "addr": "0074",
    "size": 50,
    "jp": "ビ－ボォ{nl}「じゃ 気をつけて{nl} いってらっしゃい。",
-   "en": ""
+   "en": "Beebo{nl}\"Take care,{nl}off you go."
   },
   {
    "id": "top23_00AA",
    "addr": "00AA",
    "size": 62,
    "jp": "ビ－ボォ{nl}「あら？ あんたたち{nl} 悪いところなんか ないわよ。",
-   "en": ""
+   "en": "Beebo{nl}\"Huh? There's nothing{nl}wrong with you lot."
   },
   {
    "id": "top23_00EC",
    "addr": "00EC",
    "size": 128,
    "jp": "ビ－ボォ{nl}「治療ね？ わかったわ。{nl} じゃ さっそく・・・{page}{FB00}ビ－ボォ{nl}「ヴァ－ハル{wait} ヘント{wait}{wait}{nl} タ－デ{wait} ル－グント！！{page2}",
-   "en": ""
+   "en": "Beebo{nl}\"Healing? Got it.{nl}Here goes...{page}{FB00}Beebo{nl}\"Varhal...{wait} Hent...{wait}{wait}{nl}Tarde...{wait} Rugnt!!{page2}"
   },
   {
    "id": "top23_017A",
    "addr": "017A",
    "size": 60,
    "jp": "ビ－ボォ{nl}「おつかれさま。{nl} これで もう だいじょうぶよ。",
-   "en": ""
+   "en": "Beebo{nl}\"There you go.{nl}You're all better now."
   },
   {
    "id": "top23_01BA",
    "addr": "01BA",
    "size": 52,
    "jp": "ビ－ボォ{nl}「{actor}は まだ{nl} 魔法を おぼえてないわよ。",
-   "en": ""
+   "en": "Beebo{nl}\"{actor} hasn't{nl}learned any magic yet."
   },
   {
    "id": "top23_01F2",
    "addr": "01F2",
    "size": 54,
    "jp": "ビ－ボォ{nl}「魔法の確認ね。{nl} だれの魔法を 見たいの？",
-   "en": ""
+   "en": "Beebo{nl}\"Checking magic?{nl}Whose magic do you want to see?"
   },
   {
    "id": "top23_022C",
    "addr": "022C",
    "size": 20,
    "jp": "「どれを 見たいの？",
-   "en": ""
+   "en": "\"Which one do you want to see?"
   },
   {
    "id": "top23_0244",
    "addr": "0244",
    "size": 28,
    "jp": "「だれが魔法を 合成するの？",
-   "en": ""
+   "en": "\"Who's combining magic?"
   },
   {
    "id": "top23_0264",
    "addr": "0264",
    "size": 190,
    "jp": "ビ－ボォ{nl}「{actor} あんたは もう{nl} 魔法が いっぱいじゃないの。{page}「それ以上 新しい魔法を{nl} おぼえるなんて ムリよ。{page}「でも どんな魔法になるか{nl} ためすことは できるわ。{nl} それで いい？",
-   "en": ""
+   "en": "Beebo{nl}\"{actor}, you're already{nl}full up on magic.{page}\"No way you can learn{nl} any more new spells.{page}\"But you can still test{nl} what magic you'd get.{nl} That okay?"
   },
   {
    "id": "top23_0326",
    "addr": "0326",
    "size": 14,
    "jp": "これで いい？",
-   "en": ""
+   "en": "That okay?"
   },
   {
    "id": "top23_0336",
    "addr": "0336",
    "size": 108,
    "jp": "ビ－ボォ{nl}「どうだったかしら？{page}「もし この魔法を作るなら{nl} 今 おぼえている魔法を{nl} どれか 分解してね。",
-   "en": ""
+   "en": "Beebo{nl}\"How was that?{page}\"If you want to make this{nl} spell, break down one of{nl} the spells you know."
   },
   {
    "id": "top23_03A4",
    "addr": "03A4",
    "size": 96,
    "jp": "ビ－ボォ{nl}「じゃ 新しい魔法を{nl} 合成するわよ。{page}「さあ 準備はいい？{nl} 心を落ちつけてね。{wait}{wait}",
-   "en": ""
+   "en": "Beebo{nl}\"Okay, I'll combine{nl}a new spell.{page}\"Now, ready?{nl} Calm your heart.{wait}{wait}"
   },
   {
    "id": "top23_0408",
    "addr": "0408",
    "size": 74,
    "jp": "「ヴァハル{wait}{wait} デュ－フェル{wait} ユルケ{wait}{wait}{nl} ヤ－{wait}{wait} フェルフォ－クサ！",
-   "en": ""
+   "en": "\"Vahal...{wait}{wait} Dufel...{wait} Yurke...{wait}{wait}{nl} Ja...{wait}{wait} Ferforksa!"
   },
   {
    "id": "top23_0454",
    "addr": "0454",
    "size": 144,
    "jp": "ビ－ボォ{nl}「・・・キキッ{wait}{wait}{nl} さあ うまくいったわよ。{page}「魔法の名前は{nl} {spell}にしといたわ。{page} 後で あんたの好きな名前を{nl} つけるといいわよ。",
-   "en": ""
+   "en": "Beebo{nl}\"...Kee kee!{wait}{wait}{nl}There, it worked.{page}\"I named the spell{nl} {spell}.{page} You can give it any name{nl} you like later."
   },
   {
    "id": "top23_04E8",
    "addr": "04E8",
    "size": 84,
    "jp": "ビ－ボォ{nl}「魔法を分解して{nl} もとのマナに もどすのね？{page}「だれの魔法を分解するの？",
-   "en": ""
+   "en": "Beebo{nl}\"Break magic down{nl}back into mana?{page}\"Whose magic will you break down?"
   },
   {
    "id": "top23_0540",
    "addr": "0540",
    "size": 22,
    "jp": "「どの魔法を分解する？",
-   "en": ""
+   "en": "\"Which spell will you break down?"
   },
   {
    "id": "top23_055A",
    "addr": "055A",
    "size": 68,
    "jp": "ビ－ボォ{nl}「この魔法を分解するのね。{nl} それじゃ さっそく・・・{wait}{wait}",
-   "en": ""
+   "en": "Beebo{nl}\"Breaking down this spell.{nl}Here goes...{wait}{wait}"
   },
   {
    "id": "top23_05A0",
    "addr": "05A0",
    "size": 68,
    "jp": "「カ－ン{wait} ニ－{wait} ヴェクスラ・・・{wait}{wait}{nl} ティルノ－ラ{wait} マ－ナ！",
-   "en": ""
+   "en": "\"Kan...{wait} Ni...{wait} Vexla...{wait}{wait}{nl} Tilnora...{wait} Mana!"
   },
   {
    "id": "top23_05E6",
    "addr": "05E6",
    "size": 40,
    "jp": "ビ－ボォ{nl}「さあ これでよし！{page}{FB00}「{spell}は",
-   "en": ""
+   "en": "Beebo{nl}\"There, all done!{page}{FB00}\"{spell}"
   },
   {
    "id": "top23_0618",
    "addr": "0618",
    "size": 26,
    "jp": "{nl} {FA4D}に{nl} もどったわよ。",
-   "en": ""
+   "en": "{nl}has turned back{nl}into {FA4D}."
   }
  ]
 }

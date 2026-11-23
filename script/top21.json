@@ -144,84 +144,84 @@
    "addr": "04C8",
    "size": 178,
    "jp": "「ええっ{nl} お金が たりないですって！？{nl} そんな・・・{wait}{wait}今さら困ります！！{page}「{wait}・{wait}・{wait}・{wait}しかたないわ{nl} 今回だけ タダにしてあげます。{nl} 次からは 気をつけてくださいね！",
-   "en": ""
+   "en": "\"What?{nl} You don't have enough money!?{nl} But...{wait}{wait}it's too late now!!{page}\"{wait}.{wait}.{wait}.{wait}Oh, very well.{nl} Just this once, it's free.{nl} Be more careful next time!"
   },
   {
    "id": "top21_057E",
    "addr": "057E",
    "size": 160,
    "jp": "「右手に太陽 左手には月{wait}{wait}{nl} 光あふれ{wait} いにしえの力は{nl} ここに よみがえる・・・{page}「オ－ト{wait} ラップ{wait} リヴァス・・・{wait}{wait}{nl} フォルンティド ステュルカ！",
-   "en": ""
+   "en": "\"Sun in the right hand,{nl} moon in the left...{wait}{wait}{nl} Light overflows{wait}, and the{page}\"ancient power returns...{nl} Ort...{wait} Lapp...{wait} Rivas...{wait}{wait}{nl} Forntid Styrka!"
   },
   {
    "id": "top21_0622",
    "addr": "0622",
    "size": 236,
    "jp": "「大地にねむる精霊よ{wait}{wait}{wait}{nl} 天かける風{wait}{wait} 命まもりし水{wait}{wait}{nl} すべてを やきつくす炎よ・・・{page}「この聖なるいのりに こたえ{nl} {actor}に 新たなる力あたえよ！{page}「シェルナ イ－ オ－ドニング・・{wait}{wait}{nl} ブリ－{wait} フェルヴィル{wait}{wait} ラッド！",
-   "en": ""
+   "en": "\"Spirits asleep in the earth...{wait}{wait}{wait}{nl} Wind in the sky,{wait}{wait} water{nl} that guards life, all-burning fire...{page}\"Answer this holy prayer and{nl} give {actor} new power!{page}\"Sherna I Ordning...{wait}{wait}{nl} Bli...{wait} Fervil...{wait}{wait} Rad!"
   },
   {
    "id": "top21_0712",
    "addr": "0712",
    "size": 194,
    "jp": "「封印の扉よ{wait}{wait} 今こそ開かれよ。{page}「われら 大いなる命の みもとにて{wait}{wait}{nl} 禁じられし 魔法の力を{nl} よびさまさん・・・{page}「ヴィ－ル{wait} デュ－{wait} ヴァ－ラ{wait}{wait}{nl} スネ－ル エプナ{wait}{wait} デレン！",
-   "en": ""
+   "en": "\"Door of the seal,{wait}{wait} open now.{page}\"Beneath the great life{wait}{wait}{nl} we wake the power of{nl} forbidden magic...{page}\"Vil...{wait} Du...{wait} Vara...{wait}{wait}{nl} Snel Oppna...{wait}{wait} Deren!"
   },
   {
    "id": "top21_07D8",
    "addr": "07D8",
    "size": 240,
    "jp": "「この世の始まりの時より{wait}{nl} 天と地を つらぬきて生きる{nl} ４大精霊よ・・・{wait}{wait}。{page}「今{wait}{wait} なんじら一族の力を{nl} われらの前に しめし{wait}{wait}{nl} {actor}に 新たなる力あたえよ！{page}「フォ－ル{wait} ヤ－{wait} ロ－ナ・・・{wait}{wait}{nl} エン{wait} フェルスト－ンド！",
-   "en": ""
+   "en": "\"Four great spirits, living{wait}{nl} through heaven and earth since{nl} the world began...{wait}{wait}.{page}\"Now{wait}{wait} show us the power{nl} of your clan{wait}{wait} and{nl} give {actor} new power!{page}\"For...{wait} Ja...{wait} Rona...{wait}{wait}{nl} En...{wait} Ferstond!"
   },
   {
    "id": "top21_08CA",
    "addr": "08CA",
    "size": 90,
    "jp": "「・・・ふぅっ{wait}{wait}{nl} どうやら うまくいきましたよ。{page}「魔法の名前は {spell}に{nl} なりました。",
-   "en": ""
+   "en": "\"...Phew.{wait}{wait}{nl} Looks like it worked.{page}\"The spell is named{nl} {spell}."
   },
   {
    "id": "top21_0928",
    "addr": "0928",
    "size": 74,
    "jp": "「魔法を分解して{nl} マナに もどすんですね。{nl} だれの魔法を分解しますか？",
-   "en": ""
+   "en": "\"You want to break magic{nl} back down into mana.{nl} Whose magic will you break down?"
   },
   {
    "id": "top21_0976",
    "addr": "0976",
    "size": 26,
    "jp": " どの魔法を分解しますか？",
-   "en": ""
+   "en": "Which spell will you break down?"
   },
   {
    "id": "top21_0994",
    "addr": "0994",
    "size": 152,
    "jp": "「では 魔法を分解します。{nl} さあ あなたも{nl} 体の力を 抜いてください。{page}「だいじょうぶですよ{nl} 痛くは ありませんから。{nl} 心を 楽にして・・・{wait}{wait}",
-   "en": ""
+   "en": "\"Then I'll break down the spell.{nl} Now, let your body{nl} relax.{page}\"Don't worry,{nl} it won't hurt.{nl} Just ease your heart...{wait}{wait}"
   },
   {
    "id": "top21_0A2E",
    "addr": "0A2E",
    "size": 210,
    "jp": "「ひとみには なみだ{wait}{wait}{nl} 心には かがやきを・・・{page}「時は 明日から きのうへと流れ{wait}{wait}{nl} 聖なる力は ふたたび{nl} 封印のかなたに帰る・・・{page}「ヴァンダ{wait} ティド{wait} オム{wait}{wait}{nl} ヴァ－ルフェ－ル{wait} シェルナ！",
-   "en": ""
+   "en": "\"Tears in the eyes,{wait}{wait}{nl} radiance in the heart...{page}\"Time flows from tomorrow{nl} to yesterday,{wait}{wait} and the holy{nl} power returns beyond the seal...{page}\"Vanda...{wait} Tid...{wait} Om...{wait}{wait}{nl} Varlfel...{wait} Sherna!"
   },
   {
    "id": "top21_0B02",
    "addr": "0B02",
    "size": 12,
    "jp": "「さあ {spell}は",
-   "en": ""
+   "en": "\"There, {spell}"
   },
   {
    "id": "top21_0B18",
    "addr": "0B18",
    "size": 26,
    "jp": "{nl} {FA4D}に{nl} もどりました。",
-   "en": ""
+   "en": "{nl}has become{nl}{FA4D} again."
   }
  ]
 }

@@ -11,21 +11,21 @@
    "addr": "0006",
    "size": 28,
    "jp": "「それは戦士の魂とは言えぬ。",
-   "en": ""
+   "en": "\"That cannot be called a warrior's soul."
   },
   {
    "id": "top28_0024",
    "addr": "0024",
    "size": 54,
    "jp": "「戦士の魂を 持っていないようだな。{nl} 出直すがいい。",
-   "en": ""
+   "en": "\"You do not seem to have{nl} a warrior's soul. Come back later."
   },
   {
    "id": "top28_005C",
    "addr": "005C",
    "size": 70,
    "jp": "「それは 手放すわけには{nl} いかぬだろう。{page}「別のものを 選ぶがいい。",
-   "en": ""
+   "en": "\"You cannot part{nl} with that.{page}\"Choose something else."
   }
  ]
 }
