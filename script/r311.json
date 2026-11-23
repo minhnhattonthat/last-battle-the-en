@@ -11,91 +11,91 @@
    "addr": "009E",
    "size": 56,
    "jp": "指揮官を失った敵は{nl}あわてふためき ちりぢりになった。{page2}",
-   "en": ""
+   "en": "Without their commander,{nl}the enemy panicked and scattered.{page2}"
   },
   {
    "id": "r311_012D",
    "addr": "012D",
    "size": 36,
    "jp": "「みなさん！！{nl} 治療が必要ですか？",
-   "en": ""
+   "en": "\"Everyone!!{nl} Do you need healing?"
   },
   {
    "id": "r311_0157",
    "addr": "0157",
    "size": 64,
    "jp": "「それでは・・・{page}「ヴァテン{wait}{nl} ブレックフェ－ル{nl} レ－カ！{page2}",
-   "en": ""
+   "en": "\"Then...{page}\"Vatten...{wait}{nl} Bleckfel...{nl} Reka!{page2}"
   },
   {
    "id": "r311_01A5",
    "addr": "01A5",
    "size": 48,
    "jp": "「グルドの手から{nl} この町を 取り返しましょう！",
-   "en": ""
+   "en": "\"Let us take this town back{nl} from Guld's hands!"
   },
   {
    "id": "r311_01D9",
    "addr": "01D9",
    "size": 54,
    "jp": "「この町にすむ みんなのために{nl} がんばってください！",
-   "en": ""
+   "en": "\"Do your best, for everyone{nl} who lives in this town!"
   },
   {
    "id": "r311_022C",
    "addr": "022C",
    "size": 92,
    "jp": "スヴァルト{nl}「魔法司さんは わたしが守る！{page} 君達は 敵の指揮をとってる者を{nl} 探してくれ！",
-   "en": ""
+   "en": "Svart{nl}\"I'll protect the mage!{page} You find the one{nl} commanding the enemy!"
   },
   {
    "id": "r311_029C",
    "addr": "029C",
    "size": 56,
    "jp": "「商売の じゃまして{nl} おまえたち ただですむと思うな～",
-   "en": ""
+   "en": "\"Messing up my business?{nl} You won't get off lightly~"
   },
   {
    "id": "r311_02D6",
    "addr": "02D6",
    "size": 42,
    "jp": "「この町から グルド兵を{nl} たたきだせ！！",
-   "en": ""
+   "en": "\"Drive the Guld soldiers{nl} out of this town!!"
   },
   {
    "id": "r311_0302",
    "addr": "0302",
    "size": 52,
    "jp": "「気をつけろッ！！{nl} 敵は まだまだ いるぞっ！！！",
-   "en": ""
+   "en": "\"Look out!!{nl} There are plenty more of them!!!"
   },
   {
    "id": "r311_0338",
    "addr": "0338",
    "size": 58,
    "jp": "「こいつら おもってたより{nl} 弱いぞ いっきにやっちまえ。",
-   "en": ""
+   "en": "\"They're weaker than{nl} I thought. Get them all!"
   },
   {
    "id": "r311_0374",
    "addr": "0374",
    "size": 30,
    "jp": "「人の町で 勝手しやがって！！",
-   "en": ""
+   "en": "\"Running wild in our town!!"
   },
   {
    "id": "r311_039A",
    "addr": "039A",
    "size": 18,
    "jp": "「はんらんだ－！！",
-   "en": ""
+   "en": "\"It's a rebellion!!"
   },
   {
    "id": "r311_03C6",
    "addr": "03C6",
    "size": 168,
    "jp": "「このわしが 帰ってきていようとは{nl} おまえたちも 運がわるかったな。{page}「この町の守備隊長たる わたしが{nl} ここにいるかぎりは おまえたちに{nl} すきかってはさせんぞ！{page2}",
-   "en": ""
+   "en": "\"Bad luck for you that{nl} I happened to be back.{page}\"So long as I, captain of this{nl} town's garrison, am here,{nl} you will not do as you please!{page2}"
   }
  ]
 }

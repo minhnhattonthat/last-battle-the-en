@@ -130,5 +130,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | いやしの館 | House of Healing | | | |
 | 密書 | secret letter / Missive | | in talk "the secret letter"; the item and "received" messages: Guld Missive | |
 | ヴァテン ブレックフェール レーカ | Vatten... Bleckfel... Reka! | | healing chant; エット トヴォー トレー = Ett, tva, tre! (fireball); Guld mage chant = Vem... Stor... Dod! | |
+| ファイアボール / エクスプロード / ミラーイメージ / パラライズ | Fireball / Explode / Mirror / Paralyze | | spell names, 8 tiles | |
+| トーネード / アイスストーム / プロテクション / リストアヘルス / ライトニング | Tornado / Icestorm / Protect / Restore / Thunder | | spell names, 8 tiles | |
+| ヤーク族魔法司 / 族長の娘 / グルド隊長 | Yaak Mage / Chief's Daughter / Guld Captain | | speaker labels | |
 
 ## Decisions from earlier batches

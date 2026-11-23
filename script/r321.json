@@ -11,28 +11,28 @@
    "addr": "0074",
    "size": 102,
    "jp": "平和がもどった{nl}{D320}エットミランシェルでは{nl}{D320}真の言葉の使い手の誕生の物語が{nl}{D320}ひっそりと語り継がれた。",
-   "en": ""
+   "en": "In Ettmiranshel, at peace again,{nl}{D320}the tale of the birth of the{nl}{D320}true word-speaker{nl}{D320}was quietly handed down."
   },
   {
    "id": "r321_0118",
    "addr": "0118",
    "size": 18,
    "jp": "「ボルグ お帰り！",
-   "en": ""
+   "en": "\"Welcome home, Borg!"
   },
   {
    "id": "r321_0179",
    "addr": "0179",
    "size": 38,
    "jp": "「お話は聞いたよ。{nl} すごかったねえ。",
-   "en": ""
+   "en": "\"I heard the story.{nl} That was amazing."
   },
   {
    "id": "r321_0286",
    "addr": "0286",
    "size": 78,
    "jp": "ボルグ{nl}「ふう・・・・・・。{D320}{nl} クルトとメイは{nl} どうしているんだろうなあ。",
-   "en": ""
+   "en": "Borg{nl}\"Whew......{D320}{nl}I wonder how{nl}Kurt and Mei are doing."
   }
  ]
 }

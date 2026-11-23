@@ -11,63 +11,63 @@
    "addr": "00CD",
    "size": 52,
    "jp": "「うおりゃ～！！{nl} グルド兵なんかに負けてたまるか！",
-   "en": ""
+   "en": "\"Hyaaah!!{nl} I won't lose to Guld soldiers!"
   },
   {
    "id": "r315_0105",
    "addr": "0105",
    "size": 18,
    "jp": "「必殺の一撃～！！",
-   "en": ""
+   "en": "\"Killer blow!!"
   },
   {
    "id": "r315_0119",
    "addr": "0119",
    "size": 32,
    "jp": "「敵は まだまだ いるぞっ！！！",
-   "en": ""
+   "en": "\"There are plenty more of them!!!"
   },
   {
    "id": "r315_013B",
    "addr": "013B",
    "size": 82,
    "jp": "「突撃隊の連中は ついに{nl} 城塞に とりついたらしいぞ！{page}「彼らにつづけ 突撃～！",
-   "en": ""
+   "en": "\"The assault squad has finally{nl} reached the fortress!{page}\"Follow them! Charge!"
   },
   {
    "id": "r315_0195",
    "addr": "0195",
    "size": 206,
    "jp": "「い{wait}てててっ！！{page}{FB00}「ワシのことは いい{nl} ケガの めんどうくらい{nl} 自分で 何とかする。{page}「先へ進め！{wait}{wait}{wait}{nl} あ{wait} うっつ・・・・・・。{page}{FB00}「ヴァテン{wait}{nl} ブレックフェ－ル{nl} レ－カ！ {wait}{wait}{wait}{wait}ほっ。",
-   "en": ""
+   "en": "\"O{wait}w ow ow!!{page}{FB00}\"Never mind me.{nl} I can take care of{nl} my own wounds.{page}\"Go on ahead!{wait}{wait}{wait}{nl} Ah{wait} ugh......{page}{FB00}\"Vatten...{wait}{nl} Bleckfel...{nl} Reka! {wait}{wait}{wait}{wait}Phew."
   },
   {
    "id": "r315_0273",
    "addr": "0273",
    "size": 46,
    "jp": "「ヘ－グのやつは{nl} どこまで いってんだ～～！",
-   "en": ""
+   "en": "\"Where has that Heeg{nl} gotten to~~!"
   },
   {
    "id": "r315_02A9",
    "addr": "02A9",
    "size": 48,
    "jp": "「トンネルは 開いたらしいぜ！{nl} 進め 進め！！",
-   "en": ""
+   "en": "\"The tunnel's open!{nl} Forward, forward!!"
   },
   {
    "id": "r315_02E1",
    "addr": "02E1",
    "size": 114,
    "jp": "「シルヴェルめ{nl} この難攻不落の 城塞が{nl} 落ちると 思っているのか！{page}「おまえたち 生きて帰れると{nl} 思うなよ！",
-   "en": ""
+   "en": "\"Silvel fools! You think{nl} this impregnable fortress{nl} will fall!?{page}\"Don't think you'll{nl} leave here alive!"
   },
   {
    "id": "r315_035B",
    "addr": "035B",
    "size": 20,
    "jp": "「うおりゃ～～～！！",
-   "en": ""
+   "en": "\"Hyaaaaah!!"
   }
  ]
 }

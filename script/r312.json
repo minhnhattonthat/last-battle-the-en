@@ -11,63 +11,63 @@
    "addr": "008C",
    "size": 58,
    "jp": "指揮官を 失った敵は{nl}あわてふためき ちりぢりになった。{page2}",
-   "en": ""
+   "en": "Without their commander,{nl}the enemy panicked and scattered.{page2}"
   },
   {
    "id": "r312_010B",
    "addr": "010B",
    "size": 58,
    "jp": "ヤ－ク族魔法司{nl}「治療が 必要な時は{nl} 言ってくださいね。",
-   "en": ""
+   "en": "Yaak Mage{nl}\"When you need healing,{nl}just tell me."
   },
   {
    "id": "r312_0147",
    "addr": "0147",
    "size": 38,
    "jp": "ヤ－ク族魔法司{nl}「治療が 必要ですか？",
-   "en": ""
+   "en": "Yaak Mage{nl}\"Do you need healing?"
   },
   {
    "id": "r312_0173",
    "addr": "0173",
    "size": 84,
    "jp": "「はい わかりました では・・・{wait}{wait}{page}「ヴァテン{wait}{nl} ブレックフェ－ル{nl} レ－カ！{page2}",
-   "en": ""
+   "en": "\"Yes, of course. Then...{wait}{wait}{page}\"Vatten...{wait}{nl} Bleckfel...{nl} Reka!{page2}"
   },
   {
    "id": "r312_01D3",
    "addr": "01D3",
    "size": 32,
    "jp": "「みんなのこと おねがしますね。",
-   "en": ""
+   "en": "\"Please look after everyone."
   },
   {
    "id": "r312_01F7",
    "addr": "01F7",
    "size": 54,
    "jp": "「みなさん 治療が必要なら{nl} いつでも きてください。",
-   "en": ""
+   "en": "\"Everyone, if you need healing,{nl} come any time."
   },
   {
    "id": "r312_023D",
    "addr": "023D",
    "size": 54,
    "jp": "族長の娘{nl}「ボルグ・・・{nl} おねがい みんなを助けて！",
-   "en": ""
+   "en": "Chief's Daughter{nl}\"Borg...{nl}Please, save everyone!"
   },
   {
    "id": "r312_0275",
    "addr": "0275",
    "size": 42,
    "jp": "族長の娘{nl}「ボルグ！！{nl} 死んじゃいやよ。",
-   "en": ""
+   "en": "Chief's Daughter{nl}\"Borg!!{nl}Don't you dare die."
   },
   {
    "id": "r312_02A7",
    "addr": "02A7",
    "size": 196,
    "jp": "「へへへ ヤ－クの連中を{nl} さがしているなら この奥だ！{page}{FB00}「もっとも おまえたちは{nl} 会うことができない。{page} なぜなら{wait}・{wait}・{wait}・{nl} オレが おまえたちを{nl} まとめて かたずけてしまうからさ！{page2}",
-   "en": ""
+   "en": "\"Heh heh, if you're looking{nl} for the Yaak, they're in back!{page}{FB00}\"Not that you'll{nl} ever get to see them.{page} Why?{wait}.{wait}.{wait}.{nl} Because I'm going to{nl} finish you all off myself!{page2}"
   }
  ]
 }

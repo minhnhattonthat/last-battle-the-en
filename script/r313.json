@@ -11,56 +11,56 @@
    "addr": "00C2",
    "size": 108,
    "jp": "「船の上で オレ達と戦おうなんて{nl} グルドも まぬけだな。{page} これなら海賊の方が{nl} よっぽどマシな相手だぜ！",
-   "en": ""
+   "en": "\"Guld must be fools to fight{nl} us on board a ship.{page} Pirates make far{nl} better opponents!"
   },
   {
    "id": "r313_0136",
    "addr": "0136",
    "size": 94,
    "jp": "「グルド兵なんて{nl} ほんとは こしぬけばかりさ！{page} 隊長を やっつければ{nl} 逃げ出すだろうよ！",
-   "en": ""
+   "en": "\"Guld soldiers are all{nl} cowards at heart!{page} Beat their captain{nl} and they'll run!"
   },
   {
    "id": "r313_019C",
    "addr": "019C",
    "size": 60,
    "jp": "「グルド軍め！{nl} いままでのウラミ{nl} 倍にして返してやるっ！",
-   "en": ""
+   "en": "\"Curse you, Guld army!{nl} I'll pay you back double{nl} for everything!"
   },
   {
    "id": "r313_01E0",
    "addr": "01E0",
    "size": 50,
    "jp": "「うぬ！ きさまらも敵か！？{nl} かかってこい！！{page2}",
-   "en": ""
+   "en": "\"What! You're enemies too!?{nl} Come on, then!!{page2}"
   },
   {
    "id": "r313_0228",
    "addr": "0228",
    "size": 30,
    "jp": "「たっ 隊長！ 敵ですっ！！{page2}",
-   "en": ""
+   "en": "\"C-Captain! Enemies!!{page2}"
   },
   {
    "id": "r313_0290",
    "addr": "0290",
    "size": 212,
    "jp": "グルド隊長{nl}「きたな 反逆者ども！{nl} だが オレは負けぬぞ！！{page}「もっと強く もっと大きく・・{wait}{wait}{wait}{wait}{nl} 富と権力を この手につかんで{nl} ハントヴォ－に帰る その日まで{page} オレは負けるわけには{nl} いかんのだ！！{page2}",
-   "en": ""
+   "en": "Guld Captain{nl}\"So you've come, rebels!{nl}But I will not lose!!{page}\"Stronger, greater...{wait}{wait}{wait}{wait}{nl} Until the day I go home to{nl} Hantvo with wealth and power,{page} I cannot afford{nl} to lose!!{page2}"
   },
   {
    "id": "r313_037C",
    "addr": "037C",
    "size": 56,
    "jp": "グルド隊長{nl}「マ・・{D310}リ・{D308}ア・{wait}{wait}{wait}・{wait}{wait}{wait}・{wait}{wait}{wait}{page2}",
-   "en": ""
+   "en": "Guld Captain{nl}\"Ma..{D310}ri.{D308}a.{wait}{wait}{wait}.{wait}{wait}{wait}.{wait}{wait}{wait}{page2}"
   },
   {
    "id": "r313_03E9",
    "addr": "03E9",
    "size": 54,
    "jp": "グルド隊長を たおした！{nl}敵の船は たいきゃくした！{page2}",
-   "en": ""
+   "en": "The Guld Captain is defeated!{nl}The enemy ship has retreated!{page2}"
   }
  ]
 }

@@ -11,49 +11,49 @@
    "addr": "00E5",
    "size": 58,
    "jp": "「この扉の奥から なんかすごい{nl} 力を感じるんだ・・・・。",
-   "en": ""
+   "en": "\"I feel some incredible{nl} power behind this door...."
   },
   {
    "id": "r318_0121",
    "addr": "0121",
    "size": 62,
    "jp": "「背すじと しっぽに{nl} キュ キュ キュッと{nl} 寒気が走るぜ！",
-   "en": ""
+   "en": "\"It sends a chill{nl} right down my spine{nl} and tail!"
   },
   {
    "id": "r318_0167",
    "addr": "0167",
    "size": 60,
    "jp": "「う－ん おれたちだけじゃ{nl} 手が 出せそうもないぜ・・・。",
-   "en": ""
+   "en": "\"Hmm, I don't think we{nl} can handle it alone...."
   },
   {
    "id": "r318_01AB",
    "addr": "01AB",
    "size": 32,
    "jp": "「その部屋に 入るんじゃない！！",
-   "en": ""
+   "en": "\"Don't go into that room!!"
   },
   {
    "id": "r318_01CD",
    "addr": "01CD",
    "size": 46,
    "jp": "「こいつを 倒したら{nl} つぎは おまえだ－－！",
-   "en": ""
+   "en": "\"Once I beat this one,{nl} you're next!"
   },
   {
    "id": "r318_0203",
    "addr": "0203",
    "size": 50,
    "jp": "「こいつらは オレ達が{nl} 押えておく はやく中へ！",
-   "en": ""
+   "en": "\"We'll hold these ones off.{nl} Hurry, inside!"
   },
   {
    "id": "r318_0237",
    "addr": "0237",
    "size": 66,
    "jp": "「気をつけろよ。{nl} どうも 扉の奥の様子が{nl} おかしいみたいだぞ！",
-   "en": ""
+   "en": "\"Be careful.{nl} Something seems wrong{nl} beyond that door!"
   }
  ]
 }

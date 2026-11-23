@@ -11,56 +11,56 @@
    "addr": "0068",
    "size": 104,
    "jp": "氷の女王イスカ－ルは{nl}{D320}１６年前{nl}{D320}シルヴェルの王子の誕生を恐れて{nl}{D320}シルヴェルを襲ったのではなかった。",
-   "en": ""
+   "en": "Sixteen years ago, Iskar,{nl}{D320}the Ice Queen, did not attack{nl}{D320}Silvel out of fear of{nl}{D320}the birth of Silvel's prince."
   },
   {
    "id": "r319_0129",
    "addr": "0129",
    "size": 52,
    "jp": "イェルト{nl}「エルダ－ルも{nl} 昔に もどったなあ。{D350}{nl}",
-   "en": ""
+   "en": "Yelt{nl}\"Eldar is back{nl}to how it used to be.{D350}{nl}"
   },
   {
    "id": "r319_0165",
    "addr": "0165",
    "size": 58,
    "jp": "「あとは また{nl} 今までのように{nl} 平和に くらすだけだ。",
-   "en": ""
+   "en": "\"Now we just go on{nl} living in peace{nl} like before."
   },
   {
    "id": "r319_01BA",
    "addr": "01BA",
    "size": 78,
    "jp": "長老{nl}「そうは言っても{D320}{nl} 血が さわいでるんじゃあ{nl} ないのか？ イェルト。",
-   "en": ""
+   "en": "Elder{nl}\"Even so,{D320}{nl}isn't your blood{nl}stirring, Yelt?"
   },
   {
    "id": "r319_021F",
    "addr": "021F",
    "size": 160,
    "jp": "「ユ－ス 今度のことは・・・{nl} わしはなんと言っていいのか{nl} わからんのじゃが・・・。{D350}{F9FF}ユ－ス{nl}「いいのよ長老様。{D320}{nl} 子供はいずれ{nl} 出て行くものだわ。{D350}{nl}",
-   "en": ""
+   "en": "\"Yuse, about all this...{nl} I don't know{nl} what to say....{D350}{F9FF}Yuse{nl}\"It's all right, Elder.{D320}{nl} Children leave home{nl} someday.{D350}{nl}"
   },
   {
    "id": "r319_02C4",
    "addr": "02C4",
    "size": 118,
    "jp": "「それよりも私には{nl} イェルトの方が心配よ。{D350}{nl} また戦士に もどるなんて{nl} 言い出さないかと{nl} ひやひやしてるのよ。",
-   "en": ""
+   "en": "\"I'm more worried{nl} about Yelt.{D350}{nl} I'm on edge that he'll{nl} say he's going back{nl} to being a warrior."
   },
   {
    "id": "r319_0378",
    "addr": "0378",
    "size": 82,
    "jp": "キュ－ケンホフ先生{nl}「わたしも またがんばって{nl} りっぱな生徒を 育てなくちゃな。",
-   "en": ""
+   "en": "Mr. Keukenhof{nl}\"I must work hard again{nl}and raise fine pupils."
   },
   {
    "id": "r319_03E2",
    "addr": "03E2",
    "size": 74,
    "jp": "「エットミランシェルの{nl} みんなのためになるような{nl} すばらしい生徒をね。",
-   "en": ""
+   "en": "\"Splendid pupils who will{nl} do good for all of{nl} Ettmiranshel."
   }
  ]
 }

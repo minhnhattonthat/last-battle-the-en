@@ -11,56 +11,56 @@
    "addr": "0059",
    "size": 100,
    "jp": "そしてあの最後の戦いは{nl}{D320}ザ・ラストバトルとして{nl}{D320}長く みんなの心に{nl}{D320}明るい光を ともし続けた。",
-   "en": ""
+   "en": "And that last battle,{nl}{D320}remembered as The Last Battle,{nl}{D320}long kept a bright light{nl}{D320}burning in everyone's hearts."
   },
   {
    "id": "r320_0107",
    "addr": "0107",
    "size": 26,
    "jp": "「ホギャ－！{D310} ホギャ－！",
-   "en": ""
+   "en": "\"Waaah!{D310} Waaah!"
   },
   {
    "id": "r320_0166",
    "addr": "0166",
    "size": 66,
    "jp": "「王様！！{nl} お生まれに なりましたよ！！{nl} 元気な男の子です！！",
-   "en": ""
+   "en": "\"Your Majesty!!{nl} The baby is born!!{nl} A healthy boy!!"
   },
   {
    "id": "r320_01B2",
    "addr": "01B2",
    "size": 26,
    "jp": "グスタフ{nl}「やったぞっ！！",
-   "en": ""
+   "en": "Gustav{nl}\"We did it!!"
   },
   {
    "id": "r320_021B",
    "addr": "021B",
    "size": 198,
    "jp": "「ホギャ－！{D310} ホギャ－！{D340}{F9FF}{D310}「王様 お妃様{nl} おめでとうございます。{D350}{F9FF}{D310}「ほんとうに元気な{nl} 赤ちゃんだこと。{D350}{F9FF}{D310}「お妃様も お元気で{nl} ほんとうに なにより。{D350}{F9FF}「ホギャ－！{D310} ホギャ－！",
-   "en": ""
+   "en": "\"Waaah!{D310} Waaah!{D340}{F9FF}{D310}\"Your Majesties,{nl} congratulations.{D350}{F9FF}{D310}\"What a lively{nl} baby.{D350}{F9FF}{D310}\"And Her Majesty is well{nl} too. What a blessing.{D350}{F9FF}\"Waaah!{D310} Waaah!"
   },
   {
    "id": "r320_02EE",
    "addr": "02EE",
    "size": 34,
    "jp": "ユ－リ{nl}「これでシルヴェルも・・・",
-   "en": ""
+   "en": "Yuri{nl}\"Now Silvel too..."
   },
   {
    "id": "r320_0321",
    "addr": "0321",
    "size": 56,
    "jp": "ユ－リ{nl}「・・・しかし{nl} これで良かったのだろうか？・・",
-   "en": ""
+   "en": "Yuri{nl}\"...But{nl}was this for the best?.."
   },
   {
    "id": "r320_0368",
    "addr": "0368",
    "size": 100,
    "jp": "しかしクルトとメイの消息は{nl}{D320}エットミランシェルでは{nl}{D320}もう２度と{nl}{D320}聞かれることはなかった・・・。",
-   "en": ""
+   "en": "But of Kurt and Mei,{nl}{D320}nothing more was ever heard{nl}{D320}in Ettmiranshel{nl}{D320}again..."
   }
  ]
 }

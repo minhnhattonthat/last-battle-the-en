@@ -25,63 +25,63 @@
    "addr": "013B",
    "size": 138,
    "jp": "「ケガをしたり{nl} ハ－ブが なくなったりしたら{page} お城の中に入って{nl} ほきゅうしてこいよ！{page}「死んじまったら{nl} なんにも ならないからな。",
-   "en": ""
+   "en": "\"If you get hurt{nl} or run out of herbs,{page} go into the castle{nl} and restock!{page}\"It does no good{nl} to go and get yourself killed."
   },
   {
    "id": "r310_01C7",
    "addr": "01C7",
    "size": 90,
    "jp": "「くそっ！！{nl} まったく きりがないぞ！！{page}「ちょっと治療して もらって{nl} 来ようかなあ。",
-   "en": ""
+   "en": "\"Damn it!!{nl} There's no end to them!!{page}\"Maybe I'll go get{nl} patched up a bit."
   },
   {
    "id": "r310_0231",
    "addr": "0231",
    "size": 48,
    "jp": "「おいっ！ 若いのっ！！{nl} がんばるんだぞっ！！",
-   "en": ""
+   "en": "\"Hey! Youngster!!{nl} Give it your all!!"
   },
   {
    "id": "r310_0263",
    "addr": "0263",
    "size": 96,
    "jp": "「やっつけても やっつけても{nl} 敵が 来やがるんだ。{page}「おれは もう{nl} つかれて きちゃったよ。",
-   "en": ""
+   "en": "\"We beat them and beat them,{nl} and still they keep coming.{page}\"I'm getting{nl} worn out already."
   },
   {
    "id": "r310_02C5",
    "addr": "02C5",
    "size": 74,
    "jp": "「戦いには なれてるか？{page} ・・・実は おれは{nl} なれて いないんだよう。",
-   "en": ""
+   "en": "\"You used to fighting?{page} ...Truth is,{nl} I'm not."
   },
   {
    "id": "r310_031D",
    "addr": "031D",
    "size": 52,
    "jp": "「ここは 我ヶが固める！{nl} まかせておいてくれっ！！",
-   "en": ""
+   "en": "\"We will hold this spot!{nl} Leave it to us!!"
   },
   {
    "id": "r310_0353",
    "addr": "0353",
    "size": 54,
    "jp": "「話してるひまは ないんだ！{nl} ここは まかせろっ！！",
-   "en": ""
+   "en": "\"No time to chat!{nl} Leave this to me!!"
   },
   {
    "id": "r310_0397",
    "addr": "0397",
    "size": 96,
    "jp": "「命にかえても ここは守ります！{page} ほら！ 後ろに気をつけて！{nl} どうか もう行ってください！！",
-   "en": ""
+   "en": "\"I'll hold this place with my life!{page} Look! Watch your back!{nl} Please, go on ahead!!"
   },
   {
    "id": "r310_03F9",
    "addr": "03F9",
    "size": 62,
    "jp": "「あっ！ あんなところにも敵が！{nl} さぁ 行ってくださいっ！！",
-   "en": ""
+   "en": "\"Ah! More enemies over there!{nl} Now go, please!!"
   }
  ]
 }
