@@ -2,9 +2,21 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator, in progress: 3079/3085 translated (the 6 left: battle particles in
-  `script/keep_jp.txt`), 41 tests green. `build/lastbattle_en.sfc` smoke ok, 2026-11-24 session 21, sha1 7879eacb.
+- **Phase:** 8. QA in the emulator, in progress: 3137/3143 translated (the 6 left in `script/keep_jp.txt`: 2 no
+  longer read, 4 battle particles), 42 tests green. 2026-11-24 session 22.
 - **Done:**
+  - **Phase 8, session 2026-11-24 (22):** visual review of the tour found battle bugs, all fixed and shot:
+    (1) `tools/blz.py` encoder emitted self-overlapping copies the game's decoder (30:F5C1) reads as old window bytes:
+    every battle had garbage tiles (lines in all box borders, `!` as a cross); decoder now models it, encoder keeps
+    length <= offset, VRAM dump matches (`docs/re/battle.md`). (2) "敵の奇襲攻撃!!"/"奇襲攻撃に成功!" (typed column by
+    column from shared kanji columns) -> "Enemy/ambush!!", "Surprise/attack!" (`battle_text.column_messages`,
+    columns at `$2A:8FF0`). (3) Victory line: suffix now after the name's last non-space (asm 3C:8041), "Purple /
+    Slimes defeated!". (4) Battle text scan widened to banks $28-$3F (`re_battle_text.BANKS`, `EXTRA_RECTS`): 57
+    bank-$3E rects (EX / mana / LEVEL UP windows with Kurt/Mei/Borg/Regina and Atk/Def/Agi/Wis, escape messages from
+    the 7-byte records at 0x1415B6, the battle magic window's spell info column) translated in b063-b065. Shots:
+    `work/qa/vic4` (victory + level up), `work/qa/run` (Kurt can't / escape!). Not yet seen: the mana window header
+    `bt_1F0198` ("Fire Wind Wat Ea", positions guessed), "Surprise attack!", the battle spell info column.
+    `tools/debug/review_sheets.py CHUNK` makes 1x review pages per scene (`work/qa/review/<scene>/r*.png`).
   - **Phase 8, session 2026-11-24 (21):** JP reference tour `work/qa/tour_jp` done (119 scenes). Battle status-box
     party names English (`font_bg3.battle_names_patch`): second battle LZ stream redrawn in a compact 4 px font,
     re-encoded right after the battle font (both load lists repointed), Borg on 2 new tiles $1FB-$1FC (zero and
@@ -222,8 +234,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   0. **Phase 8: QA in the emulator** (done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
      `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
-     **Resume here:** English tour on build 7879eacb done (`work/qa/tour`, 119/119 scenes); gate initialised on it
-     (`work/qa/manifest.tsv`, 268 sheets, no verdicts yet; chunks `work/qa/chunks/chunk_d4affb8b3664_000-008.txt`).
+     **Resume here:** the build changed after the last tour (`work/qa/tour`, build a4c004d, gate chunks
+     `chunk_d370dd40b303_*`): re-run the tour (`run_scenes.py build/lastbattle_en.sfc --out work/qa/tour --jobs 3`),
+     `qa_gate.py init ... --build`, `todo`, then `review_sheets.py` per chunk and write verdicts. Reviewed so far
+     on the old tour: battle_field, battle_room, battle_win (all fixed above).
      Write verdicts chunk by chunk to `work/qa/verdicts/<chunk>.tsv` (brief
      `docs/visual-qa-brief.md`; compare `work/qa/tour_jp/<scene>`). Budget: 261 sheets are 520x456 with 128x112
      tiles, too small to read text, so for each scene zoom the text boxes (`sheet.py DIR --changed 0.03 --crop
