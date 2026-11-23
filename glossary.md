@@ -69,7 +69,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ガッキンコ | Gakkinko | | | |
 | ライム | Lime | | elf queen (ライム王妃 = Queen Lime) | |
 | ユルハ－タ | Yurhata | | Robert and Lime's daughter | |
-| リ－ユ | Riyu | | Yuri's alias in the hidden village | |
+| リ－ユ | Riyu / iruY | | Yuri's alias in the hidden village; iruY = "Yuri" in the backwards book r118_0115 | |
 | ティラン | Tiran | | King Tiran of Guld, Regina's father | |
 
 ## Places and peoples

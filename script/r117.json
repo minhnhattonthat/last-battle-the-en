@@ -11,63 +11,63 @@
    "addr": "005D",
    "size": 118,
    "jp": "「図書館に なにか御用ですか？{page}{FB00}{wait}{wait}「いつもの{wait} 本の行商の方では{nl} ないですわね？{wait}{wait}{nl} どうしましょう・・・・。",
-   "en": ""
+   "en": "\"Can I help you at the library?{page}{FB00}{wait}{wait}\"You're not{wait} the usual book{nl}peddlers, are you? {wait}{wait}Oh, what to do...."
   },
   {
    "id": "r117_00E1",
    "addr": "00E1",
    "size": 164,
    "jp": "「コホン。{nl}{wait}{wait} この上には 多くの{nl} きちょうな本が 集められてます。{page}「えつらん禁とか 持ち出し禁などと{nl} 書かれた本は けっして{nl} 手をつけないでくださいね。",
-   "en": ""
+   "en": "\"Ahem.{wait}{wait} Many precious books are{nl} kept upstairs.{page}\"Never touch any book marked 'Do Not{nl} Read' or 'Do Not Remove'."
   },
   {
    "id": "r117_0193",
    "addr": "0193",
    "size": 236,
    "jp": "「あなたたち 図書館の本を{nl} かってに 持ち出しては{nl} いませんね！？{page}{FB00}「持ち出そうとしていたら{nl} 本といっしょに 炎の呪文で{nl} 灰になって もらったところです。{page}「それほど ここには{nl} 大事な・・・{wait}{wait}大事な本が{nl} あるのですから。",
-   "en": ""
+   "en": "\"You haven't taken any library books{nl} out without asking, have you?!{page}{FB00}\"If you had tried, I'd have turned you{nl} to ash along with the book with a fire{nl} spell.{page}\"That's how important.. {wait}{wait}how{nl} important the books here are."
   },
   {
    "id": "r117_0281",
    "addr": "0281",
    "size": 266,
    "jp": "「ヤ－ク族の ロ－グさんから{nl} すべて 話はうかがいました。{page}「あなたがたが ヤ－クの村と{nl} ベルクスタットの戦いに{nl} 力を貸してくれた人たちですね。{page}{FB00}「ヤ－クとベルクスタットの件で{nl} にがおえの付いた 新しい手配書も{nl} でまわっています。{page} お気をつけください。",
-   "en": ""
+   "en": "\"I've heard the whole story from{nl} Rogue-san of the Yaak.{page}\"You're the ones who lent your{nl} strength to the Yaak village and the{nl} battle at Bergstadt.{page}{FB00}\"Over the Yaak and Bergstadt affair, a{nl} new wanted poster with portraits is{nl} going around.{page} Please be careful."
   },
   {
    "id": "r117_038D",
    "addr": "038D",
    "size": 62,
    "jp": "「みなさんの旅に{nl} すべてのマナの 加護が{nl} ありますように。",
-   "en": ""
+   "en": "\"I pray all the mana watch over your{nl} journey."
   },
   {
    "id": "r117_03CD",
    "addr": "03CD",
    "size": 212,
    "jp": "「この村の 手配書は{nl} うちの娘を使って 見分けの{nl} つかないように しましたが・・・{page}「安全のために みなさんのことは{nl} 村の者にも 話さないでおきます。{page}{FB00}「ここは まだグルドが支配している{nl} 土地ですから。",
-   "en": ""
+   "en": "\"I had my daughter make the wanted{nl} poster in this village impossible to{nl} recognize, but...{page}\"To be safe, I won't tell even the{nl} villagers about you.{page}{FB00}\"This is still land that Guld rules."
   },
   {
    "id": "r117_04A3",
    "addr": "04A3",
    "size": 112,
    "jp": "「シルヴェルの 王妃様{nl} ご無事でよかった。{page}「なんといっても{nl} 子供のころは いっしょに{nl} 遊んだ仲ですもの。",
-   "en": ""
+   "en": "\"I'm glad the Queen of Silvel is safe.{page}\"After all, we played together as{nl} children."
   },
   {
    "id": "r117_0515",
    "addr": "0515",
    "size": 110,
    "jp": "「この村の者が シルヴェルの{nl} 次代の王の母になるんです！{page}「この村にとって{nl} たいへん めいよなことですわ。",
-   "en": ""
+   "en": "\"Someone from this village will be the{nl} mother of Silvel's next king!{page}\"It's a great honor for this village."
   },
   {
    "id": "r117_0585",
    "addr": "0585",
    "size": 86,
    "jp": "「この村で 育った王妃様ですもの{nl} 元気で じょうぶな王子様を{nl} 生むに決ってますわ。",
-   "en": "",
+   "en": "\"The Queen grew up in this village. She's{nl} sure to have a healthy, strong prince.",
    "reached": false
   },
   {
@@ -75,21 +75,21 @@
    "addr": "05DD",
    "size": 208,
    "jp": "「あなたが １６年前に生まれた{nl} シルヴェルの 王子様{nl} でしたのね。{page}「知らぬこととはいえ{nl} ずいぶんと失礼な ことを{nl} 申し上げていたようです。{page}「娘のぶんも あわせて{nl} おわびいたします クルト王子様。",
-   "en": ""
+   "en": "\"So you are the Prince of Silvel, born{nl} sixteen years ago.{page}\"I didn't know, but it seems I said some{nl} very rude things.{page}\"I apologize for my daughter too,{nl} Prince Kurt."
   },
   {
    "id": "r117_06AF",
    "addr": "06AF",
    "size": 278,
    "jp": "「うちの夫は ユ－リ様のもとで{nl} 擾報を 集める仕事を{nl} しておりまして。{page}「このあいだ 帰ってきた時に{nl} クルト様のことを 聞き・・・{page} はずかしさのあまり{nl} 顔から 火の出るような思いを{nl} いたしました。{page}{FB00}「王子様の フェナムンが{nl} 幸運と栄光と ともに{nl} あらんことを。",
-   "en": ""
+   "en": "\"My husband works under Yuri-sama,{nl} gathering information.{page}\"When he came home the other day, I{nl} heard about you, Kurt-sama...{page} and I was so embarrassed my face{nl} burned red.{page}{FB00}\"I pray the Prince's Fenamun is blessed{nl} with luck and glory."
   },
   {
    "id": "r117_07C7",
    "addr": "07C7",
    "size": 64,
    "jp": "「みなさんの 旅に{nl} すべてのマナの 加護が{nl} ありますように。",
-   "en": ""
+   "en": "\"I pray all the mana watch over your{nl} journey."
   }
  ]
 }

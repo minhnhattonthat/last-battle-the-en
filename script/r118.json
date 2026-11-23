@@ -11,28 +11,28 @@
    "addr": "0067",
    "size": 160,
    "jp": "奥の方から うすよごれ{nl}中は 手書きの文字で書かれた{nl}本を 見つけた。{page}{FB00}『  しっぽから よむ本{nl} ～ えつらん禁・持ち出し禁 ～』{nl}{wait}{wait}{wait}{wait}読んでみますか？",
-   "en": ""
+   "en": "From deep inside, you find a grubby{nl}book written by hand.{page}{FB00}'A Book to Read from the Tail{nl}- Do Not Read, Do Not Remove -'{nl}{wait}{wait}{wait}{wait}Read it?"
   },
   {
    "id": "r118_0115",
    "addr": "0115",
    "size": 584,
    "jp": " いめふえくゆ 妃王 王ルェヴルシ{nl}    りあ サワウたびのち落じぶ{nl} しな はうほうょじ のまさリ－ユ{page}{FB00}   ？たい聞サワウ の女王ドルグ{nl}     てせまのもで酒 どんこ』{nl} 『よくおてしだき聞 らか兵ドルグ{page}{FB00}  をおかいいのそいあ はに者の外{nl}            ！とこるす{nl}     なるれらとさ に兵ドルグ{page}{FB00}   ちた人の族ク－ヤ で村ク－ヤ{nl}  のいしらるいてっあ にめいどひ{page}{FB00}     は助援 のへ団士騎 の次{nl}      たしまりまき に後日７{nl} すで全安 だま は装変の商行の本{page}{FB00}   者つも をうほうょじ いし新{nl}      とこむこき書 もでつい",
-   "en": ""
+   "en": ".gnissim neeuQ dna gniK levliS{nl}.efas depacse yeht syas romuR{nl}.amas-iruY fo swen oN{page}{FB00}?ssecnirp dluG eht tuoba draeH{nl}dluG a teg lliw I emit txeN{nl}'.mih ksa dna knurd reidlos{page}{FB00}yldneirf a sredistuo wohS{nl}!ecaf{nl}.sseug sreidlos dluG tel ton oD{page}{FB00}kaaY eht ni kaaY eht smeeS{nl}.yldab gnireffus era egalliv{page}{FB00}:sthgink eht ot dia txeN{nl}.won morf syad 7 rof tes{nl}.efas si esiugsid relddep-koob ehT{page}{FB00},swen wen htiw enoynA{nl}.emit yna ta ni ti etirw"
   },
   {
    "id": "r118_0361",
    "addr": "0361",
    "size": 50,
    "jp": "クルトは 手に取った本を{nl}もとの場所に もどした。",
-   "en": ""
+   "en": "Kurt put the book back where it was."
   },
   {
    "id": "r118_0397",
    "addr": "0397",
    "size": 216,
    "jp": " ！るたき使密 りよトッタスクルべ{nl}       ？かるすくょりうょき{nl} よせ入記 を つば るま じくか{page}{FB00}  Ｏ・Ｏ・Ｏ・Ｏ・Ｏ・Ｏ・Ｏ・Ｏ{nl} くょりうょき でちっい んいんぜ{nl}            ！いてっけ",
-   "en": ""
+   "en": "!tdatsgreB morf yovnE{nl}?meht pleh ew oD{nl}.X ro O kram hcaE{page}{FB00}O.O.O.O.O.O.O.O{nl}.pleh ew :deerga llA{nl}!dediceD"
   },
   {
    "id": "r118_0473",

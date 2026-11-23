@@ -11,49 +11,49 @@
    "addr": "0053",
    "size": 264,
    "jp": "「ク－ヤ は ヤ－ク{nl} リ－ユ は ユ－リ・・・。{nl} ふん {wait}かんたんすぎるわ！{page}「大人が 考えることなんて{nl} この ていどよ・・・・。{nl} わたしって 天才かしら？{page}「やっぱり こんな いなかに{nl} うもれていい 女じゃないわ・・{nl} 王妃になるのよ むにゃ むにゃ。",
-   "en": ""
+   "en": "\"Kaay is Yaak, Riyu is Yuri... Hmph, {wait}too{nl} easy!{page}\"That's all grown-ups can think up.... Am{nl} I a genius?{page}\"I'm not a girl to be buried in the{nl} countryside.. I'll be a queen. Mumble,{nl} mumble."
   },
   {
    "id": "r115_015D",
    "addr": "015D",
    "size": 200,
    "jp": "「本に 落書きして{nl} おしりが まっ赤になるほど{nl} ぶたれたなんて・・・{wait}{wait}{wait}{wait}{page} くちがさけても 言えないわ。{page}{FB00}「アナタ・・・おとめの 寝言を{nl} かってに聞くもんじゃないわよ！{nl} むにゃ むにゃ。",
-   "en": ""
+   "en": "\"That I scribbled in a book and got{nl} spanked till my bottom was bright{nl} red...{wait}{wait}{wait}{wait}{page} I'd never tell, not for anything.{page}{FB00}\"You... don't go listening to a maiden{nl} talking in her sleep! Mumble, mumble."
   },
   {
    "id": "r115_0227",
    "addr": "0227",
    "size": 64,
    "jp": "「王妃・・・わたしは・・王妃になる{nl} わたしは・・・王妃に・・。",
-   "en": ""
+   "en": "\"Queen... I'll.. be queen. I'll... be queen.."
   },
   {
    "id": "r115_0273",
    "addr": "0273",
    "size": 158,
    "jp": "「このまま グルドの{nl} 支配が つづくのでしょうか？{page} 娘の 将来は{nl} どうなるのでしょう？。{page}「うちのひとは 仕事にでたまま{nl} 帰ってきてくれないし・・・。",
-   "en": ""
+   "en": "\"Will Guld's rule go on like this?{page} What will become of my daughter's{nl} future?{page}\"My husband went off to work and{nl} hasn't come home..."
   },
   {
    "id": "r115_0317",
    "addr": "0317",
    "size": 124,
    "jp": "「娘には わたしの後を継いで{nl} ふつうに 学校の先生に{nl} なってほしかったのに。{page}「あの子の将来が{nl} とっても 心配ですわ。",
-   "en": ""
+   "en": "\"I wanted my daughter to follow me{nl} and just become a schoolteacher.{page}\"I'm so worried about that girl's future."
   },
   {
    "id": "r115_0395",
    "addr": "0395",
    "size": 42,
    "jp": "「あの子の将来が{nl} とっても 心配ですわ。",
-   "en": ""
+   "en": "\"I'm so worried about that girl's future."
   },
   {
    "id": "r115_03C1",
    "addr": "03C1",
    "size": 90,
    "jp": "「うちのひとが 早く危険な仕事を{nl} 終えて 帰ってきてくれると{nl} 安心できるのですけれど。",
-   "en": ""
+   "en": "\"If only my husband would finish his{nl} dangerous work soon and come home, I{nl} could feel at ease."
   }
  ]
 }

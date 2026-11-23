@@ -11,35 +11,35 @@
    "addr": "0062",
    "size": 272,
    "jp": "「シルヴェルの 王妃様は{nl} この村で生まれ 育ったんだ。{page} 小さいころ 親を亡くして{nl} じいさんと {wait}{wait}ほら いまは{nl} グルドの兵隊のいる あの家{wait}{page} あそこに 住んでいたのさ。{page}「なかなか きだてのいい娘で{nl} 年ごろになると 遠くのほうまで{nl} ひょうばんになったもんさ。",
-   "en": ""
+   "en": "\"The Queen of Silvel was born and{nl} raised in this village.{page} She lost her parents when she was{nl} little, and lived with her grandpa{page} in {wait}{wait}see, that house where the Guld{nl} soldier is now.{wait}{page} That's where she lived.{page}\"She was a good-natured girl, and when{nl} she came of age, word of her spread{nl} far and wide."
   },
   {
    "id": "r116_0178",
    "addr": "0178",
    "size": 270,
    "jp": "「そう なん年か前だ・・・{page} ともに 王妃様を亡くされていた{nl} シルヴェルと グルドの{nl} 両方の国の王様から{page} ぜひ 新しい王妃に と{nl} 望まれて。{wait}{wait}{wait}{wait}{page} それで あの娘は{nl} シルヴェル王と 結婚したんだが{nl} あの戦いで・・・・{page}{FB00}「あの娘は 無事でいるんだろうか。",
-   "en": ""
+   "en": "\"Yes, a few years ago...{page} the kings of both Silvel and Guld, who{nl} had each lost their queens,{page} both wanted her for their new queen.{nl} {wait}{wait}{wait}{wait}{page} So she married the King of Silvel, but{nl} then that war...{page}{FB00}\"I wonder if she's safe."
   },
   {
    "id": "r116_0288",
    "addr": "0288",
    "size": 92,
    "jp": "「王妃様は 王様と いっしょに{nl} リッテンとかいう ちいさな村に{nl} 落ちのびて いたそうだ。",
-   "en": ""
+   "en": "\"They say the Queen fled with the King{nl} to some little village called Ritten."
   },
   {
    "id": "r116_02E6",
    "addr": "02E6",
    "size": 40,
    "jp": "「王妃様が 無事で{nl} 本当に よかった。",
-   "en": ""
+   "en": "\"I'm so glad the Queen is safe."
   },
   {
    "id": "r116_0320",
    "addr": "0320",
    "size": 50,
    "jp": "「今度は ドラゴンの人に{nl} 会えますように・・・。",
-   "en": ""
+   "en": "\"I hope I get to meet a dragon person{nl} next time..."
   }
  ]
 }

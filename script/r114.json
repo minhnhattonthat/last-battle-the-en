@@ -53,21 +53,21 @@
    "addr": "0399",
    "size": 246,
    "jp": "「ここの見はりは 楽だぞ～{nl} グルドに対して 反抗しょうという{nl} 気がないからな {wait}{wait}ヒック。{page}「畑仕事に はげむだけで{nl} よからぬ 相談をする{nl} けはいもない。{page}「おかげで 見はりに残った{nl} オレたちは こうやって{nl} ゴロゴロしていられるのさ。",
-   "en": ""
+   "en": "\"Guard duty here is easy~ Nobody here{nl} wants to rise against Guld. {wait}{wait}Hic.{page}\"They just work hard in the fields, no{nl} sign of any plotting.{page}\"So us guards who stayed behind can{nl} laze around like this."
   },
   {
    "id": "r114_0491",
    "addr": "0491",
    "size": 184,
    "jp": "「もし もんだいが 起ったら{nl} シルヴェルから 部隊を呼んで{nl} こんな村 すぐに ぼろぼろさ。{page}「みせしめのために{nl} 村のひとつ ふたつ つぶすくらい{nl} かんたんなもんさ。{wait}{wait}ヒック。",
-   "en": ""
+   "en": "\"If there's any trouble, we call a unit{nl} from Silvel and this village is rubble in{nl} no time.{page}\"Crushing a village or two as a lesson is{nl} easy. {wait}{wait}Hic."
   },
   {
    "id": "r114_054B",
    "addr": "054B",
    "size": 54,
    "jp": "「グルド王国 ばんざ－い！{page}「楽な仕事 ばんざ－い！！",
-   "en": "",
+   "en": "\"Long live the Guld kingdom!{page}\"Long live easy work!!",
    "reached": false
   },
   {
@@ -75,42 +75,42 @@
    "addr": "0591",
    "size": 308,
    "jp": "「おまえたち？{nl} 見かけない 顔だな{wait}・{wait}・{wait}・。{page}{FB00}「おまえたちも 本を売りに来た{nl} 本の行商なのか？{wait}{wait}{nl} この村には よく 来るぞ。{page}「大きな 荷物をかかえて{nl} 行ったり 来たり！{wait}{wait}{nl} 大変なこった。{page}{FB00}「村のやつらも １日１回は{nl} 図書館に行くが・・・{page}「本なんて そんなに おもしろい{nl} もんか？",
-   "en": ""
+   "en": "\"You lot? Don't know your faces{wait}.{wait}.{wait}.{page}{FB00}\"Are you book peddlers come to sell{nl} books too? {wait}{wait}They come here a lot.{page}\"Back and forth with big loads!{nl} {wait}{wait}Hard work, that.{page}{FB00}\"The village folk go to the library once{nl} a day too...{page}\"Are books really that much fun?"
   },
   {
    "id": "r114_06CF",
    "addr": "06CF",
    "size": 120,
    "jp": "「そうだ。{nl} グルドから 手配書が来てるぞ。{page}「そこの 立て札に{nl} はりだして あるから{nl} おまえたちも 読んでいけよ。",
-   "en": ""
+   "en": "\"Oh yeah. A wanted poster came from{nl} Guld.{page}\"It's put up on that signboard there.{nl} You read it too."
   },
   {
    "id": "r114_074D",
    "addr": "074D",
    "size": 158,
    "jp": "「王女様の ゆうかいは{nl} シルヴェル兵の 残党が{nl} ウラで糸を引いているに違いない！{page}「まぁ どこに かくれようとも{nl} すぐにハラを すかして{nl} でてくるさ！",
-   "en": ""
+   "en": "\"The princess's kidnapping must be the{nl} work of Silvel leftovers pulling strings!{page}\"Well, wherever they hide, they'll get{nl} hungry and come out soon enough!"
   },
   {
    "id": "r114_07ED",
    "addr": "07ED",
    "size": 122,
    "jp": "「村のガキどもめ{nl} 新しい手配書の にがおえに{nl} 落書きしちまいやがった。{page}「おかげで どんな顔なのか{nl} わかりゃしね－。",
-   "en": ""
+   "en": "\"The village brats scribbled all over the{nl} portraits on the new wanted poster.{page}\"Now nobody can tell what they look{nl} like."
   },
   {
    "id": "r114_0869",
    "addr": "0869",
    "size": 106,
    "jp": "「まあ こんな村に{nl} 手配書にのるような{nl} 凶悪な やつらが来るわけないが。{page}「用心は しておかないとな。",
-   "en": ""
+   "en": "\"Well, no villains bad enough for a{nl} wanted poster would come to a village{nl} like this.{page}\"But you've got to be careful."
   },
   {
    "id": "r114_08D5",
    "addr": "08D5",
    "size": 188,
    "jp": "「ヤ－ク村も ベルクスタットも{nl} 手配書のやつらが そそのかして{nl} 無法者の手に 落ちたそうだ。{page}「しかし {wait}安心するがいい{nl} すぐにわがグルド軍が 無法者など{nl} けちらしてくれるからな。",
-   "en": ""
+   "en": "\"They say the ones on the wanted{nl} poster stirred up the Yaak village and{nl} Bergstadt, and both fell to outlaws.{page}\"But {wait}rest easy. Our Guld army will{nl} soon scatter those outlaws."
   }
  ]
 }
