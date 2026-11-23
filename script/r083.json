@@ -32,21 +32,21 @@
    "addr": "052B",
    "size": 274,
    "jp": "ライム王妃{nl}「私は エルフ王妃 ライム。{page} エルフは いろんなことを{nl} 知っているものよ。{page}「エルフは 生まれながらの{nl} 詩人だから{nl} 言葉そのものなの。{page}「言葉とは 知ること。{nl} 知性は 言葉なのよ。{page}「そして エルフは{nl} 言葉を 自由にあやつり{nl} 詩や 歌に するのよ。",
-   "en": ""
+   "en": "Queen Lime{nl}\"I am Lime, queen of the elves.{page} Elves know many things.{page}\"Elves are born poets, so we are words{nl} themselves.{page}\"Words are knowing. Wisdom is words.{page}\"And elves work words freely into{nl} poems and songs."
   },
   {
    "id": "r083_063F",
    "addr": "063F",
    "size": 180,
    "jp": "ライム王妃{nl}「エルフは 生まれながらの{nl} 詩人。言葉そのもの。{page}「言葉とは 知ること。{nl} 知性は 言葉なのよ。{page}「そして エルフは{nl} 言葉を 自由にあやつり{nl} 詩や 歌に するの。",
-   "en": ""
+   "en": "Queen Lime{nl}\"Elves are born poets. Words{nl} themselves.{page}\"Words are knowing. Wisdom is words.{page}\"And elves work words freely into{nl} poems and songs."
   },
   {
    "id": "r083_06F5",
    "addr": "06F5",
    "size": 262,
    "jp": "ライム王妃{nl}「人間の子 クルトよ。{page} あなたは 私たちエルフに{nl} なにを おそわったかしら？{page}「エルフは 生まれながらの{nl} 詩人。言葉そのもの。{page}「言葉とは 知ること。{nl} 知性は 言葉なのよ。{page}「そして エルフは{nl} 言葉を 自由にあやつり{nl} 詩や 歌に するの。",
-   "en": ""
+   "en": "Queen Lime{nl}\"Kurt, child of humans.{page} What have you learned from us elves?{page}\"Elves are born poets. Words{nl} themselves.{page}\"Words are knowing. Wisdom is words.{page}\"And elves work words freely into{nl} poems and songs."
   }
  ]
 }
