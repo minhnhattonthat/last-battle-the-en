@@ -322,7 +322,11 @@ def test_english_build_moves(tmp_path):
             assert rom[at:at + len(enc) + 2] == enc + b"\x00\xff", eid
     for off, (_, new) in insert.WINDOW_HEADERS.items():
         assert rom[off:off + 4] == new
-    import battle_text                                    # column-typed messages read back as their English rows
+    import battle_text                                    # item found: the six stores spell FOUND_EN in order
+    code = rom[battle_text.FOUND_AT:battle_text.FOUND_AT + 54]
+    stored = [word(code, i + 1) for i in range(len(code) - 4) if code[i] == 0xA9 and code[i + 3:i + 5] == b"\x87\x50"]
+    assert stored == battle_text.en_codec(orig, 0x2000).words(battle_text.FOUND_EN)
+    # column-typed messages read back as their English rows
     for at, _, top, bottom in battle_text.COLUMN_MSGS:
         ops = battle_text.column_ops(orig, at)
         v0, rows = word(orig, ops[0] + 1), {}

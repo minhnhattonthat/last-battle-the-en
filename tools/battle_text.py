@@ -251,6 +251,27 @@ def column_messages(orig, writer):
     writer.put(font_bg3.COLUMN_AT, bytes(end - font_bg3.COLUMN_AT), "battle column messages: old area cleared")
 
 
+# Item found after a battle (30:AD9A): the item's battle name goes to two rows at $7E:BAD0/$BB10, then code scans
+# row 2 back over spaces and stores を, skips a tile, and stores てにいれた as LDA #imm / STA [$50] pairs. English:
+# skip the tile first (the space), then six stores: "Mana / Herb found!".
+FOUND_AT = 0x182DF8   # 30:ADF8, up to the last STA at 30:AE2C
+FOUND_EN = "found!"
+
+
+def found_message(orig, writer):
+    old = bytes.fromhex("a95a20 8750 e650e650e650e650 a93d20 8750 e650e650 a94020 8750 e650e650 a92820 8750 e650e650"
+                        "a95720 8750 e650e650 a93920 8750")
+    assert orig[FOUND_AT:FOUND_AT + len(old)] == old, "item-found code moved"
+    ws = en_codec(orig, 0x2000).words(FOUND_EN)
+    assert len(ws) == 6
+    new = bytes.fromhex("e650e650") + b"".join(
+        b"\xa9" + w.to_bytes(2, "little") + bytes.fromhex("8750") + (bytes.fromhex("e650e650") if i < 5 else b"")
+        for i, w in enumerate(ws))
+    new += b"\xea" * (len(old) - len(new))
+    assert len(new) == len(old)
+    writer.put(FOUND_AT, new, "battle item found: English suffix")
+
+
 def marker_text(e):
     """Marker build: every row holding kana becomes the offset (the id without `bt_`) and filler, same tile count,
     tokens (borders, dakuten, kanji pieces) kept; other rows stay as they are."""
