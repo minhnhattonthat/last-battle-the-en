@@ -11,14 +11,14 @@
    "addr": "0064",
    "size": 78,
    "jp": "「ここは 武器と防具の店だ。{nl} はやってないが{nl} 品ぞろえは たしかな店だ。{page}",
-   "en": ""
+   "en": "\"This is the weapon and armor shop.{nl} Business isn't booming, but our goods{nl} are top quality.{page}"
   },
   {
    "id": "r028_00B7",
    "addr": "00B7",
    "size": 84,
    "jp": "「武器と防具を 売ってるよ。{nl} 戦いの後 はんじょうして{nl} 品ぞろえも 豊富だよ。{page}",
-   "en": ""
+   "en": "\"We sell weapons and armor. Business{nl} has picked up since the war, and our{nl} stock is plentiful.{page}"
   }
  ]
 }

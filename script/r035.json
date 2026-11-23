@@ -11,28 +11,28 @@
    "addr": "0050",
    "size": 92,
    "jp": "「ユ－リ様が いるかぎり{nl} シルヴェルは あんたいだね。{nl} このあたしが 保証してやるよ！{page}",
-   "en": ""
+   "en": "\"As long as Yuri-sama is around, Silvel is{nl} safe. You have my word on it!{page}"
   },
   {
    "id": "r035_00AC",
    "addr": "00AC",
    "size": 72,
    "jp": "「うちの子にも{nl} ユ－リ様みたいな偉い人に{nl} なってほしいんだけどねえ。",
-   "en": ""
+   "en": "\"I'd love for my child to grow up to be{nl} a great man like Yuri-sama."
   },
   {
    "id": "r035_00FA",
    "addr": "00FA",
    "size": 76,
    "jp": "「ユ－リ様は 戦士としても{nl} すばらしい 腕前を{nl} お持ちなんですってさ。{page}",
-   "en": ""
+   "en": "\"They say Yuri-sama is a splendid{nl} warrior, too.{page}"
   },
   {
    "id": "r035_014E",
    "addr": "014E",
    "size": 138,
    "jp": "「ユ－リ様って{nl} やっぱり すごいわねぇ。{page}「兵士が みんなユ－リ様みたいに{nl} 賢くて たのもしければ{nl} どんな戦いも だいじょうぶよね。",
-   "en": ""
+   "en": "\"Yuri-sama really is something.{page}\"If every soldier were as wise and{nl} dependable as Yuri-sama, we'd be fine{nl} in any battle."
   },
   {
    "id": "r035_01DE",

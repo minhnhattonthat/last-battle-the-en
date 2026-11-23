@@ -29,7 +29,9 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 |---|---|---|---|---|
 | クルト | Kurt | | hero, a boy from Eldar | Curt |
 | メイ | Mei | | elf girl and mage ("あたし"), joins Kurt at Silvel Castle | May |
-| ユース | Yuse | | Kurt's mother | |
+| ユース | Yuse | | Kurt's foster mother (Yelt's wife) | |
+| ミアス | Mias | | Gustav's first queen, Kurt's real mother | |
+| 王妃 | Queen | | Gustav's present queen (pregnant) | |
 | グラッド | Glad | | Yuri's man, carries the Guld letter | |
 | キューケンホフ先生 | Mr. Keukenhof | | Eldar schoolteacher (speaker label; "sir" when addressed) | |
 | 長老 | Elder | | speaker label; "the Elder" in narration | |

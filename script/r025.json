@@ -74,182 +74,182 @@
    "addr": "04E8",
    "size": 1712,
    "jp": "グスタフ王{nl}「来たかクルト・・・{wait}{wait}{nl} いや・・・{FA03}よ。{wait}{wait}{page} これから重大な話をするが{nl} 驚かずに聞いてくれ。{page}「{FA03}{nl} おまえは 私の息子だ。{wait}{wait}{nl} おまえはシルヴェルの王子なのだ。{wait}{wait}{page}{FB00}「１６年前 私には{nl} 美しい妃 ミアスと{nl} 生まれたばかりの王子がいた。{page}「エットミランシェル中の{nl} 魔法使いや 力ある者が{nl} 王子の未来を予言した。{page}「しかし イスカ－ルという{nl} 女予言者の番になったとき{page} 突然 あいつは{nl} 王子を襲ったのだ。{wait}{wait}{page}{FB00}「おそらくイスカ－ルの予言には{nl} イスカ－ルにとって危険な{nl} 未来が見えたにちがいない。{page}「ミアスは おまえをかばって{nl} その場に倒れた。{page} イスカ－ルはそれを見て{nl} おまえも 死んだと{nl} 思ったのだろう。{page}「気持ちの悪い笑い声をあげると{nl} 逃げさってしまった。{page} フェ－ベンネルスが追ったが{nl} もう つかまらなかった。{wait}{wait}{page}{FB00}「かわいそうな ミアス・・・{nl} 私の愛する妃 おまえの大切な母{page} ミアスは{nl} もう死んでしまっていた。{page}「しかし おまえは生きていた。{page} 私たちは{nl} イスカ－ルがそれを知るのを恐れ{nl} おまえをエルダ－ルにかくした。{page}「王子は死んだことになり{nl} おまえはイェルトの子供として{nl} 育てられることになったのだ。{wait}{wait}{page}{FB00}「イスカ－ルはその後{nl} エットミランシェルでは{nl} 誰も見た者がいない。{page}「しかし私には 今度の戦争は{nl} イスカ－ルのせいだと{nl} 思えてならないのだ。{page}「私のこの病気も{nl} イスカ－ルの呪いのせいだと。{wait}{wait}{page}{FB00}「・・・さて おまえは もう{nl} グルドに戦いに行くのであろう。{page} 急ぐがよい。{page}「おまえは シルヴェルの{nl} 王家の流れを引く者。{page} 真の言葉にもとづく{nl} すべての力ある技を{nl} 継承せし者だ。{page}「その力を存分に用い{page} 王の子として{nl} はずかしくない戦いをするのだ。{wait}{wait}{page}{FB00}「ただし 王の子としての身分を{nl} 明らかにしてはならん。{page} おまえの秘密は 多くの人が{nl} 命をかけて守ってきたものだ。{nl} そのこと 忘れてはならんぞ。",
-   "en": ""
+   "en": "King Gustav{nl}\"You have come, Kurt... {wait}{wait}no...{nl} {FA03}. {wait}{wait}{page} What I am about to tell you is grave.{nl} Hear it without alarm.{page}\"{FA03}, you are my son. {wait}{wait}You{nl} are the Prince of Silvel. {wait}{wait}{page}{FB00}\"Sixteen years ago, I had a beautiful{nl} queen, Mias, and a newborn prince.{page}\"Wizards and the mighty from all over{nl} Ettmiranshel foretold the prince's{nl} future.{page}\"But when the turn came to a{nl} prophetess named Iskar,{page} she suddenly attacked the prince. {wait}{wait}{page}{FB00}\"Iskar's prophecy must have shown her{nl} a future that spelled danger for her.{page}\"Mias shielded you and fell where she{nl} stood.{page} Seeing that, Iskar must have thought{nl} you were dead as well.{page}\"With a hideous laugh, she fled.{page} Febennels gave chase, but she was not{nl} caught. {wait}{wait}{page}{FB00}\"Poor Mias... my beloved queen, your{nl} dear mother...{page} Mias was already dead.{page}\"But you were alive.{page} Fearing Iskar would learn of it, we hid{nl} you in Eldar.{page}\"The prince was given out as dead, and{nl} you were raised as Yelt's child. {wait}{wait}{page}{FB00}\"Since then, no one in Ettmiranshel has{nl} seen Iskar.{page}\"Yet I cannot help but feel that this{nl} war is Iskar's doing.{page}\"And that this illness of mine is Iskar's{nl} curse. {wait}{wait}{page}{FB00}\"...Now, you will soon go to fight in Guld.{page} Make haste.{page}\"You are of the royal line of Silvel.{page} You are heir to every art of power{nl} grounded in the true words.{page}\"Use that power to the full,{page} and fight in a way that does no shame{nl} to a king's son. {wait}{wait}{page}{FB00}\"But you must not reveal that you are{nl} the King's son.{page} Many people have risked their lives to{nl} keep your secret. Never forget that."
   },
   {
    "id": "r025_0B9A",
    "addr": "0B9A",
    "size": 156,
    "jp": "グスタフ王{nl}「急げ！ {FA03}。{page} エットミランシェルの命運は{nl} おまえにかかっている。{page}「シルヴェルのためにも{nl} そして兄弟国グルドの{nl} 正しい未来のためにも。",
-   "en": ""
+   "en": "King Gustav{nl}\"Hurry, {FA03}.{page} The fate of Ettmiranshel rests on you.{page}\"For Silvel's sake, and for the rightful{nl} future of our brother nation, Guld."
   },
   {
    "id": "r025_0C3E",
    "addr": "0C3E",
    "size": 158,
    "jp": "王妃{nl}「あなたたち グルド軍のことを{nl} しらせて くれたそうですね。{page} それに 今日は{nl} よく はたらいてくれたとか。{page} わたくしからも{nl} お礼を言いますわ。",
-   "en": ""
+   "en": "Queen{nl}\"I hear you two warned us about the{nl} Guld army.{page} And that you worked hard for us today.{page} I thank you as well."
   },
   {
    "id": "r025_0CDE",
    "addr": "0CDE",
    "size": 142,
    "jp": "「王様なら 心配しなくとも{nl} だいじょうぶですわ。{page} もうすぐ あかちゃんも{nl} 生まれるのですもの。{page} 必ず お元気になって{nl} くださいます。",
-   "en": ""
+   "en": "\"There's no need to worry about the{nl} King.{page} Our baby will soon be born, after all.{page} He will surely get well again."
   },
   {
    "id": "r025_0D74",
    "addr": "0D74",
    "size": 68,
    "jp": "「ここは ユ－リ様の{nl} ゆるしが なければ{nl} 通すわけには いかん。",
-   "en": ""
+   "en": "\"No one passes here without Yuri-sama's{nl} permission."
   },
   {
    "id": "r025_0DBA",
    "addr": "0DBA",
    "size": 124,
    "jp": "「王様を お守りするのが{nl} われらの役目。{page} たとえ グルド軍が{nl} 城中に攻めこんできたとしても{nl} ここは絶対に とおさぬ！",
-   "en": ""
+   "en": "\"Our duty is to protect the King.{page} Even if the Guld army storms the{nl} castle, we will never let them through{nl} here!"
   },
   {
    "id": "r025_0E42",
    "addr": "0E42",
    "size": 162,
    "jp": "「あの 勇ましかったグスタフ王が{nl} あんなに おやつれになって・・・{wait}{wait}{nl} なんとも おいたわしいことだ。{page} それにしても 病気の名前すら{nl} わからないとは・・・",
-   "en": ""
+   "en": "\"That valiant King Gustav, so worn and{nl} thin... {wait}{wait}It's truly a pity.{page} And to think no one even knows the{nl} name of his illness..."
   },
   {
    "id": "r025_0EEA",
    "addr": "0EEA",
    "size": 140,
    "jp": "「王様も おいたわしいが{nl} おれは 王妃様も心配だよ。{page} もうすぐ お子様も{nl} お生まれに なるというのに{nl} あれでは お体がもたんよ・・・",
-   "en": ""
+   "en": "\"I feel for the King, but I worry about{nl} the Queen too.{page} With the baby due soon, her health{nl} can't hold up like this..."
   },
   {
    "id": "r025_0F78",
    "addr": "0F78",
    "size": 44,
    "jp": "「ユ－リ様の{nl} おっしゃる通りにして下さい。",
-   "en": ""
+   "en": "\"Please do as Yuri-sama says."
   },
   {
    "id": "r025_0FAC",
    "addr": "0FAC",
    "size": 26,
    "jp": "「こまった こまった・・・",
-   "en": ""
+   "en": "\"Oh dear, oh dear..."
   },
   {
    "id": "r025_0FC8",
    "addr": "0FC8",
    "size": 86,
    "jp": "「もうすぐ 王子様か 王女様が{nl} お生まれに なるというのに{nl} 王様がご病気とは・・・",
-   "en": ""
+   "en": "\"A prince or princess will be born any{nl} day now, and the King has fallen ill..."
   },
   {
    "id": "r025_1026",
    "addr": "1026",
    "size": 154,
    "jp": "「王様の ご病気{nl} 早く よくならないかしら？{page} 王妃様だって{nl} 今が一番 大切なときなのに・・{page}「あ－ だめだめ。{wait}{nl} もっと あかるく考えなくちゃ！{page}",
-   "en": ""
+   "en": "\"I wonder if the King's illness will get{nl} better soon.{page} And now is the most important time for{nl} the Queen, too..{page}\"Ah, no, no. {wait}I have to think more{nl} cheerfully!{page}"
   },
   {
    "id": "r025_10C0",
    "addr": "10C0",
    "size": 150,
    "jp": "「ねぇねぇ{nl} 今度 お生まれになるのは{nl} 男の子かしら？ それとも女の子？{page}{FB00}{F400}「あなた どっちだと思う？{nl}{F600}男の子だと いいな{nl}{F600}女の子じゃないかな",
-   "en": ""
+   "en": "\"Hey, hey, will the coming baby be a{nl} boy, do you think? Or a girl?{page}{FB00}{F400}\"Which do you think it'll be?{nl}{F600}I hope it's a boy{nl}{F600}Probably a girl"
   },
   {
    "id": "r025_1162",
    "addr": "1162",
    "size": 128,
    "jp": "「やっぱり そうよね{nl} そう思うわよね。{page} だって 前の王子様は{nl} なんでも かなしいことに{page} なっちゃった らしいものね・・・",
-   "en": ""
+   "en": "\"I knew it, that's what you think too.{page} After all, it seems something sad{nl} happened{page} to the last prince..."
   },
   {
    "id": "r025_11E6",
    "addr": "11E6",
    "size": 116,
    "jp": "「ん～ ほんとは{nl} 私も そう思うのよ{page} あの王妃様の お子様なら{nl} きっと きれいで やさしい{nl} お姫様になるわ。",
-   "en": ""
+   "en": "\"Mmm, honestly, I think so too.{page} A child of the Queen's would surely be a{nl} lovely, gentle princess."
   },
   {
    "id": "r025_125E",
    "addr": "125E",
    "size": 50,
    "jp": "「とにかく お子様の{nl} ご誕生が 待ちどおしいわ。",
-   "en": ""
+   "en": "\"Anyway, I can hardly wait for the baby{nl} to be born."
   },
   {
    "id": "r025_1292",
    "addr": "1292",
    "size": 82,
    "jp": "「あかちゃんが お生まれになれば{nl} きっと このお城も{nl} あかるくなると思うの。{page}",
-   "en": ""
+   "en": "\"Once the baby is born, I'm sure the{nl} castle will brighten up.{page}"
   },
   {
    "id": "r025_132A",
    "addr": "132A",
    "size": 58,
    "jp": "ユ－リ{nl}「さあ ２人とも{nl} 王様に ごあいさつしなさい。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Now, you two, pay your respects to{nl} the King.{page2}"
   },
   {
    "id": "r025_1373",
    "addr": "1373",
    "size": 44,
    "jp": "ユ－リ{nl}「そうか では{nl} もどるとしよう。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"I see. Then let's go back.{page2}"
   },
   {
    "id": "r025_1425",
    "addr": "1425",
    "size": 134,
    "jp": "ユ－リ{nl}「・・・いいな おまえたち{nl} 王様と王妃様を たのむぞ。{page2}{F9FF}「ははっ！ かしこまりました。{page2}{F9FF}「おまかせください ユ－リ様。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"...Listen, all of you. I leave the King and{nl} Queen in your hands.{page2}{F9FF}\"Yes, sir! Understood.{page2}{F9FF}\"Leave it to us, Yuri-sama.{page2}"
   },
   {
    "id": "r025_1513",
    "addr": "1513",
    "size": 38,
    "jp": "ユ－リ{nl}「では 王様とお話し下さい。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Then please speak with the King.{page2}"
   },
   {
    "id": "r025_1546",
    "addr": "1546",
    "size": 24,
    "jp": "「では 行きましょう。{page2}",
-   "en": ""
+   "en": "\"Then let us go.{page2}"
   },
   {
    "id": "r025_1565",
    "addr": "1565",
    "size": 46,
    "jp": "「グスタフ王{nl} 我ヶの武運をおいのり下さい。{page2}",
-   "en": ""
+   "en": "\"King Gustav, pray for our fortune in{nl} battle.{page2}"
   },
   {
    "id": "r025_159A",
    "addr": "159A",
    "size": 50,
    "jp": "グスタフ王{nl}「{FA03}のこと{nl} たのんだぞ ユ－リよ。{page2}",
-   "en": ""
+   "en": "King Gustav{nl}\"I leave {FA03} in your care, Yuri.{page2}"
   },
   {
    "id": "r025_1626",
    "addr": "1626",
    "size": 222,
    "jp": "ユ－リ{wait}{wait}{nl}「私は あなたと最初に会った時から{nl} あなたが あの王子だと{nl} わかっていました。{page}「しかし 王様がおっしゃった通り{nl} これからも王子ではなく{nl} 部下として おあつかいします。{page} どうか失礼を お許し下さい。{page2}",
-   "en": ""
+   "en": "Yuri{wait}{wait}{nl}\"From the moment I first met you, I{nl} knew you were that prince.{page}\"But as the King said, I will go on{nl} treating you as one of my men, not as{nl} a prince.{page} Please forgive my rudeness.{page2}"
   },
   {
    "id": "r025_1734",
    "addr": "1734",
    "size": 114,
    "jp": "ユ－リ{nl}「城の守りは{nl} くれぐれもたのむぞ。{page2}{F9FF}「ははっ！ かしこまりました。{page2}{F9FF}「おまかせください ユ－リ様。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"I leave the castle's defense to you.{page2}{F9FF}\"Yes, sir! Understood.{page2}{F9FF}\"Leave it to us, Yuri-sama.{page2}"
   }
  ]
 }

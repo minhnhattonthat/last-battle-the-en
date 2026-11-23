@@ -11,14 +11,14 @@
    "addr": "003C",
    "size": 66,
    "jp": "「道具屋へ ようこそ。{nl} やすさは シルヴェルで{nl} 一番ですよ。{page}",
-   "en": ""
+   "en": "\"Welcome to the item shop. Our prices{nl} are the lowest in Silvel.{page}"
   },
   {
    "id": "r029_0083",
    "addr": "0083",
    "size": 84,
    "jp": "「いらっしゃいませ－！{nl} 笑顔でおむかえが モット－の{nl} 道具屋で ございま－す！{page}",
-   "en": ""
+   "en": "\"Welcome! Greeting you with a smile is{nl} our motto here at the item shop!{page}"
   }
  ]
 }
