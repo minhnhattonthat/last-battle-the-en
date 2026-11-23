@@ -35,6 +35,21 @@ def specs(kind, miss):
             s = ids[g:g + 16] + [0] * (16 - len(ids[g:g + 16]))
             pk = ",".join(f"@{0x19CF + i:04X}:{s[i + 1]:02X}{s[i]:02X}" for i in range(0, 16, 2))
             out.append(f"0x4D 10 6 {keys}|-|{pk}")
+    elif kind == "examine":  # item > Examine prints the long description (b04 text) and returns to the field; the
+        # menus keep their cursors, so the second cycle only reopens them; later cycles drift: 2 items per run
+        doc = json.loads((ROOT / "script" / "items.json").read_text(encoding="utf-8"))
+        ids = [int(e["id"][5:], 16) for e in doc["entries"]] + [0]
+        close = "6 a;150 -;6 a;100 -;6 b;60 -;6 b;60 -;6 b;60 -"
+        keys = (ITEM_KEYS.replace("6 a;90 -;6 a;120 -", "6 a;90 -;6 right;40 -;6 a;120 -;6 a;120 -") +
+                f";{close};6 a;60 -;6 a;60 -;6 a;80 -;6 a;80 -;6 right;30 -;{close}")
+        for g in range(0, len(ids) - 1, 2):
+            out.append(f"0x4D 10 6 {keys}|-|@19CF:{ids[g + 1]:02X}{ids[g]:02X}")
+    elif kind == "use":  # item > Use on Kurt: recovery / stat-rise / seal messages (b04 B864-BB72); one item a run,
+        # Kurt's HP and MP poked low first so recovery has something to do
+        ids = list(range(0x42, 0x50)) + list(range(0x56, 0x5C)) + [0xF5, 0xFA]
+        keys = ITEM_KEYS + ";6 a;120 -;6 a;120 -;6 a;150 -;6 a;150 -;6 a;150 -;6 a;150 -;6 a;150 -"
+        for i in ids:
+            out.append(f"0x4D 10 6 {keys}|-|@19CF:00{i:02X},@1909:0001,@190D:0001")
     elif kind == "sealdesc":  # seal items $F5-$FF hold a spell slot at $1CF1 + 14 * (id - $F5) (01:F413); with
         # the flag set their description is the spell type's short name ($04:A7A5 table, 23 entries)
         keys = ITEM_KEYS + ";6 a;120 -;" + "6 right;40 -;6 left;40 -;6 down;40 -;" * 6 + "60 -"
@@ -69,7 +84,7 @@ def specs(kind, miss):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("out")
-    ap.add_argument("kind", choices=["items", "itemdesc", "sealdesc", "spells", "spelldesc"])
+    ap.add_argument("kind", choices=["items", "itemdesc", "examine", "use", "sealdesc", "spells", "spelldesc"])
     ap.add_argument("--frames", type=int, default=3200)
     ap.add_argument("--report", default=str(ROOT / "work" / "qa" / "cover_report.txt"))
     ap.add_argument("--rom", default=str(ROOT / "work" / "qa" / "cover_build" / "rom.sfc"))

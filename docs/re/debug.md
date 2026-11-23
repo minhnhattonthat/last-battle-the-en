@@ -89,9 +89,17 @@ Everything `tools/debug/warp.lua` relies on. Addresses are WRAM (`$7E`) unless a
 - `build.py` writes `build/strings.tsv` (`tools/strings_tsv.py`): ROM strings keyed by the file offset of the first
   byte read (slot, or bank-pool copy), block strings by `1<<40 | stream offset << 16 | offset in block`: every
   script block decompresses over `$7F:0000`, so the key needs the stream.
-- `tools/debug/textcover.lua` (after warp.lua): at the decompressor `00:83A7` the pointers are DP-relative (callers
-  run with D = `$0000` or `$0D00`): source `$AC-$AE`, destination `$B0-$B2`; a destination of `$7F:0000` sets the
-  current stream. Reads of `$7F` and of the ROM banks in RANGES log `TEXT <key>`.
+- `tools/debug/textcover.lua` (after warp.lua): the decompressor `00:83A7` reads its pointers with absolute
+  `LDA $00AC..$00B2` (00:83C8; it sets D = `$0100` itself, so the caller's D does not matter): source `$AC-$AE`,
+  destination `$B0-$B2`; a destination of `$7F:0000` sets the current stream. Reads of `$7F` and of the ROM banks
+  in RANGES log `TEXT <key>`. Session 25 fixes: (1) the E5 common-block call runs with D = `$0C00`, so the old
+  DP-relative read never saw the common block (all 33 `common_*` lines unlogged); (2) the LZ decoder's copies read
+  its own output (`00:8621`), which logged block strings at decompression time (a frame after `BLOCK`); reads by
+  PCs `00:83A7-863C` are now skipped. Every block-key log made before session 25 is unreliable.
+- Spells: a character's 12 spell slots are `$1927 + 14i` (01:EEFD): byte 0 bit 7 = known, low 5 bits = spell type
+  (22 types, description jump table 01:F6BA), +3 MP, +4 the 8-byte name (`02 n 41`: name n, rank A), +C/+D power.
+  Seal items `$F5-$FF` hold one such slot each at `$1CF1 + 14 * (id - $F5)` (01:F413; flag set: the description
+  box shows the type's short name from `$04:A7A5`). `names_cover.py spells|spelldesc|sealdesc|itemdesc|examine`.
 - RUNS: each entry runs as the field loop runs e1 (`$0634` = 1, VM call `00:D64C` pointed at it); the script has
   ended when the field loop calls `00:D634` again. A place-name label (rooms entered from the map) holds the field
   loop until a button: the probe taps B while a run is armed. A mashed through text; B after 1500 frames backs

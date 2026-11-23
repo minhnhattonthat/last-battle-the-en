@@ -2,7 +2,8 @@
 --   TEXT <key> f<frame>: the game read a byte at that key (a string counts when its first byte is read).
 --   ROM reads in RANGES ("lo-hi,lo-hi", CPU hex) log the file offset. Reads of $7F (decompressed script blocks)
 --   log BLOCK_KEY | stream file offset << 16 | offset, the stream being the last decompression to $7F:0000
---   (00:83A7: source $AC-$AE, destination $B0-$B2, DP-relative; callers use D = $0000 or $0D00).
+--   (00:83A7: source $AC-$AE, destination $B0-$B2, absolute WRAM addresses). The decoder's own reads of $7F (LZ
+--   copies) are skipped: before session 25 they marked block strings as shown at decompression time.
 -- RUNS="0123,0456" (hex $7F addresses): after the warp's room is calm, run each as a script in turn (as the field
 -- loop runs e1: $0634 = 1, then point the VM call 00:D64C at it), A tapped while it runs. Logs RUN/END per script,
 -- LEFT when the room changes (its block is gone: the driver restarts after it), STUCK after MAXF frames, ALLDONE.
@@ -19,7 +20,12 @@ local function text(key)
   L.log(string.format("TEXT %X f%d", key, L.frame))
 end
 L.on_exec(0x0083A7, 0x0083A7, function()
-  local dp = 0x7E0000 | emu.getState()["cpu.d"]  -- callers use DP $0000 or $0D00
+  -- 00:83C8 reads its arguments with absolute LDA $00AC..$00B2 (WRAM $0000AC), whatever D the caller has (the
+  -- E5 common-block call runs with D = $0C00); the old DP-relative read stays as a fallback.
+  local dp = 0x7E0000
+  if not (rd(dp + 0xB2) == 0x7F and rd(dp + 0xB0) == 0 and rd(dp + 0xB1) == 0) then
+    dp = 0x7E0000 | emu.getState()["cpu.d"]
+  end
   if rd(dp + 0xB2) == 0x7F and rd(dp + 0xB0) == 0 and rd(dp + 0xB1) == 0 then
     local src = rd(dp + 0xAC) | rd(dp + 0xAD) << 8 | rd(dp + 0xAE) << 16
     cur = L.rom_off(src)
@@ -27,6 +33,9 @@ L.on_exec(0x0083A7, 0x0083A7, function()
   end
 end)
 L.on_read(0x7F0000, 0x7FFFFF, function(addr)
+  -- the LZ decoder (00:83A7-863C) reads its own output window for copies: not text being shown
+  local pc = L.pc() & 0x7FFFFF
+  if pc >= 0x0083A7 and pc <= 0x00863C then return end
   if cur then text(BLOCK_KEY | cur << 16 | (addr & 0xFFFF)) end
 end)
 for lo, hi in string.gmatch(RANGES or "", "(%x+)-(%x+)") do
