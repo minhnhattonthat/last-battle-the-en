@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "tools"))
 import blocks  # noqa: E402
 import check_rom  # noqa: E402
+import font_bg3  # noqa: E402
 import font_en  # noqa: E402
 import insert  # noqa: E402
 import romdiff  # noqa: E402
@@ -100,6 +101,9 @@ def build(out=OUT, recompress=False, orig_path=ORIG_PATH, script_dir=insert.SCRI
         w.rom.extend(b"\xff" * (ROM_SIZE - len(w.rom)))
         w.put(0x7FD7, b"\x0c", "header: 4 MB")
     insert.apply(orig, region, w, files, insert.TextAlloc() if asm else None)
+    if asm:  # English lowercase in the 8x8 BG3 font (tools/font_bg3.py); the identity build leaves it alone
+        b = region.blocks[font_bg3.BLOCK]
+        b.data = font_bg3.patch(b.data)
     region.pack(w.rom, w.put, recompress=recompress, free=blocks.FREE + ([blocks.EXPANSION] if asm else []))
     if asm:
         apply_asm(w)

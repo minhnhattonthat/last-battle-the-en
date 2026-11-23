@@ -18,6 +18,16 @@ def test_font_covers_ascii_and_fits_one_byte():
     assert len(font) == 16 * 128 and widths[ord("A")] == font_en.ADVANCE["A"]
 
 
+def test_bg3_font_lowercase():
+    import font_bg3
+    assert set(font_bg3.ORDER) == set(font_bg3.GLYPHS) and len(font_bg3.ORDER) == len(set(font_bg3.ORDER))
+    assert font_bg3.FIRST > 0x24                       # after the capitals Z = $24
+    assert max(font_bg3.TILE.values()) < 0x60           # inside the hiragana run, before katakana
+    tile = font_bg3.tile_bytes(font_bg3.GLYPHS["a"])
+    assert tile[0::2] == b"\xff" * 8                    # plane 0 = background colour 1 everywhere
+    assert all(font_bg3.GLYPHS[c][0] == "." * 8 for c in font_bg3.ORDER)   # row 0 blank, as the capitals
+
+
 def test_en_codec_roundtrip():
     s = "Kurt, it's {actor}!{nl}Go.{page}"
     assert EN.decode(EN.encode(s)) == s
@@ -64,7 +74,9 @@ def test_name_escape_and_table():
     (off, blob), = w.puts
     assert off == insert.NAMES_AREA
     bg3 = [int.from_bytes(blob[2 * c:2 * c + 2], "little") for c in range(128)]
-    assert bg3[ord("A")] == 0x0B and bg3[ord("a")] == 0x0B and bg3[ord("0")] == 0x01  # the byte map's own tiles
+    assert bg3[ord("A")] == 0x0B and bg3[ord("0")] == 0x01  # the byte map's own tiles
+    import font_bg3
+    assert bg3[ord("a")] == font_bg3.TILE["a"] and bg3[ord("'")] == font_bg3.TILE["'"]  # English BG3 tiles
     ptr = lambda i: int.from_bytes(blob[0x100 + 2 * i:0x102 + 2 * i], "little") - 0x8000  # noqa: E731
     assert blob[ptr(5):ptr(5) + 11] == b"Long Sword\0"
     assert blob[ptr(7)] == 0  # unused -> empty name

@@ -60,7 +60,12 @@ Name bytes `$30-$39` and `$41-$5A` are ASCII (digits, capitals). English item an
 field holds `kind, n` (`$01` items, `$02` spells, n = entry order + 1 in `script/items.json` / `spells.json`) and the
 hooks read ASCII from `$FC:8000` (`insert.NameTable`: 128-word ASCII -> BG3 tile table, then 512 word pointers, then
 the names). FEE3 emits `$0800+c` (any length); FEAA emits BG3 tiles, capped at the caller's count (8 tiles = 64 px;
-lowercase shows as capitals). Party names stay plain bytes (the name-entry grid is the map order).
+lowercase and `',.-!?&/:+` get the English 8x8 tiles `tools/font_bg3.py` draws over the hiragana tiles `$25-$48`
+of the BG3 font, LZ block 319, loaded at VRAM byte `$C000`; build.py patches it only in the 4 MB build). Party
+names stay plain bytes (the name-entry grid is the map order).
+BG3 chr (shop scene dump): tiles `$00-$AE` font (block 319, 2800 bytes), `$AF-$BF` empty, `$C0-$17F` the text
+canvas, map `$D800`; BG1/BG2 maps at byte `$E000`/`$F000`, so no free BG3 tiles beyond `$BF` (no room for a tile
+VWF pool unless the katakana tiles are retired too).
 
 ## Staff roll (bank 02, verified: `credits` scene on the marker and ruler builds)
 02:D71F draws entry `$C2` (pointer table `02:E215`, bank `$B4` = 2) with 02:D789: clears the 2bpp tile image

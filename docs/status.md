@@ -3,11 +3,15 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 5. Engine spike and marker build in progress (VWF, far jumps, staff roll and item/spell name escapes
-  work; BG3 name-field VWF, party names / name entry, unextracted shop descriptions, the rest of the width gate and
-  the marker tour left). Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) boots (smoke
+  work; BG3 font has English lowercase; per-screen BG3 name caps, party names / name entry, extracting the BG3
+  tile-word strings (shop descriptions), the rest of the width gate and the marker tour left). Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) boots (smoke
   ok) and reaches name_entry, newgame, menu_item, place_00, svc_00_00, battle_win, variant_ec01 (`work/qa/marker2`)
   and the staff roll (`work/qa/cr1`) with `[id]` markers.
 - **Done:**
+  - **Phase 5, session 2026-11-23 (3):** 8x8 BG3 font gets English lowercase + `',.-!?&/:+` (`tools/font_bg3.py`,
+    drawn over hiragana tiles `$25-$48` of LZ block 319; `insert.bg3_table` maps them; test in `tests/test_vwf.py`).
+    Shop list shows mixed case: `work/qa/bg3t/p00_0x4D_10_6/f002400.png`. Chose fixed 8 px tiles over a BG3 tile
+    VWF: BG3 chr has no free tiles past `$BF` (`docs/re/vwf.md` §Names). Found the shop description source (below).
   - **Phase 5, session 2026-11-23 (2):** staff roll: bank-02 renderer hooked (`cr_glyph` VWF, `cr_fetch` far jumps),
     width 192 px x 5 slots measured. Item/spell names: escape `kind, n` in the record + English table at `$FC:8000`
     read by both name decoders (01:FEE3 glyph words, any length; 01:FEAA BG3 tiles, capped at 8): `docs/re/vwf.md`
@@ -63,18 +67,23 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   1. **Finish phase 5** (done-when: marker ROM boots, every text box shows its id, non-text strings excluded, every
      box variant measured):
-     - **BG3 name fields** (01:FEAA path: shop buy list, item lists, character names; `docs/re/vwf.md` §Names):
-       English shows as 8 capital tiles. Engine work: render the name with the VWF into BG3 tiles reserved per
-       row (like the menu canvas of 01:B467) so a name can use the row up to the price (~95 px), with lowercase;
-       or at least add lowercase BG3 tiles. Find which screens use FEAA (inventory, equip, status, battle) and
-       measure each field. Probe for the shop list: `tools/debug/probe.py OUT "0x4D 10 6 30 -;6 a;60 -;6 a;60 -;6
-       a;60 -;6 a;90 -;6 a;90 -;6 a;90 -;6 a;120 -|01E402|-" --rom build/marker.sfc --frames 3000` (list at
-       ~f2400; key timing differs between builds, so check the changed-frame sheet).
+     - **BG3 name fields** (01:FEAA path; `docs/re/vwf.md` §Names): lowercase done; English names are still capped
+       at the caller's count (8; 01:FE59 item records = shop list, 01:FE3B character names, both `LDA #$0008`).
+       The shop row has room for 13 tiles (x 24 to the price at ~128; check the longest price). Raise the cap for
+       English only (never the JP loop, which reads `$6D80` past its 8 bytes): in `nm_feaa`, pick the cap from the
+       return address (a small table: caller -> tiles), after finding every screen each caller serves (inventory,
+       equip, status, battle) and measuring its field. Shop probe: `tools/debug/probe.py OUT "0x4D 10 6 30 -;6 a;60
+       -;6 a;60 -;6 a;60 -;6 a;90 -;6 a;90 -;6 a;90 -;6 a;120 -|01E402|-" --rom build/bg3t.sfc --frames 2600`
+       (list at ~f2400; build it with `build.py --marker --out build/bg3t.sfc --qa item_42=...`).
      - **Party names / name entry**: names stay plain bytes (`$30-$39`, `$41-$5A` are already ASCII); lowercase
        bytes `$61-$7A` map to kana. Remap both maps (`0x23053` glyph words -> `$0861+`, `0x22EAB` BG3 tiles) for an
        English grid; the grid order is the map order (`docs/re/graphics.md`). Default names (クルト, メイ `b04_B2E2`).
-     - **Unextracted text**: the shop item description box (つかうと HPを 30ほど かいふく) stays Japanese on the
-       marker build; find its source (item records' bytes past the name? another table) and extract it.
+     - **Unextracted text**: the shop item description box (つかうと HPを 30ほど かいふく) is BG3 tile words in
+       bank 04: `つかうと` at file `0x22331`, `かいふく` at `0x21A82` (tile word = `$04:AEAB` map of the byte code; the
+       same form as the menu labels in `0x20400-0x22300`, which text.md left for phase 8). These are real text:
+       extract the tile-word strings (a BG3 tile codec: tiles -> kana via the byte map, English via
+       `font_bg3.TILE` + capitals/digits), find their pointers/readers, mark them in the marker build, and measure
+       the box (~5 tiles x 4 lines looks too small for English: plan engine work, e.g. a wider box or the VWF canvas).
      - `b04_B2E2` (メイ, 4-byte slot, pointer `0x232D4`): too short for a far jump; move it by its pointer into
        dead space of another bank-04 string (marker build writes the id tail meanwhile).
      - Width gate for the variants listed in `docs/re/windows.md` (ruler builds via `--qa`); the page-wait arrow.
@@ -93,4 +102,5 @@ Updated at the end of every session. Keep it to what the next session needs; his
   4. Chapter 4 recap (room 198 NPC talk `$7F:015A`) has no scene: talking to that NPC needs its position; text
      coverage will flag it if missed.
 - **Open bugs:** none.
-- **Waiting on the user:** nothing.
+- **Waiting on the user:** non-blocking: BG3 list names (shop list etc.) use a fixed 8 px font with lowercase rather
+  than a VWF, since BG3 has no free tiles for one; default kept, say if you want the bigger engine change.

@@ -136,15 +136,21 @@ BG3_MAP_OFF = 0x22EAB     # byte -> BG3 tile word map of 01:FEAA (bytes $2C+)
 
 def bg3_table(orig):
     """128 words: ASCII -> BG3 tile word. Digits and capitals are their own bytes in the name encoding; lowercase
-    uses the capital (the BG3 font has no lowercase yet); other characters their full-width form, else a space."""
+    and the punctuation in `font_bg3` get the English tiles build.py draws over the hiragana; other characters
+    their full-width form, else a space."""
     import struct
+    import font_bg3
     bmap = struct.unpack_from("<212H", orig, BG3_MAP_OFF)
+    bg_word = bmap[ord("A") - 0x2C] & 0xFC00   # attribute bits of a capital's tile word
     gmap = struct.unpack_from("<212H", orig, 0x23053)
     by_glyph = {}
     for i, w in enumerate(gmap):
         by_glyph.setdefault(w, i)
     out = []
     for c in range(128):
+        if chr(c) in font_bg3.TILE:
+            out.append(bg_word | font_bg3.TILE[chr(c)])
+            continue
         ch = chr(c).upper()
         i = None
         if ch.isascii() and ch.isalnum():
