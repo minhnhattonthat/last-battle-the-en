@@ -37,7 +37,10 @@ EXCLUDE = [(0x140B80, 0x140CB8), (0x16FC00, 0x16FC08), (0x170100, 0x170108), (0x
 # Window-script rects in bank $3E (victory EX / mana / LEVEL UP windows) that the kana-run search misses: names of
 # two kana (メイ) or broken by ー (レジーナ), and dakuten-only rows over names (blanked by an English row).
 EXTRA_RECTS = [(0x1F0090, 12, 2), (0x1F00F0, 12, 2), (0x1F0258, 24, 2), (0x1F0318, 24, 2),
-               (0x1F04E8, 16, 1), (0x1F0508, 16, 1), (0x1F0548, 16, 1), (0x1F0568, 16, 1), (0x1F05B8, 24, 1)]
+               (0x1F04E8, 16, 1), (0x1F0508, 16, 1), (0x1F0548, 16, 1), (0x1F0568, 16, 1), (0x1F05B8, 24, 1),
+               # escape and "one tactic only" messages: 7-byte records (dest, src24, w, h) at file 0x1415B6+,
+               # drawn by 30:F25E (one rect per record, rows $40 apart)
+               (0x1F0D06, 12, 2), (0x1F0D36, 12, 2), (0x1F0D66, 14, 2), (0x1F0D9E, 14, 2), (0x1F0DD6, 23, 2)]
 
 
 def off(bank, a):
