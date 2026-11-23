@@ -18,35 +18,35 @@
    "addr": "01AA",
    "size": 384,
    "jp": "レジ－ナ{nl}「ケッテリ！{wait}{wait}{wait}{wait}{wait}{wait}{nl} もはや 逃げられまい！！{page} あとは おまえを倒せば{nl} すべてが おわる！{page}{FB00}ケッテリ卿{nl}「おわる？{wait}{wait}{wait}{wait}{page}「まだなにも おわらないし{nl} わたしも ここで{nl} 死ぬ気は ございませんな。{page2}{F9FF}グルド王{nl}「・・・・・・レジ－ナ・・・{nl} ・・・気を・つけよ・・・・・{page} 真なる敵は・・・・・・・・{nl} ・・・こやつでは・ない・・・{page2}{F9FF}レジ－ナ{nl}「父上！！{page2}",
-   "en": ""
+   "en": "Regina{nl}\"Ketteri! {wait}{wait}{wait}{wait}{wait}{wait}You can't escape{nl} now!!{page} Once we defeat you, it will all be over!{page}{FB00}Lord Ketteri{nl}\"Over? {wait}{wait}{wait}{wait}{page}\"Nothing is over yet, and I have no{nl} intention of dying here.{page2}{F9FF}King of Guld{nl}\"......Regina... ...be...careful.....{page} The true enemy........ ...is not...this one...{page2}{F9FF}Regina{nl}\"Father!!{page2}"
   },
   {
    "id": "r254_033B",
    "addr": "033B",
    "size": 382,
    "jp": "ケッテリ{nl}「わが主にして{wait}{wait}{wait}{wait}{wait}{page} 偉大なる力の持主！{wait}{wait}{wait}{wait}{wait}{nl} 氷の女王イスカ－ルよ。{page} しもべたる われ ケッテリを{nl} この場から 救いたまえ！{page}{FB00}「そして この おろか者どもへ{nl} その 偉大なるお力をしめし{nl} 心からの 恐怖をお与えください。{page2}{F9FF}レジ－ナ{nl}「イスカ－ル！？{page2}{F9FF}ケッテリ{nl}「おおっ 聞こえる。{page} イスカ－ル様が われを{nl} 呼ぶ声が聞こえる{page}「さらばだ・・・{page2}",
-   "en": ""
+   "en": "Ketteri{nl}\"My master, {wait}{wait}{wait}{wait}{wait}{page} bearer of great power!{nl} {wait}{wait}{wait}{wait}{wait}Iskar, Queen of Ice.{page} Save me, Ketteri, your servant, from{nl} this place!{page}{FB00}\"And show these fools your great{nl} power, and give them terror from the{nl} heart.{page2}{F9FF}Regina{nl}\"Iskar?!{page2}{F9FF}Ketteri{nl}\"Oh, I hear it.{page} I hear Iskar-sama's voice calling me.{page}\"Farewell...{page2}"
   },
   {
    "id": "r254_04C9",
    "addr": "04C9",
    "size": 30,
    "jp": "レジ－ナ{nl}「まて ケッテリ！{page}",
-   "en": ""
+   "en": "Regina{nl}\"Wait, Ketteri!{page}"
   },
   {
    "id": "r254_04EF",
    "addr": "04EF",
    "size": 28,
    "jp": "メイ{nl}「レジ－ナ 危険よ！{page}",
-   "en": ""
+   "en": "Mei{nl}\"Regina, it's dangerous!{page}"
   },
   {
    "id": "r254_051A",
    "addr": "051A",
    "size": 52,
    "jp": "ボルグ{nl}「なんだ この邪悪で強大な{nl} 力は・・・！{page2}",
-   "en": ""
+   "en": "Borg{nl}\"What is this evil, mighty power...!{page2}"
   }
  ]
 }

@@ -11,63 +11,63 @@
    "addr": "008A",
    "size": 388,
    "jp": "ユ－リ{nl}「いいところへきてくれた。{nl} クルト{wait}{wait}{wait}{wait} そして レジ－ナ殿。{page}「レジ－ナ殿を たずねて{nl} グルド騎士の リダ－ル殿が{nl} ここへ きてくれている。{page}「彼もまた 枢機卿の独裁を{nl} 打ち破ろうと いろいろと{nl} 手を つくしてきたというのだ。{page}「きみ達のことを 話しているうちに{nl} われわれに 貴重な擾報を{nl} もたらしてくれたのだが・・・{page} う－ん・・・{nl} ドラゴンの涙とは・・・。",
-   "en": ""
+   "en": "Yuri{nl}\"You came at a good time.{nl} Kurt,{wait}{wait}{wait}{wait} and Regina-dono.{page}\"Lidar-dono, a knight of Guld, has come{nl} here looking for Regina-dono.{page}\"He too, he says, has done all he can to{nl} overthrow the Cardinal's tyranny.{page}\"While we talked about you, he brought{nl} us valuable news...{page} Hmmm... A Dragon Tear..."
   },
   {
    "id": "r255_0214",
    "addr": "0214",
    "size": 168,
    "jp": "ユ－リ{nl}「ドラゴンの涙を 扉に使えば{nl} 城攻めを 始められるのか！？{page}「しかし ドラゴンの涙とは{nl} いったい どこにあるのだ。{page}「君たち なにか{nl} 心当たりはあるかい？",
-   "en": ""
+   "en": "Yuri{nl}\"If we use a Dragon Tear on the door,{nl} we can start the siege?!{page}\"But where on earth is a Dragon Tear?{page}\"Do you have any idea?"
   },
   {
    "id": "r255_02C2",
    "addr": "02C2",
    "size": 100,
    "jp": "ユ－リ{nl}「なに？ こころあたりがある！？{page} たのむ なんとしても手に入れて{nl} ここへ とどけてくれ。",
-   "en": ""
+   "en": "Yuri{nl}\"What? You have an idea?!{page} Please, get it whatever it takes and{nl} bring it here."
   },
   {
    "id": "r255_032C",
    "addr": "032C",
    "size": 64,
    "jp": "ユ－リ{nl}「グルド城を 攻略できなけければ{nl} 戦争は終らないのだ。",
-   "en": ""
+   "en": "Yuri{nl}\"Unless we take Guld Castle, the war{nl} won't end."
   },
   {
    "id": "r255_0370",
    "addr": "0370",
    "size": 70,
    "jp": "ユ－リ{nl}「そうか・・・ しかし なんとか{nl} 探し出せないものだろうか？",
-   "en": ""
+   "en": "Yuri{nl}\"I see... But can't we find it somehow?"
   },
   {
    "id": "r255_03B8",
    "addr": "03B8",
    "size": 238,
    "jp": "ユ－リ{nl}「ドラゴンの涙を 見つけたのか！！{page} リダ－ル殿が しらせてくれた{nl} 擾報どおりなら 城の扉を破壊し{nl} 攻撃を始めることができる。{page}{FB00}「たぶん きびしい{nl} 戦いになるはずだ。{page} きみたちは 戦いのための{nl} 準備は すんでいるかね？",
-   "en": ""
+   "en": "Yuri{nl}\"You found the Dragon Tear!!{page} If Lidar-dono's news is right, we can{nl} break the castle door and begin the{nl} attack.{page}{FB00}\"It will probably be a hard battle.{page} Are you ready for the fight?"
   },
   {
    "id": "r255_04AC",
    "addr": "04AC",
    "size": 88,
    "jp": "「おそらく グルドの最後の{nl} 抵抗にあうだろう。{page}「万全の 準備は{nl} できているのだね？",
-   "en": ""
+   "en": "\"We'll likely meet Guld's last resistance.{page}\"You're fully prepared, then?"
   },
   {
    "id": "r255_050C",
    "addr": "050C",
    "size": 82,
    "jp": "「よし この戦争の{nl} 決着をつける時がきた！{page}{FB00}「グルド城の攻撃を 開始する！！{page2}",
-   "en": ""
+   "en": "\"Good. The time has come to settle this{nl} war!{page}{FB00}\"Begin the attack on Guld Castle!!{page2}"
   },
   {
    "id": "r255_056A",
    "addr": "056A",
    "size": 50,
    "jp": "ユ－リ{nl}「きみたち もう{nl} 準備は できたのかね。",
-   "en": "",
+   "en": "Yuri{nl}\"Are you ready yet?",
    "reached": false
   },
   {
@@ -75,77 +75,77 @@
    "addr": "05A6",
    "size": 74,
    "jp": "「そうか {wait}{wait}{wait}{nl} では 早く準備をととのえて{nl} もどってきてくれたまえ。",
-   "en": ""
+   "en": "\"I see. {wait}{wait}{wait}Then get ready quickly{nl} and come back."
   },
   {
    "id": "r255_05F8",
    "addr": "05F8",
    "size": 226,
    "jp": "フェ－ベンネルス{nl}「ドラゴンか{wait}・{wait}・{wait}・{page}「ドラゴンと言えば{nl} どこかに ドラゴンについて{nl} 書かれた本が あったはずじゃ。{page}「あれは ドラゴンに会うために{nl} 必要なことが 書かれていたはず{nl} さて どこの図書館じゃったか。",
-   "en": ""
+   "en": "Febennels{nl}\"A dragon{wait}.{wait}.{wait}.{page}\"Speaking of dragons, there should be a{nl} book about dragons somewhere.{page}\"It should tell what is needed to meet a{nl} dragon. Now, which library was it?"
   },
   {
    "id": "r255_06E2",
    "addr": "06E2",
    "size": 186,
    "jp": "スヴァルト{nl}「う－ん・・・・。{page}「あの城門を 打ち破って{nl} 中に 攻めこまなければ{nl} 城は 攻めきれないだろう。{page}「むかし あの城で{nl} くらしていたから わかるが{nl} 城の守りは 固いよ。",
-   "en": ""
+   "en": "Svart{nl}\"Hmmm.....{page}\"Unless we break that castle gate and{nl} storm inside, we can't take the castle.{page}\"I lived in that castle once, so I know.{nl} Its defenses are strong."
   },
   {
    "id": "r255_079E",
    "addr": "079E",
    "size": 142,
    "jp": "スヴァルト{nl}「ドラゴン皮を使った扉は{nl} ちょっと やっかいだな。{page}「魔法や ふつうの武器の{nl} 攻撃なんかでは かんたんに{nl} はじいてしまうぞ。",
-   "en": ""
+   "en": "Svart{nl}\"A door made with dragon hide is a bit{nl} of a problem.{page}\"Magic and ordinary weapons just{nl} bounce off it."
   },
   {
    "id": "r255_0834",
    "addr": "0834",
    "size": 186,
    "jp": "スレ－ク{nl}「よう あんたたちか。{page} それだけの装備なら わざわざ{nl} 支給をうけることもないな。{page}{FB00}「今まで 勇気と擾熱だけで{nl} がんばってくれた仲間のために{nl} 装備をかき集めてきたんだ。",
-   "en": ""
+   "en": "Sleek{nl}\"Oh, it's you.{page} With gear like that, you don't need any{nl} handed out.{page}{FB00}\"I scraped together gear for our{nl} friends, who've gotten by on courage{nl} and spirit till now."
   },
   {
    "id": "r255_08F0",
    "addr": "08F0",
    "size": 144,
    "jp": "スレ－ク{nl}「カブトとヨロイぐらいの{nl} もんなんだがね。{page}「しっかり シルヴェルの{nl} 青色に 仕上げてあるから{nl} みんな よろこんでるみたいだぜ。",
-   "en": ""
+   "en": "Sleek{nl}\"Just helmets and armor, mind.{page}\"They're finished in Silvel blue, so{nl} everyone seems pleased."
   },
   {
    "id": "r255_098C",
    "addr": "098C",
    "size": 228,
    "jp": "リダ－ル{nl}「きみが クルト君か。{page} よく今日まで レジ－ナ様を{nl} 守ってくれた。{page}「グルド騎士団を代表して{nl} 礼を 言わせてくれたまえ。{page}「もっとも{nl} いまでは 枢機卿に{nl} あやつられていない 騎士は{page} わたしぐらいのものだが。",
-   "en": ""
+   "en": "Lidar{nl}\"So you are Kurt.{page} You have protected Regina-sama well{nl} until today.{page}\"Let me thank you on behalf of the{nl} Guld knights.{page}\"Though these days, the only knight not{nl} controlled by the Cardinal{page} is about me alone."
   },
   {
    "id": "r255_0A76",
    "addr": "0A76",
    "size": 532,
    "jp": "リダ－ル{nl}「レジ－ナ様が この国を出て{nl} しばらくすると・・・。{page}「枢機卿のケッテリは{nl} その怪しげな力を 今まで以上に{nl} ふるいだしたのです。{page}「王様に会うにも 枢機卿の許可が{nl} いるようになり・・・・。{page}「城の門に ドラゴンの皮を使って{nl} 城内に 魔法の結界まで{nl} 作り出だしたのも そのころです。{page}{FB00}「わたしが 手をつくして{nl} しらべたところでは・・・{page}「ドラゴンの涙という 品物があれば{nl} 城門の扉を破ることができると{nl} わかったのですが。{page}「その ドラゴン涙が どこにいけば{nl} 手に入るのかまでは{nl} わからなかったのです。",
-   "en": ""
+   "en": "Lidar{nl}\"A while after Regina-sama left this{nl} country...{page}\"Cardinal Ketteri began to wield his{nl} strange power more than ever.{page}\"Even seeing the King required the{nl} Cardinal's leave....{page}\"It was then too that he put dragon{nl} hide on the castle gate and made a{nl} magic barrier inside the castle.{page}{FB00}\"From what I found, doing all I could...{page}\"I learned that with an item called the{nl} Dragon Tear, the castle gate could be{nl} broken.{page}\"But where to get that Dragon Tear, I{nl} could not find out."
   },
   {
    "id": "r255_0C90",
    "addr": "0C90",
    "size": 134,
    "jp": "リダ－ル{nl}「グルド兵士の目を覚ますことさえ{nl} できれば・・・。{page}「彼らとも いっしょに{nl} 枢機卿の独裁を 倒すことが{nl} できるのだが。",
-   "en": ""
+   "en": "Lidar{nl}\"If only I could wake the Guld soldiers...{page}\"Then we could overthrow the{nl} Cardinal's tyranny together with them."
   },
   {
    "id": "r255_0D18",
    "addr": "0D18",
    "size": 44,
    "jp": "リダ－ル{nl}「レジ－ナ様{nl} よくぞ ご無事で。",
-   "en": ""
+   "en": "Lidar{nl}\"Regina-sama, I'm so glad you are safe."
   },
   {
    "id": "r255_0D46",
    "addr": "0D46",
    "size": 150,
    "jp": "リダ－ル{nl}「ラバン将軍のこと聞いております{nl} おしい男を亡くしました。{page}「しかし あの男は{nl} あのようにしか 生きられない{nl} 自分を知っていたのです。",
-   "en": "",
+   "en": "Lidar{nl}\"I have heard about General Laban. We{nl} have lost a good man.{page}\"But that man knew he could live no{nl} other way.",
    "reached": false
   },
   {
@@ -153,21 +153,21 @@
    "addr": "0DE4",
    "size": 128,
    "jp": "「わずかなキズも{nl} 戦場では いのちとり。{page}{FB00}「ここでは みなさまの{nl} 回復と 魔法の合成について{nl} お力になれると思います。{page}",
-   "en": ""
+   "en": "\"On the battlefield, even a small wound{nl} can kill.{page}{FB00}\"Here, I believe I can help you with{nl} healing and spell synthesis.{page}"
   },
   {
    "id": "r255_0E6F",
    "addr": "0E6F",
    "size": 88,
    "jp": "「この エットミランシェルに{nl} 戦争をはじめた グルドリ－ケに{nl} 味方する者はいません。",
-   "en": ""
+   "en": "\"No one in Ettmiranshel will side with{nl} Guldrike, which started this war."
   },
   {
    "id": "r255_0EC9",
    "addr": "0EC9",
    "size": 178,
    "jp": "「このグルド城も 包囲されては{nl} 落城以外の道はないのです。{page}「もう どこからも 援軍は{nl} こないのですから。{page}「もんだいは 城攻めが{nl} どれだけ 長引くことに{nl} なるかですね。",
-   "en": ""
+   "en": "\"Once surrounded, Guld Castle has no{nl} way but to fall.{page}\"No help will come from anywhere now.{page}\"The question is how long the siege will{nl} drag on."
   }
  ]
 }
