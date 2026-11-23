@@ -11,21 +11,21 @@
    "addr": "0080",
    "size": 70,
    "jp": "「むこうへ抜ける道が{nl} 半日ぐらい ふさがったって{nl} かまわないだろ？",
-   "en": ""
+   "en": "\"So the way through is blocked for half{nl} a day. What's the harm?"
   },
   {
    "id": "r096_00CC",
    "addr": "00CC",
    "size": 182,
    "jp": "「まぁ いいじゃないか{nl} いそぎのようじは ないんだろ？{nl} {wait}{wait}のんびりしょうぜ。{page}「世の中が ひっくり返るような{nl} ことは おきないぜ{wait}・{wait}・{wait}・{wait}・{nl} しばらくはな へっへっへ。",
-   "en": ""
+   "en": "\"Aw, what's the hurry? You've got{nl} nothing urgent, right? {wait}{wait}Take it easy.{page}\"Nothing's gonna turn the world upside{nl} down{wait}.{wait}.{wait}.{wait}.{wait} not for a while. Heh{nl} heh heh."
   },
   {
    "id": "r096_0184",
    "addr": "0184",
    "size": 74,
    "jp": "「逃げてる シルヴェル兵を{nl} ２・３人 見つけてきな{nl} こづかい やるぜ。",
-   "en": ""
+   "en": "\"Find me two or three runaway Silvel{nl} soldiers and I'll give you some pocket{nl} money."
   },
   {
    "id": "r096_01DA",

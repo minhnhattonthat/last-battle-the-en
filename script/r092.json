@@ -32,35 +32,35 @@
    "addr": "0229",
    "size": 74,
    "jp": "「こんな 平和な時代に{nl} 武器なんぞ作って{nl} なんに 使うんじゃろうのぅ？",
-   "en": ""
+   "en": "\"In such peaceful times, what would{nl} anyone want with weapons, eh?"
   },
   {
    "id": "r092_0275",
    "addr": "0275",
    "size": 92,
    "jp": "「ちょいと前に ユ－リ様から{nl} 大急ぎで 武器や 防具を{nl} 大量に作ってほしいといわれてな。",
-   "en": ""
+   "en": "\"A little while back, Yuri-sama asked us{nl} to make lots of weapons and armor in a{nl} big hurry."
   },
   {
    "id": "r092_02D3",
    "addr": "02D3",
    "size": 208,
    "jp": "「武器を 作ったはいいが{nl} シルヴェル王国は もう{nl} なくなってしまったからのぅ{page}{FB00}「いまから 思えば{nl} グルドとの 戦いに備えての{nl} 話だったんじゃろうが・・・{page}「あの 品物は{nl} どうなったんじゃろうのぅ。",
-   "en": ""
+   "en": "\"We made the weapons, but the Silvel{nl} kingdom is gone now, eh.{page}{FB00}\"Thinking back, it must have been to get{nl} ready for war with Guld...{page}\"I wonder what became of those goods,{nl} eh."
   },
   {
    "id": "r092_03A5",
    "addr": "03A5",
    "size": 68,
    "jp": "「はぁ・・・・。{page} こんな 世の中になると{nl} ためいきしかでんのぅ。",
-   "en": ""
+   "en": "\"Sigh....{page} In a world like this, all I can do is sigh,{nl} eh."
   },
   {
    "id": "r092_03EB",
    "addr": "03EB",
    "size": 132,
    "jp": "「ワシのことは いいんじゃ{page} 二人の孫娘の ことだけが{nl} 気がかりじゃ・・・・。{page}{FB00}「だれか はやく{nl} ヨメにもらってくれんかのぅ。",
-   "en": ""
+   "en": "\"Never mind me.{page} It's my two granddaughters I worry{nl} about....{page}{FB00}\"If only someone would hurry up and{nl} marry them, eh."
   }
  ]
 }

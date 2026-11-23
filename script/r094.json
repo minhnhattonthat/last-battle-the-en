@@ -11,161 +11,161 @@
    "addr": "00C2",
    "size": 126,
    "jp": "「なんだい あんた。{nl} 剣を作るところを 見るのは{nl} 初めてかい？{page}「見てるだけなら かまわんが{nl} じゃまは しないでくれよ。",
-   "en": ""
+   "en": "\"What's this? First time seeing a sword{nl} being made?{page}\"Watching is fine, but don't get in the{nl} way."
   },
   {
    "id": "r094_014A",
    "addr": "014A",
    "size": 108,
    "jp": "「お城からの 武器の注文で{nl} みんな いそがしいからな。{page}「道具屋のじいさんの ところにでも{nl} いってみな。",
-   "en": ""
+   "en": "\"Everyone's busy with the castle's{nl} weapon order.{page}\"Try the old man at the item shop."
   },
   {
    "id": "r094_01BC",
    "addr": "01BC",
    "size": 62,
    "jp": "「武器なんか 作りたくないが{nl} これも仕事だ しょうがないさ。",
-   "en": ""
+   "en": "\"I don't want to make weapons, but it's{nl} work. Can't be helped."
   },
   {
    "id": "r094_01FC",
    "addr": "01FC",
    "size": 56,
    "jp": "「火のけのない仕事場は{nl} とっても さびしいところだな。",
-   "en": ""
+   "en": "\"A workshop with no fire in it is a lonely{nl} place."
   },
   {
    "id": "r094_0236",
    "addr": "0236",
    "size": 146,
    "jp": "「鉱山のトンネルから{nl} グルド兵が いなくなったら{page} むこうの ラントブルク村へ{nl} 逃げようか。{page}「ここじゃ・・・{nl} もう仕事は できないもんな。",
-   "en": ""
+   "en": "\"Once the Guld soldiers leave the mine{nl} tunnel,{page} maybe I'll run off to Landburg village{nl} on the other side.{page}\"Here... there's no more work to be{nl} done."
   },
   {
    "id": "r094_02CA",
    "addr": "02CA",
    "size": 48,
    "jp": "「この 仕事場じゃないと{nl} 落ちつかなくてねえ。",
-   "en": ""
+   "en": "\"I can't settle down anywhere but this{nl} workshop."
   },
   {
    "id": "r094_02FC",
    "addr": "02FC",
    "size": 140,
    "jp": "「トンネルを ふさいでいた{nl} 兵士たちは ひきあげたけど。{page} ラントブルク村にも{nl} グルド兵が いるのなら{nl} むこうへ 逃げてもおんなじか。",
-   "en": ""
+   "en": "\"The soldiers who blocked the tunnel{nl} have pulled out.{page} But if there are Guld soldiers in{nl} Landburg too, running there is just the{nl} same."
   },
   {
    "id": "r094_0390",
    "addr": "0390",
    "size": 44,
    "jp": "「いまは とっても{nl} い・そ・が・し・い～。",
-   "en": ""
+   "en": "\"Right now I'm so-o bu-sy~."
   },
   {
    "id": "r094_03BE",
    "addr": "03BE",
    "size": 48,
    "jp": "「まだ まだ とっても{nl} い・そ・が・し・い～。",
-   "en": ""
+   "en": "\"I'm still so-o bu-sy~."
   },
   {
    "id": "r094_03FE",
    "addr": "03FE",
    "size": 98,
    "jp": "「なんだ おまえ{nl} ここで 働きたいのか？{page}「ちがう？{nl} 働きたいわけじゃない？{page}「あっ {wait}そう。",
-   "en": ""
+   "en": "\"What, you want to work here?{page}\"No? You don't want work?{page}\"Oh, {wait}okay."
   },
   {
    "id": "r094_046A",
    "addr": "046A",
    "size": 34,
    "jp": "「仕事中だ{nl} ほか 行ってくんな。",
-   "en": ""
+   "en": "\"I'm working. Go somewhere else."
   },
   {
    "id": "r094_0496",
    "addr": "0496",
    "size": 82,
    "jp": "「じまん話で よければ{nl} いくらでもしてやるぞ。{page} ただし {wait}ヒマな時にしてくれ。",
-   "en": ""
+   "en": "\"I'll tell you all the brag stories you{nl} like.{page} Just {wait}wait till I'm free."
   },
   {
    "id": "r094_04EA",
    "addr": "04EA",
    "size": 180,
    "jp": "「なれない剣を ふりまわすより{nl} 剣を作ることのほうが{nl} みんなの役にたてるからな。{page}「オレは 村に残って{nl} 心をこめて 剣を作るのさ。{page}{FB00}「人それぞれに{nl} 戦い方は あるものさ。",
-   "en": ""
+   "en": "\"Rather than swing a sword I'm not{nl} used to, I'm more use to everyone{nl} making swords.{page}\"So I stay in the village and put my{nl} heart into making swords.{page}{FB00}\"Everyone has their own way to fight."
   },
   {
    "id": "r094_05A0",
    "addr": "05A0",
    "size": 70,
    "jp": "「いさましく{nl} 剣を ふりまわすだけが{nl} 戦いじゃあ ないってことさ。",
-   "en": ""
+   "en": "\"Bravely swinging a sword isn't the only{nl} way to fight, see."
   },
   {
    "id": "r094_05EC",
    "addr": "05EC",
    "size": 136,
    "jp": "「この村からいった仲間は{nl} いい仕事をしたそうじゃないか。{page}「ベルグデレン城塞の どてっぱらに{nl} 穴あけたんだって？{page} やってくれるぜ！",
-   "en": ""
+   "en": "\"I hear the folks who went from this{nl} village did a fine job.{page}\"Blew a hole right in the belly of{nl} Bergdelen Fortress, did they?{page} They sure showed 'em!"
   },
   {
    "id": "r094_0676",
    "addr": "0676",
    "size": 56,
    "jp": "「あの子は ほっときな{nl} てれてるだから・・・あれでね。",
-   "en": ""
+   "en": "\"Leave that one be. That's how she acts{nl} when she's shy."
   },
   {
    "id": "r094_06BA",
    "addr": "06BA",
    "size": 158,
    "jp": "「人は 少なくなったけど{nl} そのぶん あたしが{nl} がんばるから いいの！{page}「しばらく なまけてたから{nl} ちょっと 太ったみたいだし{wait}{wait}{nl} ちょ－ど いいわよ。",
-   "en": ""
+   "en": "\"There are fewer people now, but I'll{nl} just work that much harder!{page}\"I've been lazy for a while, and I think I{nl} got a little fat{wait}{wait}, so it's just right."
   },
   {
    "id": "r094_075E",
    "addr": "075E",
    "size": 124,
    "jp": "「太ったって 言ったって！{nl} ほんの ちょっとよ！ちょっと！！{nl} わずかな もんなんだから！{page}{FB00}「さ－ おしごと おしごと！",
-   "en": ""
+   "en": "\"I said fat, but just a tiny bit! A tiny{nl} bit!! Hardly anything at all!{page}{FB00}\"Right, back to work, back to work!"
   },
   {
    "id": "r094_07E0",
    "addr": "07E0",
    "size": 74,
    "jp": "「ちょっとぐらい 太ったって{nl} 結婚して ほしいって{nl} 人がいるんだから！",
-   "en": ""
+   "en": "\"Even if I got a little fat, there's{nl} someone who wants to marry me!"
   },
   {
    "id": "r094_082C",
    "addr": "082C",
    "size": 132,
    "jp": "「まったく この村の男たちは{nl} あんな所まで いきながら{wait}・{wait}・{wait}・{wait}{nl} なに 考えているのかしら！{page}{FB00}「もう {wait}{wait}知らないからッ。",
-   "en": ""
+   "en": "\"Honestly, the men of this village went{nl} all the way out there{wait}.{wait}.{wait}.{wait} and{nl} what were they thinking?!{page}{FB00}\"I don't care {wait}{wait}anymore!"
   },
   {
    "id": "r094_08B2",
    "addr": "08B2",
    "size": 80,
    "jp": "「なに ぷりぷりしてるのかって！？{nl} {wait}{wait}立て札を見てくれれば{nl} わかるわよ！！",
-   "en": ""
+   "en": "\"Why am I so huffy?! {wait}{wait}Read the{nl} signboard and you'll see!!"
   },
   {
    "id": "r094_090E",
    "addr": "090E",
    "size": 48,
    "jp": "「若いモンは 戦場にいって{nl} しまったのぅ・・。",
-   "en": ""
+   "en": "\"The young ones have all gone off to{nl} the battlefield.."
   },
   {
    "id": "r094_0940",
    "addr": "0940",
    "size": 98,
    "jp": "「わしだって こうして{nl} 元気に 働いているんじゃ。{page}「みんなも 元気で帰ってきて{nl} ほしいのぅ。",
-   "en": ""
+   "en": "\"Even I am working hard like this.{page}\"I hope they all come home safe and{nl} sound, eh."
   }
  ]
 }
