@@ -18,35 +18,35 @@
    "addr": "017B",
    "size": 100,
    "jp": " ・・・と言いたいが{nl} 今は グルドに支配された{nl} くだらん町さ。{page} 早く 出てったほうが いいぜ。",
-   "en": ""
+   "en": "...is what I'd like to say, but now it's a{nl}lousy town run by Guld.{page}You'd better get out quick."
   },
   {
    "id": "r146_01E5",
    "addr": "01E5",
    "size": 124,
    "jp": "「今のハンスタッドは{nl} グルド軍の補給港さ。{page} ここからシルヴェル占領軍に{nl} 物資を運んでるんだ。{nl} 擾けない話だなあ・・・",
-   "en": ""
+   "en": "\"Hanstad's a supply port for the Guld{nl} army now.{page} From here they ship goods to the army{nl} holding Silvel. What a pitiful state..."
   },
   {
    "id": "r146_0263",
    "addr": "0263",
    "size": 78,
    "jp": "「ここは いい町だよ。{nl} いろんな人が集って{nl} 商売したり 船で旅に出るのさ。",
-   "en": ""
+   "en": "\"This is a good town. All kinds of people{nl} gather to trade or set off on voyages."
   },
   {
    "id": "r146_02B9",
    "addr": "02B9",
    "size": 124,
    "jp": "ロッタ{nl}「ぼくね ほんとは{nl} どこかの王子なんだ。{page} 父ちゃんや 母ちゃんは{nl} なんにも言わないけど{nl} ぼく 知ってるんだ。",
-   "en": ""
+   "en": "Lotta{nl}\"You know, I'm really a prince from{nl} somewhere.{page} Dad and Mom never say anything, but I{nl} know."
   },
   {
    "id": "r146_0337",
    "addr": "0337",
    "size": 52,
    "jp": " だからね{nl} いつか お城から{nl} 迎えが来るんだよ。",
-   "en": "",
+   "en": "So, you see, one day someone will come{nl}from the castle to get me.",
    "reached": false
   },
   {
@@ -54,203 +54,203 @@
    "addr": "036D",
    "size": 178,
    "jp": "ロッタ{nl}「でも お城から{nl} 迎えが来たら困るな。{page} だって ぼくが いなくなると{nl} 父ちゃん 母ちゃんが{nl} さみしがるもん。{page} だから ぼく ず－っと{nl} ここにいて あげるんだ。",
-   "en": ""
+   "en": "Lotta{nl}\"But if they come from the castle,{nl} that'd be a problem.{page} 'Cause if I go away, Dad and Mom will{nl} be lonely.{page} So I'll stay here forever for them."
   },
   {
    "id": "r146_043D",
    "addr": "043D",
    "size": 100,
    "jp": "「ほう・・空がはれてきたな。{nl} 今夜は 星が きれいだ。{page} 明日は きっと{nl} いい航海が できるぞ。",
-   "en": ""
+   "en": "\"Oh.. the sky's clearing up. The stars will{nl} be pretty tonight.{page} Tomorrow will be good sailing for sure."
   },
   {
    "id": "r146_04A5",
    "addr": "04A5",
    "size": 82,
    "jp": "「う～ん・・・{nl} いやな風が出てきたな。{page} これは少し{nl} 海が荒れるかもしれんぞ。",
-   "en": ""
+   "en": "\"Hmmm... A nasty wind's come up.{page} The sea may get a bit rough."
   },
   {
    "id": "r146_04FB",
    "addr": "04FB",
    "size": 108,
    "jp": "「静かだ・・・{nl} こんなに 海が静かに{nl} なるなんて・・・{page} 何か悪いことの{nl} 前ぶれでなければ いいが・・",
-   "en": ""
+   "en": "\"So quiet... For the sea to go this quiet...{page} I hope it's not a sign of something bad.."
   },
   {
    "id": "r146_0573",
    "addr": "0573",
    "size": 108,
    "jp": "「ウィ－ッ ヒック！{page} けっ！ グルドが なんでえ！{wait}{wait}{nl} すぐに 剣ふりまわして{nl} いばりやがってよう！{page}",
-   "en": ""
+   "en": "\"Urrp, hic!{page} Bah! Who cares about Guld! {wait}{wait}Always{nl} waving swords around and throwing{nl} their weight about!{page}"
   },
   {
    "id": "r146_05DF",
    "addr": "05DF",
    "size": 100,
    "jp": "「ハンスタッドの港はなあ{nl} おれたち 船乗りの もんだ！{wait}{wait}{wait}{wait}{nl} グルドなんかの もんじゃね－ぞ！",
-   "en": ""
+   "en": "\"Hanstad's port belongs to us sailors!{nl} {wait}{wait}{wait}{wait}Not to the likes of Guld!"
   },
   {
    "id": "r146_0649",
    "addr": "0649",
    "size": 80,
    "jp": "「グルドのやつら{nl} 港を かりるだけだなんて{nl} 調子のいいこと 言いやがって！{page}",
-   "en": ""
+   "en": "\"Those Guld rats said they were only{nl} borrowing the port. Smooth talkers!{page}"
   },
   {
    "id": "r146_06A5",
    "addr": "06A5",
    "size": 56,
    "jp": "「こっから先は 港だよ。{nl} ウロチョロしてっと危ねえよ。",
-   "en": ""
+   "en": "\"The port's past here. Dangerous to{nl} wander around."
   },
   {
    "id": "r146_06DF",
    "addr": "06DF",
    "size": 56,
    "jp": "「ちぇっ！{nl} こんな夜に 見はりなんて{nl} ツイてね－や。",
-   "en": ""
+   "en": "\"Tch! Guard duty on a night like this.{nl} What lousy luck."
   },
   {
    "id": "r146_0719",
    "addr": "0719",
    "size": 128,
    "jp": "「今ごろ みんな{nl} 酒場で のんでんだろ－なあ。{page} おいらも ラム酒をいっぱい{nl} やりてえなあ・・・{wait}{wait}{wait}{wait}{nl} ちくしょ－っ！！",
-   "en": ""
+   "en": "\"Everybody's drinking at the tavern{nl} right now, I bet.{page} I could use a mug of rum too...{nl} {wait}{wait}{wait}{wait}Dammit!!"
   },
   {
    "id": "r146_07A1",
    "addr": "07A1",
    "size": 30,
    "jp": "「やっぱり 港は いいよなあ。",
-   "en": ""
+   "en": "\"Ports are the best, after all."
   },
   {
    "id": "r146_07C1",
    "addr": "07C1",
    "size": 44,
    "jp": "「潮風って いい においだろ？{nl} なっなっ？",
-   "en": ""
+   "en": "\"The sea breeze smells nice, right?{nl} Right?"
   },
   {
    "id": "r146_080B",
    "addr": "080B",
    "size": 92,
    "jp": "「えい ほっ ほい！{wait}{wait}{nl} えい ほっ ほい！{page}「ほら 出港の邪魔だ！{nl} どいた どいた！！",
-   "en": ""
+   "en": "\"Heave, ho, hey! {wait}{wait}Heave, ho, hey!{page}\"Hey, you're in the way of the sailing!{nl} Move it, move it!!"
   },
   {
    "id": "r146_086B",
    "addr": "086B",
    "size": 104,
    "jp": "「今度の航海は{nl} きっと いい商売になるぜ。{page}「そうなりゃ おれたちも{nl} たんまり もうかるってわけさ！",
-   "en": ""
+   "en": "\"This voyage will be good business for{nl} sure.{page}\"Then we'll make a pile too!"
   },
   {
    "id": "r146_08D7",
    "addr": "08D7",
    "size": 126,
    "jp": "「いや－っ このあいだは{nl} あぶなかったよ。{page}「急に 嵐に なりやがってよ{nl} さすがの おれさまも{nl} もう だめかと思ったぜ。",
-   "en": ""
+   "en": "\"Phew, that was a close one the other{nl} day.{page}\"A storm blew up all of a sudden. Even I{nl} thought we were done for."
   },
   {
    "id": "r146_0973",
    "addr": "0973",
    "size": 94,
    "jp": "「ラムを のもうよ{nl} ジャンジャン のもう！{page} それ イカリを あげろ{wait}{wait}{nl} 出港だあ ほい！",
-   "en": ""
+   "en": "\"Let's drink rum, drink it down!{page} Now raise the anchor,{wait}{wait} we're setting{nl} sail, hey!"
   },
   {
    "id": "r146_09D5",
    "addr": "09D5",
    "size": 132,
    "jp": "「おいらだって いまに{nl} りっぱな船長に なってやるんだ。{page}「そんで 西の港の{nl} かわいい あの娘を{nl} おいらの ヨメさんにするぞ！",
-   "en": ""
+   "en": "\"I'll be a fine captain someday too.{page}\"Then I'll make that cute girl at the{nl} west port my wife!"
   },
   {
    "id": "r146_0A5D",
    "addr": "0A5D",
    "size": 120,
    "jp": "「おいら船乗り 海の男さ{nl} 港で かわいい あの娘が{nl} まってるよ ほい！{page} 海が 泣いたら{nl} あの娘も 泣くよ ほい！",
-   "en": ""
+   "en": "\"I'm a sailor, a man of the sea. A cute{nl} girl waits at port, hey!{page} When the sea weeps, she weeps too,{nl} hey!"
   },
   {
    "id": "r146_0ADD",
    "addr": "0ADD",
    "size": 82,
    "jp": "リリヤ{nl}「ふふふ{nl} ロッタのおばかさん。{page}「ロッタが 王子様のはず{nl} ないのにね。",
-   "en": ""
+   "en": "Lilja{nl}\"Tee hee, silly Lotta.{page}\"As if Lotta could be a prince."
   },
   {
    "id": "r146_0B31",
    "addr": "0B31",
    "size": 154,
    "jp": "リリヤ{nl}「ロッタは ほんとは{nl} とっても あまえんぼなのよ。{page}「お父さん お母さんが いないと{nl} ひとりじゃ 寝られないの。{nl} あたし 知ってるんだから。",
-   "en": ""
+   "en": "Lilja{nl}\"Lotta's really a big baby.{page}\"He can't sleep alone without his dad{nl} and mom. I know it."
   },
   {
    "id": "r146_0BD9",
    "addr": "0BD9",
    "size": 80,
    "jp": "「なんだっ きさまら！{nl} ここは 我がグルド軍の港だ。{nl} 入ることは ゆるさん！",
-   "en": ""
+   "en": "\"What are you lot?! This is our Guld{nl} army's port. No entry!"
   },
   {
    "id": "r146_0C2B",
    "addr": "0C2B",
    "size": 62,
    "jp": "「さっさと帰れ！{nl} さもないと 囚人島送りに{nl} してやるぞ！！",
-   "en": ""
+   "en": "\"Go home now! Or I'll send you to Prison{nl} Island!!"
   },
   {
    "id": "r146_0C6B",
    "addr": "0C6B",
    "size": 116,
    "jp": "「おまえら 港で{nl} 仕事をもらおうと思って来たのか？{page} だめだ だめだ！{nl} おまえらみたいな子供じゃ{nl} 役に立たん！",
-   "en": ""
+   "en": "\"Come to the port looking for work?{page} No, no! Kids like you are no use!"
   },
   {
    "id": "r146_0CEF",
    "addr": "0CEF",
    "size": 92,
    "jp": "「うぬ なんだおまえら{nl} その反抗的な目つきは！？{page} ろくに 税金もおさめぬ{nl} クズどもが！",
-   "en": ""
+   "en": "\"Grr, what are you lot? What's that{nl} defiant look?!{page} You scum, who barely pay your taxes!"
   },
   {
    "id": "r146_0D4D",
    "addr": "0D4D",
    "size": 94,
    "jp": "「この町の連中は クズばかりだな。{nl} ろくに働きもしないで{nl} 昼間から 酒ばかりのんでやがる。",
-   "en": ""
+   "en": "\"The people of this town are nothing{nl} but scum. They barely work and drink{nl} all day long."
   },
   {
    "id": "r146_0DAD",
    "addr": "0DAD",
    "size": 104,
    "jp": "「金がほしければ{nl} 荷物運びでもして かせぐんだな。{page} それが いやなら{nl} とっとと この町を出て行け！",
-   "en": ""
+   "en": "\"If you want money, earn it hauling{nl} cargo.{page} If you don't like that, get out of this{nl} town!"
   },
   {
    "id": "r146_0E25",
    "addr": "0E25",
    "size": 120,
    "jp": "「我らグルド軍に はむかう者は{nl} 囚人島送りと 決っているんだ。{page} それがいやなら おまえらも{nl} おとなしくしていろ！！",
-   "en": ""
+   "en": "\"Anyone who defies our Guld army gets{nl} sent to Prison Island.{page} If you don't want that, you keep quiet{nl} too!!"
   },
   {
    "id": "r146_0E9F",
    "addr": "0E9F",
    "size": 100,
    "jp": "「きさまら 何をウロウロしてる！{nl} とっとと帰って働け！{page} さもないと 囚人島送りに{nl} してやるぞ！",
-   "en": ""
+   "en": "\"What are you wandering around for! Go{nl} home and work!{page} Or I'll send you to Prison Island!"
   },
   {
    "id": "r146_0F05",
    "addr": "0F05",
    "size": 140,
    "jp": "「おまえら 税金を{nl} はらいたくないなら{nl} それでも いいんだぞ。{page} 囚人島に送られた連中が{nl} うえ死にする だけだからな。{nl} はっはっは！",
-   "en": ""
+   "en": "\"If you don't want to pay taxes, that's{nl} fine too.{page} The ones sent to Prison Island will just{nl} starve to death. Hahaha!"
   }
  ]
 }

@@ -11,28 +11,28 @@
    "addr": "0098",
    "size": 62,
    "jp": "「ロッタのやつ{nl} また 王子様になった夢を{nl} 見てるようだな。",
-   "en": ""
+   "en": "\"Looks like Lotta's dreaming he's a{nl} prince again."
   },
   {
    "id": "r149_00DC",
    "addr": "00DC",
    "size": 176,
    "jp": "「ほんとは ロッタは{nl} 嵐で死んだ{nl} わしの 友だちの子なんだよ。{page} もちろん ロッタは{nl} そんなこと知らないがね。{page}「でも 今じゃ{nl} わしたちの 本当の子だと{nl} 思ってるよ。",
-   "en": ""
+   "en": "\"Truth is, Lotta is the child of a friend{nl} of mine who died in a storm.{page} Of course, Lotta doesn't know that.{page}\"But now we think of him as our own{nl} child."
   },
   {
    "id": "r149_019C",
    "addr": "019C",
    "size": 110,
    "jp": "ロッタ{nl}「あ－あ つまんないの！{page} グルドの兵隊が きてから{nl} 大好きなリリヤと{nl} 遊べなくなっちゃったんだ。",
-   "en": ""
+   "en": "Lotta{nl}\"Aw, this is so boring!{page} Since the Guld soldiers came, I can't{nl} play with Lilja, and I like her best."
   },
   {
    "id": "r149_0210",
    "addr": "0210",
    "size": 144,
    "jp": "ロッタ{nl}「リリヤ 元気かなあ・・・{page} リリヤは{nl} スレ－クさんの家の子なんだ。{page} でも今は 兵隊がいじわるして{nl} リリヤと遊ばしてくれないんだ。",
-   "en": ""
+   "en": "Lotta{nl}\"I wonder if Lilja's okay...{page} Lilja is from Sleek-san's house.{page} But now the soldiers are mean and{nl} won't let me play with her."
   }
  ]
 }

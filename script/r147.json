@@ -11,14 +11,14 @@
    "addr": "0055",
    "size": 110,
    "jp": "「スレ－クさんに お願いして{nl} 今度 ここで古道具屋を{nl} 開くことに なったんだ。{page} 用があったら来てくれよ。",
-   "en": ""
+   "en": "\"I asked Sleek-san, and now I'm opening{nl} a secondhand shop here.{page} Come by if you need anything."
   },
   {
    "id": "r147_00C9",
    "addr": "00C9",
    "size": 28,
    "jp": "「おや いらっしゃい。{wait}{wait}{page}",
-   "en": ""
+   "en": "\"Oh, welcome. {wait}{wait}{page}"
   }
  ]
 }

@@ -11,70 +11,70 @@
    "addr": "006E",
    "size": 98,
    "jp": "「おや 旅の人。{nl} この おババに何の用だい？{page} 私は 見ての通り{nl} ただのヤ－クの年よりだよ。{page}",
-   "en": ""
+   "en": "\"Oh, a traveler. What do you want with{nl} this old granny?{page} As you can see, I'm just an old Yaak{nl} woman.{page}"
   },
   {
    "id": "r151_00D4",
    "addr": "00D4",
    "size": 56,
    "jp": " 商売のことなら 下の店にいる{nl} せがれに言っとくれよ。",
-   "en": ""
+   "en": "If it's business, talk to my son in the{nl}shop downstairs."
   },
   {
    "id": "r151_0122",
    "addr": "0122",
    "size": 230,
    "jp": "「この町は グルド水軍の港に{nl} なっちまったんだ。{page} ウロウロしてると危ないよ。{nl} 兵隊に連れていかれちまうよ。{page}「どこへだって？{wait}{wait}{nl} 囚人島に{nl} 決ってるじゃないか！{page} あんただって{nl} 島流しになるのは{nl} おっかないだろ？{wait}{wait}",
-   "en": ""
+   "en": "\"This town's become a port for the Guld{nl} navy.{page} It's dangerous to wander about. The{nl} soldiers will take you away.{page}\"Where to? {wait}{wait}Prison Island, of{nl} course!{page} You'd be scared of being sent away to{nl} an island too, wouldn't you? {wait}{wait}"
   },
   {
    "id": "r151_020E",
    "addr": "020E",
    "size": 56,
    "jp": "「そうだろ{nl} だから 危ないことは{nl} しちゃいけないよ。",
-   "en": ""
+   "en": "\"That's right. So don't do anything{nl} dangerous."
   },
   {
    "id": "r151_024A",
    "addr": "024A",
    "size": 126,
    "jp": "「あんたたち 囚人島の{nl} 恐ろしさを知らないから{nl} そんなことが言えるのさ。{page} まったく 若い人は{nl} むちゃで いけないねえ。",
-   "en": ""
+   "en": "\"You can say that because you don't{nl} know how terrible Prison Island is.{page} Honestly, young people are so reckless."
   },
   {
    "id": "r151_02DA",
    "addr": "02DA",
    "size": 140,
    "jp": "「でもね 私も昔は{nl} ヤ－ク族で一番の職人と{nl} 言われてたんだよ。{page} もう 遠い遠い昔の話しだけどね。{nl} あのころが なつかしいねえ・・・{page2}",
-   "en": ""
+   "en": "\"But you know, long ago I was called{nl} the best craftsman among the Yaak.{page} That was long, long ago now. How I miss{nl} those days...{page2}"
   },
   {
    "id": "r151_0372",
    "addr": "0372",
    "size": 118,
    "jp": "「おや？ シルヴェル糸を{nl} 持ってるじゃないか！{page} でも 糸だけじゃ しかたないね。{nl} これに鳥人の羽が あればねえ。",
-   "en": ""
+   "en": "\"Oh? You've got Silvel Yarn!{page} But yarn alone is no good. If only you{nl} had a Bird Feather with it."
   },
   {
    "id": "r151_03F0",
    "addr": "03F0",
    "size": 112,
    "jp": "「おや？ 鳥人の羽を{nl} 持ってるじゃないか！{page} でも羽だけじゃ しかたないね。{nl} シルヴェル糸も なくちゃねえ。",
-   "en": ""
+   "en": "\"Oh? You've got a Bird Feather!{page} But a feather alone is no good. You{nl} need Silvel Yarn too."
   },
   {
    "id": "r151_0462",
    "addr": "0462",
    "size": 278,
    "jp": "「おや シルヴェル糸と鳥人の羽を{nl} 持ってるじゃないか！{page} その２つは 世界で１番のヨロイ{nl} ミランシェルの材料になるんだよ。{page}{FB00}「どうだね 旅の人{nl} シルヴェル糸と鳥人の羽を{nl} 私に あずけちゃくれないかい？{page} この おババが{nl} 最高のミランシェルを{nl} こしらえてあげるよ。{page}",
-   "en": ""
+   "en": "\"Oh, you've got Silvel Yarn and a Bird{nl} Feather!{page} Those two are what Miranchel, the best{nl} armor in the world, is made of.{page}{FB00}\"How about it, traveler? Will you leave{nl} the Silvel Yarn and the Bird Feather{nl} with me?{page} This old granny will make you the finest{nl} Miranchel.{page}"
   },
   {
    "id": "r151_0584",
    "addr": "0584",
    "size": 122,
    "jp": "「おや やっぱりミランシェルが{nl} ほしいのかい？{page} そんなら{nl} シルヴェル糸と 鳥人の羽を{nl} このババに あずけとくれ。{page}",
-   "en": "",
+   "en": "\"Oh, you want a Miranchel after all?{page} Then leave the Silvel Yarn and the Bird{nl} Feather with this old granny.{page}",
    "reached": false
   },
   {
@@ -82,42 +82,42 @@
    "addr": "0602",
    "size": 192,
    "jp": "「昔は いい職人が{nl} いっぱい いたよ。{page} ヤ－ク職人は 軽くて じょうぶな{nl} ヨロイ作りが 得意でね。{page} 特に ヤ－ク族にしか作れない{nl} 最上のヨロイ ミランシェルは{nl} じまんの品だったよ。",
-   "en": ""
+   "en": "\"In the old days there were lots of{nl} good craftsmen.{page} Yaak craftsmen were good at making{nl} light, sturdy armor.{page} Most of all, Miranchel, the finest armor{nl} only the Yaak could make, was our{nl} pride."
   },
   {
    "id": "r151_06C8",
    "addr": "06C8",
    "size": 58,
    "jp": " どうするね？{nl}{F600}ミランシェルを作っておくれ{nl}{F600}いらないよ",
-   "en": ""
+   "en": "What'll it be?{nl}{F600}Make me a Miranchel{nl}{F600}No, thanks"
   },
   {
    "id": "r151_0718",
    "addr": "0718",
    "size": 212,
    "jp": "「よしきた！{nl} シルヴェル糸と 鳥人の羽は{nl} たしかに あずかったよ。{page} きっと りっぱなミランシェルを{nl} こしらえて あげるからね。{page}「ただ ちょいと時間が かかるよ。{nl} しばらく よそを{nl} 見物してておくれ。",
-   "en": ""
+   "en": "\"Right you are! I've got the Silvel Yarn{nl} and the Bird Feather safe.{page} I'll make you a splendid Miranchel, you'll{nl} see.{page}\"Only, it'll take a little time. Go see the{nl} sights elsewhere for a while."
   },
   {
    "id": "r151_07F0",
    "addr": "07F0",
    "size": 42,
    "jp": "「じゃ その気になったら{nl} また おいで。",
-   "en": ""
+   "en": "\"Then come back when you're ready."
   },
   {
    "id": "r151_081C",
    "addr": "081C",
    "size": 130,
    "jp": "「あんたたち{nl} そう せかさないでおくれよ。{page}「ミランシェル作りに{nl} あせりは禁物なんだからね。{nl} まあ じっくり待ってておくれ。",
-   "en": ""
+   "en": "\"Don't rush me so.{page}\"No hurrying when making a Miranchel.{nl} Just wait patiently."
   },
   {
    "id": "r151_08AE",
    "addr": "08AE",
    "size": 76,
    "jp": "「おや あんたたちかい{page} すまないね まだなんだよ{nl} もう少し まっとくれ。",
-   "en": ""
+   "en": "\"Oh, it's you.{page} Sorry, it's not ready yet. Wait a bit{nl} longer."
   },
   {
    "id": "r151_08FC",
