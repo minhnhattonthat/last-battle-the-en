@@ -39,98 +39,98 @@
    "addr": "0473",
    "size": 588,
    "jp": "           ！うゅきんき{nl}   るれさいかっだ 城ルェヴルシ{nl}     ！！れずくうそ 軍ドルグ{page}{FB00}       じぶご まさ妃王 王{nl}    は んかきし 軍ルェヴルシ{nl}        ！！のどリ－ユ相宰{page}{FB00}    を兵ドルグ の村のこ 夜今{nl}   だま はられか るすうゅしき{nl}  いなら知をとこ の城ルェヴルシ{page2}{F9FF}{wait}{wait}{wait}きのうの夜を もって{nl}この村は グルドの支配の手を{nl}はなれました。{page}この本は このペ－ジをもって{nl}その役目を終えます。{page}ねがわくば この本が２度と{nl}同じ目的のために 開かれる{nl}ことがありませんように。{page}{FB00}この村の 新なる出発に{nl}すべての マナの加護を。",
-   "en": ""
+   "en": "!TNEGRU{nl}.nekater eltsaC levliS{nl}!!detuor ymra dluG{page}{FB00}.efas era neeuQ dna gniK{nl}si rednammoc levliS ehT{nl}!!onod-iruY rollecnahC{page}{FB00}dluG eht ekirts ew thginoT{nl}ton od yehT .ereh sreidlos{nl}.tey eltsaC levliS fo wonk{page2}{F9FF}{wait}{wait}{wait}As of last night, this village{nl}is free of Guld's rule.{page}With this page, this book's{nl}work is done.{page}I pray this book is never{nl}opened for the same purpose{nl}again.{page}{FB00}On this village's new start,{nl}the blessing of all the mana."
   },
   {
    "id": "r118_06C1",
    "addr": "06C1",
    "size": 138,
    "jp": "クルトは『破城つちのつよさ』の本を{nl}見つけて 読んだ。{page}{FB00}読みすすむ うちに{nl}シルヴェル落城の 悲しい きおくが{nl}よみがえってくる・・・。",
-   "en": ""
+   "en": "Kurt found and read the book{nl}'The Strength of Battering Rams'.{page}{FB00}As he reads on, sad memories of{nl}the fall of Silvel Castle{nl}come back to him..."
   },
   {
    "id": "r118_074D",
    "addr": "074D",
    "size": 128,
    "jp": "クルトは『ドラゴンの本』の本を{nl}手に取った。{page}{FB00}トカゲなんて 大っきらい！{nl}と すべてのペ－ジに{nl}落書きがされていて 読めない。",
-   "en": ""
+   "en": "Kurt picked up 'The Dragon Book'.{page}{FB00}Every page is scribbled over with{nl}'I HATE LIZARDS!', and he{nl}can't read it."
   },
   {
    "id": "r118_07CF",
    "addr": "07CF",
    "size": 76,
    "jp": "クルトは『エンティランの川』の{nl}本を 手に取った。{nl}{wait}{wait}{wait}{wait}読んでみますか？",
-   "en": ""
+   "en": "Kurt picked up the book{nl}'The Entiran River'.{nl}{wait}{wait}{wait}{wait}Read it?"
   },
   {
    "id": "r118_0821",
    "addr": "0821",
    "size": 140,
    "jp": "エンティランとは{nl}暴君のことである。{page}名前のゆらいのごとく この川は{nl}大雨がふると よくはんらんをおこし{nl}人ヶに ひがいとめぐみをあたえる。",
-   "en": ""
+   "en": "Entiran means tyrant.{page}True to its name, this river often{nl}floods when heavy rains fall,{nl}bringing people harm and plenty."
   },
   {
    "id": "r118_08AF",
    "addr": "08AF",
    "size": 82,
    "jp": "クルトは『大いなる巨人・エント族』{nl}の本を 手に取った。{nl}{wait}{wait}{wait}{wait}読んでみますか？",
-   "en": ""
+   "en": "Kurt picked up the book 'The{nl}Great Giants: the Ents'.{nl}{wait}{wait}{wait}{wait}Read it?"
   },
   {
    "id": "r118_0907",
    "addr": "0907",
    "size": 248,
    "jp": "エント族の姿を 見た者はいない。{nl}しかし 残された巨大な足跡により{nl}その存在を信じる者は多い。{page}足跡の中には 地下水脈をふみ抜いて{nl}できた水たまりが 水脈を通じて{nl}他の場所と つながっているらしい{page}と いうウワサもあるが・・・{nl}確認した者はいない。",
-   "en": ""
+   "en": "No one has seen an Ent. But many{nl}believe in them because of the{nl}giant footprints they left behind.{page}It is rumored that some puddles,{nl}made where a foot broke through to{nl}an underground stream, link to{page}other places through the water...{nl}but no one has confirmed it."
   },
   {
    "id": "r118_0A01",
    "addr": "0A01",
    "size": 70,
    "jp": "クルトは『成長する武器』の本を{nl}手に取った。{nl}{wait}{wait}{wait}{wait}読んでみますか？",
-   "en": ""
+   "en": "Kurt picked up the book{nl}'Weapons That Grow'.{nl}{wait}{wait}{wait}{wait}Read it?"
   },
   {
    "id": "r118_0A4D",
    "addr": "0A4D",
    "size": 180,
    "jp": "武器のなかには 持主のかくれた力を{nl}ひきだし ふつうの攻撃に魔法攻撃が{nl}加わる特別なものがある。{page}このとき 加わる魔法の攻撃は{nl}持主の成長にあわせて 強力になると{nl}いわれている 。",
-   "en": ""
+   "en": "Some special weapons draw out{nl}their owner's hidden power, adding{nl}a magic attack to normal attacks.{page}It is said this added magic{nl}attack grows stronger as{nl}its owner grows."
   },
   {
    "id": "r118_0B03",
    "addr": "0B03",
    "size": 78,
    "jp": "クルトは『ミランシェルの謎』の{nl}本を手に 取った。{nl}{wait}{wait}{wait}{wait}読んで みますか？",
-   "en": ""
+   "en": "Kurt picked up the book{nl}'The Mystery of Miranchel'.{nl}{wait}{wait}{wait}{wait}Read it?"
   },
   {
    "id": "r118_0B57",
    "addr": "0B57",
    "size": 150,
    "jp": "最強のヨロイ ミランシェル。{nl}このヨロイは 鉱石をきたえて{nl}作るにあらず。{page}鳥人の羽と シルヴェル糸によって{nl}織りあげられる 職人芸のたまもの{nl}なり。",
-   "en": ""
+   "en": "Miranchel, the strongest armor.{nl}It is not forged from ore.{page}It is the work of master crafts-{nl}men, woven from birdman feathers{nl}and Silvel thread."
   },
   {
    "id": "r118_0BEF",
    "addr": "0BEF",
    "size": 72,
    "jp": "クルトは『大ウ－ド王国史』の本を{nl}手に取った。{nl}{wait}{wait}{wait}{wait}読んでみますか？",
-   "en": ""
+   "en": "Kurt picked up the book 'A History{nl}of the Great Ude Kingdom'.{nl}{wait}{wait}{wait}{wait}Read it?"
   },
   {
    "id": "r118_0C3D",
    "addr": "0C3D",
    "size": 280,
    "jp": "・・・・・・・・・・・・・{nl}その はんえいを究めた{nl}人間族の 大ウ－ド王国も{page}デュナス王が 北にグルドリ－ケを{nl}トルン王が 南にシルヴェルリ－ケを{nl}王国より分家 建国したころより{page}きゅうそくに その勢いを失う。{page}今では その面影をエンティラン川の{nl}ほとりの遺跡に 残すのみである。",
-   "en": ""
+   "en": ".............{nl}The great human kingdom of Ude,{nl}which reached the height of glory,{page}from the time King Dunas founded{nl}Guldrike in the north and King Torn{nl}Silvelrike in the south as branches,{page}swiftly lost its strength.{page}Today only the ruins on the banks{nl}of the Entiran River remain of it."
   },
   {
    "id": "r118_0D57",
    "addr": "0D57",
    "size": 182,
    "jp": "クルトは『農業大全集』の本を{nl}手に取ろうとした{wait}{wait}{wait}{wait} が！{nl}あまりの重さに手がすべった。{page}{C013}・・・・・・・！！{page}{FB00}本は クルトの足の上に落ちた。{page}クルトの目にうっすらと 涙がにじむ",
-   "en": ""
+   "en": "Kurt tried to pick up the book{nl}'Complete Farming' {wait}{wait}{wait}{wait}but!{nl}It was so heavy his hand slipped.{page}{C013}.......!!{page}{FB00}The book fell on Kurt's foot.{page}Tears welled up faintly in Kurt's eyes."
   }
  ]
 }

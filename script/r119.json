@@ -11,196 +11,196 @@
    "addr": "0224",
    "size": 124,
    "jp": "「大きな声じゃ言えませんけどぉ{nl} あんなところに{nl} 閑所なんか 作られたせいで{page} この町の 商売のほうは{nl} さっぱりですの！",
-   "en": ""
+   "en": "\"I can't say it out loud, but since they{nl} built a checkpoint in a place like that,{page} business in this town has gone nowhere!"
   },
   {
    "id": "r119_02A2",
    "addr": "02A2",
    "size": 322,
    "jp": "「あの 閑所の扉 ごらんになった？{nl} なんて がんじょうそうな{nl} 扉なんでしょう・・・。{page}「そりゃあ あちらさんの都合だけで{nl} お作りに なったんですから{wait}{wait}{page} がんじょうな物でないと 心配だ{wait}{wait}{nl} と{wait} いうのは わかりますけどぉ。{page}「でも{wait} こちらも もっと{nl} すごいモノを ひっぱりだせば{nl} こわせるはずですわよね。",
-   "en": ""
+   "en": "\"Have you seen the checkpoint door?{nl} What a sturdy-looking door...{page}\"Well, they built it just to suit{nl} themselves,{wait}{wait}{page} so I understand they'd worry if it{nl} weren't sturdy{wait}{wait}, {wait}but still.{page}\"But{wait} if we brought out something{nl} even bigger, we could break it, surely."
   },
   {
    "id": "r119_03EC",
    "addr": "03EC",
    "size": 78,
    "jp": "「おまえなんか あの閑所の{nl} かべに 頭ぶつけて{nl} こぶこぶ頭に なっちゃえ！",
-   "en": ""
+   "en": "\"I hope you bang your head on the{nl} checkpoint wall and get a lumpy head!"
   },
   {
    "id": "r119_043C",
    "addr": "043C",
    "size": 88,
    "jp": "「わ－ん！{nl} いじめっ子！ いじめっ子！{page}{FB00}{C01C} ぽかっ！{page}{FB00}「ぶたないでよ～{wait} わ－ん！",
-   "en": ""
+   "en": "\"Waaah! Bully! Bully!{page}{FB00}{C01C} Bonk!{page}{FB00}\"Don't hit me~{wait} Waaah!"
   },
   {
    "id": "r119_0496",
    "addr": "0496",
    "size": 100,
    "jp": "「おまえの フェナムンは{nl} 『ゴブリン』だい！{nl} じゃなきゃ『いじめっ子』だい！{page}「ばか ばか～！！",
-   "en": ""
+   "en": "\"Your Fenamun is 'Goblin'! Or else it's{nl} 'Bully'!{page}\"Dummy, dummy~!!"
   },
   {
    "id": "r119_0502",
    "addr": "0502",
    "size": 86,
    "jp": "「あんた わたしより{nl} ３ヵ月も 後から生まれたのに{nl} なまいきよ！！{page}{FB00}{C01C} ぽかっ！",
-   "en": ""
+   "en": "\"You were born three whole months{nl} after me, so don't be cheeky!!{page}{FB00}{C01C} Bonk!"
   },
   {
    "id": "r119_055C",
    "addr": "055C",
    "size": 154,
    "jp": " ぽかっ！{page}{FB00}「なんて 石頭なの！{nl} 手が 痛くなっちゃったじゃない！{page}「ヤ－クの破城つち より{nl} あなたの 頭のほうが{nl} よっぽど カタイんじゃないの！",
-   "en": ""
+   "en": "Bonk!{page}{FB00}\"What a hard head! Now my hand hurts!{page}\"Your head is way harder than the Yaak{nl} battering ram!"
   },
   {
    "id": "r119_05F8",
    "addr": "05F8",
    "size": 70,
    "jp": "「ちっちゃいなりして{nl} うろちょろ うろちょろ{nl} するんじゃないわよ！",
-   "en": ""
+   "en": "\"Don't go scurrying around everywhere{nl} when you're so tiny!"
   },
   {
    "id": "r119_064A",
    "addr": "064A",
    "size": 88,
    "jp": "「隊長が グルドリ－ケへ{nl} お帰りになっている あいだは{nl} この 閑所の扉は 開かんぞ！",
-   "en": ""
+   "en": "\"While the captain is back in Guldrike,{nl} this checkpoint door will not open!"
   },
   {
    "id": "r119_06A8",
    "addr": "06A8",
    "size": 150,
    "jp": "「自分のいないあいだは マチガイの{nl} おこらぬよう 門をとじておけと{nl} 隊長に きつく言われているのだ。{page}「まぁ しばらくここは{nl} 通れないと 思え！",
-   "en": ""
+   "en": "\"The captain gave me strict orders to{nl} keep the gate shut so nothing goes{nl} wrong while he's gone.{page}\"So just assume you can't pass here for{nl} a while!"
   },
   {
    "id": "r119_0740",
    "addr": "0740",
    "size": 82,
    "jp": "「閑所は開かんと 言っておる！{page} 我が グルドのやることに{nl} さからってはいかん。",
-   "en": ""
+   "en": "\"I said the checkpoint won't open!{page} Don't go against what our Guld does."
   },
   {
    "id": "r119_0794",
    "addr": "0794",
    "size": 64,
    "jp": "「みんな 寝てるっていうのに{nl} オレ様は 門番で眠れない・・・。",
-   "en": ""
+   "en": "\"Everyone's asleep, but I'm on gate{nl} duty and can't sleep..."
   },
   {
    "id": "r119_07D6",
    "addr": "07D6",
    "size": 202,
    "jp": "「ちょっとでも{nl} 怪しいことが あったら{nl} 大声で さけんでやる！{page}「大声でさけんで 寝ている仲間を{nl} たたきおこしてやるんだ！{page}「たたきおこされた 仲間が{nl} 寝ボケて 暴れ回っても{nl} オレは しらん！",
-   "en": ""
+   "en": "\"If there's anything even a bit{nl} suspicious, I'll yell my head off!{page}\"I'll yell and wake up my sleeping mates!{page}\"And if my mates go on a rampage half{nl} asleep, not my problem!"
   },
   {
    "id": "r119_08AC",
    "addr": "08AC",
    "size": 140,
    "jp": "「・・・・・・・・・。{page}{FB00}「・・・・・・・・・！！{page}{FB00}「こら！ 門番は 話などして{nl} 見はりを おこたるような{nl} ことをしては ならんのだ！",
-   "en": ""
+   "en": "\"..........{page}{FB00}\"..........!!{page}{FB00}\"Hey! A gatekeeper mustn't neglect his{nl} watch by chatting!"
   },
   {
    "id": "r119_093E",
    "addr": "093E",
    "size": 106,
    "jp": "「グルドに 逆らうと{nl} 痛い目にあうぞ。{page}「この町も エルダ－ル村のように{nl} はいきょに してほしいのか？",
-   "en": ""
+   "en": "\"Defy Guld and you'll get hurt.{page}\"Want this town turned to ruins like{nl} Eldar Village?"
   },
   {
    "id": "r119_09AA",
    "addr": "09AA",
    "size": 50,
    "jp": "「おまえたち ワシらの{nl} じゃまをするんじゃない。",
-   "en": ""
+   "en": "\"You lot, don't get in our way."
   },
   {
    "id": "r119_09DE",
    "addr": "09DE",
    "size": 78,
    "jp": "「ねむいぞ・・・{page} くじびきで 門番を決めようなんて{nl} いうんじゃなかったな。",
-   "en": ""
+   "en": "\"So sleepy...{page} I shouldn't have said we'd draw lots for{nl} gate duty."
   },
   {
    "id": "r119_0A34",
    "addr": "0A34",
    "size": 270,
    "jp": "「いまさら 戦闘訓練なんか{nl} できるかよ～。{page}「オレは あのシルヴェルの戦いを{nl} 戦いぬいた 勇士だぞ。{page}「なんでオレだけ 部隊の連中と{nl} いっしょに こうたいで{nl} 国に 帰れなかったんだ～。{page}{FB00}「たかだか お酒のんで{nl} ほんの チョット！{wait}{nl} 暴れた だけじゃないか。",
-   "en": ""
+   "en": "\"Combat training, at this point? Come{nl} on~.{page}\"I'm a hero who fought all the way{nl} through the battle of Silvel.{page}\"Why am I the only one who couldn't go{nl} home with the unit on rotation~?{page}{FB00}\"All I did was have a drink and run wild{nl} just a tiny bit!{wait}"
   },
   {
    "id": "r119_0B44",
    "addr": "0B44",
    "size": 46,
    "jp": "「気分なおしに{nl} いっぱい のみたいな・・・。",
-   "en": ""
+   "en": "\"I could use a drink to cheer up..."
   },
   {
    "id": "r119_0B74",
    "addr": "0B74",
    "size": 218,
    "jp": "「隊長は 枢機卿どのに{nl} 呼びだされたからな。{nl} しばらくは 帰らないぞ。{page}{FB00}「わけなんか 知るもんか！{page} あの 枢機卿様は{nl} えたいの知れない ところのある{nl} 恐ろしい人だからな。{page}{FB00}「ちぇッ 鳥ハダが立っちまった。",
-   "en": ""
+   "en": "\"The captain was called away by the{nl} Cardinal. He won't be back for a while.{page}{FB00}\"How should I know why!{page} That Cardinal is a scary man, there's{nl} something strange about him.{page}{FB00}\"Tch, now I've got goosebumps."
   },
   {
    "id": "r119_0C5E",
    "addr": "0C5E",
    "size": 102,
    "jp": "「いや－ なかなか{nl} すごい 戦いだったな兄弟！{page}「あんたの かつやくは{nl} たっぷり見せてもらったぜ！",
-   "en": ""
+   "en": "\"Whoa, that was some battle, brother!{page}\"I got a good long look at what you can{nl} do!"
   },
   {
    "id": "r119_0CCE",
    "addr": "0CCE",
    "size": 96,
    "jp": "「どうだい あんた{wait}{nl} この戦いが 終ったら{page} オレといっしょに{nl} でっけ～ 商売してみね－か？",
-   "en": ""
+   "en": "\"Say,{wait} once this war is over,{page} how about doing some big business with{nl} me?"
   },
   {
    "id": "r119_0D38",
    "addr": "0D38",
    "size": 162,
    "jp": "「もう グルドなんかにゃあ{nl} 好き勝手は させないぜ！{page}{FB00}「商売に たとえるなら{wait}・{wait}・{wait}・{nl} オレも 根っからの商売人だな－{nl} なんでも 商売の話になっちまう。",
-   "en": ""
+   "en": "\"We won't let Guld do as they please{nl} anymore!{page}{FB00}\"If I put it in business terms{wait}.{wait}.{wait}.{nl} heh, I'm a trader to the bone.{nl} Everything turns into business talk."
   },
   {
    "id": "r119_0DDC",
    "addr": "0DDC",
    "size": 78,
    "jp": "「もう このあたりの町から{nl} グルドの兵隊は{nl} みんな 返品できたってわけだ。",
-   "en": ""
+   "en": "\"So now all the Guld soldiers have been{nl} returned to sender from the towns{nl} around here."
   },
   {
    "id": "r119_0E2C",
    "addr": "0E2C",
    "size": 138,
    "jp": "「まあ グルドの連中も{nl} もとでの かかったことを{nl} やってるわけだからよ。{page} このまんま店じまい なんてことは{nl} ね－ と思うが・・・。",
-   "en": ""
+   "en": "\"Well, the Guld lot have sunk a lot of{nl} capital into this.{page} I don't think they'll just close up shop{nl} like that..."
   },
   {
    "id": "r119_0EB8",
    "addr": "0EB8",
    "size": 78,
    "jp": "「シルヴェルが グルドに攻めこんで{nl} 今度は グルド王家が{nl} 夜逃げするのか。",
-   "en": ""
+   "en": "\"Silvel invades Guld, and now the Guld{nl} royal family does a midnight flit?"
   },
   {
    "id": "r119_0F08",
    "addr": "0F08",
    "size": 186,
    "jp": "「戦争に つけこんで{nl} あくどい商売をするやつは{nl} グルドにだって いないだろうぜ。{page}{FB00}「商売相手の ことは{nl} わかるんだ・・・。{page} なんで こんな戦争になったかは{nl} わかんね－けどな。",
-   "en": ""
+   "en": "\"Even in Guld, I doubt anyone's crooked{nl} enough to cash in on a war.{page}{FB00}\"I know my trading partners...{page} Why it came to a war like this, though, I{nl} don't know."
   },
   {
    "id": "r119_0FC4",
    "addr": "0FC4",
    "size": 78,
    "jp": "「目先の もうけ話に{nl} とびついちまったんだろうよ{nl} {wait}{wait}グルドの王様がよっ！",
-   "en": "",
+   "en": "\"He must have jumped at a quick{nl} profit{wait}{wait}, the King of Guld!",
    "reached": false
   },
   {
@@ -208,14 +208,14 @@
    "addr": "101E",
    "size": 172,
    "jp": "「てっとり早く オレたちでよ{wait}{nl} グルドに攻めこんで{nl} カタを つけたいんだけどな。{page}「町の守りを固める方が いいって{nl} スヴァルトの だんなが{nl} 言うもんだしなぁ・・・。",
-   "en": ""
+   "en": "\"I'd like us to just march into Guld{wait}{nl} and settle this quick.{page}\"But Svart, the boss, says it's better to{nl} shore up the town's defenses..."
   },
   {
    "id": "r119_10D0",
    "addr": "10D0",
    "size": 194,
    "jp": "「明日は シルヴェル城をとり返す。{nl} あさっては グルドにのりこんで{nl} この戦争は お・わ・り！{page}「このくらい てっとりばやく{nl} 終りにして はやく まっと－な{nl} 商売が できるようにしようぜ。",
-   "en": ""
+   "en": "\"Tomorrow we take back Silvel Castle.{nl} The day after, we storm Guld, and the{nl} war is o-ver!{page}\"Let's wrap it up that fast, so we can{nl} get back to honest business."
   },
   {
    "id": "r119_1198",
