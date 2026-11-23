@@ -6,7 +6,7 @@ Skill: translate-retro-game (Claude Code: plugin, enabled in .claude/settings.js
 - Build:    `python -X utf8 build.py`          -> build/lastbattle_en.sfc (checks the dump against `rom.sha1` first; exists from phase 3)
 - Check:    `python -X utf8 tools/check.py`    (tests + lint; the pre-commit hook runs this; `git config core.hooksPath tools/hooks` once per clone)
 - Smoke:    `python -X utf8 $SKILL/scripts/emu.py build/lastbattle_en.sfc --out work/qa/smoke --route tools/routes/boot.txt --smoke`
-- Warp:     `python -X utf8 $SKILL/scripts/emu.py build/lastbattle_en.sfc --out work/qa/warp --script tools/debug/warp.lua --var "SCENE='<name>'" --frames 900 --sheet` (scenes: `tools/debug/scenes.tsv`; never ask the user to play to a scene)
+- Warp:     `python -X utf8 $SKILL/scripts/emu.py build/lastbattle_en.sfc --out work/qa/warp --script tools/debug/warp.lua --var "SCENE='<name>'" --frames 3000 --sheet` (scenes: `tools/debug/scenes.tsv`, RAM notes `docs/re/debug.md`; never ask the user to play to a scene). All scenes: `python -X utf8 tools/debug/run_scenes.py [ROM] [--only a,b] [--states]`; ad-hoc room/ops/pokes: `tools/debug/probe.py`
 - Release:  `python -X utf8 tools/release.py` (patch + verify; never publish without the user)
 - Clean:    `python -X utf8 tools/clean.py` (published projects: lists rebuildable/downloadable files; `--yes` deletes)
 

@@ -12,7 +12,8 @@
 --      name  room  x  y  dir  pokes  run  keys  notes
 --    pokes: "ADDR=VAL,ADDR=VAL" (hex, 8-bit, written when the room is prepared; ADDR may be a 24-bit WRAM address);
 --           a "ADDR:VAL" pair is instead 16-bit; a leading "@" writes it at READY instead ("@1DDF:0053" = battle
---           with encounter group $53: the field loop starts a battle when $1DDF != $FFFF).
+--           with encounter group $53: the field loop starts a battle when $1DDF != $FFFF); the words god, win,
+--           noenc in the list turn those cheats on for the scene.
 --    run:   script address in the room block image ($7F:xxxx) run instead of the room's entry script (e0):
 --           NPC talks, events; or "ops:<hex bytes>" = raw script bytes run from $7EFF00 (FF00 appended), e.g.
 --           "ops:06E400" = op E406 arg 00 (healer): shops, inns, battles.
@@ -67,6 +68,14 @@ for line in io.lines(SCENES) do
 end
 if not scene then error("scene not in " .. SCENES .. ": " .. tostring(SCENE)) end
 L.log("SCENE " .. scene.name)
+-- flag words in the pokes column turn the cheats on per scene: god, win, noenc
+local rest = {}
+for p in scene.pokes:gmatch("[^,]+") do
+  local w = p:lower():match("^%s*(%a+)%s*$")
+  if w == "god" then GOD = 1 elseif w == "win" then WIN = 1 elseif w == "noenc" then NOENC = 1
+  elseif p ~= "-" then rest[#rest + 1] = p end
+end
+scene.pokes = #rest > 0 and table.concat(rest, ",") or "-"
 scene.battle = scene.pokes:upper():find("1DDF") ~= nil
 
 local function apply_pokes(late)

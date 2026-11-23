@@ -15,3 +15,4 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 | `text.md` | header, encoding (16-bit words), font layout and JIS-subset order, control codes, where text lives | encoding/font verified; kanji/katakana table and control-code argument counts open |
 | `compression.md` | LZ format, linear block pointers, block region, free-space candidates | format verified on one block; tables partly mapped |
 | `graphics.md` | graphics-text survey | started (boot screens only) |
+| `debug.md` | map-change request, script injection, battle trigger and units, RAM used by `tools/debug/warp.lua` | verified by the scene runs; saving not found |

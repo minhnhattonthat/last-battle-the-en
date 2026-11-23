@@ -1,18 +1,86 @@
 # name	room	x	y	dir	pokes	run	keys	notes
-newgame	-	-	-	-	-	-	-	first room as the game starts it (room 2, Kurt's house, intro)
-room_4d	0x4D	10	6	2	-	-	-	test
-t_e400	0x4D	10	6	2	-	ops:00E400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -	test shop
-t_e404	0x4D	10	6	2	-	ops:04E401	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -	test inn
-t_e406	0x4D	10	6	2	-	ops:06E400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -	test healer
-t_e409	0x4D	10	6	2	-	ops:09E400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;60 -	test 9
-walk_0c	0x0C	8	8	2	-	-	200 down;200 left;200 up;200 right;200 down;200 right;200 up;200 left;200 down;200 left;200 up;200 right	walk for an encounter
-walk_01	0x01	10	10	2	-	-	300 down;200 left;300 down;300 right;300 down;200 left;300 down	walk out of village 1
-walk_4d	0x4D	10	6	2	-	-	100 down;100 left;200 down;100 right;200 down;100 right;200 down;200 down;200 left;300 down;200 right;300 down	walk out of house 4D
-walk_00	0x00	30	30	2	-	-	200 down;200 left;200 up;200 right;200 down;200 right;200 up;200 left;200 down;200 left;200 up;200 right	overworld walk
+newgame	-	-	-	-	-	-	60 -	first room as a new game starts it (room 2, Kurt's house; intro script)
+overworld	0x00	40	30	2	noenc	-	60 -	overworld (mode 7), next to land
 menu_cmd	0x4D	10	6	2	-	-	60 -;6 a;60 -	field command menu (A): どうしますか? + 8 icons
-menu_search	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 right;40 -;6 a;120 -	search: nobody/nothing here
+menu_search	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 right;40 -;6 a;120 -	search: nobody here
 menu_magic	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;120 -	magic
 menu_item	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;120 -	items
 menu_equip	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;120 -	equipment
 menu_status	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;120 -	status
-menu_system	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 left;40 -;6 a;90 -	system (save, config)
+menu_system	0x4D	10	6	2	-	-	60 -;6 a;40 -;6 left;40 -;6 a;90 -	system: stereo/mono only
+battle_field	0x00	40	30	2	god,@1DDF:0053	-	300 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -	random-encounter group $53 on the overworld; commands and messages
+battle_room	0x4D	10	6	2	god,@1DDF:002B	-	300 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -	encounter group $2B forced inside a house
+battle_win	0x00	40	30	2	god,win,@1DDF:0053	-	300 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -	victory, experience, LEVEL UP!! window
+wipeout	0x00	40	30	2	@1DDF:0053	-	300 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -	party wiped out: 全滅しました・・・ then back to the title (no separate game-over screen)
+place_00	0x01	10	8	2	-	-	60 -	place-name table entry ptr B3B0, rooms 01 41
+place_01	0x0C	10	8	2	-	-	60 -	place-name table entry ptr B3C4, rooms 0C
+place_02	0x15	10	8	2	-	-	60 -	place-name table entry ptr B3D6, rooms 15 2A 4B
+place_03	0x13	10	8	2	-	-	60 -	place-name table entry ptr B3EA, rooms 13
+place_04	0x4C	10	8	2	-	-	60 -	place-name table entry ptr B3FC, rooms 4C
+place_05	0x67	10	8	2	-	-	60 -	place-name table entry ptr B414, rooms 67
+place_06	0x56	10	8	2	-	-	60 -	place-name table entry ptr B426, rooms 56
+place_07	0x4E	10	8	2	-	-	60 -	place-name table entry ptr B438, rooms 4E
+place_08	0x5B	10	8	2	-	-	60 -	place-name table entry ptr B44C, rooms 5B
+place_09	0x61	10	8	2	-	-	60 -	place-name table entry ptr B45E, rooms 61 63 65 66
+place_10	0x6E	10	8	2	-	-	60 -	place-name table entry ptr B470, rooms 6E
+place_11	0x78	10	8	2	-	-	60 -	place-name table entry ptr B484, rooms 78
+place_12	0x88	10	8	2	-	-	60 -	place-name table entry ptr B498, rooms 88
+place_13	0x93	10	8	2	-	-	60 -	place-name table entry ptr B4AC, rooms 93
+place_14	0x9F	10	8	2	-	-	60 -	place-name table entry ptr B4C2, rooms 9F
+place_15	0xA8	10	8	2	-	-	60 -	place-name table entry ptr B4D2, rooms A8
+place_16	0xBE	10	8	2	-	-	60 -	place-name table entry ptr B4E4, rooms BE
+place_17	0xAE	10	8	2	-	-	60 -	place-name table entry ptr B4F8, rooms AE
+place_18	0xB5	10	8	2	-	-	60 -	place-name table entry ptr B50E, rooms B5
+place_19	0xC1	10	8	2	-	-	60 -	place-name table entry ptr B51E, rooms C1
+place_20	0xC8	10	8	2	-	-	60 -	place-name table entry ptr B52E, rooms C8
+place_21	0xD1	10	8	2	-	-	60 -	place-name table entry ptr B544, rooms D1
+place_22	0x109	10	8	2	-	-	60 -	place-name table entry ptr B558, rooms 109
+place_23	0xC4	10	8	2	-	-	60 -	place-name table entry ptr B56C, rooms C4
+place_24	0xDB	10	8	2	-	-	60 -	place-name table entry ptr B580, rooms DB F2 135
+place_25	0x102	10	8	2	-	-	60 -	place-name table entry ptr B596, rooms 102
+place_26	0x127	10	8	2	-	-	60 -	place-name table entry ptr B5AA, rooms 127
+place_27	0xF6	10	8	2	-	-	60 -	place-name table entry ptr B5BC, rooms F6
+place_28	0xD7	10	8	2	-	-	60 -	place-name table entry ptr B5CE, rooms D7 D8 D9 DA
+place_29	0xD5	10	8	2	-	-	60 -	place-name table entry ptr B5E2, rooms D5 D6
+place_30	0x10A	10	8	2	-	-	60 -	place-name table entry ptr B5F4, rooms 10A
+place_31	0x10F	10	8	2	-	-	60 -	place-name table entry ptr B606, rooms 10F
+place_32	0x111	10	8	2	-	-	60 -	place-name table entry ptr B61E, rooms 111
+svc_00_00	0x4D	10	6	2	-	ops:00E400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E400 00 (top-table entry 14), used in room 5
+svc_06_00	0x4D	10	6	2	-	ops:06E400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	healer: op E406 00 (top-table entry 20), used in room 10
+svc_00_01	0x4D	10	6	2	-	ops:00E401	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E400 01 (top-table entry 14), used in room 29
+svc_00_10	0x4D	10	6	2	-	ops:00E410	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E400 10 (top-table entry 14), used in room 29
+svc_01_02	0x4D	10	6	2	-	ops:01E402	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 02 (top-table entry 15), used in room 30
+svc_01_11	0x4D	10	6	2	-	ops:01E411	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 11 (top-table entry 15), used in room 30
+svc_07_00	0x4D	10	6	2	-	ops:07E400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	healer: op E407 00 (top-table entry 21), used in room 39
+svc_0A_00	0x4D	10	6	2	-	ops:0AE400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	service: op E40A 00 (top-table entry 24), used in room 39
+svc_0C_00	0x4D	10	6	2	-	ops:0CE400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	service: op E40C 00 (top-table entry 26), used in room 39
+svc_05_00	0x4D	10	6	2	-	ops:05E400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	inn: op E405 00 (top-table entry 19), used in room 40
+svc_01_0E	0x4D	10	6	2	-	ops:01E40E	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 0E (top-table entry 15), used in room 69
+svc_00_0F	0x4D	10	6	2	-	ops:00E40F	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E400 0F (top-table entry 14), used in room 69
+svc_09_00	0x4D	10	6	2	-	ops:09E400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	service: op E409 00 (top-table entry 23), used in room 77
+svc_0B_00	0x4D	10	6	2	-	ops:0BE400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	service: op E40B 00 (top-table entry 25), used in room 77
+svc_0D_00	0x4D	10	6	2	-	ops:0DE400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	service: op E40D 00 (top-table entry 27), used in room 77
+svc_01_03	0x4D	10	6	2	-	ops:01E403	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 03 (top-table entry 15), used in room 93
+svc_01_19	0x4D	10	6	2	-	ops:01E419	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 19 (top-table entry 15), used in room 93
+svc_02_00	0x4D	10	6	2	-	ops:02E400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E402 00 (top-table entry 16), used in room 94
+svc_00_04	0x4D	10	6	2	-	ops:00E404	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E400 04 (top-table entry 14), used in room 111
+svc_00_06	0x4D	10	6	2	-	ops:00E406	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E400 06 (top-table entry 14), used in room 121
+svc_01_09	0x4D	10	6	2	-	ops:01E409	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 09 (top-table entry 15), used in room 121
+svc_01_05	0x4D	10	6	2	-	ops:01E405	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 05 (top-table entry 15), used in room 124
+svc_01_08	0x4D	10	6	2	-	ops:01E408	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 08 (top-table entry 15), used in room 124
+svc_04_01	0x4D	10	6	2	-	ops:04E401	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	inn: op E404 01 (top-table entry 18), used in room 128
+svc_05_02	0x4D	10	6	2	-	ops:05E402	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	inn: op E405 02 (top-table entry 19), used in room 128
+svc_01_07	0x4D	10	6	2	-	ops:01E407	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 07 (top-table entry 15), used in room 144
+svc_01_0A	0x4D	10	6	2	-	ops:01E40A	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 0A (top-table entry 15), used in room 149
+svc_01_0C	0x4D	10	6	2	-	ops:01E40C	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 0C (top-table entry 15), used in room 149
+svc_00_0B	0x4D	10	6	2	-	ops:00E40B	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E400 0B (top-table entry 14), used in room 151
+svc_00_0D	0x4D	10	6	2	-	ops:00E40D	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E400 0D (top-table entry 14), used in room 151
+svc_04_03	0x4D	10	6	2	-	ops:04E403	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	inn: op E404 03 (top-table entry 18), used in room 153
+svc_00_13	0x4D	10	6	2	-	ops:00E413	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E400 13 (top-table entry 14), used in room 169
+svc_00_14	0x4D	10	6	2	-	ops:00E414	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E400 14 (top-table entry 14), used in room 179
+svc_01_12	0x4D	10	6	2	-	ops:01E412	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 12 (top-table entry 15), used in room 193
+svc_01_15	0x4D	10	6	2	-	ops:01E415	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E401 15 (top-table entry 15), used in room 201
+svc_04_04	0x4D	10	6	2	-	ops:04E404	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	inn: op E404 04 (top-table entry 18), used in room 206
+svc_0E_00	0x4D	10	6	2	-	ops:0EE400	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	service: op E40E 00 (top-table entry 28), used in room 267
+svc_0E_01	0x4D	10	6	2	-	ops:0EE401	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	service: op E40E 01 (top-table entry 28), used in room 267
+svc_00_16	0x4D	10	6	2	-	ops:00E416	30 -;6 a;60 -;6 a;60 -;6 a;60 -;6 a;90 -	shop: op E400 16 (top-table entry 14), used in room 270
