@@ -5,5 +5,4 @@ per file; a font with no known licence doesn't go into a release.
 
 | File | Source (URL, version) | Licence | Redistributable in a patch | Used for | Changes made |
 |---|---|---|---|---|---|
-| <fonts/vwf_8px.png> | <drawn for this project> | <MIT, same as repo> | yes | <dialogue VWF> | <-> |
-| <fonts/Title.ttf> | <url, v1.2> | <OFL 1.1> | <yes, as rendered glyphs> | <typeset.py title cards> | <-> |
+| tools/font_en.txt | drawn by the repo owner for bounty-sword-en (2026-11-22), copied 2026-11-23 | same as repo | yes | all English text: the VWF (`asm/vwf.asm`, `docs/re/vwf.md`) | header comment only |

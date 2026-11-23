@@ -2,10 +2,22 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build next (phase 4 extract done 2026-11-23). Last build:
-  `build/lastbattle_en.sfc` from `script/` with no English, sha1 2474c7aa8451d51784a3b852b9806495b4147cfb
-  (= original, so the phase-3 smoke result holds).
+- **Phase:** 5. Engine spike and marker build in progress (VWF, far-jump relocation and marker build work; width
+  gate, byte names and the bank-02 renderer left). Builds are now 4 MB with `asm/vwf.asm`: `build/marker.sfc`
+  (`build.py --marker`) boots (smoke ok) and reaches name_entry, newgame, menu_item, place_00, svc_00_00, battle_win,
+  variant_ec01, credits with `[id]` markers (`work/qa/marker1/finals.png`).
 - **Done:**
+  - **Phase 5 so far** (`docs/re/vwf.md`, `docs/re/windows.md`):
+    - VWF in `asm/vwf.asm` (asar 1.91 copied to `tools/asar/`, gitignored): hooks 01:B89B/B8C9/B859/B13C on the
+      bitmap glyph renderer; Japanese still draws at 12 px through it (shots identical to the original). English
+      font `tools/font_en.txt` (own design, reused from the owner's bounty-sword-en project; add its row to
+      `docs/fonts.md`), words `$0800+ASCII` (`textcodec.EN`).
+    - Relocation without moving anything: strings keep their slot; longer English goes to `0x300000+` behind a far
+      jump (new script word `$F700` + 24-bit address, hooked in the VM dispatch 01:BA96 and the menu string fetch
+      01:B485) and jumps back. Verified with the bank-04 name prompt moved. Room blocks never grow (E5 reloads them
+      at `$7F0000`, `$7F:4000` is used by other code).
+    - `build.py --qa ID=TEXT` (ruler/QA overrides), `--marker`; `asm=False` keeps the identity build 2 MB.
+    - Width gate: dialogue box = 216 px x 3 lines (measured, ruler build).
   - **Phase 4 (extract):** `tools/extract.py dump` -> `script/*.json` (205 files, 2591 strings, 184.6k JP chars;
     23 unreached runs kept with `"reached": false`), codec `tools/textcodec.py`, write-back `tools/insert.py`
     (called by `build.py`, same-size only for now). `tests/test_extract.py`: roundtrip of every string, script/ in
@@ -44,15 +56,21 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
-  1. **Phase 5 engine spike + marker build** (`references/pipeline.md` §Marker): font/VWF decision (16x16 font
-     at a fixed 12 px advance, `01:B8F5`), an English table for `textcodec`, then relocation:
-     - block reassembler: re-lay a block's strings and fix every image address (jump targets J, room header
-       lists e0-e8, talk tables, common-format pointer tables, E6 tables); rooms 21, 24, 65 hold native code
-       (EF) that may hold image addresses: keep those blocks' layout or check the code;
-     - bank 04 / credits: re-lay the strings and rewrite each entry's `ptrs` (tables + code immediates); find free
-       space (re-run `tools/lua/trap_reads.lua` over the scene runs first);
-     - byte names are capped at 8 bytes by their records (items 20 B, spells 9 B): widen or point elsewhere.
-     Then the marker build (`[id]` per string), the width gate per box variant.
+  1. **Finish phase 5** (done-when: marker ROM boots, every text box shows its id, non-text strings excluded, every
+     box variant measured):
+     - **Staff roll**: bank 02 has its own glyph renderer (02:D7FA reads the font pointer `$1A:8015`, `SBC #$0300`);
+       English words there index past the font. Hook it like 01:B882 (or route it through the VWF), then run the
+       `credits` scene long enough to reach the staff roll (the marker run stopped at the epilogue, ~14.7k frames).
+     - **Byte names** (items, spells, player names; `textcodec.ByteCodec`): remap the byte-to-glyph map at
+       `0x23053` (bytes `$2C+`, also the name-entry grid order) to English words, and widen past 8 bytes (records:
+       items 20 B, spells 9 B; FA3A copies 8 bytes to `$7E6D80`, 01:FC2B / 01:FEE3). Then markers for them.
+     - `b04_B2E2` (メイ, 4-byte slot, pointer `0x232D4`): too short for a far jump; move it by its pointer into
+       dead space of another bank-04 string (marker build writes the id tail meanwhile).
+     - Width gate for the variants listed in `docs/re/windows.md` (ruler builds via `--qa`); the page-wait arrow.
+     - Tour the marker build over all scenes (`run_scenes.py build/marker.sfc`) and list any Japanese left (text not
+       extracted) and markers in odd places (non-text): mark those `data` in `script/`.
+     - Tests so far: `tests/test_vwf.py` (font, EN codec, far-jump fit); add one that boots nothing but checks the
+       marker build's writes stay in `tools/ranges.txt` (build.py already refuses others).
   2. The 23 unreached runs (`"reached": false`): check at runtime with a ROM-read probe or textcoverage; menu
      labels and window texts are bank-04 BG3 tile words (file `0x20400-0x22300`) and tile rows `0x22CA7`:
      graphics text, not in `script/`; enemy names not shown in battle (confirm in the phase-8 tour).

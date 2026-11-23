@@ -33,6 +33,48 @@ def override(files, qa):
         raise SystemExit(f"--qa: unknown ids {sorted(left)}")
 
 
+FILLER = "The quick brown fox jumps over the lazy dog while five wizards vex a jolly king. "
+
+
+def marker_text(e, jp_px=12):
+    """Marker build: `[id]` then filler as wide (VWF px) as each Japanese line (12 px a glyph); control and insert
+    tokens stay where they were, so paging, waits and names behave as in the original."""
+    import font_en
+    from textcodec import TOKEN
+    out, first, pos = [], True, 0
+    i, text = 0, e["jp"]
+    while i <= len(text):
+        m = TOKEN.search(text, i)
+        seg = text[i:m.start() if m else len(text)]
+        if seg:
+            budget = len(seg) * jp_px
+            s = f"[{e['id']}]" if first else ""
+            first = False
+            while True:
+                c = FILLER[pos % len(FILLER)]
+                if font_en.width(s + c) > budget and len(s) > 0:
+                    break
+                s += c
+                pos += 1
+            out.append(s)
+        if not m:
+            break
+        out.append(m.group(0))
+        i = m.end()
+    if first:  # no text at all (only tokens): still show the id
+        out.insert(0, f"[{e['id']}]")
+    return "".join(out)
+
+
+def mark(files):
+    """Marker build: every script string (not byte names yet) gets marker_text."""
+    for doc in files.values():
+        if doc["source"]["kind"] == "names":
+            continue
+        for e in doc["entries"]:  # a slot too short for a far jump gets as much of its id as fits
+            e["en"] = marker_text(e) if e["size"] >= FAR_LEN else e["id"][-(e["size"] // 2):]
+
+
 def text_of(e):
     return e["en"] or e["jp"]
 
