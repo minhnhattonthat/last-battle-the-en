@@ -30,3 +30,4 @@ the style reference), "Cardinal-sama" -> "Your Eminence" / "His Eminence" (`r248
 | b005 | ok | - (bg3_9EF0/9EF8/A687 untranslated by D11, in polish.md) | - |
 | b006 | ok | - | - |
 | b007 | ok | Eldar Elder じゃ voice: r002_0038, r002_01FE, r003_053F, r003_06B1 (b053) | - |
+| b008 | ok | 真の言葉の使い手 = "true word-speaker" (glossary) in r009_00D8, r009_0144, and Iskar-scene r293_04A5, r293_06A7 that said "master of the true words" (b054) | - |

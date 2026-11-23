@@ -4,8 +4,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
 
 - **Phase:** 6. Translate: all batches merged (3071/3085), per-batch reviewer pass in progress (reopened session 16
   after the external phase-6 review; progress table in `docs/review-phase6.md`).
-  Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24 session 14, sha1
-  8909f4fa).
+  Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24 session 16, sha1
+  fec4951f).
 - **Done:**
   - **Phase 6, session 2026-11-24 (16):** external review findings fixed: phase 6 reopened; `docs/style-reference.md`
     rewritten (voice table JP markers -> EN devices, paired examples, corrected Yaak Chief example); Yaak Chief's 16
@@ -13,7 +13,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
     Mei (elf, sent by King Robert) and Beebo fixed; glossary: `-dono`, titles never take honorifics, D10 field widths,
     "Decisions from earlier batches" filled; `docs/polish.md` in `- [ ] id - note` form; `r118_06C1` tense;
     "Febennels' House" (b052). New tools: `tools/fixbatch.py` (fix batch from merged ids), `tools/pairs.py`
-    (reviewer pairs files `work/review/bNNN.txt`).
+    (reviewer pairs files `work/review/bNNN.txt`). Reviewer pass: **b001-b008 reviewed** (rows in
+    `docs/review-phase6.md`); fixes b053 (Eldar Elder voice), b054 ("true word-speaker" in r009 and r293). Fix
+    batches so far: b051-b054 (next free: b055). Session ended at the context limit; resume at b009.
   - **Phase 6, session 2026-11-24 (15):** batches b016-b049 merged (Rudom, elves, hidden village, Yaak, retaking
     Silvel, Guld, ending, spells, tactics, shops); glossary terms Hiram, Falk, Heeg, Lime, Tiran and others;
     `docs/synopsis.md`, first `docs/style-reference.md`; a self-review (superseded, see `docs/review-phase6.md`).
