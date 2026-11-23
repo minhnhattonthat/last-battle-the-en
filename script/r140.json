@@ -74,14 +74,14 @@
    "addr": "0580",
    "size": 150,
    "jp": "「若いモンなら もうとっくに{nl} この村を でているぞい。{page}「あんたたちが スヴァルトに{nl} きちんと 連絡をとってくれんと{nl} この作戦は 失敗するぞい。",
-   "en": "\"The young ones left the village long{nl} ago.{page}\"If you don't keep in proper touch with{nl} Svart, this plan will fail."
+   "en": "\"The young'uns left the village long{nl} ago, eh.{page}\"If you don't keep in proper touch with{nl} Svart, this plan'll fail, mark me."
   },
   {
    "id": "r140_0618",
    "addr": "0618",
    "size": 78,
    "jp": "「若いモンは うまくやってるかな？{nl} 残った者も ここで{nl} がんばってるぞい。",
-   "en": "\"I wonder if the young ones are doing{nl} well. Those of us left behind are doing{nl} our best here too."
+   "en": "\"Wonder how the young'uns are faring,{nl} eh? Those of us left behind are doin'{nl} our best here too."
   },
   {
    "id": "r140_0672",
@@ -137,7 +137,7 @@
    "addr": "0B49",
    "size": 210,
    "jp": "ヤ－ク族長{nl}「そうでしたか{wait}・{wait}・{wait}・{wait}{page}「スヴァルトが そのような{nl} 作戦をたてましたか{wait}・{wait}・{wait}・{nl} その話 のりましょうぞい。{page}{FB00}「ついてくるが いいぞい。{nl} ヤ－クの 破城つちを{nl} おみせしょうぞい。{page2}",
-   "en": "Yaak Chief{nl}\"So that's how it was{wait}.{wait}.{wait}.{wait}{page}\"Svart made a plan like that{wait}.{wait}.{wait}.{nl} Count me in.{page}{FB00}\"Follow me. I'll show you the Yaak{nl} battering ram.{page2}"
+   "en": "Yaak Chief{nl}\"So that's how it was{wait}.{wait}.{wait}.{wait}{page}\"Svart cooked up a plan like that,{nl} eh{wait}.{wait}.{wait}. Count me in!{page}{FB00}\"Follow me. I'll show you the Yaak{nl} battering ram, hoh!{page2}"
   }
  ]
 }

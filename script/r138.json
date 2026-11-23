@@ -11,35 +11,35 @@
    "addr": "0154",
    "size": 436,
    "jp": "ヤ－ク族長{nl}「これが ヤ－クの破城つちじゃ。{page}「いりょくのほどは{nl} シルヴェル落城のときに{nl} ごらんに なったようじゃのぅ。{page}{FB00}メイ{nl}「・・・・・・・・・・・！！{page}{FB00}ヤ－ク族長{nl}「不幸な できごとじゃった・・。{wait}{wait}{wait}{page}{FB00}「これを 村の 若いモンに{nl} ベルクスタットまで・・・・{page2}{F9FF}{C039}ロ－グ{nl}「お話のところ すいません。{page}「ちょいと 族長たちに{nl} 見ていただきたい ものが。{page}{FB00}ヤ－ク族長{nl}「しかたないのぅ{nl} みなさん いってみるぞい。{page2}",
-   "en": "Yaak Chief{nl}\"This is the Yaak battering ram.{page}\"Its power, it seems you saw when{nl} Silvel Castle fell.{page}{FB00}Mei{nl}\"...........!!{page}{FB00}Yaak Chief{nl}\"It was an unhappy thing... {wait}{wait}{wait}{page}{FB00}\"I'll have the young ones of the village{nl} take this to Bergstadt....{page2}{F9FF}{C039}Rogue{nl}\"Sorry to interrupt.{page}\"There's something I'd like the chief and{nl} all to see.{page}{FB00}Yaak Chief{nl}\"Can't be helped. Let's go and see,{nl} everyone.{page2}"
+   "en": "Yaak Chief{nl}\"This here's the Yaak battering ram.{page}\"What it can do, you saw when Silvel{nl} Castle fell, I'd wager.{page}{FB00}Mei{nl}\"...........!!{page}{FB00}Yaak Chief{nl}\"A sorry business, that was... {wait}{wait}{wait}{page}{FB00}\"I'll have the village young'uns carry{nl} this to Bergstadt....{page2}{F9FF}{C039}Rogue{nl}\"Sorry to interrupt.{page}\"There's something I'd like the chief and{nl} all to see.{page}{FB00}Yaak Chief{nl}\"Can't be helped, eh? Come along,{nl} everyone, let's have a look.{page2}"
   },
   {
    "id": "r138_0316",
    "addr": "0316",
    "size": 366,
    "jp": "ヤ－ク族長{nl}「さて どこまで話たんじゃ？{page}「そうじゃ そうじゃ{wait}{wait}{wait}{nl} これを ここにいる 若いモンに{nl} ベルクスタットへ 持っていかせる。{page}「使い方と タイミングに{nl} ついては 若いモンが{nl} こころえとるはずじゃ。{page}「スヴァルトの ところへ{nl} もどりなされ 必要な時に必ず{nl} まにあうように 運ばせようぞい。{page}{FB00}「わしの 話は{nl} だいたい こんなところじゃぞい。{page2}",
-   "en": "Yaak Chief{nl}\"Now, where was I?{page}\"Ah yes, yes.{wait}{wait}{wait} I'll have the young{nl} ones here take this to Bergstadt.{page}\"The young ones should know how and{nl} when to use it.{page}\"Go back to Svart. I'll have it carried so{nl} it's sure to arrive when it's needed.{page}{FB00}\"That's about all I have to say.{page2}"
+   "en": "Yaak Chief{nl}\"Now, where was I?{page}\"Ah, that's it, that's it.{wait}{wait}{wait} I'll have{nl} the young'uns here carry this to{nl} Bergstadt.{page}\"The young'uns know how and when to{nl} use it.{page}\"You go on back to Svart. I'll see it gets{nl} there in time when it's needed, mark me.{page}{FB00}\"And that's about all this old Yaak has{nl} to say, eh?{page2}"
   },
   {
    "id": "r138_0498",
    "addr": "0498",
    "size": 218,
    "jp": "ヤ－ク族長{nl}「ボルグ そこの 宝箱の中身は{nl} おまえにやるぞい。{page}「なに いずれは おまえに{nl} ゆずろうと 思っていたもんぞい。{page}「代ヶの族長が かぶっていた{nl} ゆいしょただしいカブトじゃ。{nl} 大切に するがいいぞい。",
-   "en": "Yaak Chief{nl}\"Borg, the contents of that treasure{nl} chest are yours.{page}\"Well, I always meant to hand it down{nl} to you someday.{page}\"It's the time-honored helmet worn by{nl} chief after chief. Take good care of it."
+   "en": "Yaak Chief{nl}\"Borg, what's in that treasure chest is{nl} yours, eh?{page}\"Bah, I always meant to hand it down{nl} to you someday.{page}\"It's the old helmet worn by chief after{nl} chief. Take good care of it, mark me."
   },
   {
    "id": "r138_0578",
    "addr": "0578",
    "size": 60,
    "jp": "ヤ－ク族長{nl}「すべては 若いもんが{nl} こころえてるはずぞい。",
-   "en": "Yaak Chief{nl}\"The young ones should know it all."
+   "en": "Yaak Chief{nl}\"The young'uns know it all, eh?"
   },
   {
    "id": "r138_05B6",
    "addr": "05B6",
    "size": 90,
    "jp": "「スヴァルトのところへ{nl} もどりなされ 必要な時に必ず{nl} まにあうように 運ばせようぞい。",
-   "en": "\"Go back to Svart. I'll have it carried so{nl} it's sure to arrive when it's needed.",
+   "en": "\"You go on back to Svart. I'll see it gets{nl} there in time when it's needed, mark me.",
    "reached": false
   },
   {
@@ -47,21 +47,21 @@
    "addr": "0616",
    "size": 60,
    "jp": "ヤ－ク族長{nl}「すべては 若いもんが{nl} こころえてるはずぞい。",
-   "en": "Yaak Chief{nl}\"The young ones should know it all."
+   "en": "Yaak Chief{nl}\"The young'uns know it all, eh?"
   },
   {
    "id": "r138_0654",
    "addr": "0654",
    "size": 186,
    "jp": "ヤ－ク族長{nl}「武器庫じゃからな{nl} なんかないと さびしいぞい。{page}{FB00}「村で いま いちばん{nl} 破壊力のある武器は{nl} この ワシぞい！{page}「だから 破城つちの代りに{nl} わしが ここにいるぞい。",
-   "en": "Yaak Chief{nl}\"It's an armory, after all. Lonely with{nl} nothing in it.{page}{FB00}\"The most destructive weapon in the{nl} village right now is me!{page}\"So I'm here in place of the battering{nl} ram."
+   "en": "Yaak Chief{nl}\"It's an armory, eh? Gets lonely with{nl} nothin' in it.{page}{FB00}\"And the most destructive weapon in{nl} this village right now is me, hoh!{page}\"So I'm standin' in for the battering{nl} ram."
   },
   {
    "id": "r138_0710",
    "addr": "0710",
    "size": 202,
    "jp": "ヤ－ク族長{nl}「こう見えても むかしは{nl} 傭兵隊長まで つとめたワシぞい。{page}「そのころの ワシに{nl} 壊せんものは なかったぞい。{page}{FB00}「この ワシから見れば{nl} スヴァルトも まだ まだ{nl} ただの ガキぞい。",
-   "en": "Yaak Chief{nl}\"I may not look it, but in my day I was{nl} a mercenary captain.{page}\"Back then, there was nothing I couldn't{nl} smash.{page}{FB00}\"To me, even Svart is still just a kid."
+   "en": "Yaak Chief{nl}\"Hoh, I may not look it, but this old{nl} Yaak was a mercenary captain once!{page}\"Back then there was nothin' I couldn't{nl} smash, mark me.{page}{FB00}\"Next to me, even Svart's still just a{nl} whelp, eh?"
   },
   {
    "id": "r138_07E2",
@@ -124,7 +124,7 @@
    "addr": "0B1A",
    "size": 130,
    "jp": "ヤ－ク族長{nl}「そんなところで なにを{nl} ぼそぼそ 話しとる？{page}「わしに ようがあるなら{nl} となりにきて 話しかけて{nl} ほしいぞい。",
-   "en": "Yaak Chief{nl}\"What are you muttering about over{nl} there?{page}\"If you want me, come over here and{nl} talk to me."
+   "en": "Yaak Chief{nl}\"What're you mutterin' about over{nl} there?{page}\"If you want me, come right up and talk{nl} to me, eh?"
   }
  ]
 }

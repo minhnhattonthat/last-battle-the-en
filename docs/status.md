@@ -2,11 +2,21 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 7. Insert, fit, check (phase 6 done in session 15: b001-b049 merged, 3071/3085 translated, review in
-  `docs/review-phase6.md`, no Critical/Important).
+- **Phase:** 6. Translate: all batches merged (3071/3085), per-batch reviewer pass in progress (reopened session 16
+  after the external phase-6 review; progress table in `docs/review-phase6.md`).
   Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24 session 14, sha1
   8909f4fa).
 - **Done:**
+  - **Phase 6, session 2026-11-24 (16):** external review findings fixed: phase 6 reopened; `docs/style-reference.md`
+    rewritten (voice table JP markers -> EN devices, paired examples, corrected Yaak Chief example); Yaak Chief's 16
+    lines re-voiced (fix batch b051); "Cardinal-sama" -> Your/His Eminence; Beebo "Feben-sama"/"Kee kee!"; synopsis
+    Mei (elf, sent by King Robert) and Beebo fixed; glossary: `-dono`, titles never take honorifics, D10 field widths,
+    "Decisions from earlier batches" filled; `docs/polish.md` in `- [ ] id - note` form; `r118_06C1` tense;
+    "Febennels' House" (b052). New tools: `tools/fixbatch.py` (fix batch from merged ids), `tools/pairs.py`
+    (reviewer pairs files `work/review/bNNN.txt`).
+  - **Phase 6, session 2026-11-24 (15):** batches b016-b049 merged (Rudom, elves, hidden village, Yaak, retaking
+    Silvel, Guld, ending, spells, tactics, shops); glossary terms Hiram, Falk, Heeg, Lime, Tiran and others;
+    `docs/synopsis.md`, first `docs/style-reference.md`; a self-review (superseded, see `docs/review-phase6.md`).
   - **Phase 6, session 2026-11-24 (14):** batches b002 (battle windows: commands Atk/Cmd/Plan/Run, synthesis-screen
     boxes, spell effect lines, status messages; sleeping NPCs) and b006-b015 (spell info boxes, Eldar village and
     school, the rite, Silvel Castle defence, King Gustav's reveal that Kurt is the prince, secret passage, occupied
@@ -163,6 +173,13 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
+  00. **Finish phase 6: the per-batch reviewer pass.** `python -X utf8 tools/pairs.py` (regenerate after any merge),
+     read each `work/review/bNNN.txt` whose row in `docs/review-phase6.md` is missing (Read with offset/limit ~70
+     lines), against `glossary.md` + `docs/style-reference.md`. Fix Critical/Important per batch through a fix batch
+     (`tools/fixbatch.py b0NN ids...`, edit the `.out.tsv`, `batches.py check`, `merge --overwrite`), Minors to
+     `docs/polish.md`, add the batch's row. Voice devices (old men, Yaak Chief, Koppas "gi", pidgin) are Important
+     when flattened. `codex exec -s read-only` is back on 2026-11-26 10:32 and may serve as an independent reviewer
+     for the remaining batches. When every batch b001-b049 has a row: build, `check.py`, smoke, phase 7.
   0. **Phase 7: insert, fit, check** (done-when: build green, width/overflow lint clean, control codes matched,
      `romdiff.py` no writes outside allowed ranges). Phase 6 left: `work/tl/b050.tsv` (11 engine-bound fragments:
      battle particles `bt_198045/1980E3/19D4BB/19D534+`, enemy_40/69, 2-tile slot labels `bg3_A729/A737/A73D`),

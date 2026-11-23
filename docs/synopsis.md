@@ -5,13 +5,15 @@ Built from the merged script (session 15). Story order follows the script blocks
 ## Who is who
 - **Kurt**: hero, raised in Eldar village by **Yelt** (ex-warrior) and **Yuse**. Turns out to be the lost prince of
   Silvel, son of **King Gustav**; late reveal: he is the *true word-speaker* Iskar feared.
-- **Mei**: Kurt's companion, a mage girl from Eldar. Leaves with Kurt at the end; neither is heard of again.
+- **Mei**: elf girl and mage from the elf village, sent by King **Robert** (king of the elves) to warn Silvel after he
+  dreamt of its fall (`r083_0041`); joins Kurt at Silvel Castle. Leaves with Kurt at the end; neither is heard of again.
 - **Borg**: Yaak (beast-folk) fighter, son of **Svart**; joins after the Yaak village is freed.
 - **Regina**: princess of Guld, daughter of **King Tiran**; turns against her father, ends as Queen of Guld and marries
   **Lidar**.
 - **Yuri**: Silvel commander who hid Kurt; uses the alias **Riyu** in the hidden village.
-- **Febennels**: old wizard of the Forest / Tower of Rudom; teaches the party. **Beebo**: his squirrel-like familiar,
-  runs the magic synthesis in her own shop.
+- **Febennels**: old wizard of the Forest / Tower of Rudom; teaches the party. **Beebo**: a talking squirrel (female),
+  Febennels' top pupil, who calls him "Feben-sama"; the only trained mage nearby who can combine mana, so she does
+  the party's magic synthesis (`r076_0E60`, menus `top23`).
 - **Iskar**: the Ice Queen, final foe. Attacked Silvel 16 years ago to stop the true word-speaker being born.
 - **Mr. Keukenhof**: Eldar schoolteacher. **Elder**: Eldar's elder.
 

@@ -46,7 +46,7 @@
    "addr": "06C1",
    "size": 138,
    "jp": "クルトは『破城つちのつよさ』の本を{nl}見つけて 読んだ。{page}{FB00}読みすすむ うちに{nl}シルヴェル落城の 悲しい きおくが{nl}よみがえってくる・・・。",
-   "en": "Kurt found and read the book{nl}'The Strength of Battering Rams'.{page}{FB00}As he reads on, sad memories of{nl}the fall of Silvel Castle{nl}come back to him..."
+   "en": "Kurt found and read the book{nl}'The Strength of Battering Rams'.{page}{FB00}As he read on, sad memories of{nl}the fall of Silvel Castle{nl}came back to him..."
   },
   {
    "id": "r118_074D",

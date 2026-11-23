@@ -208,7 +208,7 @@
    "addr": "0FC2",
    "size": 304,
    "jp": "ヤ－ク族長{nl}「鳥人兵ではないか いったい{nl} どうしたんじゃ？{page}{FB00}ヘ－グ{nl}「あっしらが のりこんだ時には{nl} まだ 寝ていたもんで{nl} ２人で ふんずかまえました。{page}{FB00}ロ－グ{nl}「こいつら グルド兵に{nl} みすてられたんですぜ。{page}「もしかしたら 時間かせぎのために{nl} わざと 置いてかれたんじゃ{nl} ないですかい？{page2}",
-   "en": "Yaak Chief{nl}\"Why, birdmen? What's all this?{page}{FB00}Heeg{nl}\"When we burst in, they were still{nl} asleep, so the two of us grabbed 'em.{page}{FB00}Rogue{nl}\"These guys were abandoned by the{nl} Guld soldiers.{page}\"Maybe they were left behind on{nl} purpose, to buy time?{page2}"
+   "en": "Yaak Chief{nl}\"Eh? Birdmen, is it? What's all this?{page}{FB00}Heeg{nl}\"When we burst in, they were still{nl} asleep, so the two of us grabbed 'em.{page}{FB00}Rogue{nl}\"These guys were abandoned by the{nl} Guld soldiers.{page}\"Maybe they were left behind on{nl} purpose, to buy time?{page2}"
   },
   {
    "id": "r135_10FC",
@@ -222,7 +222,7 @@
    "addr": "11C9",
    "size": 94,
    "jp": "ヤ－ク族長{nl}「クルトどの どう思うぞい？{page}{FB00}{F400}{F600}このまま 逃がしてやる{nl}{F600}もうすこし 話を聞く",
-   "en": "Yaak Chief{nl}\"Kurt-dono, what do you think?{page}{FB00}{F400}{F600}Let them go{nl}{F600}Hear them out a bit more"
+   "en": "Yaak Chief{nl}\"Kurt-dono, what d'you make of it, eh?{page}{FB00}{F400}{F600}Let them go{nl}{F600}Hear them out a bit more"
   },
   {
    "id": "r135_1233",
@@ -250,14 +250,14 @@
    "addr": "1434",
    "size": 352,
    "jp": "ヤ－ク族長{nl}「では ヤ－クの族長として{nl} ヌシたちに 命じるぞい！{page}「ヌシらは この村に不法に{nl} 空から やって来た。{nl} しかし じゃ・・・・{page}{FB00}「この村から でるときは{nl} きちんと 足で歩いて{nl} 門から 出ていくがいいぞい。{page}{FB00}鳥人{nl}「悪かった・・・ 長老{nl} この村にも めいわくかけた。{page} ワシら はんせいした。{nl} 島まで アシで 歩いてカエル。{page2}",
-   "en": "Yaak Chief{nl}\"Then, as chief of the Yaak, I order you!{page}\"You came into this village unlawfully,{nl} from the sky. But....{page}{FB00}\"When you leave this village, walk out{nl} properly on your feet, through the{nl} gate.{page}{FB00}Birdman{nl}\"Sorry... elder. We trouble this village{nl} too.{page} We sorry. We walk home on feet to{nl} island.{page2}"
+   "en": "Yaak Chief{nl}\"Then as chief of the Yaak, I order you{nl} lot, mark me!{page}\"You dropped into this village{nl} unlawfully, from the sky. But....{page}{FB00}\"When you leave this village, you'll walk{nl} out proper on your own feet, through{nl} the gate, eh?{page}{FB00}Birdman{nl}\"Sorry... elder. We trouble this village{nl} too.{page} We sorry. We walk home on feet to{nl} island.{page2}"
   },
   {
    "id": "r135_15B6",
    "addr": "15B6",
    "size": 120,
    "jp": "ヤ－ク族長{nl}「これで やっと この村は{nl} むかしと同じようになったぞい。{page}「それでは 武器庫へ{nl} もどるとしょうぞい。{page2}",
-   "en": "Yaak Chief{nl}\"At last this village is back the way it{nl} used to be.{page}\"Now, let us go back to the armory.{page2}"
+   "en": "Yaak Chief{nl}\"Hoh! At last this village is back the way{nl} it used to be.{page}\"Now then, back to the armory with us,{nl} eh?{page2}"
   },
   {
    "id": "r135_163E",
