@@ -11,21 +11,21 @@
    "addr": "007F",
    "size": 142,
    "jp": "ボルグ{nl}「族長様 お待たせしました。{page} 仲間と いっしょに グルド兵は{nl} みんな 村から放り出しました。{nl} {wait}{wait}{wait}{wait}さあ 家へ帰りましょう。{page2}",
-   "en": ""
+   "en": "Borg{nl}\"Chief, sorry to keep you waiting.{page} With my friends, we've thrown every{nl} Guld soldier out of the village.{nl} {wait}{wait}{wait}{wait}Now, let's go home.{page2}"
   },
   {
    "id": "r137_0119",
    "addr": "0119",
    "size": 258,
    "jp": "ヘ－グとロ－グ{nl}『ボルグ～！！{nl} やってくれたぜ～！{page}ヘ－グ{nl}「まさか オレたちの分まで{nl} やっつけちまったなんて！{page}{FB00}ヘ－グとロ－グ{nl}『そんな 友だちがいのないこと{nl} いわないよな～？{page}{FB00}ヘ－グ{nl}「いくぞ～ ロ－グ！{page}{FB00}ロ－グ{nl}「あにき～ がってんだ－！{page2}",
-   "en": ""
+   "en": "Heeg and Rogue{nl}\"Borg~!! You did it~!{page}Heeg{nl}\"You even beat the ones that were{nl} ours!{page}{FB00}Heeg and Rogue{nl}\"You wouldn't say anything so{nl} unfriendly~, would you?{page}{FB00}Heeg{nl}\"Let's go~, Rogue!{page}{FB00}Rogue{nl}\"Bro~, you got it!{page2}"
   },
   {
    "id": "r137_0232",
    "addr": "0232",
    "size": 222,
    "jp": "ヤ－ク族長{nl}「やれ やれ{nl} さわがしい 兄弟じゃ！{page}{FB00}「オホン！{wait}{wait}{wait}{nl} まずは ヤ－ク族の長として{nl} お礼を もうしあげるぞい。{page}「さぁ さぁ わしの家へ{wait}{wait}{nl} そこで いろいろ話しを{nl} 聞かせていただきましょうぞい。{page2}",
-   "en": ""
+   "en": "Yaak Chief{nl}\"Well, well, what noisy brothers!{page}{FB00}\"Ahem! {wait}{wait}{wait}First, as chief of the{nl} Yaak, let me thank you.{page}\"Come, come, to my house.{wait}{wait} There{nl} I'd like to hear all about it.{page2}"
   }
  ]
 }
