@@ -137,7 +137,8 @@ def mark(files, fn=marker_text):
                 e["en"] = fn(e)
             continue
         for e in doc["entries"]:  # a slot too short for a far jump gets as much of its id as fits
-            e["en"] = fn(e) if e["size"] >= FAR_LEN else e["id"][-(e["size"] // 2):]
+            pooled = e.get("ptrs") and (int(e["file"], 16) & ~0x7FFF) in BANK_POOLS
+            e["en"] = fn(e) if e["size"] >= FAR_LEN or pooled else e["id"][-(e["size"] // 2):]
 
 
 def text_of(e):
@@ -193,7 +194,32 @@ def fit(enc, size, ret, alloc, writer, eid, space=None):
     return far(cpu_of(off)).ljust(size, b"\0")
 
 
-NAMES_AREA = 0x3E0000     # $FC:8000: ASCII -> BG3 tile table, name pointers, English names (asm/vwf.asm nm_*)
+# Bank-local pools for strings too short for a far jump but reached by 16-bit pointers (b04_B2E2): the string moves
+# here (ending in a far jump back to the byte after its slot) and its pointers are rewritten. Bank 04's pool is the
+# tail of the $FF padding at 0x27BE9-0x27FFF (docs/re/compression.md free-space candidates).
+BANK_POOLS = {0x20000: (0x27F00, 0x28000)}
+
+
+class BankPools:
+    def __init__(self):
+        self.pos = {base: lo for base, (lo, _) in BANK_POOLS.items()}
+
+    def repoint(self, off, data, e, writer):
+        base = off & ~0x7FFF
+        if base not in BANK_POOLS:
+            raise ValueError(f"{e['id']}: {len(data)} bytes for a {e['size']}-byte slot and no pool in its bank")
+        at = self.pos[base]
+        if at + len(data) > BANK_POOLS[base][1]:
+            raise ValueError(f"{e['id']}: bank pool at {base:06X} full")
+        self.pos[base] = at + len(data)
+        writer.put(at, data, f"pool:{e['id']}")
+        for p in e["ptrs"]:
+            p = int(p, 16)
+            assert p & ~0x7FFF == base, f"{e['id']}: pointer {p:06X} outside the string's bank"
+            writer.put(p, ((at & 0x7FFF) | 0x8000).to_bytes(2, "little"), f"ptr:{e['id']}")
+
+
+NAMES_AREA = 0x3E0000    # $FC:8000: ASCII -> BG3 tile table, name pointers, English names (asm/vwf.asm nm_*)
 NAME_KIND = {"items": 1, "spells": 2, "enemies": 3, "tactics": 4}  # escape in a record's name field: kind, n (1-255)
 NAME_KINDS_MAX = 8        # pointer tables are sized for this many kinds (fixed addresses in asm/vwf.asm)
 BT_W = 8                  # battle name windows: 8 tiles, two rows (29:B2B6; the top row is the dakuten row)
@@ -424,6 +450,7 @@ def apply(orig, region, writer, files, alloc=None):
     bc = ByteCodec(orig, JP)
     b3jp, b3en, b3sp = bg3_jp(orig), bg3_en(), BG3_SPACE.to_bytes(2, "little")
     names = NameTable(orig) if alloc is not None else None
+    pools = BankPools()
     for name, doc in files.items():
         src = doc["source"]
         if src["kind"] == "battle":  # in place, same tile count (tools/battle_text.py)
@@ -466,6 +493,9 @@ def apply(orig, region, writer, files, alloc=None):
                 data[a:a + size] = fit(enc, size, 0x7F0000 | (a + size), alloc, writer, e["id"])
             else:
                 ret = int(src["bank"], 16) << 16 | (a + size)
+                if len(enc) > size and size < FAR_LEN and e.get("ptrs"):
+                    pools.repoint(int(e["file"], 16), enc + far(ret), e, writer)
+                    continue
                 writer.put(int(e["file"], 16), fit(enc, size, ret, alloc, writer, e["id"]), f"text:{e['id']}")
         if src["kind"] == "block":
             b.data = bytes(data)

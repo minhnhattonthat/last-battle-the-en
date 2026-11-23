@@ -59,6 +59,17 @@ def test_fit_same_pad_jump_move():
         insert.fit(long, 4, 0, a, w, "x")
 
 
+def test_bank_pool_repoints_short_slot():
+    w, p = W(), insert.BankPools()
+    data = EN.encode("Mei") + insert.far(0x04B2E6)
+    p.repoint(0x232E2, data, {"id": "b04_B2E2", "size": 4, "ptrs": ["0232D4"]}, w)
+    p.repoint(0x232E2, data, {"id": "b04_B2E2", "size": 4, "ptrs": ["0232D4"]}, w)
+    assert w.puts == [(0x27F00, data), (0x232D4, b"\x00\xff"),
+                      (0x27F00 + len(data), data), (0x232D4, (0xFF00 + len(data)).to_bytes(2, "little"))]
+    with pytest.raises(ValueError):
+        p.repoint(0x12345, data, {"id": "r", "size": 2, "ptrs": ["012340"]}, w)
+
+
 ORIG = ROOT / "rom" / "Last Battle, The (Japan).sfc"
 
 

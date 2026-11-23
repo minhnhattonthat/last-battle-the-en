@@ -22,6 +22,11 @@ Canvas notes: each text line owns 32 VRAM tile columns (256 px) at `$6600 + line
 into the line's bottom-row tiles and the next line (seen in the ruler shot), so overflow shows as garbage, not a clip.
 The longest Japanese dialogue lines are 18 glyphs = 216 px, matching the box.
 
-Still to measure (next session): the last line with the page-wait arrow; windowed messages (`menu_item` "who uses"
+Page-wait arrow (measured 2026-11-23, `build.py --out build/qa_arrow.sfc --qa "top20_0016=Line one{nl}Line
+two{nl}<36 digits>{page}End."`, scene `svc_06_00`, `work/qa/arrow/x.png`): the arrow is drawn centred *below* line 3,
+so a full 216 px third line keeps its whole width; the `{page}` then scrolls the box one line ("End." on the new
+line 3).
+
+Still to measure (next session): windowed messages (`menu_item` "who uses"
 box, `svc_*` shop/inn boxes, battle message box, epilogue text on black in `credits`), place-name banner
 (`place_*`, centred with leading spaces), item / spell name fields (menus, shop, battle), status-window name field.

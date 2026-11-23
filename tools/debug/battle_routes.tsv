@@ -1,0 +1,14 @@
+# name	room	x	y	keys	pokes  (tools/debug/battle_cover.py; keys from READY as in scenes.tsv; A at ~1100 frames opens COMMAND, the 4-icon menu is up ~120 frames later)
+auto	0x00	40	30	1100 -	god,@1DDF:0053
+win	0x00	40	30	300 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -;6 a;14 -	god,win,@1DDF:0053
+wipeout	0x00	40	30	300 -	@1DDF:0053
+labels	0x00	40	30	1100 -;6 a;150 -;6 right;60 -;6 right;60 -;6 right;60 -;6 right;60 -	god,@1DDF:0053
+k0	0x00	40	30	1100 -;6 a;150 -;6 a;120 -;6 a;120 -;6 down;30 -;6 a;120 -;6 a;200 -	god,@1DDF:0053
+k1	0x00	40	30	1100 -;6 a;150 -;6 right;40 -;6 a;120 -;6 a;120 -;6 down;30 -;6 a;120 -;6 a;200 -	god,@1DDF:0053
+k1b	0x00	40	30	1100 -;6 a;150 -;6 right;40 -;6 a;120 -;6 down;30 -;6 down;30 -;6 a;120 -;6 a;120 -;6 b;60 -;6 b;60 -	god,@1DDF:0053
+k2	0x00	40	30	1100 -;6 a;150 -;6 right;40 -;6 right;40 -;6 a;120 -;6 a;120 -;6 down;30 -;6 a;120 -;6 a;200 -	god,@1DDF:0053
+k2b	0x00	40	30	1100 -;6 a;150 -;6 right;40 -;6 right;40 -;6 a;120 -;6 down;30 -;6 a;120 -;6 right;30 -;6 a;120 -;6 b;60 -	god,@1DDF:0053
+k3	0x00	40	30	1100 -;6 a;150 -;6 left;40 -;6 a;120 -;6 a;120 -;6 down;30 -;6 a;120 -;6 a;200 -	god,@1DDF:0053
+k3b	0x00	40	30	1100 -;6 a;150 -;6 left;40 -;6 a;120 -;6 down;30 -;6 a;120 -;6 down;30 -;6 a;120 -;6 b;60 -	god,@1DDF:0053
+kx	0x00	40	30	1100 -;6 a;150 -;6 x;120 -;6 y;120 -;6 select;120 -;6 start;120 -	god,@1DDF:0053
+room	0x4D	10	6	1100 -	god,@1DDF:002B

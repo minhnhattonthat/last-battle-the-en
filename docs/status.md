@@ -4,10 +4,22 @@ Updated at the end of every session. Keep it to what the next session needs; his
 
 - **Phase:** 5. Engine spike and marker build in progress (VWF, far jumps, staff roll, item/spell name escapes,
   BG3 menu strings, spell ranks, the English name-entry grid, battle names, the battle font and battle tile text
-  done; left: a battle-window marker tour, per-caller BG3 name caps, the rest of the width gate, a full re-tour).
+  done; battle-window tour started (20/133 ids seen); left: the rest of the battle tour, per-caller BG3 name caps,
+  description boxes, the rest of the width gate, a full re-tour).
   Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) and `build/lastbattle_en.sfc` boot
-  (smoke ok, 2026-11-23 session 7).
+  (smoke ok, 2026-11-23 session 8).
 - **Done:**
+  - **Phase 5, session 2026-11-23 (8):** battle coverage tool: `tools/debug/battle_cover.py OUT` runs the routes in
+    `tools/debug/battle_routes.tsv` on `build/marker.sfc` with `tools/lua/rect_reads.lua` (logs the first CPU read of
+    each `script/battle.json` rect) and writes `OUT/cover.tsv` (id, route, frame). Run `work/qa/bcov2`: 20/133 read:
+    command labels `87A5/B5/C5/D5` (A opens "COMMAND", the 4-icon menu is up ~120 frames later; icons fight/orders/
+    tactics/run), magic `8841`, tactics prompt `88A6`, `8916`, `895C` たれか, `89AE` さくせんセレクト, `91EC`
+    なにを, `920D/923D/926D` (target frames), `9310` たれに, victory `140017`, particles; markers seen in
+    `work/qa/bcov2/k1.png`. Garbled still: the spell info column right of the magic window (`&:uま`, `MP`), not in
+    battle.json (tiles drawn by other code: find its source). Page-wait arrow measured: below line 3, no width cost
+    (`docs/re/windows.md`). `b04_B2E2` (メイ, 4-byte slot) now moves into a bank-04 pool `0x27F00-0x27FFF` and its
+    pointer `0x232D4` is rewritten (`insert.BankPools`, test `test_bank_pool_repoints_short_slot`); its screen is
+    not yet seen in game, and the pool ($FF padding) still wants a `trap_reads.lua` pass.
   - **Phase 5, session 2026-11-23 (7):** battle tile text extracted (`docs/re/battle.md` §Battle messages):
     window-script format of 29:A1EA decoded; `tools/battle_text.py` -> `script/battle.json` (133 in-place rects:
     34 direct scripts, 87 table-reached script ops, 12 scanned runs), roundtrip in `test_roundtrip`, marker and
@@ -96,9 +108,12 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   1. **Finish phase 5** (done-when: marker ROM boots, every text box shows its id, non-text strings excluded, every
      box variant measured). Left:
-     - **1a. Battle-window marker tour** (`script/battle.json` is done): add scenes.tsv rows that open each battle
-       window and screen on `build/marker.sfc` (command menu 4 icons, orders, tactics select, items in battle,
-       spells, equip/status, run, victory, mana screen) and check every `bt_` id shows. Timing: with pokes
+     - **1a. Battle-window marker tour** (started, `battle_cover.py`, 20/133 read): add routes to
+       `battle_routes.tsv` for the 113 ids still unread (`work/qa/bcov2/cover.tsv` lists them: items in battle
+       `185xxx` descriptions, equip/status, run, mana screen `16EFxx`, the `19E5xx-19EBxx` message family,
+       `1D82xx`); deeper menus need longer key chains after the command menu, other encounters (`@1DDF`), and a
+       party with items/spells (stress save). If whole families never fire a CPU read, check for DMA from ROM.
+       Old notes: with pokes
        `god,@1DDF:0053` from room 0x00 40 30, READY is f2149 and the gray command menu is up at ~f3390, so keys
        start with `1100 -` (`tools/debug/probe.py work/qa/bcmd --rom build/marker.sfc --frames 4400 "0x00 40 30 1100
        -;6 right;30 -;6 a;60 -;6 a;200 -|-|god,@1DDF:0053"`). The battle
@@ -126,11 +141,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
      - **Description boxes** (item/spell descriptions in the shop and spell screens, now `bg3_A3xx`-`bg3_ACxx` in
        `menus.json`): 5 tiles per line x 4 lines of 8 px fixed tiles, far too small for English. Plan engine work
        (wider box via the window op, or draw them through the VWF canvas) and measure the result.
-     - `b04_B2E2` (メイ, 4-byte slot, pointer `0x232D4`): too short for a far jump; move it by its pointer into
-       dead space of another bank-04 string (marker build writes the id tail meanwhile).
-     - Width gate still to measure (`docs/re/windows.md` "Still to measure"): the page-wait arrow on line 3 (the
-       arrow sits below the text row in `svc_06_00`, so likely no cost: confirm with a 36-digit `--qa` line), the
-       epilogue right edge, the item-description box (`common`/bank-04 descriptions, `menu_item` > item > info),
+     - Width gate still to measure (`docs/re/windows.md` "Still to measure"): the epilogue right edge, the item-description box (`common`/bank-04 descriptions, `menu_item` > item > info),
        battle message box, BG3 name fields per screen (`stack_log.lua --var "ADDRS='01FEAA'"` over the menu, shop
        and battle scenes gives each caller; then the per-caller cap table in `nm_feaa`).
      - No marker showed in an odd place in the tour (no non-text found yet); re-check after 1a.
