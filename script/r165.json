@@ -11,42 +11,42 @@
    "addr": "00EB",
    "size": 34,
    "jp": "牢の扉には{nl}カギが かかっている。",
-   "en": ""
+   "en": "The cell door is locked."
   },
   {
    "id": "r165_010F",
    "addr": "010F",
    "size": 66,
    "jp": "がんじょうそうな牢屋だ。{nl}きっと ドラゴンを入れても{nl}平気だろう。",
-   "en": ""
+   "en": "A sturdy-looking cell.{nl}It could probably even{nl}hold a dragon."
   },
   {
    "id": "r165_017B",
    "addr": "017B",
    "size": 46,
    "jp": "「ほんとに ここから{nl} 出られるんですね！？{page}",
-   "en": ""
+   "en": "\"We can really get out of here?!{page}"
   },
   {
    "id": "r165_01A9",
    "addr": "01A9",
    "size": 72,
    "jp": "「ああっ 夢みたいだ！{nl} この 牢獄から{nl} 出られる日が来るなんて！！{page2}",
-   "en": ""
+   "en": "\"Ahh, it's like a dream! The day we get{nl} out of this prison has come!!{page2}"
   },
   {
    "id": "r165_0223",
    "addr": "0223",
    "size": 116,
    "jp": "「なんだって！？{nl} ユ－リ様も脱出に成功したのか！！{page}「ならば私も 急いでお供せねば！{nl} きみたち ありがとう！！{page2}",
-   "en": ""
+   "en": "\"What?! Yuri-sama escaped too!!{page}\"Then I must hurry and join him! Thank{nl} you, all of you!!{page2}"
   },
   {
    "id": "r165_02BF",
    "addr": "02BF",
    "size": 104,
    "jp": "「きみたち 気をつけろよ。{nl} この塔は 魔物だらけだ。{page}「やつら{nl} どこから襲ってくるか{nl} わからんぞ！",
-   "en": ""
+   "en": "\"Be careful, you lot. This tower is full{nl} of monsters.{page}\"You never know where they'll strike{nl} from!"
   },
   {
    "id": "r165_0333",

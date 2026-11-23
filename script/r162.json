@@ -11,91 +11,91 @@
    "addr": "00EB",
    "size": 34,
    "jp": "牢の扉には{nl}カギが かかっている。",
-   "en": ""
+   "en": "The cell door is locked."
   },
   {
    "id": "r162_010F",
    "addr": "010F",
    "size": 66,
    "jp": "がんじょうそうな牢屋だ。{nl}きっと ドラゴンを入れても{nl}平気だろう。",
-   "en": ""
+   "en": "A sturdy-looking cell.{nl}It could probably even{nl}hold a dragon."
   },
   {
    "id": "r162_017B",
    "addr": "017B",
    "size": 84,
    "jp": "「ありがとう 助かったよ。{nl} よ－し グルドのやつらめ！{nl} ぶっとばしてやるぞ！！{page2}",
-   "en": ""
+   "en": "\"Thanks, you saved me. All right, those{nl} Guld rats! I'll knock 'em flying!!{page2}"
   },
   {
    "id": "r162_01F3",
    "addr": "01F3",
    "size": 98,
    "jp": "「んんっ？{wait}{wait} だっ 誰だっ！{nl} グルド兵かっ！？{page}「なんだ あんたたちか・・・{nl} おどかすなよ。",
-   "en": ""
+   "en": "\"Hmm? {wait}{wait}Wh..who's there! Guld{nl} soldiers?!{page}\"Oh, it's just you... Don't scare me like{nl} that."
   },
   {
    "id": "r162_0261",
    "addr": "0261",
    "size": 54,
    "jp": "「この牢獄から 出してくれるのか？{nl} ありがてぇ！！{page}",
-   "en": ""
+   "en": "\"You'll let me out of this prison? Bless{nl} you!!{page}"
   },
   {
    "id": "r162_0297",
    "addr": "0297",
    "size": 72,
    "jp": "「牢獄さえ出れば こっちのもんだ！{nl} もう グルド兵なんか恐くないぞ！{page2}",
-   "en": ""
+   "en": "\"Once I'm out of this prison, it's my{nl} game! I'm not scared of Guld soldiers{nl} anymore!{page2}"
   },
   {
    "id": "r162_030D",
    "addr": "030D",
    "size": 138,
    "jp": "「おお ありがとう 友よ！{nl} この恩は忘れません。{page}「私には 人を回復させる力が{nl} あります。{page} もし必要なら{nl} いつでも言って下さい。{page2}",
-   "en": ""
+   "en": "\"Ah, thank you, my friend! I won't{nl} forget this kindness.{page}\"I have the power to heal people.{page} If you need it, just ask anytime.{page2}"
   },
   {
    "id": "r162_03A3",
    "addr": "03A3",
    "size": 40,
    "jp": "「おお 友よ！{nl} 回復が必要なのですか？",
-   "en": ""
+   "en": "\"Ah, my friend! Do you need healing?"
   },
   {
    "id": "r162_03D1",
    "addr": "03D1",
    "size": 84,
    "jp": "「わかりました では・・・{wait}{wait}{wait}{wait}{page}「ヴァテン{wait}{wait}{nl} ブレックフェ－ル{nl} レ－カ！{page2}",
-   "en": ""
+   "en": "\"Very well, then...{wait}{wait}{wait}{wait}{page}\"Vatten...{wait}{wait}{nl} Bleckfel...{nl} Reka!{page2}"
   },
   {
    "id": "r162_0433",
    "addr": "0433",
    "size": 74,
    "jp": "「これで だいじょうぶです。{nl} あなたに マナの加護が{nl} ありますように。",
-   "en": ""
+   "en": "\"There, you're all right now. Mana be{nl} with you."
   },
   {
    "id": "r162_0481",
    "addr": "0481",
    "size": 28,
    "jp": "「そうですか お気をつけて。",
-   "en": ""
+   "en": "\"I see. Take care."
   },
   {
    "id": "r162_04BE",
    "addr": "04BE",
    "size": 116,
    "jp": "「なんだって！？{nl} ユ－リ様も脱出に成功したのか！！{page}「ならば私も 急いでお供せねば！{nl} きみたち ありがとう！！{page2}",
-   "en": ""
+   "en": "\"What?! Yuri-sama escaped too!!{page}\"Then I must hurry and join him! Thank{nl} you, all of you!!{page2}"
   },
   {
    "id": "r162_0542",
    "addr": "0542",
    "size": 104,
    "jp": "「きみたち 気をつけろよ。{nl} この塔は 魔物だらけだ。{page}「やつら{nl} どこから襲ってくるか{nl} わからんぞ！",
-   "en": ""
+   "en": "\"Be careful, you lot. This tower is full{nl} of monsters.{page}\"You never know where they'll strike{nl} from!"
   }
  ]
 }

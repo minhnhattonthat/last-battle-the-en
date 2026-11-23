@@ -11,84 +11,84 @@
    "addr": "00FD",
    "size": 82,
    "jp": "ユ－リ{nl}「外で 船がまっているぞ。{page} 君たちも 準備ができたら{nl} 船に乗りなさい。",
-   "en": ""
+   "en": "Yuri{nl}\"A ship is waiting outside.{page} Board it when you're ready."
   },
   {
    "id": "r158_0151",
    "addr": "0151",
    "size": 186,
    "jp": "ユ－リ{nl}「港町では グルド水軍が{nl} まちかまえて いるだろう。{page}「だが この戦いに{nl} 負けるわけには いかないぞ。{page}「港町に たどりつかねば{nl} シルヴェルに帰ることも{nl} できないからね。",
-   "en": ""
+   "en": "Yuri{nl}\"The Guld navy will be lying in wait at{nl} the port town.{page}\"But we cannot lose this battle.{page}\"Unless we reach the port town, we{nl} can't go back to Silvel either."
   },
   {
    "id": "r158_0213",
    "addr": "0213",
    "size": 134,
    "jp": "スレ－ク{nl}「ユ－リ様も{nl} 力をかして くださるんだ。{page} 必ず グルド軍を追いだして{nl} ハンスタッドに{nl} 自由を とりもどしてやるぞ！！",
-   "en": ""
+   "en": "Sleek{nl}\"Yuri-sama is lending us his strength{nl} too.{page} We'll drive out the Guld army for sure{nl} and win back Hanstad's freedom!!"
   },
   {
    "id": "r158_029B",
    "addr": "029B",
    "size": 134,
    "jp": "スレ－ク{nl}「グルド水軍は きっと白兵戦を{nl} 挑んでくるだろう。{page} きびしい戦いになるぞ。{nl} あんたたちも{nl} かくごしたほうが いいよ。",
-   "en": ""
+   "en": "Sleek{nl}\"The Guld navy is sure to come at us{nl} hand to hand.{page} It'll be a hard fight. You'd better be{nl} ready too."
   },
   {
    "id": "r158_0329",
    "addr": "0329",
    "size": 86,
    "jp": "「この 囚人島とも{nl} 今日かぎりで おさらばだ！{wait}{wait}{nl} あ－っ 空気が うまいぞぉ！！",
-   "en": ""
+   "en": "\"Goodbye to Prison Island, as of today!{nl} {wait}{wait}Ahh, the air tastes great!!"
   },
   {
    "id": "r158_0381",
    "addr": "0381",
    "size": 52,
    "jp": "「よ－し やるぞ！{nl} グルド兵なんかに負けるものか！",
-   "en": ""
+   "en": "\"All right, let's do this! We won't lose to{nl} Guld soldiers!"
   },
   {
    "id": "r158_03BD",
    "addr": "03BD",
    "size": 42,
    "jp": "「おお 友よ！{nl} あなた回復が必要ですか？",
-   "en": ""
+   "en": "\"Ah, my friend! Do you need healing?"
   },
   {
    "id": "r158_03ED",
    "addr": "03ED",
    "size": 84,
    "jp": "「わかりました では・・・{wait}{wait}{wait}{wait}{page}「ヴァテン{wait}{wait}{nl} ブレックフェ－ル{nl} レ－カ！{page2}",
-   "en": ""
+   "en": "\"Very well, then...{wait}{wait}{wait}{wait}{page}\"Vatten...{wait}{wait}{nl} Bleckfel...{nl} Reka!{page2}"
   },
   {
    "id": "r158_044F",
    "addr": "044F",
    "size": 74,
    "jp": "「これで だいじょうぶです。{nl} あなたに マナの加護が{nl} ありますように。",
-   "en": ""
+   "en": "\"There, you're all right now. Mana be{nl} with you."
   },
   {
    "id": "r158_049D",
    "addr": "049D",
    "size": 28,
    "jp": "「そうですか お気をつけて。",
-   "en": ""
+   "en": "\"I see. Take care."
   },
   {
    "id": "r158_04D6",
    "addr": "04D6",
    "size": 68,
    "jp": "「今 この島は{nl} おいらたち ハンスタッドの者が{nl} 見はってるんだ。",
-   "en": ""
+   "en": "\"Right now, us Hanstad folk are keeping{nl} watch on this island."
   },
   {
    "id": "r158_051C",
    "addr": "051C",
    "size": 110,
    "jp": "「グルド軍は 塔の中に{nl} 魔物を おきざりにして{nl} 逃げちまったんだ。{page}「うっかり 中に入ると{nl} あぶないよ。",
-   "en": ""
+   "en": "\"The Guld army ran off and left{nl} monsters behind in the tower.{page}\"Going in carelessly is dangerous."
   }
  ]
 }

@@ -11,14 +11,14 @@
    "addr": "007B",
    "size": 34,
    "jp": "牢の扉には{nl}カギが かかっている。",
-   "en": ""
+   "en": "The cell door is locked."
   },
   {
    "id": "r161_009F",
    "addr": "009F",
    "size": 66,
    "jp": "がんじょうそうな牢屋だ。{nl}きっと ドラゴンを入れても{nl}平気だろう。",
-   "en": ""
+   "en": "A sturdy-looking cell.{nl}It could probably even{nl}hold a dragon."
   }
  ]
 }

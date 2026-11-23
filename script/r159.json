@@ -11,56 +11,56 @@
    "addr": "00E6",
    "size": 30,
    "jp": "扉には{nl}カギが かかっている。",
-   "en": ""
+   "en": "The door is locked."
   },
   {
    "id": "r159_0106",
    "addr": "0106",
    "size": 26,
    "jp": "牢屋と同じ オリの扉です。",
-   "en": ""
+   "en": "It is a barred door, like the cells."
   },
   {
    "id": "r159_015F",
    "addr": "015F",
    "size": 56,
    "jp": "ケッテリ{nl}「そうぞうしい！{nl} いったい なにごとだ！！{page2}",
-   "en": ""
+   "en": "Ketteri{nl}\"What a racket! What is going on!!{page2}"
   },
   {
    "id": "r159_01BE",
    "addr": "01BE",
    "size": 50,
    "jp": "「それが・・・{nl} 一部の囚人どもが 反乱を・・・{page2}",
-   "en": ""
+   "en": "\"Well, sir... some of the prisoners are{nl} rebelling...{page2}"
   },
   {
    "id": "r159_01F7",
    "addr": "01F7",
    "size": 42,
    "jp": "「だれだ！？{nl} そこで なにをしている！{page2}",
-   "en": ""
+   "en": "\"Who's there?! What are you doing!{page2}"
   },
   {
    "id": "r159_0269",
    "addr": "0269",
    "size": 518,
    "jp": "ケッテリ{nl}「なんと！{nl} レジ－ナ姫では ござらぬか！！{page} まさか このような場所に{nl} おられようとは{nl} 思いませんでしたな。{page2}{F9FF}レジ－ナ{nl}「ケッテリ・・・{nl} ここで きさまに会えるとはな。{page}「父ティラン王を たぶらかし{nl} 我がグルドリ－ケの名を{nl} けがした罪・・・{page} 今こそ つぐなってもらうぞ！{nl} かくごしろ！！{page2}{F9FF}ケッテリ{nl}「だまれ！ 小娘が！！{page} 今の おまえは{nl} グルド王国に はむかう{nl} 反逆者にすぎぬ！{page}「この囚人島こそ{nl} 反逆者の最後には{nl} ふさわしかろう。{page}「それ！ こやつらを{nl} 地獄に送ってやれ！{page2}",
-   "en": ""
+   "en": "Ketteri{nl}\"Why! If it isn't Princess Regina!!{page} I never thought to find you in a place{nl} like this.{page2}{F9FF}Regina{nl}\"Ketteri... So I meet you here.{page}\"For bewitching my father, King Tiran,{nl} and staining the name of our Guldrike...{page} now you will pay! Prepare yourself!!{page2}{F9FF}Ketteri{nl}\"Silence, little girl!!{page} You are now nothing but a traitor who{nl} defies the Guld kingdom!{page}\"This Prison Island is a fitting end for{nl} traitors.{page}\"Go! Send them to hell!{page2}"
   },
   {
    "id": "r159_04A9",
    "addr": "04A9",
    "size": 182,
    "jp": "ケッテリ{nl}「おのれ・・・{nl} 小娘と思って油断したわ・・・{page}「だが このままでは すまさぬ！{nl} レジ－ナ姫{nl} かくごして おくがいい！{page}「きさまらなどに{nl} 我らの邪魔は させぬぞ！！{page2}",
-   "en": ""
+   "en": "Ketteri{nl}\"Curse you... I let my guard down,{nl} thinking you just a girl...{page}\"But this is not over! Princess Regina, be{nl} ready!{page}\"I will not let the likes of you stand in{nl} our way!!{page2}"
   },
   {
    "id": "r159_06CA",
    "addr": "06CA",
    "size": 194,
    "jp": "ユ－リ{nl}「クルト！ 君たちも{nl} 無事だったようだな。{page} 捕われていた人たちは{nl} みんな 助け出したぞ。{page}「だが 本当の戦いは{nl} これからだ。{page} さあ いこう！{nl} みんなで 港町に もどるんだ！{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Kurt! You're safe too, it seems.{page} We've rescued everyone who was held{nl} prisoner.{page}\"But the real battle starts now.{page} Come on! We're all going back to the{nl} port town!{page2}"
   }
  ]
 }
