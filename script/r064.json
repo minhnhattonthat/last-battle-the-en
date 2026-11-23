@@ -81,7 +81,7 @@
    "addr": "0693",
    "size": 90,
    "jp": "「だ・{wait}{wait}か・{wait}{wait}ら・・{wait}{wait}{nl} じゃまを するんじゃないっ！{page} ケガしても 知らんぞっ！！",
-   "en": "\"I.{wait}{wait}said.{wait}{wait}don't.. {wait}{wait}get in the{nl} way!{page} Don't blame me if you get hurt!!"
+   "en": "\"I.{wait}{wait} Said.{wait}{wait} Don't... {wait}{wait}get in the{nl} way!{page} Don't blame me if you get hurt!!"
   },
   {
    "id": "r064_06F3",
@@ -116,7 +116,7 @@
    "addr": "097F",
    "size": 158,
    "jp": "「みんな必死に がんばってるんだ。{page} で わしら商人にも{nl} 何か できないかと思ってね。{page} それで あちこちの商人仲間から{nl} 品物を まわしてもらったんだよ。",
-   "en": "\"Everyone's working their hardest.{page} So I wondered if we merchants could do{nl} something too.{page} So I had merchant friends all over send{nl} me their goods."
+   "en": "\"Everyone's working their hardest.{page} So I wondered if we merchants could do{nl} something too.{page} And so I had merchant friends all over{nl} send me their goods."
   },
   {
    "id": "r064_0A25",

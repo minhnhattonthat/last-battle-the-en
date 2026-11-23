@@ -31,3 +31,10 @@ the style reference), "Cardinal-sama" -> "Your Eminence" / "His Eminence" (`r248
 | b006 | ok | - | - |
 | b007 | ok | Eldar Elder じゃ voice: r002_0038, r002_01FE, r003_053F, r003_06B1 (b053) | - |
 | b008 | ok | 真の言葉の使い手 = "true word-speaker" (glossary) in r009_00D8, r009_0144, and Iskar-scene r293_04A5, r293_06A7 that said "master of the true words" (b054) | - |
+| b009 | ok | r021_06A4 old castle official のう voice (b055); minors fixed in b055: r020_0DB0 "The mission of us", r020_0898 "the cell" | - |
+| b010 | ok | minor fixed in b055: r022_10E2 Mei "Would you not get in the way?" | - |
+| b011 | ok | r024_0261 old soldier じゃ voice (b055); minors fixed in b055: King Gustav contractions r025_0239, r025_02F6 | - |
+| b012 | ok | - | - |
+| b013 | ok | minor fixed in b055: r041_01E2 "the cell" | - |
+| b014 | ok | minor fixed in b055: r064_0693 だ・か・ら emphasis | - |
+| b015 | ok | minor fixed in b055: r064_097F repeated "So" | - |

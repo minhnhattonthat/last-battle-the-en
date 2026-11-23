@@ -53,14 +53,14 @@
    "addr": "0239",
    "size": 182,
    "jp": "グスタフ王{nl}「・・・ゴホッゴホッ・・・{page} ほう・・・{nl} 若いとは 聞いていたが{nl} 本当に まだ少年ではないか。{page}{FB00}「おや・・・？{page} 前に どこかで{nl} そなたと 会ったことはないか？{page2}",
-   "en": "King Gustav{nl}\"...Cough, cough...{page} Well now... I had heard you were young,{nl} but you're truly still a boy.{page}{FB00}\"Hm...?{page} Have we not met somewhere before?{page2}"
+   "en": "King Gustav{nl}\"...Cough, cough...{page} Well now... I had heard you were young,{nl} but you are truly still a boy.{page}{FB00}\"Hm...?{page} Have we not met somewhere before?{page2}"
   },
   {
    "id": "r025_02F6",
    "addr": "02F6",
    "size": 376,
    "jp": "ユ－リ{nl}「王様 それは なにかの{nl} 思い違いで ございましょう。{page} この者は エルダ－ル村の少年。{nl} 王様の お目にかかったことなど{nl} あるはずが ございません。{page2}{F9FF}グスタフ王{nl}「そうか？{page} しかし ふしぎと{nl} 初めてという 気がせんな・・・{page}{FB00}「ゴホッ{wait} ゴホッ・・・{wait}{nl} そなた よい目を しているな。{page} それは 王者の目だ。{page} その目の かがやき{nl} 大切にするのだぞ。{page2}",
-   "en": "Yuri{nl}\"Your Majesty, surely you are mistaken.{page} This is a boy from Eldar Village. He could{nl} never have met Your Majesty.{page2}{F9FF}King Gustav{nl}\"Is that so?{page} And yet, strangely, it doesn't feel like{nl} the first time...{page}{FB00}\"Cough... {wait}cough... {wait}You have good{nl} eyes, boy.{page} They are the eyes of a king.{page} Treasure the light in those eyes.{page2}"
+   "en": "Yuri{nl}\"Your Majesty, surely you are mistaken.{page} This is a boy from Eldar Village. He could{nl} never have met Your Majesty.{page2}{F9FF}King Gustav{nl}\"Is that so?{page} And yet, strangely, it does not feel like{nl} the first time...{page}{FB00}\"Cough... {wait}cough... {wait}You have good{nl} eyes, boy.{page} They are the eyes of a king.{page} Treasure the light in those eyes.{page2}"
   },
   {
    "id": "r025_0478",

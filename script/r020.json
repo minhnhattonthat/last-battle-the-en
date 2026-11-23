@@ -137,7 +137,7 @@
    "addr": "0898",
    "size": 54,
    "jp": "「でたらめなウワサを 広めると{nl} 牢に ほうりこむぞ！",
-   "en": "\"Spread wild rumors and I'll throw you{nl} in the cell!"
+   "en": "\"Spread wild rumors and I'll throw you{nl} in a cell!"
   },
   {
    "id": "r020_08D0",
@@ -242,7 +242,7 @@
    "addr": "0DB0",
    "size": 180,
    "jp": "「みんな よく聞け！{page} われらシルヴェル騎士団の使命は{nl} この国の平和を守ることだ！{page}「そのためには 特訓をつみかさね{nl} 無敵のシルヴェル騎士団と{nl} ならねば ならんのだぁ－っ！！",
-   "en": "\"Everyone, listen well!{page} The mission of us, the Silvel Knights, is{nl} to protect this country's peace!{page}\"For that, we must train and train until{nl} we become the invincible Silvel Knights!!"
+   "en": "\"Everyone, listen well!{page} Our mission as the Silvel Knights is to{nl} protect this country's peace!{page}\"For that, we must train and train until{nl} we become the invincible Silvel Knights!!"
   },
   {
    "id": "r020_0E66",
