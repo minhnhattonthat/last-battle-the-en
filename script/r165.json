@@ -53,49 +53,49 @@
    "addr": "0333",
    "size": 54,
    "jp": "「この牢獄から 出してくれるのか？{nl} ありがてぇ！！{page}",
-   "en": ""
+   "en": "\"You'll let me out of this prison? Bless{nl} you!!{page}"
   },
   {
    "id": "r165_0369",
    "addr": "0369",
    "size": 72,
    "jp": "「牢獄さえ出れば こっちのもんだ！{nl} もう グルド兵なんか恐くないぞ！{page2}",
-   "en": ""
+   "en": "\"Once I'm out of this prison, it's my{nl} game! I'm not scared of Guld soldiers{nl} anymore!{page2}"
   },
   {
    "id": "r165_03CB",
    "addr": "03CB",
    "size": 138,
    "jp": "「おお ありがとう 友よ！{nl} この恩は忘れません。{page}「私には 人を回復させる力が{nl} あります。{page} もし必要なら{nl} いつでも言って下さい。{page2}",
-   "en": ""
+   "en": "\"Ah, thank you, my friend! I won't{nl} forget this kindness.{page}\"I have the power to heal people.{page} If you need it, just ask anytime.{page2}"
   },
   {
    "id": "r165_0465",
    "addr": "0465",
    "size": 40,
    "jp": "「おお 友よ！{nl} 回復が必要なのですか？",
-   "en": ""
+   "en": "\"Ah, my friend! Do you need healing?"
   },
   {
    "id": "r165_0493",
    "addr": "0493",
    "size": 84,
    "jp": "「わかりました では・・・{wait}{wait}{page}「ヴァテン{wait}{wait}{nl} ブレックフェ－ル{wait}{wait}{nl} レ－カ！{page2}",
-   "en": ""
+   "en": "\"Very well, then...{wait}{wait}{page}\"Vatten...{wait}{wait}{nl} Bleckfel...{wait}{wait}{nl} Reka!{page2}"
   },
   {
    "id": "r165_04F5",
    "addr": "04F5",
    "size": 74,
    "jp": "「これで だいじょうぶです。{nl} あなたに マナの加護が{nl} ありますように。",
-   "en": ""
+   "en": "\"There, you're all right now. Mana be{nl} with you."
   },
   {
    "id": "r165_0543",
    "addr": "0543",
    "size": 28,
    "jp": "「そうですか お気をつけて。",
-   "en": ""
+   "en": "\"I see. Take care."
   }
  ]
 }

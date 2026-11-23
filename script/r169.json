@@ -11,35 +11,35 @@
    "addr": "005D",
    "size": 62,
    "jp": "「クァ～～～ア・・・{wait}{wait}{wait}{wait}{nl} なんだか ちかごろ ねむいゾ。",
-   "en": ""
+   "en": "\"Kwaaaaah...{wait}{wait}{wait}{wait} Somehow I so{nl} sleepy lately."
   },
   {
    "id": "r169_00A1",
    "addr": "00A1",
    "size": 82,
    "jp": "「戦いに まじるのは やめた{nl} こうして のんびり 気ままに{nl} くらすのが イイ。",
-   "en": ""
+   "en": "\"I quit joining in wars. Living easy and{nl} lazy like this is GOOD."
   },
   {
    "id": "r169_0103",
    "addr": "0103",
    "size": 154,
    "jp": "「ねぇねぇ{nl} オイシイ カブトムシ料理{nl} 教えてあげるわよ！！{page}「え いらないって？{page} 外は パキパキ 中は ジュるるん{nl} オイシイ オイシイのに・・・。",
-   "en": ""
+   "en": "\"Hey, hey! I teach you a yummy beetle{nl} recipe!!{page}\"Eh, you don't want?{page} Crunchy outside, squishy inside, so{nl} yummy, yummy..."
   },
   {
    "id": "r169_01A3",
    "addr": "01A3",
    "size": 92,
    "jp": "「あんたさんがた もしや・・・{nl} オナカ すいてないね？{nl} たべる話 みんな よろこぶのに！",
-   "en": ""
+   "en": "\"You folks maybe... not hungry?{nl} Everyone loves food talk!"
   },
   {
    "id": "r169_0205",
    "addr": "0205",
    "size": 52,
    "jp": "「いいこと 教えてアゲル。{page} お魚ナラ ナマが一番！",
-   "en": "",
+   "en": "\"I tell you something good.{page} Fish is best raw!",
    "reached": false
   }
  ]

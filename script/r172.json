@@ -11,21 +11,21 @@
    "addr": "004A",
    "size": 232,
    "jp": "ファルク{nl}「ようこそ クルトさんがた。{nl} わしが 長老の ファルクです。{page}「話は 聞いてます・・・{page} ウチの ヒヨッコどもが{nl} ろくに考えず 動いたせいで{nl} ごめいわく かけたね。{page}「おわびと おれいだ{nl} そこの宝箱 開けていい。{page2}",
-   "en": ""
+   "en": "Falk{nl}\"Welcome, Kurt-san and friends. I am{nl} Elder, Falk.{page}\"I hear the story...{page} Our chicks moved without thinking and{nl} made trouble for you.{page}\"For sorry and for thanks, you may{nl} open that treasure chest.{page2}"
   },
   {
    "id": "r172_013C",
    "addr": "013C",
    "size": 58,
    "jp": "「オオ もう箱の中 見たね。{nl} それあげるよ だいじな宝。",
-   "en": ""
+   "en": "\"Oh, you see inside the chest already.{nl} That is for you, precious treasure."
   },
   {
    "id": "r172_017C",
    "addr": "017C",
    "size": 76,
    "jp": "ファルク{nl}「クルトさん なにか 大きなこと{nl} しようとしてる 気がする・・・",
-   "en": ""
+   "en": "Falk{nl}\"Kurt-san, I feel you are going to do{nl} something big..."
   }
  ]
 }

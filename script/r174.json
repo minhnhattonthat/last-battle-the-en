@@ -11,161 +11,161 @@
    "addr": "0063",
    "size": 444,
    "jp": "コッパス長老{nl}「なんだね おめ－さんは？{page} ここは わしらが一番に{nl} 占領したんだギ。{nl} あとから来たって だめだギ！{page}{FB00}「え・・違う？・・・{nl} なに？ わしらコッパスの先租の{nl} 偉大な予言を知らないって！？{page} じゃ 教えてやるが{nl} この場所は いまに陸地になると{nl} 予言されているんだギ。{page} コッパスの予言に{nl} まちがいは ないギ！{wait}{wait}{nl} なに{wait}{wait} エルフ族の予言？{wait}{wait}{wait}{wait}{page} あ－ だめだめ！{nl} あんなのは ヨッパライの{nl} たわごとだギ。{page2}",
-   "en": ""
+   "en": "Koppas Elder{nl}\"What're you? We claimed this spot{nl} first, gi. Coming later is no good, gi!{page}{FB00}\"Eh.. not that?... What? You don't know{nl} the great prophecy of our Koppas{nl} ancestors?!{page} Then I'll tell you. It's foretold that this{nl} spot will soon become land, gi.{page} A Koppas prophecy is never wrong, gi!{nl} {wait}{wait}What?{wait}{wait} An elf prophecy?{nl} {wait}{wait}{wait}{wait}{page} Ah, no, no! That's just a drunkard's{nl} babble, gi.{page2}"
   },
   {
    "id": "r174_022E",
    "addr": "022E",
    "size": 168,
    "jp": "メイ{nl}「なぁ～んですってぇ～！？{page} ちょっと おっさん！{wait}{wait}{nl} よくも 言ってくれたわね！！{page2}{F9FF}コッパス長老{nl}「ゲッ！{wait}{wait}{nl} エルフ族も いっしょに{nl} いたのギャ！？{page2}",
-   "en": ""
+   "en": "Mei{nl}\"Wha-a-at did you sa-ay?!{page} Hey, mister! {wait}{wait}How dare you!!{page2}{F9FF}Koppas Elder{nl}\"Yikes! {wait}{wait}There was an elf with you,{nl} gya?!{page2}"
   },
   {
    "id": "r174_02F4",
    "addr": "02F4",
    "size": 132,
    "jp": "メイ{nl}「エルフにはね 予言の他に{nl} 魔法の力だってあるのよ！{page} なんなら このイカダを{nl} 今すぐ 焼きはらって{nl} 見せましょうか？{page2}",
-   "en": ""
+   "en": "Mei{nl}\"Elves don't just have prophecy, we{nl} have magic too!{page} Shall I burn this raft to cinders right{nl} now and show you?{page2}"
   },
   {
    "id": "r174_0383",
    "addr": "0383",
    "size": 108,
    "jp": "コッパス長老{nl}「待つギ～！！{wait}{wait}{wait}{wait}{nl} 悪かったギ あやまるギ{page} いいこと教えるから{nl} かんべんするギ～！{page2}",
-   "en": ""
+   "en": "Koppas Elder{nl}\"Wait, gi~!! {wait}{wait}{wait}{wait}I was wrong, gi, I'm{nl} sorry, gi.{page} I'll tell you something good, so forgive{nl} me, gi~!{page2}"
   },
   {
    "id": "r174_03FA",
    "addr": "03FA",
    "size": 112,
    "jp": "「北の岩場の 難破船の中に{nl} 古びた剣が あるはずギ。{page} それを取ってきてくれたら{nl} この中の宝を あげるギ。{page2}",
-   "en": ""
+   "en": "\"In a shipwreck on the rocks to the{nl} north, there should be an Old Sword, gi.{page} Bring it back and I'll give you the{nl} treasure in here, gi.{page2}"
   },
   {
    "id": "r174_0489",
    "addr": "0489",
    "size": 246,
    "jp": "コッパス長老{nl}「この箱は 古びた剣で{nl} 封印されてるから 開かないギ。{page2}{F9FF}メイ{nl}「ほんとでしょうね～？{page2}{F9FF}コッパス長老{nl}「わしも ウソは言わんギ！{page} ウソ言って{nl} イカダを燃やされちゃ{nl} それこそ かなわんギ～！{page2}{F9FF}メイ{nl}「わかったわ・・・{wait}{wait}{nl}",
-   "en": ""
+   "en": "Koppas Elder{nl}\"This box is sealed by the Old Sword, so{nl} it won't open, gi.{page2}{F9FF}Mei{nl}\"Is that really true~?{page2}{F9FF}Koppas Elder{nl}\"I don't tell lies, gi!{page} If I lied and got my raft burned, that'd{nl} be too much, gi~!{page2}{F9FF} Mei{nl}\"All right... {wait}{wait}{nl}"
   },
   {
    "id": "r174_0584",
    "addr": "0584",
    "size": 30,
    "jp": " さ クルト いきましょ！！{page2}",
-   "en": ""
+   "en": "Come on, Kurt, let's go!!{page2}"
   },
   {
    "id": "r174_05CF",
    "addr": "05CF",
    "size": 124,
    "jp": "コッパス長老{nl}「わしらには予言があるギ{page} 海より来たる剣と ひきかえに{nl} 封印された宝を わたせば{nl} 陸が あらわれるギ。{page2}",
-   "en": ""
+   "en": "Koppas Elder{nl}\"We have a prophecy, gi.{page} Give the sealed treasure in exchange{nl} for the sword from the sea, and land{nl} will appear, gi.{page2}"
   },
   {
    "id": "r174_065F",
    "addr": "065F",
    "size": 126,
    "jp": "コッパス長老{nl}「おおっ 早いギ～！{wait}{wait}{wait}{wait}{nl} え 違う？{page}「なんだ 難破船なら北の方だギ。{nl} 古びた剣を お待ちしているギ～。",
-   "en": ""
+   "en": "Koppas Elder{nl}\"Oh, that was fast, gi~! {wait}{wait}{wait}{wait}Eh, not{nl} that?{page}\"Why, the shipwreck's to the north, gi.{nl} I'll be waiting for the Old Sword, gi~."
   },
   {
    "id": "r174_06DF",
    "addr": "06DF",
    "size": 154,
    "jp": "コッパス長老{nl}「ギギ！？ それこそ古びた剣！{nl} それを待ってたギ～！！{page} これで宝箱の封印が解けるギ。{nl} そして ここが新しい陸地に{nl} なるんだギ～！！{page}",
-   "en": ""
+   "en": "Koppas Elder{nl}\"Gigi?! That's the Old Sword! I've been{nl} waiting for it, gi~!!{page} Now the chest's seal will break, gi. And{nl} this will become new land, gi~!!{page}"
   },
   {
    "id": "r174_077B",
    "addr": "077B",
    "size": 66,
    "jp": "「さあ 宝は あげるから{nl} その 古びた剣を{nl} わたしてくれるギ？",
-   "en": ""
+   "en": "\"Now, I'll give you the treasure, so hand{nl} over that Old Sword, gi?"
   },
   {
    "id": "r174_07CB",
    "addr": "07CB",
    "size": 54,
    "jp": "「ギ～・・・！{nl} やっぱり陸の人間は{nl} いじわるだギ！",
-   "en": ""
+   "en": "\"Gi~...! Land people are mean after all,{nl} gi!"
   },
   {
    "id": "r174_0803",
    "addr": "0803",
    "size": 58,
    "jp": "コッパス長老{nl}「おおっ！{nl} やっぱり 気が 変わったギ？{page}",
-   "en": ""
+   "en": "Koppas Elder{nl}\"Oh! You changed your mind after all,{nl} gi?{page}"
   },
   {
    "id": "r174_0843",
    "addr": "0843",
    "size": 150,
    "jp": "「ゲゲゲゲ！！{nl} おめ－さんラ あの剣を{nl} どうしたギ！？{page} まさか・・・なくしたのギ？{wait}{wait}{nl} ・・・お おわりだギ{wait}{wait}{nl} この世の おわりだギ～！！",
-   "en": ""
+   "en": "\"Gegegege!! What did you do with that{nl} sword, gi?!{page} Don't tell me... you lost it, gi? {wait}{wait}...It's{nl} the end, gi{wait}{wait}, the end of the world,{nl} gi~!!"
   },
   {
    "id": "r174_08DF",
    "addr": "08DF",
    "size": 116,
    "jp": "コッパス長老{nl}「これで 陸地が あらわれる{nl} はずだったギ・・・{page}「ああ・・予言を信じた{nl} わしが バカだったのか？",
-   "en": ""
+   "en": "Koppas Elder{nl}\"With this, land should have appeared,{nl} gi...{page}\"Ahh.. Was I a fool to believe the{nl} prophecy?"
   },
   {
    "id": "r174_0959",
    "addr": "0959",
    "size": 72,
    "jp": "コッパス長老{nl}「おめ－さんら ひどいな－{nl} わしは がっくり きとるギ。",
-   "en": ""
+   "en": "Koppas Elder{nl}\"You folks are cruel, gi. I'm all down in{nl} the dumps, gi."
   },
   {
    "id": "r174_09A5",
    "addr": "09A5",
    "size": 78,
    "jp": "コッパス長老{nl}「ううう・・・{nl} なぐさめて くれるか。{page} ちっと うれしいギ。",
-   "en": ""
+   "en": "Koppas Elder{nl}\"Uuu... You'll comfort me?{page} That makes me a bit happy, gi."
   },
   {
    "id": "r174_0A01",
    "addr": "0A01",
    "size": 144,
    "jp": "コッパス長老{nl}「グギギ～・・・{nl} 陸が現われるギ～・・・{page} 封印を解くんだギ～・・・{nl} 宝箱の 光のネファを{nl} とりだすんだギ～・・・ぐうぐう。",
-   "en": ""
+   "en": "Koppas Elder{nl}\"Gugigi~... Land will appear, gi~...{page} Break the seal, gi~... Take out the Light{nl} Nepha from the chest, gi~... snore,{nl} snore."
   },
   {
    "id": "r174_0A93",
    "addr": "0A93",
    "size": 94,
    "jp": "コッパス長老{nl}「グギギ～・・・ グギギ～・・・{page} なぜだギ～！{nl} 予言は うそつきだギ～・・・",
-   "en": ""
+   "en": "Koppas Elder{nl}\"Gugigi~... Gugigi~...{page} Why, gi~! The prophecy's a liar, gi~..."
   },
   {
    "id": "r174_0AF3",
    "addr": "0AF3",
    "size": 122,
    "jp": "クルトたちは{nl}古びた剣を わたした！{C11E}{C1FF}{C119}{page2}{F9FF}{B8CC}コッパス長老{nl}「ありがとう{wait}{wait} ありがとうギ！{nl} ちょっと 待つギ・・・{page2}",
-   "en": ""
+   "en": "Kurt and the others handed{nl}over the Old Sword!{C11E}{C1FF}{C119}{page2}{F9FF}{B8CC}Koppas Elder{nl}\"Thank you{wait}{wait}, thank you, gi! Wait a{nl} moment, gi...{page2}"
   },
   {
    "id": "r174_0B92",
    "addr": "0B92",
    "size": 116,
    "jp": "コッパス長老{nl}「ほい 光のネファだギ。{nl} おめ－さんラに やるギ。{page2}{F9FF}クルトたちは{nl}光のネファを 手に入れた{C11E}{C1FF}{C119}{page2}",
-   "en": ""
+   "en": "Koppas Elder{nl}\"Here, the Light Nepha, gi. It's yours, gi.{page2}{F9FF}Kurt and the others got{nl}the Light Nepha.{C11E}{C1FF}{C119}{page2}"
   },
   {
    "id": "r174_0C15",
    "addr": "0C15",
    "size": 68,
    "jp": "コッパス長老{nl}「さあ いよいよだギ。{nl} 陸地よ！ 現われるギ～！！{page2}",
-   "en": ""
+   "en": "Koppas Elder{nl}\"Now, at last, gi. Land! Appear, gi~!!{page2}"
   },
   {
    "id": "r174_0CAB",
    "addr": "0CAB",
    "size": 144,
    "jp": "コッパス長老{nl}「・・・はぁ・・はぁ・・・{page} 変だギ ちっとも陸が{nl} 現われないギ・・・{page}「まさか おめ－さんラ{nl} わしを だましたんじゃ・・・{page2}",
-   "en": ""
+   "en": "Koppas Elder{nl}\"...huff.. huff...{page} Strange, gi. Land isn't appearing at all,{nl} gi...{page}\"Don't tell me you folks tricked me...{page2}"
   },
   {
    "id": "r174_0D4A",

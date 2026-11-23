@@ -67,6 +67,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ハイラム | Hiram | | | |
 | ロベルト | Robert | | | |
 | ガッキンコ | Gakkinko | | | |
+| ファルク | Falk | | birdman elder | |
 | ヘ－グ | Heeg | | Yaak, Rogue's friend in Bergstadt | |
 | 破城つち | battering ram | | Yaak siege ram | |
 | ライム | Lime | | elf queen (ライム王妃 = Queen Lime) | |
