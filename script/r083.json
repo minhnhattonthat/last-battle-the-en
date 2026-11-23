@@ -11,21 +11,21 @@
    "addr": "0041",
    "size": 658,
    "jp": "ロベルト王{nl}「私は エルフ王 ロベルト。{page} エルフは 本来{nl} 人間を 好まん。{page}「おまえを 里に まねいたのは{nl} おまえが フェ－ベンネルスの{nl} 弟子だからだ。{page}「エルフの里に入れる人間は{nl} シルヴェル王 グスタフと{nl} フェ－ベンネルス{page} それに 彼等が{nl} つれてきた者だけだ。{page}「おまえは この里に入った{nl} 数少ない人間の１人{nl} と いうわけだな。{page}「エルフには 真の言葉によって{nl} 未来を 見通すことができる{nl} 能力を持つものがいる。{page}「私はシルヴェルが滅びるのを{nl} 夢で見て{nl} メイをお城につかわしたのだ。{page}「しかし私は{nl} 真の言葉使いではない。{page} この先のことは私には見えない。{page}「この混乱をおさめるのは{nl} たぶん真の言葉使いの{nl} 仕事になるだろう。",
-   "en": ""
+   "en": "King Robert{nl}\"I am Robert, king of the elves.{page} Elves do not care for humans by{nl} nature.{page}\"I invited you to the village because{nl} you are Febennels' pupil.{page}\"The only humans who may enter the{nl} elf village are Gustav, King of Silvel,{nl} and Febennels,{page} and those they bring with them.{page}\"So you are one of the few humans{nl} who have entered this village.{page}\"Some elves have the power to see the{nl} future through true words.{page}\"I saw Silvel fall in a dream, and sent{nl} Mei to the castle.{page}\"But I am not a true word-speaker.{page} I cannot see what lies ahead.{page}\"Ending this chaos will most likely be the{nl} work of a true word-speaker."
   },
   {
    "id": "r083_02D5",
    "addr": "02D5",
    "size": 232,
    "jp": "ロベルト王{nl}「今 この国に{nl} 真の言葉使いは いない。{page}「しかし私はこの混乱が{nl} 真の言葉使いを まっている{nl} そんな気がするのだ。{page}「フェ－ベンネルスの弟子{nl} 人間の子 クルトよ。{page} また来るがいい。{nl} いつでも かんげいするぞ。",
-   "en": ""
+   "en": "King Robert{nl}\"There is no true word-speaker in this{nl} land now.{page}\"But I feel this chaos is waiting for a{nl} true word-speaker.{page}\"Febennels' pupil, Kurt, child of humans.{page} Come again. You are always welcome."
   },
   {
    "id": "r083_03BF",
    "addr": "03BF",
    "size": 356,
    "jp": "ロベルト王{nl}「やあ フェ－ベンネルスの弟子{nl} 人間の子 クルトよ。{page}「言葉は なかなか{nl} それ自体からは 生まれん。{page}「真の言葉使いは{nl} 言葉だけの存在ではないのだ。{page}「シルヴェルが どうなるか{nl} わたしには わからない。{page}「この混乱をおさめるのは{nl} たぶん真の言葉使いの{nl} 仕事になるのだろう。{page}「クルトよ また来るがいい。{nl} いつでも かんげいするぞ。",
-   "en": ""
+   "en": "King Robert{nl}\"Ah, Febennels' pupil, Kurt, child of{nl} humans.{page}\"Words are seldom born from words{nl} alone.{page}\"A true word-speaker is not a being of{nl} words alone.{page}\"What will become of Silvel, I do not{nl} know.{page}\"Ending this chaos will most likely be the{nl} work of a true word-speaker.{page}\"Kurt, come again. You are always{nl} welcome."
   },
   {
    "id": "r083_052B",

@@ -11,14 +11,14 @@
    "addr": "0038",
    "size": 490,
    "jp": "「伝説のエルフ王 ハイラムが{nl} その身に おびていた剣。{page}「あのオ－ラソ－ドは{nl} どこにいって{nl} しまったのだろう？{page}「イカダ族が 持っていった？{nl} 難破船の中？{page} それとも ドラゴンが{nl} その穴の 闇の中に{nl} かくしているのか？{page}「伝説の 大きな人{nl} エント族が 持っているの？{page} エルフの森には{nl} そんなものは ありそうにない。{page2}{F9FF}{D340}「ん？ ・・・ ん？{nl} 続きを 忘れちまったぞ。{page} この歌の続きは{nl} どんなんだったっけ？{page}「えっ？ 続きを聞きたいの？{nl} そうかあ。思い出さなきゃな。",
-   "en": ""
+   "en": "\"The sword the legendary elf king Hiram{nl} wore at his side.{page}\"That Aura Sword, where could it have{nl} gone?{page}\"Did the raft folk take it? Is it in a{nl} shipwreck?{page} Or does a dragon hide it in the darkness{nl} of its den?{page}\"Do the legendary giants, the Ents,{nl} have it?{page} It doesn't seem to be in the elf forest.{page2}{F9FF}{D340}\"Hm? ... Hm? I forgot how it goes next.{page} How does the rest of this song go?{page}\"Eh? You want to hear the rest? I see.{nl} I'll have to remember it."
   },
   {
    "id": "r078_0224",
    "addr": "0224",
    "size": 436,
    "jp": "「伝説のエルフ王 ハイラムが{nl} その身に おびていた剣。{page}「あのオ－ラソ－ドは{nl} どこにいって{nl} しまったのだろう？{page}「イカダ族が 持っていった？{nl} 難破船の中？{page} それとも ドラゴンが{nl} その穴の 闇の中に{nl} かくしているのか？{page}「伝説の 大きな人{nl} エント族が 持っているの？{page} エルフの森には{nl} そんなものは ありそうにない。{page}{FB00}「ん？ ・・・ ん？{nl} やっぱり続きが{nl} 思い出せないぞ。{page}「この歌の続きは{nl} どんなんだったっけ？",
-   "en": ""
+   "en": "\"The sword the legendary elf king Hiram{nl} wore at his side.{page}\"That Aura Sword, where could it have{nl} gone?{page}\"Did the raft folk take it? Is it in a{nl} shipwreck?{page} Or does a dragon hide it in the darkness{nl} of its den?{page}\"Do the legendary giants, the Ents,{nl} have it?{page} It doesn't seem to be in the elf forest.{page}{FB00}\"Hm? ... Hm? I still can't remember how{nl} it goes next.{page}\"How does the rest of this song go?"
   }
  ]
 }

@@ -46,49 +46,49 @@
    "addr": "04BE",
    "size": 292,
    "jp": "「あの人は いってしまった。{nl} 人間の娘に 恋をして。{page} エルフが 人間に恋すれば{nl} エルフの命は 人間の命に{nl} 変わってしまうのに。{page}「みじかい 人間の命{nl} 恋するだけで 終るのに。{page}「あの人は いってしまった。{nl} 人間の娘に 恋をして。{page} 今は身体も くちはて{nl} 土の下に ねむる・・・。",
-   "en": ""
+   "en": "\"He has gone away, in love with a{nl} human girl.{page} When an elf loves a human, the elf's{nl} life turns into a human life.{page}\"A short human life, over with just one{nl} love.{page}\"He has gone away, in love with a{nl} human girl.{page} Now his body has rotted, and he sleeps{nl} beneath the earth..."
   },
   {
    "id": "r077_05EA",
    "addr": "05EA",
    "size": 66,
    "jp": "「エットミランシェルが{nl} 生まれたときの歌{nl} 聞いていくかい？{wait}{wait}",
-   "en": ""
+   "en": "\"Want to hear the song of how{nl} Ettmiranshel was born? {wait}{wait}"
   },
   {
    "id": "r077_0632",
    "addr": "0632",
    "size": 236,
    "jp": "「むかし むかし{nl} 世界が まだ あまり{nl} かたまっていないころ。{page}「偉大なエルフ王 ハイラムは{nl} 悲しみの中 船を進ませた。{page}「愛する妃を 失った心は ふさぎ{nl} 言葉は 荒れて 風をよび{nl} 船は嵐に つつまれた。{page}「まだ聞くかい？{wait}{wait}",
-   "en": ""
+   "en": "\"Long, long ago, when the world had{nl} not yet quite set firm,{page}\"the great elf king Hiram sailed his ship{nl} through sorrow.{page}\"His heart, grieving for his lost queen,{nl} was heavy.{page} His wild words called the wind, and the{nl} ship was wrapped in storm.{page}\"Want to hear more? {wait}{wait}"
   },
   {
    "id": "r077_0724",
    "addr": "0724",
    "size": 222,
    "jp": "「大海原は 荒れすさび{nl} エルフの船 バ－ドは{nl} 海の もくずときえた。{page}「かんいっぱつ 助かった{nl} 偉大なエルフ王 ハイラムは{page} 助けてくれた{nl} ドラゴンに のって{nl} あてどなく さまよった・・・。{page}「まだ聞くかい？{wait}{wait}",
-   "en": ""
+   "en": "\"The great sea raged, and the elf ship{nl} Bard sank beneath the waves.{page}\"Saved by a hair's breadth, the great{nl} elf king Hiram{page} rode the dragon that rescued him, and{nl} wandered with no aim...{page}\"Want to hear more? {wait}{wait}"
   },
   {
    "id": "r077_0808",
    "addr": "0808",
    "size": 318,
    "jp": "「ドラゴンの 名前はデュケン。{nl} まだ子供の ドラゴンだった。{nl} つばさには 力がなかった。{page}「嵐に つかれて{nl} つばさを 休めたのに{page} その船が 嵐に{nl} 沈んでしまったのだ。{page}「その赤い目は{nl} 陸地を 必死で さがした。{page} つばさが 破れて{nl} ふたりが 落ち始めたころ{nl} その目に 山が見えた。{page}「まだ聞くかい？{wait}{wait}",
-   "en": ""
+   "en": "\"The dragon's name was Duken. He was{nl} still a young dragon, and his wings had{nl} no strength.{page}\"Tired by the storm, he had rested his{nl} wings,{page} but the ship sank in the storm.{page}\"His red eyes searched hard for land.{page} As his wings tore and the two began to{nl} fall, his eyes saw a mountain.{page}\"Want to hear more? {wait}{wait}"
   },
   {
    "id": "r077_094C",
    "addr": "094C",
    "size": 400,
    "jp": "「今も エットミランシェルに{nl} 高く そびえる山{page} あのベ－テブルグに むかって{nl} ふたりは 落ちていった。{page}「嵐は やみ 風は流れ{nl} ふたりには 新しい国が見えた。{page} 森と湖の 美しい国{nl} エットミランシェル。{page}「ふたりは 仲間を よびよせ{nl} この国を エルフとドラゴンが{page} すえながく しあわせに{nl} くらしていく国と さだめた。{page}「・・・これで 終りだよ。{nl} また聞きたかったら{nl} 言ってくれよ。",
-   "en": ""
+   "en": "\"The mountain that still towers high{nl} over Ettmiranshel,{page} toward that Betteburg, the two fell.{page}\"The storm stopped and the wind{nl} flowed on, and the two saw a new land.{page} A beautiful land of forests and lakes:{nl} Ettmiranshel.{page}\"The two called their friends, and made{nl} this a land where elves and dragons{page} would live happily ever after.{page}\"...That's the end. If you want to hear it{nl} again, just say so."
   },
   {
    "id": "r077_0AE0",
    "addr": "0AE0",
    "size": 48,
    "jp": "「じゃあ また{nl} 聞きたかったら 言ってくれよ。",
-   "en": ""
+   "en": "\"Well then, if you want to hear it again,{nl} just say so."
   }
  ]
 }

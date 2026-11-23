@@ -11,42 +11,42 @@
    "addr": "005D",
    "size": 174,
    "jp": "「この森に 残っているエルフは{nl} 今の世界には{nl} 忘れ去られた者たち。{page}「でも 真実は ここにあるわ。{page} エットミランシェルは{nl} エルフの 租先によって{nl} 作られたんだもの。",
-   "en": ""
+   "en": "\"The elves who remain in this forest are{nl} the ones the world has forgotten.{page}\"But the truth is here.{page} Ettmiranshel was made by the{nl} ancestors of the elves."
   },
   {
    "id": "r082_010D",
    "addr": "010D",
    "size": 114,
    "jp": "「エットミランシェル！{nl} 美しき 森と湖の国。{page}「エットミランシェルは{nl} エルフの 租先によって{nl} 作られたのよ。",
-   "en": ""
+   "en": "\"Ettmiranshel! Beautiful land of forests{nl} and lakes.{page}\"Ettmiranshel was made by the{nl} ancestors of the elves."
   },
   {
    "id": "r082_018B",
    "addr": "018B",
    "size": 124,
    "jp": "「エルフが 詩人か。{nl} 詩人が エルフか。{page}「ワインと ビ－ルと{nl} キャベツが あれば{page} おれは 詩人さ{nl} ヤ－レ ホッホ。",
-   "en": ""
+   "en": "\"Are elves poets? Are poets elves?{page}\"Give me wine and beer and cabbage,{page} and I'm a poet! Yaa-re ho ho."
   },
   {
    "id": "r082_0217",
    "addr": "0217",
    "size": 170,
    "jp": "「あなた！{page} こんなところで なにをしてるの？{page}「あら？！ あなたたちね。{page} でも 夜のエルフの里で{nl} ウロウロするなんて{nl} よくないわ。{page}「これからは 気をつけなさい。",
-   "en": ""
+   "en": "\"You there!{page} What are you doing in a place like this?{page}\"Oh?! It's you two.{page} But wandering around the elf village at{nl} night is not good.{page}\"Be careful from now on."
   },
   {
    "id": "r082_02C3",
    "addr": "02C3",
    "size": 94,
    "jp": "「でも 夜のエルフの里で{nl} ウロウロするなんて{nl} よくないわ。{page}「これからは 気をつけなさい。",
-   "en": ""
+   "en": "\"But wandering around the elf village{nl} at night is not good.{page}\"Be careful from now on."
   },
   {
    "id": "r082_032D",
    "addr": "032D",
    "size": 140,
    "jp": "「こりゃ！{page} おまえたちは こんなところで{nl} いったい なにをしてるんだね？{page}「まったく 人間たちは{nl} おぎょうぎが 悪くて{nl} いかんなあ。",
-   "en": ""
+   "en": "\"Hey!{page} Just what are you doing in a place like{nl} this?{page}\"Honestly, humans have such bad{nl} manners. It won't do."
   }
  ]
 }

@@ -91,6 +91,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | クロケット | Kroket | | village | |
 | エルディス | Eldis | | island of fire and ice | |
 | ルドムの塔 | Tower of Rudom | | Febennels' training tower | |
+| ベ－テブルグ | Betteburg | | tall mountain (creation song) | |
+| 真の言葉使い | true word-speaker | | elves who see the future through true words | |
 | 星の広場 | Star Square | | clearing where the elf village appears | |
 | ドキワ | Dokiwa | | cave | |
 | ブレックフェール | Bleckfel | | | |

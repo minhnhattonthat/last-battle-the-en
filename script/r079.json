@@ -11,49 +11,49 @@
    "addr": "0078",
    "size": 380,
    "jp": "「エルフの１日は{nl} お話を作ったり 手紙を書いたり{nl} 詩をよんだり歌ったり{page} そんなことをして{nl} 移りすぎていくの。{page}「エルフは{nl} 言葉をつかさどるいきもの。{nl} 言葉は とっても力があるわ。{page}「だって ほら 人間たちが{nl} 魔法と よんでいるもの。{page} あれだって 言葉の力で{nl} できているものでしょう？{page}「エルフの１日は{nl} とっても 楽しい １日よ。{page} あなたも やってみないこと？",
-   "en": ""
+   "en": "\"An elf's day goes by making stories,{nl} writing letters, reading and singing{nl} poems.{page}\"Elves are creatures who rule over{nl} words. Words have great power.{page}\"Why, look at what humans call magic.{page} Isn't that made by the power of words{nl} too?{page}\"An elf's day is a very fun day.{page} Won't you try it too?"
   },
   {
    "id": "r079_01F6",
    "addr": "01F6",
    "size": 64,
    "jp": "「エルフは 言葉をつかさどるの。{nl} 言葉は とっても力があるわ。",
-   "en": ""
+   "en": "\"Elves rule over words. Words have{nl} great power."
   },
   {
    "id": "r079_0242",
    "addr": "0242",
    "size": 412,
    "jp": "「エルフは{nl} 本当は 恋などしないのよ。{page} エルフは 言葉の生きもの。{page} でも 恋は{nl} 言葉を こえて{nl} いくものでしょう？{page}「だけど エルフは{nl} 恋多き生きもの。{page} いつも言葉を こえたがってる。{page}「恋は 言葉にならないのに{nl} 恋の言葉は 言葉の中で{nl} 一番 力を持っているものなの。{page}「エルフが書く ラブレタ－なんか{nl} すごいわよ。{page}「よんでいるうちに 言葉が{nl} どんどん 炎になって{nl} いっちゃうんだから。",
-   "en": ""
+   "en": "\"Really, elves don't fall in love.{page} Elves are creatures of words.{page} But love goes beyond words, doesn't it?{page}\"And yet elves fall in love so easily.{page} They always want to go beyond words.{page}\"Love can't be put into words, yet{nl} words of love are the most powerful{nl} words of all.{page}\"You should see a love letter written{nl} by an elf.{page}\"As you read it, the words turn into{nl} flames!"
   },
   {
    "id": "r079_03E0",
    "addr": "03E0",
    "size": 126,
    "jp": "「エルフの さだめと{nl} 言葉の さだめ。{page}「エルフは エルフを こえたがり{nl} 言葉は 言葉を こえたがる。{page} おもしろいわね。",
-   "en": ""
+   "en": "\"The fate of elves, and the fate of{nl} words.{page}\"Elves want to go beyond elves, and{nl} words want to go beyond words.{page} Interesting, isn't it?"
   },
   {
    "id": "r079_0466",
    "addr": "0466",
    "size": 112,
    "jp": "「私は エルフ。{nl} 私は 言葉。{page}「エルフは 冷たく{nl} 言葉を あやつるの・・・。{page} ・・・ムニャムニャ・・・。",
-   "en": ""
+   "en": "\"I am an elf. I am words.{page}\"Elves coldly work their words...{page} ...Mumble, mumble..."
   },
   {
    "id": "r079_04DE",
    "addr": "04DE",
    "size": 272,
    "jp": "「恋する夜は 星のおくりもの。{page} はなればなれの 夜でも{nl} 同じ気持ちに なれるもの。{page}「むかし エルフとドラゴンが{nl} はなればなれに なったときも{page} いつまでも 変わらない{nl} 星の下の友擾を{nl} ちかったと言うわ。{page}「ああ 私の あの人は{nl} いまごろどこに いるのかしら？",
-   "en": ""
+   "en": "\"A night of love is a gift from the stars.{page} Even on nights apart, hearts can feel{nl} the same.{page}\"Long ago, when the elves and the{nl} dragons were parted,{page} they say they swore a friendship under{nl} the stars that would never change.{page}\"Ah, where could my love be now?"
   },
   {
    "id": "r079_0600",
    "addr": "0600",
    "size": 164,
    "jp": "「まったくもう！{page} 勝手に人間と けっこんして{nl} 勝手に 命を みじかくして{nl} とっとと 死んじゃうなんて。{page}「あんたって人は もう！{nl} ・・・ムニャムニャ・・・。",
-   "en": ""
+   "en": "\"Honestly!{page} Marrying a human on your own,{nl} shortening your life on your own, then{nl} just up and dying!{page}\"Oh, you! ...Mumble, mumble..."
   }
  ]
 }
