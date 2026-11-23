@@ -18,9 +18,11 @@ after `$FFFF` it goes to the next bank at `$8000`). Python: `tools/lz.py` (`deco
 ## Block pointers (verified for one entry)
 - Pointers are 24-bit **linear** addresses, converted by `01:FDDF`: file = 0xD0000 + (ptr - $1A8000)
   (font base `$1DFCF3` -> 0x107CF3, room script `$1AB772` -> 0xD3772).
-- Table region `0xD0000-0xD0420` (`$1A:8000`): several tables back to back; e.g. 43 entries at 0xD0000 (some point
-  at sub-tables inside the region, e.g. 0xD0081 whose entry 1 is `$1AB772`). Map which code reads which table in
-  phase 4 (`python -X utf8 tools/re_blocks.py`).
+- Table region `0xD0000-0xD0420` (`$1A:8000`): top table of 43 3-byte pointers at 0xD0000. Entry 0 -> room table
+  0xD0081 (309 entries, to 0xD0420); 10 -> 0xD002A (= top entries 14-28), 12 -> 0xD0057 (= 29-38), 13 -> 0xD0075
+  (= 39-42): sub-tables that alias the top table. 7 = font (`$1A:8015`), 11 = common script block (read at
+  `$1A:8021` by E5), 29-42 = room-format blocks, 14-28 = other formats (18/19 plain text, 20-27 tables; to map),
+  1-6, 8, 9 = graphics/other. Which code reads 1-6, 8-10, 14-28: still to map.
 - Blocks: 324 back-to-back LZ blocks from 0xD0420 to 0x107CF3 (one 64-byte non-block gap at 0x1068B9-0x1068F9).
   The font (uncompressed) follows at 0x107CF3. Entry 9 at 0x111817 is something else (followed by 26 KB of zeros).
 - Relocation: blocks can move anywhere in the linear space as long as the pointer is rewritten; a block may cross
