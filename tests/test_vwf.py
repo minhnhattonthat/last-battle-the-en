@@ -167,8 +167,29 @@ def test_battle_lz_roundtrip_and_font():
     font_bg3.battle_patch(orig, w)
     font = w.puts[0][1]
     p = blz.decode(font, len(font))
+    assert p[2:] == font_bg3.patch(d[2:])                    # every tile, not only the redrawn ones
     t = font_bg3.TILE["a"]
     assert p[2 + 16 * t:2 + 16 * (t + 1)] == font_bg3.tile_bytes(font_bg3.GLYPHS["a"])
+
+
+def test_blz_copies_never_overlap_their_output():
+    """The game's decoder reads a copy's whole source before writing it; an encoder copy with offset < length
+    decoded into garbage tiles in battle (box borders, '!', digits: VRAM dump 2026-11-24). Fills cover runs."""
+    import blz
+    data = b"ab" * 40 + bytes(range(50)) + b"xyzxyzxyzq" * 5
+    e = blz.encode(data)
+    i = 0
+    while i < len(e) - 1:
+        c = e[i]
+        if not c & 0x80:
+            off, n = ((c << 8 | e[i + 1]) >> 4) & 0x7FF, (e[i + 1] & 15) + 2
+            assert n <= off, (i, off, n)
+            i += 2
+        elif not c & 0x40:
+            i += 1 + (c & 0x3F) + 1
+        else:
+            i += (2 if c & 0x20 else 1) + ((c >> 3) & 3) + 1
+    assert blz.decode(e, len(e)) == data
 
 
 def test_ruler_text():

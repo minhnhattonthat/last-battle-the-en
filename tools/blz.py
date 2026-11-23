@@ -30,9 +30,10 @@ def decode(src, length):
             i += 2
             off = ((c << 8 | n1) >> 4) & 0x7FF
             rp = (wp - off) % WIN
-            for _ in range((n1 & 0x0F) + 2):
-                put(win[rp])
-                rp = (rp + 1) % WIN
+            # the game reads the whole source run before writing it: a copy that overlaps its own output
+            # (offset < length) reads the window's old bytes, not the ones it is writing (VRAM-verified 2026-11-24)
+            for b in [win[(rp + j) % WIN] for j in range((n1 & 0x0F) + 2)]:
+                put(b)
         elif not c & 0x40:
             n = (c & 0x3F) + 1
             for b in src[i + 1:i + 1 + n]:
@@ -86,7 +87,8 @@ def encode(data):
                 c = hdr + k + cost[p + r * k]
                 if c < best:
                     best, bstep = c, ("fill", k, r)
-        # copies: offset 1..2047, length 2..17; sources before position 0 read the zero-filled window
+        # copies: offset 1..2047, length 2..17 and never longer than the offset (the game's decoder does not
+        # repeat a copy's own output, see decode); sources before position 0 read the zero-filled window
         maxlen = min(17, n - p)
         if maxlen >= 2:
             key = data[p:p + 2]
@@ -95,7 +97,7 @@ def encode(data):
                 cands += [p - off for off in range(p + 1, min(WIN, p + 3))]
             for s in cands:
                 L = 0
-                while L < maxlen and (data[s + L] if s + L >= 0 else 0) == data[p + L]:
+                while L < min(maxlen, p - s) and (data[s + L] if s + L >= 0 else 0) == data[p + L]:
                     L += 1
                 for m in range(2, L + 1):
                     c = 2 + cost[p + m]
