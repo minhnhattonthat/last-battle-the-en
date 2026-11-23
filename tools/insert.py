@@ -249,6 +249,52 @@ class NameTable:
         writer.put(NAMES_AREA, blob, "names:en")
 
 
+# Name entry (docs/re/vwf.md §Name entry): the grid shows BG3 tile rows (12 bytes: 5 tile words + FF00, `$04:ACA7`,
+# 01:FABC) and a cell gives byte `$04:B1FB + row * 5 + col` (01:ADF2); a name byte b >= $2C shows as glyph word
+# `$04:B053[b - $2C]` (01:FEE3, dialogue) or BG3 tile `$04:AEAB[b - $2C]` (01:FEAA, load screen). English: the
+# bytes are ASCII (digits, capitals, lowercase, and the punctuation below on free low bytes), both maps send them to
+# the English glyph word / BG3 tile, and the grid has NE_ROWS rows instead of 43.
+NE_ROWS_OFF, NE_BYTES_OFF, GLYPH_MAP_OFF = 0x22CA7, 0x231FB, 0x23053
+EN_BASE_WORD = 0x0800  # textcodec.EN_BASE
+NE_PUNCT = {0x2C: ",", 0x2D: "-", 0x2E: ".", 0x2F: "/", 0x3A: ":", 0x3B: "'", 0x3C: " ", 0x3D: "&", 0x3E: "!",
+            0x3F: "?", 0x40: "+"}
+NE_GRID = ["ABCDE", "FGHIJ", "KLMNO", "PQRST", "UVWXY", "Z.,'-", "abcde", "fghij", "klmno", "pqrst", "uvwxy",
+           "z!?&/", "01234", "56789", ": +__"]  # "_" = empty cell (byte FF), " " = the space key
+# operand bytes of LDA #$002A at 01:AE5D/FAC4/FACA and CMP #$002B at 01:AE6F/FB03 (file offset = bank-01 address)
+NE_ROW_COUNT = [(0xAE5E, -1), (0xFAC5, -1), (0xFACB, -1), (0xAE70, 0), (0xFB04, 0)]
+
+
+def name_entry(writer):
+    """English name entry: byte maps for ASCII name bytes, the grid rows and cell bytes, the row count."""
+    import font_bg3
+    byte_of = {chr(b): b for b in list(range(0x30, 0x3A)) + list(range(0x41, 0x5B)) + list(range(0x61, 0x7B))}
+    byte_of.update({c: b for b, c in NE_PUNCT.items()})
+
+    def tile(c):
+        if c == " ":
+            return 0x93
+        if c.isdigit():
+            return 1 + int(c)
+        if "A" <= c <= "Z":
+            return 0x0B + ord(c) - 0x41
+        return font_bg3.TILE[c]
+
+    for c, b in sorted(byte_of.items(), key=lambda t: t[1]):
+        writer.put(GLYPH_MAP_OFF + 2 * (b - 0x2C), (EN_BASE_WORD + ord(c)).to_bytes(2, "little"), f"ne:glyph {c!r}")
+        writer.put(BG3_MAP_OFF + 2 * (b - 0x2C), tile(c).to_bytes(2, "little"), f"ne:bg3 {c!r}")
+    rows, cells = bytearray(), bytearray()
+    for r in NE_GRID:
+        assert len(r) == 5, r
+        for c in r:
+            rows += tile(" " if c == "_" else c).to_bytes(2, "little")
+        rows += b"\x00\xff"
+        cells += bytes(0xFF if c == "_" else byte_of[c] for c in r)
+    writer.put(NE_ROWS_OFF, bytes(rows), "ne:grid rows")
+    writer.put(NE_BYTES_OFF, bytes(cells), "ne:grid bytes")
+    for off, d in NE_ROW_COUNT:
+        writer.put(off, bytes([len(NE_GRID) + d]), "ne:row count")
+
+
 RANK_FIELD = 8
 SPELL_RAW_REFS = [0x1FE36]  # new-game character record (bank 03): Kurt's first spell, ファイアボールA
 
@@ -335,6 +381,7 @@ def apply(orig, region, writer, files, alloc=None):
             b.data = bytes(data)
     if names is not None:
         names.write(writer)
+        name_entry(writer)
         spells = files.get("spells", {"entries": []})["entries"]
         if any(e["en"] for e in spells):
             for bi, off, n, rank in spell_refs(orig, region, bc, spells):

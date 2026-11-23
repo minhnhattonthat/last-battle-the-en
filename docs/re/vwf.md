@@ -74,6 +74,15 @@ BG3 chr (shop scene dump): tiles `$00-$AE` font (block 319, 2800 bytes), `$AF-$B
 canvas, map `$D800`; BG1/BG2 maps at byte `$E000`/`$F000`, so no free BG3 tiles beyond `$BF` (no room for a tile
 VWF pool unless the katakana tiles are retired too).
 
+## Name entry (verified: scene `name_type` on the marker build, `work/qa/ne2`, typed "ABbc2")
+Grid = BG3 tile rows (12 bytes: 5 tile words + FF00) at `$04:ACA7` (01:FABC draws 6 rows from `$A0 - 2`); the cell
+gives byte `$04:B1FB + $A0 * 5 + $A2` (01:ADF2, FF = empty cell; column 5 = arrows / end key), name max 8 bytes at
+`$98`. Rows: 43, hard-coded at 01:AE5D/AE6F (cursor) and 01:FAC4/FACA/FB03 (display). `insert.name_entry` (4 MB
+build): 15 English rows (`NE_GRID`), ASCII name bytes (digits, capitals, lowercase `$61-$7A`, punctuation on free
+bytes `NE_PUNCT`, space key `$3C`), both byte maps send them to the EN glyph word (`$0800 + c`) and the BG3 tile, row
+count patched. Japanese byte names that used bytes `$61-$7A` would now garble, but every item/spell name is an
+English escape in the English build. Party names in menus are BG3 strings (`bg3_9094`...), not bytes.
+
 ## Staff roll (bank 02, verified: `credits` scene on the marker and ruler builds)
 02:D71F draws entry `$C2` (pointer table `02:E215`, bank `$B4` = 2) with 02:D789: clears the 2bpp tile image
 `$7E6C80` (`$1400` bytes, DMA'd to VRAM `$6000`), X = `$10`, then per word: FE00 = X += `$400` (next 32 px slot), FF00

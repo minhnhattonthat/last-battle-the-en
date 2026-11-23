@@ -93,6 +93,36 @@ def test_ruler_text():
     assert insert.ruler_text({"jp": "{nl}", "id": "y"}).endswith("{nl}")
 
 
+def test_name_entry_grid():
+    """English name entry: every grid cell's byte shows its own character in both byte maps, the row count is
+    patched in all five places, and every write stays in the name-entry ranges."""
+    import font_bg3
+
+    class W:
+        def __init__(self):
+            self.w = {}
+
+        def put(self, off, data, what):
+            self.w[off] = data
+
+    w = W()
+    insert.name_entry(w)
+    word = lambda off: int.from_bytes(w.w[off], "little")  # noqa: E731
+    cells = w.w[insert.NE_BYTES_OFF]
+    rows = w.w[insert.NE_ROWS_OFF]
+    for i, c in enumerate("".join(insert.NE_GRID)):
+        b = cells[i]
+        if c == "_":
+            assert b == 0xFF
+            continue
+        assert word(insert.GLYPH_MAP_OFF + 2 * (b - 0x2C)) == 0x0800 + ord(c)
+        tile = word(insert.BG3_MAP_OFF + 2 * (b - 0x2C))
+        assert int.from_bytes(rows[12 * (i // 5) + 2 * (i % 5):][:2], "little") == tile
+        if c.islower():
+            assert tile == font_bg3.TILE[c] and b == ord(c)
+    assert [w.w[o][0] for o, _ in insert.NE_ROW_COUNT] == [14, 14, 14, 15, 15]
+
+
 def test_bg3_marker_keeps_tile_count():
     """BG3 marker text: same tiles per line and the same tokens, so no BG3 string moves or reflows."""
     from textcodec import TOKEN

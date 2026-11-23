@@ -18,6 +18,7 @@ quit_prompt	0x00	40	30	2	noenc	-	300 -;6 a;300 -;6 left;60 -;6 a;200 -;6 right;6
 quit_nosave	0x00	40	30	2	noenc	-	300 -;6 a;300 -;6 left;60 -;6 a;200 -;6 right;60 -;6 a;300 -;6 right;60 -;6 a;600 -	quit without saving: back to the title
 title	title	-	-	-	-	-	600 -;6 start;300 -	title menu with no save: NEWGAME only (logo, ©1994 TEICHIKU)
 name_entry	title	-	-	-	-	-	600 -;6 start;300 -;6 start;300 -;6 start;600 -	new game: name entry screen
+name_type	title	-	-	-	-	-	600 -;6 start;300 -;6 start;300 -;6 start;600 -;6 a;20 -;6 right;20 -;6 a;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 a;20 -;6 right;20 -;6 a;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 down;20 -;6 a;60 -	name entry: types four cells 6 rows apart (English grid: A B g h, then the digits row), grid and name box
 title_load	title	-	-	-	sav=base_file1.srm	-	600 -;6 start;300 -;6 start;300 -;6 start;300 -	title with a save: NEWGAME/LOAD (LOAD is the default), then the load screen (FILE1 name and level)
 load_file1	load	-	-	-	sav=base_file1.srm	-	60 -	load FILE1 from the title: the saved place (overworld 40,30)
 stress_money	load	-	-	-	sav=stress_money.srm	-	60 -;6 a;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;120 -	save.py: money 9999999, loaded in room 77; status screen shows the 7-digit money

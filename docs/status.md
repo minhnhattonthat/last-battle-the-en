@@ -2,12 +2,14 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build in progress (VWF, far jumps, staff roll and item/spell name escapes
-  work; BG3 font has English lowercase; marker tour done (113/113); left: extract the BG3 tile-word prompts/labels
-  and the two spell-name copies, per-screen BG3 name caps, party names / name entry, the rest of the width gate). Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) boots (smoke
-  ok) and reaches name_entry, newgame, menu_item, place_00, svc_00_00, battle_win, variant_ec01 (`work/qa/marker2`)
-  and the staff roll (`work/qa/cr1`) with `[id]` markers.
+- **Phase:** 5. Engine spike and marker build in progress (VWF, far jumps, staff roll, item/spell name escapes,
+  BG3 menu strings, spell ranks and the English name-entry grid work; left: battle text (bank $30/$33), per-caller
+  BG3 name caps, the rest of the width gate, a full re-tour). Builds are 4 MB with `asm/vwf.asm`:
+  `build/marker.sfc` (`build.py --marker`) boots (smoke ok, 2026-11-23 session 5).
 - **Done:**
+  - **Phase 5, session 2026-11-23 (5b):** English name entry (`insert.name_entry`, `docs/re/vwf.md` §Name entry):
+    15-row grid A-Z / a-z / digits / punctuation, ASCII name bytes in both byte maps, row count patched in 5 places;
+    new scene `name_type` types "ABbc2" (`work/qa/ne2`); test `test_name_entry_grid`.
   - **Phase 5, session 2026-11-23 (5):** BG3 tile strings extracted: `script/menus.json` (260, kind `bg3`, codec
     `textcodec.bg3_jp/bg3_en`, `docs/re/text.md` §BG3 strings), written back by `insert.apply` (far jumps through
     the VM), marked in the marker build (`addr:` + filler, same tile count). Marker tour of 22 menu/save/shop/battle
@@ -79,24 +81,20 @@ Updated at the end of every session. Keep it to what the next session needs; his
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
   1. **Finish phase 5** (done-when: marker ROM boots, every text box shows its id, non-text strings excluded, every
-     box variant measured). Japanese the marker tour still shows (`work/qa/mt_sheets`):
-     - **1a. BG3 tile-word prompts and labels** (the biggest gap): window prompts どれを つかいますか? / だれが
-       つかいますか? / どれを すてますか?, クルト は アイテムを もっていません。, セーブしますか? / よろしいですか? /
-       どの ファイルを ロードしますか?, はい/いいえ, ステレオ/モノラル, the battle command label たたかう, menu
-       command labels (セーブ, つよさ...), status labels (ネーム, フェナムン, ノーマル...), ? (gold), shop
-       description box. They now show as garbled lowercase (the hiragana tiles carry English letters). They are
-       words < `$0300` (BG3 tiles, `ORA #$2000`, 01:B7D1) in bank 04 (`0x20400-0x22300`, `0x22CA7` rows). Write a
-       BG3 tile codec (tile -> kana via the `$04:AEAB` byte map reversed, English via `font_bg3.TILE`, capitals and
-       digits `$01-$24`), extract them into `script/` (new kind `bg3`), mark them in the marker build, re-tour.
-       Each label's field width is its tile count unless its window is resized (check the window-open op).
-     - **1b. Spell names, two unextracted copies:** an FF-terminated list at file `0x19D3F1-0x19D4A0` (22 names,
-       ファイアボール ... スターブラスト; find its reader with `tools/lua/romreads_addr.lua` in a battle casting a
-       spell or the spell-learn message) and the new-game character record at `0x1FE36` (`ファイアボールA`: 7-byte
-       name + a rank letter `A` in the 8th byte; English escape `02 01` must keep the rank letter: make `nm_fee3`/
-       `nm_feaa` print the record's last byte after the English name, or move the rank to its own field). The
-       spell menu (`menu_magic`) and battle magic list read the character record, so they showed Japanese.
-     - **1c. Party names and save-file name** show garbled lowercase (`title_load`: `bbbbbbbb`; name entry grid):
-       the name-entry remap below.
+     box variant measured). Left:
+     - **1a. Battle text** (bank $29/$30/$33, its own byte interpreter, `docs/re/text.md` §BG3 strings last item):
+       battle party names (8-byte FF-padded slots at file `0x182C57`: クルト, メイ `0x182C5F`?, ボルグ `0x182C67`,
+       レジーナ `0x182C6F`; shown in the battle status box), default spell names `0x19D3F1` (22 slots, `$30:ACD5`),
+       battle message script `$33:D4A1` run by 29:A1EA (bytes < FD = chars via 30:F28C...). Find how 30:F28C turns a
+       byte into a tile (its own map?), extract these lists (new kind, byte names), escape or remap, mark. Needs a
+       scene that casts a spell in battle (the battle command menu: たたかう + 4 icons; the 3 probe routes in
+       `work/qa/bmag` did not cast). The battle command label たたかう has no text copy anywhere: graphics (phase 8).
+     - **1b. Re-run the full marker tour** (113 + `name_type`) on the current marker build and list what is still
+       Japanese (`work/qa/mt_sheets` is from before the BG3 strings).
+     - **BG3 caps for FA inserts**: names inserted into BG3 strings (FA0F/FA18/FA2B/FA2F/FA42) all reach 01:FEAA
+       through the same handlers (FA2F -> FA8A -> FE09, return FE1E/FA8F), so a return-address cap table can't tell
+       screens apart there; key on the FA op instead (VM pointer `$10` - 2) or let translators lay out rows for an
+       8-tile name. Shop list (FE76 <- F3C2) and character names (FE55 <- EF07) can use the return-address table.
      - **BG3 name fields** (01:FEAA path; `docs/re/vwf.md` §Names): lowercase done; English names are still capped
        at the caller's count (8; 01:FE59 item records = shop list, 01:FE3B character names, both `LDA #$0008`).
        The shop row has room for 13 tiles (x 24 to the price at ~128; check the longest price). Raise the cap for
@@ -105,15 +103,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
        equip, status, battle) and measuring its field. Shop probe: `tools/debug/probe.py OUT "0x4D 10 6 30 -;6 a;60
        -;6 a;60 -;6 a;60 -;6 a;90 -;6 a;90 -;6 a;90 -;6 a;120 -|01E402|-" --rom build/bg3t.sfc --frames 2600`
        (list at ~f2400; build it with `build.py --marker --out build/bg3t.sfc --qa item_42=...`).
-     - **Party names / name entry**: names stay plain bytes (`$30-$39`, `$41-$5A` are already ASCII); lowercase
-       bytes `$61-$7A` map to kana. Remap both maps (`0x23053` glyph words -> `$0861+`, `0x22EAB` BG3 tiles) for an
-       English grid; the grid order is the map order (`docs/re/graphics.md`). Default names (クルト, メイ `b04_B2E2`).
-     - **Unextracted text**: the shop item description box (つかうと HPを 30ほど かいふく) is BG3 tile words in
-       bank 04: `つかうと` at file `0x22331`, `かいふく` at `0x21A82` (tile word = `$04:AEAB` map of the byte code; the
-       same form as the menu labels in `0x20400-0x22300`, which text.md left for phase 8). These are real text:
-       extract the tile-word strings (a BG3 tile codec: tiles -> kana via the byte map, English via
-       `font_bg3.TILE` + capitals/digits), find their pointers/readers, mark them in the marker build, and measure
-       the box (~5 tiles x 4 lines looks too small for English: plan engine work, e.g. a wider box or the VWF canvas).
+     - **Description boxes** (item/spell descriptions in the shop and spell screens, now `bg3_A3xx`-`bg3_ACxx` in
+       `menus.json`): 5 tiles per line x 4 lines of 8 px fixed tiles, far too small for English. Plan engine work
+       (wider box via the window op, or draw them through the VWF canvas) and measure the result.
      - `b04_B2E2` (メイ, 4-byte slot, pointer `0x232D4`): too short for a far jump; move it by its pointer into
        dead space of another bank-04 string (marker build writes the id tail meanwhile).
      - Width gate still to measure (`docs/re/windows.md` "Still to measure"): the page-wait arrow on line 3 (the
