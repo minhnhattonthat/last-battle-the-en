@@ -36,7 +36,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | キューケンホフ先生 | Mr. Keukenhof | | Eldar schoolteacher (speaker label; "sir" when addressed) | |
 | 長老 | Elder | | speaker label; "the Elder" in narration | |
 | ボルグ | Borg | | | |
-| レジーナ | Regina | | | |
+| レジーナ | Regina | | Princess Regina (レジーナ姫), hunted by Ketteri's men | |
 | コンラート | Konrad | | soldier, the boy's big brother | Conrad |
 | ユーリ | Yuri | | Yuri-sama for ユーリ様 | Yuuri |
 | フェーベンネルス | Febennels | | | |

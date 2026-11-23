@@ -11,217 +11,217 @@
    "addr": "008E",
    "size": 100,
    "jp": "ユ－リ{nl}「おや！{nl} きてくれたのか クルト！！{page}「君たちも この戦いに{nl} 力を かしてくれるのかい？",
-   "en": ""
+   "en": "Yuri{nl}\"Oh! You came, Kurt!!{page}\"Will you two lend us your strength in{nl} this battle as well?"
   },
   {
    "id": "r065_00F6",
    "addr": "00F6",
    "size": 72,
    "jp": "ユ－リ{nl}「なんだね クルト{page}「やはり いっしょに{nl} 戦ってくれるのかい？",
-   "en": ""
+   "en": "Yuri{nl}\"What is it, Kurt?{page}\"So you'll fight with us after all?"
   },
   {
    "id": "r065_0144",
    "addr": "0144",
    "size": 178,
    "jp": "ユ－リ{nl}「ありがとう！ きっと{nl} そう言ってくれると思ったよ。{page}「ちょうど今 みんなで{nl} シルヴェル奪回作戦を{nl} 立てていたんだ。{page} 君たちも いっしょに{nl} 考えてくれたまえ。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Thank you! I knew you would say so.{page}\"We were just drawing up a plan to{nl} retake Silvel.{page} Think it through with us.{page2}"
   },
   {
    "id": "r065_01FE",
    "addr": "01FE",
    "size": 88,
    "jp": "ユ－リ{nl}「そうか では しかたないな。{page} だが 気が変ったらきてくれ。{nl} まっているぞ。",
-   "en": ""
+   "en": "Yuri{nl}\"I see. Then it can't be helped.{page} But if you change your mind, come back.{nl} I'll be waiting."
   },
   {
    "id": "r065_025E",
    "addr": "025E",
    "size": 160,
    "jp": "「敵も なかなか手ごわい。{nl} 何度か 攻めてみたが{nl} どうにも 城門を突破できん。{page}「もっとも 我がシルヴェル城が{nl} それだけ 守りに強い{nl} ということだがな。",
-   "en": ""
+   "en": "\"The enemy is tough. We've attacked a{nl} few times, but we just can't break{nl} through the castle gate.{page}\"Then again, that only shows how{nl} strong our Silvel Castle is in defense."
   },
   {
    "id": "r065_0300",
    "addr": "0300",
    "size": 156,
    "jp": "「シルヴェル城が 奪われたのは{nl} 敵が 鳥人兵を使っていたからだ。{page}「グルド軍だけなら シルヴェルが{nl} あれほど たやすく{nl} 敗れることは なかったろうよ。",
-   "en": ""
+   "en": "\"Silvel Castle fell because the enemy{nl} used birdmen.{page}\"Against the Guld army alone, Silvel{nl} would never have been beaten so{nl} easily."
   },
   {
    "id": "r065_03A4",
    "addr": "03A4",
    "size": 100,
    "jp": "「これは シルヴェル人{nl} みんなの戦いなんだ。{page} おれたち市民も{nl} だまってるわけには いかないよ。",
-   "en": ""
+   "en": "\"This is a fight for every Silvel person.{page} We townsfolk can't just sit by either."
   },
   {
    "id": "r065_040A",
    "addr": "040A",
    "size": 78,
    "jp": "「王様や騎士団を たよるばかりじゃ{nl} ダメなんだ。{nl} おれたちだって戦えるさ！",
-   "en": ""
+   "en": "\"We can't just lean on the King and the{nl} knights. We can fight too!"
   },
   {
    "id": "r065_0460",
    "addr": "0460",
    "size": 50,
    "jp": "「我ヶは今 作戦会議を{nl} している ところなんだ。",
-   "en": ""
+   "en": "\"We're in the middle of a war council{nl} right now."
   },
   {
    "id": "r065_0494",
    "addr": "0494",
    "size": 138,
    "jp": "「王様も ご無事だというし{nl} ユ－リ様も帰ってこられたんだ。{page}「これで お城を取り返せば{nl} きっと 元の平和なシルヴェルに{nl} もどれるさ。",
-   "en": ""
+   "en": "\"They say the King is safe, and{nl} Yuri-sama has come back.{page}\"If we take back the castle now, Silvel{nl} is sure to be its old peaceful self again."
   },
   {
    "id": "r065_0526",
    "addr": "0526",
    "size": 166,
    "jp": "「城下町の人ヶなら避難させたよ。{nl} 町に市民がいては 我ヶも{nl} 思い通りに 戦えないからな。{page}「これで戦う準備はできた。{nl} あとはグルド軍を{nl} けちらしてやるだけだ！",
-   "en": ""
+   "en": "\"We've evacuated the people of the{nl} castle town. With townsfolk there, we{nl} couldn't fight as we pleased.{page}\"Now we're ready to fight. All that's{nl} left is to scatter the Guld army!"
   },
   {
    "id": "r065_05CE",
    "addr": "05CE",
    "size": 110,
    "jp": "「とにかく{nl} シルヴェル市民の脱出は{nl} うまくいったんだ。{page}「奪回作戦の半分は{nl} 成功したと言っていいだろう。",
-   "en": ""
+   "en": "\"Anyway, the townsfolk got out of{nl} Silvel safely.{page}\"You could say half the plan to retake{nl} it has already worked."
   },
   {
    "id": "r065_0644",
    "addr": "0644",
    "size": 86,
    "jp": "「グルド軍を 追い出すためとはいえ{nl} シルヴェル城を攻める というのは{nl} 気が重いな。",
-   "en": ""
+   "en": "\"Even if it's to drive out the Guld army,{nl} attacking Silvel Castle weighs on me."
   },
   {
    "id": "r065_069C",
    "addr": "069C",
    "size": 74,
    "jp": "「昔のような平和を{nl} 取りもどすことなんて{nl} 本当にできるんだろうか・・・",
-   "en": ""
+   "en": "\"Can we really get back the peace we{nl} had before..."
   },
   {
    "id": "r065_06EE",
    "addr": "06EE",
    "size": 204,
    "jp": "「シルヴェルが落城した時は{nl} この世の終りかと 思いましたよ。{nl} でも やっと希望が持てたんです。{page}「シルヴェルを取りもどすため{nl} 私も がんばらなくちゃ！{page}「ところで あなた方{nl} 回復しにきたんですか？",
-   "en": ""
+   "en": "\"When Silvel Castle fell, I thought it{nl} was the end of the world. But at last I{nl} have hope.{page}\"I have to do my best too, to win Silvel{nl} back!{page}\"By the way, have you come to be{nl} healed?"
   },
   {
    "id": "r065_07C2",
    "addr": "07C2",
    "size": 42,
    "jp": "「おや あなた方{nl} 回復しにきたんですか？",
-   "en": ""
+   "en": "\"Oh, have you come to be healed?"
   },
   {
    "id": "r065_07F2",
    "addr": "07F2",
    "size": 84,
    "jp": "「わかりました では・・・{wait}{wait}{wait}{wait}{page}「ヴァテン{wait}{wait}{nl} ブレックフェ－ル{nl} レ－カ！{page2}",
-   "en": ""
+   "en": "\"Very well, then... {wait}{wait}{wait}{wait}{page}\"Vatten... {wait}{wait}{nl} Bleckfel...{nl} Reka!{page2}"
   },
   {
    "id": "r065_0854",
    "addr": "0854",
    "size": 74,
    "jp": "「これで だいじょうぶです。{nl} あなたに マナの加護が{nl} ありますように。",
-   "en": ""
+   "en": "\"There, you'll be fine. The blessing of{nl} mana be with you."
   },
   {
    "id": "r065_08A2",
    "addr": "08A2",
    "size": 28,
    "jp": "「そうですか お気をつけて。",
-   "en": ""
+   "en": "\"I see. Take care."
   },
   {
    "id": "r065_0909",
    "addr": "0909",
    "size": 48,
    "jp": "ユ－リ{nl}「では 諸君{nl} 作戦会議を 続けよう。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Now then, gentlemen, let us continue{nl} the war council.{page2}"
   },
   {
    "id": "r065_0960",
    "addr": "0960",
    "size": 142,
    "jp": "ユ－リ{nl}「諸君も知ってのとおり{nl} 我ヶは 何度か攻撃をこころみた。{page} だが 残念ながら{nl} いまだに 我がシルヴェル城を{nl} 奪回できずにいる。{page}",
-   "en": ""
+   "en": "Yuri{nl}\"As you all know, we have tried{nl} attacking several times.{page} But sadly, we still haven't retaken our{nl} Silvel Castle.{page}"
   },
   {
    "id": "r065_09F7",
    "addr": "09F7",
    "size": 114,
    "jp": "「グルド本国も{nl} そろそろ動き出すはずだ。{page} 今を逃しては{nl} ２度と シルヴェルを{nl} 取りもどすことは できん！{page}",
-   "en": ""
+   "en": "\"The Guld homeland should be on the{nl} move soon.{page} If we miss this chance, we will never{nl} take Silvel back!{page}"
   },
   {
    "id": "r065_0A72",
    "addr": "0A72",
    "size": 54,
    "jp": "「このあたりで 一気に{nl} 勝負を つけねばなるまい。{page2}",
-   "en": ""
+   "en": "\"We must settle this in one stroke, here{nl} and now.{page2}"
   },
   {
    "id": "r065_0ABE",
    "addr": "0ABE",
    "size": 56,
    "jp": "メイ{nl}「ユ－リさま あの抜け道は{nl} 使えないんですか？{page}",
-   "en": ""
+   "en": "Mei{nl}\"Yuri-sama, can't we use that secret{nl} passage?{page}"
   },
   {
    "id": "r065_0AFB",
    "addr": "0AFB",
    "size": 48,
    "jp": "「ほら{nl} あたしとクルトが通った{nl} 地下道は？{page}",
-   "en": ""
+   "en": "\"You know, the underground passage{nl} Kurt and I went through?{page}"
   },
   {
    "id": "r065_0B30",
    "addr": "0B30",
    "size": 46,
    "jp": "「あそこから お城の中に{nl} 入れないかしら？{page2}",
-   "en": ""
+   "en": "\"Couldn't we get into the castle from{nl} there?{page2}"
   },
   {
    "id": "r065_0B6B",
    "addr": "0B6B",
    "size": 142,
    "jp": "ユ－リ{nl}「うむ 私も それを考えてね。{nl} いろいろ調べてみたんだが・・・{page}「メイ クルト{nl} どうやら あの地下道は{nl} まだ 使えるらしいぞ。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Mm, I thought of that too, and looked{nl} into it...{page}\"Mei, Kurt, it seems that underground{nl} passage can still be used.{page2}"
   },
   {
    "id": "r065_0C14",
    "addr": "0C14",
    "size": 280,
    "jp": "「では 諸君。{nl} 今回の作戦を説明しよう。{page}「まず 主力部隊が{nl} 城門を攻撃し 敵をひきつける。{page} その間に 別部隊は{nl} 地下道から城内に入りこむ。{page} そして 玉座の間にいると思われる{nl} 敵の城将グッベを倒すのだ！{page}「城将を討ち取れば{nl} 敵は いやでも総くずれに{nl} なるだろう。{page2}",
-   "en": ""
+   "en": "\"Now, gentlemen, let me explain the{nl} plan.{page}\"First, the main force attacks the castle{nl} gate and draws the enemy in.{page} Meanwhile, a second unit slips into the{nl} castle through the underground{nl} passage.{page} And defeats the enemy's Commander{nl} Gubbe, who should be in the throne{nl} room!{page}\"Once the commander falls, the enemy{nl} will collapse whether it likes it or not.{page2}"
   },
   {
    "id": "r065_0D41",
    "addr": "0D41",
    "size": 244,
    "jp": "ユ－リ{nl}「この作戦は{nl} ２度は使えない作戦だ。{page} 失敗すれば 敵は地下道を{nl} 封じてしまうだろう。{page}「いいか みんな。{nl} これが シルヴェルを取りもどす{nl} 最後の機会だと思ってくれ。{page} 我がシルヴェルの未来は{nl} この作戦に かかっているんだ！{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"This plan can only be used once.{page} If it fails, the enemy will seal off the{nl} passage.{page}\"Listen, everyone. Think of this as our{nl} last chance to take Silvel back.{page} The future of our Silvel rests on this{nl} plan!{page2}"
   },
   {
    "id": "r065_0E5D",
    "addr": "0E5D",
    "size": 106,
    "jp": "「やりましょう ユ－リさま！{nl} シルヴェルの未来のため！{page2}{F9FF}{D310}「われらが母なる王国を{nl} 取りもどすため！{page2}",
-   "en": ""
+   "en": "\"Let's do it, Yuri-sama! For Silvel's{nl} future!{page2}{F9FF}{D310}\"To take back our motherland!{page2}"
   },
   {
    "id": "r065_0ED1",
    "addr": "0ED1",
    "size": 88,
    "jp": "ユ－リ{nl}「よし 全軍に知らせろ！{nl} 明朝 総攻撃をかけるぞ。{page} これが最後の出撃だ！！{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Good, tell all the troops! We launch an{nl} all-out attack at dawn.{page} This is our final sortie!!{page2}"
   }
  ]
 }

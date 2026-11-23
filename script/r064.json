@@ -109,49 +109,49 @@
    "addr": "08C5",
    "size": 184,
    "jp": "「あんたたちも 今度の戦いに{nl} いくんだろ？{page} だったら この店で道具や武器を{nl} そろえていくと いいよ。{page}「いい物を いっぱい仕入れて{nl} あるからさ。{nl} 値段も うんと安くしとくよ。",
-   "en": ""
+   "en": "\"You're off to this coming battle too,{nl} right?{page} Then stock up on items and weapons at{nl} this shop.{page}\"I've got in lots of good stuff. And I'll{nl} keep the prices nice and low."
   },
   {
    "id": "r064_097F",
    "addr": "097F",
    "size": 158,
    "jp": "「みんな必死に がんばってるんだ。{page} で わしら商人にも{nl} 何か できないかと思ってね。{page} それで あちこちの商人仲間から{nl} 品物を まわしてもらったんだよ。",
-   "en": ""
+   "en": "\"Everyone's working their hardest.{page} So I wondered if we merchants could do{nl} something too.{page} So I had merchant friends all over send{nl} me their goods."
   },
   {
    "id": "r064_0A25",
    "addr": "0A25",
    "size": 40,
    "jp": "「ユ－リ様の 作戦本部は{nl} こちらです。",
-   "en": ""
+   "en": "\"Yuri-sama's headquarters are this way."
   },
   {
    "id": "r064_0A55",
    "addr": "0A55",
    "size": 54,
    "jp": "「ユ－リ様が 生きていらしたとは{nl} まるで夢みたいだ！",
-   "en": ""
+   "en": "\"To think Yuri-sama was alive! It's like a{nl} dream!"
   },
   {
    "id": "r064_0A8D",
    "addr": "0A8D",
    "size": 116,
    "jp": "「この戦いも ユ－リ様が{nl} 直接 指揮されているのだ。{page} きっとシルヴェルを 我ヶの手に{nl} とりもどせるに違いない！",
-   "en": ""
+   "en": "\"Yuri-sama is leading this battle himself.{page} We're sure to win Silvel back with our{nl} own hands!"
   },
   {
    "id": "r064_0B09",
    "addr": "0B09",
    "size": 72,
    "jp": "「まだまだっ！ そんな腕前では{nl} シルヴェル騎士団の{nl} 名が泣くぞっ！！",
-   "en": ""
+   "en": "\"Not yet! With skill like that, you shame{nl} the name of the Silvel Knights!!"
   },
   {
    "id": "r064_0B59",
    "addr": "0B59",
    "size": 54,
    "jp": "「やぁ－っ！{wait}{wait}{nl} とぉ－っ！{wait}{wait}{nl} きぇぇぇ－っ！！",
-   "en": ""
+   "en": "\"Hyaaah! {wait}{wait}Taaah! {wait}{wait}Kyaaaah!!"
   }
  ]
 }

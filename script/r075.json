@@ -11,14 +11,14 @@
    "addr": "0128",
    "size": 206,
    "jp": "隊長兵{nl}「姫{wait}{wait}{nl} やっと見つけましたぞ。{page} ずいぶん 手を焼かせて{nl} くださいましたな。{page}「ですが もう逃げ場は{nl} ありませんぞ。{page} さあ{wait} おとなしく{nl} 我らと おもどりください。{nl} さもないと・・・{page2}",
-   "en": ""
+   "en": "Captain{nl}\"Princess... {wait}{wait}at last we've found you.{page} You've given us quite a lot of trouble.{page}\"But you have nowhere left to run.{page} Now, {wait}come back quietly with us, or{nl} else...{page2}"
   },
   {
    "id": "r075_01FE",
    "addr": "01FE",
    "size": 258,
    "jp": "レジ－ナ{nl}「だまれ！{nl} ケッテリのイヌども！{page}「この私が{nl} かんたんに捕まると{nl} 思っているのか！！{page2}{F9FF}隊長兵{nl}「では しかたございませんな。{page} レジ－ナ姫{nl} ケッテリ卿のご命令でござる。{page} お命ちょうだい{nl} つかまつりますぞ！{nl} いざ おかくごめされい！{page2}",
-   "en": ""
+   "en": "Regina{nl}\"Silence, you dogs of Ketteri!{page}\"Do you think I'll be caught so easily?!{page2}{F9FF}Captain{nl}\"Then it can't be helped.{page} Princess Regina, by order of Lord{nl} Ketteri,{page} we shall take your life! Prepare{nl} yourself!{page2}"
   }
  ]
 }

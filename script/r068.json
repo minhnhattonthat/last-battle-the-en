@@ -11,14 +11,14 @@
    "addr": "004F",
    "size": 48,
    "jp": "「いらっしゃいませ！{nl} なにか お探しですか？{page}",
-   "en": ""
+   "en": "\"Welcome! Looking for something?{page}"
   },
   {
    "id": "r068_008A",
    "addr": "008A",
    "size": 80,
    "jp": "「さあさあ 見ていっておくれ！{nl} 店は ぼろいが{nl} 品物は 一流品ぞろいだよ！{page}",
-   "en": ""
+   "en": "\"Come on, come on, take a look! The{nl} shop may be shabby, but the goods are{nl} first-rate!{page}"
   }
  ]
 }

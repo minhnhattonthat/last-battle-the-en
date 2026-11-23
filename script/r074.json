@@ -11,21 +11,21 @@
    "addr": "00FB",
    "size": 24,
    "jp": "カギが かかっています。",
-   "en": ""
+   "en": "It's locked."
   },
   {
    "id": "r074_0127",
    "addr": "0127",
    "size": 54,
    "jp": "メイ{nl}「あっ！ グルド軍よ！{nl} クルト！ かくれて！{page2}",
-   "en": ""
+   "en": "Mei{nl}\"Ah! The Guld army! Kurt! Hide!{page2}"
   },
   {
    "id": "r074_0313",
    "addr": "0313",
    "size": 130,
    "jp": "メイ{nl}「だめよ クルト！{page}「それ以上 近づいちゃ{nl} 危ないわ！！{page}「さあ 早く{nl} フェ－ベンネルス様の ところに{nl} 行きましょ！{page2}",
-   "en": ""
+   "en": "Mei{nl}\"No, Kurt!{page}\"Don't go any closer, it's dangerous!!{page}\"Come on, let's hurry to{nl} Febennels-sama!{page2}"
   }
  ]
 }

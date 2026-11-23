@@ -11,35 +11,35 @@
    "addr": "0102",
    "size": 320,
    "jp": "フェ－ベンネルス{nl}「おや クルトか{nl} どうしたのじゃ？{page}{FB00}「なんと！？{nl} エルダ－ル村に グルド兵が！{page} ・・で おまえは なぜ ここに？{wait}{wait}{nl} なに！ グルドの密書を{nl} 手に入れたじゃと！？{page}「ならば こんなところで{nl} グズグズしていては いかん！！{page} 一刻も 早く{nl} シルヴェル城の ユ－リ殿に{nl} とどけるのじゃ！！",
-   "en": ""
+   "en": "Febennels{nl}\"Oh, Kurt, what is the matter?{page}{FB00}\"What?! Guld soldiers in Eldar Village!{page} ..And why are you here? {wait}{wait}What! You{nl} have a Guld secret letter?!{page}\"Then you mustn't dawdle here!!{page} Take it to Yuri-dono at Silvel Castle as{nl} fast as you can!!"
   },
   {
    "id": "r076_0254",
    "addr": "0254",
    "size": 124,
    "jp": "フェ－ベンネルス{nl}「なにを グズグズしておる！！{page} 一刻も 早く{nl} シルヴェル城の ユ－リ殿に{nl} 密書を とどけるのじゃ！！",
-   "en": ""
+   "en": "Febennels{nl}\"Why are you dawdling?!{page} Take the secret letter to Yuri-dono at{nl} Silvel Castle as fast as you can!!"
   },
   {
    "id": "r076_02EA",
    "addr": "02EA",
    "size": 130,
    "jp": "フェ－ベンネルス{nl}「おはよう クルト メイ。{nl} ２人とも よく眠れたようじゃな。{page} では ゆうべの話の続きを{nl} するとしようか。{page}",
-   "en": ""
+   "en": "Febennels{nl}\"Good morning, Kurt, Mei. You both seem{nl} to have slept well.{page} Now, let us go on with last night's talk.{page}"
   },
   {
    "id": "r076_036E",
    "addr": "036E",
    "size": 632,
    "jp": "「さて この手紙には{nl} 次のように書かれている。{page}『シルヴェルは 一度 滅ぶだろう。{nl} だが いずれ必ず{nl} 再興する日が やってくる』{page}『その時は クルトたちにも{nl} 力になって もらいたい』{page}『彼等は きっと{nl} 新しいシルヴェルの{nl} 大きな力に なるだろう』{page}『そして その時のため{nl} クルトたちに魔法修行を{nl} させてやってほしい』{page}『きっと 彼等にとっても{nl} ムダには ならないはずだ』{nl} ・・・とな。{page}{FB00}フェ－ベンネルス{nl}「ほかならぬ ユ－リ殿の頼みじゃ。{nl} 断わるわけにも いくまい。{page}「だが 修行というものは{nl} 本人の やる気しだいじゃ。{page} おまえたちが{nl} 魔法など必要ない というなら{nl} 無理に修行させるわけにもいかん。{page}",
-   "en": ""
+   "en": "\"Now, this letter says the following.{page}'Silvel will fall once. But surely the day{nl}of its rebirth will come.'{page}'When that day comes, I would like Kurt{nl}and the others to lend their strength.'{page}'They will surely be a great strength to{nl}the new Silvel.'{page}'And for that day, I ask that you train{nl}Kurt and the others in magic.'{page}'It will surely not be wasted on them.'{nl}...So it says.{page}{FB00}Febennels{nl}\"It is a request from Yuri-dono himself.{nl} I can hardly refuse.{page}\"But training depends on the will of the{nl} one who trains.{page} If you say you have no need of magic, I{nl} cannot force you to train.{page}"
   },
   {
    "id": "r076_05E8",
    "addr": "05E8",
    "size": 132,
    "jp": "「クルトよ{nl} 修行するか しないか・・・{nl} それは おまえが決めるがよい。{page}{FB00}{F400}「どうする？{nl}{F600}修行させてもらう{nl}{F600}少し 考えさせて",
-   "en": ""
+   "en": "\"Kurt, whether to train or not... that is{nl} for you to decide.{page}{FB00}{F400}\"What will you do?{nl}{F600}I'll train{nl}{F600}Let me think a bit"
   },
   {
    "id": "r076_0678",
