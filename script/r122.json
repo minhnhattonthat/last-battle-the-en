@@ -11,28 +11,28 @@
    "addr": "004F",
    "size": 78,
    "jp": "「あんな門なんか ヤ－ク族の{nl} 破城つちが ありゃあ{nl} わけなく・・・ぐう～。",
-   "en": ""
+   "en": "\"That gate's nothing with a Yaak{nl} battering ram... snore~."
   },
   {
    "id": "r122_00AD",
    "addr": "00AD",
    "size": 134,
    "jp": "「そこにいるのは スヴァルトの{nl} 息子の ボルグだね・・・。{page}「ヤ－ク村のことは{nl} 聞いているんだろうね{nl} だから 帰って来たんだね？",
-   "en": ""
+   "en": "\"That there is Svart's son, Borg...{page}\"You've heard about the Yaak village,{nl} haven't you? That's why you came{nl} back?"
   },
   {
    "id": "r122_0139",
    "addr": "0139",
    "size": 122,
    "jp": "「ボルグ{wait}{nl} この店の地下に アンタが来るのを{nl} 待ってた人が いるんだよ。{page}「誰なのかは 会ってからの{nl} おたのしみさ。",
-   "en": ""
+   "en": "\"Borg,{wait} there's someone in this shop's{nl} cellar who's been waiting for you.{page}\"Who it is, you'll see when you meet."
   },
   {
    "id": "r122_01B5",
    "addr": "01B5",
    "size": 138,
    "jp": "「ぐう・・・・。{nl} {wait}{wait}{wait}はっ！{nl} 寝ボケてたのかしら。{page}「ちゃんと ベッドに{nl} 寝て{wait}・{wait}た{wait}・{wait}・{wait}はずなのに{nl} ぐう{wait}・{wait}・{wait}・{wait}。",
-   "en": ""
+   "en": "\"Snore.... {wait}{wait}{wait}Huh! Was I half asleep?{page}\"I'm sure I was{wait} sleeping{wait} in{wait} my{wait}{nl} bed... snore{wait}.{wait}.{wait}.{wait}"
   }
  ]
 }

@@ -32,98 +32,98 @@
    "addr": "0365",
    "size": 440,
    "jp": "「話は ボルグから聞かせて{nl} もらいました。{page}{FB00}「あらためて 名のらせてもらうと{nl} わたしの名は スヴァルト。{wait}{wait}{wait}{wait}{page} ボルグの父です。{page}{FB00}「さて わたしから ひとつ{nl} みなさんを みこんで{nl} お願いがあるんだが。{page}「まず グルドの支配より{nl} ヤ－ク村を 解放し{page} 村にある 破城つちを{nl} 手にいれてほしいのだ。{page}{FB00}「この町と ヤ－ク村が手を組み{nl} 後は 破城つちがあれば{nl} 町を とり返すことも可能なんだ。{page}{FB00} 手を借してもらえるかな？",
-   "en": ""
+   "en": "\"Borg has told me the story.{page}{FB00}\"Let me introduce myself properly. My{nl} name is Svart. {wait}{wait}{wait}{wait}{page} I am Borg's father.{page}{FB00}\"Now, I have a favor to ask, trusting in{nl} all of you.{page}\"First, free the Yaak village from Guld's{nl} rule,{page} and get the battering ram that is in the{nl} village.{page}{FB00}\"If this town and the Yaak village join{nl} hands, with a battering ram we can{nl} take the town back.{page}{FB00} Will you lend us a hand?"
   },
   {
    "id": "r121_0523",
    "addr": "0523",
    "size": 76,
    "jp": "「それでは さっそく{nl} 西の門をでて ヤ－クの村へ{nl} 急いでもらえますか。{page2}",
-   "en": ""
+   "en": "\"Then please go out the west gate and{nl} hurry to the Yaak village.{page2}"
   },
   {
    "id": "r121_057B",
    "addr": "057B",
    "size": 258,
    "jp": "「村についたら 族長のお嬢さんに{nl} 会ってください。{page}「順調にいっていれば 手配してきた{nl} 準備も ととのっていると思う。{page}「ヤ－クの解放が うまくいき{nl} 破城つちの 準備ができたら{nl} また 会いに来てくれたまえ。{page}「きみたちの 働きに{nl} 期待しているよ。{page2}",
-   "en": ""
+   "en": "\"When you reach the village, see the{nl} chief's daughter.{page}\"If all has gone well, the preparations I{nl} arranged should be ready.{page}\"Once the Yaak are free and the{nl} battering ram is ready, come see me{nl} again.{page}\"I'm counting on you.{page2}"
   },
   {
    "id": "r121_0689",
    "addr": "0689",
    "size": 172,
    "jp": "「いま この町にいる部隊は{nl} 新兵だけで作られた{nl} 実戦の けいけんのない部隊だ。{page}「この町を グルドから取かえすには{nl} いまが 一番いいのだ。{page} 手を借してもらえないか？",
-   "en": ""
+   "en": "\"The unit in this town now is made up of{nl} new recruits with no real battle{nl} experience.{page}\"Now is the best time to take this town{nl} back from Guld.{page} Won't you lend us a hand?"
   },
   {
    "id": "r121_073F",
    "addr": "073F",
    "size": 316,
    "jp": "「わかった わかった！{nl} みなまで言わずとも けっこう。{page}{FB00}{wait}{wait}{wait}{wait}{wait}「キミたちは{nl} 心の中ではすでに 手を借すことに{nl} 決めている{wait}{wait}{wait}{wait} しかし！{page}「秘密がもれる 恐れがあるため{nl} いいえと こたえている。{wait}{wait}{wait}{wait}{nl} この 用心深さ！！{wait}{wait}{wait}{wait}{page}「この スヴァルト{nl} １本 取られましたな。{nl} わっはっは・・・{page}",
-   "en": ""
+   "en": "\"I know, I know! No need to say more.{page}{FB00}{wait}{wait}{wait}{wait}{wait}\"In your hearts, you've{nl}already decided to help{wait}{wait}{wait}{wait} but!{page}\"You answer no for fear the secret{nl} might leak. {wait}{wait}{wait}{wait}Such caution!!{nl} {wait}{wait}{wait}{wait}{page}\"You've got one over on me, Svart. Ha{nl} ha ha...{page}"
   },
   {
    "id": "r121_0885",
    "addr": "0885",
    "size": 80,
    "jp": "スヴァルト{nl}「では みなさん ヤ－ク村の準備が{nl} できたら 会いに来てください。",
-   "en": ""
+   "en": "Svart{nl}\"Then, everyone, come see me when the{nl} Yaak village is ready."
   },
   {
    "id": "r121_08D7",
    "addr": "08D7",
    "size": 218,
    "jp": "スヴァルト{nl}「レジ－ナ様{wait}・{wait}・{wait}・{wait}。{page}「どうやら あなた様も{nl} いまのグルド王の なされようには{nl} 反対の ごようす。{page}「亡き母上様に にて{nl} そうめうな方で いらっしゃる{wait}{wait}{wait}{wait}{nl} スヴァルト 安心いたしました。",
-   "en": ""
+   "en": "Svart{nl}\"Regina-sama{wait}.{wait}.{wait}.{wait}{page}\"It seems you too oppose what the{nl} present King of Guld is doing.{page}\"You are as wise as your late mother.{nl} {wait}{wait}{wait}{wait}I, Svart, am relieved."
   },
   {
    "id": "r121_09B9",
    "addr": "09B9",
    "size": 110,
    "jp": "スヴァルト{nl}「ご苦労{wait} 諸君！{page}「その顔を見れば{nl} うまくいったのが わかるよ。{nl} まあ こっちへきたまえ。{page2}",
-   "en": ""
+   "en": "Svart{nl}\"Well done,{wait} all of you!{page}\"I can tell from your faces it went well.{nl} Come over here.{page2}"
   },
   {
    "id": "r121_0A42",
    "addr": "0A42",
    "size": 114,
    "jp": "「これは ささやかながら{nl} わたしからの かんしゃの{nl} 気持ちだ。{page}「ヴァテン{wait}{nl} ブレックフェ－ル{nl} レ－カ！{page2}",
-   "en": ""
+   "en": "\"This is a small token of my thanks.{page}\"Vatten...{wait}{nl} Bleckfel...{nl} Reka!{page2}"
   },
   {
    "id": "r121_0AC6",
    "addr": "0AC6",
    "size": 138,
    "jp": "「町の人ヶには もう作戦は{nl} 伝えてある。{page}「扉を 破城つちで ブチ破ると{nl} それを合図に みんなが家から{nl} とびだしてくる てはずさ。{page2}",
-   "en": ""
+   "en": "\"The townsfolk already know the plan.{page}\"When we smash the door with the{nl} battering ram, that's the signal for{nl} everyone to rush out of their houses.{page2}"
   },
   {
    "id": "r121_0B5D",
    "addr": "0B5D",
    "size": 80,
    "jp": "「おっ！{wait}{wait}{wait}{nl} どうやら いいタイミングで{nl} 破城つちが とどいたらしいぞ。{page2}",
-   "en": ""
+   "en": "\"Oh! {wait}{wait}{wait}Looks like the battering ram{nl} arrived right on time.{page2}"
   },
   {
    "id": "r121_0BB9",
    "addr": "0BB9",
    "size": 32,
    "jp": "「さぁ みんな わたしに続け！{page2}",
-   "en": ""
+   "en": "\"Now, everyone, follow me!{page2}"
   },
   {
    "id": "r121_0C0C",
    "addr": "0C0C",
    "size": 70,
    "jp": "スヴァルト{nl}「さぁ まずは ヤ－ク村のことを{nl} 話してくれ・・・・・{page2}",
-   "en": ""
+   "en": "Svart{nl}\"Now, first tell me about the Yaak{nl} village.....{page2}"
   },
   {
    "id": "r121_0C5C",
    "addr": "0C5C",
    "size": 132,
    "jp": "スヴァルト{nl}「・・・そうか よくやってくれた。{page} どうやら 夜も明けたようだ。{nl} そろそろ ヤ－クの連中が{nl} 来るんじゃないかな。{page}",
-   "en": ""
+   "en": "Svart{nl}\"...I see. Well done.{page} It seems day has broken. The Yaak{nl} should be coming soon.{page}"
   }
  ]
 }

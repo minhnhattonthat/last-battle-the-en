@@ -11,42 +11,42 @@
    "addr": "005A",
    "size": 86,
    "jp": "「ここは 古道具屋だ。{nl} 買い物だったら 早くえらべ！{nl} オレは 気がみじかいんだ。{page}",
-   "en": ""
+   "en": "\"This is a secondhand shop. If you're{nl} buying, pick fast! I'm short on patience.{page}"
   },
   {
    "id": "r125_00BF",
    "addr": "00BF",
    "size": 240,
    "jp": "「あの－ 聞いてください。{nl} あの子は けっして{nl} くちが 悪いのではありません。{page}「お父さんから これは お店の{nl} モット－だから あのように{nl} いえと いわれてるんです。{page}「本当の あの子は{nl} とっても おとなしくて{nl} よい子なんです。",
-   "en": ""
+   "en": "\"Um, please listen. That girl doesn't{nl} really have a rude mouth.{page}\"Her father told her to talk like that{nl} because it's the shop's motto.{page}\"The real her is very quiet and a good{nl} girl."
   },
   {
    "id": "r125_01B5",
    "addr": "01B5",
    "size": 218,
    "jp": "「ぼくですか？{wait}{page}「ぼくは お客さんが来たら{nl} きちんと 説明するように{nl} 頼まれているんです。{page}「言わないと ぼくが{nl} あの子に 怒られるんです。{page}{FB00}{wait}{wait}「これからは 仲よくしましょう{nl} なんて 言ってたのに・・・。",
-   "en": ""
+   "en": "\"Me?{wait}{page}\"I've been asked to explain properly{nl} whenever customers come.{page}\"If I don't, she gets mad at me.{page}{FB00}{wait}{wait}\"And she said we'd be friends from{nl}now on..."
   },
   {
    "id": "r125_0291",
    "addr": "0291",
    "size": 154,
    "jp": "「あの子も だんだん お父さんに{nl} そっくりに なってきたって{nl} ひょうばんです。{page}{FB00}{wait}{wait}「本当に お父さんみたいに{nl} なっちゃうの～{nl} ぼく やだよ－！",
-   "en": ""
+   "en": "\"People say she's getting more and{nl} more like her father.{page}{FB00}{wait}{wait}\"Is she really going to turn out like{nl}her father~? I don't want that!"
   },
   {
    "id": "r125_032D",
    "addr": "032D",
    "size": 98,
    "jp": "「そのうち あの子にも{nl} お父さんみたいに{nl} ヒゲなんなんか はえてくるんだ！{page}「こわいよう～！！",
-   "en": ""
+   "en": "\"One day she'll grow a beard just like{nl} her father!{page}\"I'm scaaared!!"
   },
   {
    "id": "r125_0397",
    "addr": "0397",
    "size": 90,
    "jp": "「ここは 古道具屋だ。{nl} 買い物だったら 早くえらべ！{nl} あたしは 気がみじかいんだい。{page}",
-   "en": ""
+   "en": "\"This is a secondhand shop. If you're{nl} buying, pick fast! I'm short on patience,{nl} I am.{page}"
   }
  ]
 }

@@ -67,6 +67,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ハイラム | Hiram | | | |
 | ロベルト | Robert | | | |
 | ガッキンコ | Gakkinko | | | |
+| ヘ－グ | Heeg | | Yaak, Rogue's friend in Bergstadt | |
+| 破城つち | battering ram | | Yaak siege ram | |
 | ライム | Lime | | elf queen (ライム王妃 = Queen Lime) | |
 | ユルハ－タ | Yurhata | | Robert and Lime's daughter | |
 | リ－ユ | Riyu / iruY | | Yuri's alias in the hidden village; iruY = "Yuri" in the backwards book r118_0115 | |

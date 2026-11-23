@@ -11,14 +11,14 @@
    "addr": "0060",
    "size": 162,
    "jp": "「シルヴェルの グスタフ様{nl} このままずっと捕まらなければ{nl} いいんですけれど。{page}「まえの王妃様と お子様を{nl} 一度に亡くされたと思ったら{nl} こんどは 王国まで。",
-   "en": ""
+   "en": "\"I hope Gustav-sama of Silvel never{nl} gets caught.{page}\"He lost his first queen and his child at{nl} once, and now his kingdom too."
   },
   {
    "id": "r124_0104",
    "addr": "0104",
    "size": 130,
    "jp": "「グルドは まるで グスタフ様が{nl} 病気で 倒れたところを{nl} ねらったみたいに・・・{page}「すべては{nl} グルドの いんぼうなのかしら？",
-   "en": ""
+   "en": "\"It's as if Guld aimed for the moment{nl} Gustav-sama fell ill...{page}\"Was it all a Guld plot?"
   }
  ]
 }

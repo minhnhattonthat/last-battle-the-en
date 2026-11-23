@@ -11,28 +11,28 @@
    "addr": "0053",
    "size": 74,
    "jp": "「いらっしゃいませ。{nl} ここは エルフ族の品物を{nl} あつかう お店です。{page}",
-   "en": ""
+   "en": "\"Welcome. This shop deals in elven{nl} goods.{page}"
   },
   {
    "id": "r123_00A2",
    "addr": "00A2",
    "size": 132,
    "jp": "「いらっしゃいませ。{nl} ここは エルフ族の品物を{nl} あつかう お店です。{page} さきほど新たに きつけのハ－ブが{nl} 入荷いたしました。{page}",
-   "en": ""
+   "en": "\"Welcome. This shop deals in elven{nl} goods.{page} A new stock of smelling herbs just came{nl} in.{page}"
   },
   {
    "id": "r123_0131",
    "addr": "0131",
    "size": 254,
    "jp": "「グルドが 攻めて来たときの{nl} ことを 聞きたいのかい？{page}{FB00}「あっけないもんさ{nl} とつぜん 町にやってきて・・・{page}『本隊は すでに シルヴェル城を{nl} 攻め落としにむかった。{page}『おまえたちも いますぐに{nl} 降伏すれば この町を{nl} 悪いようにはしない とね。",
-   "en": ""
+   "en": "\"You want to hear about when Guld{nl} attacked?{page}{FB00}\"It was over in a flash. They just{nl} turned up in town...{page}'Our main force has already gone to take{nl}Silvel Castle.{page}'Surrender right now and we won't treat{nl}this town badly,' they said."
   },
   {
    "id": "r123_0231",
    "addr": "0231",
    "size": 190,
    "jp": "「なにひとつ 戦いの準備なんか{nl} してなかったからね。{page}「この町は そのまま{nl} グルド軍に 降伏したよ。{page}{FB00}「その夜の うちだったな{wait}{wait}{wait}{nl} シルヴェル城が 落城したって{nl} 聞かされたのは。",
-   "en": ""
+   "en": "\"We'd made no preparations for war at{nl} all.{page}\"So the town just surrendered to the{nl} Guld army.{page}{FB00}\"It was that same night{wait}{wait}{wait} that we{nl} heard Silvel Castle had fallen."
   }
  ]
 }
