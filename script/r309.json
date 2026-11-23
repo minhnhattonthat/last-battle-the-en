@@ -11,133 +11,133 @@
    "addr": "00C6",
    "size": 38,
    "jp": "敵は 兵をまとめて{nl}たいきゃくした。{page2}",
-   "en": ""
+   "en": "The enemy gathered its troops{nl}and retreated.{page2}"
   },
   {
    "id": "r309_0117",
    "addr": "0117",
    "size": 24,
    "jp": "カギが かかっています。",
-   "en": ""
+   "en": "It is locked."
   },
   {
    "id": "r309_0165",
    "addr": "0165",
    "size": 60,
    "jp": "「ここは ぜぃぜぃ おれたちが{nl} はぁはぁ まもるん{wait} だ！",
-   "en": ""
+   "en": "\"We'll *pant* defend *gasp* this{nl} place{wait}!"
   },
   {
    "id": "r309_01A3",
    "addr": "01A3",
    "size": 78,
    "jp": "「くそっ！ グルドのやつら！{page} おれたちに 何の うらみが{nl} あるってんだ！！",
-   "en": ""
+   "en": "\"Damn! Those Guld rats!{page} What grudge have they got against us!!"
   },
   {
    "id": "r309_01F3",
    "addr": "01F3",
    "size": 100,
    "jp": "「ちくしょうっ！！{nl} イェルトが やられているのに！{page}「戦闘が はげしくって{nl} 近づけないんだっ！！",
-   "en": ""
+   "en": "\"Dammit!! Yelt's being cut down!{page}\"The fighting's so fierce, we can't get{nl} close!!"
   },
   {
    "id": "r309_025F",
    "addr": "025F",
    "size": 82,
    "jp": "「クルト！！ だいじょうぶか？！{nl} ケガを しているのなら{nl} なおして あげるよ？",
-   "en": ""
+   "en": "\"Kurt!! Are you all right?! If you're hurt,{nl} I'll heal you."
   },
   {
    "id": "r309_02B7",
    "addr": "02B7",
    "size": 80,
    "jp": "「よし わかった では・・・{wait}{wait}{page}「ヴァテン{wait}{nl} ブレックフェ－ル{nl} レ－カ！{page2}",
-   "en": ""
+   "en": "\"All right, then...{wait}{wait}{page}\"Vatten...{wait}{nl} Bleckfel...{nl} Reka!{page2}"
   },
   {
    "id": "r309_0315",
    "addr": "0315",
    "size": 62,
    "jp": "「クルト がんばれよっ！！{nl} わたしたちの村を 守り抜くんだ！",
-   "en": ""
+   "en": "\"Kurt, hang in there!! We have to{nl} protect our village!"
   },
   {
    "id": "r309_0357",
    "addr": "0357",
    "size": 76,
    "jp": "「クルト 治療が必要なら{nl} いつでも きなさい。{page}「がんばるんだぞ クルト！",
-   "en": ""
+   "en": "\"Kurt, if you need healing, come{nl} anytime.{page}\"Hang in there, Kurt!"
   },
   {
    "id": "r309_03CE",
    "addr": "03CE",
    "size": 66,
    "jp": "「クルト！！{nl} だいじょうぶかっ？！{page} やられるんじゃ ないぞっ！",
-   "en": ""
+   "en": "\"Kurt!! Are you all right?!{page} Don't you get beaten!"
   },
   {
    "id": "r309_0412",
    "addr": "0412",
    "size": 64,
    "jp": "「だいじょうぶかっ！？ クルト{nl} むりは するんじゃ ないぞ！！",
-   "en": ""
+   "en": "\"Are you all right?! Kurt, don't push{nl} yourself!!"
   },
   {
    "id": "r309_0454",
    "addr": "0454",
    "size": 52,
    "jp": "「きをつけろっ！！{nl} 敵は まだまだ いるぞっ！！！",
-   "en": ""
+   "en": "\"Watch out!! There are still lots of{nl} enemies!!!"
   },
   {
    "id": "r309_0490",
    "addr": "0490",
    "size": 96,
    "jp": "「クルト！ だいじょうぶか？！{page} ハ－ブだったら{nl} たくさん 持ってるから{nl} ひとつ やろうか？",
-   "en": ""
+   "en": "\"Kurt! Are you all right?!{page} I've got lots of Herbs. Want one?"
   },
   {
    "id": "r309_04FA",
    "addr": "04FA",
    "size": 98,
    "jp": "「じゃあ ほら やるよ。{page2}{F9FF}{B742}クルトはハ－ブを もらった！{page2}{F9FF}「死ぬんじゃないぞ。{nl} がんばれよ！",
-   "en": ""
+   "en": "\"Here you go, then.{page2}{F9FF}{B742}Kurt got a Herb!{page2}{F9FF}\"Don't you die. Hang in there!"
   },
   {
    "id": "r309_0560",
    "addr": "0560",
    "size": 104,
    "jp": "「そうか。{nl} でも ムリするんじゃないぞ。{page}「ハ－ブが 足りなくなったら{nl} すぐに 声を かけてくれよ。",
-   "en": ""
+   "en": "\"I see. But don't push yourself.{page}\"If you run short of Herbs, just call me."
   },
   {
    "id": "r309_05CC",
    "addr": "05CC",
    "size": 140,
    "jp": "「なんだ 持ち物が{nl} いっぱいじゃないか。{page}「ハ－ブが 足りなくなったら{nl} また 声を かけてくれよ。{page}「死ぬんじゃないぞ。{nl} がんばれよ！",
-   "en": ""
+   "en": "\"Why, your bags are full.{page}\"If you run short of Herbs, call me{nl} again.{page}\"Don't you die. Hang in there!"
   },
   {
    "id": "r309_0660",
    "addr": "0660",
    "size": 68,
    "jp": "長老{nl}「クルト 気をつけるんじゃぞ。{nl} じっとしていると狙われるぞ！",
-   "en": ""
+   "en": "Elder{nl}\"Kurt, be careful. Stand still and they'll{nl} target you!"
   },
   {
    "id": "r309_06A6",
    "addr": "06A6",
    "size": 72,
    "jp": "長老{nl}「敵は次ヶに襲ってくるのじゃ！{nl} 戦いの時はボ－っとするでないぞ！",
-   "en": ""
+   "en": "Elder{nl}\"The enemy will keep attacking! Don't{nl} stand around dazed in battle!"
   },
   {
    "id": "r309_0702",
    "addr": "0702",
    "size": 66,
    "jp": "「なんだっ こぞう！！{nl} 子供だからって{nl} ようしゃしねぇぞ！！{page2}",
-   "en": ""
+   "en": "\"What, brat?! Just 'cause you're a kid,{nl} don't expect mercy!!{page2}"
   }
  ]
 }

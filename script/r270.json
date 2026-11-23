@@ -11,21 +11,21 @@
    "addr": "00CF",
    "size": 124,
    "jp": "ユ－リ{nl}「クルト様！？{wait}・{wait}・{wait}・{wait}・{page} あなたの性格を 考えれば{nl} 安全な所に 残っていただこうなど{nl} むりな注文でした。",
-   "en": ""
+   "en": "Yuri{nl}\"Kurt-sama?!{wait}.{wait}.{wait}.{wait}.{page} Knowing you, asking you to stay{nl} somewhere safe was too much."
   },
   {
    "id": "r270_014D",
    "addr": "014D",
    "size": 248,
    "jp": "ユ－リ{nl}「先ほどから{nl} フェ－ベンネルス殿の お力ぞえで{page} 一度に我ヶが戦える分だけの魔物を{nl} 中にひきいれて 倒していく作戦を{nl} くり返していますが・・・。{page}「それ以上の数が 入らないように{nl} 魔法を連続して使っている{nl} 魔法使い殿が 心配です。",
-   "en": ""
+   "en": "Yuri{nl}\"For a while now, with Febennels-dono's{nl} help,{page} we've been letting in only as many{nl} monsters as we can fight at once, and{nl} beating them, over and over...{page}\"I'm worried about the wizard, casting{nl} spell after spell to keep more from{nl} getting in."
   },
   {
    "id": "r270_0247",
    "addr": "0247",
    "size": 96,
    "jp": "ユ－リ{nl}「敵の中心を つぶさなければ！{page} このままでは いつか全員が{nl} つかれはてて 全滅です！",
-   "en": "",
+   "en": "Yuri{nl}\"We must crush the enemy's heart!{page} At this rate, we'll all wear out and be{nl} wiped out!",
    "reached": false
   },
   {
@@ -33,98 +33,98 @@
    "addr": "02B1",
    "size": 204,
    "jp": "フェ－ベンネルス{nl}「クルトか・・・・{nl} はぁ はぁ はぁ・・・。{page}「お前たちに ケガはないか？{nl} ビ－ボォたちが 入れ違いで{nl} グルド王のいる方へ行ったはずだ。{page}「回復が 必要なら{nl} もどってみるがよい。",
-   "en": ""
+   "en": "Febennels{nl}\"Kurt, is it.... huff, huff, huff...{page}\"Are you hurt? Beebo and the others{nl} should have gone toward the King of{nl} Guld as you came.{page}\"If you need healing, go back there."
   },
   {
    "id": "r270_037F",
    "addr": "037F",
    "size": 214,
    "jp": "「ここから ずっと奥の{nl} つめたい 空間の中で{nl} 邪悪な 存在がうごめいておる。{page}「たぶん そこに{nl} 氷の女王イスカ－ルが{nl} いるはずじゃ・・・。{page}「ゆくがよい クルト{nl} イスカ－ルと戦い{nl} あの者を 倒すのじゃ。",
-   "en": ""
+   "en": "\"Far in from here, in a cold space, an{nl} evil presence stirs.{page}\"That must be where Iskar, Queen of{nl} Ice, is...{page}\"Go, Kurt. Fight Iskar and defeat her."
   },
   {
    "id": "r270_0457",
    "addr": "0457",
    "size": 80,
    "jp": "「わしが ここで{nl} 敵の進入を食止めていられるうちに{nl} イスカ－ルを倒すのじゃ。",
-   "en": ""
+   "en": "\"Defeat Iskar while I can still hold the{nl} enemy back here."
   },
   {
    "id": "r270_04AF",
    "addr": "04AF",
    "size": 48,
    "jp": "「お－い そろそろ{nl} 次の敵を 中に入れるぞ－！",
-   "en": ""
+   "en": "\"Hey! We're letting the next lot in!"
   },
   {
    "id": "r270_04E1",
    "addr": "04E1",
    "size": 66,
    "jp": "「だいじょぶか－！{nl} ヤ－ク族の戦士諸君{nl} がんばってくれ－－！！",
-   "en": ""
+   "en": "\"You all right?! Yaak warriors, hang in{nl} there!!"
   },
   {
    "id": "r270_0537",
    "addr": "0537",
    "size": 50,
    "jp": "「この戦争で 倒れた仲間の{nl} カタキをとってやる！",
-   "en": ""
+   "en": "\"I'll avenge my friends who fell in this{nl} war!"
   },
   {
    "id": "r270_056B",
    "addr": "056B",
    "size": 46,
    "jp": "「オレたちゃ{nl} エットミランシェル連合軍だぞ！",
-   "en": ""
+   "en": "\"We're the Allied Army of Ettmiranshel!"
   },
   {
    "id": "r270_059B",
    "addr": "059B",
    "size": 70,
    "jp": "「これで 勝てなきゃ{nl} エットミランシェルは{nl} 終わりになっちまう。{page}",
-   "en": ""
+   "en": "\"If we can't win this, Ettmiranshel is{nl} finished.{page}"
   },
   {
    "id": "r270_05E1",
    "addr": "05E1",
    "size": 82,
    "jp": "「シルヴェルと グルドが{nl} 手を組んだんだ！！{nl} お前たちなんかに 負けるものか！",
-   "en": ""
+   "en": "\"Silvel and Guld have joined hands!! We{nl} won't lose to the likes of you!"
   },
   {
    "id": "r270_0635",
    "addr": "0635",
    "size": 42,
    "jp": "「うお－っ！{nl} 必殺の一撃 うけてみよ！！",
-   "en": ""
+   "en": "\"Wooo! Take my killer blow!!"
   },
   {
    "id": "r270_0667",
    "addr": "0667",
    "size": 70,
    "jp": "リダ－ル{nl}「レジ－ナ様 キケンです{nl} 王様のもとに おもどりください！",
-   "en": ""
+   "en": "Lidar{nl}\"Regina-sama, it's dangerous! Please go{nl} back to the King!"
   },
   {
    "id": "r270_06BD",
    "addr": "06BD",
    "size": 66,
    "jp": "「あんぎゃ－－－！{nl}  あんぎゃ－－－！{nl}   あんぎゃ－－－！！",
-   "en": ""
+   "en": "\"Raaagh!!{nl} Raaagh!!{nl} Raaaagh!!"
   },
   {
    "id": "r270_0701",
    "addr": "0701",
    "size": 14,
    "jp": "「うが－－－！",
-   "en": ""
+   "en": "\"Grraaah!"
   },
   {
    "id": "r270_0711",
    "addr": "0711",
    "size": 14,
    "jp": "「ぎゃお－！！",
-   "en": ""
+   "en": "\"Gyaooo!!"
   }
  ]
 }

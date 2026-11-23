@@ -11,14 +11,14 @@
    "addr": "00AA",
    "size": 38,
    "jp": "敵は 兵をまとめて{nl}たいきゃくした。{page2}",
-   "en": ""
+   "en": "The enemy gathered its troops{nl}and retreated.{page2}"
   },
   {
    "id": "r310_00F5",
    "addr": "00F5",
    "size": 24,
    "jp": "カギが かかっています。",
-   "en": ""
+   "en": "It is locked."
   },
   {
    "id": "r310_013B",

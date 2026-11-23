@@ -11,7 +11,7 @@
    "addr": "001D",
    "size": 136,
    "jp": "     － 注意！！ －{nl} 魔物による被害が ふえています。{page}  洞窟内での単独行動は{nl}    危険ですから{nl}  絶対にやめましょう。",
-   "en": ""
+   "en": "- Warning!! -{nl}Monster attacks are increasing.{page}Going alone in the cave{nl}is dangerous.{nl}Never do it."
   }
  ]
 }

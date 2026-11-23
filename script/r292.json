@@ -11,14 +11,14 @@
    "addr": "005E",
    "size": 62,
    "jp": "ケッテリ{nl}「やはり ここまできたのは{nl} おまえたちだったか！{page2}",
-   "en": ""
+   "en": "Ketteri{nl}\"So it was you who came this far after{nl} all!{page2}"
   },
   {
    "id": "r292_00A4",
    "addr": "00A4",
    "size": 128,
    "jp": "ケッテリ{nl}「イスカ－ル様が{nl} 気にしておられたのも無理はない。{page}「しかし ここまでだ{wait}{wait}{wait}{wait}{wait}{nl} わしの 言う意味はわかるな。{page2}",
-   "en": ""
+   "en": "Ketteri{nl}\"No wonder Iskar-sama was concerned{nl} about you.{page}\"But this is as far as you go.{nl} {wait}{wait}{wait}{wait}{wait}You understand what I{nl} mean.{page2}"
   }
  ]
 }

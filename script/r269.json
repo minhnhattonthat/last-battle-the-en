@@ -130,42 +130,42 @@
    "addr": "0BA7",
    "size": 142,
    "jp": "スレ－ク{nl}「エルディスか・・・{nl} ウワサにゃ 聞いているけどな。{page} 北の外れの 恐ろしい島さ。{nl} 船乗りは 近づきたがらない{nl} 火と氷の島さ。",
-   "en": ""
+   "en": "Sleek{nl}\"Eldis, eh... I've heard rumors.{page} A terrible island at the far north.{nl} Sailors won't go near it, the island of{nl} fire and ice."
   },
   {
    "id": "r269_0C37",
    "addr": "0C37",
    "size": 164,
    "jp": "スレ－ク{nl}「な－に 敵の親玉さえ{nl} やっつけちまえば{page}「場所は わかってるんだ{nl} どうやったって 帰って{nl} 見せるさ。{page} おれたちゃ なんてったって{nl} 船乗りだぜ。",
-   "en": ""
+   "en": "Sleek{nl}\"Nah, as long as we beat the enemy{nl} boss,{page}\"we know where we are. We'll get home{nl} somehow, you'll see.{page} We're sailors, after all."
   },
   {
    "id": "r269_0CE3",
    "addr": "0CE3",
    "size": 164,
    "jp": "ビ－ボォ{nl}「あんたたち ケガしてない！？{nl} だいじょうぶ！？{page} ねえ ねえ{nl} わたしたち 帰れるわよね・・・。{page}「いけない！！{nl} 仕事の方を 忘れちゃいけないわ。{page}",
-   "en": ""
+   "en": "Beebo{nl}\"Are you hurt?! Are you all right?!{page} Hey, hey, we'll get home, won't we...{page}\"Oops!! Mustn't forget my job.{page}"
   },
   {
    "id": "r269_0D8C",
    "addr": "0D8C",
    "size": 94,
    "jp": "ビ－ボォ{nl}「さあ 今度は なにかしら？{page}「新しい魔法を作るの？{nl} それとも 治療してほしい？{page}",
-   "en": ""
+   "en": "Beebo{nl}\"Now, what is it this time?{page}\"Making a new spell? Or do you want{nl} healing?{page}"
   },
   {
    "id": "r269_0E03",
    "addr": "0E03",
    "size": 206,
    "jp": "「まさか！{nl} こんなところまできて{nl} 商売をしようとは・・・。{page}「しかし わたしも商人です！{nl} こんな時でもお金はいただきます。{page}「たとえ この身が滅びようと{nl} その瞬間まで わたしは{nl} 商人でありたい！{page}",
-   "en": ""
+   "en": "\"Who'd have thought! Doing business all{nl} the way out here...{page}\"But I'm a merchant! Even at a time like{nl} this, I'll take your money.{page}\"Even if I perish, I want to be a{nl} merchant to the very last moment!{page}"
   },
   {
    "id": "r269_0ED6",
    "addr": "0ED6",
    "size": 48,
    "jp": "「さあ なんでも{nl} 欲しいものは 言っとくれ！{page}",
-   "en": ""
+   "en": "\"Now, tell me anything you want!{page}"
   }
  ]
 }
