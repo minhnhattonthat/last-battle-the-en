@@ -11,119 +11,119 @@
    "addr": "00BF",
    "size": 42,
    "jp": "「おお 友よ！{nl} あなた回復が必要ですか？",
-   "en": ""
+   "en": "\"Ah, my friend! Do you need healing?"
   },
   {
    "id": "r185_00EF",
    "addr": "00EF",
    "size": 84,
    "jp": "「わかりました では・・・{wait}{wait}{page}「ヴァテン{wait}{wait}{nl} ブレックフェ－ル{wait}{wait}{nl} レ－カ！{page2}",
-   "en": ""
+   "en": "\"Very well, then...{wait}{wait}{page}\"Vatten...{wait}{wait}{nl} Bleckfel...{wait}{wait}{nl} Reka!{page2}"
   },
   {
    "id": "r185_0151",
    "addr": "0151",
    "size": 74,
    "jp": "「これで だいじょうぶです。{nl} あなたに マナの加護が{nl} ありますように。",
-   "en": ""
+   "en": "\"There, you're all right now. Mana be{nl} with you."
   },
   {
    "id": "r185_019F",
    "addr": "019F",
    "size": 28,
    "jp": "「そうですか お気をつけて。",
-   "en": ""
+   "en": "\"I see. Take care."
   },
   {
    "id": "r185_01D8",
    "addr": "01D8",
    "size": 122,
    "jp": "「だいじょうぶか？！{nl} ハ－ブだったら 持ってるぜ。{page} 船の中に たくさん{nl} つんであったんだ。{nl} ひとつ やろうか？{wait}{wait}",
-   "en": ""
+   "en": "\"You all right?! I've got Herbs.{page} There were loads stowed on the ship.{nl} Want one? {wait}{wait}"
   },
   {
    "id": "r185_025C",
    "addr": "025C",
    "size": 104,
    "jp": "「じゃあ ほら やるよ。{page2}{F9FF}{B742}クルトたちは{nl}ハ－ブを もらった！{page2}{F9FF}「死ぬんじゃないぞ。{nl} がんばれよ！",
-   "en": ""
+   "en": "\"Here you go, then.{page2}{F9FF}{B742}Kurt and the others{nl}got a Herb!{page2}{F9FF}\"Don't you die. Hang in there!"
   },
   {
    "id": "r185_02C8",
    "addr": "02C8",
    "size": 100,
    "jp": "「そうか。{nl} でも 無理するんじゃないぞ。{page} ハ－ブが足りなくなったら{nl} すぐに 声をかけてくれよ。",
-   "en": ""
+   "en": "\"I see. But don't push yourself.{page} If you run short of Herbs, just call me."
   },
   {
    "id": "r185_0330",
    "addr": "0330",
    "size": 140,
    "jp": "「なんだ 持ち物が{nl} いっぱいじゃないか。{page} ハ－ブが 足りなくなったら{nl} また 声を かけてくれよ。{page}「死ぬんじゃないぞ。{nl} がんばれよ！",
-   "en": ""
+   "en": "\"Why, your bags are full.{page} If you run short of Herbs, call me again.{page}\"Don't you die. Hang in there!"
   },
   {
    "id": "r185_03C4",
    "addr": "03C4",
    "size": 8,
    "jp": "ユ－リ{nl}",
-   "en": ""
+   "en": "Yuri{nl}"
   },
   {
    "id": "r185_03DA",
    "addr": "03DA",
    "size": 10,
    "jp": "スレ－ク{nl}",
-   "en": ""
+   "en": "Sleek{nl}"
   },
   {
    "id": "r185_03EC",
    "addr": "03EC",
    "size": 52,
    "jp": "「私の心配なら無用だ。{nl} ほら 後ろに気をつけろっ！",
-   "en": ""
+   "en": "\"Don't worry about me. Look, watch{nl} your back!"
   },
   {
    "id": "r185_0422",
    "addr": "0422",
    "size": 70,
    "jp": "「こっちは まかせてくれ！{page} 海賊退治で きたえた腕を{nl} 見せてやる！",
-   "en": ""
+   "en": "\"Leave this side to me!{page} I'll show you the skill I honed fighting{nl} pirates!"
   },
   {
    "id": "r185_046A",
    "addr": "046A",
    "size": 52,
    "jp": "「敵の軍船に乗り移れっ！{nl} 迷わず 隊長を狙うんだ！",
-   "en": ""
+   "en": "\"Board the enemy warship! Go straight{nl} for the captain!"
   },
   {
    "id": "r185_04A0",
    "addr": "04A0",
    "size": 60,
    "jp": "「このグルド兵たちは新兵ばかりだ。{nl} 大した敵じゃないぞっ！",
-   "en": ""
+   "en": "\"These Guld soldiers are all recruits.{nl} They're no great foe!"
   },
   {
    "id": "r185_04E4",
    "addr": "04E4",
    "size": 76,
    "jp": "「よ－し やるぞ！{nl} シルヴェルを とりもどすため{nl} なんとしても帰らねば！",
-   "en": ""
+   "en": "\"All right, let's do this! We have to get{nl} home, whatever it takes, to take back{nl} Silvel!"
   },
   {
    "id": "r185_0538",
    "addr": "0538",
    "size": 64,
    "jp": "「がんばれよっ！{nl} シルヴェルに帰るまで{nl} 絶対に負けるなっ！！",
-   "en": ""
+   "en": "\"Hang in there! Don't you lose till we're{nl} back in Silvel!!"
   },
   {
    "id": "r185_0580",
    "addr": "0580",
    "size": 50,
    "jp": "「うぬ！ きさまらも敵か！？{nl} かかってこい！！{page2}",
-   "en": ""
+   "en": "\"Grr! You're enemies too?! Come on!!{page2}"
   }
  ]
 }

@@ -11,21 +11,21 @@
    "addr": "0050",
    "size": 150,
    "jp": "「おもてを 見てくれたかね？{page} ちゃんと ヤサイも 食ってるし{nl} サカナだって ようしょくしてる。{page} これが文化なのだ！{nl} コッパスに 栄えあれ！！！",
-   "en": ""
+   "en": "\"Did you see outside?{page} We eat our veggies, and we even farm{nl} fish.{page} This is culture! Glory to the Koppas!!!"
   },
   {
    "id": "r177_00EC",
    "addr": "00EC",
    "size": 86,
    "jp": "「イカダぐらしは 楽しいぞ！{nl} 陸地で なにが おこっても{nl} ち－とも 閑係ないのだ！",
-   "en": ""
+   "en": "\"Raft life is fun! Whatever happens on{nl} land is no concern of ours!"
   },
   {
    "id": "r177_0148",
    "addr": "0148",
    "size": 98,
    "jp": "「オラたちには{nl} 偉大な 長老がいるから{nl} ゆたかで しあわせなのだ！{page} コッパスに 栄えあれ！！",
-   "en": ""
+   "en": "\"We have a great elder, so we're rich{nl} and happy!{page} Glory to the Koppas!!"
   }
  ]
 }

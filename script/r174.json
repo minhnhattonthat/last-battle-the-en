@@ -172,14 +172,14 @@
    "addr": "0D4A",
    "size": 368,
    "jp": "メイ{nl}「私たちを うたがう気！？{page} どうやら イカダを{nl} 燃やされたい ようね。{page2}{F9FF}コッパス長老{nl}「そそそ・・・{nl} そんなこと ないギ～！！{page2}{F9FF}メイ{nl}「ねえ 予言が{nl} ウソだったんじゃないの？{page} その剣は 封印を解くだけの{nl} ものなんじゃない？{page2}{F9FF}コッパス長老{nl}「そんなバカな～！{page} それじゃ陸地は どうなるギ～！？{page2}{F9FF}メイ{nl}「知らないわよ。{nl} ま あきらめるのね。{page2}",
-   "en": ""
+   "en": "Mei{nl}\"You doubt us?!{page} Looks like you want your raft burned.{page2}{F9FF}Koppas Elder{nl}\"N-n-no, not at all, gi~!!{page2}{F9FF}Mei{nl}\"Say, wasn't the prophecy just a lie?{page} Isn't that sword just for breaking the{nl} seal?{page2}{F9FF}Koppas Elder{nl}\"That's crazy~!{page} Then what about the land, gi~?!{page2}{F9FF}Mei{nl}\"How should I know? Well, give it up.{page2}"
   },
   {
    "id": "r174_0EC6",
    "addr": "0EC6",
    "size": 170,
    "jp": "コッパス長老{nl}「・・・はぁ・・・がっくし。{page} それじゃ こんな剣{nl} 何の役にも立たないギ。{page} 宝箱に入れとくから{nl} おめ－さんラ ほしけりゃ{nl} もっていくギ。とほほ・・{page2}",
-   "en": ""
+   "en": "Koppas Elder{nl}\"...sigh... how crushing.{page} Then this sword is no use at all, gi.{page} I'll put it in the chest. If you folks want{nl} it, take it, gi. Boo hoo..{page2}"
   }
  ]
 }

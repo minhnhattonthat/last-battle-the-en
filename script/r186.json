@@ -11,77 +11,77 @@
    "addr": "0087",
    "size": 32,
    "jp": "ドアには{nl}カギが かかっている。",
-   "en": ""
+   "en": "The door is locked."
   },
   {
    "id": "r186_00A9",
    "addr": "00A9",
    "size": 24,
    "jp": "そこには何もありません。",
-   "en": ""
+   "en": "There is nothing there."
   },
   {
    "id": "r186_00F1",
    "addr": "00F1",
    "size": 154,
    "jp": "「まて 何者だ！{nl} 怪しいやつらめ。{page}「う～ぬ・・さては{nl} 反逆者スレ－クの一味だな！{page} スレ－クの家族を{nl} 取り返しに来たのだろうが{nl} そうはさせん！{page2}",
-   "en": ""
+   "en": "\"Halt, who goes there! Suspicious lot.{page}\"Hmmm.. So you're with the traitor{nl} Sleek!{page} You've come to take back Sleek's family,{nl} but I won't let you!{page2}"
   },
   {
    "id": "r186_01A9",
    "addr": "01A9",
    "size": 14,
    "jp": "「うごくな！{page2}",
-   "en": ""
+   "en": "\"Don't move!{page2}"
   },
   {
    "id": "r186_021A",
    "addr": "021A",
    "size": 46,
    "jp": "「はむかえば この女と娘の{nl} 命は ないぞ！{page2}",
-   "en": ""
+   "en": "\"Resist, and this woman and girl die!{page2}"
   },
   {
    "id": "r186_0252",
    "addr": "0252",
    "size": 44,
    "jp": "リリヤ{nl}「ママ－っ！{page2}{F9FF}ヒルダ{nl}「リリヤ！{page2}",
-   "en": ""
+   "en": "Lilja{nl}\"Mommyyy!{page2}{F9FF}Hilda{nl}\"Lilja!{page2}"
   },
   {
    "id": "r186_0289",
    "addr": "0289",
    "size": 138,
    "jp": "「我らグルド軍に はむかう{nl} おろか者どもめ！！{page} きさまらも{nl} 囚人島送りに してやる！{page}「それ！{wait}{wait}{nl} こやつらを ひっとらえい！！{page2}",
-   "en": ""
+   "en": "\"Fools who defy our Guld army!!{page} I'll send you to Prison Island too!{page}\"Go! {wait}{wait}Seize them!!{page2}"
   },
   {
    "id": "r186_0351",
    "addr": "0351",
    "size": 24,
    "jp": "「お－い あんたたち！{page2}",
-   "en": ""
+   "en": "\"Hey there, you lot!{page2}"
   },
   {
    "id": "r186_0375",
    "addr": "0375",
    "size": 42,
    "jp": "「大切なことを言うのを{nl} 忘れていたよ。{page}",
-   "en": ""
+   "en": "\"I forgot to tell you something{nl} important.{page}"
   },
   {
    "id": "r186_03A1",
    "addr": "03A1",
    "size": 300,
    "jp": "「あんたたちが上陸しても{nl} 船は その場で待ってるよ。{page}「それから 魔法で どこかに{nl} 飛んでっても できるかぎり{nl} 追いかけるから 心配ないさ。{page}「でも もしも わしの船と{nl} はぐれてしまったら{nl} このハンスタッドに来てくれ。{page}「いいかい これが わしと{nl} あんたたちとの約束だ。{nl} わかったかい？",
-   "en": ""
+   "en": "\"When you go ashore, the ship will wait{nl} right there.{page}\"And if you fly off somewhere by magic,{nl} I'll follow as best I can, so don't worry.{page}\"But if you ever lose track of my ship,{nl} come to Hanstad.{page}\"All right? That's our promise, yours and{nl} mine. Got it?"
   },
   {
    "id": "r186_04D3",
    "addr": "04D3",
    "size": 46,
    "jp": "「よし それじゃ わしは{nl} 船で待ってるよ。{page2}",
-   "en": ""
+   "en": "\"Good. Then I'll be waiting on the ship.{page2}"
   }
  ]
 }

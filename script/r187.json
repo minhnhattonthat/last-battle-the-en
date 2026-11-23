@@ -11,119 +11,119 @@
    "addr": "00D2",
    "size": 126,
    "jp": "「スレ－ク様は もどられたし{nl} グルド軍も この町から{nl} いなくなりました。{page} 自由の町ハンスタッドは{nl} よみがえったのです！",
-   "en": ""
+   "en": "\"Sleek-sama is back, and the Guld army{nl} is gone from this town.{page} Hanstad, the free town, has come back{nl} to life!"
   },
   {
    "id": "r187_015A",
    "addr": "015A",
    "size": 148,
    "jp": "「私も リリヤお嬢様の{nl} 花ヨメ姿を 見るまで{nl} 長生きしたく なりましたよ。{page} もっとも ずいぶん先のことに{nl} なりそうですがね。{nl} はっはっは！",
-   "en": ""
+   "en": "\"I want to live long enough to see{nl} young Lilja as a bride now.{page} Though that will be a long way off, I{nl} think. Ha ha ha!"
   },
   {
    "id": "r187_01F8",
    "addr": "01F8",
    "size": 130,
    "jp": "「もはや スレ－ク家こそ{nl} 私の家です。{page} また この館で{nl} くらせる日が来るとは・・・{page}「これも{nl} あなたたちの おかげですよ！",
-   "en": ""
+   "en": "\"The Sleek house is my home now.{page} To think the day would come when I{nl} could live in this manor again...{page}\"It's all thanks to you!"
   },
   {
    "id": "r187_027C",
    "addr": "027C",
    "size": 128,
    "jp": "「だんな様は 西の荒地に{nl} 向かわれました。{page}「荒地のはいきょウ－ドに{nl} ユ－リ様が 軍を集めたとの{nl} しらせが あったのです。",
-   "en": ""
+   "en": "\"The master has gone to the western{nl} wastes.{page}\"Word came that Yuri-sama is gathering{nl} an army at the ruins of Ude in the{nl} wastes."
   },
   {
    "id": "r187_02FE",
    "addr": "02FE",
    "size": 278,
    "jp": "「ユ－リ様のもとには 多くの兵力が{nl} 集っていると聞きました。{page} これでグルド王国も{nl} いよいよ おしまいですなあ・・・{page}「グルド王も この戦いまでは{nl} けっして悪い王では なかったはず。{nl} それが欲に目がくらんで・・・{page}「欲というものは 人間を{nl} おろかに するものですなあ。",
-   "en": ""
+   "en": "\"I hear a great force is gathering under{nl} Yuri-sama.{page} Now at last the Guld kingdom is{nl} finished...{page}\"The King of Guld was never a bad king{nl} before this war. Then greed blinded{nl} him...{page}\"Greed makes fools of people, doesn't it."
   },
   {
    "id": "r187_0416",
    "addr": "0416",
    "size": 128,
    "jp": "「だんな様は ユ－リ様を{nl} 応援するため{nl} 西の荒地に 向かわれました。{page}「今ごろは{nl} もう むこうに{nl} いらっしゃるでしょう。",
-   "en": ""
+   "en": "\"The master has gone to the western{nl} wastes to support Yuri-sama.{page}\"By now he should be there already."
   },
   {
    "id": "r187_0498",
    "addr": "0498",
    "size": 128,
    "jp": "「はっ！ 何者っ！！{wait}{wait}{wait}{wait}{nl} おや あなた方でしたか。{page}「いや どうも{nl} グルド軍が いたときのクセが{nl} ぬけないもので・・・",
-   "en": ""
+   "en": "\"Hah! Who goes there!! {wait}{wait}{wait}{wait}Oh, it's{nl} you.{page}\"Sorry, I can't shake the habit from{nl} when the Guld army was here..."
   },
   {
    "id": "r187_0520",
    "addr": "0520",
    "size": 240,
    "jp": "スレ－ク{nl}「おや どうしたんだい？{page} シルヴェルを奪回するため{nl} ユ－リ様と いっしょに{nl} 戦うんじゃ ないのかい？{page} なんでも エルダ－ルって村に{nl} 軍を集めるって話だったが・・・{page}「もしかして あんたたち{nl} ユ－リ様と はぐれたのかい？",
-   "en": ""
+   "en": "Sleek{nl}\"Oh, what's wrong?{page} Weren't you going to fight with{nl} Yuri-sama to take back Silvel?{page} I heard he was gathering his army in a{nl} village called Eldar...{page}\"Did you lose track of Yuri-sama, by any{nl} chance?"
   },
   {
    "id": "r187_0612",
    "addr": "0612",
    "size": 242,
    "jp": "スレ－ク{nl}「ユ－リ様や あんたたちには{nl} ずいぶん 世話になったね。{page} 私は この町を再建しなくちゃ{nl} ならんから 今は 動けないんだ。{page} だが 次の戦いには{nl} きっと かけつけるよ。{page} エルダ－ルにいる ユ－リ様に{nl} そう お伝えしてくれ。",
-   "en": ""
+   "en": "Sleek{nl}\"Yuri-sama and you all have done a lot{nl} for me.{page} I have to rebuild this town, so I can't{nl} move now.{page} But for the next battle, I'll come{nl} running for sure.{page} Please tell Yuri-sama in Eldar so."
   },
   {
    "id": "r187_0706",
    "addr": "0706",
    "size": 170,
    "jp": "スレ－ク{nl}「グルドが このまま{nl} だまっているとは思えない。{page} この町だって{nl} いつ また狙われるか・・・{page}「そうなる前に こちらから{nl} グルドを攻めるしかないだろうな。",
-   "en": ""
+   "en": "Sleek{nl}\"I can't believe Guld will just keep quiet.{page} This town could be targeted again{nl} anytime...{page}\"Before that happens, we'll have no{nl} choice but to attack Guld ourselves."
   },
   {
    "id": "r187_07BC",
    "addr": "07BC",
    "size": 194,
    "jp": "ヒルダ{nl}「あなた方には なんと お礼を{nl} 言ったらいいのか・・・{page} おかげで うちの人も{nl} 無事 帰ってきましたわ。{page}「これで 前のように{nl} 親子３人 静かに くらせれば{nl} いいのだけれど・・・",
-   "en": ""
+   "en": "Hilda{nl}\"I don't know how to thank you...{page} Thanks to you, my husband came home{nl} safely too.{page}\"If only the three of us could live{nl} quietly as before..."
   },
   {
    "id": "r187_0884",
    "addr": "0884",
    "size": 172,
    "jp": "ヒルダ{nl}「ユ－リ様は シルヴェルに{nl} もどられたのでしょう？{page} シルヴェルを取りもどすため{nl} 戦う おつもりと 聞きました。{page}「あなた方も その戦いに{nl} いかれるのですか？",
-   "en": ""
+   "en": "Hilda{nl}\"Yuri-sama has gone back to Silvel,{nl} hasn't he?{page} I heard he means to fight to take Silvel{nl} back.{page}\"Will you go to that battle too?"
   },
   {
    "id": "r187_093A",
    "addr": "093A",
    "size": 186,
    "jp": "ヒルダ{nl}「ユ－リ様が ウ－ドに{nl} 全軍を集めたと聞きました。{page}{FB00}「まあ！ あなた方も{nl} 今度の戦いに！？{page} ・{wait}{wait}・{wait}{wait}・ユ－リ様が{nl} グルドを攻めるというのは{nl} 本当なのですね・・・{page}",
-   "en": ""
+   "en": "Hilda{nl}\"I heard Yuri-sama has gathered his{nl} whole army at Ude.{page}{FB00}\"Oh! You're in this battle too?!{page} .{wait}{wait}.{wait}{wait}.So it's true that Yuri-sama{nl} will attack Guld...{page}"
   },
   {
    "id": "r187_09F8",
    "addr": "09F8",
    "size": 132,
    "jp": "ヒルダ{nl}「なんといっても{nl} スレ－クは商人です。{page}「海賊退治なら ともかく{nl} 今度のような大きな戦いなど{nl} したことはないのに・・・",
-   "en": ""
+   "en": "Hilda{nl}\"Sleek is a merchant, after all.{page}\"Pirate hunting is one thing, but he's{nl} never fought in a big war like this..."
   },
   {
    "id": "r187_0A80",
    "addr": "0A80",
    "size": 140,
    "jp": "ヒルダ{nl}「うちの人・・・スレ－クは{nl} だいじょうぶでしょうか？{page} うちの人も{nl} ユ－リ様を 応援するため{nl} ウ－ドに いってしまったんです。",
-   "en": ""
+   "en": "Hilda{nl}\"My husband... will Sleek be all right?{page} He's gone off to Ude too, to support{nl} Yuri-sama."
   },
   {
    "id": "r187_0B10",
    "addr": "0B10",
    "size": 122,
    "jp": "スレ－ク{nl}「ユ－リ様{nl} ありがとうございました。{page} おかげで この町から{nl} グルド軍を 追い出すことが{nl} できましたよ。{page2}",
-   "en": ""
+   "en": "Sleek{nl}\"Yuri-sama, thank you so much.{page} Thanks to you, we've driven the Guld{nl} army out of this town.{page2}"
   },
   {
    "id": "r187_0B91",
    "addr": "0B91",
    "size": 350,
    "jp": "ユ－リ{nl}「いや こちらこそ 礼を言わねば。{page} こうして 無事に{nl} 囚人島から脱出できたのも{nl} スレ－ク殿の力だ。{page}「それに このハンスタッドが{nl} 中立を守ってくれれば・・{page} シルヴェルにいる 占領軍は{nl} 補給を断たれたことになる。{page}「今こそ シルヴェルを取り返す{nl} 絶好の機会だ！{page} なんとしても 占領軍を撃破して{nl} シルヴェルを奪回しなければ！！{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"No, it is I who must thank you.{page} That we escaped Prison Island safely is{nl} thanks to your strength, Sleek-dono.{page}\"And if Hanstad stays neutral..{page} the army occupying Silvel will be cut off{nl} from supplies.{page}\"Now is the perfect chance to take back{nl} Silvel!{page} We must crush the occupying army and{nl} win back Silvel, whatever it takes!!{page2}"
   },
   {
    "id": "r187_0CF6",
