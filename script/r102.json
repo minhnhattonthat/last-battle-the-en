@@ -11,28 +11,28 @@
    "addr": "0046",
    "size": 58,
    "jp": "扉は かたく閉ざされている。{nl}魔法で封印されているようだ。",
-   "en": ""
+   "en": "The door is shut tight.{nl}It seems to be sealed by magic."
   },
   {
    "id": "r102_0082",
    "addr": "0082",
    "size": 24,
    "jp": "そこには何もありません。",
-   "en": ""
+   "en": "There is nothing there."
   },
   {
    "id": "r102_00B8",
    "addr": "00B8",
    "size": 68,
    "jp": "フェ－ベンネルス{nl}「さて いよいよ{nl} ここからが 本当の修行じゃ。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Now then, from here on is the real{nl} training.{page2}"
   },
   {
    "id": "r102_012D",
    "addr": "012D",
    "size": 534,
    "jp": "フェ－ベンネルス{nl}「このルドムの塔に{nl} ４つのマナの精霊像がある。{page} それら精霊像に{nl} いのりを ささげ{nl} マナの加護を 願うのじゃ。{page} そうすれば おのずとマナが{nl} 手に入るように なるじゃろう。{page}「ただし このルドムの塔の中には{nl} わしが 魔力で封じこめた魔物が{nl} ウヨウヨしておる。{page} たとえ修行といえど{nl} 油断は 命とりになると{nl} かくごするがよい。{page}{FB00}「もちろん つかれたら{nl} わしの家で 休んでもよいし{page} 新しい魔法を作るなら{nl} 弟子のビ－ボォが{nl} 手伝ってくれよう。{page}「さあ ゆくがよい。{nl} わしは家で まっておるぞ。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"In this Tower of Rudom stand the spirit{nl} statues of the four mana.{page} Offer prayers to those statues and ask{nl} for the mana's blessing.{page} Then the mana will come to you of{nl} itself.{page}\"But this Tower of Rudom is swarming{nl} with monsters I have sealed in with my{nl} magic.{page} Training or not, be ready: carelessness{nl} can cost your life.{page}{FB00}\"Of course, if you are tired, you may{nl} rest at my house,{page} and if you want to make new spells, my{nl} pupil Beebo will help.{page}\"Now go. I shall be waiting at the house.{page2}"
   }
  ]
 }

@@ -32,49 +32,49 @@
    "addr": "01DA",
    "size": 150,
    "jp": "「いやぁ すまねえ{nl} 商売物の荷物が ばらけちまって{nl} 奥の道を ふさいじまってるんだ。{page}「いま 仲間が かたずけてるから{nl} またあとで きてくんな。",
-   "en": ""
+   "en": "\"Sorry 'bout this. Our trade goods{nl} spilled and they're blocking the path{nl} ahead.{page}\"My mates are clearing it now, so come{nl} back later."
   },
   {
    "id": "r096_0276",
    "addr": "0276",
    "size": 196,
    "jp": "「えっ！{wait}{wait}{nl} 手伝ってくれるのかい！！{page}{FB00}「いや {wait}それは {wait}なんだ{wait}{nl} え－と{wait}・{wait}・{wait}・{wait}・{wait}。{page} 荷物を つみなおすにもなぁ{nl} 順番て～ ものがあってな{nl} オレたちだけで なんとかするよ。",
-   "en": ""
+   "en": "\"Eh! {wait}{wait}You'll help us?!{page}{FB00}\"No, {wait}that's, {wait}well{wait} uh{wait}.{wait}.{wait}.{wait}.{wait}{page} Stacking the load back up, there's an{nl} order to it, see. We'll manage on our{nl} own."
   },
   {
    "id": "r096_0340",
    "addr": "0340",
    "size": 94,
    "jp": "「正直なところ・・・{nl} ちょいと 時間がかりそうでよ。{page}「まぁ こらえてくれや{nl} にいちゃん。",
-   "en": ""
+   "en": "\"Truth is... it looks like it'll take a while.{page}\"So bear with us, kid."
   },
   {
    "id": "r096_03A0",
    "addr": "03A0",
    "size": 92,
    "jp": "「このトンネル街道は 我ヶが{nl} 怪しいやつらが かくれていないか{nl} 調べ終るまで 通行止だ。",
-   "en": ""
+   "en": "\"This tunnel road is closed until we've{nl} checked that no suspicious types are{nl} hiding in it."
   },
   {
    "id": "r096_03FE",
    "addr": "03FE",
    "size": 138,
    "jp": "「おまえたち このあたりで{nl} 怪しいやつらを 見なかったか？{page}{FB00}「怪しいやつらとは{nl} シルヴェル兵や たかそうな服を{nl} 着た連中のことだ。",
-   "en": ""
+   "en": "\"You there, seen any suspicious types{nl} around here?{page}{FB00}\"Suspicious means Silvel soldiers, or{nl} folks in fancy-looking clothes."
   },
   {
    "id": "r096_048A",
    "addr": "048A",
    "size": 84,
    "jp": "「こんな事なら 城攻めに加わらずに{nl} あのまま ここを ふさいどきゃ{nl} よかったぜ！",
-   "en": ""
+   "en": "\"If I'd known, I'd have skipped the{nl} castle siege and kept this place blocked!"
   },
   {
    "id": "r096_04E0",
    "addr": "04E0",
    "size": 142,
    "jp": "左 トンネル街道 ラントブルク村へ{nl}{nl}      グルヴァ村 鉱山へ 右{page}{FB00}   鉱山内部には 閑係者以外{nl} 立ち入りは ごえんりょください。",
-   "en": ""
+   "en": "Left: Tunnel Road to Landburg{nl}{nl}Gulva Village Mine: Right{page}{FB00}Mine interior: authorized{nl}persons only, please."
   }
  ]
 }

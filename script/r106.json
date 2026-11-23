@@ -11,21 +11,21 @@
    "addr": "00BA",
    "size": 24,
    "jp": "そこには何もありません。",
-   "en": ""
+   "en": "There is nothing there."
   },
   {
    "id": "r106_00D4",
    "addr": "00D4",
    "size": 58,
    "jp": "扉は かたく閉ざされている。{nl}魔法で封印されているようだ。",
-   "en": ""
+   "en": "The door is shut tight.{nl}It seems to be sealed by magic."
   },
   {
    "id": "r106_011E",
    "addr": "011E",
    "size": 368,
    "jp": "風の精霊像から ささやくような{nl}さわやかな声が聞こえる・・・{wait}{wait}{wait}{wait}{page2}{F9FF}「炎は炎のまま・・・{wait}{wait}{nl} 風は風のみにても{nl} 大いなる力を もつだろう・{wait}{wait}・{wait}{wait}・{page} されどまた{nl} ２つが１つになるとき{nl} 新たなる力も 生まれよう・{wait}{wait}・{wait}{wait}・{page} どちらを えらぶのも{nl} おまえの心ひとつ・・・{page}{FB00}「われらは ただ{nl} 風のフェナムン ヴィンドを{nl} おまえに 伝えよう・・・{page2}",
-   "en": ""
+   "en": "A fresh, whispering voice comes from the{nl}wind spirit statue...{wait}{wait}{wait}{wait}{page2}{F9FF}\"Flame as flame alone... {wait}{wait}wind as{nl} wind alone, each holds great{nl} power.{wait}{wait}.{wait}{wait}.{page} Yet when two become one, a new{nl} power too is born.{wait}{wait}.{wait}{wait}.{page} Which to choose is up to your heart{nl} alone...{page}{FB00}\"We simply pass on to you Vind, the{nl} Fenamun of wind...{page2}"
   },
   {
    "id": "r106_02C2",

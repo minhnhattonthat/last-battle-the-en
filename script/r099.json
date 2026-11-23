@@ -11,203 +11,203 @@
    "addr": "006E",
    "size": 66,
    "jp": "「ガッキンコ～ ガッキンコ～{nl} つるはし ふりあげ{nl} ガッキンコ～",
-   "en": ""
+   "en": "\"Gakkinko~ Gakkinko~ Swing that pickaxe{nl} up, Gakkinko~"
   },
   {
    "id": "r099_00BA",
    "addr": "00BA",
    "size": 132,
    "jp": "「ガッキンコ～ ガッキンコ～{nl} 掘れば せいかつ らくになる～{page}{FB00}「ガッキンコ～ ガッキンコ～{nl} つるはし ふりあげ{nl} ガッキンコ～",
-   "en": ""
+   "en": "\"Gakkinko~ Gakkinko~ Dig and life gets{nl} easy~{page}{FB00}\"Gakkinko~ Gakkinko~ Swing that pickaxe{nl} up, Gakkinko~"
   },
   {
    "id": "r099_0148",
    "addr": "0148",
    "size": 78,
    "jp": "「あさから ばんまで～{nl} ガッキンコ～{page}{FB00}「あたま ぶつけりゃ{nl} ゴッツンコ～",
-   "en": ""
+   "en": "\"From morning to night~ Gakkinko~{page}{FB00}\"Bang your head and it's Gonkinko~"
   },
   {
    "id": "r099_0198",
    "addr": "0198",
    "size": 38,
    "jp": " シルヴェル こけても{nl} ガッキンコ～",
-   "en": ""
+   "en": "Silvel may fall, but Gakkinko~"
   },
   {
    "id": "r099_01C0",
    "addr": "01C0",
    "size": 130,
    "jp": "「ガッキンコ～ ガッキンコ～{nl} グルドの 命令さからえない～{page}{FB00}「ガッキンコ～ ガッキンコ～{nl} いのちは おしいよ{nl} ガッキンコ～",
-   "en": ""
+   "en": "\"Gakkinko~ Gakkinko~ Can't go against{nl} Guld's orders~{page}{FB00}\"Gakkinko~ Gakkinko~ I'm fond of my life,{nl} Gakkinko~"
   },
   {
    "id": "r099_0244",
    "addr": "0244",
    "size": 74,
    "jp": "「あさから ばんまで～{nl} ガッキンコ～{page}{FB00}「さぼれば 命が{nl} プッツンコ～",
-   "en": ""
+   "en": "\"From morning to night~ Gakkinko~{page}{FB00}\"Slack off and your life goes Snapkinko~"
   },
   {
    "id": "r099_0290",
    "addr": "0290",
    "size": 68,
    "jp": "「ガッキンコ～ ガッキンコ～{nl} シルヴェル 勝てるぞ{nl} ガッキンコ～",
-   "en": ""
+   "en": "\"Gakkinko~ Gakkinko~ Silvel can win,{nl} Gakkinko~"
   },
   {
    "id": "r099_02D6",
    "addr": "02D6",
    "size": 132,
    "jp": "「ガッキンコ～ ガッキンコ～{nl} 掘れば シルヴェル強くになる{page}{FB00}「ガッキンコ～ガッキンコ～{nl} 勝たなきゃ グルドが{nl} また もどる～",
-   "en": ""
+   "en": "\"Gakkinko~ Gakkinko~ Dig and Silvel{nl} grows strong{page}{FB00}\"Gakkinko~ Gakkinko~ If we don't win,{nl} Guld comes back again~"
   },
   {
    "id": "r099_035C",
    "addr": "035C",
    "size": 78,
    "jp": "「あさから ばんまで～{nl} ガッキンコ～{page}{FB00}「よめさん ほしいな{nl} カワイイコ～",
-   "en": ""
+   "en": "\"From morning to night~ Gakkinko~{page}{FB00}\"I want a wife, a pretty one-ko~"
   },
   {
    "id": "r099_03BA",
    "addr": "03BA",
    "size": 86,
    "jp": "「なんだい おまえは！{wait}{wait}{wait}{nl} ここは 鉱石を掘りだしているんだ{nl} あぶないんだぞ。{page}",
-   "en": ""
+   "en": "\"What are you doing here?! {wait}{wait}{wait}We{nl} dig ore here. It's dangerous.{page}"
   },
   {
    "id": "r099_0418",
    "addr": "0418",
    "size": 44,
    "jp": "「ケガを しないうちに{nl} 帰った！ 帰った！",
-   "en": ""
+   "en": "\"Go home before you get hurt! Go home,{nl} go home!"
   },
   {
    "id": "r099_044E",
    "addr": "044E",
    "size": 98,
    "jp": "「まだ いたのか？{nl} ケガなんかされると{nl} こっちが こまるんだよな。{page}「ぶっ ぶっ ぶっ・・・。",
-   "en": ""
+   "en": "\"Still here? If you get hurt, it's us who{nl} get in trouble.{page}\"Grumble grumble grumble..."
   },
   {
    "id": "r099_04B2",
    "addr": "04B2",
    "size": 198,
    "jp": "「なんだい あんたらは{nl} グルドの使いの者か？{page}「鉱石は ちゃんと予定どおりに{nl} ヤ－ク村へ とどける{wait}{nl} そう 言っといてくれ。{page}{FB00}「えっ なんだ！{nl} グルドの連中と ちがうのか！？{wait}{wait}{page}「フン！",
-   "en": ""
+   "en": "\"What are you lot? Messengers from{nl} Guld?{page}\"Tell them the ore will reach the Yaak{nl} village on schedule.{wait}{page}{FB00}\"Eh, what! You're not with the Guld lot?!{nl} {wait}{wait}{page}\"Hmph!"
   },
   {
    "id": "r099_057C",
    "addr": "057C",
    "size": 66,
    "jp": "「フン！{page}「めんどうなことは ごめんだ{nl} ここを 出ていってくれ。",
-   "en": ""
+   "en": "\"Hmph!{page}\"I don't want trouble. Get out of here."
   },
   {
    "id": "r099_05C0",
    "addr": "05C0",
    "size": 56,
    "jp": "「ここにも グルド兵は来るんだ{nl} よそ者は出てってくれ。",
-   "en": ""
+   "en": "\"Guld soldiers come here too. Outsiders,{nl} get out."
   },
   {
    "id": "r099_05FA",
    "addr": "05FA",
    "size": 142,
    "jp": "「シルヴェルのために{nl} 掘って 掘って 掘りまくれ！{page}「これからの戦いに 必要なだけの{nl} 武器を 村で作りあげて{nl} ユ－リ様に とどけるんだ！",
-   "en": ""
+   "en": "\"For Silvel, dig, dig and dig some more!{page}\"We'll make all the weapons the coming{nl} battles need right here, and send them{nl} to Yuri-sama!"
   },
   {
    "id": "r099_068A",
    "addr": "068A",
    "size": 86,
    "jp": "「人数は 少なくなったが{nl} がんばれ～！{page}「わしが つきっきりで{nl} 応援してやるぞ～。",
-   "en": ""
+   "en": "\"There are fewer of us now, but keep{nl} at it~!{page}\"I'll stand right by you and cheer you{nl} on~."
   },
   {
    "id": "r099_06E2",
    "addr": "06E2",
    "size": 48,
    "jp": "「グルヴァ村の 鉱夫の{nl} 意地を みせてやれ！！",
-   "en": ""
+   "en": "\"Show them the pride of Gulva Village{nl} miners!!"
   },
   {
    "id": "r099_071E",
    "addr": "071E",
    "size": 168,
    "jp": "「ひとつ 山掘って～{nl} ずんだらった～ {wait}ほい {wait}ほい{page}{FB00}「ふたつ 山掘って～{nl} ずんだらった～ {wait}ほい {wait}ほい{page}{FB00}「みっつ 山掘って{nl} ずんだらった～ {wait}ほい {wait}ほい",
-   "en": ""
+   "en": "\"Dig the first mountain~ Zundaratta~{nl} {wait}hoy {wait}hoy{page}{FB00}\"Dig the second mountain~ Zundaratta~{nl} {wait}hoy {wait}hoy{page}{FB00}\"Dig the third mountain, Zundaratta~{nl} {wait}hoy {wait}hoy"
   },
   {
    "id": "r099_07CC",
    "addr": "07CC",
    "size": 118,
    "jp": "「よっつ 山掘って～{nl} ずんだらった～ {wait}ほい {wait}ほい{page}「・・・・・・・・・。{wait}{wait}{page}「おまえ よっつの次 知ってるか？",
-   "en": ""
+   "en": "\"Dig the fourth mountain~ Zundaratta~{nl} {wait}hoy {wait}hoy{page}\".........{wait}{wait}{page}\"Hey, do you know what comes after{nl} four?"
   },
   {
    "id": "r099_084C",
    "addr": "084C",
    "size": 152,
    "jp": "「親方はよ～{page} あの グルドの命令で{nl} アタマきちゃって むちゃくちゃ{nl} きげんが 悪いんだ。{page}「もう カリカリしちゃって{nl} 夜も 眠れないってこった。",
-   "en": ""
+   "en": "\"The boss, see~{page} Guld's orders made him so mad, he's in a{nl} terrible mood.{page}\"He's so worked up, he can't even sleep{nl} at night."
   },
   {
    "id": "r099_08E6",
    "addr": "08E6",
    "size": 40,
    "jp": "「グルドの 命令じゃあ{nl} 逆らえないよ。",
-   "en": ""
+   "en": "\"We can't go against Guld's orders."
   },
   {
    "id": "r099_0910",
    "addr": "0910",
    "size": 58,
    "jp": "「おれたちの グルヴァ村は{nl} この先 どうなるんだろうな。",
-   "en": ""
+   "en": "\"What's going to become of our Gulva{nl} Village?"
   },
   {
    "id": "r099_0956",
    "addr": "0956",
    "size": 190,
    "jp": "「鉱石を 掘ってると{nl} つぎの ひと掘りで{nl} ぽっかり 大穴があいて・・・・{page}「かくされた 金・銀・財宝が{nl} どっさり 出てくる！！{page}「そんなことばかり考えてる{nl} オレって ヘンなのかな－？",
-   "en": ""
+   "en": "\"When I'm digging ore, I think, with the{nl} next swing a big hole will open up....{page}\"and hidden gold, silver and treasure{nl} will come pouring out!!{page}\"Is it weird that's all I think about?"
   },
   {
    "id": "r099_0A1A",
    "addr": "0A1A",
    "size": 68,
    "jp": "「世の中 ヘンな人間が{nl} 多いからな{wait}・{wait}・{wait}・{wait}{nl} まぁ いいか。",
-   "en": ""
+   "en": "\"The world's full of weird{nl} people{wait}.{wait}.{wait}.{wait} so who cares."
   },
   {
    "id": "r099_0A64",
    "addr": "0A64",
    "size": 144,
    "jp": "「なんで あの２人は{nl} ハナ歌まじりで こんな重い{nl} つるはしが ふれるんだ！{page}「おまけに・・・・{wait}{wait}{nl} わかるだろ？{page}「ひどい オンチなのが！",
-   "en": ""
+   "en": "\"How can those two swing such heavy{nl} pickaxes while humming?!{page}\"And what's more....{wait}{wait} you know,{nl} right?{page}\"They're terribly tone-deaf!"
   },
   {
    "id": "r099_0AF6",
    "addr": "0AF6",
    "size": 88,
    "jp": "「こんな 世の中だからな・・・{nl} お宝見っけて グルド兵の{nl} いない世界へ いきて－な。",
-   "en": ""
+   "en": "\"In a world like this... I wanna find{nl} treasure and go somewhere with no{nl} Guld soldiers."
   },
   {
    "id": "r099_0B50",
    "addr": "0B50",
    "size": 252,
    "jp": "「うちの ご先租様はよっ！{nl} この山の ラントブルク村へぬける{nl} トンネル掘った ひとたちだからよ{page} うちの家系の 努力とか 根性は{nl} み－んな そこで{nl} 使いきっちまったに違いないのさ。{page}{FB00}「オレにも 少し{nl} 残しておいてくれれば{nl} よかったのによ。",
-   "en": ""
+   "en": "\"My ancestors were the folks who dug{nl} the tunnel through this mountain to{nl} Landburg village!{page} All my family's hard work and guts must{nl} have been used up right there.{page}{FB00}\"They could've left a little for me."
   },
   {
    "id": "r099_0C4E",
    "addr": "0C4E",
    "size": 82,
    "jp": "「なんで あの２人は{nl} ハナ歌まじりで こんな重い{nl} つるはしが ふれるんだよ～！",
-   "en": ""
+   "en": "\"How can those two swing such heavy{nl} pickaxes while humming~!"
   }
  ]
 }

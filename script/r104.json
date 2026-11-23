@@ -11,28 +11,28 @@
    "addr": "002F",
    "size": 362,
    "jp": "大地の精霊像から ふかみのある{nl}静かな声が聞こえる・・・{wait}{wait}{wait}{wait}{page2}{F9FF}「大地が 命を生み{nl} 命が 大地に返るように{page} マナは 魔法を生み{nl} 魔法は マナにもどる・・・{page} その魔法が 役目を終えたなら{nl} いつでも{nl} マナに もどすがよい・・・{page} それを きめるのは{nl} おまえの心・・・{page}{FB00}「大地のフェナムン ヨルデンは{nl} おまえに その力を{nl} あたえるだろう・・・{page2}",
-   "en": ""
+   "en": "A deep, quiet voice comes from the{nl}earth spirit statue...{wait}{wait}{wait}{wait}{page2}{F9FF}\"As the earth gives birth to life, and{nl} life returns to the earth,{page} mana gives birth to magic, and magic{nl} returns to mana...{page} When a spell has served its purpose,{nl} you may return it to mana at any time...{page} That is for your heart to decide...{page}{FB00}\"Jorden, the Fenamun of earth, will{nl} give you its power...{page2}"
   },
   {
    "id": "r104_01CD",
    "addr": "01CD",
    "size": 154,
    "jp": "クルトは 大地のフェナムンを{nl}おぼえた！{page2}{F9FF}{C1FF}{C103}{B00D}「さあ もう ゆくがよい{nl} {FA03}よ。{page} 大地の聖なる力は{nl} つねに おまえと ともに{nl} あるだろう・・・。",
-   "en": ""
+   "en": "Kurt learned the Fenamun of earth!{page2}{F9FF}{C1FF}{C103}{B00D}\"Now go, {FA03}.{page} The holy power of the earth will always{nl} be with you..."
   },
   {
    "id": "r104_0269",
    "addr": "0269",
    "size": 32,
    "jp": "大地のマナの精霊像が立っている。",
-   "en": ""
+   "en": "The earth mana spirit statue stands{nl}here."
   },
   {
    "id": "r104_028B",
    "addr": "028B",
    "size": 42,
    "jp": "足元に注意せよ{nl}床が口をあけて まっている",
-   "en": ""
+   "en": "Watch your step.{nl}The floor lies open, waiting."
   }
  ]
 }

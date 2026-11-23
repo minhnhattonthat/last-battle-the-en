@@ -61,7 +61,9 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | カッテル | Kattel | | | |
 | デュナス | Dunas | | | |
 | トルン | Torn | | | |
-| エルド | Eld | | | |
+| エルド | Eld | | Fenamun of fire (Swedish "eld") | |
+| ヨルデン | Jorden | | Fenamun of earth | |
+| ヴィンド | Vind | | Fenamun of wind | |
 | ハイラム | Hiram | | | |
 | ロベルト | Robert | | | |
 | ガッキンコ | Gakkinko | | | |
