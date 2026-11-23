@@ -24,4 +24,12 @@ script refuses to run while any line is unticked. Sources: `docs/review-phase6.m
 - [ ] bg3_9EF0 - shop Buy left Japanese (4-byte slot, D11): translate when phase 7 repoints it, then `batches.py check b005`
 - [ ] bg3_9EF8 - shop Sell left Japanese (4-byte slot, D11): translate when phase 7 repoints it
 - [ ] bg3_A687 - feather note left Japanese (4-byte slot, D11): translate when phase 7 repoints it
+- [ ] bt_140017 - "defeated!!" / "s defeated!" glues a plural "s" onto the enemy name; check the rect width in game and rephrase if it allows
+- [ ] bt_186247 - なにを？ rendered "??"; "What?" if the rect fits 5
+- [ ] bt_1991EC - なにを？ rendered "What" with no question mark
+- [ ] bt_19E144 - たいち rendered "Soil" while the mana is "Earth Mana" elsewhere; use "Earth" if 5 fits
+- [ ] bt_1D8301 - ミス！ rendered "Nil"; "Miss" if 4 fits
+- [ ] common_0384 - スヤスヤ rendered "Sleeping soundly...." reads as narration inside a quote; "Zzz... zzz...." fits the other sleepers
+- [ ] cr_E2BD - composer 岡本 智郎 romanised "Tomoro"; confirm the reading (Tomoo / Tomorou) from an official credit
+- [ ] item_D3 - クロスオブマナ "Mana Cloth" vs item_3B "Mage's Cloth" and item_1E "Cloth of Law": one pattern for the "Cloth of X" family
 - [ ] b050 - 11 untranslated entries in `work/tl/b050.tsv` (battle particles, equip-slot labels): translate in phase 7 and re-run `batches.py check b050`

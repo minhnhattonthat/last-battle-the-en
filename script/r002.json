@@ -11,7 +11,7 @@
    "addr": "0038",
    "size": 206,
    "jp": "長老{nl}「おや クルト{nl} 学校は もう終わったのか？{page}「そういえば 今日は{nl} おまえの誕生日じゃろ{page} いくつに なるんじゃね？{page2}{FB00}「なに！ とうとう１６才か！{wait}{nl} そうか いよいよ おまえも{nl} 一人前じゃな。",
-   "en": "Elder{nl}\"Oh, Kurt. Is school over already?{page}\"Come to think of it, today is your{nl} birthday, isn't it?{page} How old are you now?{page2}{FB00}\"What! Sixteen at last! {wait}Well, well, so{nl} you're a grown man now."
+   "en": "Elder{nl}\"Oho, Kurt. School out already, eh?{page}\"Why, now I think of it, today's your{nl} birthday, isn't it?{page} How old are you now, my boy?{page2}{FB00}\"What! Sixteen at last! {wait}Well, well, so{nl} you're a grown man now, eh?"
   },
   {
    "id": "r002_0108",
@@ -25,7 +25,7 @@
    "addr": "01FE",
    "size": 118,
    "jp": "長老{nl}「そうか・・・{nl} クルトも もう１６才か・・・{page}「あの小さかった子が{nl} よく ここまで{nl} 大きくなったもんじゃ。",
-   "en": "Elder{nl}\"I see... So Kurt is sixteen already...{page}\"To think that little boy has grown so{nl} big."
+   "en": "Elder{nl}\"I see... So Kurt's sixteen already, eh...{page}\"To think that little lad has grown so{nl} big."
   }
  ]
 }

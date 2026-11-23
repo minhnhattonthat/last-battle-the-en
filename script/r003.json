@@ -102,7 +102,7 @@
    "addr": "053F",
    "size": 44,
    "jp": "長老{nl}「クルト{nl} こっちへ きてくれんか？{page2}",
-   "en": "Elder{nl}\"Kurt, would you come over here?{page2}"
+   "en": "Elder{nl}\"Kurt, my boy, come over here a{nl} moment, eh?{page2}"
   },
   {
    "id": "r003_0573",
@@ -123,7 +123,7 @@
    "addr": "06B1",
    "size": 156,
    "jp": "長老{nl}「おや？ おまえ持ち物が{nl} いっぱいのようじゃな。{page}「では なにか１つ{nl} わしに あずけるがいい。{page}「となりの部屋の宝箱に{nl} しまっておいてやろう。{page2}",
-   "en": "Elder{nl}\"Hm? Your pack seems to be full.{page}\"Then leave one thing with me.{page}\"I'll put it away in the chest in the next{nl} room.{page2}"
+   "en": "Elder{nl}\"Hm? Your pack's full, by the look of it,{nl} eh?{page}\"Then leave one thing with this old man.{page}\"I'll put it away in the chest in the next{nl} room for you.{page2}"
   }
  ]
 }

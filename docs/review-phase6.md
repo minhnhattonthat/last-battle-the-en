@@ -23,3 +23,10 @@ the style reference), "Cardinal-sama" -> "Your Eminence" / "His Eminence" (`r248
 
 | Batch | Verdict | Fixed (Critical/Important) | Minors to polish.md |
 |---|---|---|---|
+| b001 | ok | - | bt_140017, bt_186247 |
+| b002 | ok | common_0472 old man's のう voice (b053) | bt_1991EC, bt_19E144, bt_1D8301, common_0384 |
+| b003 | ok | - | cr_E2BD |
+| b004 | ok | - | item_D3 |
+| b005 | ok | - (bg3_9EF0/9EF8/A687 untranslated by D11, in polish.md) | - |
+| b006 | ok | - | - |
+| b007 | ok | Eldar Elder じゃ voice: r002_0038, r002_01FE, r003_053F, r003_06B1 (b053) | - |
