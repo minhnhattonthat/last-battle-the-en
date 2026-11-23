@@ -10,7 +10,7 @@
    "addr": "E245",
    "size": 60,
    "jp": "{nl}シナリオ・ゲ－ムデザイン{nl}{nl}          木村 初{nl}",
-   "en": "",
+   "en": "{nl}Scenario and Game Design{nl}{nl}                Hajime Kimura{nl}",
    "file": "016245",
    "ptrs": [
     "016215"
@@ -21,7 +21,7 @@
    "addr": "E283",
    "size": 56,
    "jp": "{nl}キャラクタ－デザイン{nl}{nl}         土居 孝幸{nl}",
-   "en": "",
+   "en": "{nl}Character Design{nl}{nl}                Takayuki Doi{nl}",
    "file": "016283",
    "ptrs": [
     "016217"
@@ -32,7 +32,7 @@
    "addr": "E2BD",
    "size": 44,
    "jp": "{nl}  音楽{nl}{nl}         岡本 智郎{nl}",
-   "en": "",
+   "en": "{nl}Music{nl}{nl}                Tomoro Okamoto{nl}",
    "file": "0162BD",
    "ptrs": [
     "016219"
@@ -43,7 +43,7 @@
    "addr": "E2EB",
    "size": 56,
    "jp": "{nl}ア－トディレクション{nl}{nl}          丸 哲郎{nl}",
-   "en": "",
+   "en": "{nl}Art Direction{nl}{nl}                Tetsuro Maru{nl}",
    "file": "0162EB",
    "ptrs": [
     "01621B"
@@ -54,7 +54,7 @@
    "addr": "E325",
    "size": 70,
    "jp": "システムデザイン{nl}・バトルプログラム{nl}{nl}         綾部 和弘{nl}",
-   "en": "",
+   "en": "System Design{nl}and Battle Program{nl}{nl}                Kazuhiro Ayabe{nl}",
    "file": "016325",
    "ptrs": [
     "01621D"
@@ -65,7 +65,7 @@
    "addr": "E36D",
    "size": 72,
    "jp": "シナリオ{nl}{nl}         石川 雅之{nl}         長崎 剛志{nl}",
-   "en": "",
+   "en": "Scenario{nl}{nl}                Masayuki Ishikawa{nl}                Tsuyoshi Nagasaki{nl}",
    "file": "01636D",
    "ptrs": [
     "01621F"
@@ -76,7 +76,7 @@
    "addr": "E3B7",
    "size": 52,
    "jp": "{nl}シナリオアシスト{nl}{nl}         岡田 久美{nl}",
-   "en": "",
+   "en": "{nl}Scenario Assistant{nl}{nl}                Kumi Okada{nl}",
    "file": "0163B7",
    "ptrs": [
     "016221"
@@ -87,7 +87,7 @@
    "addr": "E3ED",
    "size": 80,
    "jp": "イベントデザイン{nl}{nl}         石川 雅之{nl}         長崎 剛志{nl}",
-   "en": "",
+   "en": "Event Design{nl}{nl}                Masayuki Ishikawa{nl}                Tsuyoshi Nagasaki{nl}",
    "file": "0163ED",
    "ptrs": [
     "016223"
@@ -98,7 +98,7 @@
    "addr": "E43F",
    "size": 78,
    "jp": "ビジュアルデザイン{nl}・マップデザインエディタ－{nl}{nl}         竹村 浩{nl}",
-   "en": "",
+   "en": "Visual Design{nl}and Map Design Editor{nl}{nl}                Hiroshi Takemura{nl}",
    "file": "01643F",
    "ptrs": [
     "016225"
@@ -109,7 +109,7 @@
    "addr": "E48F",
    "size": 76,
    "jp": "ビジュアルデザイン{nl}・オブジェクトデザイン{nl}{nl}         小泉 信一{nl}",
-   "en": "",
+   "en": "Visual Design{nl}and Object Design{nl}{nl}                Shinichi Koizumi{nl}",
    "file": "01648F",
    "ptrs": [
     "016227"
@@ -120,7 +120,7 @@
    "addr": "E4DD",
    "size": 68,
    "jp": "グラフィックデ－タ{nl}コ－ディネイト{nl}{nl}         田川 喜之{nl}",
-   "en": "",
+   "en": "Graphic Data{nl}Coordination{nl}{nl}                Yoshiyuki Tagawa{nl}",
    "file": "0164DD",
    "ptrs": [
     "016229"
@@ -131,7 +131,7 @@
    "addr": "E523",
    "size": 110,
    "jp": "グラフィックデザイン{nl}{nl}         石田 充{nl}         菅沼 桂子{nl}         荘司 晃子",
-   "en": "",
+   "en": "Graphic Design{nl}{nl}                Mitsuru Ishida{nl}                Keiko Suganuma{nl}                Akiko Shoji",
    "file": "016523",
    "ptrs": [
     "01622B"
@@ -142,7 +142,7 @@
    "addr": "E593",
    "size": 84,
    "jp": "グラフィックデザイン{nl}{nl}         水野 忠夫{nl}{nl}         下村 麻美",
-   "en": "",
+   "en": "Graphic Design{nl}{nl}                Tadao Mizuno{nl}{nl}                Asami Shimomura",
    "file": "016593",
    "ptrs": [
     "01622D"
@@ -153,7 +153,7 @@
    "addr": "E5E9",
    "size": 74,
    "jp": "システムデザイン{nl}・デ－タコ－ディネイト{nl}{nl}         伊勢 寿景{nl}",
-   "en": "",
+   "en": "System Design{nl}and Data Coordination{nl}{nl}                Toshikage Ise{nl}",
    "file": "0165E9",
    "ptrs": [
     "01622F"
@@ -164,7 +164,7 @@
    "addr": "E635",
    "size": 52,
    "jp": "{nl}システムアシスト{nl}{nl}         塚原 克孝{nl}",
-   "en": "",
+   "en": "{nl}System Assistant{nl}{nl}                Katsutaka Tsukahara{nl}",
    "file": "016635",
    "ptrs": [
     "016231"
@@ -175,7 +175,7 @@
    "addr": "E66B",
    "size": 52,
    "jp": "{nl}メインプログラム{nl}{nl}         富沢 賢一{nl}",
-   "en": "",
+   "en": "{nl}Main Program{nl}{nl}                Kenichi Tomizawa{nl}",
    "file": "01666B",
    "ptrs": [
     "016233"
@@ -186,7 +186,7 @@
    "addr": "E6A1",
    "size": 50,
    "jp": "{nl}サブプログラム{nl}{nl}         坪井 哲央{nl}",
-   "en": "",
+   "en": "{nl}Sub Program{nl}{nl}                Tetsuo Tsuboi{nl}",
    "file": "0166A1",
    "ptrs": [
     "016235"
@@ -197,7 +197,7 @@
    "addr": "E6D5",
    "size": 82,
    "jp": "サウンドプログラム{nl}{nl}         平野 秀和{nl}         富沢 賢一{nl}",
-   "en": "",
+   "en": "Sound Program{nl}{nl}                Hidekazu Hirano{nl}                Kenichi Tomizawa{nl}",
    "file": "0166D5",
    "ptrs": [
     "016237"
@@ -208,7 +208,7 @@
    "addr": "E729",
    "size": 50,
    "jp": "{nl}ディレクション{nl}{nl}         山口 健司{nl}",
-   "en": "",
+   "en": "{nl}Direction{nl}{nl}                Kenji Yamaguchi{nl}",
    "file": "016729",
    "ptrs": [
     "016239"
@@ -219,7 +219,7 @@
    "addr": "E75D",
    "size": 56,
    "jp": "{nl}セ－ルスプロデュ－ス{nl}{nl}         高野 泰博{nl}",
-   "en": "",
+   "en": "{nl}Sales Producer{nl}{nl}                Yasuhiro Takano{nl}",
    "file": "01675D",
    "ptrs": [
     "01623B"
@@ -230,7 +230,7 @@
    "addr": "E797",
    "size": 44,
    "jp": "{nl} 総指揮{nl}{nl}         北尾 隆義{nl}",
-   "en": "",
+   "en": "{nl}Executive Producer{nl}{nl}                Takayoshi Kitao{nl}",
    "file": "016797",
    "ptrs": [
     "01623D"
@@ -241,7 +241,7 @@
    "addr": "E7C5",
    "size": 76,
    "jp": "企画・開発{nl}{nl}         ＫＩＤＥＡ{nl}         ＰＯＷＷＯＷ{nl}",
-   "en": "",
+   "en": "Planning and Development{nl}{nl}                KIDEA{nl}                POWWOW{nl}",
    "file": "0167C5",
    "ptrs": [
     "01623F"
@@ -252,7 +252,7 @@
    "addr": "E813",
    "size": 50,
    "jp": "{nl}プログラム{nl}{nl} 株式会社 アトリエドゥ－ブル {nl}",
-   "en": "",
+   "en": "{nl}Program{nl}{nl}        Atelier Double Co., Ltd.{nl}",
    "file": "016813",
    "ptrs": [
     "016241"
@@ -263,7 +263,7 @@
    "addr": "E847",
    "size": 46,
    "jp": "{nl} 総制作{nl}{nl}       テイチク株式会社{nl}",
-   "en": "",
+   "en": "{nl}Produced by{nl}{nl}                Teichiku Co., Ltd.{nl}",
    "file": "016847",
    "ptrs": [
     "016243"

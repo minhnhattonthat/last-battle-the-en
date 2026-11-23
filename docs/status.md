@@ -2,12 +2,20 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate (phase 5 closed 2026-11-24 session 12: marker build boots, all 114 scenes show ids,
-  every box variant has a width budget in `docs/re/windows.md`; the 93 state-gated battle rects are carried to the
-  phase-8 coverage pass, see Next 3).
-  Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) and `build/lastbattle_en.sfc` boot
-  (smoke ok, 2026-11-24 session 12).
+- **Phase:** 6. Translate in progress (session 13: 595/3085 strings, batches b001 b003 b004 b005 merged; b002 and
+  b006-b049 left). Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24
+  session 13, sha1 75f2ea30).
 - **Done:**
+  - **Phase 6, session 2026-11-24 (13):** `tools/batches.py` (skill asset adapted: split/check/merge/show/fit; wraps
+    dialogue pages to 208 px with the `"` indent, centres banners and menu lines, per-kind limits: dialogue 3 lines,
+    banners 144 px, credits 192 px, BG3 tile caps + `MENU_CAP` list windows, battle rects via `battle_text.encode`,
+    names (items/tactics 12 = D10, spells 8 + rank rows, enemies 2 x 8), slots under 5 bytes, glossary + Avoid).
+    `check.py` runs `batches.py check` on all shipped English; identity tests build with `build(jp_only=True)`.
+    `glossary.md` filled (rulings, style, ~60 names); `docs/translator-brief.md` (the loop, format rules, notes).
+    Batches split b001-b049 (`work/tl/`, gitignored, same worktree). Merged: b001 (bank-04 names, banners, chest/
+    item/stat messages, item descriptions, 23 battle rects), b003 (snoring NPCs, credits romanised, 91 enemies),
+    b004 (items, menu prompts), b005 (commands, status templates, tactics, teleport list, 6x7 descriptions).
+    D10, D11 added. `codex exec` is out of quota until 2026-11-26 (usage limit), so no codex review yet.
   - **Phase 5, session 2026-11-24 (12), phase closed:** description boxes measured with a ruler build
     (`build/qa_desc.sfc`, every description = 12-digit lines x 7): item descriptions **6 tiles x 7 lines** (field item
     menu box, `work/qa/desc2/item_z.png`; the shop box is 8 x 7, `work/qa/desc/p00_0x4D_10_6/final.png`), spell
@@ -143,11 +151,17 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
-  0. **Phase 6: translate** (`references/translation.md`; done-when: batch check 0 errors, glossary updated, reviewer
-     pass with no Critical/Important). Budgets per kind: `docs/re/windows.md` (dialogue 216 px x 3 lines, banners 144
-     px, staff roll 192 px, BG3 strings = JP tile count, item names 8-9 tiles, descriptions `max_tiles` x
-     `max_lines` in `menus.json`, battle rects `w` x `h`, enemy/battle names 16 chars in two 8-tile rows). Orca
-     run: no subagents, so translate and review in this session (or `codex exec` for the independent review).
+  0. **Phase 6: translate** (done-when: batch check 0 errors, glossary updated, reviewer pass with no
+     Critical/Important). Follow `docs/translator-brief.md`: next batches **b002** (battle rects + common), then
+     **b006-b049** in order (rooms r000... story order, then spells/tactics/shops in b047-b049). Merge, build and commit
+     after each batch; add new names to `glossary.md` as they appear (all names so far are there). When all are
+     merged: `batches.py split` again (picks up anything left; skip enemy_40/69, bg3_9EF0/9EF8/A687), write
+     `docs/synopsis.md` + `docs/style-reference.md` from the merged script, then the review pass (`codex exec -s
+     read-only` once its quota is back on 2026-11-26, else a fresh read-only pass of your own) on pairs files;
+     Minors -> `docs/polish.md`.
+     Phase-7 items found here: widen item/tactic name fields to 12 (D10); repoint the 2-tile shop Buy/Sell slots and
+     `bg3_A687`; check by eye the D11 labels, the status template (`bg3_8F96`, "Luck" is 2 tiles longer than うん)
+     and the teleport list at 9 letters (`MENU_CAP`).
   1. **Carried from phase 5** (not blocking translation; the battle part belongs to the phase-8 coverage pass):
      - **1a. Battle-window marker tour** (`battle_cover.py`, 40/133 read; consolidated run `work/qa/bcov_all` done,
        use `--jobs 3`). Still unread and why: `19E09C-19FABE` + `16EF84+` = magic synthesis screen (bank-29 code

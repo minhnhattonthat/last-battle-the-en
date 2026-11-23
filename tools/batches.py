@@ -35,7 +35,12 @@ BG3_CHARS = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz'
 BANNERS = (0xB3B0, 0xB631)  # bank-04 place-name banners, 144 px, centred with leading spaces
 CHAR_NAMES = ("b04_B2DA", "b04_B2E2", "b04_B2E8", "b04_B2F0")
 NAME_CAP = 12  # item/tactic names (D10): the BG3 name fields are 8-9 today; phase 7 widens them to 12
-LAYOUT_FREE = ("battle",)  # forms whose JP layout tokens (dakuten rows {2094}...) the English may drop
+LAYOUT_FREE = ("battle",)
+# BG3 strings that share one list window: the cap is the window's widest JP entry, not the string's own length
+# (phase-8 visual check: the teleport list holds 9-letter names; shop commands 4; one-word item notes in the 6-wide box)
+MENU_CAP = {**{f"bg3_{a}": 9 for a in "A1B6 A1C6 A1D8 A1E2 A1EC A1FA A20A A218 A226 A238 A242 A24A A258 A264 A272 "
+                                     "A27E".split()},
+            "bg3_9EF0": 4, "bg3_9EF8": 4, "bg3_8F1C": 3, "bg3_A65D": 6, "bg3_A687": 6}  # forms whose JP layout tokens (dakuten rows {2094}...) the English may drop
 _ROM = None
 
 
@@ -137,6 +142,21 @@ def wrap(e, en):
     """English as stored: dialogue pages wrapped, quote indent added, banners centred. Other forms unchanged."""
     if form(e) == "banner":
         return " " * max(0, (144 - px(en.strip())) // 8) + en.strip()
+    if form(e) == "menu" and not e.get("max_tiles"):
+        # each line centred where the JP line was centred (JP pads with leading spaces), never past its right edge
+        jl = e["jp"].split("{nl}")
+        el = en.split("{nl}")
+        if len(jl) == len(el):
+            out = []
+            for j, x in zip(jl, el):
+                n = len(j) - len(j.lstrip(" "))
+                if n and not x.startswith(" "):
+                    jw, xw = len(TOKEN.sub("", j)), len(TOKEN.sub("", x))
+                    pad = max(0, min(n + (jw - n - xw) // 2, e["tiles"] - xw))
+                    x = " " * pad + x
+                out.append(x)
+            return "{nl}".join(out)
+        return en
     if form(e) not in ("dlg", "epilogue"):
         return en
     quote = en.startswith('"')
@@ -161,6 +181,10 @@ def pages(en):
 def width_problems(e, en):
     f = form(e)
     out = []
+    if f not in ("name", "battle") and e.get("size", 99) < 5 and not e.get("ptrs"):  # insert.FAR_LEN; ptrs: repointed
+        words = len(TOKEN.findall(en)) + len(TOKEN.sub("", en))
+        if 2 * words > e["size"]:
+            out.append(f"{words} words in a {e['size']}-byte slot (too short to relocate: max {e['size'] // 2})")
     if f in ("dlg", "epilogue", "credit", "banner"):
         lim = {"credit": 192, "banner": 144}.get(f, DLG_PX + 4)
         for pg in pages(en):
@@ -178,7 +202,7 @@ def width_problems(e, en):
     elif f == "menu":
         plain = TOKEN.sub(lambda m: "" if m[0] != "{nl}" else "\n", en)
         lines = plain.split("\n")
-        cap = e.get("max_tiles") or e["tiles"]
+        cap = MENU_CAP.get(e["id"]) or e.get("max_tiles") or e["tiles"]
         if e.get("max_tiles"):
             if len(lines) > e["max_lines"]:
                 out.append(f"{len(lines)} lines > {e['max_lines']}")
@@ -252,15 +276,18 @@ def problems(entry, en, terms):
         out.append(f"unencodable characters {bad}")
     if re.search(r"\\u[0-9a-fA-F]{4}", en) or "\t" in en or "\\n" in en:
         out.append("escape sequence or tab in the English")
-    want = Counter(t for t in TOKEN.findall(jp) if t not in FREE)
-    have = Counter(t for t in TOKEN.findall(en) if t not in FREE)
+    free = FREE | ({"{009F}"} if form(entry) == "menu" else set())  # the BG3 full-stop tile: English writes "."
+    want = Counter(t for t in TOKEN.findall(jp) if t not in free)
+    have = Counter(t for t in TOKEN.findall(en) if t not in free)
     if want != have and form(entry) not in LAYOUT_FREE:
         out.append(f"control codes differ: JP {dict(want)} EN {dict(have)}")
     if re.search(VARIABLE + r"(st|nd|rd|th)\b", en):
         out.append('ordinal suffix after a variable (write "No. {num}")')
     jp_plain = TOKEN.sub("", jp)
     en_terms = " ".join(TOKEN.sub(" ", en).split()).lower()
-    tiny = form(entry) == "battle" and entry["w"] < 10  # a 7-tile mana label can't hold "Fire Mana"
+    tiny = (form(entry) == "battle" and entry["w"] < 10  # a 7-tile mana label can't hold "Fire Mana"
+            or form(entry) == "menu" and (entry.get("tiles", 99) < 6  # 4-tile name labels: "Regi"
+                                          or entry.get("max_tiles")))  # 6-tile description box: "Fena-/mun"
     for jps, ens, avoid in terms:
         if not tiny and any(has_term(jp_plain, j) for j in jps) and not any(" ".join(x.split()).lower() in en_terms for x in ens):
             out.append(f"glossary: {jps[0]} -> {ens[0]}")

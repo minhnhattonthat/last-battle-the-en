@@ -214,28 +214,28 @@
    "addr": "0874",
    "size": 74,
    "jp": "「ん～ なんだい・・・{wait}{nl} 夜くらい 寝かせておくれよ{nl} ・・・ぐご－っ！",
-   "en": ""
+   "en": "\"Mmm... What is it...{wait}{nl} Can't a body sleep at night?{nl} ...Hrrnk!"
   },
   {
    "id": "common_08C0",
    "addr": "08C0",
    "size": 48,
    "jp": "「・・・あ～{wait} う～{wait}{nl} ・・・ぐう～{wait}ぐう～{wait}",
-   "en": ""
+   "en": "\"...Ahh...{wait} Uhh...{wait}{nl} ...Zzz...{wait}zzz...{wait}"
   },
   {
    "id": "common_08F2",
    "addr": "08F2",
    "size": 58,
    "jp": "「・・・おおっ！ ねずみだっ！！{nl} ・・・むにゃ むにゃ。",
-   "en": ""
+   "en": "\"...Whoa! A rat!!{nl} ...Mumble, mumble."
   },
   {
    "id": "common_092E",
    "addr": "092E",
    "size": 46,
    "jp": "「・・・ぐうぐう・・・{nl} ・・・ぐうぐう・・・",
-   "en": ""
+   "en": "\"...Zzz... zzz...{nl} ...Zzz... zzz..."
   }
  ]
 }

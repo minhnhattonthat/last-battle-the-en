@@ -65,7 +65,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 |---|---|---|---|---|
 | グルド | Guld | | the enemy kingdom; グルド兵 = Guld soldier(s); never "Gold" | |
 | グルドリーケ | Guldrike | | | |
-| シルヴェル | Silvel | | Kurt's kingdom; シルヴェル城 = Silvel Castle | Silver |
+| シルヴェル | Silvel | | Kurt's kingdom; シルヴェル城 = Silvel Castle; シルバー (the metal) stays "Silver" | |
 | シルヴェルリーケ | Silvelrike | | | |
 | エルダール | Eldar | | Kurt's village (エルダール村 = Eldar Village) | |
 | ラントブルク / ラントブルグ | Landburg | | | |

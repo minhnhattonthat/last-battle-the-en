@@ -10,7 +10,7 @@
    "size": 7,
    "max": 8,
    "jp": "ショ－トソ－ド",
-   "en": ""
+   "en": "Short Sword"
   },
   {
    "id": "item_02",
@@ -18,7 +18,7 @@
    "size": 6,
    "max": 8,
    "jp": "ロングソ－ド",
-   "en": ""
+   "en": "Long Sword"
   },
   {
    "id": "item_03",
@@ -26,7 +26,7 @@
    "size": 8,
    "max": 8,
    "jp": "スティ－ルソ－ド",
-   "en": ""
+   "en": "Steel Sword"
   },
   {
    "id": "item_04",
@@ -34,7 +34,7 @@
    "size": 7,
    "max": 8,
    "jp": "ブロ－ドソ－ド",
-   "en": ""
+   "en": "Broadsword"
   },
   {
    "id": "item_05",
@@ -42,7 +42,7 @@
    "size": 8,
    "max": 8,
    "jp": "バスタ－ドソ－ド",
-   "en": ""
+   "en": "Bastardsword"
   },
   {
    "id": "item_06",
@@ -50,7 +50,7 @@
    "size": 7,
    "max": 8,
    "jp": "グレ－トソ－ド",
-   "en": ""
+   "en": "Greatsword"
   },
   {
    "id": "item_07",
@@ -58,7 +58,7 @@
    "size": 7,
    "max": 8,
    "jp": "シルバ－ソ－ド",
-   "en": ""
+   "en": "Silver Sword"
   },
   {
    "id": "item_08",
@@ -66,7 +66,7 @@
    "size": 8,
    "max": 8,
    "jp": "ソニックセ－バ－",
-   "en": ""
+   "en": "Sonic Saber"
   },
   {
    "id": "item_09",
@@ -74,7 +74,7 @@
    "size": 8,
    "max": 8,
    "jp": "ノ－マルスタッフ",
-   "en": ""
+   "en": "Plain Staff"
   },
   {
    "id": "item_0A",
@@ -82,7 +82,7 @@
    "size": 7,
    "max": 8,
    "jp": "メイジスタッフ",
-   "en": ""
+   "en": "Mage Staff"
   },
   {
    "id": "item_0B",
@@ -90,7 +90,7 @@
    "size": 8,
    "max": 8,
    "jp": "ソ－サラ－ワンド",
-   "en": ""
+   "en": "Sorcery Wand"
   },
   {
    "id": "item_0C",
@@ -98,7 +98,7 @@
    "size": 8,
    "max": 8,
    "jp": "マジカルスタッフ",
-   "en": ""
+   "en": "Magic Staff"
   },
   {
    "id": "item_0D",
@@ -106,7 +106,7 @@
    "size": 6,
    "max": 8,
    "jp": "エルフのつえ",
-   "en": ""
+   "en": "Elven Staff"
   },
   {
    "id": "item_0E",
@@ -114,7 +114,7 @@
    "size": 8,
    "max": 8,
    "jp": "シルバ－スタッフ",
-   "en": ""
+   "en": "Silver Staff"
   },
   {
    "id": "item_0F",
@@ -122,7 +122,7 @@
    "size": 6,
    "max": 8,
    "jp": "トルンのつえ",
-   "en": ""
+   "en": "Torn's Staff"
   },
   {
    "id": "item_10",
@@ -130,7 +130,7 @@
    "size": 7,
    "max": 8,
    "jp": "ハンドアックス",
-   "en": ""
+   "en": "Hand Axe"
   },
   {
    "id": "item_11",
@@ -138,7 +138,7 @@
    "size": 7,
    "max": 8,
    "jp": "バトルアックス",
-   "en": ""
+   "en": "Battle Axe"
   },
   {
    "id": "item_12",
@@ -146,7 +146,7 @@
    "size": 8,
    "max": 8,
    "jp": "スチ－ルアックス",
-   "en": ""
+   "en": "Steel Axe"
   },
   {
    "id": "item_13",
@@ -154,7 +154,7 @@
    "size": 8,
    "max": 8,
    "jp": "ブロ－ドアックス",
-   "en": ""
+   "en": "Broad Axe"
   },
   {
    "id": "item_14",
@@ -162,7 +162,7 @@
    "size": 8,
    "max": 8,
    "jp": "グレ－トアックス",
-   "en": ""
+   "en": "Great Axe"
   },
   {
    "id": "item_15",
@@ -170,7 +170,7 @@
    "size": 8,
    "max": 8,
    "jp": "シルバ－アックス",
-   "en": ""
+   "en": "Silver Axe"
   },
   {
    "id": "item_16",
@@ -178,7 +178,7 @@
    "size": 6,
    "max": 8,
    "jp": "レザ－クロス",
-   "en": ""
+   "en": "Leather Garb"
   },
   {
    "id": "item_17",
@@ -186,7 +186,7 @@
    "size": 7,
    "max": 8,
    "jp": "レザ－ア－マ－",
-   "en": ""
+   "en": "Leather Mail"
   },
   {
    "id": "item_18",
@@ -194,7 +194,7 @@
    "size": 6,
    "max": 8,
    "jp": "ハ－ドレザ－",
-   "en": ""
+   "en": "Hard Leather"
   },
   {
    "id": "item_19",
@@ -202,7 +202,7 @@
    "size": 7,
    "max": 8,
    "jp": "チェインメイル",
-   "en": ""
+   "en": "Chain Mail"
   },
   {
    "id": "item_1A",
@@ -210,7 +210,7 @@
    "size": 8,
    "max": 8,
    "jp": "ブレストプレ－ト",
-   "en": ""
+   "en": "Breastplate"
   },
   {
    "id": "item_1B",
@@ -218,7 +218,7 @@
    "size": 7,
    "max": 8,
    "jp": "プレ－トメイル",
-   "en": ""
+   "en": "Plate Mail"
   },
   {
    "id": "item_1C",
@@ -226,7 +226,7 @@
    "size": 7,
    "max": 8,
    "jp": "シルバ－メイル",
-   "en": ""
+   "en": "Silver Mail"
   },
   {
    "id": "item_1D",
@@ -234,7 +234,7 @@
    "size": 6,
    "max": 8,
    "jp": "ミランシェル",
-   "en": ""
+   "en": "Miranchel"
   },
   {
    "id": "item_1E",
@@ -242,7 +242,7 @@
    "size": 7,
    "max": 8,
    "jp": "クロスオブロウ",
-   "en": ""
+   "en": "Cloth of Law"
   },
   {
    "id": "item_1F",
@@ -250,7 +250,7 @@
    "size": 7,
    "max": 8,
    "jp": "レディ－メイル",
-   "en": ""
+   "en": "Lady's Mail"
   },
   {
    "id": "item_20",
@@ -258,7 +258,7 @@
    "size": 8,
    "max": 8,
    "jp": "グランドア－マ－",
-   "en": ""
+   "en": "Grand Armor"
   },
   {
    "id": "item_21",
@@ -266,7 +266,7 @@
    "size": 8,
    "max": 8,
    "jp": "エルベンチェイン",
-   "en": ""
+   "en": "Elven Chain"
   },
   {
    "id": "item_22",
@@ -274,7 +274,7 @@
    "size": 4,
    "max": 8,
    "jp": "バングル",
-   "en": ""
+   "en": "Bangle"
   },
   {
    "id": "item_23",
@@ -282,7 +282,7 @@
    "size": 8,
    "max": 8,
    "jp": "ノ－マルシ－ルド",
-   "en": ""
+   "en": "Plain Shield"
   },
   {
    "id": "item_24",
@@ -290,7 +290,7 @@
    "size": 7,
    "max": 8,
    "jp": "ラ－ジシ－ルド",
-   "en": ""
+   "en": "Large Shield"
   },
   {
    "id": "item_25",
@@ -298,7 +298,7 @@
    "size": 7,
    "max": 8,
    "jp": "ナイトシ－ルド",
-   "en": ""
+   "en": "Knightshield"
   },
   {
    "id": "item_26",
@@ -306,7 +306,7 @@
    "size": 8,
    "max": 8,
    "jp": "マジックシ－ルド",
-   "en": ""
+   "en": "Magic Shield"
   },
   {
    "id": "item_27",
@@ -314,7 +314,7 @@
    "size": 7,
    "max": 8,
    "jp": "ソ－ドシ－ルド",
-   "en": ""
+   "en": "Sword Shield"
   },
   {
    "id": "item_28",
@@ -322,7 +322,7 @@
    "size": 8,
    "max": 8,
    "jp": "シルバ－シ－ルド",
-   "en": ""
+   "en": "Silvershield"
   },
   {
    "id": "item_29",
@@ -330,7 +330,7 @@
    "size": 7,
    "max": 8,
    "jp": "オ－ラシ－ルド",
-   "en": ""
+   "en": "Aura Shield"
   },
   {
    "id": "item_2A",
@@ -338,7 +338,7 @@
    "size": 3,
    "max": 8,
    "jp": "ブ－ツ",
-   "en": ""
+   "en": "Boots"
   },
   {
    "id": "item_2B",
@@ -346,7 +346,7 @@
    "size": 6,
    "max": 8,
    "jp": "ロングブ－ツ",
-   "en": ""
+   "en": "Long Boots"
   },
   {
    "id": "item_2C",
@@ -354,7 +354,7 @@
    "size": 7,
    "max": 8,
    "jp": "レッグア－マ－",
-   "en": ""
+   "en": "Leg Armor"
   },
   {
    "id": "item_2D",
@@ -362,7 +362,7 @@
    "size": 7,
    "max": 8,
    "jp": "ウイングブ－ツ",
-   "en": ""
+   "en": "Wing Boots"
   },
   {
    "id": "item_2E",
@@ -370,7 +370,7 @@
    "size": 6,
    "max": 8,
    "jp": "アンクレット",
-   "en": ""
+   "en": "Anklet"
   },
   {
    "id": "item_2F",
@@ -378,7 +378,7 @@
    "size": 6,
    "max": 8,
    "jp": "ミラ－リング",
-   "en": ""
+   "en": "Mirror Ring"
   },
   {
    "id": "item_30",
@@ -386,7 +386,7 @@
    "size": 4,
    "max": 8,
    "jp": "フル－ト",
-   "en": ""
+   "en": "Flute"
   },
   {
    "id": "item_31",
@@ -394,7 +394,7 @@
    "size": 6,
    "max": 8,
    "jp": "サ－クレット",
-   "en": ""
+   "en": "Circlet"
   },
   {
    "id": "item_32",
@@ -402,7 +402,7 @@
    "size": 3,
    "max": 8,
    "jp": "マント",
-   "en": ""
+   "en": "Mantle"
   },
   {
    "id": "item_33",
@@ -410,7 +410,7 @@
    "size": 3,
    "max": 8,
    "jp": "ヘルム",
-   "en": ""
+   "en": "Helm"
   },
   {
    "id": "item_34",
@@ -418,7 +418,7 @@
    "size": 8,
    "max": 8,
    "jp": "クラウンオブソル",
-   "en": ""
+   "en": "Crown of Sol"
   },
   {
    "id": "item_35",
@@ -426,7 +426,7 @@
    "size": 7,
    "max": 8,
    "jp": "ファイアリング",
-   "en": ""
+   "en": "Fire Ring"
   },
   {
    "id": "item_36",
@@ -434,7 +434,7 @@
    "size": 6,
    "max": 8,
    "jp": "ア－スリング",
-   "en": ""
+   "en": "Earth Ring"
   },
   {
    "id": "item_37",
@@ -442,7 +442,7 @@
    "size": 6,
    "max": 8,
    "jp": "エア－リング",
-   "en": ""
+   "en": "Air Ring"
   },
   {
    "id": "item_38",
@@ -450,7 +450,7 @@
    "size": 7,
    "max": 8,
    "jp": "ウォ－タリング",
-   "en": ""
+   "en": "Water Ring"
   },
   {
    "id": "item_39",
@@ -458,7 +458,7 @@
    "size": 8,
    "max": 8,
    "jp": "フィジカルリング",
-   "en": ""
+   "en": "Body Ring"
   },
   {
    "id": "item_3A",
@@ -466,7 +466,7 @@
    "size": 7,
    "max": 8,
    "jp": "メンタルリング",
-   "en": ""
+   "en": "Mind Ring"
   },
   {
    "id": "item_3B",
@@ -474,7 +474,7 @@
    "size": 8,
    "max": 8,
    "jp": "クロスオブメイジ",
-   "en": ""
+   "en": "Mage's Cloth"
   },
   {
    "id": "item_3C",
@@ -482,7 +482,7 @@
    "size": 6,
    "max": 8,
    "jp": "ル－ンソ－ド",
-   "en": ""
+   "en": "Rune Sword"
   },
   {
    "id": "item_3D",
@@ -490,7 +490,7 @@
    "size": 6,
    "max": 8,
    "jp": "ル－ンロッド",
-   "en": ""
+   "en": "Rune Rod"
   },
   {
    "id": "item_3E",
@@ -498,7 +498,7 @@
    "size": 7,
    "max": 8,
    "jp": "ル－ンアックス",
-   "en": ""
+   "en": "Rune Axe"
   },
   {
    "id": "item_3F",
@@ -506,7 +506,7 @@
    "size": 7,
    "max": 8,
    "jp": "ル－ンセ－バ－",
-   "en": ""
+   "en": "Rune Saber"
   },
   {
    "id": "item_40",
@@ -514,7 +514,7 @@
    "size": 6,
    "max": 8,
    "jp": "ドラウプニル",
-   "en": ""
+   "en": "Draupnir"
   },
   {
    "id": "item_41",
@@ -522,7 +522,7 @@
    "size": 8,
    "max": 8,
    "jp": "オ－ラフィ－ルド",
-   "en": ""
+   "en": "Aura Field"
   },
   {
    "id": "item_42",
@@ -530,7 +530,7 @@
    "size": 3,
    "max": 8,
    "jp": "ハ－ブ",
-   "en": ""
+   "en": "Herb"
   },
   {
    "id": "item_43",
@@ -538,7 +538,7 @@
    "size": 8,
    "max": 8,
    "jp": "スペシャルハ－ブ",
-   "en": ""
+   "en": "Special Herb"
   },
   {
    "id": "item_44",
@@ -546,7 +546,7 @@
    "size": 8,
    "max": 8,
    "jp": "どくけしのハ－ブ",
-   "en": ""
+   "en": "Cure Herb"
   },
   {
    "id": "item_45",
@@ -554,7 +554,7 @@
    "size": 7,
    "max": 8,
    "jp": "マジックハ－ブ",
-   "en": ""
+   "en": "Magic Herb"
   },
   {
    "id": "item_46",
@@ -562,7 +562,7 @@
    "size": 6,
    "max": 8,
    "jp": "マナのゆびわ",
-   "en": ""
+   "en": "Mana Ring"
   },
   {
    "id": "item_47",
@@ -570,7 +570,7 @@
    "size": 5,
    "max": 8,
    "jp": "エリクサ－",
-   "en": ""
+   "en": "Elixir"
   },
   {
    "id": "item_48",
@@ -578,7 +578,7 @@
    "size": 8,
    "max": 8,
    "jp": "オ－ルエリクサ－",
-   "en": ""
+   "en": "All Elixir"
   },
   {
    "id": "item_49",
@@ -586,7 +586,7 @@
    "size": 7,
    "max": 8,
    "jp": "きつけのハ－ブ",
-   "en": ""
+   "en": "Revive Herb"
   },
   {
    "id": "item_4A",
@@ -594,7 +594,7 @@
    "size": 6,
    "max": 8,
    "jp": "ソウルコ－ル",
-   "en": ""
+   "en": "Soul Call"
   },
   {
    "id": "item_4B",
@@ -602,7 +602,7 @@
    "size": 4,
    "max": 8,
    "jp": "たいまつ",
-   "en": ""
+   "en": "Torch"
   },
   {
    "id": "item_4C",
@@ -610,7 +610,7 @@
    "size": 8,
    "max": 8,
    "jp": "ヘイストウォ－タ",
-   "en": ""
+   "en": "Haste Water"
   },
   {
    "id": "item_4D",
@@ -618,7 +618,7 @@
    "size": 7,
    "max": 8,
    "jp": "イレ－スワンド",
-   "en": ""
+   "en": "Erase Wand"
   },
   {
    "id": "item_4E",
@@ -626,7 +626,7 @@
    "size": 7,
    "max": 8,
    "jp": "ブラッドスメル",
-   "en": ""
+   "en": "Blood Scent"
   },
   {
    "id": "item_4F",
@@ -634,7 +634,7 @@
    "size": 8,
    "max": 8,
    "jp": "ほうせきのふくろ",
-   "en": ""
+   "en": "Jewel Bag"
   },
   {
    "id": "item_50",
@@ -642,7 +642,7 @@
    "size": 8,
    "max": 8,
    "jp": "ほうせきのふくろ",
-   "en": ""
+   "en": "Jewel Bag"
   },
   {
    "id": "item_51",
@@ -650,7 +650,7 @@
    "size": 8,
    "max": 8,
    "jp": "ほうせきのふくろ",
-   "en": ""
+   "en": "Jewel Bag"
   },
   {
    "id": "item_52",
@@ -658,7 +658,7 @@
    "size": 8,
    "max": 8,
    "jp": "ほうせきのふくろ",
-   "en": ""
+   "en": "Jewel Bag"
   },
   {
    "id": "item_53",
@@ -666,7 +666,7 @@
    "size": 8,
    "max": 8,
    "jp": "ほうせきのふくろ",
-   "en": ""
+   "en": "Jewel Bag"
   },
   {
    "id": "item_54",
@@ -674,7 +674,7 @@
    "size": 8,
    "max": 8,
    "jp": "ほうせきのふくろ",
-   "en": ""
+   "en": "Jewel Bag"
   },
   {
    "id": "item_55",
@@ -682,7 +682,7 @@
    "size": 8,
    "max": 8,
    "jp": "ほうせきのふくろ",
-   "en": ""
+   "en": "Jewel Bag"
   },
   {
    "id": "item_56",
@@ -690,7 +690,7 @@
    "size": 7,
    "max": 8,
    "jp": "ちからのハ－ブ",
-   "en": ""
+   "en": "Power Herb"
   },
   {
    "id": "item_57",
@@ -698,7 +698,7 @@
    "size": 8,
    "max": 8,
    "jp": "かしこさのハ－ブ",
-   "en": ""
+   "en": "Wisdom Herb"
   },
   {
    "id": "item_58",
@@ -706,7 +706,7 @@
    "size": 7,
    "max": 8,
    "jp": "からだのハ－ブ",
-   "en": ""
+   "en": "Body Herb"
   },
   {
    "id": "item_59",
@@ -714,7 +714,7 @@
    "size": 8,
    "max": 8,
    "jp": "すばやさのハ－ブ",
-   "en": ""
+   "en": "Speed Herb"
   },
   {
    "id": "item_5A",
@@ -722,7 +722,7 @@
    "size": 7,
    "max": 8,
    "jp": "いのちのハ－ブ",
-   "en": ""
+   "en": "Life Herb"
   },
   {
    "id": "item_5B",
@@ -730,7 +730,7 @@
    "size": 8,
    "max": 8,
    "jp": "せいしんのハ－ブ",
-   "en": ""
+   "en": "Spirit Herb"
   },
   {
    "id": "item_C0",
@@ -738,7 +738,7 @@
    "size": 7,
    "max": 8,
    "jp": "ぎしきのつるぎ",
-   "en": ""
+   "en": "Rite Sword"
   },
   {
    "id": "item_C1",
@@ -746,7 +746,7 @@
    "size": 4,
    "max": 8,
    "jp": "ほうじゅ",
-   "en": ""
+   "en": "Sacred Orb"
   },
   {
    "id": "item_C2",
@@ -754,7 +754,7 @@
    "size": 8,
    "max": 8,
    "jp": "グルドのみっしょ",
-   "en": ""
+   "en": "Guld Missive"
   },
   {
    "id": "item_C3",
@@ -762,7 +762,7 @@
    "size": 7,
    "max": 8,
    "jp": "ユ－リのてがみ",
-   "en": ""
+   "en": "Yuri's Note"
   },
   {
    "id": "item_C4",
@@ -770,7 +770,7 @@
    "size": 7,
    "max": 8,
    "jp": "シルヴェルいと",
-   "en": ""
+   "en": "Silvel Yarn"
   },
   {
    "id": "item_C5",
@@ -778,7 +778,7 @@
    "size": 7,
    "max": 8,
    "jp": "ろうごくのかぎ",
-   "en": ""
+   "en": "Prison Key"
   },
   {
    "id": "item_C6",
@@ -786,7 +786,7 @@
    "size": 8,
    "max": 8,
    "jp": "ちょうじんのはね",
-   "en": ""
+   "en": "Bird Feather"
   },
   {
    "id": "item_C7",
@@ -794,7 +794,7 @@
    "size": 8,
    "max": 8,
    "jp": "かぜのペンダント",
-   "en": ""
+   "en": "Wind Pendant"
   },
   {
    "id": "item_C8",
@@ -802,7 +802,7 @@
    "size": 5,
    "max": 8,
    "jp": "かぜのたま",
-   "en": ""
+   "en": "Wind Orb"
   },
   {
    "id": "item_C9",
@@ -810,7 +810,7 @@
    "size": 8,
    "max": 8,
    "jp": "ドラゴンのなみだ",
-   "en": ""
+   "en": "Dragon Tear"
   },
   {
    "id": "item_CA",
@@ -818,7 +818,7 @@
    "size": 7,
    "max": 8,
    "jp": "トルンのうでわ",
-   "en": ""
+   "en": "Torn's Band"
   },
   {
    "id": "item_CB",
@@ -826,7 +826,7 @@
    "size": 8,
    "max": 8,
    "jp": "デュナスのうでわ",
-   "en": ""
+   "en": "Dunas's Band"
   },
   {
    "id": "item_CC",
@@ -834,7 +834,7 @@
    "size": 6,
    "max": 8,
    "jp": "ふるびたけん",
-   "en": ""
+   "en": "Old Sword"
   },
   {
    "id": "item_CD",
@@ -842,7 +842,7 @@
    "size": 7,
    "max": 8,
    "jp": "デュナスのけん",
-   "en": ""
+   "en": "Dunas Sword"
   },
   {
    "id": "item_CE",
@@ -850,7 +850,7 @@
    "size": 6,
    "max": 8,
    "jp": "エルドのけん",
-   "en": ""
+   "en": "Eld's Sword"
   },
   {
    "id": "item_CF",
@@ -858,7 +858,7 @@
    "size": 6,
    "max": 8,
    "jp": "エントのオノ",
-   "en": ""
+   "en": "Ent's Axe"
   },
   {
    "id": "item_D0",
@@ -866,7 +866,7 @@
    "size": 8,
    "max": 8,
    "jp": "ミスティクロア－",
-   "en": ""
+   "en": "Mystic Lore"
   },
   {
    "id": "item_D1",
@@ -874,7 +874,7 @@
    "size": 7,
    "max": 8,
    "jp": "ハイラムのけん",
-   "en": ""
+   "en": "Hiram Sword"
   },
   {
    "id": "item_D2",
@@ -882,7 +882,7 @@
    "size": 8,
    "max": 8,
    "jp": "シャインクロ－ク",
-   "en": ""
+   "en": "Shine Cloak"
   },
   {
    "id": "item_D3",
@@ -890,7 +890,7 @@
    "size": 7,
    "max": 8,
    "jp": "クロスオブマナ",
-   "en": ""
+   "en": "Mana Cloth"
   },
   {
    "id": "item_D4",
@@ -898,7 +898,7 @@
    "size": 7,
    "max": 8,
    "jp": "ワンダ－キャプ",
-   "en": ""
+   "en": "Wonder Cap"
   },
   {
    "id": "item_D5",
@@ -906,7 +906,7 @@
    "size": 8,
    "max": 8,
    "jp": "ヘルムオブヤ－ク",
-   "en": ""
+   "en": "Yaak Helm"
   },
   {
    "id": "item_D6",
@@ -914,7 +914,7 @@
    "size": 8,
    "max": 8,
    "jp": "シ－ザ－シ－ルド",
-   "en": ""
+   "en": "Caesar Guard"
   },
   {
    "id": "item_D7",
@@ -922,7 +922,7 @@
    "size": 7,
    "max": 8,
    "jp": "ロア－ブレイド",
-   "en": ""
+   "en": "Lore Blade"
   },
   {
    "id": "item_D8",
@@ -930,7 +930,7 @@
    "size": 8,
    "max": 8,
    "jp": "ア－スシェ－カ－",
-   "en": ""
+   "en": "Earthshaker"
   },
   {
    "id": "item_E0",
@@ -938,7 +938,7 @@
    "size": 6,
    "max": 8,
    "jp": "ぎんのネファ",
-   "en": ""
+   "en": "Silver Nepha"
   },
   {
    "id": "item_E1",
@@ -946,7 +946,7 @@
    "size": 7,
    "max": 8,
    "jp": "ひかりのネファ",
-   "en": ""
+   "en": "Light Nepha"
   },
   {
    "id": "item_E2",
@@ -954,7 +954,7 @@
    "size": 6,
    "max": 8,
    "jp": "きんのネファ",
-   "en": ""
+   "en": "Gold Nepha"
   },
   {
    "id": "item_F0",
@@ -962,7 +962,7 @@
    "size": 6,
    "max": 8,
    "jp": "オ－ラソ－ド",
-   "en": ""
+   "en": "Aura Sword"
   },
   {
    "id": "item_F1",
@@ -970,7 +970,7 @@
    "size": 6,
    "max": 8,
    "jp": "オ－ラソ－ド",
-   "en": ""
+   "en": "Aura Sword"
   },
   {
    "id": "item_F2",
@@ -978,7 +978,7 @@
    "size": 6,
    "max": 8,
    "jp": "オ－ラソ－ド",
-   "en": ""
+   "en": "Aura Sword"
   },
   {
    "id": "item_F3",
@@ -986,7 +986,7 @@
    "size": 6,
    "max": 8,
    "jp": "オ－ラソ－ド",
-   "en": ""
+   "en": "Aura Sword"
   },
   {
    "id": "item_F4",
@@ -994,7 +994,7 @@
    "size": 6,
    "max": 8,
    "jp": "オ－ラソ－ド",
-   "en": ""
+   "en": "Aura Sword"
   },
   {
    "id": "item_F5",
@@ -1002,7 +1002,7 @@
    "size": 7,
    "max": 8,
    "jp": "ふういんのいし",
-   "en": ""
+   "en": "Seal Stone"
   },
   {
    "id": "item_F6",
@@ -1010,7 +1010,7 @@
    "size": 7,
    "max": 8,
    "jp": "ふういんのいし",
-   "en": ""
+   "en": "Seal Stone"
   },
   {
    "id": "item_F7",
@@ -1018,7 +1018,7 @@
    "size": 7,
    "max": 8,
    "jp": "ふういんのいし",
-   "en": ""
+   "en": "Seal Stone"
   },
   {
    "id": "item_F8",
@@ -1026,7 +1026,7 @@
    "size": 7,
    "max": 8,
    "jp": "ふういんのいし",
-   "en": ""
+   "en": "Seal Stone"
   },
   {
    "id": "item_F9",
@@ -1034,7 +1034,7 @@
    "size": 7,
    "max": 8,
    "jp": "ふういんのいし",
-   "en": ""
+   "en": "Seal Stone"
   },
   {
    "id": "item_FA",
@@ -1042,7 +1042,7 @@
    "size": 7,
    "max": 8,
    "jp": "ふういんのしょ",
-   "en": ""
+   "en": "Seal Tome"
   },
   {
    "id": "item_FB",
@@ -1050,7 +1050,7 @@
    "size": 7,
    "max": 8,
    "jp": "ふういんのしょ",
-   "en": ""
+   "en": "Seal Tome"
   },
   {
    "id": "item_FC",
@@ -1058,7 +1058,7 @@
    "size": 7,
    "max": 8,
    "jp": "ふういんのしょ",
-   "en": ""
+   "en": "Seal Tome"
   },
   {
    "id": "item_FD",
@@ -1066,7 +1066,7 @@
    "size": 7,
    "max": 8,
    "jp": "ふういんのしょ",
-   "en": ""
+   "en": "Seal Tome"
   },
   {
    "id": "item_FE",
@@ -1074,7 +1074,7 @@
    "size": 7,
    "max": 8,
    "jp": "ふういんのしょ",
-   "en": ""
+   "en": "Seal Tome"
   },
   {
    "id": "item_FF",
@@ -1082,7 +1082,7 @@
    "size": 7,
    "max": 8,
    "jp": "ふういんのしょ",
-   "en": ""
+   "en": "Seal Tome"
   }
  ]
 }
