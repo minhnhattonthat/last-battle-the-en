@@ -11,77 +11,77 @@
    "addr": "0068",
    "size": 402,
    "jp": "「このままでは ハンスタッドは{nl} わしらの住めない町に{nl} なってしまう。{page} 自由のないハンスタッドなど{nl} 死んだも同然じゃ！{page}「じゃが グルドと戦おうにも{nl} スレ－クさんが いなければ{nl} わしらだけでは どうにもならん。{page} それを 知っているからこそ{nl} グルド軍は スレ－クさんを{nl} 囚人島送りに したんじゃ。{page}「やはり なんとかスレ－クさんを{nl} 囚人島から 助け出して{nl} グルドと 戦わねばなるまい。",
-   "en": ""
+   "en": "\"At this rate, Hanstad will become a{nl} town we can't live in.{page} Hanstad without freedom is as good as{nl} dead!{page}\"But even if we want to fight Guld,{nl} without Sleek-san there's nothing we{nl} can do alone.{page} That's exactly why the Guld army sent{nl} Sleek-san to Prison Island.{page}\"Somehow we must rescue Sleek-san{nl} from Prison Island and fight Guld."
   },
   {
    "id": "r154_0200",
    "addr": "0200",
    "size": 100,
    "jp": "「近いうちに グルドの枢機卿が{nl} この港から 囚人島に渡るらしい。{nl} そのときを狙ったら どうかの？",
-   "en": ""
+   "en": "\"I hear Guld's Cardinal will soon cross{nl} from this port to Prison Island. What{nl} about striking then?"
   },
   {
    "id": "r154_026A",
    "addr": "026A",
    "size": 210,
    "jp": "「この町の 自由を守るには{nl} スレ－クさんが いなければ{nl} どうにもならん。{page} グルド軍も それを知っているから{nl} スレ－クさんを 囚人島送りに{nl} したんじゃ。{page}「なんとか スレ－クさんを{nl} 助け出せれば・・・",
-   "en": ""
+   "en": "\"Without Sleek-san, there's no{nl} protecting this town's freedom.{page} The Guld army knows it, so they sent{nl} Sleek-san to Prison Island.{page}\"If only we could rescue Sleek-san..."
   },
   {
    "id": "r154_0342",
    "addr": "0342",
    "size": 128,
    "jp": "「グルド軍も いなくなったし{nl} これで ハンスタッドは{nl} 前にもまして 栄えるじゃろ。{page}「そうなれば{nl} この店も あんたいじゃ！",
-   "en": ""
+   "en": "\"The Guld army's gone, so Hanstad will{nl} thrive more than ever.{page}\"Then this shop is safe too!"
   },
   {
    "id": "r154_03C8",
    "addr": "03C8",
    "size": 122,
    "jp": "「店のことは まご娘たちに{nl} まかせておる。{page}「わしも そろそろ{nl} いんきょでも しようかの。{nl} フォッ フォッ フォッ！",
-   "en": ""
+   "en": "\"I've left the shop to my{nl} granddaughters.{page}\"Maybe it's time I retired. Ho ho ho!"
   },
   {
    "id": "r154_0450",
    "addr": "0450",
    "size": 244,
    "jp": "「グルド軍は スレ－ク様を{nl} 囚人島送りにしたばかりか・・{page} ヒルダ奥様とリリヤお嬢様を{nl} 館に閉じこめているのです。{page}「つまり 町の者が反抗せぬよう{nl} ヒルダ様 リリヤ様を{nl} 人質に取っているのです。{page}「これでは うかつに{nl} 手が出せません。",
-   "en": ""
+   "en": "\"The Guld army not only sent{nl} Sleek-sama to Prison Island..{page} they've locked Lady Hilda and young{nl} Lilja in the manor.{page}\"In other words, they hold Hilda-sama{nl} and Lilja-sama hostage so the{nl} townsfolk won't resist.{page}\"We can't make a careless move."
   },
   {
    "id": "r154_0546",
    "addr": "0546",
    "size": 148,
    "jp": "「スレ－ク家の館は{nl} 町のはずれにあります。{page} そこにヒルダ様 リリヤ様が{nl} 閉じこめられているのです。{page}「まず そちらを{nl} なんとかしないと・・・",
-   "en": ""
+   "en": "\"The Sleek manor is at the edge of{nl} town.{page} Hilda-sama and Lilja-sama are shut up{nl} there.{page}\"First we must do something about{nl} that..."
   },
   {
    "id": "r154_05DC",
    "addr": "05DC",
    "size": 256,
    "jp": "「私 ご先代のころから{nl} スレ－ク家に おつかえして{nl} まいりました。{page}「このハンスタッドは{nl} 代ヶ スレ－ク家の治める{nl} 自由商人の港町。{page} それが グルド水軍の港に{nl} おちぶれる日が来るとは・・・{page}「・・・やれやれ{wait}{wait}{nl} 長生きは したくないものです。",
-   "en": ""
+   "en": "\"I have served the Sleek family since{nl} the last master's day.{page}\"Hanstad is a port of free merchants,{nl} ruled by the Sleek family for{nl} generations.{page} To think the day would come when it{nl} sank to a port for the Guld navy...{page}\"...Dear me.{wait}{wait} Living long is no{nl} blessing."
   },
   {
    "id": "r154_06E6",
    "addr": "06E6",
    "size": 292,
    "jp": "「わしは 人ヶを囚人島に送る船の{nl} 船長を させられてるのさ。{page} だが そんな擾けないことは{nl} もう たくさんだ！{page}{FB00}「シルヴェルが落城したとき{nl} 捕まったシルヴェル兵を{nl} あの島に運んだのも わしなんだ。{page}「そういえば あの中に{nl} 一度だけ見た 宰相ユ－リに{nl} そっくりな人がいたっけ・・・",
-   "en": ""
+   "en": "\"I'm made to captain the ship that takes{nl} people to Prison Island.{page} But I've had enough of such shameful{nl} work!{page}{FB00}\"When Silvel fell, I was the one who{nl} carried the captured Silvel soldiers to{nl} that island.{page}\"Come to think of it, among them was a{nl} man who looked just like Chancellor{nl} Yuri, who I saw once..."
   },
   {
    "id": "r154_080C",
    "addr": "080C",
    "size": 244,
    "jp": "「とにかく{nl} ヒルダさんと リリヤちゃんを{nl} 助け出さなきゃ 話にならん。{page}「だが グルドの枢機卿ケッテリが{nl} 来るらしいんで けいかいが{nl} きびしく なっているんだ。{page}「それに 港には{nl} グルドの軍船もいる。{nl} あれを なんとかしないと・・・",
-   "en": ""
+   "en": "\"Anyway, nothing happens till we rescue{nl} Hilda-san and little Lilja.{page}\"But Guld's Cardinal Ketteri is coming,{nl} they say, so the guard's gotten tight.{page}\"And there's a Guld warship in port. We{nl} have to deal with that..."
   },
   {
    "id": "r154_0902",
    "addr": "0902",
    "size": 244,
    "jp": "「囚人島は{nl} そりゃあ ひどいところだ。{page}「人ヶの捕まっている牢獄の塔は{nl} 魔法でも脱出できないし{nl} そこら中に魔物を放してあるんだ。{page} うかつに逃げ出せば{nl} 魔物のエジキさ。{page}「そんなところに{nl} いつまでも スレ－クさんを{nl} おいておけるか！",
-   "en": ""
+   "en": "\"Prison Island is a terrible place.{page}\"No magic can get you out of the prison{nl} tower where people are held, and{nl} monsters roam all over.{page} Escape carelessly and you're monster{nl} food.{page}\"How can we leave Sleek-san in a place{nl} like that!"
   }
  ]
 }

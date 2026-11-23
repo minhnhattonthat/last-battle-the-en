@@ -11,14 +11,14 @@
    "addr": "0040",
    "size": 22,
    "jp": "「うぃ－っ！ ヒック！",
-   "en": ""
+   "en": "\"Urrp! Hic!"
   },
   {
    "id": "r156_005C",
    "addr": "005C",
    "size": 100,
    "jp": "「へへっ ここなら{nl} 誰にも 見つかんね－からな。{page} ちょっと いっぱいやるにゃ{nl} もってこいだぜ。",
-   "en": ""
+   "en": "\"Heh heh, nobody'll find me here.{page} Perfect for a quick drink."
   },
   {
    "id": "r156_00C2",

@@ -124,42 +124,42 @@
    "addr": "08FC",
    "size": 60,
    "jp": "「ごめんよ 少し手間取っててね。{nl} 年は とりたくないねぇ。",
-   "en": ""
+   "en": "\"Sorry, it's taking me a little longer. I{nl} hate getting old."
   },
   {
    "id": "r151_093A",
    "addr": "093A",
    "size": 64,
    "jp": "「もう ひといきで{nl} できあがるよ。{nl} 楽しみに してておくれ。",
-   "en": ""
+   "en": "\"One more push and it's done. Look{nl} forward to it."
   },
   {
    "id": "r151_097C",
    "addr": "097C",
    "size": 110,
    "jp": "「おや 旅の人！{nl} まってたんだよ。{page} あんたのミランシェルが{nl} できてるよ。{nl} さあ もっていっておくれ！{page2}",
-   "en": ""
+   "en": "\"Oh, traveler! I've been waiting.{page} Your Miranchel is ready. Here, take it!{page2}"
   },
   {
    "id": "r151_09F2",
    "addr": "09F2",
    "size": 120,
    "jp": "クルトたちは{nl}ミランシェルを 手にいれた。{C11E}{C1FF}{C101}{page2}{F9FF}{B71D}{B021}{FB00}「ひさしぶりに{nl} いい仕事が できて{nl} あたしも うれしいよ。",
-   "en": ""
+   "en": "Kurt and the others got{nl}the Miranchel.{C11E}{C1FF}{C101}{page2}{F9FF}{B71D}{B021}{FB00}\"It's been a long time since I did{nl} good work. It makes me happy too."
   },
   {
    "id": "r151_0A6C",
    "addr": "0A6C",
    "size": 154,
    "jp": "「・・・なんだ{nl} 持ち物がいっぱいだね。{page} じゃ 持てるようになったら{nl} また おいでよ。{page} だいじょうぶだよ{nl} ミランシェルは{nl} 逃げや しないからさ。",
-   "en": ""
+   "en": "\"...Oh, your bags are full.{page} Come back when you can carry it.{page} Don't worry, the Miranchel won't run{nl} away."
   },
   {
    "id": "r151_0B08",
    "addr": "0B08",
    "size": 98,
    "jp": "「あんたたちの おかげで{nl} このババも ひさしぶりに{nl} 人の役に立てたよ。{page} ありがとう 旅の人。",
-   "en": ""
+   "en": "\"Thanks to you, this old granny got to{nl} be useful for once.{page} Thank you, traveler."
   }
  ]
 }
