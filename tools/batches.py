@@ -1,0 +1,407 @@
+"""Translation batches (docs/translator-brief.md): split untranslated text, check translator output, merge it back.
+
+    python -X utf8 tools/batches.py split [--size 3500]   work/tl/bNNN.tsv and build/terms_bNNN.txt for untranslated JP
+    python -X utf8 tools/batches.py check [bNNN ...]      a batch's .out.tsv; with no batch, all shipped English (check.py)
+    python -X utf8 tools/batches.py merge bNNN ... [--overwrite]   check, then write the English into script/
+    python -X utf8 tools/batches.py show bNNN             the out.tsv after wrapping, one line per box line (dry run)
+    python -X utf8 tools/batches.py fit "English text" [--form dlg]   wrapped lines with their pixel widths
+
+Adapted from the skill's assets/batches.py. Batch TSV: id, speaker, form, limit, JP. Output: work/tl/bNNN.out.tsv,
+id<TAB>English, every id once, same order. Dialogue forms are wrapped here: a page (text between {page}/{page2}) with
+no {nl} is wrapped greedily to the box width; a page with {nl} keeps the translator's breaks. In an entry whose
+English starts with `"`, every line not starting with `"` gets one leading space (the JP 「 indent).
+"""
+import json
+import re
+import sys
+from collections import Counter
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "tools"))
+TL = ROOT / "work/tl"
+SCRIPT = ROOT / "script"
+GLOSSARY = ROOT / "glossary.md"
+MAX_ENTRIES = 150
+
+# ---- ADAPTER: this game's text format ----
+TOKEN = re.compile(r"\{[0-9A-Za-z]+\}|\[[0-9A-F]{2}\]")
+FREE = {"{nl}", "{page}", "{wait}"}  # layout codes the English may place freely
+VARIABLE = r"\{num\}"
+HONORIFICS = {}  # D1 keeps honorifics, but this script's 様/さん are mostly titles: the glossary rows carry them
+DLG_PX = 208  # dialogue box 216 px (docs/re/windows.md), edge pixel kept free
+INSERT_PX = {"{actor}": 48, "{target}": 48, "{item}": 54, "{spell}": 54, "{spell2}": 54, "{num}": 24}
+BG3_CHARS = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz',.-!?&/:+ ")
+BANNERS = (0xB3B0, 0xB631)  # bank-04 place-name banners, 144 px, centred with leading spaces
+CHAR_NAMES = ("b04_B2DA", "b04_B2E2", "b04_B2E8", "b04_B2F0")
+NAME_CAP = 12  # item/tactic names (D10): the BG3 name fields are 8-9 today; phase 7 widens them to 12
+LAYOUT_FREE = ("battle",)  # forms whose JP layout tokens (dakuten rows {2094}...) the English may drop
+_ROM = None
+
+
+def rom():
+    global _ROM
+    if _ROM is None:
+        _ROM = next((ROOT / "rom").glob("*.sfc")).read_bytes()
+    return _ROM
+
+
+def docs():
+    for path in sorted(SCRIPT.glob("*.json")):
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        kind = doc["source"]["kind"]
+        for e in doc["entries"]:
+            e.setdefault("_file", path.stem)
+            e.setdefault("_kind", kind)
+        yield path, doc, doc["entries"]
+
+
+def form(e):
+    f, k = e["_file"], e["_kind"]
+    if k == "names":
+        return "name"
+    if k == "bg3":
+        return "menu"
+    if k == "battle":
+        return "battle"
+    if f == "credits":
+        return "credit"
+    if e["id"] in CHAR_NAMES:
+        return "charname"
+    if f == "bank04" and BANNERS[0] <= int(e["addr"], 16) <= BANNERS[1]:
+        return "banner"
+    if f == "r320":
+        return "epilogue"
+    return "dlg"
+
+
+def needs_english(entry):
+    return bool(entry.get("jp")) and not entry.get("en")
+
+
+def group_of(entry):
+    return entry.get("dup") or entry["id"]
+
+
+def entry_key(entry):
+    return entry["id"]
+
+
+def limit_label(e):
+    f = form(e)
+    if f == "dlg":
+        return f"{DLG_PX}px x3"
+    if f == "epilogue":
+        return f"{DLG_PX}px"
+    if f == "banner":
+        return "144px, centre with leading spaces"
+    if f == "credit":
+        return "192px per line"
+    if f == "charname":
+        return "8 chars"
+    if f == "menu":
+        if e.get("max_tiles"):
+            return f"{e['max_tiles']} chars x {e['max_lines']} lines"
+        return f"{e['tiles']} chars per line, keep the line count"
+    if f == "battle":
+        return f"{e['w']} chars x {e['h']} rows"
+    if f == "name":
+        return {"enemies": "2 rows of 8 (split at a space), 16 max", "spells": "8 chars, plus ' A' rank in battle",
+                "items": f"{NAME_CAP} chars", "tactics": f"{NAME_CAP} chars"}[e["_file"]]
+    return ""
+
+
+def px(text):
+    from font_en import ADVANCE
+    w = 0
+    for m in re.finditer(r"\{[0-9A-Za-z]+\}|.", text):
+        t = m[0]
+        w += INSERT_PX.get(t, 12 if len(t) == 6 and t[0] == "{" else 0) if t[0] == "{" and len(t) > 1 else ADVANCE.get(t, 8)
+    return w
+
+
+def wrap_page(text, width):
+    words, lines, cur = text.split(" "), [], ""
+    for w in words:
+        cand = f"{cur} {w}" if cur else w
+        if cur and px(cand) > width:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = cand
+    lines.append(cur)
+    return lines
+
+
+def wrap(e, en):
+    """English as stored: dialogue pages wrapped, quote indent added, banners centred. Other forms unchanged."""
+    if form(e) == "banner":
+        return " " * max(0, (144 - px(en.strip())) // 8) + en.strip()
+    if form(e) not in ("dlg", "epilogue"):
+        return en
+    quote = en.startswith('"')
+    out = []
+    for part in re.split(r"(\{page2?\})", en):
+        if part in ("{page}", "{page2}"):
+            out.append(part)
+            continue
+        lines = [ln.strip() for ln in part.split("{nl}")] if "{nl}" in part else wrap_page(part.strip(), DLG_PX - 4 * quote)
+        if part.strip() == "":
+            out.append(part)
+            continue
+        lines = [ln if not quote or ln.startswith('"') or ln == "" else " " + ln for ln in lines]
+        out.append("{nl}".join(lines))
+    return "".join(out)
+
+
+def pages(en):
+    return [p.split("{nl}") for p in re.split(r"\{page2?\}", en)]
+
+
+def width_problems(e, en):
+    f = form(e)
+    out = []
+    if f in ("dlg", "epilogue", "credit", "banner"):
+        lim = {"credit": 192, "banner": 144}.get(f, DLG_PX + 4)
+        for pg in pages(en):
+            for ln in pg:
+                if px(ln) > lim:
+                    out.append(f"line {px(ln)} px > {lim}: {ln!r}")
+            jp_lines = max(len(p) for p in pages(e["jp"]))
+            if f == "dlg" and len(pg) > max(3, jp_lines):
+                out.append(f"{len(pg)} lines on one page (max 3): add a {{page}}")
+        if f == "banner" and "{nl}" in en:
+            out.append("banner is one line")
+    elif f == "charname":
+        if len(en) > 8:
+            out.append("name over 8 chars")
+    elif f == "menu":
+        plain = TOKEN.sub(lambda m: "" if m[0] != "{nl}" else "\n", en)
+        lines = plain.split("\n")
+        cap = e.get("max_tiles") or e["tiles"]
+        if e.get("max_tiles"):
+            if len(lines) > e["max_lines"]:
+                out.append(f"{len(lines)} lines > {e['max_lines']}")
+        elif len(lines) != len(TOKEN.sub(lambda m: "" if m[0] != "{nl}" else "\n", e["jp"]).split("\n")):
+            out.append("line count differs from the JP")
+        out += [f"line over {cap} chars: {ln!r}" for ln in lines if len(ln) > cap]
+    elif f == "battle" and list((ROOT / "rom").glob("*.sfc")):
+        try:
+            import battle_text
+            battle_text.encode(rom(), dict(e, en=en))
+        except Exception as x:  # noqa: BLE001 - the encoder's refusal is the message
+            out.append(f"battle rect: {x}")
+    elif f == "name":
+        import insert
+        cap = {"enemies": 16, "spells": 8}.get(e["_file"], NAME_CAP)
+        if len(TOKEN.sub("", en)) > cap:
+            out.append(f"over {cap} chars")
+        if e["_file"] == "enemies" and not insert.battle_fits(en):
+            out.append("does not split into two rows of 8")
+        if e["_file"] == "spells" and not insert.battle_fits(en + " A"):
+            out.append("name + rank does not fit two rows of 8")
+    return out
+
+
+def encodable(e, char):
+    if form(e) in ("menu", "name", "charname", "battle"):
+        return char in BG3_CHARS
+    return " " <= char <= "~" and char not in "{}[]"
+# ---- end of ADAPTER ----
+
+
+def kind(char):
+    if "぀" <= char <= "ゟ":
+        return "hiragana"
+    if "゠" <= char <= "ヿ":
+        return "katakana"
+    if "一" <= char <= "鿿" or char == "々":
+        return "kanji"
+    return "other"
+
+
+def has_term(jp, term):
+    jp = jp.replace(" / ", "").replace("－", "ー")
+    term = term.replace("－", "ー")
+    for m in re.finditer(re.escape(term), jp):
+        a, b = m.start(), m.end()
+        if (a == 0 or kind(jp[a - 1]) != kind(term[0])) and (b == len(jp) or kind(jp[b]) != kind(term[-1])):
+            return True
+    return False
+
+
+def glossary():
+    rows = []
+    if not GLOSSARY.exists():
+        return rows
+    for line in GLOSSARY.read_text(encoding="utf-8").splitlines():
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if line.startswith("|") and len(cells) >= 2 and cells[0] not in ("JP", "") and not set(cells[0]) <= set("-: "):
+            avoid = [x.strip() for x in cells[4].split("/") if x.strip()] if len(cells) > 4 else []
+            rows.append(([x.strip() for x in cells[0].split("/")], [x.strip() for x in cells[1].split("/")], avoid))
+    return rows
+
+
+def problems(entry, en, terms):
+    jp = entry["jp"]
+    if not en.strip():
+        return ["empty English"]
+    out = []
+    plain = TOKEN.sub("", en)
+    if bad := sorted({c for c in plain if not encodable(entry, c)}):
+        out.append(f"unencodable characters {bad}")
+    if re.search(r"\\u[0-9a-fA-F]{4}", en) or "\t" in en or "\\n" in en:
+        out.append("escape sequence or tab in the English")
+    want = Counter(t for t in TOKEN.findall(jp) if t not in FREE)
+    have = Counter(t for t in TOKEN.findall(en) if t not in FREE)
+    if want != have and form(entry) not in LAYOUT_FREE:
+        out.append(f"control codes differ: JP {dict(want)} EN {dict(have)}")
+    if re.search(VARIABLE + r"(st|nd|rd|th)\b", en):
+        out.append('ordinal suffix after a variable (write "No. {num}")')
+    jp_plain = TOKEN.sub("", jp)
+    en_terms = " ".join(TOKEN.sub(" ", en).split()).lower()
+    tiny = form(entry) == "battle" and entry["w"] < 10  # a 7-tile mana label can't hold "Fire Mana"
+    for jps, ens, avoid in terms:
+        if not tiny and any(has_term(jp_plain, j) for j in jps) and not any(" ".join(x.split()).lower() in en_terms for x in ens):
+            out.append(f"glossary: {jps[0]} -> {ens[0]}")
+        out += [f"glossary Avoid: {a}" for a in avoid if re.search(rf"\b{re.escape(a)}\b", en)]
+    return out + width_problems(entry, en)
+
+
+def index():
+    result = {}
+    for _, _, entries in docs():
+        for e in entries:
+            key = entry_key(e)
+            if key in result:
+                raise ValueError(f"duplicate batch key {key!r}")
+            result[key] = e
+    return result
+
+
+def read_tsv(path):
+    return [line.split("\t") for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+
+def existing():
+    return sorted(TL.glob("b[0-9][0-9][0-9].tsv"))
+
+
+def split(size):
+    index()
+    TL.mkdir(parents=True, exist_ok=True)
+    (ROOT / "build").mkdir(exist_ok=True)
+    taken = {r[0] for p in existing() for r in read_tsv(p)}
+    n = max((int(p.stem[1:]) for p in existing()), default=0)
+    groups = {}
+    for _, _, entries in docs():
+        for e in entries:
+            if needs_english(e) and entry_key(e) not in taken:
+                groups.setdefault((e["_file"], group_of(e)), []).append(e)
+    batches, cur, chars, curfile = [], [], 0, None
+    for (fname, _), group in groups.items():
+        c = sum(len(TOKEN.sub("", e["jp"])) for e in group)
+        small = c < 400 and chars + c <= size * 1.15  # keep a short room with its neighbour
+        if cur and (chars + c > size and not small or len(cur) + len(group) > MAX_ENTRIES):
+            batches.append(cur)
+            cur, chars = [], 0
+        cur += group
+        chars += c
+    if cur:
+        batches.append(cur)
+    terms = glossary()
+    for batch in batches:
+        n += 1
+        name = f"b{n:03d}"
+        path = TL / f"{name}.tsv"
+        if path.exists():
+            sys.exit(f"{path} already exists")
+        rows = [f"{entry_key(e)}\t{e.get('speaker', '')}\t{form(e)}\t{limit_label(e)}\t{e['jp']}" for e in batch]
+        path.write_text("\n".join(rows) + "\n", encoding="utf-8", newline="\n")
+        jps = " ".join(TOKEN.sub("", e["jp"]) for e in batch)
+        used = sorted({(j, ens[0]) for jpl, ens, _ in terms for j in jpl if has_term(jps, j)})
+        (ROOT / f"build/terms_{name}.txt").write_text("".join(f"{j}\t{x}\n" for j, x in used)
+                                                      or "(no glossary terms in this batch)\n", encoding="utf-8", newline="\n")
+    print(f"{len(batches)} new batches in {TL}, {len(taken)} ids already batched")
+
+
+def check_batch(batch, entries, terms):
+    want = [r[0] for r in read_tsv(TL / f"{batch}.tsv")]
+    rows = [(r[0], "\t".join(r[1:])) for r in read_tsv(TL / f"{batch}.out.tsv")]
+    bad = []
+    if [r[0] for r in rows] != want:
+        got = [r[0] for r in rows]
+        dup = sorted(i for i, c in Counter(got).items() if c > 1)
+        bad.append(f"ids differ: missing {sorted(set(want) - set(got))[:8]} extra {sorted(set(got) - set(want))[:8]} "
+                   f"duplicate {dup[:8]} (order must match too)")
+    out = {}
+    for eid, en in rows:
+        if eid in entries:
+            en = wrap(entries[eid], en)
+            out[eid] = en
+            bad += [f"{eid}: {p}" for p in problems(entries[eid], en, terms)]
+    return bad, out
+
+
+def merge(new, overwrite):
+    if not overwrite:
+        for _, _, entries in docs():
+            for e in entries:
+                if entry_key(e) in new and e.get("en") and e["en"] != new[entry_key(e)]:
+                    sys.exit(f"{e['id']} would lose {e['en']!r}: pass --overwrite if that is meant")
+    changed = 0
+    for path, doc, entries in docs():
+        touched = False
+        for e in entries:
+            e.pop("_file"), e.pop("_kind")
+            if entry_key(e) in new and e.get("en") != new[entry_key(e)]:
+                e["en"] = new[entry_key(e)]
+                touched = True
+                changed += 1
+        if touched:
+            path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
+    print(f"merged: {changed} entries changed")
+
+
+def main(argv):
+    if not argv:
+        sys.exit(__doc__)
+    cmd, args = argv[0], argv[1:]
+    if cmd == "split":
+        return split(int(args[args.index("--size") + 1]) if "--size" in args else 3500)
+    if cmd == "fit":
+        f = args[args.index("--form") + 1] if "--form" in args else "dlg"
+        e = {"_file": "r000" if f == "dlg" else "credits", "_kind": "block", "id": "x", "jp": ""}
+        for pg in pages(wrap(e, args[0])):
+            print("\n".join(f"{px(ln):4d} {ln}" for ln in pg) + "\n----")
+        return 0
+    overwrite = "--overwrite" in args
+    names = [a for a in args if a != "--overwrite"]
+    entries, terms = index(), glossary()
+    if cmd == "check" and not names:
+        bad = [f"{i}: {p}" for i, e in entries.items() if e.get("en") for p in problems(e, e["en"], terms)]
+        print(f"{len(entries)} entries, {sum(bool(e.get('en')) for e in entries.values())} translated, {len(bad)} problems")
+        print("\n".join(bad[:200]))
+        return 1 if bad else 0
+    if cmd == "show":
+        _, rows = check_batch(names[0], entries, terms)
+        for eid, en in rows.items():
+            print(f"== {eid}\n" + "\n".join(f"{px(ln):4d}|{ln}" for pg in pages(en) for ln in pg + ["-"]))
+        return 0
+    if cmd not in ("check", "merge") or not names:
+        sys.exit(__doc__)
+    failed = 0
+    for batch in names:
+        bad, rows = check_batch(batch, entries, terms)
+        failed += bool(bad)
+        print(f"{batch}: " + ("OK" if not bad else f"{len(bad)} problems"))
+        for line in bad:
+            print("  " + line)
+        if cmd == "merge" and not bad:
+            merge(rows, overwrite)
+    return 1 if failed else 0
+
+
+if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.exit(main(sys.argv[1:]))

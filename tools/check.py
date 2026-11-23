@@ -12,6 +12,9 @@ def main():
     r = subprocess.run([sys.executable, "-X", "utf8", "-m", "pytest", "-q", str(ROOT / "tests")], cwd=ROOT)
     if r.returncode not in (0,):
         sys.exit(r.returncode)
+    r = subprocess.run([sys.executable, "-X", "utf8", str(ROOT / "tools" / "batches.py"), "check"], cwd=ROOT)
+    if r.returncode:
+        sys.exit(r.returncode)
     lint = ROOT / "tools" / "lint.py"
     if lint.is_file():
         r = subprocess.run([sys.executable, "-X", "utf8", str(lint)], cwd=ROOT)

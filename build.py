@@ -89,11 +89,16 @@ def apply_asm(w, asm_files=ASM):
 
 
 def build(out=OUT, recompress=False, orig_path=ORIG_PATH, script_dir=insert.SCRIPT, asm=True, qa=None,
-          marker=False):
+          marker=False, jp_only=False):
+    """jp_only: ignore the English (identity tests: the script carries translations from phase 6 on)."""
     orig = orig_path.read_bytes()
     w = Writer(orig, load_ranges())
     region = blocks.unpack(orig)
     files = insert.load(script_dir)
+    if jp_only:
+        for doc in files.values():
+            for e in doc["entries"]:
+                e["en"] = ""
     if marker:
         insert.mark(files, insert.ruler_text if marker == "ruler" else insert.marker_text)
     insert.override(files, qa or {})

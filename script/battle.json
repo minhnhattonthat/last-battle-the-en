@@ -12,7 +12,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": "を やっつけた！！  たちを やっつけた！！",
-   "en": ""
+   "en": " defeated!!s defeated!"
   },
   {
    "id": "bt_16EF84",
@@ -23,7 +23,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": " ほのおのマナ",
-   "en": ""
+   "en": "Fire"
   },
   {
    "id": "bt_16F082",
@@ -34,7 +34,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": "  みすのマナ ",
-   "en": ""
+   "en": "Water"
   },
   {
    "id": "bt_16F132",
@@ -45,7 +45,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": " ほのお ８９ ",
-   "en": ""
+   "en": "Fire  89"
   },
   {
    "id": "bt_16F1CA",
@@ -56,7 +56,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": "  ちょうこう ハランス  ",
-   "en": ""
+   "en": " High Balance"
   },
   {
    "id": "bt_16F338",
@@ -67,7 +67,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": "まほろしをみせる",
-   "en": ""
+   "en": "Illusion"
   },
   {
    "id": "bt_16F3F6",
@@ -78,7 +78,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": "けんえいすう  ８  こうかはんい ５ ",
-   "en": ""
+   "en": "Images 8   Range 5"
   },
   {
    "id": "bt_16F476",
@@ -89,7 +89,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": "しゃていきょり ７  ",
-   "en": ""
+   "en": "Distance 7"
   },
   {
    "id": "bt_16F4F6",
@@ -100,7 +100,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": "  ふくすうの テキに ききめあり   ",
-   "en": ""
+   "en": "  Hits several foes"
   },
   {
    "id": "bt_185DF1",
@@ -111,7 +111,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "ＨＰを  {nl}   {2094} {nl}３０ほと {nl}     {nl}かいふく {nl}     {nl}します  ",
-   "en": ""
+   "en": "Heals{nl}about{nl}30 HP"
   },
   {
    "id": "bt_185E37",
@@ -122,7 +122,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "ＨＰを  {nl}    {2094}{nl}１００ほと{nl}     {nl}かいふく {nl}     {nl}します  ",
-   "en": ""
+   "en": "Heals{nl}about{nl}100HP"
   },
   {
    "id": "bt_185E7D",
@@ -133,7 +133,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094}   {nl}きせつした{nl}     {nl}なかまを {nl}     {nl}かいふく {nl}     {nl}します  ",
-   "en": ""
+   "en": "Wakes{nl}KO'd{nl}ally"
   },
   {
    "id": "bt_185ECD",
@@ -144,7 +144,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094}   {nl}すはやさを{nl}   {2094} {nl}１０ほと {nl}     {nl}ＵＰします",
-   "en": ""
+   "en": "Speed{nl}up by{nl}about{nl}10"
   },
   {
    "id": "bt_185F09",
@@ -155,7 +155,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}    {nl}せんいんの{nl} {2094}   {nl}すへての {nl}     {nl}まほうを {nl}     {nl}うちけし {nl}     {nl}ます   ",
-   "en": ""
+   "en": "Nulls{nl}all{nl}magic{nl}on{nl}both{nl}sides"
   },
   {
    "id": "bt_185F6D",
@@ -166,7 +166,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}    {nl}とく まひ{nl}     {nl}こんらんを{nl}     {nl}ちりょう {nl}     {nl}します  ",
-   "en": ""
+   "en": "Cures{nl}poi-{nl}son,{nl}stun,{nl}and{nl}con-{nl}fu-{nl}sion"
   },
   {
    "id": "bt_185FBD",
@@ -177,7 +177,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}    {nl}せんいんの{nl}     {nl}ＨＰＭＰを{nl}  {2094}  {nl}かんせんに{nl}     {nl}かいふく {nl} {2094}   {nl}きせつにも{nl}     {nl}ききめあり",
-   "en": ""
+   "en": "Fully{nl}heals{nl}party{nl}HP{nl}and{nl}MP,{nl}also{nl}wakes{nl}the{nl}KO'd"
   },
   {
    "id": "bt_186035",
@@ -188,7 +188,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "ＭＰを  {nl}  {2094}  {nl}かんせんに{nl}     {nl}かいふく {nl}     {nl}します  ",
-   "en": ""
+   "en": "Fully{nl}heals{nl}MP"
   },
   {
    "id": "bt_18607B",
@@ -199,7 +199,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "ＨＰと  {nl}     {nl}ＭＰを  {nl}  {2094}  {nl}かんせんに{nl}     {nl}かいふく {nl} {2094}   {nl}きせつにも{nl}     {nl}ききめあり",
-   "en": ""
+   "en": "Fully{nl}heals{nl}HP{nl}and{nl}MP,{nl}also{nl}wakes{nl}the{nl}KO'd"
   },
   {
    "id": "bt_1860E9",
@@ -210,7 +210,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "ＭＰを  {nl}   {2094} {nl}３０ほと {nl}     {nl}かいふく {nl}     {nl}します  ",
-   "en": ""
+   "en": "Heals{nl}about{nl}30 MP"
   },
   {
    "id": "bt_18612F",
@@ -221,7 +221,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}    {nl}せんいんの{nl}  {2094}  {nl}しゅひを {nl}   {2094} {nl}３０ほと {nl}     {nl}ＵＰします",
-   "en": ""
+   "en": "Party{nl}de-{nl}fense{nl}up by{nl}about{nl}30"
   },
   {
    "id": "bt_18617F",
@@ -232,7 +232,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "アイテムを もっていません",
-   "en": ""
+   "en": "No items."
   },
   {
    "id": "bt_186247",
@@ -243,7 +243,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "なに{nl}を？",
-   "en": ""
+   "en": "??"
   },
   {
    "id": "bt_18633C",
@@ -254,7 +254,7 @@
    "attr": "2000",
    "geom": "script",
    "jp": "  {2094}{2094}   {2094}          {nl}そうひてきる ふきを もっていません",
-   "en": ""
+   "en": "{nl}No usable weapon"
   },
   {
    "id": "bt_186384",
