@@ -11,21 +11,21 @@
    "addr": "005F",
    "size": 194,
    "jp": "「ひるは 道具屋の おばば{nl} 夜は 魔法使いの おばばじゃ。{page}「夜は 魔の刻{nl} 魔法の研究の ためにあるのじゃ。{page}「そうれ・・・{nl} エット トヴォ－ トレ－！{nl}{C004} {wait}{wait}おしい！ {wait}不発なのじゃ。",
-   "en": ""
+   "en": "\"By day, the item shop granny. By night,{nl} the wizard granny.{page}\"Night is the hour of magic. It's for{nl} studying spells.{page}\"Here goes... Ett, tva, tre!{nl} {C004} {wait}{wait}So close! {wait}It fizzled."
   },
   {
    "id": "r111_0127",
    "addr": "0127",
    "size": 220,
    "jp": "「魔法の いりょくが{nl} マナの組合せや 加えるひりつで{nl} 変わるのを知っとるか？{page}「びみょうに 変えていくとな{nl} ときどき すごい強力な魔法が{nl} できあがる事もあるのじゃ。{page}「ともかく いろいろと{nl} やってみることじゃ。",
-   "en": ""
+   "en": "\"Did you know a spell's power changes{nl} with how you combine mana and the{nl} amounts you add?{page}\"Change it bit by bit, and sometimes you{nl} make a really powerful spell.{page}\"Anyway, try lots of things."
   },
   {
    "id": "r111_0205",
    "addr": "0205",
    "size": 148,
    "jp": "「この世にはのう{nl} ３個の ネファと呼ばれる珠が{nl} あるそうじゃ。{page}「この ネファをもつ者は{nl} ふつうの者には つかえぬ術が{nl} 使えるという事じゃ。",
-   "en": ""
+   "en": "\"They say there are three gems in this{nl} world called Nepha.{page}\"Those who hold a Nepha can use arts{nl} that ordinary folk can't."
   }
  ]
 }

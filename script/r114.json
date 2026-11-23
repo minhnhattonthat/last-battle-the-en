@@ -11,42 +11,42 @@
    "addr": "0071",
    "size": 214,
    "jp": "「ぎゃははは～！{nl} おまえさんも 聞いてくれよ。{nl} ヒック！{page}「グルドの王女をよ{nl} ゆ・{wait}う・{wait}か・{wait}い{wait}・だってさ！{nl} {wait}{wait}うぃ～～。{page}「あの はねっかえり娘を{nl} ゆうかいした者が いるなんて{nl} 信じられないぜ。",
-   "en": ""
+   "en": "\"Gyahahaha~! Listen to this, you! Hic!{page}\"The Guld princess got{nl} k-{wait}i-{wait}d-{wait}n{wait}apped, they say!{nl} {wait}{wait}Urrp~.{page}\"I can't believe anyone could kidnap{nl} that tomboy."
   },
   {
    "id": "r114_0151",
    "addr": "0151",
    "size": 162,
    "jp": "「国では みんな言ってるぞ{page} あの 王女と １対１で戦おう{nl} なんて－のは・・・。{page}{FB00} ハラを すかせた{nl} ドラゴンぐらいなもんだって！{nl} {wait}ぎゃははははは－っ！",
-   "en": ""
+   "en": "\"Back home everyone says{page} the only thing that would fight that{nl} princess one on one...{page}{FB00} is a starving dragon! {wait}Gyahahahaha!"
   },
   {
    "id": "r114_01F9",
    "addr": "01F9",
    "size": 86,
    "jp": "「王女を ゆうかいしたやつらはよ{nl} いまごろは きっと 王女の手で{nl} ボコボコ だ～。",
-   "en": ""
+   "en": "\"Whoever kidnapped the princess, I bet{nl} she's beating them black and blue right{nl} now~."
   },
   {
    "id": "r114_0251",
    "addr": "0251",
    "size": 38,
    "jp": "「おい おまえたち！{nl} あやしいな！！",
-   "en": ""
+   "en": "\"Hey, you lot! Suspicious!!"
   },
   {
    "id": "r114_0279",
    "addr": "0279",
    "size": 166,
    "jp": "「なんで そんなに大勢で{nl} この部屋に 入ってきた！{nl} ８人！ １６人！ 数えきれん！{page}「この部屋が ゆがんで見えるぞ！{nl} おまえたちの しわざだろ？{nl} {wait}{wait}ヒック！",
-   "en": ""
+   "en": "\"Why'd so many of you come in this{nl} room?! Eight! Sixteen! Too many to{nl} count!{page}\"The room looks all twisted! This is your{nl} doing, isn't it? {wait}{wait}Hic!"
   },
   {
    "id": "r114_0321",
    "addr": "0321",
    "size": 118,
    "jp": "「物が おどって見える！{nl} このような 魔法を使うとは{nl} {wait}{wait}さては オレが恐いんだな。{page}「うい－・・・・・・ヒック。",
-   "en": ""
+   "en": "\"Things look like they're dancing! Using{nl} magic like this{wait}{wait}, you must be scared{nl} of me.{page}\"Urrp......Hic."
   },
   {
    "id": "r114_0399",

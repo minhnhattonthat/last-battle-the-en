@@ -249,140 +249,140 @@
    "addr": "15F5",
    "size": 152,
    "jp": "「おにいちゃん{nl} ヤ－クの人と いっしょに{nl} 旅をしているのね。{page}{FB00}「鳥の人は{nl} いっしょじゃないの？{page}{FB00}「あたし エルフの人に会うのも{nl} はじめてよ。",
-   "en": ""
+   "en": "\"Mister, you're traveling with a Yaak{nl} person.{page}{FB00}\"Isn't there a bird person with you?{page}{FB00}\"This is the first time I've met an elf{nl} person, too."
   },
   {
    "id": "r109_1693",
    "addr": "1693",
    "size": 210,
    "jp": "「ねえ おにいちゃん{nl} ドラゴンの人に 会ったことある？{page}「あたし 図書館のドラゴンの本を{nl} 読んで 全部おぼえちゃったくらい{nl} ドラゴンの人に会ってみたいの。{page}{FB00}「ドラゴンの人のことなら{nl} わたしに聞いてね。",
-   "en": ""
+   "en": "\"Hey, mister, have you ever met a{nl} dragon person?{page}\"I want to meet a dragon person so{nl} much, I learned the library's dragon{nl} book by heart.{page}{FB00}\"If it's about dragon people, ask me."
   },
   {
    "id": "r109_176F",
    "addr": "176F",
    "size": 214,
    "jp": "「グルドの人は 恐いから{nl} もう 会えなくなっても{nl} かまわないわ。{page}{FB00}「あの人たち もうじき{nl} ぐにゃ ぐにゃのスライムに{nl} なるのよ。{page}「おかあさんが 食べて{nl} すぐ寝ると スライムになるって{nl} 言ってたもの。",
-   "en": ""
+   "en": "\"Guld people are scary, so I don't care{nl} if I never see them again.{page}{FB00}\"Soon they'll all turn into squishy,{nl} squashy slimes.{page}\"Mommy says if you eat and go straight{nl} to bed, you turn into a slime."
   },
   {
    "id": "r109_1847",
    "addr": "1847",
    "size": 86,
    "jp": "「図書館にあった ドラゴンの本？{wait}{nl} いまはもう 読めないけど{nl} 全部おぼえてるわよ。",
-   "en": ""
+   "en": "\"The dragon book from the library?{wait} I{nl} can't read it anymore, but I remember{nl} all of it."
   },
   {
    "id": "r109_189F",
    "addr": "189F",
    "size": 52,
    "jp": "「ドラゴンの本に 書いてあった{nl} ことが知りたいの？",
-   "en": ""
+   "en": "\"You want to know what the dragon{nl} book said?"
   },
   {
    "id": "r109_18D9",
    "addr": "18D9",
    "size": 578,
    "jp": "「エルド王と ドラゴンの{nl} 話が 聞きたいのね。{page}{FB00}『むかし 大ウ－ド王国の開租{nl} エルドは ドラゴンの王と{nl} 戦い・・・・・{page} 両者は いっちゅうや 戦うも{nl} 勝負は つかず{nl} これを 引き分けとした。{page}『このとき ドラゴンの王は{nl} 人間族の王として 彼の力をみとめ{nl} その印として２つの腕輪を授けた。{page}『こののち ドラゴンの王が{nl} 自分に会うことを 認めたのは{nl} ２つの腕輪を持つ 王だけである。{page}『現在 この腕輪は{nl} シルヴェルでは トルンの腕輪{nl} グルドでは デュナスの腕輪として{page} シルヴェルと グルドの王家に{nl} ひとつずつ 伝えられている。{page}{FB00}「これで いいかしら？",
-   "en": ""
+   "en": "\"You want to hear about King Eld and{nl} the dragon.{page}{FB00}'Long ago, Eld, founder of the great Ude{nl}kingdom, fought the King of Dragons.....{page}The two fought a day and a night, but{nl}neither won, and it was called a draw.{page}'Then the King of Dragons, seeing his{nl}strength as king of humankind, gave him{nl}two bracelets as a sign.{page}'Ever since, the King of Dragons has{nl}agreed to meet only a king who holds{nl}both bracelets.{page}'Today these bracelets are kept, one{nl}each, as the Torn Bracelet in Silvel and{nl}the Dunas Bracelet in Guld,{page}by the royal houses of Silvel and Guld.'{page}{FB00}\"Is that good?"
   },
   {
    "id": "r109_1B1F",
    "addr": "1B1F",
    "size": 74,
    "jp": "「そうなの。{wait}{wait}{wait}{nl} 今度 ゆっくり ドラゴンの人の{nl} お話しましょうね。",
-   "en": ""
+   "en": "\"I see. {wait}{wait}{wait}Let's have a long talk{nl} about dragon people sometime."
   },
   {
    "id": "r109_1B79",
    "addr": "1B79",
    "size": 300,
    "jp": "「いま 村のある ここの場所は{nl} むかしは 川の中だったことも{nl} あるんですって。{page}「大雨がふると 川があばれて{nl} 移動することも あったらしいわ{nl} だから エンティラン川というの。{page}「エンティラン は{nl} ぼ・う・く・ん・ と いう{nl} 意味よ。{page}「わたし ちゃんと 図書館の本で{nl} しらべたんだから。",
-   "en": ""
+   "en": "\"The place where the village is now was{nl} once in the middle of a river, they say.{page}\"When heavy rain fell, the river ran wild{nl} and even moved. That's why it's called{nl} the Entiran River.{page}\"Entiran means t-y-r-a-n-t.{page}\"I looked it up properly in a library{nl} book."
   },
   {
    "id": "r109_1CAF",
    "addr": "1CAF",
    "size": 214,
    "jp": "「わたしの おかあさんは{nl} 学校と図書館の先生をしてるの。{page}「だから家では おかあさん{nl} 学校では 先生と よびなさい。{nl} そう いわれているの。{page}「７才の子供に それは{nl} むずかしい 注文だと{nl} 思いませんこと？",
-   "en": ""
+   "en": "\"My mother teaches at the school and{nl} the library.{page}\"So she says: at home call me Mother,{nl} at school call me Teacher.{page}\"Don't you think that's a hard thing to{nl} ask of a seven-year-old?"
   },
   {
    "id": "r109_1D8F",
    "addr": "1D8F",
    "size": 128,
    "jp": "「わたしね おおきくなったら{nl} 人から 王妃様って{nl} よんでもらえる人になりたいの。{page}「王妃様なら 先生より{nl} えらそうでしょ。",
-   "en": ""
+   "en": "\"When I grow up, I want to be someone{nl} people call 'Your Majesty, the Queen'.{page}\"A queen sounds more important than a{nl} teacher."
   },
   {
    "id": "r109_1E11",
    "addr": "1E11",
    "size": 342,
    "jp": "「どうして あの子{nl} ドラゴンに会いたいなんて{nl} 思うのかしら？{page}「女の子はね{wait}{nl} そんなものに きょうみを{nl} 持たなくていいの！{page}「女の子は もっとキレイな物とか{wait}{nl} 白い馬にのった王子を どう{nl} ひっかけるか とか・・・ {wait}{wait}コホン{page}{FB00}「ともかく この村から 王妃様が{nl} １人は出たのよ もう１人わたしが{nl} なるぐらい なんとかなるわよ。",
-   "en": ""
+   "en": "\"Why would that girl want to meet a{nl} dragon?{page}\"A girl{wait} doesn't need to care about{nl} things like that!{page}\"A girl should think of pretty things,{wait}{nl} or how to catch a prince on a white{nl} horse... {wait}{wait}Ahem.{page}{FB00}\"Anyway, one queen already came from{nl} this village. I can surely manage to be{nl} one more."
   },
   {
    "id": "r109_1F69",
    "addr": "1F69",
    "size": 124,
    "jp": "「だいたい・・・{nl} ドラゴンなんて ちょっと{nl} おおきな トカゲじゃないの。{page}「わたし トカゲは{nl} 大・{wait}大・{wait}大キライ！！",
-   "en": ""
+   "en": "\"Besides... a dragon's just a big lizard,{nl} isn't it?{page}\"I hate, {wait}hate, {wait}HATE lizards!!"
   },
   {
    "id": "r109_1FE7",
    "addr": "1FE7",
    "size": 140,
    "jp": "「わたしの前で{nl} ドラゴンの 話なんて{nl} しないでくださらない？{page}「おとめの こころの{nl} 古キズに ふれますの{nl} ・・・・・・・・・・・・。",
-   "en": ""
+   "en": "\"Would you kindly not talk about{nl} dragons in front of me?{page}\"It touches an old wound in a maiden's{nl} heart............"
   },
   {
    "id": "r109_2075",
    "addr": "2075",
    "size": 310,
    "jp": "「ねえ！ {wait}ねえ！ {wait}わたし{wait}{nl} おかあさんたちが 話しているの{nl} 聞いちゃったの。{page} あなた・・・{nl} シルヴェルの王子なんですって！？{page} わたしが 大きくなったら{nl} 結婚して ちょうだいな{nl} {wait}わたし 王妃様になりたいの。{page}{FB00}「なんで あんたが にらむのよ！{wait}{wait}{nl} このエルフの おねえさん{nl} こわ～～～い。",
-   "en": ""
+   "en": "\"Hey! {wait}Hey! {wait}I{wait} heard Mommy and{nl} the others talking.{page} You're... the Prince of Silvel?!{page} When I grow up, marry me. {wait}I want to{nl} be a queen.{page}{FB00}\"Why are YOU glaring at me?! {wait}{wait}This{nl} elf lady is so scaaary."
   },
   {
    "id": "r109_21AD",
    "addr": "21AD",
    "size": 54,
    "jp": "「まだ にらんでるのね。{nl} ふん！ 負けるもんですか。",
-   "en": ""
+   "en": "\"She's still glaring. Hmph! I won't lose."
   },
   {
    "id": "r109_21E5",
    "addr": "21E5",
    "size": 48,
    "jp": "「エルフの おねえさん{nl} 勝負は これからよ！！",
-   "en": ""
+   "en": "\"Elf lady, this is only the beginning!!"
   },
   {
    "id": "r109_2217",
    "addr": "2217",
    "size": 98,
    "jp": "   めずらしい本 買います。{nl} １さつにつき 麦 １ふくろ。{nl}      ラントブルク村 図書館",
-   "en": ""
+   "en": "Rare Books Wanted.{nl}One sack of wheat per book.{nl}Landburg Village Library"
   },
   {
    "id": "r109_227F",
    "addr": "227F",
    "size": 316,
    "jp": " ・・グルド王女 ゆうかい犯・・{nl}      指名手配！{nl}    賞金 ２０００ソル{page}{FB00}   人 間族   男 １人{nl}   エルフ族   女 １人{nl}   ヤ－ク族   男 １人{page}{FB00}   擾報では グルド王女は{nl} 彼らに捕まったまま移動中らしい。{page}{FB00} 見かけた者は 我ヶに連絡せよ。{nl} ・・・・・・・ ・・・・・・・・",
-   "en": ""
+   "en": ".. Kidnappers of Guld Princess ..{nl}WANTED!{nl}Reward: 2000 Sol{page}{FB00}Human     male   1{nl}Elf       female 1{nl}Yaak      male   1{page}{FB00}Reports say they still hold{nl}the princess and are on the move.{page}{FB00}Anyone who sees them, report to us.{nl}....... ........"
   },
   {
    "id": "r109_23BD",
    "addr": "23BD",
    "size": 84,
    "jp": "手配書の にがおえの部分には{nl}ヒゲやら キズの 落書きが{nl}盛大に 書きこまれている。",
-   "en": ""
+   "en": "Someone has scribbled beards and{nl}scars all over the portraits on{nl}the wanted poster."
   },
   {
    "id": "r109_2413",
    "addr": "2413",
    "size": 24,
    "jp": "目の前に 立て札がある。",
-   "en": "",
+   "en": "There is a signboard in front of you.",
    "reached": false
   }
  ]
