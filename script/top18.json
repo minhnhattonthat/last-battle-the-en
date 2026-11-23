@@ -11,28 +11,28 @@
    "addr": "0004",
    "size": 40,
    "jp": "「一晩 {num}ソルに{nl} なるけど いいかい？",
-   "en": ""
+   "en": "\"{num} Sol a night.{nl} All right?"
   },
   {
    "id": "top18_004C",
    "addr": "004C",
    "size": 26,
    "jp": "「それじゃ ごゆっくり。{page}",
-   "en": ""
+   "en": "\"Then rest well.{page}"
   },
   {
    "id": "top18_0074",
    "addr": "0074",
    "size": 44,
    "jp": "「ありゃ？{nl} お金が たりないじゃないか。{page}",
-   "en": ""
+   "en": "\"Huh?{nl} You're short on money.{page}"
   },
   {
    "id": "top18_00A2",
    "addr": "00A2",
    "size": 26,
    "jp": "「こんどまた よろしくね。",
-   "en": ""
+   "en": "\"Come again sometime."
   }
  ]
 }

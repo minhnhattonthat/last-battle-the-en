@@ -11,63 +11,63 @@
    "addr": "0016",
    "size": 48,
    "jp": "「どこか 治療してほしいところが{nl} ありますか？",
-   "en": ""
+   "en": "\"Is there anything{nl} that needs healing?"
   },
   {
    "id": "top20_004A",
    "addr": "004A",
    "size": 36,
    "jp": "「じゃ お気をつけて{nl} さようなら。",
-   "en": ""
+   "en": "\"Take care, then.{nl} Goodbye."
   },
   {
    "id": "top20_0072",
    "addr": "0072",
    "size": 54,
    "jp": "「ぜんぶで{nl} {num}ソルに なります。{nl} よろしいですか？",
-   "en": ""
+   "en": "\"That comes to{nl} {num} Sol in all.{nl} Is that all right?"
   },
   {
    "id": "top20_00AC",
    "addr": "00AC",
    "size": 40,
    "jp": "「わかりました。{nl} では さっそく・・・",
-   "en": ""
+   "en": "\"Very well.{nl} Let's begin..."
   },
   {
    "id": "top20_00D8",
    "addr": "00D8",
    "size": 116,
    "jp": "「なんてこと！{nl} お金が たりないなんて！！{page}「・・・でも しかたないわ{nl} 今回だけ 特別に{nl} なおしてあげますよ。",
-   "en": ""
+   "en": "\"Oh my!{nl} Not enough money!!{page}\"...Well, it can't be helped.{nl} Just this once,{nl} I'll heal you anyway."
   },
   {
    "id": "top20_0150",
    "addr": "0150",
    "size": 46,
    "jp": "「ヴァテン！{nl} ブレックフェ－ル レ－カ！！{page2}",
-   "en": ""
+   "en": "\"Vatten!{nl} Bleckfel... Reka!!{page2}"
   },
   {
    "id": "top20_018C",
    "addr": "018C",
    "size": 56,
    "jp": "「おつかれさま。{nl} これで もう{nl} だいじょうぶですよ。",
-   "en": ""
+   "en": "\"There you go.{nl} You're all{nl} better now."
   },
   {
    "id": "top20_01C8",
    "addr": "01C8",
    "size": 48,
    "jp": "「あなた{nl} どこも悪いところは{nl} ありませんよ。",
-   "en": ""
+   "en": "\"There's nothing{nl} wrong with{nl} you at all."
   },
   {
    "id": "top20_01FC",
    "addr": "01FC",
    "size": 38,
    "jp": "「あら？{nl} みなさん けんこうですよ。",
-   "en": ""
+   "en": "\"Oh?{nl} Everyone's healthy."
   }
  ]
 }

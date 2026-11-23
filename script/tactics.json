@@ -12,7 +12,7 @@
    "size": 8,
    "max": 8,
    "jp": "ベ－シックタイプ",
-   "en": ""
+   "en": "Basic"
   },
   {
    "id": "tactic_1",
@@ -21,7 +21,7 @@
    "size": 7,
    "max": 8,
    "jp": "バランスタイプ",
-   "en": ""
+   "en": "Balanced"
   },
   {
    "id": "tactic_2",
@@ -30,7 +30,7 @@
    "size": 8,
    "max": 8,
    "jp": "マジックアタック",
-   "en": ""
+   "en": "Magic"
   },
   {
    "id": "tactic_3",
@@ -39,7 +39,7 @@
    "size": 8,
    "max": 8,
    "jp": "パワ－[FF]アタック",
-   "en": ""
+   "en": "Power[FF]"
   },
   {
    "id": "tactic_4",
@@ -48,7 +48,7 @@
    "size": 8,
    "max": 8,
    "jp": "わがままコウモリ",
-   "en": ""
+   "en": "Bat Whim"
   },
   {
    "id": "tactic_5",
@@ -57,7 +57,7 @@
    "size": 8,
    "max": 8,
    "jp": "あなぐまぼうぎょ",
-   "en": ""
+   "en": "Badger"
   },
   {
    "id": "tactic_6",
@@ -66,7 +66,7 @@
    "size": 8,
    "max": 8,
    "jp": "エルフのためいき",
-   "en": ""
+   "en": "Elf Sigh"
   },
   {
    "id": "tactic_7",
@@ -75,7 +75,7 @@
    "size": 8,
    "max": 8,
    "jp": "ゴブリンのしっぽ",
-   "en": ""
+   "en": "Gob Tail"
   }
  ]
 }

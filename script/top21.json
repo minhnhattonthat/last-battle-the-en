@@ -11,133 +11,133 @@
    "addr": "0042",
    "size": 24,
    "jp": "「何を おのぞみですか？",
-   "en": ""
+   "en": "\"What do you wish?"
   },
   {
    "id": "top21_005E",
    "addr": "005E",
    "size": 32,
    "jp": "「他にも 何か おのぞみですか？",
-   "en": ""
+   "en": "\"Is there anything else?"
   },
   {
    "id": "top21_0082",
    "addr": "0082",
    "size": 36,
    "jp": "「じゃ お気をつけて{nl} さようなら。",
-   "en": ""
+   "en": "\"Take care, then.{nl} Goodbye."
   },
   {
    "id": "top21_00AA",
    "addr": "00AA",
    "size": 72,
    "jp": "「治療 ですね。{page}「ぜんぶで{nl} {num}ソルに なります。{nl} よろしいですか？",
-   "en": ""
+   "en": "\"Healing, is it?{page}\"That comes to{nl} {num} Sol in all.{nl} Is that all right?"
   },
   {
    "id": "top21_00F6",
    "addr": "00F6",
    "size": 40,
    "jp": "「わかりました。{nl} では さっそく・・・",
-   "en": ""
+   "en": "\"Very well.{nl} Let's begin..."
   },
   {
    "id": "top21_0122",
    "addr": "0122",
    "size": 116,
    "jp": "「なんてこと！{nl} お金が たりないなんて！！{page}「・・・でも しかたないわ{nl} 今回だけ 特別に{nl} なおしてあげますよ。",
-   "en": ""
+   "en": "\"Oh my!{nl} Not enough money!!{page}\"...Well, it can't be helped.{nl} Just this once,{nl} I'll heal you anyway."
   },
   {
    "id": "top21_019A",
    "addr": "019A",
    "size": 46,
    "jp": "「ヴァテン！{nl} ブレックフェ－ル レ－カ！！{page2}",
-   "en": ""
+   "en": "\"Vatten!{nl} Bleckfel... Reka!!{page2}"
   },
   {
    "id": "top21_01D6",
    "addr": "01D6",
    "size": 56,
    "jp": "「おつかれさま。{nl} これで もう{nl} だいじょうぶですよ。",
-   "en": ""
+   "en": "\"There you go.{nl} You're all{nl} better now."
   },
   {
    "id": "top21_0212",
    "addr": "0212",
    "size": 48,
    "jp": "「あなた{nl} どこも悪いところは{nl} ありませんよ。",
-   "en": ""
+   "en": "\"There's nothing{nl} wrong with{nl} you at all."
   },
   {
    "id": "top21_0246",
    "addr": "0246",
    "size": 38,
    "jp": "「あら？{nl} みなさん けんこうですよ。",
-   "en": ""
+   "en": "\"Oh?{nl} Everyone's healthy."
   },
   {
    "id": "top21_0270",
    "addr": "0270",
    "size": 46,
    "jp": "「{actor}さんは まだ{nl} 魔法を おぼえていません。",
-   "en": ""
+   "en": "\"{actor} hasn't{nl} learned any magic yet."
   },
   {
    "id": "top21_02A2",
    "addr": "02A2",
    "size": 54,
    "jp": "「魔法の確認ですね。{nl} だれの魔法が 見たいんですか？",
-   "en": ""
+   "en": "\"Checking magic, then.{nl} Whose magic do you want to see?"
   },
   {
    "id": "top21_02DC",
    "addr": "02DC",
    "size": 30,
    "jp": "「どの魔法を 見たいんですか？",
-   "en": ""
+   "en": "\"Which spell do you want to see?"
   },
   {
    "id": "top21_02FE",
    "addr": "02FE",
    "size": 28,
    "jp": "「だれの魔法を合成しますか？",
-   "en": ""
+   "en": "\"Whose magic will you combine?"
   },
   {
    "id": "top21_031E",
    "addr": "031E",
    "size": 144,
    "jp": "「{actor}さんは{nl} それ以上 新しい魔法を{nl} おぼえきれませんよ。{page}「どんな魔法が 作れるか{nl} ためすだけなら できますけれど{nl} それで いいですか？",
-   "en": ""
+   "en": "\"{actor} can't{nl} learn any more{nl} new spells.{page}\"You can still just test{nl} what magic you could make.{nl} Is that all right?"
   },
   {
    "id": "top21_03B2",
    "addr": "03B2",
    "size": 20,
    "jp": "これで いいですか？",
-   "en": ""
+   "en": "Is this all right?"
   },
   {
    "id": "top21_03C8",
    "addr": "03C8",
    "size": 78,
    "jp": "「この魔法を作るのなら{nl} おぼえている魔法の どれかを{nl} 分解してくださいね。",
-   "en": ""
+   "en": "\"To make this spell,{nl} take apart one of the{nl} spells you know."
   },
   {
    "id": "top21_041A",
    "addr": "041A",
    "size": 50,
    "jp": "「手数料が {num}ソル{nl} かかりますけど いいですか？",
-   "en": ""
+   "en": "\"There's a {num} Sol fee.{nl} Is that all right?"
   },
   {
    "id": "top21_0450",
    "addr": "0450",
    "size": 116,
    "jp": "「では 魔法の合成を{nl} 始めましょう。{page}「さあ あなたも{nl} 大きく 息をすって{nl} 心を 落ちつけてください・・・{wait}{wait}",
-   "en": ""
+   "en": "\"Then let's begin{nl} combining magic.{page}\"Now, take a{nl} deep breath and{nl} calm your heart...{wait}{wait}"
   },
   {
    "id": "top21_04C8",

@@ -11,14 +11,14 @@
    "addr": "0046",
    "size": 22,
    "jp": "「どんな ご用ですか？",
-   "en": ""
+   "en": "\"How may I help you?"
   },
   {
    "id": "top15_0060",
    "addr": "0060",
    "size": 24,
    "jp": "「どんな ごようけんで？",
-   "en": "",
+   "en": "\"What can I do for you?",
    "reached": false
   },
   {
@@ -26,112 +26,112 @@
    "addr": "007C",
    "size": 24,
    "jp": "「他に 何か ごようは？",
-   "en": ""
+   "en": "\"Anything else for you?"
   },
   {
    "id": "top15_0098",
    "addr": "0098",
    "size": 32,
    "jp": "「また どうぞ およりください。",
-   "en": ""
+   "en": "\"Please come again."
   },
   {
    "id": "top15_00BC",
    "addr": "00BC",
    "size": 32,
    "jp": "「どれを{nl} お買いになりますか？",
-   "en": ""
+   "en": "\"What would you{nl} like to buy?"
   },
   {
    "id": "top15_00E0",
    "addr": "00E0",
    "size": 146,
    "jp": "「うちは たしかな品だけしか{nl} あつかわないのが{nl} じまんで ございまして・・{page}「どれを 選んでも{nl} 絶対に ソンは{nl} ございませんですよ ハイ！",
-   "en": ""
+   "en": "\"We pride ourselves{nl} on dealing only in{nl} reliable goods..{page}\"Whatever you choose,{nl} you won't lose out,{nl} I assure you!"
   },
   {
    "id": "top15_0176",
    "addr": "0176",
    "size": 56,
    "jp": "「{item}ですね。{nl} {num}ソルに なりますが{nl} よろしいですか？",
-   "en": ""
+   "en": "\"{item}?{nl} That comes to {num} Sol.{nl} Is that all right?"
   },
   {
    "id": "top15_01B2",
    "addr": "01B2",
    "size": 160,
    "jp": "「なんと！ {item}{nl} で ございますか！{page}「これは めったにない{nl} 掘り出し物でして・・・{page}「おねだんの方も {num}ソルと{nl} お安くなっておりますが{nl} いかがでしょう？",
-   "en": ""
+   "en": "\"My! The{nl} {item}!{page}\"That is a rare{nl} find indeed...{page}\"And it's yours for{nl} only {num} Sol.{nl} What do you say?"
   },
   {
    "id": "top15_0256",
    "addr": "0256",
    "size": 36,
    "jp": "「どなたが{nl} お持ちに なりますか？",
-   "en": ""
+   "en": "\"Who will{nl} be carrying it?"
   },
   {
    "id": "top15_027E",
    "addr": "027E",
    "size": 114,
    "jp": "「さすがは お客さま！{nl} うまい買いものを{nl} 心得て いらっしゃる！！{page}「・・で{nl} どなたが お持ちになりますか？",
-   "en": ""
+   "en": "\"A customer of taste!{nl} You certainly know{nl} a good buy!!{page}\"..And{nl} who will carry it?"
   },
   {
    "id": "top15_02F4",
    "addr": "02F4",
    "size": 28,
    "jp": "「ありがとう ございました。",
-   "en": ""
+   "en": "\"Thank you very much."
   },
   {
    "id": "top15_0314",
    "addr": "0314",
    "size": 32,
    "jp": "「おや？ お金が たりませんね。",
-   "en": ""
+   "en": "\"Oh? You don't have enough."
   },
   {
    "id": "top15_0338",
    "addr": "0338",
    "size": 122,
    "jp": "「あの～ お客さま{nl} お金が たりないようで{nl} ございますが・・・{page}「うちも 商売ですので{nl} こういうのは ちょっと・・・",
-   "en": ""
+   "en": "\"Um, excuse me,{nl} you seem to be{nl} short on money...{page}\"This is a business,{nl} so I'm afraid..."
   },
   {
    "id": "top15_03B6",
    "addr": "03B6",
    "size": 50,
    "jp": "「クルトさんは もう{nl} 持ち物が いっぱいですよ。",
-   "en": ""
+   "en": "\"Kurt can't carry{nl} anything more."
   },
   {
    "id": "top15_03EC",
    "addr": "03EC",
    "size": 58,
    "jp": "「おや お客さま{nl} 持ち物が いっぱいで{nl} ございますね。",
-   "en": ""
+   "en": "\"Oh my,{nl} your bag{nl} is full."
   },
   {
    "id": "top15_042A",
    "addr": "042A",
    "size": 62,
    "jp": "「すみませんが どれかを{nl} 売るか すてるか{nl} してください。",
-   "en": ""
+   "en": "\"I'm sorry, please{nl} sell or drop{nl} something."
   },
   {
    "id": "top15_046C",
    "addr": "046C",
    "size": 50,
    "jp": "「おや？{nl} みなさん 持ち物が{nl} いっぱいですね。",
-   "en": ""
+   "en": "\"Oh?{nl} Everyone's bags{nl} are full."
   },
   {
    "id": "top15_04A2",
    "addr": "04A2",
    "size": 72,
    "jp": "「こりゃ いけない！{nl} みなさん 持ち物が{nl} いっぱいで ございますよ。",
-   "en": "",
+   "en": "\"Oh dear!{nl} Everyone's bags{nl} are full!",
    "reached": false
   },
   {
@@ -139,56 +139,56 @@
    "addr": "04EE",
    "size": 40,
    "jp": "「{actor}さんは 持ち物が{nl} いっぱいですよ。",
-   "en": ""
+   "en": "\"{actor}'s bag{nl} is full."
   },
   {
    "id": "top15_051A",
    "addr": "051A",
    "size": 24,
    "jp": "「他の人が 持ちますか？",
-   "en": ""
+   "en": "\"Someone else carry it?"
   },
   {
    "id": "top15_0536",
    "addr": "0536",
    "size": 48,
    "jp": "「他の方が 持ったら{nl} いかがで ございますか？",
-   "en": ""
+   "en": "\"Perhaps someone else{nl} could carry it?"
   },
   {
    "id": "top15_056A",
    "addr": "056A",
    "size": 56,
    "jp": "「{actor}さんは{nl} これを装備できませんが{nl} よろしいですか？",
-   "en": ""
+   "en": "\"{actor}{nl} can't equip this.{nl} Is that all right?"
   },
   {
    "id": "top15_05A6",
    "addr": "05A6",
    "size": 50,
    "jp": "「どなたの どの 持ち物を{nl} お売りになりますか？",
-   "en": ""
+   "en": "\"Whose item, and which one{nl} will you sell?"
   },
   {
    "id": "top15_05DC",
    "addr": "05DC",
    "size": 40,
    "jp": "「どの 持ち物を{nl} お売りになりますか？",
-   "en": ""
+   "en": "\"Which item{nl} will you sell?"
   },
   {
    "id": "top15_0608",
    "addr": "0608",
    "size": 68,
    "jp": "「{item}ですね？{nl} それなら{num}ソルで{nl} ひきとりますが よろしいですか？",
-   "en": ""
+   "en": "\"{item}?{nl} I can take it{nl} for {num} Sol. All right?"
   },
   {
    "id": "top15_0650",
    "addr": "0650",
    "size": 80,
    "jp": "「{item}{nl} で ございますか？{page}「う～ん それなら{nl} {num}ソルで{nl} いかがでしょうか？",
-   "en": "",
+   "en": "\"The{nl} {item}?{page}\"Hmm, then how{nl} about {num}{nl} Sol?",
    "reached": false
   },
   {
@@ -196,21 +196,21 @@
    "addr": "06A4",
    "size": 52,
    "jp": "「{actor}さんは 売る物が{nl} 何も ないようですが・・・。",
-   "en": ""
+   "en": "\"{actor} doesn't seem{nl} to have anything to sell..."
   },
   {
    "id": "top15_06DC",
    "addr": "06DC",
    "size": 56,
    "jp": "「すみませんが その品物は{nl} うちでは 買いとれません。",
-   "en": ""
+   "en": "\"I'm sorry, we can't{nl} buy that item."
   },
   {
    "id": "top15_0718",
    "addr": "0718",
    "size": 94,
    "jp": "「いけません！{page}「いくら うちが古道具屋でも{nl} それを買いとるわけには{nl} まいりませんですよ。",
-   "en": "",
+   "en": "\"Oh no!{page}\"Secondhand shop or not,{nl} I simply cannot{nl} buy that from you.",
    "reached": false
   },
   {
@@ -218,35 +218,35 @@
    "addr": "077A",
    "size": 36,
    "jp": "「どの 品物を{nl} 説明しましょうか？",
-   "en": ""
+   "en": "\"Which item shall{nl} I explain?"
   },
   {
    "id": "top15_07A2",
    "addr": "07A2",
    "size": 28,
    "jp": "「・・という わけなんです。",
-   "en": ""
+   "en": "\"..And that's how it is."
   },
   {
    "id": "top15_07C2",
    "addr": "07C2",
    "size": 48,
    "jp": "「他にも{nl} 説明を聞きたい品物は{nl} ありますか？",
-   "en": ""
+   "en": "\"Is there any other{nl} item you'd like{nl} explained?"
   },
   {
    "id": "top15_07F6",
    "addr": "07F6",
    "size": 116,
    "jp": "「すみませんが{nl} 今 品切れ中なんです。{page}「お客さん できれば{nl} 何か売ってくれませんか？{nl} 高く 買い取りますよ。",
-   "en": ""
+   "en": "\"I'm sorry, we're{nl} sold out right now.{page}\"If you can, would you{nl} sell me something?{nl} I'll pay a good price."
   },
   {
    "id": "top15_086E",
    "addr": "086E",
    "size": 130,
    "jp": "「そうですか・・・{nl} では この話は{nl} なかったということで・・・。{page}「・・・いやあ 残念ですねえ{nl} う～ん おしいですなあ・・・",
-   "en": ""
+   "en": "\"I see...{nl} Then let's forget{nl} we talked...{page}\"...What a shame.{nl} Hmm, such a pity..."
   }
  ]
 }

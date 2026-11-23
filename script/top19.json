@@ -11,28 +11,28 @@
    "addr": "0004",
    "size": 58,
    "jp": "「一晩 {num}ソルに{nl} なりますが{nl} おとまりに なりますか？",
-   "en": ""
+   "en": "\"It's {num} Sol{nl} a night. Will{nl} you be staying?"
   },
   {
    "id": "top19_005E",
    "addr": "005E",
    "size": 30,
    "jp": "「では どうぞ ごゆっくり。{page}",
-   "en": ""
+   "en": "\"Then please, rest well.{page}"
   },
   {
    "id": "top19_008A",
    "addr": "008A",
    "size": 46,
    "jp": "「すいませんが{nl} お金が たりないようです。{page}",
-   "en": ""
+   "en": "\"I'm sorry, you seem{nl} to be short on money.{page}"
   },
   {
    "id": "top19_00BA",
    "addr": "00BA",
    "size": 50,
    "jp": "「では こんどまた{nl} よろしく おねがいしますね。",
-   "en": ""
+   "en": "\"Then please{nl} come again sometime."
   }
  ]
 }
