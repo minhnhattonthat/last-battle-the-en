@@ -3,7 +3,7 @@
 Text is 16-bit little-endian words, so table keys are the two bytes as stored (0x0335 -> key 3503).
 Glyph code = $0300 + font index; the font is a JIS-X-0208-ordered SUBSET (only characters the game uses), so
 every range here was checked against tools/re_glyphs.py sheets and decoded strings. Katakana and kanji
-($0384-$07D0) are not identified yet: phase 4 matches them against a JIS-ordered reference font."""
+($0384-$07D0) come from tbl/font_jp.tsv (tools/re_kanji_align.py + tools/re_kanji_fix.py, proofed by eye)."""
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,6 +35,9 @@ def main():
         lines.append(f"{key(0x31A + i)}={chr(ord('Ａ') + i)}")
     for i, ch in enumerate(HIRAGANA):
         lines.append(f"{key(0x334 + i)}={ch}")
+    for ln in (ROOT / "tbl" / "font_jp.tsv").read_text(encoding="utf-8").splitlines():
+        code, ch = ln.split("\t")
+        lines.append(f"{key(int(code, 16))}={ch}")
     for c, v in CONTROLS.items():
         lines.append(f"{key(c)}={v}")
     out = ROOT / "tbl" / "jp.tbl"
