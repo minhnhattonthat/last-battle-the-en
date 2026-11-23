@@ -2,7 +2,7 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress (session 14: 1259/3085 strings, batches b001-b015 merged; b016-b049 left).
+- **Phase:** 6. Translate in progress (session 14: 1304/3085 strings, batches b001-b015 merged; b016-b049 left).
   Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24 session 14, sha1
   8909f4fa).
 - **Done:**
