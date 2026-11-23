@@ -176,6 +176,9 @@ def walk(d, entries, base=0, overlap_ok=(), stop_at=()):
 
 EXTRA_ROOMS = list(range(29, 43))  # top-table entries (0xD0000) holding room-format blocks (via sub-tables 12, 13)
 COMMON = 11  # top-table entry: shared script block; E5xx decompresses it over $7F0000 and runs its entry lo
+# Top-table entries in the common-block format (word table of script pointers, 0 = unused, then scripts): shop,
+# inn and healer scripts (docs/re/text.md §Where text lives). 16, 17, 22, 24-27 alias 14, 15, 21, 23.
+COMMON_FORMAT = [11, 14, 15, 18, 19, 20, 21, 23, 28]
 
 
 def top_ptr(rom, i):
@@ -183,9 +186,11 @@ def top_ptr(rom, i):
 
 
 def room_block(rom, i):
-    """Room i < 309: table 0xD0081; 309+: EXTRA_ROOMS; 'common': the E5 block."""
+    """Room i < 309: table 0xD0081; 309+: EXTRA_ROOMS; 'common': the E5 block; 'topN': top-table entry N."""
     if i == "common":
         off = top_ptr(rom, COMMON)
+    elif isinstance(i, str) and i.startswith("top"):
+        off = top_ptr(rom, int(i[3:]))
     elif i >= ROOM_COUNT:
         off = top_ptr(rom, EXTRA_ROOMS[i - ROOM_COUNT])
     else:
@@ -195,9 +200,10 @@ def room_block(rom, i):
 
 
 def walk_common(d):
-    """Common block: a word table of script pointers up to the first one (33 entries), no room header."""
+    """Common-format block: a word table of script pointers up to the first one (33 entries in the common block),
+    no room header. A 0 word is an unused slot (top entries 20, 23)."""
     ents = [u16(d, i) for i in range(0, u16(d, 0), 2)]
-    instrs, errors, native = walk(d, ents)
+    instrs, errors, native = walk(d, [e for e in ents if e])
     return instrs, errors, native, ents, []
 
 
@@ -303,19 +309,21 @@ def fmt(ins):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--room", type=int)
+    ap.add_argument("--top", help="a common-format top-table block: common, top14, top15 ... (COMMON_FORMAT)")
     ap.add_argument("-v", action="store_true")
     ap.add_argument("--gaps", action="store_true", help="list uncovered regions that look like text")
     a = ap.parse_args()
     gaps_text = []
     rom = ROM_PATH.read_bytes()
-    rooms = [a.room] if a.room is not None else list(range(ROOM_COUNT + len(EXTRA_ROOMS))) + ["common"]
+    rooms = ([a.top] if a.top else [a.room] if a.room is not None else
+             list(range(ROOM_COUNT + len(EXTRA_ROOMS))) + ["common"] + [f"top{n}" for n in COMMON_FORMAT[1:]])
     tot_err = 0
     for i in rooms:
         off, d = room_block(rom, i)
-        instrs, errors, native, ents, dropped = walk_common(d) if i == "common" else walk_room(d, i)
+        instrs, errors, native, ents, dropped = walk_common(d) if isinstance(i, str) else walk_room(d, i)
         covered = sum(x["size"] for x in instrs.values())
         tot_err += len(errors)
-        if a.room is not None or errors or dropped:
+        if a.room is not None or a.top or errors or dropped:
             print(f"room {i!s:>6} @{off:06X} size {len(d):5d} entries {len(ents)} covered {covered:5d} "
                   f"({100 * covered // max(1, len(d) - 18)}%) native {sorted(native)} errors {len(errors)}"
                   + (f" dropped e6 {[hex(x) for x in dropped]}" if dropped else ""))
@@ -323,7 +331,7 @@ def main():
                 print("    ", e)
         if a.gaps:
             cov = bytearray(len(d))
-            for s, n in ([(0, 2 * len(ents))] if i == "common" else data_ranges(d)):
+            for s, n in ([(0, 2 * len(ents))] if isinstance(i, str) else data_ranges(d)):
                 cov[s:s + n] = b"\1" * len(cov[s:s + n])
             for p, x in instrs.items():
                 cov[p:p + x["size"]] = b"\1" * x["size"]

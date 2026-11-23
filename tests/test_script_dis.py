@@ -14,9 +14,10 @@ def test_all_scripts_walk_clean():
     import script_dis as sd
     rom = ROM.read_bytes()
     bad = []
-    for i in list(range(sd.ROOM_COUNT + len(sd.EXTRA_ROOMS))) + ["common"]:
+    for i in (list(range(sd.ROOM_COUNT + len(sd.EXTRA_ROOMS))) + ["common"]
+              + [f"top{n}" for n in sd.COMMON_FORMAT[1:]]):
         _, d = sd.room_block(rom, i)
-        res = sd.walk_common(d) if i == "common" else sd.walk_room(d, i)
+        res = sd.walk_common(d) if isinstance(i, str) else sd.walk_room(d, i)
         if res[1]:
             bad.append((i, res[1][:2]))
     assert not bad, bad

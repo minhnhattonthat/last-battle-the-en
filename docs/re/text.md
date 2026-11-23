@@ -85,8 +85,41 @@ Not yet walked: top entries 14-28 (other formats: 18/19 hold plain text, 20-27 t
   (~307 KB decompressed).
 - **Uncompressed script in bank $04** (file `0x20000-0x27FFF`), e.g. new-game script at `$04:B930` (hard-coded
   `LDA #$B930 / STA $10` with `$12 = 4` at `01:806B`), name-entry prompt at `0x023938`. Densest text: `0x23000-0x23C00`.
-- Not yet located: menu labels, item/spell/enemy names, battle messages, the name-entry kana grid (may be tile
-  codes `< $0300`), save screen. Find them in phase 4 with the same `romreads_addr.lua` probe on each screen.
+- **Shop/inn/healer scripts**: top-table entries 14, 15, 18-21, 23, 28 (16, 17, 22, 24-27 alias them), LZ blocks in
+  the common-block format (word table of script pointers, 0 = unused slot, then scripts). All walk clean in
+  `script_dis.py` (`--top top14`), test included. 18/19 inn, 20/21 healer, 14/15/23 shops (verified by the text;
+  the code that picks the entry is not yet traced: phase 4, ROM-read probe in a shop).
+- Map of the bank-$04 text area (file `0x22C00-0x25800`, `tools/re_dumptext.py START END` lists it; verified by
+  decoding, the pointer tables match the strings they point at):
+  | File | What | Format |
+  |---|---|---|
+  | `0x22CA7` | 12-byte rows of BG3 tile words `< $0300` + FF00 (01:FABC, `$04:ACA7` + 12 * n) | tile strings (pre-drawn graphics: survey) |
+  | `0x23053` | **byte-to-glyph map**: byte b >= `$2C` -> word at `0x23053 + 2*(b-$2C)` (01:FEE3); also the name-entry grid order | word table |
+  | `0x232D2` | 4 word pointers -> party names クルト / メイ / ボルグ / レジーナ (`0x232DA-0x232F9`) | script words, FF00 |
+  | `0x232FA` | (room id, pointer) word pairs, FFFF end -> 30 place names `0x233B0-0x23631` (centred with leading spaces) | script words, FF00 |
+  | `0x23632-0x237F3` | "nobody here", chest messages; pointer list at `0x2364A` (9 entries, = `$04:B64E/50/52` chest subs) | script |
+  | `0x237F4-0x2381B` | chest sub-script (code, no text) | script |
+  | `0x2381C-0x2392B` | item/spell use messages, pointer list at `0x2381C` (9) | script |
+  | `0x2392C` | new-game script `$04:B930`: name-entry prompt, "file erased" | script |
+  | `0x2398A` | 4 pointers -> mana names 火/水/大地/風のマナ | script words |
+  | `0x239C4-0x23BB1` | stat-up and spell-sealing messages, pointer list at `0x239C4` | script |
+  | `0x23BB2-0x23C86` | pointer table (odd-aligned) -> item descriptions | words |
+  | `0x23C87-0x24747` | item descriptions (FF01 between lines of a description) | script words |
+  | `0x24748-0x247E3` | equip-screen templates (`{FA3A}／{FA3E}`, 装備できる人) | script words |
+  | `0x24AD1` / `0x25201` | **item records, 20 bytes, name = first 8 bytes in the byte encoding** (0-terminated if shorter); index < $C0 at `$04:CAD1`, >= $C0 at `$04:D201` (01:8B2D). Items $01-$7E, key items $C0-$D8, $E0-$E2, $F0-$FF | byte names |
+- **Spell names**: `0x14E20F`, 28 records of 9 bytes (8-byte name in the byte encoding, then 1 byte), ファイアボール ...
+  スターブラスト (`tools/re_names.py at 14E20F 9 8 28`; record layout a guess from the stride, verify with the
+  FA4F handler in phase 4).
+- **Byte-encoded names** are capped at 8 characters by the record: English names need a wider record or a pointer
+  (engine work, phase 5).
+- **Credits**: `0x16245-0x16877`, script words with FF00 per line (シナリオ・ゲームデザイン, staff names).
+- **Inline name codes**: `FA38` actor name, `FA39`/`FA4F` spell name, `FA3A` item name (01:FC2B: record -> 8 bytes to
+  `$7E6D80`, 01:FEE3 maps them to words at `$7E6C80`, run as script), `FA3B` number, `FA47` target name.
+- **Not found** (whole-ROM scan of raw bytes and every LZ block, both word and byte encodings): enemy names, menu
+  command labels, save-screen labels. Probably tiles (BG3 tile words, see `0x22CA7`) or graphics: find them on screen
+  with the phase-2 debug tool and `romreads_addr.lua` / a VRAM dump.
+- Scanners: `tools/re_textscan.py` (glyph-word runs in raw ROM and blocks), `tools/re_names.py` (byte encoding:
+  `items`, `scan`, `at OFF STRIDE LEN COUNT`), `tools/re_dumptext.py` (range listing).
 
 ## Probes and helpers (tools/)
 - `script_dis.py` (VM disassembler + room walker), `re_flow.py` (65816 flow walk: script-pointer accesses),

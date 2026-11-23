@@ -28,7 +28,17 @@ after `$FFFF` it goes to the next bank at `$8000`). Python: `tools/lz.py` (`deco
 - Relocation: blocks can move anywhere in the linear space as long as the pointer is rewritten; a block may cross
   a bank (the reader handles it). Pointers above `$1B0000` are linear, so moved blocks just need linear addresses.
 
-## Free-space candidates (not yet trap-tested)
-Runs of `$00` >= 1 KB: 0x6F26 (4130), 0x16877 (6025), 0x27BE9 (1047), 0x2B5A0 (19040), 0x542F4 (15628),
-0xC8F5D (28835), 0x111837 (26569), 0x11B8C8 (1848), 0x13DCC6 (9018). Expanding to 4 MB (header `$7FD7` = `$0C`)
-gives clean space past 0x200000, which the linear pointer scheme reaches (`FDDF` keeps adding banks).
+## Free space
+Runs of `$00` >= 1 KB (`python -X utf8 tools/re_trap.py` lists them and writes `work/trap.sfc` with each filled
+with `$FF`): 0x6F26 (4130), 0x16877 (6025), 0x27BE9 (1047), 0x2B5A0 (19040), 0x542F4 (15628), 0xC8F5D (28835),
+0x111837 (26569), 0x11B8C8 (1848), 0x13DCC6 (9018).
+- Trap test (2026-11-23): the trap ROM plays the boot route, name entry and the first room's events (7000 frames,
+  mash A) with the same screens as the original (`work/qa/trap1` vs `work/qa/orig_play`; runs of the same ROM are not
+  frame-identical, compared by eye), and `tools/lua/trap_reads.lua` logged **0 CPU reads** in any candidate over that
+  run (positive control: 54 reads of the name-entry prompt range). **Verified only for that route**: re-run
+  `trap_reads.lua` on the phase-2 debug-tool tour before putting anything there.
+- 0x111817 (top entry 9) is 32 bytes of data followed by this zero run; `lz.py` "decompresses" 14 KB from it only
+  because zeros decode as back-references: it is not an LZ block.
+- **Preferred for new data: expand to 4 MB** (header `$7FD7` = `$0C`): clean space past 0x200000, reached by the
+  linear pointer scheme (`FDDF` keeps adding banks) and by long addressing for code. Needs a check that the mapper
+  mirrors nothing there (phase 5).
