@@ -37,14 +37,46 @@ Everything `tools/debug/warp.lua` relies on. Addresses are WRAM (`$7E`) unless a
 - Loss: "全滅しました・・・", fade, back to the title (no separate game-over screen; `wipeout` scene).
 - Win: experience and a **LEVEL UP!!** window with English labels (MAX HP / MAX MP / ...): graphics survey item.
 
+## Scene modes in scenes.tsv (warp.lua)
+- room `title`: no boot; keys run from power-on (title, load screen). Room `load`: normal boot, but with a save the
+  title defaults to LOAD, so the boot's A taps load FILE1 and the saved room is kept (READY when entered).
+- pokes words: `sav=<file>` (run_scenes.py passes `--sav work/saves/<file>`, made by `make_saves.py`), `credits`
+  (skip `02:D988` so the staff roll plays), `god`, `win`, `noenc`.
+
 ## Modes
 - `$0E` game mode, `$10` next mode (`00:9610`: high nibble `$10` = field/menu). Battle sub-states show in `$10`
   only while the engine uses DP 0 as scratch: not a reliable battle flag; use `$1DDF`.
 
-## Not found yet (carried in status.md)
-- **Saving.** No save prompt in any script or bank-04 text; SRAM (`$70:0000-1FFF`) is written only at boot
-  (`03:F9xx`, signature check) in every route so far. Save-slot display code exists (`01:E725`/`E7D7` = FA00/FA25
-  menu ops, reads `$70:0F0A`; `JSL 03:F80B`), used by bank-04 window templates around file `0x21AD4-0x21D30`
-  (pointer table at `$04:82B6+`). Next: find what opens those windows (title CONTINUE? an NPC?), then save.py.
+## Menus
+- Field menu (A, `01:8145` from `00:916C`): 7 icons, jump table `01:818C`: talk, search, magic, item, status
+  (stats + equipment slots + money), tactics (さくせん: choose tactics `01:9B62`?, formation たいれつ), system
+  (stereo/mono). Overworld menu (A; the first A after READY is ignored): 5 icons, table `01:813B`: magic, item,
+  status, tactics, **camp** (`01:819A`): セーブする / ゲームをおわる (quit: セーブしますか? then title).
 - Menu windows and labels are bank-04 scripts (file `0x20400-0x22300`) of BG3 tile words (`<00xx>`) and FA ops:
-  this is where the menu labels the text scan missed live (phase 4 extraction).
+  this is where the menu labels the text scan missed live (phase 4 extraction). Save labels FILE1 / NEW FILE are
+  English tiles already.
+
+## Saving (verified: `tools/debug/save.py`, `tests/test_save.py`, scenes save_* / title_load / stress_money)
+- Only on the overworld: camp > セーブする > FILE1/FILE2 > よろしいですか? With a save present the title shows
+  NEWGAME/**LOAD** and LOAD is the default (warp.lua's boot then opens the load screen: scene rooms `title`/`load`).
+- SRAM service `03:F80B` (A = 0 check slots, 1 save slot `$0884`, 2 load, 3, 4 = new game init). Slot s at
+  `$70:s*$1000`: +0 magic "FUCK YOU" (`03:F961`), +8 checksum = 16-bit byte sum of +$0A..+$789, +$0A data (stream
+  below, ends at +$544), +$78A backup copy (the loader falls back to it), +$F0A load-screen header: level (`$1922`)
+  and name (`$0024`, 8 bytes).
+- Stream = descriptor table `03:FBA2` (type, addr, bank, len [+ 3 bytes for type 1]), save handlers `03:FC44`:
+  64 gathered bytes (word list `03:FB22`: `$0D24-29` room/x/y, `$0D2A` facing, `$0D3A` music, `$003E` party size,
+  `$0600-09` party list, ...); `$1C90-$1DD8` plain (money `$1DD1`, 24-bit, capped 9,999,999 by `01:E255`); name
+  `$0024`; story flags `$0200-$04FF` one bit each; four character records `$1900 + i*$E4`, each byte packed to the
+  bit width in `03:FA3E`. Packing `03:FD03`: low bits MSB first; the tail is padded by 8-bit ROLs starting with carry
+  set and always takes one more byte (a whole extra byte when aligned). Unpack `03:FD6B`.
+- The save holds the room and position, so `save.py edit --room R --x X --y Y` loads anywhere.
+
+## Story variants and the ending (verified: scenes variant_* / ending)
+- Room load `00:B305`: story flag `$026F` set -> rooms 1, `$1A`, `$88`, `$F8` load blocks 39-42 (top entry 13,
+  `01:E5F7`) instead of their own; else `$EC|$EE` = k (1-10) loads block 28+k (top entry 12, `01:E5DA`) when the room
+  is `00:B34B[k-1]` (1, `$15`, `$78`, `$89`, `$B9`, `$107`, `$DB`, `$10C`, `$110`, `$F8`). script_dis's rooms 310-323.
+- Ending: room 1 + flag `$026F` (block 39): epilogue events, then op **A404** (`01:BC6E`: fade, `JSL 02:D598`):
+  `02:D988` epilogue text + "Fin" (tiles), waits on APU port `$2143` bit 1 (`02:DB40`), then `02:D618`/`D6DA` staff
+  roll: 24 entries, pointer table `02:E215` -> text `0x16245`, one per `$78` frames (`02:D71F`).
+- The chapter 4 title (『第四章 ウ－ドの滅亡』) is NPC dialogue in room 198 (`$7F:015A`), not a card screen; no
+  other chapter titles exist in the text.

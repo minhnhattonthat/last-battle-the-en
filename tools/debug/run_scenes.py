@@ -51,6 +51,12 @@ def run(scene, rom, out, hold, states, extra):
            "--frames", str(frames), "--shot-every", "30", "--timeout", "900"]
     if states:
         cmd += ["--state-out", str(ROOT / "work" / "states" / f"{scene['name']}.mss")]
+    sav = re.search(r"(?:^|,)\s*sav=([^,\s]+)", scene["pokes"])
+    if sav:  # battery save from work/saves/ (made by tools/debug/make_saves.py)
+        p = ROOT / "work" / "saves" / sav.group(1)
+        if not p.exists():
+            raise SystemExit(f"{scene['name']}: {p} missing; run tools/debug/make_saves.py first")
+        cmd += ["--sav", str(p)]
     for v in extra["vars"]:
         cmd += ["--var", v]
     for s in extra["scripts"]:

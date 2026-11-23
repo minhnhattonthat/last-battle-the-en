@@ -60,7 +60,7 @@ for line in io.lines(SCENES) do
     local c = split(line, "\t")
     if c[1] == SCENE then
       scene = { name = c[1], room = num(c[2]), x = num(c[3]), y = num(c[4]), dir = num(c[5]) or 2,
-                pokes = c[6] or "-", keys = c[8] or "-" }
+                pokes = c[6] or "-", keys = c[8] or "-", mode = (c[2] == "title" or c[2] == "load") and c[2] }
       local run = c[7] or "-"
       if run:match("^ops:") then scene.ops = run:sub(5):gsub("%s", "") else scene.run = num(run) end
     end
@@ -73,6 +73,8 @@ local rest = {}
 for p in scene.pokes:gmatch("[^,]+") do
   local w = p:lower():match("^%s*(%a+)%s*$")
   if w == "god" then GOD = 1 elseif w == "win" then WIN = 1 elseif w == "noenc" then NOENC = 1
+  elseif w == "credits" then CREDITS = 1
+  elseif p:match("^%s*sav=") then -- battery save for run_scenes.py (--sav work/saves/<file>); nothing to do here
   elseif p ~= "-" then rest[#rest + 1] = p end
 end
 scene.pokes = #rest > 0 and table.concat(rest, ",") or "-"
@@ -92,9 +94,22 @@ local function apply_pokes(late)
 end
 
 -- Boot: Start through logo/title/menu, then mash A through name entry (stops once the room is requested).
+-- room "title": no boot at all, the keys run from power-on (title, LOAD screen with a save). room "load": the
+-- same boot, but with a save present the title's default is LOAD, so the third Start opens the load screen and
+-- the A taps load FILE1; the room is the saved one (not overwritten).
 local phase = "boot"
-L.press("-", 600); L.press("start", 6); L.press("-", 300); L.press("start", 6); L.press("-", 300)
-L.press("start", 6); L.press("-", 600)
+if scene.mode == "title" then
+  phase = "ready"
+  L.log("READY f0 title")
+  for step in scene.keys:gmatch("[^;]+") do
+    local f, spec = step:match("^%s*(%d+)%s+(%S+)%s*$")
+    if not f then error("bad keys step: " .. step) end
+    L.press(spec, tonumber(f))
+  end
+else
+  L.press("-", 600); L.press("start", 6); L.press("-", 300); L.press("start", 6); L.press("-", 300)
+  L.press("start", 6); L.press("-", 600)
+end
 L.on_frame(function(n)
   if phase == "boot" and L.route_done() and n % 20 < 6 then
     -- name entry: tap A (queued per frame so the harness MASH is not needed)
@@ -147,6 +162,18 @@ L.on_exec(0x00D64C, 0x00D64C, function()
   L.log(string.format("OPS f%d %s at $%06X", L.frame, scene.ops, STUB))
 end)
 
+-- CREDITS: the ending (op A404 -> 02:D598) first shows the epilogue and "Fin" (02:D988), which waits on the sound
+-- CPU (02:DB40, $2143 bit 1) and never moved on in 110000 frames from a warp; skip that call so the staff roll
+-- (02:D618, 02:D6DA, text 0x16245) plays.
+if CREDITS then
+  L.on_exec(0x02D5BE, 0x02D5BE, function()
+    local s = emu.getState()
+    s["cpu.pc"] = 0xD5C1
+    emu.setState(s)
+    L.log("CREDITS skip 02:D988 f" .. L.frame)
+  end)
+end
+
 -- GOD: HP and MP to max every frame for every party slot (records $7E1900 + slot*$E4: HP $09, max $0B, MP $0D,
 -- max $0F; party size $7E003E). NOENC: cancel any random encounter ($7E1DDF back to $FFFF) after READY; a forced
 -- "@1DDF" poke is written after this hook has run, so it still starts its battle.
@@ -187,6 +214,7 @@ L.on_frame(function(n)
   if phase == "load" then prep_frame = prep_frame or n end
   local target = scene.room or 2
   local entered = r16(0x7E002C) == target and (ran or target == 0)
+  if scene.mode == "load" then entered = ran or r16(0x7E002C) == 0 end
   if phase == "load" and n - prep_frame > 60 and entered and rd(0x7E00CC) == 0 and rd(0x7E00CE) == 0 then
     ready_at = ready_at or n
     if n - ready_at >= 60 then

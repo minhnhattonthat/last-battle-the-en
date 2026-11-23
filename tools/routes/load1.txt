@@ -1,0 +1,12 @@
+# Cold boot with a battery save: title (LOAD is the default when a save exists), load screen, FILE1, into the game.
+600 -
+6 start
+300 -
+6 start
+300 -
+6 start
+300 -
+6 a
+120 -
+6 a
+600 -

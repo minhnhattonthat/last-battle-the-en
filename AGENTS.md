@@ -7,6 +7,7 @@ Skill: translate-retro-game (Claude Code: plugin, enabled in .claude/settings.js
 - Check:    `python -X utf8 tools/check.py`    (tests + lint; the pre-commit hook runs this; `git config core.hooksPath tools/hooks` once per clone)
 - Smoke:    `python -X utf8 $SKILL/scripts/emu.py build/lastbattle_en.sfc --out work/qa/smoke --route tools/routes/boot.txt --smoke`
 - Warp:     `python -X utf8 $SKILL/scripts/emu.py build/lastbattle_en.sfc --out work/qa/warp --script tools/debug/warp.lua --var "SCENE='<name>'" --frames 3000 --sheet` (scenes: `tools/debug/scenes.tsv`, RAM notes `docs/re/debug.md`; never ask the user to play to a scene). All scenes: `python -X utf8 tools/debug/run_scenes.py [ROM] [--only a,b] [--states]`; ad-hoc room/ops/pokes: `tools/debug/probe.py`
+- Saves:    `python -X utf8 tools/debug/make_saves.py` (game-written FILE1 + stress saves in `work/saves/`, each loaded and asserted in game); edit one: `tools/debug/save.py dump|edit` (money, flags, room, any saved WRAM byte)
 - Release:  `python -X utf8 tools/release.py` (patch + verify; never publish without the user)
 - Clean:    `python -X utf8 tools/clean.py` (published projects: lists rebuildable/downloadable files; `--yes` deletes)
 
