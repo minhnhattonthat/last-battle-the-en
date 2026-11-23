@@ -36,7 +36,7 @@ Read under ~4 KB (the context-mode hook stubs larger ones): read a batch with `l
 - `menu`: fixed 8 px tiles, charset `A-Z a-z 0-9 ',.-!?&/:+` and space, no `;` or `"`. One line per JP line;
   leading spaces are recomputed (centred on the JP line). `MENU_CAP` in `tools/batches.py` holds list windows wider
   than their string.
-- `name`: items/tactics <= 12 (D10), spells <= 8 (and name + " A" must split into two 8-tile rows), enemies <= 16 as
+- `name`: items <= 9, tactics <= 8 (D18; plain ASCII, no tokens), spells <= 8 (and name + " A" must split into two 8-tile rows), enemies <= 16 as
   two words of <= 8.
 
 ## Notes from earlier batches

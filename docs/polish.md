@@ -19,11 +19,11 @@ script refuses to run while any line is unticked. Sources: `docs/review-phase6.m
 - [ ] spell_23 - spell name cut to 8 (D10): Seal Foe
 - [ ] spell_24 - spell name cut to 8 (D10): MagicArm
 - [ ] spell_27 - spell name cut to 8 (D10): Starfall (Star Blast)
-- [ ] tactic_3 - `[FF]` kept between "Power" and "Attack" as in JP; confirm what the byte does on screen
-- [ ] bt_19D4BB - real battle message (クルトに...), not a particle: translate once phase 7 solves its slot
-- [ ] bg3_9EF0 - shop Buy left Japanese (4-byte slot, D11): translate when phase 7 repoints it, then `batches.py check b005`
-- [ ] bg3_9EF8 - shop Sell left Japanese (4-byte slot, D11): translate when phase 7 repoints it
-- [ ] bg3_A687 - feather note left Japanese (4-byte slot, D11): translate when phase 7 repoints it
+- [x] tactic_3 - `[FF]` kept between "Power" and "Attack" as in JP; confirm what the byte does on screen (fixed phase 7: it printed as the text "[FF]"; now "All-Out", b061)
+- [ ] bt_19D4BB - real battle message (クルトに...), not a particle: translate once seen in a battle (script/keep_jp.txt, phase 8)
+- [x] bg3_9EF0 - shop Buy left Japanese (4-byte slot, D11): translate when phase 7 repoints it (fixed: window moved, D18, `work/qa/cap3/shopcmd.png`)
+- [x] bg3_9EF8 - shop Sell left Japanese (4-byte slot, D11): translate when phase 7 repoints it (fixed with bg3_9EF0)
+- [x] bg3_A687 - feather note left Japanese (4-byte slot, D11): translate when phase 7 repoints it (fixed: repointed, "Bird plume")
 - [ ] bt_140017 - "defeated!!" / "s defeated!" glues a plural "s" onto the enemy name; check the rect width in game and rephrase if it allows
 - [ ] bt_186247 - なにを？ rendered "??"; "What?" if the rect fits 5
 - [ ] bt_1991EC - なにを？ rendered "What" with no question mark
@@ -31,8 +31,12 @@ script refuses to run while any line is unticked. Sources: `docs/review-phase6.m
 - [ ] bt_1D8301 - ミス！ rendered "Nil"; "Miss" if 4 fits
 - [ ] common_0384 - スヤスヤ rendered "Sleeping soundly...." reads as narration inside a quote; "Zzz... zzz...." fits the other sleepers
 - [ ] cr_E2BD - composer 岡本 智郎 romanised "Tomoro"; confirm the reading (Tomoo / Tomorou) from an official credit
-- [ ] item_D3 - クロスオブマナ "Mana Cloth" vs item_3B "Mage's Cloth" and item_1E "Cloth of Law": one pattern for the "Cloth of X" family
-- [ ] b050 - 11 untranslated entries in `work/tl/b050.tsv` (battle particles, equip-slot labels): translate in phase 7 and re-run `batches.py check b050`
+- [x] item_D3 - クロスオブマナ "Mana Cloth" vs item_3B "Mage's Cloth" and item_1E "Cloth of Law": one pattern for the "Cloth of X" family (fixed b061: Mana Robe / Mage Robe / Law Robe)
+- [x] b050 - 11 untranslated entries in `work/tl/b050.tsv` (battle particles, equip-slot labels): translate in phase 7 and re-run `batches.py check b050` (equip labels done in phase 7; the 8 battle-only ones are in `script/keep_jp.txt` for phase 8)
+- [ ] item_07 - 9-tile item names (D18) abbreviated where no natural 9-letter name exists: Sil.Sword, Sil.Mail (item_1C), Sil.Guard (item_28), Kn.Shield (item_25), SilvelYrn (item_C4), Drgn Tear (item_C9), Sil.Nepha / Lt. Nepha (item_E0/E1); revisit if a list ever gets wider
+- [ ] bg3_A729 - equip-slot labels Wpn / Shld / Feet (2-tile slots repointed, D18): screen not identified yet; shoot it in phase 8 and widen the words if the window allows
+- [ ] bg3_8F96 - status screen labels Atk / Def / Agi / Wis: the value op {009E} draws over anything past 5 letters (phase 7, `work/qa/p7/menu_status`); full words need the values moved
+- [ ] menu_status - bottom-right window of the status screen shows a Japanese ま beside "Ma" (`work/qa/p7/menu_status/final.png`): graphics or an unextracted string, phase 8
 - [ ] r085_0C94 - Ritten old man (r085_0C94..r085_11B0) and Gulva old man (r092_0127..r092_03EB): のぅ rendered as "eh" on nearly every sentence; vary the tag ("lad", "heh", dropped g's) so it reads less mechanical (b056 reworked r085_0D58/0DDA/0EDC)
 - [ ] r118_0067 - library narration in present tense ("you find a grubby book") between past-tense captions; pick one tense for the library book captions
 - [ ] top15_00E0 - secondhand-shop keeper ends with servile ハイ！ ("yessir!"); the EN drops it, the voice could carry it

@@ -204,22 +204,48 @@ class BankPools:
     def __init__(self):
         self.pos = {base: lo for base, (lo, _) in BANK_POOLS.items()}
 
+    def place(self, base, data, by, writer):
+        """Write data into the pool of the bank at file offset base; returns its file offset."""
+        at = self.pos[base]
+        if at + len(data) > BANK_POOLS[base][1]:
+            raise ValueError(f"{by}: bank pool at {base:06X} full")
+        self.pos[base] = at + len(data)
+        writer.put(at, data, f"pool:{by}")
+        return at
+
     def repoint(self, off, data, e, writer):
         base = off & ~0x7FFF
         if base not in BANK_POOLS:
             raise ValueError(f"{e['id']}: {len(data)} bytes for a {e['size']}-byte slot and no pool in its bank")
-        at = self.pos[base]
-        if at + len(data) > BANK_POOLS[base][1]:
-            raise ValueError(f"{e['id']}: bank pool at {base:06X} full")
-        self.pos[base] = at + len(data)
-        writer.put(at, data, f"pool:{e['id']}")
+        at = self.place(base, data, e["id"], writer)
         for p in e["ptrs"]:
             p = int(p, 16)
             assert p & ~0x7FFF == base, f"{e['id']}: pointer {p:06X} outside the string's bank"
             writer.put(p, ((at & 0x7FFF) | 0x8000).to_bytes(2, "little"), f"ptr:{e['id']}")
 
 
-NAMES_AREA = 0x3E0000    # $FC:8000: ASCII -> BG3 tile table, name pointers, English names (asm/vwf.asm nm_*)
+# BG3 strings in slots under FAR_LEN bytes but reached by a 16-bit pointer (D11 -> D18): with English longer than the
+# slot they move whole, terminator included, to the bank pool and these pointers are rewritten. Item note table
+# `$04:A2xx` (id, ptr) triples; equip-slot label table `$04:A71F`.
+BG3_PTRS = {"bg3_A687": ["0222FF"], "bg3_A729": ["02271F"], "bg3_A737": ["022723"], "bg3_A73D": ["022725"]}
+# Window scripts the build moves whole (header `xx yy ww hh`, then the script to `00 FF`) because a string inside
+# them has a slot too short for a far jump: the shop command window (Buy / Sell / Info, 2-tile slots), reached
+# through the window table word at 0x202EE.
+MOVED_WINDOWS = [(0x21EE8, 0x21F0A, "0202EE")]
+# Window headers the build changes (docs/re/windows.md, D18): the two field item windows of op FA0E (2 columns of
+# space + name) move to x=0 and widen by 2 tiles, so each name gets 9 tiles (asm nm_icap), the most that fits left of
+# the portrait window at x=22.
+WINDOW_HEADERS = {0x2131A: (bytes.fromhex("010a120f"), bytes.fromhex("000a140f")),
+                  0x21F7A: (bytes.fromhex("0101130f"), bytes.fromhex("0001150f"))}
+
+
+def window_headers(orig, writer):
+    for off, (old, new) in WINDOW_HEADERS.items():
+        assert orig[off:off + 4] == old, f"window header {off:06X}"
+        writer.put(off, new, f"window:{off:06X}")
+
+
+NAMES_AREA = 0x3E0000   # $FC:8000: ASCII -> BG3 tile table, name pointers, English names (asm/vwf.asm nm_*)
 NAME_KIND = {"items": 1, "spells": 2, "enemies": 3, "tactics": 4}  # escape in a record's name field: kind, n (1-255)
 NAME_KINDS_MAX = 8        # pointer tables are sized for this many kinds (fixed addresses in asm/vwf.asm)
 BT_W = 8                  # battle name windows: 8 tiles, two rows (29:B2B6; the top row is the dakuten row)
@@ -460,12 +486,40 @@ def apply(orig, region, writer, files, alloc=None):
                 writer.put(int(e["file"], 16), battle_text.encode(orig, e), f"text:{e['id']}")
             continue
         if src["kind"] == "bg3":
+            moved = {w: {} for w in MOVED_WINDOWS}
             for e in doc["entries"]:
                 changed += bool(e["en"])
                 enc = b3en.encode(e["en"]) if e["en"] else b3jp.encode(e["jp"])
-                ret = int(src["bank"], 16) << 16 | (int(e["addr"], 16) + e["size"])
-                writer.put(int(e["file"], 16), fit(enc, e["size"], ret, alloc, writer, e["id"], b3sp),
-                           f"text:{e['id']}")
+                off, size = int(e["file"], 16), e["size"]
+                win = next((w for w in MOVED_WINDOWS if w[0] <= off < w[1]), None)
+                if win:
+                    moved[win][off] = (size, enc, e["id"])
+                    continue
+                if len(enc) > size and e["id"] in BG3_PTRS:
+                    assert orig[off + size:off + size + 2] == b"\x00\xff", e["id"]
+                    pools.repoint(off, enc + b"\x00\xff", {**e, "ptrs": BG3_PTRS[e["id"]]}, writer)
+                    continue
+                ret = int(src["bank"], 16) << 16 | (int(e["addr"], 16) + size)
+                writer.put(off, fit(enc, size, ret, alloc, writer, e["id"], b3sp), f"text:{e['id']}")
+            for (lo, hi, ptr), subs in moved.items():
+                if all(len(enc) <= size for size, enc, _ in subs.values()):
+                    for o, (size, enc, eid) in subs.items():
+                        ret = int(src["bank"], 16) << 16 | ((o + size) & 0x7FFF | 0x8000)
+                        writer.put(o, fit(enc, size, ret, alloc, writer, eid, b3sp), f"text:{eid}")
+                    continue
+                out, o = bytearray(), lo
+                while o < hi:
+                    if o in subs:
+                        out += subs[o][1]
+                        o += subs[o][0]
+                    else:
+                        out += orig[o:o + 2]
+                        o += 2
+                assert orig[hi - 2:hi] == b"\x00\xff", f"window {lo:06X}"
+                p = int(ptr, 16)
+                assert int.from_bytes(orig[p:p + 2], "little") == (lo & 0x7FFF) | 0x8000, f"window pointer {ptr}"
+                at = pools.place(lo & ~0x7FFF, bytes(out), f"window:{lo:06X}", writer)
+                writer.put(p, ((at & 0x7FFF) | 0x8000).to_bytes(2, "little"), f"ptr:window:{lo:06X}")
             continue
         if src["kind"] == "block":
             b = region.blocks[src["block"]]
@@ -501,6 +555,7 @@ def apply(orig, region, writer, files, alloc=None):
             b.data = bytes(data)
     if names is not None:
         names.write(writer)
+        window_headers(orig, writer)
         name_entry(writer)
         battle_bytes(writer)
         spells = files.get("spells", {"entries": []})["entries"]

@@ -30,7 +30,7 @@
    "size": 8,
    "max": 8,
    "jp": "マジックアタック",
-   "en": "Magic Attack"
+   "en": "Sorcery"
   },
   {
    "id": "tactic_3",
@@ -39,7 +39,7 @@
    "size": 8,
    "max": 8,
    "jp": "パワ－[FF]アタック",
-   "en": "Power[FF]Attack"
+   "en": "All-Out"
   },
   {
    "id": "tactic_4",
@@ -48,7 +48,7 @@
    "size": 8,
    "max": 8,
    "jp": "わがままコウモリ",
-   "en": "Selfish Bat"
+   "en": "Wild Bat"
   },
   {
    "id": "tactic_5",
@@ -57,7 +57,7 @@
    "size": 8,
    "max": 8,
    "jp": "あなぐまぼうぎょ",
-   "en": "Badger Guard"
+   "en": "Badger"
   },
   {
    "id": "tactic_6",
@@ -66,7 +66,7 @@
    "size": 8,
    "max": 8,
    "jp": "エルフのためいき",
-   "en": "Elf's Sigh"
+   "en": "Elf Sigh"
   },
   {
    "id": "tactic_7",
@@ -75,7 +75,7 @@
    "size": 8,
    "max": 8,
    "jp": "ゴブリンのしっぽ",
-   "en": "Goblin Tail"
+   "en": "Goblin"
   }
  ]
 }

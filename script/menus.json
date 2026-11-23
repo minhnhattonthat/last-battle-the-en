@@ -649,7 +649,7 @@
    "addr": "8F96",
    "size": 252,
    "jp": "  ネ－ム{nl}  フェナムン{nl} ＬＶ{00A3}{nl} ＨＰ      ／     ＭＰ      ／{nl} こうげき    {009E}   {FA31} しゅび     {009E}   {FA31}{nl} すばやさ    {009E}   {FA31} かしこさ    {009E}   {FA31}{nl} ＥＸ{00A3}           うん{nl} ＮＥＸＴ{FA07}",
-   "en": "  Name{nl}  Fenamun{nl} LV{00A3}{nl} HP      /     MP      /{nl} Attack  {009E}   {FA31} Defense {009E}   {FA31}{nl} Agility {009E}   {FA31} Wisdom  {009E}   {FA31}{nl} EX{00A3}           Luck{nl} NEXT{FA07}",
+   "en": "  Name{nl}  Fenamun{nl} LV{00A3}{nl} HP      /     MP      /{nl} Atk     {009E}   {FA31} Def     {009E}   {FA31}{nl} Agi     {009E}   {FA31} Wis     {009E}   {FA31}{nl} EX{00A3}           Luck{nl} NEXT{FA07}",
    "file": "020F96",
    "tiles": 24
   },
@@ -1288,7 +1288,7 @@
    "addr": "9EF0",
    "size": 4,
    "jp": "かう",
-   "en": "",
+   "en": "Buy",
    "file": "021EF0",
    "tiles": 2
   },
@@ -1297,7 +1297,7 @@
    "addr": "9EF8",
    "size": 4,
    "jp": "うる",
-   "en": "",
+   "en": "Sell",
    "file": "021EF8",
    "tiles": 2
   },
@@ -1792,7 +1792,7 @@
    "addr": "A687",
    "size": 4,
    "jp": "はね",
-   "en": "",
+   "en": "Bird{nl}plume",
    "file": "022687",
    "tiles": 2
   },
@@ -1846,7 +1846,7 @@
    "addr": "A729",
    "size": 4,
    "jp": "ぶき",
-   "en": "",
+   "en": "Wpn",
    "file": "022729",
    "tiles": 2
   },
@@ -1864,7 +1864,7 @@
    "addr": "A737",
    "size": 4,
    "jp": "たて",
-   "en": "",
+   "en": "Shld",
    "file": "022737",
    "tiles": 2
   },
@@ -1873,7 +1873,7 @@
    "addr": "A73D",
    "size": 4,
    "jp": "あし",
-   "en": "",
+   "en": "Feet",
    "file": "02273D",
    "tiles": 2
   },

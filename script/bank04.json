@@ -936,7 +936,7 @@
    "addr": "BE79",
    "size": 74,
    "jp": " スペシャルハ－ブ／{nl}  ハ－ブより 効き目が高い薬草{nl}  ＨＰを回復する",
-   "en": "Special Herb/{nl}A herb stronger than a Herb{nl}Restores HP",
+   "en": "Rare Herb/{nl}A herb stronger than a Herb{nl}Restores HP",
    "file": "023E79",
    "ptrs": [
     "023BD7"
@@ -958,7 +958,7 @@
    "addr": "BEF7",
    "size": 54,
    "jp": " マジックハ－ブ／{nl}  ＭＰを ３０くらい回復する薬草",
-   "en": "Magic Herb/{nl}Restores about 30 MP",
+   "en": "Mana Herb/{nl}Restores about 30 MP",
    "file": "023EF7",
    "ptrs": [
     "023BDD"
@@ -1002,7 +1002,7 @@
    "addr": "BFE1",
    "size": 54,
    "jp": " きつけのハ－ブ／{nl}  気絶した人を 目覚めさせる薬草",
-   "en": "Revive Herb/{nl}A herb that revives{nl}a fainted ally",
+   "en": "Wake Herb/{nl}A herb that revives{nl}a fainted ally",
    "file": "023FE1",
    "ptrs": [
     "023BE9"
@@ -1035,7 +1035,7 @@
    "addr": "C0B5",
    "size": 48,
    "jp": " ヘイストウォ－タ／{nl}  のむと 素早さが上がる",
-   "en": "Haste Water/{nl}Drinking it raises Agility",
+   "en": "Haste Dew/{nl}Drinking it raises Agility",
    "file": "0240B5",
    "ptrs": [
     "023BF2"
@@ -1057,7 +1057,7 @@
    "addr": "C137",
    "size": 80,
    "jp": " ブラッドスメル／{nl}  動物やモンスタ－を おびき出す{nl}  においのする ふくろ",
-   "en": "Blood Scent/{nl}A pouch whose smell lures{nl}animals and monsters out",
+   "en": "Bloodlure/{nl}A pouch whose smell lures{nl}animals and monsters out",
    "file": "024137",
    "ptrs": [
     "023BF8"
@@ -1079,7 +1079,7 @@
    "addr": "C1B9",
    "size": 50,
    "jp": " 賢さのハ－ブ／{nl}  使うと 賢さが少し上がる薬草",
-   "en": "Wisdom Herb/{nl}Raises Wisdom a little",
+   "en": "Wise Herb/{nl}Raises Wisdom a little",
    "file": "0241B9",
    "ptrs": [
     "023BFE"
@@ -1123,7 +1123,7 @@
    "addr": "C2A1",
    "size": 62,
    "jp": " 精神のハ－ブ／{nl}  使うと 最大ＭＰが 少しふえる{nl}  薬草",
-   "en": "Spirit Herb/{nl}Raises max MP a little{nl}",
+   "en": "Mind Herb/{nl}Raises max MP a little{nl}",
    "file": "0242A1",
    "ptrs": [
     "023C0A"
@@ -1162,7 +1162,7 @@
    "addr": "C35D",
    "size": 58,
    "jp": " 宝珠／{nl}  儀式を やりとげるために{nl}  必要なアイテム",
-   "en": "Sacred Orb/{nl}An item needed to{nl}complete the rite",
+   "en": "Holy Orb/{nl}An item needed to{nl}complete the rite",
    "file": "02435D",
    "ptrs": [
     "023C25"

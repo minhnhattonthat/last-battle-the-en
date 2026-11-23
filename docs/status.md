@@ -2,11 +2,23 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 7. Insert, fit, check: phase 6 done (3071/3085 translated, reviewer pass complete, every batch
-  b001-b049 has a row in `docs/review-phase6.md`; the 14 left are b050's engine-bound fragments, phase-7 work).
-  Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24 session 18, sha1
-  3bbeaa3c).
+- **Phase:** 8. QA in the emulator: phase 7 done (build green with romdiff, `batches.py check` 0 problems incl. the
+  new keep-list and `{009E}` rules, 40 tests; 3077/3085 translated, the 8 left are battle-only in
+  `script/keep_jp.txt`). `build/lastbattle_en.sfc` smoke ok, 2026-11-24 session 19, sha1 489d308c.
 - **Done:**
+  - **Phase 7, session 2026-11-24 (19), phase closed:** D18 (replaces D10's 12-letter names): both FA0E field item
+    windows moved to x=0 and widened by 2 (`insert.WINDOW_HEADERS`, asm `nm_icap` FA0E = 9), so every item list
+    holds 9 tiles; tactics list stays 8 (01:FE7A). Fix batch b061: 90 item names fitted to 9 (real names first,
+    abbreviations flagged in `docs/polish.md`), 6 tactics to 8 (`Power[FF]Attack` had printed "[FF]" as text), item
+    info headers + r123_00A2 follow; item_05 "Estoc" (a shop clerk said "Bastard?"). 2-tile slots: shop Buy/Sell
+    window moved whole to the bank-04 pool (`insert.MOVED_WINDOWS`, window-table word 0x202EE, range added),
+    feather note + equip labels Wpn/Shld/Feet repointed (`insert.BG3_PTRS`). Status screen labels Atk/Def/Agi/Wis:
+    `{009E}` draws its value over the blanks before it ("Attack" lost its "k"); lint added. `batches.py check`
+    now fails untranslated entries not in `script/keep_jp.txt` (8 battle-only ids with reasons) and tokens in
+    English names. Test `test_english_build_moves` builds the English ROM (romdiff) and checks the moves. Shots:
+    `work/qa/cap3` (item window 9, shop Buy/Sell `shopcmd.png`), `work/qa/cap4` (use-item layout, cursor col 2),
+    `work/qa/cap5/sell.png`, `work/qa/tac`, `work/qa/p7/menu_status`; 38 menu/shop/save scenes reached
+    (`work/qa/p7s/finals*.png`). Next free fix batch: b062.
   - **Phase 6, session 2026-11-24 (18):** external phase-6 review (`.harness/reviews/last-battle-the-en-phase6.md`)
     Critical/Important fixed: honorific check on in `tools/batches.py` (D1, waivers for title+name; tests), 24 hits
     re-translated, 先生 = "Keukenhof-sensei"/"Sensei" (D12), "King of Guld" everywhere (b059); D12-D17 recorded.
@@ -186,14 +198,13 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
-  0. **Phase 7: insert, fit, check** (done-when: build green, width/overflow lint clean, control codes matched,
-     `romdiff.py` no writes outside allowed ranges). Phase 6 left: `work/tl/b050.tsv` (11 engine-bound fragments:
-     battle particles `bt_198045/1980E3/19D4BB/19D534+`, enemy_40/69, 2-tile slot labels `bg3_A729/A737/A73D`),
-     Minors in `docs/polish.md`; worth a `codex exec -s read-only` story pass once its quota is back (2026-11-26),
-     reading `docs/synopsis.md` + `docs/style-reference.md`.
-     Phase-7 items: widen item/tactic name fields to 12 (D10); repoint the 2-tile shop Buy/Sell slots and
-     `bg3_A687`; check by eye the D11 labels, the status template (`bg3_8F96`, "Luck" is 2 tiles longer than うん)
-     and the teleport list at 9 letters (`MENU_CAP`).
+  0. **Phase 8: QA in the emulator** (done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
+     `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
+     Phase-8 items from phase 7: the 8 ids in `script/keep_jp.txt` (battle particles and `bt_19D4BB`: see them in a
+     battle, then translate or blank; enemy_40/69: shoot the encounter, `@1DDF`); find the screen of the equip labels
+     `bg3_A729/A737/A73D` (Wpn/Shld/Feet, 4 tiles assumed) and the teleport list at 9 letters (`MENU_CAP`); the
+     Japanese ま in the status screen's bottom-right window (`work/qa/p7/menu_status/final.png`). Minors in
+     `docs/polish.md`; worth a `codex exec -s read-only` story pass once its quota is back (2026-11-26).
   1. **Carried from phase 5** (not blocking translation; the battle part belongs to the phase-8 coverage pass):
      - **1a. Battle-window marker tour** (`battle_cover.py`, 40/133 read; consolidated run `work/qa/bcov_all` done,
        use `--jobs 3`). Still unread and why: `19E09C-19FABE` + `16EF84+` = magic synthesis screen (bank-29 code
@@ -254,7 +265,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
   4. Chapter 4 recap (room 198 NPC talk `$7F:015A`) has no scene: talking to that NPC needs its position; text
      coverage will flag it if missed.
 - **Open bugs:** none.
-- **Waiting on the user:** non-blocking: item/spell description boxes are 6 x 7 and 7 x 4 fixed 8 px tiles; the
+- **Waiting on the user:** non-blocking: item names are 9 letters (D18; a few abbreviated, listed in
+  `docs/polish.md`): say if you want the bigger engine change (one-column item lists, new cursor logic) for full
+  12-letter names. Non-blocking: item/spell description boxes are 6 x 7 and 7 x 4 fixed 8 px tiles; the
   default (D9) writes terse English to them; say if you want the engine change that draws descriptions through the
   dialogue VWF in a wide bottom box instead. Non-blocking: BG3 list names (shop list etc.) use a fixed 8 px font with lowercase rather
   than a VWF, since BG3 has no free tiles for one; default kept, say if you want the bigger engine change.

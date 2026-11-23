@@ -12,7 +12,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
   words the game borrows where the word is obvious (グルド = Guld, Swedish "gold"; ヴァテン = Vatten "water";
   リーケ = -rike "realm"; エット トヴォー トレー = "Ett, tva, tre", Swedish one-two-three).
 - Credits: English (D3). Register: plain, warm storybook English; children and rough men keep their voice.
-- Abbreviations: full words (D4). Names fit their fields (D10): items and tactics 12 letters, spells 8, so pick a
+- Abbreviations: full words (D4). Names fit their fields (D18, was D10): items 9 letters, tactics 8, spells 8, so pick a
   short natural word first; a real abbreviation is flagged in the notes column.
 
 ## Style rules
@@ -114,8 +114,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 |---|---|---|---|---|
 | マナ | mana / Mana | | 火/水/大地/風のマナ = Fire/Water/Earth/Wind Mana | |
 | ネファ | Nepha | | 銀/金/光のネファ = Silver/Gold/Light Nepha | |
-| ミランシェル | Miranchel | 12 | the finest armor (item_1D; 12-letter item name field, D10) | |
-| オーラソード | Aura Sword | | | |
+| ミランシェル | Miranchel | 9 | the finest armor (item_1D; 9-letter item name field, D18) | |
+| オーラソード | Aura Sword / AuraSword | | item list form AuraSword (9-tile name field, D18) | |
 | ハーブ | herb / Herb | | | |
 | ソル | Sol | | currency | |
 | エットミランシェル | Ettmiranshel | | the world | |
@@ -129,7 +129,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 魔法司 | mage | | castle/town healer-mages | |
 | 鳥人兵 | birdmen | | Guld flying troops | |
 | いやしの館 | House of Healing | | | |
-| 密書 | secret letter / Missive | | in talk "the secret letter"; the item and "received" messages: Guld Missive | |
+| 密書 | secret letter / Missive | | in talk "the secret letter"; the "received" messages: Guld Missive; item list name "Guld Note" (9 tiles, D18) | |
 | ヴァテン ブレックフェール レーカ | Vatten... Bleckfel... Reka! | | healing chant; エット トヴォー トレー = Ett, tva, tre! (fireball); Guld mage chant = Vem... Stor... Dod!; seal-door chant ヴィール デュー ヴァーラ スネール エプナ デレン = Vill... du... vara... snall, oppna... dorren! (Swedish "would you please open the door") | |
 | グルド王 | King of Guld | | also the speaker label | Guld King |
 | ファイアボール / エクスプロード / ミラーイメージ / パラライズ | Fireball / Explode / Mirror / Paralyze | | spell names, 8 tiles | |

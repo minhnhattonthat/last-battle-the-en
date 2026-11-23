@@ -413,7 +413,7 @@ nm_icap:                ; A = return address into F3C0's caller -> A = field til
     dw $EE73, $8009     ; FA09: space, name (window 9 wide)
     dw $EEB9, $8009     ; FA16: cursor, space, name (10)
     dw $F385, $8009     ; FA11: 2 x (cursor, space, name, space) (21)
-    dw $F3B2, $0008     ; FA0E: 2 x (space, name) (18): the field item window; the space is the cursor's
+    dw $F3B2, $0009     ; FA0E: 2 x (space, name) (20, widened by insert.WINDOW_HEADERS): field item windows; the space is the cursor's
     dw $F2EB, $0009     ; FA3C: shop buy list, cursor, name, then the price (it follows the name: 9 is the most)
     dw $F331, $0009     ; FA4B: cursor, name (18)
     dw $0000

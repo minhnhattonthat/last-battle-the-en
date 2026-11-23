@@ -40,13 +40,17 @@ INSERT_PX = {"{actor}": 48, "{target}": 48, "{item}": 54, "{spell}": 54, "{spell
 BG3_CHARS = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz',.-!?&/:+ ")
 BANNERS = (0xB3B0, 0xB631)  # bank-04 place-name banners, 144 px, centred with leading spaces
 CHAR_NAMES = ("b04_B2DA", "b04_B2E2", "b04_B2E8", "b04_B2F0")
-NAME_CAP = 12  # item/tactic names (D10): the BG3 name fields are 8-9 today; phase 7 widens them to 12
+NAME_CAP = 9  # item names (D18): 9 tiles in every list (field item windows widened in phase 7, shop list 9)
+TACTIC_CAP = 8  # tactics names (D18): the field tactics list (01:FE7A, LDA #8) has the formation icons right after it
 LAYOUT_FREE = ("battle",)
 # BG3 strings that share one list window: the cap is the window's widest JP entry, not the string's own length
 # (phase-8 visual check: the teleport list holds 9-letter names; shop commands 4; one-word item notes in the 6-wide box)
 MENU_CAP = {**{f"bg3_{a}": 9 for a in "A1B6 A1C6 A1D8 A1E2 A1EC A1FA A20A A218 A226 A238 A242 A24A A258 A264 A272 "
                                      "A27E".split()},
-            "bg3_9EF0": 4, "bg3_9EF8": 4, "bg3_8F1C": 3, "bg3_A65D": 6, "bg3_A687": 6}  # forms whose JP layout tokens (dakuten rows {2094}...) the English may drop
+            "bg3_9EF0": 4, "bg3_9EF8": 4, "bg3_8F1C": 3, "bg3_A65D": 6, "bg3_A687": 6,
+            "bg3_A729": 4, "bg3_A737": 4, "bg3_A73D": 4}  # forms whose JP layout tokens (dakuten rows {2094}...) the English may drop
+# 2-tile slots the build moves whole (insert.BG3_PTRS, insert.MOVED_WINDOWS; D18): no slot limit, at most this many lines
+REPOINTED = {"bg3_9EF0": 1, "bg3_9EF8": 1, "bg3_A687": 7, "bg3_A729": 1, "bg3_A737": 1, "bg3_A73D": 1}
 _ROM = None
 
 
@@ -118,7 +122,7 @@ def limit_label(e):
         return f"{e['w']} chars x {e['h']} rows"
     if f == "name":
         return {"enemies": "2 rows of 8 (split at a space), 16 max", "spells": "8 chars, plus ' A' rank in battle",
-                "items": f"{NAME_CAP} chars", "tactics": f"{NAME_CAP} chars"}[e["_file"]]
+                "items": f"{NAME_CAP} chars", "tactics": f"{TACTIC_CAP} chars"}[e["_file"]]
     return ""
 
 
@@ -218,7 +222,7 @@ def pages(en):
 def width_problems(e, en):
     f = form(e)
     out = []
-    if f not in ("name", "battle") and e.get("size", 99) < 5 and not e.get("ptrs"):  # insert.FAR_LEN; ptrs: repointed
+    if f not in ("name", "battle") and e.get("size", 99) < 5 and not e.get("ptrs") and e["id"] not in REPOINTED:
         words = len(TOKEN.findall(en)) + len(TOKEN.sub("", en))
         if 2 * words > e["size"]:
             out.append(f"{words} words in a {e['size']}-byte slot (too short to relocate: max {e['size'] // 2})")
@@ -240,12 +244,19 @@ def width_problems(e, en):
         plain = TOKEN.sub(lambda m: "" if m[0] != "{nl}" else "\n", en)
         lines = plain.split("\n")
         cap = MENU_CAP.get(e["id"]) or e.get("max_tiles") or e["tiles"]
-        if e.get("max_tiles"):
-            if len(lines) > e["max_lines"]:
-                out.append(f"{len(lines)} lines > {e['max_lines']}")
+        if e.get("max_tiles") or e["id"] in REPOINTED:
+            most = e.get("max_lines") or REPOINTED[e["id"]]
+            if len(lines) > most:
+                out.append(f"{len(lines)} lines > {most}")
         elif len(lines) != len(TOKEN.sub(lambda m: "" if m[0] != "{nl}" else "\n", e["jp"]).split("\n")):
             out.append("line count differs from the JP")
         out += [f"line over {cap} chars: {ln!r}" for ln in lines if len(ln) > cap]
+        # {009E} draws a number right-aligned over the blanks before it (status screen: "Attack  {009E}" lost its
+        # "k"): keep at least the JP's blanks in front of each one
+        gaps = lambda s: [len(m[1]) for m in re.finditer(r"( *)\{009E\}", s)]  # noqa: E731
+        for i, (g_en, g_jp) in enumerate(zip(gaps(en), gaps(e["jp"]))):
+            if g_en < g_jp:
+                out.append(f"value {i + 1} ({{009E}}): {g_en} blanks before it < JP {g_jp} (it overwrites the label)")
     elif f == "battle" and list((ROOT / "rom").glob("*.sfc")):
         try:
             import battle_text
@@ -254,7 +265,7 @@ def width_problems(e, en):
             out.append(f"battle rect: {x}")
     elif f == "name":
         import insert
-        cap = {"enemies": 16, "spells": 8}.get(e["_file"], NAME_CAP)
+        cap = {"enemies": 16, "spells": 8, "tactics": TACTIC_CAP}.get(e["_file"], NAME_CAP)
         if len(TOKEN.sub("", en)) > cap:
             out.append(f"over {cap} chars")
         if e["_file"] == "enemies" and not insert.battle_fits(en):
@@ -316,7 +327,10 @@ def problems(entry, en, terms):
     free = FREE | ({"{009F}"} if form(entry) == "menu" else set())  # the BG3 full-stop tile: English writes "."
     want = Counter(t for t in TOKEN.findall(jp) if t not in free)
     have = Counter(t for t in TOKEN.findall(en) if t not in free)
-    if want != have and form(entry) not in LAYOUT_FREE:
+    if form(entry) == "name":  # English byte names are plain ASCII (insert.NameTable): a token prints as typed
+        if have:
+            out.append(f"control codes in a name print as text: {dict(have)}")
+    elif want != have and form(entry) not in LAYOUT_FREE:
         out.append(f"control codes differ: JP {dict(want)} EN {dict(have)}")
     if re.search(VARIABLE + r"(st|nd|rd|th)\b", en):
         out.append('ordinal suffix after a variable (write "No. {num}")')
@@ -439,6 +453,19 @@ def merge(new, overwrite):
     print(f"merged: {changed} entries changed")
 
 
+def keep_jp():
+    """script/keep_jp.txt: `id  reason` per line (# comments): entries allowed to ship without English. An entry
+    listed without a reason, unknown, or translated is an error (returned with an empty or stale reason)."""
+    path = ROOT / "script" / "keep_jp.txt"
+    out = {}
+    if path.exists():
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if line.strip() and not line.startswith("#"):
+                eid, _, why = line.strip().partition(" ")
+                out[eid] = why.strip()
+    return out
+
+
 def main(argv):
     if not argv:
         sys.exit(__doc__)
@@ -456,6 +483,11 @@ def main(argv):
     entries, terms = index(), glossary()
     if cmd == "check" and not names:
         bad = [f"{i}: {p}" for i, e in entries.items() if e.get("en") for p in problems(e, e["en"], terms)]
+        keep = keep_jp()
+        bad += [f"{i}: untranslated (translate it, or list it in script/keep_jp.txt with a reason)"
+                for i, e in entries.items() if e.get("jp", "").strip() and not e.get("en") and i not in keep]
+        bad += [f"{i}: script/keep_jp.txt: no reason, unknown id, or translated" for i, why in keep.items()
+                if not why or i not in entries or entries[i].get("en")]
         print(f"{len(entries)} entries, {sum(bool(e.get('en')) for e in entries.values())} translated, {len(bad)} problems")
         print("\n".join(bad[:200]))
         return 1 if bad else 0

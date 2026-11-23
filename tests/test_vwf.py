@@ -236,7 +236,10 @@ def test_item_name_fields_fit_their_windows():
     name field (tiles; $8000 = the name takes the space before it) every row of every bank-04 window script using
     that op stays within the window's width (low byte of the header's second word)."""
     import re
-    rom = ORIG.read_bytes()
+    rom = bytearray(ORIG.read_bytes())
+    for off, (old, new) in insert.WINDOW_HEADERS.items():  # the widths the build gives
+        assert rom[off:off + 4] == old
+        rom[off:off + 4] = new
     word = lambda o: int.from_bytes(rom[o:o + 2], "little")  # noqa: E731
     src = (ROOT / "asm" / "vwf.asm").read_text(encoding="utf-8")
     tab = re.findall(r"dw \$([0-9A-F]{4}), \$([0-9A-F]{4})\s+; (FA[0-9A-F]{2})", src)
@@ -269,3 +272,28 @@ def test_item_name_fields_fit_their_windows():
                     row += tiles if w == op else 1
             scripts += 1
     assert scripts >= 8
+
+
+@pytest.mark.skipif(not ORIG.exists(), reason="no ROM")
+def test_english_build_moves(tmp_path):
+    """Phase 7: the English build passes romdiff (build.build raises otherwise), the moved shop command window is
+    reached through its window-table word and starts with the original header, every repointed 2-tile label's
+    pointer lands on its English ending in `00 FF`, and the widened item windows have their new headers."""
+    import json
+    import build
+    from textcodec import bg3_en
+    rom, _ = build.build(tmp_path / "en.sfc")
+    orig = ORIG.read_bytes()
+    word = lambda b, o: int.from_bytes(b[o:o + 2], "little")  # noqa: E731
+    for lo, hi, ptr in insert.MOVED_WINDOWS:
+        at = 0x20000 + (word(rom, int(ptr, 16)) & 0x7FFF)
+        assert at != lo and rom[at:at + 4] == orig[lo:lo + 4]
+        assert at <= rom.find(b"\x00\xff", at) < at + (hi - lo) + 16
+    menus = {e["id"]: e for e in json.loads((ROOT / "script" / "menus.json").read_text(encoding="utf-8"))["entries"]}
+    for eid, ptrs in insert.BG3_PTRS.items():
+        enc = bg3_en().encode(menus[eid]["en"])
+        for p in ptrs:
+            at = 0x20000 + (word(rom, int(p, 16)) & 0x7FFF)
+            assert rom[at:at + len(enc) + 2] == enc + b"\x00\xff", eid
+    for off, (_, new) in insert.WINDOW_HEADERS.items():
+        assert rom[off:off + 4] == new

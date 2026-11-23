@@ -51,4 +51,4 @@ JP: 「こう見えても むかしは 傭兵隊長まで つとめたワシぞ�
   couldn't smash, mark me. / Next to me, even Svart's still just a whelp, eh?"
 
 ## Names
-Spells 8 letters, items/tactics up to 12 (D10); currency "Sol".
+Spells 8 letters, items up to 9, tactics 8 (D18); currency "Sol".
