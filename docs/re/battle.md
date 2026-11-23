@@ -64,6 +64,12 @@ are read in game. Not reachable from a new-game state: the 19E09C-19FABE family 
 power/range labels, spell effect lines, "need more mana"/"max MP too low" boxes: the magic synthesis screen of the
 magic healers, E4 06/07, which needs mana and money), the other party members' names (198926/36/46: needs a
 party), status-effect messages 1D82xx and most use messages (need a damaged or afflicted party).
+The synthesis family's scripts are started from bank-29 code `29:D4xx-E8xx` (`LDA #script; JSL $29A1EA` at
+29:D50D, D8BF, D8E2, DA4D, DA63, DAA8, DC15, E7E8; state bytes `$1872-$18E5`, e.g. `$187A/$187B/$187C` gate the
+29:D8BF box). None of it runs in the magic-healer flows E4 06 00/01/02 and E4 07 01 (`exec_log.lua`, run
+`work/qa/syn5`: those scripts only offer heal yes/no, then pick a member). Next: find the entry (no JSL/JML or word
+table points into 29:D420-D42B; look for a `JMP ($xxxx,x)` table in bank 29 or a PEA/RTL dispatch) and which
+script or item (the 魔宝石 "magic gem" of `b04_C635`) opens it.
 The spell info column right of the battle magic window (いりょく/しゃていきょり/MP, garbled "&:uま" by the
 lowercase tiles) is not read from any ROM rect: 29:C910/CD7C read only the layout tables at `0x198E7B` and
 `0x198F57` (destination lists), so its labels are tiles from a decompressed block in WRAM (phase 8, with the

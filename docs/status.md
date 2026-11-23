@@ -9,6 +9,14 @@ Updated at the end of every session. Keep it to what the next session needs; his
   Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) and `build/lastbattle_en.sfc` boot
   (smoke ok, 2026-11-23 session 8).
 - **Done:**
+  - **Phase 5, session 2026-11-24 (10):** consolidated battle tour `work/qa/bcov_all` (all 23 routes, `--jobs 3`,
+    5200 frames): 39/133 (40 with the earlier runs; the 94 unread are the state-gated families below). Width gate
+    rows added to `docs/re/windows.md`: epilogue = 216 px (40-digit ruler, `work/qa/epi`), shop/inn/healer talk and
+    item-use messages = the 216 px dialogue box, field item list = 2 columns of 11 tiles, BG3 menu strings = JP tile
+    count, battle rects = `w` x `h` tiles. Item-use flow reachable by poking items (`menu_item` keys + 4 more A,
+    `@19CF:4342,@19D1:4544`, `work/qa/mitem`). Synthesis screen: code located (bank 29, `docs/re/battle.md`
+    §Coverage) but not reached; magic-healer args 00/01/02 only heal. Full marker re-tour started on the current
+    marker build: `work/qa/marker_tour2` (see Next 1b).
   - **Phase 5, session 2026-11-24 (9):** battle tour 20 -> 40/133 ids read (union of `work/qa/bcov2..9`): orders
     sub-commands まほう/ねらう/アイテム/そうび (left/right before A picks one), たれを？, item descriptions (11),
     "no weapon to equip", equip stat box `18640A`, use messages `18653A`/`186562`, victory `140017`. Inventory by
@@ -117,10 +125,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   1. **Finish phase 5** (done-when: marker ROM boots, every text box shows its id, non-text strings excluded, every
      box variant measured). Left:
-     - **1a. Battle-window marker tour** (`battle_cover.py`, 40/133 read): first re-run
-       `battle_cover.py work/qa/bcov_all --frames 5200` (all routes; killed for memory last session). Still unread
-       and why: `19E09C-19FABE` + `16EF84+` = magic synthesis screen at the magic healers (`svc_06_00`/`svc_07_00`,
-       icons after 3 A; needs mana + money: find where mana counts live, likely `$1C90-$1DD8`, and poke them);
+     - **1a. Battle-window marker tour** (`battle_cover.py`, 40/133 read; consolidated run `work/qa/bcov_all` done,
+       use `--jobs 3`). Still unread and why: `19E09C-19FABE` + `16EF84+` = magic synthesis screen (bank-29 code
+       29:D4xx-E8xx, not run by the healer scripts E4 06 00/01/02, E4 07 01: find its entry, `docs/re/battle.md`
+       §Coverage; if it stays unreachable, force-call the scripts from a Lua hook in a battle state to see the markers);
        `198926/36/46` other members' names (needs a 4-member party: `$3E`/`$0600` pokes at READY did not do it;
        find what the battle unit setup 29:B216 reads, or use a story save); `1D82xx` status effects, `1865xx`/
        `1866xx` use messages, `1991BB`/`1992DB` no spells / not enough MP, `19F1F3/19F247/19F39F` yes/no
@@ -134,8 +142,17 @@ Updated at the end of every session. Keep it to what the next session needs; his
        `snes_romreads.lua`. Rank form of the spell-cast window still unseen. The 8-byte table at `0x182C57`
        (クルト, メイ, ボルグ, レジーナ) had no reader in `battle_field`; find its user. Enemy names `enemy_40` /
        `enemy_69` use two-row kanji bytes: shoot them in battle for the translator (`@1DDF` picks the encounter).
-     - **1b. Re-run the full marker tour** (113 + `name_type`) on the current marker build and list what is still
-       Japanese (`work/qa/mt_sheets` is from before the BG3 strings).
+     - **1b. Full marker tour** (113 + `name_type`) ran on marker build sha1 `b72968db` into `work/qa/marker_tour2`
+       (session 10): 114/114 reached; sheets of the final frames in `work/qa/mt2_sheets/sheet*.png` (not yet
+       reviewed): list what is still Japanese (send sheets to a read-only
+       pass in chunks; `work/qa/mt_sheets` is from before the BG3 strings).
+     - **Per-caller BG3 cap, worked out (session 10), not yet coded:** 01:FE59 (item record names, return `$FE76`)
+       is called only from 01:F3C0, which the field item list (`$19CF,x` = character record items) and the shop
+       use; F3C0 then draws with 01:B6FA count `#$0008` at **01:F3CD** (B6FA pads with space `$93` up to the count,
+       so a raised count pads short names). In `nm_feaa` after its `pha` the stack is kind(1,s) X(3,s) count(5,s)
+       B(7) P(8) return(9,s): cap = 10 when `9,s == $FE76`. Also needed: the empty-slot advance `ADC #$0010` at
+       01:F3B8 (8 tiles x 2) -> `#$0014`, and find what puts the 2nd column at x 183 (3-tile gap after 8 tiles;
+       with 10 tiles it must stay at 11 tiles per column). Verify in `menu_item` (items poked) and the shop.
      - Name entry opens with rows `56789` / `: +` above the cursor row `ABCDE` (the view shows 2 rows before row 0,
        as the kana grid did): consider reordering `insert.NE_GRID` so the first view starts on letters.
      - **BG3 caps for FA inserts**: names inserted into BG3 strings (FA0F/FA18/FA2B/FA2F/FA42) all reach 01:FEAA
@@ -153,8 +170,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
      - **Description boxes** (item/spell descriptions in the shop and spell screens, now `bg3_A3xx`-`bg3_ACxx` in
        `menus.json`): 5 tiles per line x 4 lines of 8 px fixed tiles, far too small for English. Plan engine work
        (wider box via the window op, or draw them through the VWF canvas) and measure the result.
-     - Width gate still to measure (`docs/re/windows.md` "Still to measure"): the epilogue right edge, the item-description box (`common`/bank-04 descriptions, `menu_item` > item > info),
-       battle message box, BG3 name fields per screen (`stack_log.lua --var "ADDRS='01FEAA'"` over the menu, shop
+     - Width gate still to measure (`docs/re/windows.md` "Still to measure"): the item-description box
+       (`common`/bank-04 descriptions, `menu_item` > item > info), BG3 name fields per screen (`stack_log.lua --var "ADDRS='01FEAA'"` over the menu, shop
        and battle scenes gives each caller; then the per-caller cap table in `nm_feaa`).
      - No marker showed in an odd place in the tour (no non-text found yet); re-check after 1a.
      - Tests so far: `tests/test_vwf.py` (font, EN codec, far-jump fit); add one that boots nothing but checks the
