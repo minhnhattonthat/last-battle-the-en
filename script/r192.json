@@ -257,126 +257,126 @@
    "addr": "1599",
    "size": 158,
    "jp": "「わずかなケガも{nl} 戦いの中に おいては{nl} いのちとりになりかねません。{page}{FB00}「わたしは みなさまの{nl} そのような ご心配について{nl} お力になれると思います。{page}",
-   "en": ""
+   "en": "\"Even a small wound can cost you your{nl} life in battle.{page}{FB00}\"I believe I can help with any such{nl} worries of yours.{page}"
   },
   {
    "id": "r192_1642",
    "addr": "1642",
    "size": 42,
    "jp": "「あんた グルヴァの村を{nl} 知ってるかい？",
-   "en": ""
+   "en": "\"Do you know Gulva Village?"
   },
   {
    "id": "r192_1672",
    "addr": "1672",
    "size": 160,
    "jp": "「オレは そのグルヴァ村から{nl} 仲間と いつしょに{nl} ここまで 来たんだけど・・・{page} あんまり大勢の人間が{nl} 出入りしているもんで{nl} 仲間と はぐれちまったぜ。",
-   "en": ""
+   "en": "\"I came here with my mates from that{nl} Gulva Village, but...{page} with so many people coming and going, I{nl} lost them."
   },
   {
    "id": "r192_1714",
    "addr": "1714",
    "size": 166,
    "jp": "「そうそう どうやらオレたち{nl} 鉱山村の者でなきゃ できない{nl} 大仕事が あるって話で・・・。{page}{FB00}「みんな オレを ほったらかして{nl} 穴掘り道具を 探しに行ったかな？",
-   "en": ""
+   "en": "\"Oh yeah, seems there's a big job only{nl} folks from a mining village can do...{page}{FB00}\"Did everyone leave me behind and go{nl} look for digging tools?"
   },
   {
    "id": "r192_17BE",
    "addr": "17BE",
    "size": 178,
    "jp": "「そうかい ざんねんだな。{wait}{wait}{wait}{nl} 道具屋のじいさんに かわいい{nl} ふたごの娘がいてね・・・。{page}{FB00}「へへへ この戦争が終ったら{nl} その娘と いっしょになりたいと{nl} 思ってるんだ。",
-   "en": ""
+   "en": "\"Oh, too bad. {wait}{wait}{wait}The old man at the{nl} item shop has cute twin{nl} granddaughters...{page}{FB00}\"Heh heh, when this war's over, I want{nl} to marry one of them."
   },
   {
    "id": "r192_1878",
    "addr": "1878",
    "size": 150,
    "jp": "「ヘ－グも ロ－グも 近くの森へ{nl} みんなの分の メシのおかずを{nl} つかまえに 行ってるよ。{page}「あの兄弟が じっとしている{nl} わけが ないじゃないか。",
-   "en": ""
+   "en": "\"Heeg and Rogue have gone to the{nl} nearby woods to catch something to go{nl} with everyone's dinner.{page}\"As if those brothers could sit still."
   },
   {
    "id": "r192_1910",
    "addr": "1910",
    "size": 154,
    "jp": "「がはははは～！{page}「腕がなるぞ{nl} あんな扉 ワシのこの げんこつで{nl} ボコボコに してやるから{page} いいかい 兄ちゃんたち{nl} オレの後に しっかりつづけよ。",
-   "en": ""
+   "en": "\"Gahahaha~!{page}\"I'm itching to go. I'll smash that door{nl} to bits with this fist of mine,{page} so, young ones, follow close behind me."
   },
   {
    "id": "r192_19AC",
    "addr": "19AC",
    "size": 134,
    "jp": "「うお－ ドン ドコ ドン！{page} ヤ－ク族の 破壊力は{nl} 破城つちだけじゃないことを{page} グルドの やつらに{nl} たっぷりと 見せてやるぜ。",
-   "en": ""
+   "en": "\"Wooo, boom ba-doom boom!{page} The battering ram isn't the only Yaak{nl} power that smashes things,{page} and we'll show those Guld rats plenty!"
   },
   {
    "id": "r192_1A3A",
    "addr": "1A3A",
    "size": 106,
    "jp": "「くそ－つ！！{page} 「城塞の門のまえに あんな{nl} からぼりを 掘られては{nl} ヤ－クの破城つちは 使えないぞ。",
-   "en": ""
+   "en": "\"Dammit!!{page}\"With a moat like that dug in front of{nl} the fortress gate, we can't use the{nl} Yaak battering ram."
   },
   {
    "id": "r192_1AA6",
    "addr": "1AA6",
    "size": 58,
    "jp": "「敵も 味方も 国の運命が{nl} かかっているから 必死だな。",
-   "en": ""
+   "en": "\"Friend and foe alike are desperate,{nl} with their country's fate at stake."
   },
   {
    "id": "r192_1B18",
    "addr": "1B18",
    "size": 356,
    "jp": "ユ－リ{nl}「われわれは ついに{nl} ここまで来た。{page}{D302}{FB00}「シルヴェル城を 取り返すことで{nl} 始まりの戦いは 終わった。{page}「しかし ここから{nl} あらたに 終わりのための戦いが{nl} はじまる。{page}「この戦争を 終わらせる{nl} その 最後の戦いが終るまで{wait}{wait}{wait}{wait}{nl} 我ヶは 戦いぬかなくてはならない。{page} この戦いには{nl} エットミランシェルの{nl} 未来が かかっているのだ！{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"At last we have come this far.{page}{D302}{FB00}\"With Silvel Castle taken back, the{nl} battle of beginnings is over.{page}\"But from here begins a new battle, a{nl} battle for the ending.{page}\"Until the last battle that ends this war{nl} is done, {wait}{wait}{wait}{wait}we must fight on.{page} The future of Ettmiranshel rests on{nl} this battle!{page2}"
   },
   {
    "id": "r192_1C83",
    "addr": "1C83",
    "size": 54,
    "jp": "「全軍 ベルグデレン城塞に向け{nl} 進撃を開始せよ！！{page2}",
-   "en": ""
+   "en": "\"All forces, begin the advance on{nl} Bergdelen Fortress!!{page2}"
   },
   {
    "id": "r192_1D0B",
    "addr": "1D0B",
    "size": 124,
    "jp": "クルトたちは 足元をしらべた。{page}{FB00}ひとふりの剣が ふかぶかと{nl}地面を さしつらぬいている。{page}{FB00}剣を 地面から引き抜きますか？",
-   "en": ""
+   "en": "Kurt and the others searched{nl}the ground.{page}{FB00}A sword is plunged deep{nl}into the earth.{page}{FB00}Pull the sword from the ground?"
   },
   {
    "id": "r192_1D99",
    "addr": "1D99",
    "size": 54,
    "jp": "{page2}{F9FF}クルトたちは{nl}エルドの剣を 手に入れた。{B028}{C12A}{C1FF}{C129}{page2}",
-   "en": ""
+   "en": "{page2}{F9FF}Kurt and the others got{nl}Eld's Sword.{B028}{C12A}{C1FF}{C129}{page2}"
   },
   {
    "id": "r192_1DD5",
    "addr": "1DD5",
    "size": 88,
    "jp": "クルトたちは 足元をしらべた。{page}{FB00}そこには 剣を引抜いたあとの{nl}小さな穴が あいている。",
-   "en": ""
+   "en": "Kurt and the others searched{nl}the ground.{page}{FB00}There is a small hole where{nl}a sword was pulled out."
   },
   {
    "id": "r192_1E31",
    "addr": "1E31",
    "size": 54,
    "jp": "「クルトたちは 剣を{nl} そのままにしておくことにした。",
-   "en": ""
+   "en": "\"Kurt and the others decided{nl} to leave the sword where it was."
   },
   {
    "id": "r192_1E6B",
    "addr": "1E6B",
    "size": 62,
    "jp": "ほかのアイテムが かさばって{nl}剣を引く手に 力が入らなかった。",
-   "en": ""
+   "en": "Their other items were too bulky{nl}to get a grip on the sword."
   },
   {
    "id": "r192_1EAB",
    "addr": "1EAB",
    "size": 24,
    "jp": "そこには何もありません。",
-   "en": ""
+   "en": "There is nothing there."
   }
  ]
 }

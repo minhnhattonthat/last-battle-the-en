@@ -11,154 +11,154 @@
    "addr": "00E0",
    "size": 240,
    "jp": "ユ－リ{nl}「キミたち よくきてくれた。{page}「ちょうど ベルグデレン城塞の{nl} 攻略について 議論していたのだ。{page}{FB00}「きみ達にも 参加してもらうから{nl} ひとやすみしている いまのうちに{page} みんなのところを まわって{nl} 意見を聞いておいてくれたまえ。",
-   "en": ""
+   "en": "Yuri{nl}\"You came. Good.{page}\"We were just discussing how to take{nl} Bergdelen Fortress.{page}{FB00}\"I want you in on it too, so while we{nl} take a break,{page} go around to everyone and hear what{nl} they think."
   },
   {
    "id": "r193_01D6",
    "addr": "01D6",
    "size": 172,
    "jp": "ユ－リ{nl}「城塞の 守りについているのは{nl} ラバン将軍という 猛将だ。{page}「そう 呼ばれるほどに{nl} 血の気が多い人物という事だね。{page}「わたしからの 擾報は{nl} こんなところかな。",
-   "en": ""
+   "en": "Yuri{nl}\"The fortress is defended by a fierce{nl} general named Laban.{page}\"Hot-blooded enough to earn that{nl} name, I mean.{page}\"That's about all I can tell you."
   },
   {
    "id": "r193_0288",
    "addr": "0288",
    "size": 132,
    "jp": "「きみ達にも 参加してもらうから{nl} ひとやすみしている いまのうちに{page} みんなのところを まわって{nl} 意見を聞いておいてくれたまえ。",
-   "en": ""
+   "en": "\"I want you in on it too, so while we{nl} take a break,{page} go around to everyone and hear what{nl} they think."
   },
   {
    "id": "r193_030E",
    "addr": "030E",
    "size": 78,
    "jp": "ユ－リ{nl}「城塞攻略の 会議に加われるように{nl} もう みんなの話は聞いたのかい？",
-   "en": ""
+   "en": "Yuri{nl}\"Have you heard everyone out yet,{nl} ready for the fortress council?"
   },
   {
    "id": "r193_0366",
    "addr": "0366",
    "size": 68,
    "jp": "ユ－リ{nl}「すぐに 会議を再開するから{nl} いそいで 聞いておきなさい。",
-   "en": ""
+   "en": "Yuri{nl}\"We'll resume the council soon, so go{nl} hear them quickly."
   },
   {
    "id": "r193_03B3",
    "addr": "03B3",
    "size": 62,
    "jp": "ユ－リ{nl}「では みなさん{nl} そろそろ 会議を再開しましょう。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Well, everyone, let us resume the{nl} council.{page2}"
   },
   {
    "id": "r193_046F",
    "addr": "046F",
    "size": 572,
    "jp": "ユ－リ{nl}「・・・・・・では そろそろ{nl} 今までの話を まとめましょうか。{page}{FB00}「まず 城塞をまもる{nl} ラバン将軍の 性格を利用して{nl} 敵を挑発します。{page} 必ず 外へ かなりの部隊を{nl} だしてくるはずです。{page} この {wait}{wait}{wait}でてきた部隊を{nl} いくら 打ち破っても{nl} 城塞は落とせません。{page}「しかし・・・{page}{FB00}「敵が正面の 戦いに{nl} 気を とられているうちに{nl} 右側のガケにトンネルを掘ります。{page}{FB00}「手うすになった城塞のなかへ{nl} トンネルから 突撃隊をおくりこみ{nl} 城門さえ 開いてしまえば{page} ベルグデレン城塞は落とせます。{page}{FB00}「あとは いっきに{nl} グルド城下になだれこむのです。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"......Well then, let us sum up what has{nl} been said.{page}{FB00}\"First, we use the temper of General{nl} Laban, who holds the fortress, to{nl} provoke the enemy.{page} He is sure to send a large force outside.{page} However many {wait}{wait}{wait}of those troops{nl} we beat, the fortress won't fall.{page}\"But...{page}{FB00}\"While the enemy is caught up in the{nl} fight out front, we dig a tunnel{nl} through the cliff on the right.{page}{FB00}\"Send a strike team through the tunnel{nl} into the thinly held fortress. Once they{nl} open the gate,{page} Bergdelen Fortress will fall.{page}{FB00}\"Then we pour into Guld's castle town in{nl} one rush.{page2}"
   },
   {
    "id": "r193_06B2",
    "addr": "06B2",
    "size": 142,
    "jp": "スレ－ク{nl}「場合によっては グルドの{nl} 城下町は 大混乱になるね。{page} まあ わたしらの町を{nl} めちゃくちゃにしてくれた{nl} グルドだが・・・。{page2}",
-   "en": ""
+   "en": "Sleek{nl}\"Depending on how it goes, Guld's castle{nl} town will be thrown into chaos.{page} Well, Guld did make a wreck of our{nl} town...{page2}"
   },
   {
    "id": "r193_074D",
    "addr": "074D",
    "size": 502,
    "jp": "レジ－ナ{nl}「ひとこと わたしにも{nl} 言わせてほしい・・・{page}{FB00}「グルド王国が 兵をひきいて{nl} 平和な 町や村に乗りこんだ。{nl} これは ゆるされることではない。{page}{FB00}「しかし この戦いは{nl} グルドの国民が のぞんだものでは{nl} ないのだ。{page} ひとにぎりの者の 野心によって{nl} 引き起こされた戦いなのだ。{page}「できるだけ 罪のない者たちが{nl} 巻きこまれないような{nl} 戦いかたをしてほしい。{page}{FB00}「このようなこと{nl} この席で 言えることでは{nl} ないのは わかっている。{page}{FB00}「ただ ひとこと{nl} 言っておきたかったのだ。{page2}",
-   "en": ""
+   "en": "Regina{nl}\"Let me say a word too...{page}{FB00}\"The Guld kingdom led its soldiers into{nl} peaceful towns and villages. That{nl} cannot be forgiven.{page}{FB00}\"But this war is not what the people of{nl} Guld wanted.{page} It is a war started by the ambition of a{nl} handful.{page}\"I ask that you fight so that as few{nl} innocent people as possible are dragged{nl} in.{page}{FB00}\"I know this is not something I can say{nl} at this table.{page}{FB00}\"I only wanted to say it, once.{page2}"
   },
   {
    "id": "r193_0953",
    "addr": "0953",
    "size": 28,
    "jp": "ボルグ{nl}「レジ－ナ様・・・{page2}",
-   "en": ""
+   "en": "Borg{nl}\"Regina-sama...{page2}"
   },
   {
    "id": "r193_0984",
    "addr": "0984",
    "size": 60,
    "jp": "スレ－ク{nl}「グルド王の娘の名前は{nl} たしか レジ－ナ・・・{page2}",
-   "en": ""
+   "en": "Sleek{nl}\"The King of Guld's daughter's name was{nl} Regina, if I remember...{page2}"
   },
   {
    "id": "r193_09CA",
    "addr": "09CA",
    "size": 36,
    "jp": "スヴァルト{nl}「・・・・・・・・・。{page2}",
-   "en": ""
+   "en": "Svart{nl}\".........{page2}"
   },
   {
    "id": "r193_09F8",
    "addr": "09F8",
    "size": 258,
    "jp": "スレ－ク{nl}「わたしだって グルドの人間が{nl} 憎いわけではない。{page} はやく 平和な時代が{nl} もどればいいと 願っている{nl} ひとりの男さ。{page2}{F9FF}{D320}フェ－ベンネルス{nl}{B278}「ここに集った者は{nl} みな そのような者たちじゃよ。{page}「それは レジ－ナ殿も{nl} わかっていよう。{page2}",
-   "en": ""
+   "en": "Sleek{nl}\"I don't hate the people of Guld either.{page} I'm just one man who hopes peaceful{nl} times come back soon.{page2}{F9FF}{D320}Febennels{nl}{B278}\"Everyone gathered here is like that.{page}\"Regina-dono knows that too.{page2}"
   },
   {
    "id": "r193_0B01",
    "addr": "0B01",
    "size": 276,
    "jp": "ユ－リ{nl}「我ヶは 勝たねばなりません。{page}{FB00}「しかし その勝利が{nl} 新たな戦いの 火種となるような{nl} ものであってはならないのです。{page}「町の人間を 戦いに{nl} 巻きこまないように 兵士たちに{nl} ふれまわらせるとしましょう。{page2}{F9FF}{D330}「夜明けも近いようです{nl} 進撃を 開始しましょう。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"We must win.{page}{FB00}\"But that victory must not be the spark{nl} of a new war.{page}\"Let us have word spread among the{nl} soldiers not to drag the townsfolk into{nl} the fighting.{page2}{F9FF}{D330}\"Dawn seems near. Let us begin the{nl} advance.{page2}"
   },
   {
    "id": "r193_0C27",
    "addr": "0C27",
    "size": 216,
    "jp": "フェ－ベンネルス{nl}「おお クルトか。{page} おまえの 生まれの事を{nl} 知りながらも 話さなんだワシを{nl} うらんでおるじゃろうな。{page}「もの みな 時がいたらねば{nl} 意味をなさぬ事も あるのじゃ。{nl} ゆるしておくれ クルト。",
-   "en": ""
+   "en": "Febennels{nl}\"Oh, Kurt.{page} You must resent me for knowing of{nl} your birth and not telling you.{page}\"Some things have no meaning until{nl} their time has come. Forgive me, Kurt."
   },
   {
    "id": "r193_0D03",
    "addr": "0D03",
    "size": 274,
    "jp": "フェ－ベンネルス{nl}「グルドの ケッテリ卿の{nl} ことを調べておったんじゃが。{page}「わしは どうも{nl} グルドの ケッテリ卿が{nl} 一人で たくらんだにしては{page} 今回のこと できすぎと{nl} 思っておった。{page}{FB00}「どうも・・・・・・。{nl} いや このことは もっと{nl} はっきりしてから話そう。",
-   "en": ""
+   "en": "Febennels{nl}\"I have been looking into Guld's Lord{nl} Ketteri.{page}\"It seemed to me that this whole affair{nl} was too well done{page} for Lord Ketteri of Guld to have{nl} plotted it alone.{page}{FB00}\"It seems...... No, I will speak of this{nl} when it is clearer."
   },
   {
    "id": "r193_0E17",
    "addr": "0E17",
    "size": 200,
    "jp": "フェ－ベンネルス{nl}「エルフ王の ロベルト殿も{page} この戦が ２つの国の行方を{nl} 左右すると 言っておられた。{page}「それ以上の ことについては{nl} いろいろな力が 働いているゆえ{nl} 見えてこないとのことじゃ。",
-   "en": ""
+   "en": "Febennels{nl}\"Robert-dono, the elf king, also said{page} this war will decide the fate of the two{nl} nations.{page}\"Beyond that, he says, many powers{nl} are at work, so he cannot see."
   },
   {
    "id": "r193_0EE7",
    "addr": "0EE7",
    "size": 166,
    "jp": "スヴァルト{nl}「城塞を 大回りして 山側から{nl} グルド城を 攻める手もあるが。{page} ヤ－ク族じゃない みなさんには{nl} ヨロイ 武器を装備しての{nl} 山ごえは むりだろうな。",
-   "en": ""
+   "en": "Svart{nl}\"We could circle the fortress and attack{nl} Guld Castle from the mountain side.{page} But for you folks who aren't Yaak,{nl} crossing the mountains in armor and{nl} weapons would be too much."
   },
   {
    "id": "r193_0F8F",
    "addr": "0F8F",
    "size": 74,
    "jp": "スヴァルト{nl}「ここはひとつ アタマを使って{nl} 作戦勝ちと いきたいもんだ。",
-   "en": ""
+   "en": "Svart{nl}\"Here I'd like us to use our heads and{nl} win by strategy."
   },
   {
    "id": "r193_0FDB",
    "addr": "0FDB",
    "size": 160,
    "jp": "スヴァルト{nl}「さすがに ベルグデレン城塞！{page} 破城つちが 近づけないように{nl} からぼりが掘ってある。{page} あれでは とても 門の前まで{nl} はこぶことはできないな。",
-   "en": ""
+   "en": "Svart{nl}\"That's Bergdelen Fortress for you!{page} They've dug a moat so the battering{nl} ram can't get close.{page} With that, we can never haul it up to{nl} the gate."
   },
   {
    "id": "r193_1083",
    "addr": "1083",
    "size": 200,
    "jp": "スレ－ク{nl}「城塞のむこうには グルド城が{nl} あるんだ。{page}「グルドの兵力が これ以上{nl} 城塞に つぎこまれないうちに{nl} あれを たたくべきだ。{page}「仕事がら まず気になるのは{nl} そのような 補給の事だな。",
-   "en": ""
+   "en": "Sleek{nl}\"Guld Castle lies beyond the fortress.{page}\"We should hit it before Guld pours any{nl} more troops into the fortress.{page}\"In my line of work, supply is the first{nl} thing I worry about."
   },
   {
    "id": "r193_114D",
    "addr": "114D",
    "size": 152,
    "jp": "スレ－ク{nl}「わたしと いっしょにきた仲間は{nl} みんな 船乗りだ。{page}「おかのうえの 戦いには{nl} なれてはいないが 力と勇気は{nl} おかのモンに まけないよ。",
-   "en": ""
+   "en": "Sleek{nl}\"The friends who came with me are all{nl} sailors.{page}\"They're not used to fighting on land,{nl} but in strength and courage they're a{nl} match for any landlubber."
   },
   {
    "id": "r193_11E7",
