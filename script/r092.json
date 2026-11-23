@@ -11,21 +11,21 @@
    "addr": "0057",
    "size": 76,
    "jp": "「はい いらっしゃいませ。{nl} なにか ごいりようなものが{nl} ございますか。{page}",
-   "en": ""
+   "en": "\"Hello, welcome. Is there anything you{nl} need?{page}"
   },
   {
    "id": "r092_00A8",
    "addr": "00A8",
    "size": 108,
    "jp": "「城塞の戦いで 有名になった{nl} ふたごの姉妹の道具屋です。{page} なにか ごいりようなものが{nl} ございますか。{page}",
-   "en": ""
+   "en": "\"We're the twin sisters' item shop,{nl} famous since the battle at the fortress.{page} Is there anything you need?{page}"
   },
   {
    "id": "r092_0127",
    "addr": "0127",
    "size": 248,
    "jp": "「みんな いそがしいからのぅ。{nl} ヒマなのは わしくらいかのぅ。{nl} そもそも じゃ・・・{page}「宰相のユ－リ様から{nl} この村をみこんで 急ぎの仕事を{nl} たのまれてのぅ。{page}{FB00}「なんでも 急いで武器や防具を{nl} そろえてほしいという{nl} 話じゃったんだがのぅ。",
-   "en": ""
+   "en": "\"Everyone's so busy, eh. I'm about the{nl} only one with time, eh. Now then...{page}\"Chancellor Yuri-sama trusted this{nl} village with a rush job, eh.{page}{FB00}\"Seems he wanted weapons and armor{nl} gathered in a hurry, eh."
   },
   {
    "id": "r092_0229",

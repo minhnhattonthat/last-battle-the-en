@@ -11,168 +11,168 @@
    "addr": "008B",
    "size": 188,
    "jp": "「きみたちは あの時の・・・。{page}{FB00}「我ヶは ユ－リ様の命令で{nl} 城の地下道を抜け{nl} ここまで 落ちのびてきたが{page} 後から 追うと言っておられた{nl} ユ－リ様が まだ{nl} いらっしゃらないのだ。",
-   "en": ""
+   "en": "\"You're the ones from back then...{page}{FB00}\"On Yuri-sama's orders, we fled through{nl} the castle's underground passage all{nl} the way here.{page} But Yuri-sama, who said he'd follow{nl} after us, still hasn't come."
   },
   {
    "id": "r086_014D",
    "addr": "014D",
    "size": 80,
    "jp": "「ユ－リ様は{nl} 時をかせぐために 炎上する城に{nl} 最後まで 残られたのだろうか。",
-   "en": ""
+   "en": "\"Did Yuri-sama stay in the burning{nl} castle to the very end, to buy us time?"
   },
   {
    "id": "r086_01A3",
    "addr": "01A3",
    "size": 126,
    "jp": "「ユ－リ様の 剣士としての{nl} 腕をもってすれば グルド兵などに{nl} やられるはずはないと思うが。{page}{FB00}「やはり ユ－リ様は・・・。",
-   "en": ""
+   "en": "\"With Yuri-sama's skill as a swordsman, I{nl} can't believe Guld soldiers could beat{nl} him.{page}{FB00}\"But still, Yuri-sama must be..."
   },
   {
    "id": "r086_0223",
    "addr": "0223",
    "size": 36,
    "jp": "「なに{wait}！{nl} ユ－リ様が生きてる！！",
-   "en": ""
+   "en": "\"What{wait}! Yuri-sama is alive!!"
   },
   {
    "id": "r086_0249",
    "addr": "0249",
    "size": 62,
    "jp": "「わたしは あの方が{nl} 死なれるはずがないと{nl} 信じていたよ。",
-   "en": ""
+   "en": "\"I believed he could never die."
   },
   {
    "id": "r086_0289",
    "addr": "0289",
    "size": 80,
    "jp": "「王様のご病気も{nl} よい方へ むかってるごようす。{nl} 王国の 冬の時代は終った！",
-   "en": ""
+   "en": "\"The King's illness seems to be getting{nl} better too. The kingdom's winter is over!"
   },
   {
    "id": "r086_02E5",
    "addr": "02E5",
    "size": 38,
    "jp": "グスタフ王{nl}「・・・・・・・・・・・。",
-   "en": ""
+   "en": "King Gustav{nl}\"..........."
   },
   {
    "id": "r086_0311",
    "addr": "0311",
    "size": 144,
    "jp": "グスタフ王{nl}「・・・・・・・・・・・。{page}「我こそは グスタフ・{nl} モナ－ク・デュナスティ・{nl} ７世なり！・・・・・・{page}「・・・・・・・・・・・。",
-   "en": ""
+   "en": "King Gustav{nl}\"...........{page}\"I am Gustav Monarch Dynasti the{nl} Seventh!......{page}\"..........."
   },
   {
    "id": "r086_03AF",
    "addr": "03AF",
    "size": 104,
    "jp": "グスタフ王{nl}「・イスカ－ル・・きさま・・・{nl} 乱心 いたしたか・・・！{page}「なんと いうことを・・・・・。",
-   "en": ""
+   "en": "King Gustav{nl}\".Iskar.. you... have you gone mad...!{page}\"What have you done....."
   },
   {
    "id": "r086_0419",
    "addr": "0419",
    "size": 36,
    "jp": "グスタフ王{nl}「すぅ－・・すぅ－・・・",
-   "en": ""
+   "en": "King Gustav{nl}\"Zzz.. zzz..."
   },
   {
    "id": "r086_0449",
    "addr": "0449",
    "size": 86,
    "jp": "王妃{nl}「ときどき うわごとを{nl} くちにされるだけで・・・{page} 意識が もどらないなんて。",
-   "en": ""
+   "en": "Queen{nl}\"He only talks in his sleep now and{nl} then...{page} He just won't wake up."
   },
   {
    "id": "r086_04A5",
    "addr": "04A5",
    "size": 58,
    "jp": "王妃{nl}「やっと ここまで逃れることが{nl} できたというのに。",
-   "en": ""
+   "en": "Queen{nl}\"And just when we had finally escaped{nl} this far."
   },
   {
    "id": "r086_04E5",
    "addr": "04E5",
    "size": 98,
    "jp": "王妃{wait}{wait}{nl}「生まれてくる 子供に{nl} フェナムンも つけてやれず{nl} このようなことになるなんて・・・",
-   "en": ""
+   "en": "Queen{wait}{wait}{nl}\"I can't even give the child to be born a{nl} Fenamun, and now this..."
   },
   {
    "id": "r086_0549",
    "addr": "0549",
    "size": 278,
    "jp": "王妃{nl}「なんと ユ－リが！{nl} 宰相ユ－リが生きてた！{page}「あの 戦いの中から・・・よくぞ。{nl} {wait}{wait}王様も さぞかし{nl} よろこばれることでしょう。{page}{FB00}「{wait}ですが{wait}・{wait}・{wait}・{wait}{wait}{nl} ちょうど いま{nl} 眠りにつかれたばかりなのです。{page}「おめざめになったら 一番に{nl} お伝えしましょう。{page}",
-   "en": ""
+   "en": "Queen{nl}\"What, Yuri! Chancellor Yuri is alive!{page}\"Out of that battle... how wonderful.{nl} {wait}{wait}The King will surely be overjoyed.{page}{FB00}\"{wait}But{wait}.{wait}.{wait}.{wait}{wait} he has only just{nl} fallen asleep.{page}\"I shall tell him first thing when he{nl} wakes.{page}"
   },
   {
    "id": "r086_0666",
    "addr": "0666",
    "size": 48,
    "jp": "{wait}{wait}「グスタフさま{nl} およろこびになるわ・・・。",
-   "en": ""
+   "en": "{wait}{wait}\"Gustav-sama will be so glad..."
   },
   {
    "id": "r086_0698",
    "addr": "0698",
    "size": 86,
    "jp": "王妃{nl}「よいことを 知らせてくれました。{page} グスタフ王に かわって{nl} 礼をもうします。",
-   "en": ""
+   "en": "Queen{nl}\"You have brought good news.{page} I thank you in King Gustav's place."
   },
   {
    "id": "r086_06F0",
    "addr": "06F0",
    "size": 222,
    "jp": "王妃{nl}「シルヴェル城の 襲撃の時といい{nl} このたびも また・・・。{page}「クルト殿には{nl} ずいぶんと せわになります。{page}「そのような 星の{nl} めぐりあわせなのでしょうか？{page}{FB00}「わたしは このことに{nl} 大きな運命の力を感じます。",
-   "en": ""
+   "en": "Queen{nl}\"At the attack on Silvel Castle, and now{nl} again...{page}\"We owe a great deal to you,{nl} Kurt-dono.{page}\"Is it the way the stars turn?{page}{FB00}\"I feel the power of a great destiny in{nl} this."
   },
   {
    "id": "r086_07DE",
    "addr": "07DE",
    "size": 108,
    "jp": "「王様の ようだいを{nl} お知りになりたいのですか？{page}{FB00}「・・・今はとてもむずかしい{nl} 状態にあると思います。",
-   "en": ""
+   "en": "\"You want to know how the King is?{page}{FB00}\"...I think he is in a very difficult state{nl} now."
   },
   {
    "id": "r086_0854",
    "addr": "0854",
    "size": 112,
    "jp": "「もともと ご病気のところへ{nl} この村への脱出。{page}「このまま 意識を{nl} 取りもどされなければ{nl} あるいは・・・。",
-   "en": ""
+   "en": "\"He was already ill, and then came the{nl} flight to this village.{page}\"If he does not wake soon, then{nl} perhaps..."
   },
   {
    "id": "r086_08CE",
    "addr": "08CE",
    "size": 100,
    "jp": "「奇跡がおきました！{page}{FB00}「奇跡がおこったのです。{nl} 王様が・{wait}王様が{nl} 意識を 取りもどされました！",
-   "en": ""
+   "en": "\"A miracle has happened!{page}{FB00}\"A miracle! The King,{wait} the King has{nl} woken up!"
   },
   {
    "id": "r086_0934",
    "addr": "0934",
    "size": 56,
    "jp": "「目をさまされてからは{nl} とても 順調な回復ぶりですわ。",
-   "en": ""
+   "en": "\"Since waking, he has been recovering{nl} very well."
   },
   {
    "id": "r086_096E",
    "addr": "096E",
    "size": 80,
    "jp": "「この ごようすならば{nl} きっと このまま よい方向に{nl} むかわれると思います。",
-   "en": ""
+   "en": "\"At this rate, I'm sure he'll keep getting{nl} better."
   },
   {
    "id": "r086_09C0",
    "addr": "09C0",
    "size": 92,
    "jp": "「おなかの子供の事も ありますので{nl} 王妃様には うえの部屋で{nl} やすんで いただきました。",
-   "en": ""
+   "en": "\"With the child on the way, we had the{nl} Queen rest in the room upstairs."
   },
   {
    "id": "r086_0A1E",
    "addr": "0A1E",
    "size": 140,
    "jp": "「王様の ようだいが{nl} お知りになりたいのですか？{page}「それでは 昼間のうちに{nl} おいでください。{page}「今は 王様のごようすが{nl} 心配ですので。",
-   "en": ""
+   "en": "\"You want to know how the King is?{page}\"Then please come during the day.{page}\"For now, I'm worried about the King."
   }
  ]
 }

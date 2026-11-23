@@ -333,28 +333,28 @@
    "addr": "163A",
    "size": 80,
    "jp": "「わしは あの１番星に{nl} ちか－う！{page}{FB00}「王様の お命{nl} 守りぬいてみせるぞ－！",
-   "en": ""
+   "en": "\"I swear by that first star!{page}{FB00}\"I'll protect the King's life to the end!"
   },
   {
    "id": "r085_168C",
    "addr": "168C",
    "size": 46,
    "jp": "「わしは {wait}{wait}わしは・・・{nl} わしは やる－！",
-   "en": ""
+   "en": "\"I'll{wait}{wait} I'll... I'll do iiit!"
   },
   {
    "id": "r085_16C0",
    "addr": "16C0",
    "size": 92,
    "jp": "    － リ－ユの家 －{nl} わたしは きままな 旅人です。{nl}  いない時は 旅に出てます。",
-   "en": ""
+   "en": "- Riyu's House -{nl}I am a carefree traveler.{nl}If I'm out, I'm on a journey."
   },
   {
    "id": "r085_171E",
    "addr": "171E",
    "size": 96,
    "jp": "    － ユ－リの家 －{nl}  やすみの日は この家に来ます{nl} ふだんは シルヴェル城へどうぞ。",
-   "en": ""
+   "en": "- Yuri's House -{nl}I come here on my days off.{nl}Otherwise, see Silvel Castle."
   }
  ]
 }

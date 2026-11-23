@@ -11,14 +11,14 @@
    "addr": "0062",
    "size": 64,
    "jp": "「しずかに！{nl} 王妃様が この奥で{nl} おやすみになっているのだ。",
-   "en": ""
+   "en": "\"Quiet! The Queen is resting in there."
   },
   {
    "id": "r087_00A4",
    "addr": "00A4",
    "size": 110,
    "jp": "「王妃様には ゆっくりと{nl} やすんで いただこう。{page}「この国の 未来のために{nl} そして 我ヶの 未来のために。",
-   "en": ""
+   "en": "\"Let the Queen rest well.{page}\"For this country's future, and for ours."
   }
  ]
 }

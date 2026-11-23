@@ -11,7 +11,7 @@
    "addr": "002C",
    "size": 88,
    "jp": "「ここは いやしの館です。{page} この館の魔法が あなたの{nl} お力に なれますでしょうか？{page}",
-   "en": ""
+   "en": "\"This is the House of Healing.{page} Can the magic of this house be of help{nl} to you?{page}"
   }
  ]
 }

@@ -11,147 +11,147 @@
    "addr": "00D2",
    "size": 156,
    "jp": "「ほら ほら{nl} そんな ところで{nl} ぼさっとしてると ケガするよ！{page}「この 鉱山の村に{nl} １０年に１度 入るか入らないかの{nl} 大きな注文がきてるんだからっ！",
-   "en": ""
+   "en": "\"Hey, hey! Stand around there in a daze{nl} and you'll get hurt!{page}\"This mining village just got a big order,{nl} the kind that comes once in ten years,{nl} if that!"
   },
   {
    "id": "r090_0178",
    "addr": "0178",
    "size": 78,
    "jp": "「お城の注文品が あがるまでは{nl} 外の人なんか 相手にしてる{nl} ヒマはないの！",
-   "en": ""
+   "en": "\"Till the castle's order is done, I've got{nl} no time for outsiders!"
   },
   {
    "id": "r090_01D0",
    "addr": "01D0",
    "size": 64,
    "jp": "「あ～いそがしい！{page}{FB00}「そこの 立て札を{nl} しらべてみなさいよ！",
-   "en": ""
+   "en": "\"Ahh, so busy!{page}{FB00}\"Go read that signboard over there!"
   },
   {
    "id": "r090_0212",
    "addr": "0212",
    "size": 112,
    "jp": "「グルド兵が さがしに{nl} きたってことは・・・{page}「シルヴェルの グスタフ様{nl} 生きて いらっしゃるのよね・・・。",
-   "en": ""
+   "en": "\"If Guld soldiers came looking...{page}\"then Gustav-sama of Silvel must be{nl} alive..."
   },
   {
    "id": "r090_0284",
    "addr": "0284",
    "size": 148,
    "jp": "「王様をさがしにきた グルド兵達は{nl} 人が かくれられそうなところは{nl} 全部ひっくり返していったのよ！{page}{FB00}「あとかたずけが{nl} 大変だったんだから！！",
-   "en": ""
+   "en": "\"The Guld soldiers looking for the King{nl} turned over every place a person could{nl} hide!{page}{FB00}\"Cleaning up after them was such a{nl} pain!!"
   },
   {
    "id": "r090_031A",
    "addr": "031A",
    "size": 94,
    "jp": "「王様を 見かけたら{nl} 連絡しろなんて！{page} シルヴェルの人間が{nl} そんな命令 聞くわけないわ！",
-   "en": ""
+   "en": "\"Report it if you see the King, they say!{page} As if anyone from Silvel would obey an{nl} order like that!"
   },
   {
    "id": "r090_037A",
    "addr": "037A",
    "size": 126,
    "jp": "「なんか グルドのほうも{nl} うまく いってないみたいね。{page}「呼ばれもしないのに{nl} ひとの国へ 武器持って{nl} やってくるからよ。",
-   "en": ""
+   "en": "\"Seems things aren't going too well for{nl} Guld either.{page}\"That's what you get for coming into{nl} other people's lands with weapons,{nl} uninvited."
   },
   {
    "id": "r090_03FA",
    "addr": "03FA",
    "size": 76,
    "jp": "「あとで この村にやらせることを{nl} 指示するなんて言って{nl} そのままなのよ。",
-   "en": ""
+   "en": "\"They said they'd tell us later what{nl} work the village would do, and that was{nl} that."
   },
   {
    "id": "r090_044E",
    "addr": "044E",
    "size": 118,
    "jp": "「はぁ？{page} 村のちかくの 洞窟のことか？{page}{FB00}「あそこは 鉱山さ{nl} 剣や ヨロイを作る 鉱石を{nl} 掘りだしているんだよ。",
-   "en": ""
+   "en": "\"Huh?{page} You mean the cave near the village?{page}{FB00}\"That's the mine. We dig ore there for{nl} swords and armor."
   },
   {
    "id": "r090_04C6",
    "addr": "04C6",
    "size": 142,
    "jp": "「鉱山のある洞窟には{nl} 山脈の向こうへ抜ける{nl} トンネルも あるんだが・・・{page}「むこうの ラントブルク村も{nl} グルドに占領されちまったのかな？",
-   "en": ""
+   "en": "\"The cave with the mine has a tunnel{nl} through to the other side of the{nl} mountains...{page}\"I wonder if Landburg village over{nl} there was taken by Guld too?"
   },
   {
    "id": "r090_0556",
    "addr": "0556",
    "size": 146,
    "jp": "「は～ これからは{nl} 掘りだした鉱石は すべて{nl} ヤ－ク族の村で 使うそうだ。{page}「オレたちゃ このさき{nl} 鉱山で 穴掘りだけを{nl} やらされるのか。",
-   "en": ""
+   "en": "\"Sigh. From now on, all the ore we dig{nl} goes to the Yaak village, they say.{page}\"Are we going to be made to just dig{nl} holes in the mine from now on?"
   },
   {
    "id": "r090_05F0",
    "addr": "05F0",
    "size": 168,
    "jp": "「はたらきぐちなら{nl} この村には もう ないぞ{nl} ほかへ いきな。{page}「そこの立て札を しらべてみなよ{nl} グルドのはりがみが あるだろ？{page} もうここには 仕事はないんだ。",
-   "en": ""
+   "en": "\"If you're after work, there's none left{nl} in this village. Go elsewhere.{page}\"Look at the signboard there. See the{nl} Guld notice?{page} There's no more work here."
   },
   {
    "id": "r090_069A",
    "addr": "069A",
    "size": 132,
    "jp": "「どお－せ ヒマなんだ{nl} じまん話で よければ{nl} いくらでも してやりたいが。{page}{FB00}「もう みんな・・・{nl} 昔の話に なっちまったな。",
-   "en": ""
+   "en": "\"I've got nothing but time anyway. I'd{nl} tell you all the brag stories you like.{page}{FB00}\"But it's all... become stories of the old{nl} days now."
   },
   {
    "id": "r090_0720",
    "addr": "0720",
    "size": 68,
    "jp": "「はぁ・・・・{nl} 腕がじまんの オレたちも{nl} 仕事が なきゃ～なぁ。",
-   "en": ""
+   "en": "\"Sigh.... We're proud of our skill, but{nl} without work..."
   },
   {
    "id": "r090_076C",
    "addr": "076C",
    "size": 176,
    "jp": "「村のみんなは もう{nl} ベッドの中さ。{page}「寝ているあいだは{nl} 先のことを 心配しないで{nl} いいからな。{page}{FB00}「オレか？{wait}{wait}{nl} オレは 恐い夢を見そうで{nl} ・・眠れないんだ・・・。",
-   "en": ""
+   "en": "\"Everyone in the village is in bed{nl} already.{page}\"While you sleep, you needn't worry{nl} about what's coming.{page}{FB00}\"Me? {wait}{wait}I think I'd have bad dreams..{nl} so I can't sleep..."
   },
   {
    "id": "r090_081E",
    "addr": "081E",
    "size": 130,
    "jp": "「見てみなよ{nl} こんな 時でも{nl} 星が きれいだぜ。{page}「オレたちの 心配ごとなんか{nl} な－んも 知らないって{nl} そぶりでな・・・。",
-   "en": ""
+   "en": "\"Look. Even at a time like this, the stars{nl} are pretty.{page}\"Acting like they don't know a thing{nl} about our troubles..."
   },
   {
    "id": "r090_08AE",
    "addr": "08AE",
    "size": 94,
    "jp": "   本日の作業 予定{nl}{nl} シルヴェル城ゆき 剣１０ふり{page}{nl}がんばれ 残りは あと７０ふりだ！",
-   "en": ""
+   "en": "Today's Work Plan{nl}{nl}10 swords for Silvel Castle{page}{nl}Keep at it! Only 70 more to go!"
   },
   {
    "id": "r090_090E",
    "addr": "090E",
    "size": 186,
    "jp": "     － 通告 －{nl}この村は 本日より グルド王国の{nl}    グルヴァ村である。{page}{FB00}今後 鉱石はすべて ヤ－ク村で使う{nl}  この村の仕事は 後日通告！{page}  さからう者は 囚人島だ！！",
-   "en": ""
+   "en": "- Notice -{nl}From today, this village is{nl}Gulva Village of the Guld kingdom.{page}{FB00}All ore is now for the Yaak village.{nl}This village's work: notice to come!{page}Anyone who resists goes to Prison{nl}Island!!"
   },
   {
    "id": "r090_09CA",
    "addr": "09CA",
    "size": 94,
    "jp": " 今後 いかなることが あっても{nl}  この村は シルヴェル王国の{nl}    グルヴァ村で ある。",
-   "en": ""
+   "en": "Come what may, this village{nl}is Gulva Village of the{nl}Silvel kingdom."
   },
   {
    "id": "r090_0A2A",
    "addr": "0A2A",
    "size": 138,
    "jp": "   城塞攻略に 成功セリ！{nl} われらの開けた ２本のトンネルを{nl}  カッテルと ル－スルと命名。{wait}{wait}{wait}{page}      グルヴァ村義勇軍より",
-   "en": ""
+   "en": "The fortress has been taken!{nl}We name the 2 tunnels we dug{nl}Kattel and Rusl. {wait}{wait}{wait}{page}- The Gulva Volunteers"
   },
   {
    "id": "r090_0AB6",
    "addr": "0AB6",
    "size": 24,
    "jp": "目の前に 立て札がある。",
-   "en": "",
+   "en": "There is a signboard in front of you.",
    "reached": false
   }
  ]
