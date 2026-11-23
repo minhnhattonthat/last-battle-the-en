@@ -2,10 +2,21 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress (session 13: 595/3085 strings, batches b001 b003 b004 b005 merged; b002 and
-  b006-b049 left). Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24
-  session 13, sha1 75f2ea30).
+- **Phase:** 6. Translate in progress (session 14: 1259/3085 strings, batches b001-b015 merged; b016-b049 left).
+  Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24 session 14, sha1
+  8909f4fa).
 - **Done:**
+  - **Phase 6, session 2026-11-24 (14):** batches b002 (battle windows: commands Atk/Cmd/Plan/Run, synthesis-screen
+    boxes, spell effect lines, status messages; sleeping NPCs) and b006-b015 (spell info boxes, Eldar village and
+    school, the rite, Silvel Castle defence, King Gustav's reveal that Kurt is the prince, secret passage, occupied
+    Silvel, Ude war council, Febennels' house) merged. `tools/batches.py`: speaker pages (`Name{nl}"speech`) keep the
+    name line and wrap the speech; per-page narration from the JP page; `{F600}` choice lines not indented; script
+    controls ($C000+) have no width, `{FAxx}` inserts count 56 px. `tools/merge_batch.sh` (merge, build, check,
+    commit). Glossary: Yuse, Mias, Queen, Glad, Mr. Keukenhof, Elder, Sol, Ettmiranshel, Fenamun, Chancellor,
+    Cardinal Ketteri, Commander Gubbe, Second Guld Castle, Prison Island, birdmen, spell synthesis, Missive. Dropped
+    from b002/b006 for phase 7 (see translator brief): 6 battle particles/fragments, 3 two-tile equip-slot labels.
+    No visual check of the new speaker-page layout yet (phase 8 tours cover it; first scene to look at: `r000_066E`
+    Konrad at the Eldar gate).
   - **Phase 6, session 2026-11-24 (13):** `tools/batches.py` (skill asset adapted: split/check/merge/show/fit; wraps
     dialogue pages to 208 px with the `"` indent, centres banners and menu lines, per-kind limits: dialogue 3 lines,
     banners 144 px, credits 192 px, BG3 tile caps + `MENU_CAP` list windows, battle rects via `battle_text.encode`,
@@ -152,9 +163,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
   0. **Phase 6: translate** (done-when: batch check 0 errors, glossary updated, reviewer pass with no
-     Critical/Important). Follow `docs/translator-brief.md`: next batches **b002** (battle rects + common), then
-     **b006-b049** in order (rooms r000... story order, then spells/tactics/shops in b047-b049). Merge, build and commit
-     after each batch; add new names to `glossary.md` as they appear (all names so far are there). When all are
+     Critical/Important). Follow `docs/translator-brief.md`: next batch **b016** (r076 Febennels' training talk, then
+     story order through b046; spells/tactics/shops in b047-b049). `sh tools/merge_batch.sh bNNN` after each batch; add new names to `glossary.md` as they appear (all names so far are there). When all are
      merged: `batches.py split` again (picks up anything left; skip enemy_40/69, bg3_9EF0/9EF8/A687), write
      `docs/synopsis.md` + `docs/style-reference.md` from the merged script, then the review pass (`codex exec -s
      read-only` once its quota is back on 2026-11-26, else a fresh read-only pass of your own) on pairs files;
