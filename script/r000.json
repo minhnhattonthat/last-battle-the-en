@@ -11,252 +11,252 @@
    "addr": "0164",
    "size": 114,
    "jp": "「ねえ クルトは{nl} 大きくなったら 何になるの？{page} ぼくは{nl} コンラ－ト兄ちゃんみたいに{nl} お城の兵士になるんだ。",
-   "en": ""
+   "en": "\"Hey Kurt, what do you want to be{nl} when you grow up?{page} Me, I'm going to be a castle soldier, just{nl} like my big brother Konrad."
   },
   {
    "id": "r000_01DC",
    "addr": "01DC",
    "size": 90,
    "jp": "「ねえ クルト 知ってる？{wait}{wait}{nl} 武器や防具は ちゃんと{nl} 装備しなくちゃ ダメなんだよ。",
-   "en": ""
+   "en": "\"Hey Kurt, did you know? {wait}{wait}Weapons{nl} and armor are no good unless you equip{nl} them properly."
   },
   {
    "id": "r000_023C",
    "addr": "023C",
    "size": 106,
    "jp": "「コンラ－ト兄ちゃんは{nl} とっても強い兵士なんだよ。{page} ぼく にいちゃんに{nl} いろいろ おそわってるんだ。",
-   "en": ""
+   "en": "\"My big brother Konrad is a really{nl} strong soldier.{page} He's teaching me all kinds of stuff."
   },
   {
    "id": "r000_02A8",
    "addr": "02A8",
    "size": 76,
    "jp": "「大人たちの かわりに{nl} また グルド兵が攻めてこないか{nl} 見はってるんだ。",
-   "en": ""
+   "en": "\"I'm standing guard for the grown-ups,{nl} in case the Guld soldiers attack again."
   },
   {
    "id": "r000_02F6",
    "addr": "02F6",
    "size": 70,
    "jp": "「ほら 兄ちゃんの剣を{nl} 持ち出してきたんだ！{page} でも 重たくて・・・",
-   "en": ""
+   "en": "\"Look, I sneaked out my big brother's{nl} sword!{page} But it's so heavy..."
   },
   {
    "id": "r000_033E",
    "addr": "033E",
    "size": 60,
    "jp": "「こんど グルド兵がきたら{nl} ぼくが やっつけてやるんだい！",
-   "en": ""
+   "en": "\"Next time the Guld soldiers come, I'll{nl} beat them all up!"
   },
   {
    "id": "r000_0386",
    "addr": "0386",
    "size": 146,
    "jp": "「エット トヴォ－ トレ－！{nl} えいっ！ えいっ！・・・{wait}{wait}{page}「う～ん 今日ならった魔法を{nl} やってみてるんだけど{nl} なかなか うまくいかないの。",
-   "en": ""
+   "en": "\"Ett, tva, tre! Hyah! Hyah!... {wait}{wait}{page}\"Hmm, I'm trying the magic we learned{nl} today, but I just can't get it right."
   },
   {
    "id": "r000_041E",
    "addr": "041E",
    "size": 30,
    "jp": "「エット トヴォ－ トレ－！{page2}",
-   "en": ""
+   "en": "\"Ett, tva, tre!{page2}"
   },
   {
    "id": "r000_0442",
    "addr": "0442",
    "size": 56,
    "jp": "「う～ん まだ だめね。{wait}{nl} うまく マトを狙えないわ。",
-   "en": ""
+   "en": "\"Hmm, still no good. {wait}I just can't hit{nl} the target."
   },
   {
    "id": "r000_0484",
    "addr": "0484",
    "size": 66,
    "jp": "「クルト お城にいったら{nl} 兵隊さんを たくさん{nl} 呼んできてね。",
-   "en": ""
+   "en": "\"Kurt, when you get to the castle, bring{nl} back lots of soldiers, okay?"
   },
   {
    "id": "r000_04C8",
    "addr": "04C8",
    "size": 100,
    "jp": "「ケガしないでね。{nl} 敵がきたら 逃げるのよ。{page}「あたし まだ回復の魔法は{nl} おぼえてないんだから。",
-   "en": ""
+   "en": "\"Don't get hurt. If enemies come, run{nl} away!{page}\"I haven't learned healing magic yet,{nl} you know."
   },
   {
    "id": "r000_052E",
    "addr": "052E",
    "size": 78,
    "jp": "「いくら あたしの魔法でも{nl} あんなに たくさんの敵は{nl} やっつけられないわ。",
-   "en": ""
+   "en": "\"Even my magic can't beat that many{nl} enemies."
   },
   {
    "id": "r000_0588",
    "addr": "0588",
    "size": 32,
    "jp": "「なあ クルト 知ってるかい？{page}",
-   "en": ""
+   "en": "\"Hey Kurt, did you know?{page}"
   },
   {
    "id": "r000_05AC",
    "addr": "05AC",
    "size": 110,
    "jp": "「あの じいさんが{nl} 騎士団長だったなんて{nl} 信じられないだろ？{page}「今じゃ とても{nl} そうは思えないけどなあ。",
-   "en": ""
+   "en": "\"Can you believe that old man was once{nl} captain of the knights?{page}\"You'd never think so to look at him{nl} now."
   },
   {
    "id": "r000_061C",
    "addr": "061C",
    "size": 74,
    "jp": "「うちのじいさん{nl} 昔は このシルヴェル王国の{nl} 騎士団長だったんだとさ。",
-   "en": ""
+   "en": "\"My grandpa says he used to be captain{nl} of the knights of the Kingdom of Silvel."
   },
   {
    "id": "r000_066E",
    "addr": "066E",
    "size": 114,
    "jp": "コンラ－ト{nl}「おい クルト{nl} どこに 行くんだい？{page}「もう村の門は しめちまったぞ。{nl} おまえも 早く家に帰れよ。",
-   "en": ""
+   "en": "Konrad{nl}\"Hey Kurt, where are you off to?{page}\"I've already shut the village gate. You{nl} hurry home too."
   },
   {
    "id": "r000_06E2",
    "addr": "06E2",
    "size": 166,
    "jp": "コンラ－ト{nl}「だから もう門は{nl} しめちまったんだってば。{page}「明日の朝まで{nl} 村の外には 出られないんだよ。{page}「もうすぐ 日がくれるぞ。{nl} おまえも 早く家に帰れよ。",
-   "en": ""
+   "en": "Konrad{nl}\"Like I said, I've already shut the gate.{page}\"Nobody leaves the village until{nl} tomorrow morning.{page}\"The sun's about to set. You hurry home{nl} too."
   },
   {
    "id": "r000_0790",
    "addr": "0790",
    "size": 170,
    "jp": "イェルト{nl}「洞窟には 魔物も{nl} たくさん すみついているんだ。{page}「でも そんなもの{nl} 恐がっちゃ だめだぞ。{page}「この儀式は{nl} おまえの力と勇気を{nl} 試すものなんだからな。",
-   "en": ""
+   "en": "Yelt{nl}\"Lots of monsters live in that cave.{page}\"But don't you be afraid of them.{page}\"This rite is a test of your strength and{nl} courage."
   },
   {
    "id": "r000_083C",
    "addr": "083C",
    "size": 76,
    "jp": "イェルト{nl}「どうしたクルト？{page2}{FB00}「まさか もう儀式を{nl} やめたくなったのか？",
-   "en": ""
+   "en": "Yelt{nl}\"What's wrong, Kurt?{page2}{FB00}\"Don't tell me you want to give up the{nl} rite already?"
   },
   {
    "id": "r000_088E",
    "addr": "088E",
    "size": 128,
    "jp": "イェルト{nl}「ばかものっ！！{nl} なんてことを言うんだ！{page}「父さんは おまえを{nl} そんな いくじなしに{nl} 育てた おぼえはないぞ！！",
-   "en": ""
+   "en": "Yelt{nl}\"You fool!! What are you saying?!{page}\"I did not raise you to be such a{nl} coward!!"
   },
   {
    "id": "r000_0912",
    "addr": "0912",
    "size": 94,
    "jp": "イェルト{nl}「そうか がんばるんだな？{page}「よし！ いいぞクルト。{nl} それでこそ 父さんの息子だ！",
-   "en": ""
+   "en": "Yelt{nl}\"I see. You'll do your best?{page}\"Good! Well said, Kurt. That's my son!"
   },
   {
    "id": "r000_0978",
    "addr": "0978",
    "size": 62,
    "jp": "フェ－ベンネルス{nl}「どうした クルト？{nl} 傷を治しにきたのか？",
-   "en": ""
+   "en": "Febennels{nl}\"What is it, Kurt? Have you come to{nl} have your wounds healed?"
   },
   {
    "id": "r000_09BC",
    "addr": "09BC",
    "size": 80,
    "jp": "フェ－ベンネルス{nl}「よかろう。{page}「ヴァテン{wait}{nl} ブレックフェ－ル{wait}{nl} レ－カ！{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Very well.{page}\"Vatten... {wait}{nl} Bleckfel... {wait}{nl} Reka!{page2}"
   },
   {
    "id": "r000_0A16",
    "addr": "0A16",
    "size": 70,
    "jp": "フェ－ベンネルス{nl}「これで だいじょうぶじゃ。{wait}{nl} さあ ゆくがよい。",
-   "en": ""
+   "en": "Febennels{nl}\"There, that should do. {wait}Now, off you{nl} go."
   },
   {
    "id": "r000_0A60",
    "addr": "0A60",
    "size": 58,
    "jp": "フェ－ベンネルス{nl}「そうか{nl} しかし 無理をするでないぞ。",
-   "en": ""
+   "en": "Febennels{nl}\"I see. But do not push yourself too{nl} hard."
   },
   {
    "id": "r000_0AA4",
    "addr": "0AA4",
    "size": 158,
    "jp": "フェ－ベンネルス{nl}「おお クルト！{nl} よくぞ やりとげた！！{page} これで儀式は終わりじゃ。{page}「明日からは おまえも{nl} 一人前の大人として{nl} がんばるのじゃぞ。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Oh, Kurt! You have done it!!{page} This brings the rite to its end.{page}\"From tomorrow, you must work hard{nl} as a grown man.{page2}"
   },
   {
    "id": "r000_0B61",
    "addr": "0B61",
    "size": 120,
    "jp": "フェ－ベンネルス{nl}「さて これで わしの役目も{nl} 無事に終わったようじゃ。{page} そろそろ ルドムの森に{nl} 帰るとしよう。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Well, it seems my task here is safely{nl} done.{page} It is time I went home to the Forest of{nl} Rudom.{page2}"
   },
   {
    "id": "r000_0BE6",
    "addr": "0BE6",
    "size": 86,
    "jp": "フェ－ベンネルス{nl}「おまえたちも つかれたじゃろう。{nl} 今夜は ゆっくり休むがよい。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"You must all be tired. Rest well tonight.{page2}"
   },
   {
    "id": "r000_0C8B",
    "addr": "0C8B",
    "size": 142,
    "jp": "ユ－ス{nl}「とうとう この日がきたのね。{page} でも母さん 心配なんか{nl} してないわ。{page}「クルトは 母さんの子だもの{nl} ちゃんと やりとげるわよね。",
-   "en": ""
+   "en": "Yuse{nl}\"So this day has finally come.{page} But I'm not worried one bit.{page}\"Kurt is my son. He'll see it through,{nl} won't he?"
   },
   {
    "id": "r000_0D1B",
    "addr": "0D1B",
    "size": 134,
    "jp": "ユ－ス{nl}「儀式が 終われば{nl} クルトも一人前。{page} もう 父さんや母さんは{nl} 必要ないわ。{page}「ちょっと さみしいけど{nl} しかたないわね。",
-   "en": ""
+   "en": "Yuse{nl}\"Once the rite is over, Kurt will be a{nl} grown man.{page} He won't need his father and mother{nl} anymore.{page}\"It's a little lonely, but that's how it{nl} must be."
   },
   {
    "id": "r000_0DE4",
    "addr": "0DE4",
    "size": 282,
    "jp": "フェ－ベンネルス{nl}「では いにしえよりの{nl} さだめに したがい・・・{page} イェルトとユ－スの息子{nl} クルトのフェナムンの儀式を{nl} とりおこなう。{page2}{FB00}「まず 儀式にむかう者に{nl} 傷をいやす力{nl} 回復の魔法を あたえよう。{page2}{FB00}「ヴァテン・・・{wait}{nl} ブレックフェ－ル・・・{wait}{wait}{nl} レ－カ！{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Now then, according to the ancient{nl} law...{page} I shall perform the Fenamun rite of{nl} Kurt, son of Yelt and Yuse.{page2}{FB00}\"First, to the one who faces the rite, I{nl} grant the power to heal wounds: the{nl} magic of healing.{page2}{FB00}\"Vatten... {wait}{nl} Bleckfel... {wait}{wait}{nl} Reka!{page2}"
   },
   {
    "id": "r000_0F04",
    "addr": "0F04",
    "size": 82,
    "jp": "「清らかなる水を思いうかべ{nl} この呪文を となえよ。{nl} よいな 忘れるでないぞ。{page2}",
-   "en": ""
+   "en": "\"Picture pure, clear water and chant{nl} these words. Mind you, do not forget{nl} them.{page2}"
   },
   {
    "id": "r000_0F68",
    "addr": "0F68",
    "size": 476,
    "jp": "クルトは{nl}回復の魔法を おぼえた！{C11E}{C1FF}{C101}{page2}{F9FF}フェ－ベンネルス{nl}「では 儀式の説明をしよう。{page2}{FB00}「クルトよ{nl} おまえが やらねばならぬことは{nl} ただひとつ・・・{page} この先の 洞窟の奥にある{nl} フェナムンの宝珠を{nl} １人で 取ってくることじゃ。{page}「この儀式が 終わったとき{nl} おまえのフェナムンも{nl} あきらかに なるじゃろう。{page}「だが 無理をしてはならんぞ。{nl} 治療が必要な時は すぐにもどれ。{nl} わしが力を回復してやろう。{page}「さあ ゆくのじゃ。{nl} 急がんと 夜が明けてしまうぞ。",
-   "en": ""
+   "en": "Kurt learned healing magic!{C11E}{C1FF}{C101}{page2}{F9FF}Febennels{nl}\"Now I shall explain the rite.{page2}{FB00}\"Kurt, there is only one thing you must{nl} do...{page} Fetch the Fenamun Orb from deep in{nl} the cave ahead, all by yourself.{page}\"When the rite is over, your Fenamun{nl} will be revealed as well.{page}\"But do not push yourself. If you need{nl} healing, come back at once and I will{nl} restore you.{page}\"Now go. Hurry, or dawn will break."
   },
   {
    "id": "r000_1161",
    "addr": "1161",
    "size": 46,
    "jp": "長老{nl}「急げ！{nl} わしの家に 運ぶんじゃ！！{page2}",
-   "en": ""
+   "en": "Elder{nl}\"Hurry! Carry him to my house!!{page2}"
   },
   {
    "id": "r000_11EE",
    "addr": "11EE",
    "size": 104,
    "jp": "長老{nl}「イェルト！ クルト！{nl} おまえたちも きてくれ！{page}「どうも ただのケガ人では{nl} なさそうじゃ。{page2}",
-   "en": ""
+   "en": "Elder{nl}\"Yelt! Kurt! You two come as well!{page}\"This looks like no ordinary injury.{page2}"
   },
   {
    "id": "r000_1289",
    "addr": "1289",
    "size": 66,
    "jp": "イェルト{nl}「なにが あったんだろう？{wait}{nl} とにかくいってみよう。{page2}",
-   "en": ""
+   "en": "Yelt{nl}\"What could have happened? {wait}Anyway,{nl} let's go and see.{page2}"
   }
  ]
 }

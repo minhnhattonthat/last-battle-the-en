@@ -159,18 +159,34 @@ def wrap(e, en):
         return en
     if form(e) not in ("dlg", "epilogue"):
         return en
-    quote = en.startswith('"')
+    # Speech state runs across pages: a page opening with `"` (after any leading control tokens such as {FB00}) starts
+    # speech, a page opening with a speaker name line (`Name{nl}"...`) too; continuation pages stay indented.
+    # A page `Name{nl}"speech` keeps the name line and wraps the speech (the name counts as one of the 3 lines).
+    speech = False
     out = []
     for part in re.split(r"(\{page2?\})", en):
         if part in ("{page}", "{page2}"):
             out.append(part)
             continue
-        lines = [ln.strip() for ln in part.split("{nl}")] if "{nl}" in part else wrap_page(part.strip(), DLG_PX - 4 * quote)
         if part.strip() == "":
             out.append(part)
             continue
-        lines = [ln if not quote or ln.startswith('"') or ln == "" else " " + ln for ln in lines]
-        out.append("{nl}".join(lines))
+        lead = re.match(r"(?:\{[0-9A-F]{4}\})*", part)[0]
+        body = part[len(lead):]
+        head = []
+        if "{nl}" in body:
+            first, rest = body.split("{nl}", 1)
+            if "{nl}" not in rest and rest.strip().startswith('"') and not first.strip().startswith('"'):
+                head, body = [first.strip()], rest
+        if body.strip().startswith('"'):
+            speech = True
+        if "{nl}" in body:
+            lines = [ln.strip() for ln in body.split("{nl}")]
+        else:
+            lines = wrap_page(body.strip(), DLG_PX - 4 * speech)
+        # choice lines ({F600} = choice cursor) keep their place
+        lines = [ln if not speech or ln.startswith(('"', "{F600}")) or ln == "" else " " + ln for ln in lines]
+        out.append(lead + "{nl}".join(head + lines))
     return "".join(out)
 
 

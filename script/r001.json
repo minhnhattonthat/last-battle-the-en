@@ -11,63 +11,63 @@
    "addr": "0067",
    "size": 62,
    "jp": "キュ－ケンホフ先生{nl}「どうしたんだ クルト。{nl} 何か質問かい？",
-   "en": ""
+   "en": "Mr. Keukenhof{nl}\"What is it, Kurt? Do you have a{nl} question?"
   },
   {
    "id": "r001_00AD",
    "addr": "00AD",
    "size": 64,
    "jp": "「どんなことだね？{nl}{F600}フェナムンの意味{nl}{F600}魔法について くわしく",
-   "en": ""
+   "en": "\"What would you like to know?{nl}{F600}What Fenamun means{nl}{F600}More about magic"
   },
   {
    "id": "r001_00F9",
    "addr": "00F9",
    "size": 68,
    "jp": "キュ－ケンホフ先生{nl}「学校は もう終わりだよ。{nl} 早く 帰りなさい。",
-   "en": ""
+   "en": "Mr. Keukenhof{nl}\"School's over for today. Hurry on{nl} home."
   },
   {
    "id": "r001_0141",
    "addr": "0141",
    "size": 110,
    "jp": "「フェナムンは 誰もが持っている{nl} 本当の名前だ。{page}「そして 言葉の魔力をひき出す{nl} とても大切なものなんだ。",
-   "en": ""
+   "en": "\"The Fenamun is the true name that{nl} everyone has.{page}\"And it is something very precious that{nl} draws out the magic in words."
   },
   {
    "id": "r001_01B3",
    "addr": "01B3",
    "size": 156,
    "jp": "「魔法にも いろいろあるが{nl} 今はまず 火の玉の魔法を{nl} 使いこなすのが先だ。{page}「でも きちんと修行をつめば{nl} 自分で 新しい魔法を{nl} 作ることもできるぞ。",
-   "en": ""
+   "en": "\"There are many kinds of magic, but{nl} first you must master the fireball spell.{page}\"Still, if you train hard, you can even{nl} create new spells of your own."
   },
   {
    "id": "r001_0251",
    "addr": "0251",
    "size": 268,
    "jp": "キュ－ケンホフ先生{nl}「・{wait}・{wait}・いいかい？{page} そもそも 言葉とは{nl} 魔力を 持っているんだよ。{page}「その魔力を 引き出すのは{nl} 誰もが持っている本当の名前だ。{wait}{nl} それをフェナムンと言うんだよ。{page}「つまり 魔法を使うには{nl} フェナムンの 働きが{nl} とても大切なんだね。{page2}",
-   "en": ""
+   "en": "Mr. Keukenhof{nl}\".{wait}.{wait}. Are you listening?{page} Words themselves hold magic power,{nl} you see.{page}\"What draws that power out is the true{nl} name everyone has. {wait}We call it the{nl} Fenamun.{page}\"In other words, the Fenamun is vital to{nl} using magic.{page2}"
   },
   {
    "id": "r001_036E",
    "addr": "036E",
    "size": 200,
    "jp": "「先生！{wait}{nl} ぼくのフェナムンは{nl} なんて 言うんですか？{page2}{F9FF}キュ－ケンホフ先生{nl}「それは{nl} 先生にも わからないな。{page} それを知っているのは{nl} お父さん お母さんと{nl} 名付け親の ３人だけなんだ。{page2}",
-   "en": ""
+   "en": "\"Sir! {wait}What is my Fenamun?{page2}{F9FF}Mr. Keukenhof{nl}\"Even I don't know that.{page} The only ones who know it are your{nl} father, your mother and your{nl} godparent. Just those three.{page2}"
   },
   {
    "id": "r001_044E",
    "addr": "044E",
    "size": 194,
    "jp": "「じゃあ 先生{nl} 自分のフェナムンは{nl} ず－っと わからないんですか？{page2}{F9FF}キュ－ケンホフ先生{nl}「いやいや そうじゃないぞ。{page}「フェナムンは{nl} １６才の誕生日に{nl} ある儀式を受けるとわかるんだ。{page2}",
-   "en": ""
+   "en": "\"Then, sir, will I never know my own{nl} Fenamun?{page2}{F9FF}Mr. Keukenhof{nl}\"No, no, that's not so.{page}\"You learn your Fenamun on your 16th{nl} birthday, when you go through a{nl} certain rite.{page2}"
   },
   {
    "id": "r001_051E",
    "addr": "051E",
    "size": 64,
    "jp": "キュ－ケンホフ先生{nl}「ほかに なにか{nl} 聞きたい者は いるかね？",
-   "en": ""
+   "en": "Mr. Keukenhof{nl}\"Does anyone else have something to{nl} ask?"
   },
   {
    "id": "r001_0566",
