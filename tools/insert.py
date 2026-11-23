@@ -240,7 +240,11 @@ MOVED_WINDOWS = [(0x21EE8, 0x21F0A, "0202EE")]
 # space + name) move to x=0 and widen by 2 tiles, so each name gets 9 tiles (asm nm_icap), the most that fits left of
 # the portrait window at x=22.
 WINDOW_HEADERS = {0x2131A: (bytes.fromhex("010a120f"), bytes.fromhex("000a140f")),
-                  0x21F7A: (bytes.fromhex("0101130f"), bytes.fromhex("0001150f"))}
+                  0x21F7A: (bytes.fromhex("0101130f"), bytes.fromhex("0001150f")),
+                  # item-name label beside the menu icons (FA18, 2 rows: dakuten + name): 8 -> 9 tiles so a 9-letter
+                  # name isn't under the right border (stress_equip "Longsword"); x=14 after 3 icons, x=18 after 4
+                  0x21656: (bytes.fromhex("0e020802"), bytes.fromhex("0e020902")),
+                  0x21660: (bytes.fromhex("12020802"), bytes.fromhex("12020902"))}
 
 
 def window_headers(orig, writer):

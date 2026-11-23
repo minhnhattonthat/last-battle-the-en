@@ -41,6 +41,11 @@ cursor tile, `0093` = space, `FE00` row end, `FF00` script end): FA0E `0x21320` 
 `0x21F10`, FA4B `0x21F44` (18). 01:F3C0 = FE59 (record name -> `$6C80` tiles, 01:FEAA) then B6FA, which pads with
 `$93` until `$20` = start + count x 2 (it compares for equality: a name longer than the count never ends).
 
+Item-name label beside the field menu icons (op FA18 in a 2-row window: dakuten row + name): headers `0x21656`
+(x=14, after 3 icons) and `0x21660` (x=18, after 4) were 8 tiles wide, so a 9-letter name's last letter sat under the
+right border; both widened to 9 (`insert.WINDOW_HEADERS`; shot `work/qa/wt`, stress_equip "Longsword", 2026-11-24).
+`0x219EE` (FA1D) and `0x21C82` (FA2B, a character name, 8 max) stay 8.
+
 By construction (no shot needed): the lists behind FA11/FA16/FA09/FA4B get 9-tile names from their window-script
 widths (`test_item_name_fields_fit_their_windows`); character names (01:FE3B) are capped at 8 tiles and the name
 entry stores at most 8 bytes, so every name fits; battle item list rows are battle rects (`w` tiles).
