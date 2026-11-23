@@ -12,4 +12,6 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 
 | File | Covers | State |
 |---|---|---|
-| <text.md> | <encoding, control codes, pointer tables> | <verified / partly guessed> |
+| `text.md` | header, encoding (16-bit words), font layout and JIS-subset order, control codes, where text lives | encoding/font verified; kanji/katakana table and control-code argument counts open |
+| `compression.md` | LZ format, linear block pointers, block region, free-space candidates | format verified on one block; tables partly mapped |
+| `graphics.md` | graphics-text survey | started (boot screens only) |
