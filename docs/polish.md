@@ -35,3 +35,4 @@ script refuses to run while any line is unticked. Sources: `docs/review-phase6.m
 - [ ] b050 - 11 untranslated entries in `work/tl/b050.tsv` (battle particles, equip-slot labels): translate in phase 7 and re-run `batches.py check b050`
 - [ ] r085_0C94 - Ritten old man (r085_0C94..r085_11B0) and Gulva old man (r092_0127..r092_03EB): のぅ rendered as "eh" on nearly every sentence; vary the tag ("lad", "heh", dropped g's) so it reads less mechanical (b056 reworked r085_0D58/0DDA/0EDC)
 - [ ] r118_0067 - library narration in present tense ("you find a grubby book") between past-tense captions; pick one tense for the library book captions
+- [ ] top15_00E0 - secondhand-shop keeper ends with servile ハイ！ ("yessir!"); the EN drops it, the voice could carry it

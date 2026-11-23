@@ -2,11 +2,16 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate: all batches merged (3071/3085), per-batch reviewer pass in progress (reopened session 16
-  after the external phase-6 review; progress table in `docs/review-phase6.md`).
-  Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24 session 16, sha1
-  fec4951f).
+- **Phase:** 7. Insert, fit, check: phase 6 done (3071/3085 translated, reviewer pass complete, every batch
+  b001-b049 has a row in `docs/review-phase6.md`; the 14 left are b050's engine-bound fragments, phase-7 work).
+  Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24 session 17, sha1
+  36f9e294).
 - **Done:**
+  - **Phase 6, session 2026-11-24 (17):** reviewer pass b009-b049 done (self-review, read-only pass per batch; codex
+    quota out). Fix batches b055-b058: old castle official / Ritten / Gulva / Kroket / Ude old-man voices restored,
+    Regina's "honored wizard", garbled Svart and stutter lines re-punctuated, "master of the true word" ->
+    "true word-speaker" everywhere, "Lord Lidar" -> "Lidar-dono". Minors added to `docs/polish.md`. Build, check
+    (0 problems, 36 tests) and smoke green. Next free fix batch: b059.
   - **Phase 6, session 2026-11-24 (16):** external review findings fixed: phase 6 reopened; `docs/style-reference.md`
     rewritten (voice table JP markers -> EN devices, paired examples, corrected Yaak Chief example); Yaak Chief's 16
     lines re-voiced (fix batch b051); "Cardinal-sama" -> Your/His Eminence; Beebo "Feben-sama"/"Kee kee!"; synopsis
@@ -175,13 +180,6 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
-  00. **Finish phase 6: the per-batch reviewer pass.** `python -X utf8 tools/pairs.py` (regenerate after any merge),
-     read each `work/review/bNNN.txt` whose row in `docs/review-phase6.md` is missing (Read with offset/limit ~70
-     lines), against `glossary.md` + `docs/style-reference.md`. Fix Critical/Important per batch through a fix batch
-     (`tools/fixbatch.py b0NN ids...`, edit the `.out.tsv`, `batches.py check`, `merge --overwrite`), Minors to
-     `docs/polish.md`, add the batch's row. Voice devices (old men, Yaak Chief, Koppas "gi", pidgin) are Important
-     when flattened. `codex exec -s read-only` is back on 2026-11-26 10:32 and may serve as an independent reviewer
-     for the remaining batches. When every batch b001-b049 has a row: build, `check.py`, smoke, phase 7.
   0. **Phase 7: insert, fit, check** (done-when: build green, width/overflow lint clean, control codes matched,
      `romdiff.py` no writes outside allowed ranges). Phase 6 left: `work/tl/b050.tsv` (11 engine-bound fragments:
      battle particles `bt_198045/1980E3/19D4BB/19D534+`, enemy_40/69, 2-tile slot labels `bg3_A729/A737/A73D`),

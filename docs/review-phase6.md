@@ -69,3 +69,6 @@ the style reference), "Cardinal-sama" -> "Your Eminence" / "His Eminence" (`r248
 | b044 | ok | r255_098C Lidar "is about me alone" (b057) | - |
 | b045 | ok | Nordrig old man じゃ voice: r257_0044, r257_018A (b057) | - |
 | b046 | ok | r293_00AE Iskar "rightful/real master of the true words" -> "true word-speaker" (matches b054); Eldar Elder じゃ voice r309_0660, r309_06A6 (b057) | - |
+| b047 | ok | r322_02AE リダール殿 "Lord Lidar" -> "Lidar-dono" (D1, matches the other 3 uses; b058) | - |
+| b048 | ok | - | minor: top15_00E0 servile ハイ！ tag dropped (polish.md) |
+| b049 | ok | - | - |
