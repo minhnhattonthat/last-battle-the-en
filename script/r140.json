@@ -95,49 +95,49 @@
    "addr": "06FD",
    "size": 402,
    "jp": "「え－と・・・{nl} まず 何から話せば{nl} よろしいのかしら。{page}「あなたの お父様の{nl} スヴァルトさんが 作戦を{nl} さずけて いってくれたの。{page}『トンネルを掘って{nl} 閉じこめられている 男たちを{nl} 助ける準備をしておいてくれ。{page} 必ず てつだいに だれか{nl} 信用のおける者を 送るから・・・{page}{FB00}「それが あなたたちだったのね{nl} ボルグ！！{page}「それでね！{nl} 道具屋の奥さんと いっしょに{nl} こっそりと・・・{page2}",
-   "en": ""
+   "en": "\"Um... where should I start?{page}\"Your father, Svart-san, gave us a plan{nl} before he left.{page}'Dig a tunnel and get ready to rescue{nl}the men who are shut in.{page}I'll be sure to send someone I trust to{nl}help...'{page}{FB00}\"So that was you, Borg!!{page}\"And so! Together with the item shop's{nl} missus, in secret...{page2}"
   },
   {
    "id": "r140_08AB",
    "addr": "08AB",
    "size": 32,
    "jp": "「まさか 今のゆれは・・・！？{page2}",
-   "en": ""
+   "en": "\"Don't tell me that shaking just now...?!{page2}"
   },
   {
    "id": "r140_08F2",
    "addr": "08F2",
    "size": 200,
    "jp": "ヤ－ク族魔法司{nl}「大変ですわ 秘密トンネルが{nl} グルド兵に 発見されました。{page}{FB00}「大洞窟まで 掘っていた{nl} トンネルの てんじょうが{nl} 破れて・・・・・{page} グルド兵が ころがり落ちて{nl} きたんです！{page2}",
-   "en": ""
+   "en": "Yaak Mage{nl}\"It's terrible! The Guld soldiers found{nl} the secret tunnel.{page}{FB00}\"The ceiling of the tunnel we were{nl} digging to the Great Cave broke{nl} through.....{page} and Guld soldiers came tumbling down!{page2}"
   },
   {
    "id": "r140_09E0",
    "addr": "09E0",
    "size": 100,
    "jp": "ヤ－ク族魔法司{nl}「あ－－－っ！！{nl} 道具屋の奥さんが ついてこない？{page} まだ 中に残ってるんだわ！{page2}",
-   "en": ""
+   "en": "Yaak Mage{nl}\"Ahhh!! The item shop's missus isn't{nl} behind me?{page} She's still inside!{page2}"
   },
   {
    "id": "r140_0A4F",
    "addr": "0A4F",
    "size": 42,
    "jp": "ヤ－ク族魔法司{nl}「わたし もどります！！{page2}",
-   "en": ""
+   "en": "Yaak Mage{nl}\"I'm going back!!{page2}"
   },
   {
    "id": "r140_0A98",
    "addr": "0A98",
    "size": 132,
    "jp": "族長の娘{nl}「みなさん 手を貸してください{nl} 急いで 行動しないと・・・・{page} とりかえしの つかないことに{nl} なってしまいそうです。{page2}",
-   "en": ""
+   "en": "Chief's Daughter{nl}\"Everyone, please lend us a hand. If we{nl} don't act fast....{page} something terrible may happen that{nl} can't be undone.{page2}"
   },
   {
    "id": "r140_0B49",
    "addr": "0B49",
    "size": 210,
    "jp": "ヤ－ク族長{nl}「そうでしたか{wait}・{wait}・{wait}・{wait}{page}「スヴァルトが そのような{nl} 作戦をたてましたか{wait}・{wait}・{wait}・{nl} その話 のりましょうぞい。{page}{FB00}「ついてくるが いいぞい。{nl} ヤ－クの 破城つちを{nl} おみせしょうぞい。{page2}",
-   "en": ""
+   "en": "Yaak Chief{nl}\"So that's how it was{wait}.{wait}.{wait}.{wait}{page}\"Svart made a plan like that{wait}.{wait}.{wait}.{nl} Count me in.{page}{FB00}\"Follow me. I'll show you the Yaak{nl} battering ram.{page2}"
   }
  ]
 }

@@ -11,28 +11,28 @@
    "addr": "004B",
    "size": 78,
    "jp": "「ぐお－っ・・・・・・・{nl} オレは オレは強いんだ～{nl} むにゃ むにゃ・・・。",
-   "en": ""
+   "en": "\"Snorrrre....... I'm, I'm strong~ mumble,{nl} mumble..."
   },
   {
    "id": "r141_00A1",
    "addr": "00A1",
    "size": 168,
    "jp": "「鳥人の やつらがよ{nl} 夜は目が見えないって 言うんで{nl} オレたちが 夜の見はりなんだ。{page}「人間は 夜 寝るモンなんだ！{nl} あいつらのせいで オレたちゃ{nl} 寝不足だ～。",
-   "en": ""
+   "en": "\"The birdmen say they can't see at{nl} night, so we got stuck with night watch.{page}\"Humans are meant to sleep at night!{nl} Thanks to them, we're short on sleep~."
   },
   {
    "id": "r141_014B",
    "addr": "014B",
    "size": 248,
    "jp": "「・・・・・・・ぐ～ご～。{wait}{wait}{page}{FB00}「はっ！！{wait}{wait}{nl} 鳥人め シルヴェルの落城の時も{nl} 参戦してたぞ！{page}「夜だって りっぱに{nl} 目が見えるじゃねえ－か！！{page}{FB00}「目が見えないってのは・・ウソ・{nl} だ・・・な・・・っ・・・{nl} ・・・・・・・・・・ぐ－っ。",
-   "en": ""
+   "en": "\"....... Snorrre.{wait}{wait}{page}{FB00}\"Huh!! {wait}{wait}Those birdmen fought in the{nl} fall of Silvel too!{page}\"They can see just fine at night!!{page}{FB00}\"So that 'can't see' thing.. was a lie..{nl} huh..... ..........snore."
   },
   {
    "id": "r141_0245",
    "addr": "0245",
    "size": 22,
    "jp": "「うご～っ・・・・・。",
-   "en": ""
+   "en": "\"Snorrrgh....."
   }
  ]
 }

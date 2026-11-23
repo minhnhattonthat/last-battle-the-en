@@ -11,28 +11,28 @@
    "addr": "004F",
    "size": 130,
    "jp": "「グルド兵 ワレワレが{nl} トリと同じで 夜は目が見えないと{nl} 言ったら 信じた。{page}「やはり 地ベタを歩くやつは{nl} アタマ わるい。",
-   "en": ""
+   "en": "\"We tell Guld soldiers we same as birds,{nl} no see at night, and they believe.{page}\"Ones who walk on ground are stupid{nl} after all."
   },
   {
    "id": "r142_00D3",
    "addr": "00D3",
    "size": 214,
    "jp": "「グルド軍と 手を組めば{nl} うまいモン食ベて 楽できる！{page} グルド人 そう言っていたハズ。{page}「なぜ こんな あなぐらで{nl} こんな ことしているのか？{page}「グルド人 信用できない！{nl} 仲間になるべきではなかった・・・。",
-   "en": ""
+   "en": "\"Join Guld army, eat good food and live{nl} easy! Guld people say so.{page}\"So why we in hole like this, doing this?{page}\"Can't trust Guld people! We should not{nl} join them..."
   },
   {
    "id": "r142_01B1",
    "addr": "01B1",
    "size": 154,
    "jp": "「ワレワレには あんなに広い{nl} 空が あるのに。{page}「こんな 地面の上の戦いに{nl} くちばしを はさむべきでは{nl} なかった。{page}{FB00}「鳥人の島へ 帰りたい・・・。",
-   "en": ""
+   "en": "\"We have such big sky.{page}\"We should not stick beaks into fights{nl} down on ground.{page}{FB00}\"Want to go home to birdmen's island..."
   },
   {
    "id": "r142_024D",
    "addr": "024D",
    "size": 90,
    "jp": "「いまでは 長老様の{nl} 言うことを聞いて グルドなどと{nl} 手を組まねば よかったと思うぞ。",
-   "en": ""
+   "en": "\"Now I think we should have listened to{nl} Elder and not joined Guld."
   }
  ]
 }
