@@ -1,0 +1,17 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 98,
+  "file": "0E4234",
+  "slots": "room93"
+ },
+ "entries": [
+  {
+   "id": "r093_004D",
+   "addr": "004D",
+   "size": 78,
+   "jp": "「オレの 古道具屋に{nl} なんのようだい？{nl} 商売の話なら 聞かせてもらうぜ。{page}",
+   "en": ""
+  }
+ ]
+}

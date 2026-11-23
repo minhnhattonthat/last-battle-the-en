@@ -1,0 +1,17 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 117,
+  "file": "0E8D83",
+  "slots": "room112"
+ },
+ "entries": [
+  {
+   "id": "r112_002C",
+   "addr": "002C",
+   "size": 50,
+   "jp": "「魔法司の館に どのような{nl} ごようでしょうか？{page}",
+   "en": ""
+  }
+ ]
+}

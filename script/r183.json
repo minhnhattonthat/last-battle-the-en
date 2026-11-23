@@ -1,0 +1,17 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 188,
+  "file": "0F7D21",
+  "slots": "room183"
+ },
+ "entries": [
+  {
+   "id": "r183_0025",
+   "addr": "0025",
+   "size": 24,
+   "jp": "宝箱は くち果てている。",
+   "en": ""
+  }
+ ]
+}

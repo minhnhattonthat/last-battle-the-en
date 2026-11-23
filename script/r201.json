@@ -1,0 +1,17 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 206,
+  "file": "0FCC0D",
+  "slots": "room201"
+ },
+ "entries": [
+  {
+   "id": "r201_002C",
+   "addr": "002C",
+   "size": 64,
+   "jp": "「ようこそ 旅の人{nl} あなたの助けになれれば{nl} よいのですが。{page}",
+   "en": ""
+  }
+ ]
+}

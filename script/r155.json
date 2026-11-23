@@ -1,0 +1,17 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 160,
+  "file": "0F4733",
+  "slots": "room155"
+ },
+ "entries": [
+  {
+   "id": "r155_0034",
+   "addr": "0034",
+   "size": 26,
+   "jp": "「魔法司の館にようこそ。{page}",
+   "en": ""
+  }
+ ]
+}

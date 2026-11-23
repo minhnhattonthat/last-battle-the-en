@@ -12,7 +12,7 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 
 | File | Covers | State |
 |---|---|---|
-| `text.md` | header, encoding (16-bit words), font layout and JIS-subset order, control codes, where text lives | encoding/font verified; kanji/katakana table and control-code argument counts open |
+| `text.md` | header, encoding (16-bit words), font layout and JIS-subset order, control codes, where text lives, extraction | encoding, font, control-code walk and extraction (roundtrip + coverage tests) verified; control-code meanings partly provisional |
 | `compression.md` | LZ format + compressor, linear block pointers, unpack/repack (`tools/blocks.py`), free-space candidates | verified: identity build + relocated build (phase 3); what top entries 1-6, 8-10, 14-28 hold partly mapped |
 | `graphics.md` | graphics-text survey | started (boot screens only) |
 | `debug.md` | map-change request, script injection, battle trigger and units, RAM used by `tools/debug/warp.lua` | verified by the scene runs; saving not found |

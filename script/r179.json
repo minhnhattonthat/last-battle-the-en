@@ -1,0 +1,17 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 184,
+  "file": "0F7C03",
+  "slots": "room179"
+ },
+ "entries": [
+  {
+   "id": "r179_002C",
+   "addr": "002C",
+   "size": 62,
+   "jp": "「うちは 治療屋です。{nl} 旅の人でも{nl} めんどう みますよ。{page}",
+   "en": ""
+  }
+ ]
+}

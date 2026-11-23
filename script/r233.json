@@ -1,0 +1,24 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 238,
+  "file": "0FE557",
+  "slots": "room233"
+ },
+ "entries": [
+  {
+   "id": "r233_0078",
+   "addr": "0078",
+   "size": 18,
+   "jp": "「もらった－－！{page2}",
+   "en": ""
+  },
+  {
+   "id": "r233_00AF",
+   "addr": "00AF",
+   "size": 14,
+   "jp": "「突撃－－！{page2}",
+   "en": ""
+  }
+ ]
+}

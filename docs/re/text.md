@@ -106,7 +106,7 @@ Not yet walked: top entries 14-28 (other formats: 18/19 hold plain text, 20-27 t
   | `0x23BB2-0x23C86` | pointer table (odd-aligned) -> item descriptions | words |
   | `0x23C87-0x24747` | item descriptions (FF01 between lines of a description) | script words |
   | `0x24748-0x247E3` | equip-screen templates (`{FA3A}／{FA3E}`, 装備できる人) | script words |
-  | `0x24AD1` / `0x25201` | **item records, 20 bytes, name = first 8 bytes in the byte encoding** (0-terminated if shorter); index < $C0 at `$04:CAD1`, >= $C0 at `$04:D201` (01:8B2D). Items $01-$7E, key items $C0-$D8, $E0-$E2, $F0-$FF | byte names |
+  | `0x24AD1` / `0x25201` | **item records, 20 bytes, name = first 8 bytes in the byte encoding** (0-terminated if shorter); index < $C0 at `$04:CAD1`, >= $C0 at `$04:D201` (01:8B2D). Items $01-$5B ($5C+ alias the key-item table), key items $C0-$D8, $E0-$E2, $F0-$FF | byte names |
 - **Spell names**: `0x14E20F`, 28 records of 9 bytes (8-byte name in the byte encoding, then 1 byte), ファイアボール ...
   スターブラスト (`tools/re_names.py at 14E20F 9 8 28`; record layout a guess from the stride, verify with the
   FA4F handler in phase 4).
@@ -120,6 +120,27 @@ Not yet walked: top entries 14-28 (other formats: 18/19 hold plain text, 20-27 t
   with the phase-2 debug tool and `romreads_addr.lua` / a VRAM dump.
 - Scanners: `tools/re_textscan.py` (glyph-word runs in raw ROM and blocks), `tools/re_names.py` (byte encoding:
   `items`, `scan`, `at OFF STRIDE LEN COUNT`), `tools/re_dumptext.py` (range listing).
+
+## Extraction (phase 4, verified: `tests/test_extract.py` roundtrip + coverage on the original ROM)
+- `python -X utf8 tools/extract.py dump [--force]` writes `script/*.json` (205 files, 2591 strings, 23 of them
+  `"reached": false`); `stats`, `coverage`. Codec: `tools/textcodec.py` (`JP` word codec, `ByteCodec` for names).
+  Tokens: `{nl}` FE00, `{page}` FE01, `{page2}` FE02, `{wait}` FCFF, `{actor}` FA38, `{spell}` FA39, `{item}` FA3A,
+  `{num}` FA3B, `{target}` FA47, `{spell2}` FA4F; any other word inside a string is `{XXXX}` (tile words, other
+  FAxx inserts such as FA03/FA3E/FA3F/FA4D, D3xx, the second code of a duplicated glyph). Space $0300 decodes as
+  an ASCII space.
+- A string = maximal run of walked glyph words and no-argument controls, trimmed to start and end on text (glyph,
+  FE, FA, FC), split at every entry point and jump target. FFxx and every op with arguments stay outside as code.
+- Files: `r<NNN>` one per room-format block (named by the lowest room id that reaches it; 309+ are top entries
+  29-42), `common`, `top14/15/18/19/20/21/23/28` (shops, inns, healers), `bank04` (walked from `B04_TABLES` and
+  the code immediate at 01:A286; entries carry their pointer slots in `ptrs`), `credits` (bank 02, 24 pointers),
+  `items` (low table $00-$5B, key items $C0-$FF), `spells` (28).
+- **Item index aliasing:** 01:8B2D reads index < $C0 at 0x24AD1, but 0x24AD1 + 20 * $5C = 0x25201, the key-item
+  table: indices $5C-$BF land in the key-item records (or past them), so only $01-$5B are real low items.
+- Insertion (`tools/insert.py`, called by `build.py`): `en`, else `jp`, spliced at the same address; a size change
+  is refused until the block reassembler and pointer rewriting exist (phase 5).
+- **Not extracted (graphics, phase 5/8):** BG3 tile-word labels (menus, windows) in bank 04 file
+  `0x20400-0x22300` and the 12-byte tile rows at `0x22CA7`; enemy names (the battle screen shows none in the
+  `battle_field` scene; the phase-8 tour confirms).
 
 ## Probes and helpers (tools/)
 - `script_dis.py` (VM disassembler + room walker), `re_flow.py` (65816 flow walk: script-pointer accesses),

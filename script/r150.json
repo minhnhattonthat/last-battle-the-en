@@ -1,0 +1,17 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 155,
+  "file": "0F3099",
+  "slots": "room150"
+ },
+ "entries": [
+  {
+   "id": "r150_0044",
+   "addr": "0044",
+   "size": 58,
+   "jp": "「うちの品は{nl} じょうぶで ながもちが{nl} じまんだよっ。{page}",
+   "en": ""
+  }
+ ]
+}

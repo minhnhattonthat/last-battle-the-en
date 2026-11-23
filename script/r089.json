@@ -1,0 +1,38 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 94,
+  "file": "0E366A",
+  "slots": "room89"
+ },
+ "entries": [
+  {
+   "id": "r089_003C",
+   "addr": "003C",
+   "size": 166,
+   "jp": "「生きている。{wait}{wait}死んでいる。{page}「生きている。{wait}{wait}死んでいる。{page}「もちろん 生きている{wait}・{wait}・{wait}・{wait}{nl} 死んでいる。{wait}{wait}生きている！{page}「ああっ{wait}{wait} 眠れそうもないわ。",
+   "en": ""
+  },
+  {
+   "id": "r089_00E4",
+   "addr": "00E4",
+   "size": 26,
+   "jp": "「・{wait}・{wait}・{wait}ユ－リさま。",
+   "en": ""
+  },
+  {
+   "id": "r089_0100",
+   "addr": "0100",
+   "size": 30,
+   "jp": "「早く 平和にならないかしら？",
+   "en": ""
+  },
+  {
+   "id": "r089_0120",
+   "addr": "0120",
+   "size": 46,
+   "jp": "「・{wait}・{wait}・{wait}ユ－リさま～{page} むにゃ むにゃ。",
+   "en": ""
+  }
+ ]
+}

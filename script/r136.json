@@ -1,0 +1,17 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 141,
+  "file": "0EF985",
+  "slots": "room136"
+ },
+ "entries": [
+  {
+   "id": "r136_002F",
+   "addr": "002F",
+   "size": 54,
+   "jp": "ボルグ{nl}「族長～ みんな～{nl} だいじょぶですか～～！{page2}",
+   "en": ""
+  }
+ ]
+}

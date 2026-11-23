@@ -1,0 +1,17 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 153,
+  "file": "0F2DC8",
+  "slots": "room148"
+ },
+ "entries": [
+  {
+   "id": "r148_0044",
+   "addr": "0044",
+   "size": 94,
+   "jp": "「勇かんな 旅人は{nl} 道具も ちゃんと{nl} そろえとくもんだよっ！{page} さあさ いらっしゃい！！{page}",
+   "en": ""
+  }
+ ]
+}

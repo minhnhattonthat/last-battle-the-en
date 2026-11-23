@@ -1,0 +1,17 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 183,
+  "file": "0F7B98",
+  "slots": "room178"
+ },
+ "entries": [
+  {
+   "id": "r178_0038",
+   "addr": "0038",
+   "size": 46,
+   "jp": "「うちは道具屋だギャ。{nl} なんか 用かいの？{page}",
+   "en": ""
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 96,
+  "file": "0E3E88",
+  "slots": "room91"
+ },
+ "entries": [
+  {
+   "id": "r091_002C",
+   "addr": "002C",
+   "size": 88,
+   "jp": "「ここは いやしの館です。{page} この館の魔法が あなたの{nl} お力に なれますでしょうか？{page}",
+   "en": ""
+  }
+ ]
+}

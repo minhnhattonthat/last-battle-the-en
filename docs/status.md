@@ -2,9 +2,16 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 4. Extract next (phase 3 identity build done 2026-11-23). Last build: `build/lastbattle_en.sfc`
-  identity, sha1 2474c7aa8451d51784a3b852b9806495b4147cfb (= original), smoke ok.
+- **Phase:** 5. Engine spike and marker build next (phase 4 extract done 2026-11-23). Last build:
+  `build/lastbattle_en.sfc` from `script/` with no English, sha1 2474c7aa8451d51784a3b852b9806495b4147cfb
+  (= original, so the phase-3 smoke result holds).
 - **Done:**
+  - **Phase 4 (extract):** `tools/extract.py dump` -> `script/*.json` (205 files, 2591 strings, 184.6k JP chars;
+    23 unreached runs kept with `"reached": false`), codec `tools/textcodec.py`, write-back `tools/insert.py`
+    (called by `build.py`, same-size only for now). `tests/test_extract.py`: roundtrip of every string, script/ in
+    sync with a fresh extraction, coverage (every walked glyph and every text run in blocks, bank 04 text area and
+    credits inside a string or a known data range, no overlaps), build splices edits and refuses size changes.
+    Details and token names: `docs/re/text.md` §Extraction. Write ranges for raw text added to `tools/ranges.txt`.
   - **Phase 3 (identity build):** `build.py` (rom.sha1 check -> `tools/blocks.py` unpack -> repack -> romdiff with
     the write log `build/writes.txt`; writes only inside `tools/ranges.txt`). `tools/lz.py compress` (optimal parse,
     0.5% smaller than the original). `tests/test_identity.py`: no-edit build == original; every block recompressed
@@ -37,13 +44,18 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
-  1. **Phase 4 extract** (`references/pipeline.md` §Extract): `script/` JSON from the room/common/shop blocks
-     (`script_dis.py` walks them), bank-04 script and tables, item/spell byte names, credits; roundtrip test
-     (re-encode = original bytes) and coverage test; build.py writes them back through `blocks.Region` (block data)
-     and `Writer.put` (raw ranges, add them to `tools/ranges.txt`).
-  2. Also phase 4: 18 unreferenced text runs (`script_dis.py --gaps`); enemy names still not found; menu
-     labels and window texts are bank-04 BG3 tile words (file `0x20400-0x22300`); credits text `0x16245-0x16877`
-     (pointer table `02:E215`, 24 entries).
+  1. **Phase 5 engine spike + marker build** (`references/pipeline.md` §Marker): font/VWF decision (16x16 font
+     at a fixed 12 px advance, `01:B8F5`), an English table for `textcodec`, then relocation:
+     - block reassembler: re-lay a block's strings and fix every image address (jump targets J, room header
+       lists e0-e8, talk tables, common-format pointer tables, E6 tables); rooms 21, 24, 65 hold native code
+       (EF) that may hold image addresses: keep those blocks' layout or check the code;
+     - bank 04 / credits: re-lay the strings and rewrite each entry's `ptrs` (tables + code immediates); find free
+       space (re-run `tools/lua/trap_reads.lua` over the scene runs first);
+     - byte names are capped at 8 bytes by their records (items 20 B, spells 9 B): widen or point elsewhere.
+     Then the marker build (`[id]` per string), the width gate per box variant.
+  2. The 23 unreached runs (`"reached": false`): check at runtime with a ROM-read probe or textcoverage; menu
+     labels and window texts are bank-04 BG3 tile words (file `0x20400-0x22300`) and tile rows `0x22CA7`:
+     graphics text, not in `script/`; enemy names not shown in battle (confirm in the phase-8 tour).
   3. Carried to phase 8: graphics tour (graphics.md "Tour half": VRAM dump per scene, classify every Japanese
      element as font text or tiles; the scene list now reaches every screen it names); stress saves for full party,
      all items/spells and long names (`save.py` can write them once the record fields are mapped: record widths

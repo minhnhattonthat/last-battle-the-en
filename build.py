@@ -1,7 +1,7 @@
 """build.py: build build/lastbattle_en.sfc from the dump in rom/ (SHA-1 in rom.sha1, checked first).
 
-Pipeline: unpack the LZ block region and its pointer tables (tools/blocks.py) -> apply edits (none yet: phase 4+)
--> repack. Every write goes through put(), which refuses offsets outside tools/ranges.txt and logs
+Pipeline: unpack the LZ block region and its pointer tables (tools/blocks.py) -> splice script/*.json into the
+blocks and raw text ranges (tools/insert.py; `en`, else `jp`) -> repack. Every write goes through put(), which refuses offsets outside tools/ranges.txt and logs
 `OFFSET ORIG_HEX NEW_HEX writer` to build/writes.txt; romdiff.py then checks the output against the original with
 that log (wrong original bytes, overlapping or overwritten writes, a changed byte no write explains).
 
@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "tools"))
 import blocks  # noqa: E402
 import check_rom  # noqa: E402
+import insert  # noqa: E402
 import romdiff  # noqa: E402
 
 ORIG_PATH = ROOT / "rom" / "Last Battle, The (Japan).sfc"
@@ -54,10 +55,11 @@ class Writer:
         self.rom[off:end] = data
 
 
-def build(out=OUT, recompress=False, orig_path=ORIG_PATH):
+def build(out=OUT, recompress=False, orig_path=ORIG_PATH, script_dir=insert.SCRIPT):
     orig = orig_path.read_bytes()
     w = Writer(orig, load_ranges())
     region = blocks.unpack(orig)
+    insert.apply(orig, region, w, insert.load(script_dir))
     region.pack(w.rom, w.put, recompress=recompress)
     rom = bytes(w.rom)
     errs, _ = romdiff.check(orig, rom, [], w.log)

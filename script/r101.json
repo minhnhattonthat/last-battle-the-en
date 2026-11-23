@@ -1,0 +1,17 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 106,
+  "file": "0E5DBE",
+  "slots": "room101"
+ },
+ "entries": [
+  {
+   "id": "r101_001F",
+   "addr": "001F",
+   "size": 70,
+   "jp": " トンネル街道  グルヴァ村へ{nl}{nl}      鉱山に入る えだ道あり。",
+   "en": ""
+  }
+ ]
+}

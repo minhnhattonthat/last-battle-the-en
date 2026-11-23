@@ -1,0 +1,129 @@
+{
+ "source": {
+  "kind": "block",
+  "block": 126,
+  "file": "0EC3FF",
+  "slots": "room121"
+ },
+ "entries": [
+  {
+   "id": "r121_006F",
+   "addr": "006F",
+   "size": 132,
+   "jp": "スヴァルト{nl}「やれ やれ・・・{nl} やっと 来たか。{page}{FB00}「ボルグ そして 仲間のみなさん{nl} とりあえず 奥の方へ{nl} おいでください。{page2}",
+   "en": ""
+  },
+  {
+   "id": "r121_011F",
+   "addr": "011F",
+   "size": 122,
+   "jp": "スヴァルト{nl}「ボルグ さっそくだが{nl} ちょっと むこうで話がしたい。{page} そちらの みなさんには{nl} ちょいと 失礼するよ。{page2}",
+   "en": ""
+  },
+  {
+   "id": "r121_01B0",
+   "addr": "01B0",
+   "size": 414,
+   "jp": " ごにょ ごにょ{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} ぼそ ぼそ{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} うん うん そうか・・・{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} で もって・・・・{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} ほ－ そいつは なかなか{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} そうか そうか{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} よし わかった！{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{page2}",
+   "en": ""
+  },
+  {
+   "id": "r121_0365",
+   "addr": "0365",
+   "size": 440,
+   "jp": "「話は ボルグから聞かせて{nl} もらいました。{page}{FB00}「あらためて 名のらせてもらうと{nl} わたしの名は スヴァルト。{wait}{wait}{wait}{wait}{page} ボルグの父です。{page}{FB00}「さて わたしから ひとつ{nl} みなさんを みこんで{nl} お願いがあるんだが。{page}「まず グルドの支配より{nl} ヤ－ク村を 解放し{page} 村にある 破城つちを{nl} 手にいれてほしいのだ。{page}{FB00}「この町と ヤ－ク村が手を組み{nl} 後は 破城つちがあれば{nl} 町を とり返すことも可能なんだ。{page}{FB00} 手を借してもらえるかな？",
+   "en": ""
+  },
+  {
+   "id": "r121_0523",
+   "addr": "0523",
+   "size": 76,
+   "jp": "「それでは さっそく{nl} 西の門をでて ヤ－クの村へ{nl} 急いでもらえますか。{page2}",
+   "en": ""
+  },
+  {
+   "id": "r121_057B",
+   "addr": "057B",
+   "size": 258,
+   "jp": "「村についたら 族長のお嬢さんに{nl} 会ってください。{page}「順調にいっていれば 手配してきた{nl} 準備も ととのっていると思う。{page}「ヤ－クの解放が うまくいき{nl} 破城つちの 準備ができたら{nl} また 会いに来てくれたまえ。{page}「きみたちの 働きに{nl} 期待しているよ。{page2}",
+   "en": ""
+  },
+  {
+   "id": "r121_0689",
+   "addr": "0689",
+   "size": 172,
+   "jp": "「いま この町にいる部隊は{nl} 新兵だけで作られた{nl} 実戦の けいけんのない部隊だ。{page}「この町を グルドから取かえすには{nl} いまが 一番いいのだ。{page} 手を借してもらえないか？",
+   "en": ""
+  },
+  {
+   "id": "r121_073F",
+   "addr": "073F",
+   "size": 316,
+   "jp": "「わかった わかった！{nl} みなまで言わずとも けっこう。{page}{FB00}{wait}{wait}{wait}{wait}{wait}「キミたちは{nl} 心の中ではすでに 手を借すことに{nl} 決めている{wait}{wait}{wait}{wait} しかし！{page}「秘密がもれる 恐れがあるため{nl} いいえと こたえている。{wait}{wait}{wait}{wait}{nl} この 用心深さ！！{wait}{wait}{wait}{wait}{page}「この スヴァルト{nl} １本 取られましたな。{nl} わっはっは・・・{page}",
+   "en": ""
+  },
+  {
+   "id": "r121_0885",
+   "addr": "0885",
+   "size": 80,
+   "jp": "スヴァルト{nl}「では みなさん ヤ－ク村の準備が{nl} できたら 会いに来てください。",
+   "en": ""
+  },
+  {
+   "id": "r121_08D7",
+   "addr": "08D7",
+   "size": 218,
+   "jp": "スヴァルト{nl}「レジ－ナ様{wait}・{wait}・{wait}・{wait}。{page}「どうやら あなた様も{nl} いまのグルド王の なされようには{nl} 反対の ごようす。{page}「亡き母上様に にて{nl} そうめうな方で いらっしゃる{wait}{wait}{wait}{wait}{nl} スヴァルト 安心いたしました。",
+   "en": ""
+  },
+  {
+   "id": "r121_09B9",
+   "addr": "09B9",
+   "size": 110,
+   "jp": "スヴァルト{nl}「ご苦労{wait} 諸君！{page}「その顔を見れば{nl} うまくいったのが わかるよ。{nl} まあ こっちへきたまえ。{page2}",
+   "en": ""
+  },
+  {
+   "id": "r121_0A42",
+   "addr": "0A42",
+   "size": 114,
+   "jp": "「これは ささやかながら{nl} わたしからの かんしゃの{nl} 気持ちだ。{page}「ヴァテン{wait}{nl} ブレックフェ－ル{nl} レ－カ！{page2}",
+   "en": ""
+  },
+  {
+   "id": "r121_0AC6",
+   "addr": "0AC6",
+   "size": 138,
+   "jp": "「町の人ヶには もう作戦は{nl} 伝えてある。{page}「扉を 破城つちで ブチ破ると{nl} それを合図に みんなが家から{nl} とびだしてくる てはずさ。{page2}",
+   "en": ""
+  },
+  {
+   "id": "r121_0B5D",
+   "addr": "0B5D",
+   "size": 80,
+   "jp": "「おっ！{wait}{wait}{wait}{nl} どうやら いいタイミングで{nl} 破城つちが とどいたらしいぞ。{page2}",
+   "en": ""
+  },
+  {
+   "id": "r121_0BB9",
+   "addr": "0BB9",
+   "size": 32,
+   "jp": "「さぁ みんな わたしに続け！{page2}",
+   "en": ""
+  },
+  {
+   "id": "r121_0C0C",
+   "addr": "0C0C",
+   "size": 70,
+   "jp": "スヴァルト{nl}「さぁ まずは ヤ－ク村のことを{nl} 話してくれ・・・・・{page2}",
+   "en": ""
+  },
+  {
+   "id": "r121_0C5C",
+   "addr": "0C5C",
+   "size": 132,
+   "jp": "スヴァルト{nl}「・・・そうか よくやってくれた。{page} どうやら 夜も明けたようだ。{nl} そろそろ ヤ－クの連中が{nl} 来るんじゃないかな。{page}",
+   "en": ""
+  }
+ ]
+}
