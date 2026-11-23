@@ -122,8 +122,10 @@ def px(text):
     for m in re.finditer(r"\{[0-9A-Za-z]+\}|.", text):
         t = m[0]
         # {XXXX} words: $C000+ are script controls (wait, page, sound, position: no width), the rest 12 px glyphs
+        # except {FAxx}: name/number inserts (an 8-letter name, about 56 px)
         glyph = len(t) == 6 and t[1] not in "CDEF"
-        w += INSERT_PX.get(t, 12 if glyph else 0) if t[0] == "{" and len(t) > 1 else ADVANCE.get(t, 8)
+        dflt = 56 if t.startswith("{FA") else 12 if glyph else 0
+        w += INSERT_PX.get(t, dflt) if t[0] == "{" and len(t) > 1 else ADVANCE.get(t, 8)
     return w
 
 

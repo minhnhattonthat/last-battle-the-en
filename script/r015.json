@@ -25,7 +25,7 @@
    "addr": "00C0",
    "size": 380,
    "jp": "「{FA03}・{wait}・{wait}・{wait}{nl}   {FA03}・{wait}・{wait}・{page}{FB00}「おまえの 真の名は{wait}{nl} {FA03}。{page}「さあ{wait} 今こそ 目ざめのとき・・・{nl} １６年の 眠りの日ヶは{nl} ここに終わり{page} こよい 真の名のもと{nl} おのれの力と運命を知るがいい。{page}「聞け {FA03}よ。{wait}{wait}{nl} 明日よりは いばらの道・{wait}・{wait}・{page} されど その向こうには{nl} 光も見えよう・{wait}・{wait}・{page}「{FA03}よ。{nl} 恐れをすて{nl} 新しき天地を めざすのだ・{wait}・{wait}・{page2}",
-   "en": "\"{FA03}.{wait}.{wait}.{wait} {FA03}.{wait}.{wait}.{page}{FB00}\"Your true name is {wait}{FA03}.{page}\"Now {wait}is the time to awaken... Your{nl} sixteen years of sleep end here.{page} Tonight, under your true name, learn{nl} your power and your fate.{page}\"Hear me, {FA03}. {wait}{wait}From tomorrow, yours{nl} is a thorny path.{wait}.{wait}.{page} But beyond it, a light may be seen.{wait}.{wait}.{page}\"{FA03}, cast away your fear and seek a new{nl} world.{wait}.{wait}.{page2}"
+   "en": "\"{FA03}.{wait}.{wait}.{wait} {FA03}.{wait}.{wait}.{page}{FB00}\"Your true name is {wait}{FA03}.{page}\"Now {wait}is the time to awaken... Your{nl} sixteen years of sleep end here.{page} Tonight, under your true name, learn{nl} your power and your fate.{page}\"Hear me, {FA03}. {wait}{wait}From{nl} tomorrow, yours is a thorny path.{wait}.{wait}.{page} But beyond it, a light may be seen.{wait}.{wait}.{page}\"{FA03}, cast away your fear and{nl} seek a new world.{wait}.{wait}.{page2}"
   },
   {
    "id": "r015_0248",

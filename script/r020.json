@@ -32,266 +32,266 @@
    "addr": "027E",
    "size": 62,
    "jp": "「やっぱり 平和っていいもんだ。{nl} ほんとに ホッとしてるよ。",
-   "en": ""
+   "en": "\"Peace really is a fine thing. I'm truly{nl} relieved."
   },
   {
    "id": "r020_02BE",
    "addr": "02BE",
    "size": 78,
    "jp": "「この平和な町を見てると{nl} グルドに占領されてたなんて{nl} まるで夢のようだな。",
-   "en": ""
+   "en": "\"Looking at this peaceful town, it's like{nl} a dream that Guld ever occupied it."
   },
   {
    "id": "r020_0318",
    "addr": "0318",
    "size": 120,
    "jp": "「森や洞窟には 魔物たちが{nl} た－くさん いるんだって。{page} だから 近づいちゃ いけないって{nl} 父ちゃんが言ってたんだ。",
-   "en": ""
+   "en": "\"They say the woods and caves are full{nl} of monsters.{page} So my pa told me never to go near{nl} them."
   },
   {
    "id": "r020_0396",
    "addr": "0396",
    "size": 116,
    "jp": "「こわい 魔物なんて{nl} だいっきらいだよお！{page} お城の兵隊さんたちが{nl} み－んな 退治してくれると{nl} いいのにな－。",
-   "en": ""
+   "en": "\"I hate scary monsters!{page} I wish the castle soldiers would get rid{nl} of every last one."
   },
   {
    "id": "r020_040C",
    "addr": "040C",
    "size": 92,
    "jp": "「どんなに つよぉ－い敵だって{nl} シルヴェルの兵隊さんなら{nl} きっと やっつけてくれるんだ！",
-   "en": ""
+   "en": "\"No matter how strong an enemy is,{nl} Silvel's soldiers will beat it for sure!"
   },
   {
    "id": "r020_046A",
    "addr": "046A",
    "size": 52,
    "jp": "「ぼくね－ 戦争なんて{nl} ぜんぜん 恐くなかったよ。",
-   "en": ""
+   "en": "\"You know what? I wasn't scared of the{nl} war at all."
   },
   {
    "id": "r020_04B2",
    "addr": "04B2",
    "size": 138,
    "jp": "「おや あんた{nl} まだ旅に なれてないね？{page} なら そこの道具屋で{nl} いろいろ買っていきなよ。{page}「うちの娘が やってるから{nl} よろしくね。",
-   "en": ""
+   "en": "\"Oh, you're not used to traveling yet,{nl} are you?{page} Then buy plenty of things at the item{nl} shop over there.{page}\"My daughter runs it, so be nice to her."
   },
   {
    "id": "r020_0542",
    "addr": "0542",
    "size": 114,
    "jp": "「ところで あんた{nl} マナってものを 知ってるかい？{page}「なんでも マナをためると{nl} 新しい魔法が 作れるらしいよ。",
-   "en": ""
+   "en": "\"By the way, do you know about this{nl} thing called mana?{page}\"They say that if you gather mana, you{nl} can create new spells."
   },
   {
    "id": "r020_05BA",
    "addr": "05BA",
    "size": 152,
    "jp": "「わたしゃ 商人だからね。{nl} お客に なりそうな人には{nl} 親切に しとかないとね。{page}「ま これも 商売のうちさ。{nl} また うちの店にも{nl} よってくれよ。",
-   "en": ""
+   "en": "\"I'm a merchant, see. I have to be kind{nl} to anyone who might be a customer.{page}\"Well, it's all part of business. Drop by{nl} my shop again sometime."
   },
   {
    "id": "r020_0654",
    "addr": "0654",
    "size": 84,
    "jp": "「さぁさぁ そこが道具屋だよ！{nl} 新装開店 ピカピカだよ{nl} さぁ よってっておくれ！",
-   "en": ""
+   "en": "\"Come one, come all, there's the item{nl} shop! Newly reopened and sparkling{nl} clean, so step right in!"
   },
   {
    "id": "r020_06AA",
    "addr": "06AA",
    "size": 148,
    "jp": "「前より もっと豊かな国にするため{nl} わしらも がんばらなきゃね。{page}「そう思って 品ぞろえを{nl} 変えてみたんだ。{nl} あんたたちも きっと気に入るよ。",
-   "en": ""
+   "en": "\"We have to work hard to make this{nl} country richer than ever.{page}\"With that in mind, I've changed my{nl} stock. I'm sure you'll like it."
   },
   {
    "id": "r020_0746",
    "addr": "0746",
    "size": 72,
    "jp": "「王様が 病気だと？{wait}{wait}{nl} 誰が そんなことを{nl} 言いふらしてるんだ！！",
-   "en": ""
+   "en": "\"The King, ill? {wait}{wait}Who's spreading talk{nl} like that?!"
   },
   {
    "id": "r020_0790",
    "addr": "0790",
    "size": 80,
    "jp": "「王様は 英雄王グスタフと{nl} いわれた お方だ。{nl} 病気なんか すぐになおるさ！",
-   "en": ""
+   "en": "\"The King is the one they call Gustav{nl} the Hero King. He'll be over any illness{nl} in no time!"
   },
   {
    "id": "r020_07E2",
    "addr": "07E2",
    "size": 102,
    "jp": "「王様が ご病気でも{nl} 城には 宰相ユ－リ様がおられる。{page}「心配することなんか{nl} なにも ないんだぞ！",
-   "en": ""
+   "en": "\"Even if the King is ill, Chancellor{nl} Yuri-sama is at the castle.{page}\"There's nothing at all to worry about!"
   },
   {
    "id": "r020_0850",
    "addr": "0850",
    "size": 70,
    "jp": "「なに！？{wait}{nl} グルド軍が 攻めてくるだと？{wait}{wait}{nl} そんな ばかな！！",
-   "en": ""
+   "en": "\"What?! {wait}The Guld army is going to{nl} attack? {wait}{wait}Nonsense!!"
   },
   {
    "id": "r020_0898",
    "addr": "0898",
    "size": 54,
    "jp": "「でたらめなウワサを 広めると{nl} 牢に ほうりこむぞ！",
-   "en": ""
+   "en": "\"Spread wild rumors and I'll throw you{nl} in the cell!"
   },
   {
    "id": "r020_08D0",
    "addr": "08D0",
    "size": 102,
    "jp": "「いいか{nl} シルヴェルとグルドは{nl} 兄弟国だぞ。{page} そのグルドが攻めてくるなんて{nl} ありえんだろうが！",
-   "en": ""
+   "en": "\"Listen, Silvel and Guld are brother{nl} nations.{page} Guld attacking us? That could never{nl} happen!"
   },
   {
    "id": "r020_0946",
    "addr": "0946",
    "size": 154,
    "jp": "「用のない者を{nl} 城に入れることは できないよ。{page}「なに？{nl} ユ－リ様に とどける物が？{page}「う－ん・・・{wait}{nl} ユ－リ様は今{nl} 人と会っているんだが・・・{page}",
-   "en": ""
+   "en": "\"I can't let anyone into the castle{nl} without business there.{page}\"What? Something to deliver to{nl} Yuri-sama?{page}\"Hmm... {wait}Yuri-sama is meeting someone{nl} right now...{page}"
   },
   {
    "id": "r020_09E2",
    "addr": "09E2",
    "size": 28,
    "jp": "「大事な とどけ物なのか？{wait}",
-   "en": ""
+   "en": "\"Is it an important delivery?{wait}"
   },
   {
    "id": "r020_0A04",
    "addr": "0A04",
    "size": 16,
    "jp": "「急ぐのかい？{wait}",
-   "en": ""
+   "en": "\"Is it urgent?{wait}"
   },
   {
    "id": "r020_0A1E",
    "addr": "0A1E",
    "size": 92,
    "jp": "「そうか{nl} じゃ とにかく ユ－リ様に{nl} うかがってみるよ。{page}「ちょっと 待っていなさい。{page2}",
-   "en": ""
+   "en": "\"I see. Well, I'll go and ask Yuri-sama{nl} anyway.{page}\"Wait here a moment.{page2}"
   },
   {
    "id": "r020_0ABC",
    "addr": "0ABC",
    "size": 58,
    "jp": "「ユ－リ様が お会いになるそうだ。{nl} 入っても いいよ。{page2}",
-   "en": ""
+   "en": "\"Yuri-sama says he'll see you. You may{nl} go in.{page2}"
   },
   {
    "id": "r020_0B10",
    "addr": "0B10",
    "size": 42,
    "jp": "「それじゃ また明日にでも{nl} してくれよ。",
-   "en": ""
+   "en": "\"Then come back tomorrow or so."
   },
   {
    "id": "r020_0B44",
    "addr": "0B44",
    "size": 98,
    "jp": "「なんだ また きたのか。{page}「ユ－リ様へ とどける物の{nl} ことだろ？{nl} それは前にも 聞いたよ。{page}",
-   "en": ""
+   "en": "\"What, you again?{page}\"It's about the thing for Yuri-sama,{nl} right? I heard that last time.{page}"
   },
   {
    "id": "r020_0BB6",
    "addr": "0BB6",
    "size": 58,
    "jp": "「おや どうしたんだい？{nl} ユ－リ様に 会いにいくんだろ？",
-   "en": ""
+   "en": "\"Hm, what's the matter? You're going to{nl} see Yuri-sama, aren't you?"
   },
   {
    "id": "r020_0BF2",
    "addr": "0BF2",
    "size": 32,
    "jp": "「なんだい まだ なにか用かい？",
-   "en": ""
+   "en": "\"What, is there something else?"
   },
   {
    "id": "r020_0C14",
    "addr": "0C14",
    "size": 78,
    "jp": "「あなた方のことは{nl} ユ－リ様から聞いております。{nl} どうぞ お通りください。",
-   "en": ""
+   "en": "\"Yuri-sama has told us about you.{nl} Please, go on through."
   },
   {
    "id": "r020_0C72",
    "addr": "0C72",
    "size": 112,
    "jp": "「ユ－リ様に 会いたいって？{page}「う－ん・・・{wait}{nl} おれは 下っぱ だからなあ。{page}「となりのやつに 聞いてくれよ。",
-   "en": ""
+   "en": "\"You want to see Yuri-sama?{page}\"Hmm... {wait}I'm just a lowly guard, see.{page}\"Ask the fellow next to me."
   },
   {
    "id": "r020_0CEC",
    "addr": "0CEC",
    "size": 40,
    "jp": "「だから となりのやつに{nl} 聞けってば！",
-   "en": ""
+   "en": "\"Like I said, ask the fellow next to me!"
   },
   {
    "id": "r020_0D22",
    "addr": "0D22",
    "size": 134,
    "jp": "「さっき エルフ族の女の子が{nl} ユ－リ様を たずねてきたんだ。{page}「人間ぎらいの エルフ族が{nl} いったい どうしたって{nl} いうんだろう？",
-   "en": ""
+   "en": "\"A little while ago, an elf girl came to{nl} see Yuri-sama.{page}\"What could an elf want here? They{nl} can't stand humans."
   },
   {
    "id": "r020_0DB0",
    "addr": "0DB0",
    "size": 180,
    "jp": "「みんな よく聞け！{page} われらシルヴェル騎士団の使命は{nl} この国の平和を守ることだ！{page}「そのためには 特訓をつみかさね{nl} 無敵のシルヴェル騎士団と{nl} ならねば ならんのだぁ－っ！！",
-   "en": ""
+   "en": "\"Everyone, listen well!{page} The mission of us, the Silvel Knights, is{nl} to protect this country's peace!{page}\"For that, we must train and train until{nl} we become the invincible Silvel Knights!!"
   },
   {
    "id": "r020_0E66",
    "addr": "0E66",
    "size": 96,
    "jp": "「こら－っ！ そこっ！{nl} 気合いが たり－んっ！！{page}「そんなことで{nl} 無敵に なれるかあ－っ！！",
-   "en": ""
+   "en": "\"Hey, you there! Not enough spirit!!{page}\"How do you expect to become invincible{nl} like that?!"
   },
   {
    "id": "r020_0ECE",
    "addr": "0ECE",
    "size": 36,
    "jp": "「やあ！{wait}{wait} とお！{wait}{wait} そこだっ！",
-   "en": ""
+   "en": "\"Hyah! {wait}{wait}Tah! {wait}{wait}There!"
   },
   {
    "id": "r020_0EF4",
    "addr": "0EF4",
    "size": 42,
    "jp": "「はっはっは！{nl} ふみこみが あまいっ！！",
-   "en": ""
+   "en": "\"Ha ha ha! Your footwork's too sloppy!!"
   },
   {
    "id": "r020_0F26",
    "addr": "0F26",
    "size": 58,
    "jp": "「むむむっ{wait}{wait} まだまだっ{wait}{wait}{nl} おぬしには 負けんぞっ！",
-   "en": ""
+   "en": "\"Grrr... {wait}{wait}Not yet! {wait}{wait}I won't lose to{nl} you!"
   },
   {
    "id": "r020_0F62",
    "addr": "0F62",
    "size": 66,
    "jp": "「さあ こいっ！{page}「シルヴェルいちの 剣さばきを{nl} 見せてやるっ！",
-   "en": ""
+   "en": "\"Come on!{page}\"I'll show you the finest swordplay in{nl} Silvel!"
   },
   {
    "id": "r020_0FAC",
    "addr": "0FAC",
    "size": 72,
    "jp": "「ユ－リ様の ご命令で{nl} このところ急に{nl} 訓練が きびしくなったんだ。",
-   "en": ""
+   "en": "\"On Yuri-sama's orders, our training{nl} suddenly got a lot harder lately."
   },
   {
    "id": "r020_0FF6",
    "addr": "0FF6",
    "size": 56,
    "jp": "「ユ－リ様は いったい{nl} なにを 考えてるんだろう・・・",
-   "en": ""
+   "en": "\"What on earth is Yuri-sama thinking..."
   }
  ]
 }

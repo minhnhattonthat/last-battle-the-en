@@ -11,175 +11,175 @@
    "addr": "0244",
    "size": 172,
    "jp": "「あら？ あんた{nl} エルダ－ル村から きたの？{page}「じゃ あんたの村に{nl} この城の兵士が いるでしょ？{nl} ほら コンラ－トって人よ。{page}「あの人{nl} ちょっと カッコいいわよね。",
-   "en": ""
+   "en": "\"Oh? You came from Eldar Village?{page}\"Then there's a soldier from this castle{nl} in your village, right? You know, the{nl} one called Konrad.{page}\"He's kind of cool, don't you think?"
   },
   {
    "id": "r021_02FA",
    "addr": "02FA",
    "size": 70,
    "jp": "「あの人 どうしたの？{nl} 今日は だまって{nl} 仕事を休んでるんだけど。",
-   "en": ""
+   "en": "\"What's up with him? He's skipped work{nl} today without a word."
   },
   {
    "id": "r021_0342",
    "addr": "0342",
    "size": 72,
    "jp": "「なにっ！？{wait}{wait} なんなのよ！？{wait}{wait}{wait}{wait}{nl} 一体 なにが起こったのっ！？",
-   "en": ""
+   "en": "\"What?! {wait}{wait}What is it?! {wait}{wait}{wait}{wait}What{nl} on earth is happening?!"
   },
   {
    "id": "r021_038C",
    "addr": "038C",
    "size": 96,
    "jp": "「もう だめだわ！{wait}{wait}{nl} みんな 死んじゃうのよっ！！{wait}{wait}{wait}{wait}{nl} いやっ 助けて コンラ－ト！！",
-   "en": ""
+   "en": "\"It's over! {wait}{wait}We're all going to die!!{nl} {wait}{wait}{wait}{wait}No! Save me, Konrad!!"
   },
   {
    "id": "r021_03F2",
    "addr": "03F2",
    "size": 128,
    "jp": "「王様もユ－リ様も{nl} 亡くなったっていうのが{nl} ただのウワサで ホッとしたわ。{page}「戦争の時って 恐いウワサが{nl} 流れるものねぇ。",
-   "en": ""
+   "en": "\"I'm so relieved it was only a rumor{nl} that the King and Yuri-sama had died.{page}\"Scary rumors always go around in{nl} wartime, don't they?"
   },
   {
    "id": "r021_0474",
    "addr": "0474",
    "size": 138,
    "jp": "「戦争も終わったし・・・{nl} あとは 赤ちゃんのお生まれを{nl} 待つばかりねえ。{page}「そうそう{wait}{wait} 赤ちゃんの{nl} お誕生が 近づいてきてるのよ。",
-   "en": ""
+   "en": "\"The war's over... now all that's left is{nl} to wait for the baby to be born.{page}\"That's right, {wait}{wait}the royal baby is due{nl} soon."
   },
   {
    "id": "r021_050A",
    "addr": "050A",
    "size": 72,
    "jp": "「この奥は 玉座の間です。{nl} ユ－リ様なら 奥に{nl} いらっしゃいますよ。",
-   "en": ""
+   "en": "\"The throne room is through here. You'll{nl} find Yuri-sama inside."
   },
   {
    "id": "r021_0558",
    "addr": "0558",
    "size": 70,
    "jp": "「ユ－リ様は今{nl} この奥の 玉座の間で{nl} 人に会っていらっしゃいます。",
-   "en": ""
+   "en": "\"Yuri-sama is meeting someone in the{nl} throne room beyond."
   },
   {
    "id": "r021_05A0",
    "addr": "05A0",
    "size": 62,
    "jp": "「この奥は 玉座の間です。{nl} でもユ－リ様は おられませんよ。",
-   "en": ""
+   "en": "\"The throne room is through here. But{nl} Yuri-sama isn't in."
   },
   {
    "id": "r021_05EA",
    "addr": "05EA",
    "size": 102,
    "jp": "「なんで急に 訓練が{nl} きびしくなったんだろ？{page}「まるで 明日にでも{nl} 戦いが あるみたいじゃないか！",
-   "en": ""
+   "en": "\"Why did training suddenly get so hard?{page}\"It's as if there's going to be a battle{nl} tomorrow!"
   },
   {
    "id": "r021_0656",
    "addr": "0656",
    "size": 76,
    "jp": "「あ－っ！{wait}{nl} もう つかれたよ－っ！{page}「たまには 休みが{nl} ほしいよ－っ！",
-   "en": ""
+   "en": "\"Aaargh! {wait}I'm so tired!{page}\"I want a day off once in a while!"
   },
   {
    "id": "r021_06A4",
    "addr": "06A4",
    "size": 126,
    "jp": "「ああ{nl} いそがしい{nl} いそがしい！{page}「ユ－リ様の おルスの間は{nl} お城の仕事は わしらが全部{nl} 引き受けねばならんからのう。",
-   "en": ""
+   "en": "\"Oh, so busy, so busy!{page}\"While Yuri-sama is away, we have to{nl} handle all the castle's work ourselves."
   },
   {
    "id": "r021_0724",
    "addr": "0724",
    "size": 174,
    "jp": "「ほとんどの兵士が{nl} ユ－リ様と共に グルド攻撃へ{nl} 向かってしまった。{page}「もし今 何かあったら{nl} わしらだけで この国を{nl} 支えきれるだろうか・・・{page} そう思うと心細いな。",
-   "en": ""
+   "en": "\"Most of the soldiers have gone with{nl} Yuri-sama to attack Guld.{page}\"If anything happened now, could we{nl} hold this country up on our own...{page} It makes me uneasy to think about."
   },
   {
    "id": "r021_07DE",
    "addr": "07DE",
    "size": 44,
    "jp": "「むんっ！{wait}{nl} とおっ！{wait}{nl} きええ－っ！{wait}",
-   "en": ""
+   "en": "\"Hmph! {wait}Tah! {wait}Kyaaah! {wait}"
   },
   {
    "id": "r021_0810",
    "addr": "0810",
    "size": 56,
    "jp": "「戦いが おれを呼んでいるっ！{nl} あ－ 腕が鳴るぞぉっ！",
-   "en": ""
+   "en": "\"Battle is calling me! Ahh, my arms are{nl} itching for it!"
   },
   {
    "id": "r021_084A",
    "addr": "084A",
    "size": 116,
    "jp": "「さすがのグルド軍も{nl} この下の宝物庫の扉は{nl} 開けられなかったらしいな。{page}「あの扉は{nl} 特別がんじょうだからなあ。",
-   "en": ""
+   "en": "\"Looks like even the Guld army couldn't{nl} open the treasury door down below.{page}\"That door is extra sturdy, you know."
   },
   {
    "id": "r021_08C0",
    "addr": "08C0",
    "size": 152,
    "jp": "「宝物庫には{nl} シルヴェル王家の 先租伝来の宝が{nl} しまってあるんだ。{page}「だから絶対に盗まれないよう{nl} 宝物庫は 特別がんじょうに{nl} 作られているのさ。",
-   "en": ""
+   "en": "\"The treasury holds treasures handed{nl} down by the ancestors of Silvel's royal{nl} family.{page}\"So it was built extra sturdy, so they{nl} can never be stolen."
   },
   {
    "id": "r021_0960",
    "addr": "0960",
    "size": 168,
    "jp": "「どうした ぼうや？{nl} お城に用かい？{page}「あっ そうか！{nl} 君も兵士に{nl} あこがれてるんだろ？{page}「いや わかってるって！{wait}{nl} お城の兵士って{nl} かっこいいもんなっ！！{page}",
-   "en": ""
+   "en": "\"What's up, kid? Business at the castle?{page}\"Oh, I get it! You dream of being a{nl} soldier too, right?{page}\"No, I understand! {wait}Castle soldiers are{nl} so cool!!{page}"
   },
   {
    "id": "r021_0A08",
    "addr": "0A08",
    "size": 140,
    "jp": "「剣とヨロイに 身をかため{wait}{nl} 王国の平和を守るために{nl} 命をかける・・・{page}「う～ん・・・{wait}{nl} なんて かっこいいんだろ{nl} おれたちって！！",
-   "en": ""
+   "en": "\"Clad in sword and armor, {wait}risking our{nl} lives to protect the kingdom's peace...{page}\"Mmm... {wait}how cool are we?!"
   },
   {
    "id": "r021_0A96",
    "addr": "0A96",
    "size": 102,
    "jp": "「ぼうや お城は 全部{nl} 見てまわったかい？{page}「どうだい{nl} ますます 兵士に{nl} なりたくなっただろ？{page}",
-   "en": ""
+   "en": "\"Kid, have you seen the whole castle?{page}\"Well? Makes you want to be a soldier{nl} even more, right?{page}"
   },
   {
    "id": "r021_0B06",
    "addr": "0B06",
    "size": 50,
    "jp": "「おいらが 兵士になったわけを{nl} 聞いてくれよ。{page}",
-   "en": ""
+   "en": "\"Let me tell you why I became a soldier.{page}"
   },
   {
    "id": "r021_0B3A",
    "addr": "0B3A",
    "size": 250,
    "jp": "「おいら エルフの娘に{nl} ふられたんだ。{nl} 弱い男は きらいだってね。{page} だから おいら{nl} 兵士になったんだ！{page}「なのに今度は{nl} 兵士は 戦うのが仕事だから{nl} きらいだって ゆ－んだよ！{page}「けっきょく エルフと人間じゃ{nl} うまくいかないのかなあ・・・",
-   "en": ""
+   "en": "\"I got dumped by an elf girl. She said{nl} she hates weak men.{page} So I became a soldier!{page}\"But now she says she hates soldiers,{nl} because fighting is their job!{page}\"Maybe elves and humans just can't get{nl} along after all..."
   },
   {
    "id": "r021_0C36",
    "addr": "0C36",
    "size": 148,
    "jp": "「おいらが 兵士になったわけを{nl} 聞いてくれよ。{page}「えっ もう聞いたって？{nl} そうかなあ・・・{page}「でも いいじゃないか{nl} もう一度 聞いてくれよ！{wait}",
-   "en": ""
+   "en": "\"Let me tell you why I became a soldier.{page}\"Huh? You've heard it already? Have{nl} you, though...{page}\"Well, so what? Hear it one more{nl} time!{wait}"
   },
   {
    "id": "r021_0CD4",
    "addr": "0CD4",
    "size": 106,
    "jp": "「ちぇっ！ なんだい！{page}「おいらの この せつない気持ち{nl} 少しくらい聞いてくれたって{nl} いいじゃないか！",
-   "en": ""
+   "en": "\"Tch! What's with you!{page}\"You could at least listen a little to my{nl} aching heart!"
   },
   {
    "id": "r021_0D52",
    "addr": "0D52",
    "size": 174,
    "jp": "「どうして 急に{nl} 訓練が きびしくなったのかしら？{page}「おかげで ケガ人が ふえて{nl} 困ってるんです。{page}「あなたも 少しくらいのキズなら{nl} 町の魔法司に{nl} いってくださいね。",
-   "en": ""
+   "en": "\"Why did training suddenly get so hard?{page}\"Thanks to that, we have more and{nl} more injured. It's a real bother.{page}\"If you only have a small wound, please{nl} see the town's mage."
   },
   {
    "id": "r021_0E0E",
