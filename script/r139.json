@@ -11,161 +11,161 @@
    "addr": "008C",
    "size": 94,
    "jp": "「帰ってきたんだね ボルグ。{page}「ほんとに スヴァルト兄さんの{nl} 言っていた とおりになったね。",
-   "en": ""
+   "en": "\"So you're back, Borg.{page}\"It turned out just as big brother Svart{nl} said."
   },
   {
    "id": "r139_00F4",
    "addr": "00F4",
    "size": 68,
    "jp": "「ベルクスタットの町で おまえの{nl} おやじさんに 会って来たんだろ？",
-   "en": ""
+   "en": "\"You met your old man in Bergstadt,{nl} didn't you?"
   },
   {
    "id": "r139_013E",
    "addr": "013E",
    "size": 204,
    "jp": "「おまえの おやじさんが{nl} 考えたことさ ぬかりはない{nl} だろうよ。{page}「族長のお嬢さんの ところへ{nl} 行ってみると いいよ。{page}「おおきな声では 言えないけれど{nl} あることが ここでも{nl} 進んでいるからね。",
-   "en": ""
+   "en": "\"It's your old man's plan. I'm sure he's{nl} left nothing out.{page}\"Go see the chief's daughter.{page}\"I can't say it out loud, but something's{nl} in the works here too."
   },
   {
    "id": "r139_020E",
    "addr": "020E",
    "size": 154,
    "jp": "「もし あんたが来たら{nl} ベルクスタットへ 来るように{nl} 伝えてくれと いわれたんだよ。{page}「すれちがいに なったんだね{nl} １度もどって 話を聞いてみなよ。",
-   "en": ""
+   "en": "\"I was told if you came, to tell you to{nl} come to Bergstadt.{page}\"You must have missed each other. Go{nl} back once and hear him out."
   },
   {
    "id": "r139_02AE",
    "addr": "02AE",
    "size": 116,
    "jp": "「しかし なんだね・・・。{page}「わが兄ながら スヴァルトの{nl} ふらふらした 性格は{nl} ボルグ！ おまえもそっくりだよ。",
-   "en": ""
+   "en": "\"But you know...{page}\"My own brother Svart's wandering{nl} ways, Borg! You're just the same."
   },
   {
    "id": "r139_0324",
    "addr": "0324",
    "size": 186,
    "jp": "「ねえ ボルグ？{nl} あとどのくらい その娘さんの{nl} 子守りを するつもりなんだい？{page}「子守りじゃないって？{nl} 判ってるよ 警護の仕事だろ！{page}「へん！ あたしからみりゃ{nl} おんなじこった。",
-   "en": ""
+   "en": "\"Say, Borg? How much longer do you{nl} mean to babysit that girl?{page}\"Not babysitting? I know, it's guard{nl} work!{page}\"Hmph! Looks the same to me."
   },
   {
    "id": "r139_03E0",
    "addr": "03E0",
    "size": 134,
    "jp": "「男をみがく 旅に出る！{nl} なんて言って 村を出てさ。{page}「ボルグ いったい？{nl} いつまで 族長のお嬢さんを{nl} またせるつもりなんだい。",
-   "en": ""
+   "en": "\"You left the village saying you were{nl} off on a journey to make a man of{nl} yourself!{page}\"Borg, just how long do you mean to{nl} keep the chief's daughter waiting?"
   },
   {
    "id": "r139_0468",
    "addr": "0468",
    "size": 126,
    "jp": "「おやじさんの仕事を{nl} 継いだのは いいさ。{page}「でも あの{nl} ひとところに おちつけない{nl} とこまで にることはないだろうに。",
-   "en": ""
+   "en": "\"It's fine that you took over your old{nl} man's work.{page}\"But you didn't have to take after him{nl} in never staying put."
   },
   {
    "id": "r139_04EC",
    "addr": "04EC",
    "size": 256,
    "jp": "「うん－ん・・・なんだい・・{nl} こんな時間に！{page}「スヴァルト兄さんかい？{nl} むにゃ むにゃ。{page}「だいじょうぶだって{nl} あんたの 息子のボルグが{nl} 来たら・・・・{page}「ちゃんと ベルクスタットに{nl} 行くように 伝えておくよ・・・{nl} おやすみ・・・ ぐ－・・・。",
-   "en": ""
+   "en": "\"Mmmh... what is it.. at this hour!{page}\"Brother Svart? Mumble, mumble.{page}\"It's fine, I said. When your son Borg{nl} comes....{page}\"I'll tell him to go to Bergstadt... Good{nl} night... Snore..."
   },
   {
    "id": "r139_05EE",
    "addr": "05EE",
    "size": 102,
    "jp": "「うん－ん・・・なんだい・・{nl} こんな時間に！{page}「ゆっくり 寝かせておくれよ{nl} あたしゃ 眠いんだよ。",
-   "en": ""
+   "en": "\"Mmmh... what is it.. at this hour!{page}\"Let me sleep in peace. I'm sleepy."
   },
   {
    "id": "r139_0664",
    "addr": "0664",
    "size": 194,
    "jp": "「ねぇ ねぇ！{page}「毛皮がなくても 寒くないの？{nl} ちっちゃいミミでも 聞こえるの？{page}「そんな おくちじゃ ガブリって{nl} ごはん 食べられないでしょう？{page}{FB00}「わたし{nl} ヤ－ク族に 生れてよかった。",
-   "en": ""
+   "en": "\"Hey, hey!{page}\"Aren't you cold without fur? Can you{nl} hear with those tiny ears?{page}\"With a mouth like that, you can't chomp{nl} your food, can you?{page}{FB00}\"I'm glad I was born a Yaak."
   },
   {
    "id": "r139_0730",
    "addr": "0730",
    "size": 66,
    "jp": "「おにいちゃんたちも ヤ－ク族に{nl} 生れたかったって思うでしょう？",
-   "en": ""
+   "en": "\"You wish you'd been born Yaak too,{nl} don't you, mister?"
   },
   {
    "id": "r139_0778",
    "addr": "0778",
    "size": 88,
    "jp": "「ヤ－ク族の者はみんな 手先が{nl} きようだから モノを作るのが{nl} とっても うまいのよ。",
-   "en": ""
+   "en": "\"All the Yaak are good with their hands,{nl} so we're really good at making things."
   },
   {
    "id": "r139_07D2",
    "addr": "07D2",
    "size": 152,
    "jp": "「ボルグおじちゃん{nl} こんどは 村に長くいられるの？{page}「ほんとうに おかあさんが{nl} 言ってた とおりなのね。{page}「なんて 言ってたのかは{nl} ヒ・ミ・ツ・！",
-   "en": ""
+   "en": "\"Uncle Borg, can you stay in the village{nl} longer this time?{page}\"It's just like Mommy said.{page}\"What did she say? It's a s-e-c-r-e-t!"
   },
   {
    "id": "r139_086C",
    "addr": "086C",
    "size": 144,
    "jp": "「ボルグおじちゃん。{page}「族長さんとこの おね－ちゃんを{nl} 泣かしちゃ だめよ。{page}「はやく 族長を継げるほどの{nl} ヤ－クになって 帰ってくるのよ。",
-   "en": ""
+   "en": "\"Uncle Borg.{page}\"Don't make the chief's big sister cry.{page}\"Hurry and come back a Yaak good{nl} enough to be chief."
   },
   {
    "id": "r139_08FE",
    "addr": "08FE",
    "size": 86,
    "jp": "「そんな 人間の女の人の{nl} 子守りなんかやめて はやく{nl} ヤ－クの村に 帰ってきてね。",
-   "en": ""
+   "en": "\"Stop babysitting that human woman{nl} and hurry back to the Yaak village."
   },
   {
    "id": "r139_0968",
    "addr": "0968",
    "size": 178,
    "jp": "「まぁ ボルグ！{nl} 帰ってきてくれたのね・・・。{page}「うちのダンナの ヘ－グも{nl} 連れていかれる まえに{page}『きっと ボルグが 助けに{nl} とんでくる はずだ！{page} そう 言ってたのよ。",
-   "en": ""
+   "en": "\"Oh, Borg! You came back...{page}\"Before they took my husband Heeg{nl} away,{page}'Borg is sure to come flying to help us!'{page}that's what he said."
   },
   {
    "id": "r139_0A24",
    "addr": "0A24",
    "size": 208,
    "jp": "「もうひとつ 大事なことがあるの。{page}「ずっと 旅に出ていた{nl} スヴァルトさんが こっそりと{nl} 帰っていらして・・・・。{page}「族長の お嬢さんと{nl} 秘かに 話をしていたようだけど{nl} くわしいことは わかんないわ。",
-   "en": ""
+   "en": "\"There's one more important thing.{page}\"Svart-san, who'd been away traveling{nl} all this time, came back in secret....{page}\"He seemed to be talking secretly with{nl} the chief's daughter, but I don't know{nl} the details."
   },
   {
    "id": "r139_0AFA",
    "addr": "0AFA",
    "size": 174,
    "jp": "「ヘ－グも 彼の弟の ロ－グも{nl} 今は ほかのみんなと いっしょに{nl} 捕われて 大洞窟の奥よ。{page}「ヤ－クは 腕のいい職人だから{nl} グルド軍のために{nl} 武器を作らさているのよ。",
-   "en": ""
+   "en": "\"Heeg and his brother Rogue are{nl} prisoners deep in the Great Cave now,{nl} with everyone else.{page}\"The Yaak are skilled craftsmen, so{nl} they're being made to make weapons{nl} for the Guld army."
   },
   {
    "id": "r139_0BAA",
    "addr": "0BAA",
    "size": 42,
    "jp": "「ありがとう{nl} ボルグと 仲間のみなさん。",
-   "en": ""
+   "en": "\"Thank you, Borg and all his friends."
   },
   {
    "id": "r139_0BD6",
    "addr": "0BD6",
    "size": 82,
    "jp": "「ヘ－グも ロ－グも{nl} 今度は 戦士のまねごとだなんて{nl} だいじょうぶなのかしら？",
-   "en": ""
+   "en": "\"Heeg and Rogue playing warrior this{nl} time. I wonder if they'll be all right?"
   },
   {
    "id": "r139_0C2E",
    "addr": "0C2E",
    "size": 104,
    "jp": "「あのひとが 大洞窟の奥に{nl} 囚われていると思うと・・・。{page}「心配で とても寝てなんか{nl} いられないわ。",
-   "en": ""
+   "en": "\"When I think of him held prisoner deep{nl} in the Great Cave...{page}\"I'm too worried to sleep."
   },
   {
    "id": "r139_0C98",
    "addr": "0C98",
    "size": 98,
    "jp": "「ヘ－グも ロ－グも{nl} ケガなんか してないかしら？{page}「心配で とても寝てなんか{nl} いられないわ。",
-   "en": ""
+   "en": "\"I hope Heeg and Rogue aren't hurt.{page}\"I'm too worried to sleep."
   }
  ]
 }

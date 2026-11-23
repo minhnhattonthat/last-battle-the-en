@@ -11,84 +11,84 @@
    "addr": "00CE",
    "size": 168,
    "jp": "族長の娘{nl}「まあ ボルグ！{page}{FB00}「あなたの お仲間なら信用しても{nl} よろしいのよね。{page}「男の人たちは みんな{nl} 大洞窟へ とじこめられて{nl} グルド兵に 働かされているの。",
-   "en": ""
+   "en": "Chief's Daughter{nl}\"Oh, Borg!{page}{FB00}\"If they're your friends, I can trust{nl} them, can't I?{page}\"All the men have been shut in the{nl} Great Cave and made to work by Guld{nl} soldiers."
   },
   {
    "id": "r140_017C",
    "addr": "017C",
    "size": 186,
    "jp": "族長の娘{nl}「残されたのは{nl} 女や 子供と 老人ばかり。{page}「洞窟の男の人たちは{nl} わたしたちの ことがあるから{nl} さからえないし・・・{page}「ねぇ あなたたちなら{nl} 手をかしてくださるかしら？",
-   "en": ""
+   "en": "Chief's Daughter{nl}\"Only women, children and old folk are{nl} left.{page}\"The men in the cave can't resist,{nl} because of us...{page}\"Say, would you lend us a hand?"
   },
   {
    "id": "r140_023C",
    "addr": "023C",
    "size": 84,
    "jp": "「夜 ここに おいでください{nl} その時に いま進んでいる{nl} 計画を お見せしますわ。",
-   "en": ""
+   "en": "\"Please come here at night. Then I'll{nl} show you the plan we have under way."
   },
   {
    "id": "r140_0294",
    "addr": "0294",
    "size": 174,
    "jp": "「なかなか たよりになりそうな{nl} みなさんなのに・・・・。{page}「でも そういわれるなら{nl} しかたないですわね。{page}「わたし こまってしまいましたわ。{nl} ボルグ どうしましょう。{page}",
-   "en": ""
+   "en": "\"And you all look so reliable....{page}\"But if that's what you say, it can't be{nl} helped.{page}\"Oh, I'm at a loss. Borg, what shall we{nl} do?{page}"
   },
   {
    "id": "r140_034E",
    "addr": "034E",
    "size": 64,
    "jp": "族長の娘{nl}「もう お父様に会えないなんて{nl} ことは ないわよね。",
-   "en": ""
+   "en": "Chief's Daughter{nl}\"I'll see my father again, won't I?"
   },
   {
    "id": "r140_0394",
    "addr": "0394",
    "size": 146,
    "jp": "族長の娘{nl}「わたしも 連れていってなんて{nl} 無理は 言わない。{page}「だけど ボルグ{wait}・{wait}・{wait}・{nl} ケガなんか しないでね。{page}「元気で 帰ってきてね。",
-   "en": ""
+   "en": "Chief's Daughter{nl}\"I won't be unreasonable and ask you{nl} to take me along.{page}\"But Borg{wait}.{wait}.{wait}. don't get hurt.{page}\"Come back safe."
   },
   {
    "id": "r140_042C",
    "addr": "042C",
    "size": 102,
    "jp": "族長の娘{nl}「この ヨロイ？{page} せめて 戦いのなかに身をおく{nl} あなたと 同じかっこで{nl} いたかったの。",
-   "en": ""
+   "en": "Chief's Daughter{nl}\"This armor?{page} I wanted at least to dress like you, out{nl} there in the fighting."
   },
   {
    "id": "r140_0498",
    "addr": "0498",
    "size": 82,
    "jp": "族長の娘{nl}「ボルグ{wait}・{wait}・{wait}・{nl} ・・・・・・・・・。{page}「・・・・・帰ってきてね。",
-   "en": ""
+   "en": "Chief's Daughter{nl}\"Borg{wait}.{wait}.{wait}. .........{page}\"..... Come back to me."
   },
   {
    "id": "r140_04EC",
    "addr": "04EC",
    "size": 116,
    "jp": "族長の娘{nl}「ボルグ・・・・・{wait}{wait}{wait}{nl} いまごろ あなたは・・・{page} どこで 何をしているの・・・{nl} スヤ スヤ・・・。",
-   "en": ""
+   "en": "Chief's Daughter{nl}\"Borg.....{wait}{wait}{wait} right now...{page} where are you, what are you doing...{nl} Zzz..."
   },
   {
    "id": "r140_0580",
    "addr": "0580",
    "size": 150,
    "jp": "「若いモンなら もうとっくに{nl} この村を でているぞい。{page}「あんたたちが スヴァルトに{nl} きちんと 連絡をとってくれんと{nl} この作戦は 失敗するぞい。",
-   "en": ""
+   "en": "\"The young ones left the village long{nl} ago.{page}\"If you don't keep in proper touch with{nl} Svart, this plan will fail."
   },
   {
    "id": "r140_0618",
    "addr": "0618",
    "size": 78,
    "jp": "「若いモンは うまくやってるかな？{nl} 残った者も ここで{nl} がんばってるぞい。",
-   "en": ""
+   "en": "\"I wonder if the young ones are doing{nl} well. Those of us left behind are doing{nl} our best here too."
   },
   {
    "id": "r140_0672",
    "addr": "0672",
    "size": 100,
    "jp": "族長の娘{nl}「まぁ 来てくれたのね！{nl} うれしいわ ボルグ！！{page}「さあ みなさん{nl} 奥の方へ どうぞ{page2}",
-   "en": ""
+   "en": "Chief's Daughter{nl}\"Oh, you came! I'm so happy, Borg!!{page}\"Now, everyone, come on in to the back.{page2}"
   },
   {
    "id": "r140_06FD",

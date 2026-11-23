@@ -39,7 +39,7 @@
    "addr": "05B6",
    "size": 90,
    "jp": "「スヴァルトのところへ{nl} もどりなされ 必要な時に必ず{nl} まにあうように 運ばせようぞい。",
-   "en": "",
+   "en": "\"Go back to Svart. I'll have it carried so{nl} it's sure to arrive when it's needed.",
    "reached": false
   },
   {
@@ -47,84 +47,84 @@
    "addr": "0616",
    "size": 60,
    "jp": "ヤ－ク族長{nl}「すべては 若いもんが{nl} こころえてるはずぞい。",
-   "en": ""
+   "en": "Yaak Chief{nl}\"The young ones should know it all."
   },
   {
    "id": "r138_0654",
    "addr": "0654",
    "size": 186,
    "jp": "ヤ－ク族長{nl}「武器庫じゃからな{nl} なんかないと さびしいぞい。{page}{FB00}「村で いま いちばん{nl} 破壊力のある武器は{nl} この ワシぞい！{page}「だから 破城つちの代りに{nl} わしが ここにいるぞい。",
-   "en": ""
+   "en": "Yaak Chief{nl}\"It's an armory, after all. Lonely with{nl} nothing in it.{page}{FB00}\"The most destructive weapon in the{nl} village right now is me!{page}\"So I'm here in place of the battering{nl} ram."
   },
   {
    "id": "r138_0710",
    "addr": "0710",
    "size": 202,
    "jp": "ヤ－ク族長{nl}「こう見えても むかしは{nl} 傭兵隊長まで つとめたワシぞい。{page}「そのころの ワシに{nl} 壊せんものは なかったぞい。{page}{FB00}「この ワシから見れば{nl} スヴァルトも まだ まだ{nl} ただの ガキぞい。",
-   "en": ""
+   "en": "Yaak Chief{nl}\"I may not look it, but in my day I was{nl} a mercenary captain.{page}\"Back then, there was nothing I couldn't{nl} smash.{page}{FB00}\"To me, even Svart is still just a kid."
   },
   {
    "id": "r138_07E2",
    "addr": "07E2",
    "size": 124,
    "jp": "ヘ－グ{nl}「ボルグ！ こんどはオレが{nl} おまえを 助けてやるぜ。{page}「みんなヨロイとハンマ－で{nl} きちんと 武装していくからな！",
-   "en": ""
+   "en": "Heeg{nl}\"Borg! This time I'll help you out.{page}\"We'll all go properly armed, with armor{nl} and hammers!"
   },
   {
    "id": "r138_0860",
    "addr": "0860",
    "size": 144,
    "jp": "ヘ－グ{nl}「安心して スヴァルトさんの所へ{nl} 知らせに 行ってくれ。{page}「あんたたちが 道草くって{nl} ノロノロ いかないかぎりは{nl} だいじょうぶさ。",
-   "en": ""
+   "en": "Heeg{nl}\"Don't worry, go and tell Svart-san.{page}\"As long as you don't dawdle along the{nl} way, it'll be fine."
   },
   {
    "id": "r138_08F8",
    "addr": "08F8",
    "size": 170,
    "jp": "ロ－グ{nl}「そうかい そこらじゅうの{nl} 町や村に グルド兵がいるのかい。{page}「うちの店の おとくいさんたちも{nl} 大変な目に あっているのか{nl} そいつは ほっとけないな・・・。",
-   "en": ""
+   "en": "Rogue{nl}\"So there are Guld soldiers in every{nl} town and village around.{page}\"Our shop's regulars are having a hard{nl} time too, then. I can't just leave that{nl} be..."
   },
   {
    "id": "r138_09A4",
    "addr": "09A4",
    "size": 58,
    "jp": "ロ－グ{nl}「おとくいさんたち{nl} だいじょうぶかな 心配だな。",
-   "en": ""
+   "en": "Rogue{nl}\"I hope our regulars are all right. I'm{nl} worried."
   },
   {
    "id": "r138_09E6",
    "addr": "09E6",
    "size": 86,
    "jp": "「わはははは{nl} 戦士としての ヤ－クの血が{nl} あつく燃えているぞ！{page} 戦いだ 戦いだ！",
-   "en": ""
+   "en": "\"Wahahaha! The Yaak warrior blood is{nl} burning hot!{page} Battle! Battle!"
   },
   {
    "id": "r138_0A3E",
    "addr": "0A3E",
    "size": 54,
    "jp": "「うお－っ！{nl} どん どこ どん！{nl} わお－－－ん！！",
-   "en": ""
+   "en": "\"Wooo! Boom ba-doom boom! Awooooo!!"
   },
   {
    "id": "r138_0A7C",
    "addr": "0A7C",
    "size": 70,
    "jp": "「ボルグのやつ{nl} 人間族の 見わけがつくなんて{nl} そんけいしちまうぜ。",
-   "en": ""
+   "en": "\"That Borg can tell humans apart. I've{nl} got to respect that."
   },
   {
    "id": "r138_0AC4",
    "addr": "0AC4",
    "size": 78,
    "jp": "「クシュン！！{wait}{wait}{nl} カゼがなおらねぇ・・・{nl} ず－っと ひきっぱなしなんだ。",
-   "en": ""
+   "en": "\"Achoo!! {wait}{wait}This cold won't go away...{nl} I've had it forever."
   },
   {
    "id": "r138_0B1A",
    "addr": "0B1A",
    "size": 130,
    "jp": "ヤ－ク族長{nl}「そんなところで なにを{nl} ぼそぼそ 話しとる？{page}「わしに ようがあるなら{nl} となりにきて 話しかけて{nl} ほしいぞい。",
-   "en": ""
+   "en": "Yaak Chief{nl}\"What are you muttering about over{nl} there?{page}\"If you want me, come over here and{nl} talk to me."
   }
  ]
 }
