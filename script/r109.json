@@ -11,238 +11,238 @@
    "addr": "00B7",
    "size": 336,
    "jp": "「あの グルドが攻めてきた日の{nl} ことですか{wait}・{wait}・{wait}・{wait}{page}「グルド軍に 村を囲まれたときに{nl} 去年の 麦のしゅうかくを{nl} みんなで 差し出したんです。{page}「おかげで 見はりの兵士こそ{nl} 村に残されましたが 人や畑に{nl} 手をだされずに すみました。{page}{FB00}{wait}{wait}「わたしらが 手にしてるのは{nl} すきや くわで{nl} 戦いの道具ではありませんからね。",
-   "en": ""
+   "en": "\"The day Guld attacked{wait}.{wait}.{wait}.{wait}?{page}\"When the Guld army surrounded the{nl} village, we all handed over last year's{nl} wheat harvest.{page}\"Thanks to that, they left guards in the{nl} village, but they didn't touch our people{nl} or fields.{page}{FB00}{wait}{wait}\"What we hold are plows and hoes,{nl}not tools of war."
   },
   {
    "id": "r109_0211",
    "addr": "0211",
    "size": 194,
    "jp": "「この村の者は おとなしい{nl} 人間ばかりだということが{nl} わかって いただけましたか？{page}{FB00}「よ－く わかってもらわね－と{nl} こまるんだぜ にいちゃん！{wait}{wait}{wait}{wait}{wait}{nl} いけねぇ また やっちまった！",
-   "en": ""
+   "en": "\"Do you see now that everyone in this{nl} village is a gentle sort?{page}{FB00}\"You'd better see it real good, kid!{nl} {wait}{wait}{wait}{wait}{wait}Oops, I did it again!"
   },
   {
    "id": "r109_02DD",
    "addr": "02DD",
    "size": 178,
    "jp": "「このあたりで とれる麦は{nl} エットミランシェルでは{nl} 質でも 量でも 一番なんです。{page}「わたしたちが 逆らわないかぎり{nl} グルド王国も この村を{nl} 悪いようにはしないでしょう。",
-   "en": ""
+   "en": "\"The wheat grown around here is the{nl} best in Ettmiranshel, in quality and in{nl} quantity.{page}\"As long as we don't resist, the Guld{nl} kingdom won't treat this village badly."
   },
   {
    "id": "r109_0391",
    "addr": "0391",
    "size": 178,
    "jp": "「あのヤロ－ども シルヴェル城が{nl} とり返されたら ケツまくって{nl} とんずら こきやがった。{page}{FB00}「フン！{wait} これでやっと{nl} もとのままの オレさまに{nl} もどれるって～ もんだぜ。",
-   "en": ""
+   "en": "\"Those rats turned tail and scrammed{nl} the moment Silvel Castle was taken{nl} back.{page}{FB00}\"Hmph! {wait}Now at last I can go back to{nl} being my good old self."
   },
   {
    "id": "r109_0445",
    "addr": "0445",
    "size": 340,
    "jp": "「うちの か－ちゃんによッ{nl}『あんたは その性格だから{nl} いらぬ さわぎを起して・・・{page} 村のみんなで していることに{nl} めいわくを かけるわ！{page}『言葉使いと態度を なおして{nl} おとなしくしていられないなら{nl} アンタとは もう別れるからね！{page}{FB00}「そう 言われりゃ{nl} オレだって・・まぁ か－ちゃんを{nl} 愛{wait}・{wait}・{wait}してっからな {wait}{wait}オホン。",
-   "en": ""
+   "en": "\"My missus says to me,{page} 'With that temper of yours, you'll stir{nl} up needless trouble...{page} and cause problems for what the whole{nl} village is doing!{page} 'If you can't fix your mouth and your{nl} manners and keep quiet, I'm leaving{nl} you!'{page}{FB00}\"Well, when she puts it like that... I{nl} do{wait}.{wait}.{wait}love her, see. {wait}{wait}Ahem."
   },
   {
    "id": "r109_059B",
    "addr": "059B",
    "size": 70,
    "jp": "「へっ！{wait} オレはもう{nl} 一生分の あいそのよさを{nl} 使っちまったぜ。",
-   "en": ""
+   "en": "\"Heh! {wait}I've used up a whole lifetime's{nl} worth of being nice."
   },
   {
    "id": "r109_05E3",
    "addr": "05E3",
    "size": 130,
    "jp": "「おい にいちゃんたち！{nl} シルヴェル軍は 勝ってるか？{page}「負けてるようなら{nl} オレが ひとっぱしり{nl} ハッパかけに行ってやるぞ。",
-   "en": ""
+   "en": "\"Hey, you kids! Is the Silvel army{nl} winning?{page}\"If they're losing, I'll run over there{nl} and give 'em a kick in the pants."
   },
   {
    "id": "r109_0667",
    "addr": "0667",
    "size": 94,
    "jp": "「長いモン ふり回してる騎士連中に{nl} よく 言っといてくれよ！{page}「メシ食ったぶんは 働けって！",
-   "en": ""
+   "en": "\"You tell those knights waving their{nl} long things around!{page}\"Earn the food you eat!"
   },
   {
    "id": "r109_06C7",
    "addr": "06C7",
    "size": 128,
    "jp": "「とりあえず にいちゃんよう{wait}{nl} 伝言たのむぜ。{page}「グルドなんぞに 負けンじゃね－と{nl} 親切なおじさんが 言ってました{nl} とな。",
-   "en": ""
+   "en": "\"For now, kid,{wait} take a message for me.{page}\"'Don't you lose to the likes of Guld,'{nl} said a kind old man. Like that."
   },
   {
    "id": "r109_0757",
    "addr": "0757",
    "size": 194,
    "jp": "「えっ！{wait}・{wait}・{wait}・{wait}。{page}「わたしらは{nl} 畑の仕事ぐらいしか{nl} したことがないもんで・・・{page}「剣を取って グルドと戦うなんて{nl} とんでもないです！{page}「そんな 恐いこと{nl} 言わないでくださいよ～。",
-   "en": ""
+   "en": "\"Eh! {wait}.{wait}.{wait}.{wait}.{page}\"We've never done anything but work{nl} the fields...{page}\"Take up swords and fight Guld? No{nl} way!{page}\"Please don't say such scary things~."
   },
   {
    "id": "r109_0823",
    "addr": "0823",
    "size": 102,
    "jp": "「そこの家には グルド兵の見はりが{nl} いるんですよ・・・。{wait}{wait}{wait}{nl} 恐い話は {wait}ぬきにしてくださいよ。",
-   "en": ""
+   "en": "\"There's a Guld guard in that house{nl} there... {wait}{wait}{wait}Please, {wait}no scary talk."
   },
   {
    "id": "r109_0893",
    "addr": "0893",
    "size": 102,
    "jp": "「土を相手に 生きてきた{nl} わたしらです・・・{page}「この畑を ふみ荒すようなことは{nl} できませんよ～ぉ。",
-   "en": ""
+   "en": "\"We've lived our lives working the soil...{page}\"We could never let these fields be{nl} trampled~."
   },
   {
    "id": "r109_08FB",
    "addr": "08FB",
    "size": 148,
    "jp": "「シルヴェル騎士団の人たち{nl} ついに シルヴェル城を{nl} とり返したってな！{page}「グルドにかくれて{nl} 食料の援助をしていたかいが{nl} あったというもんだ。",
-   "en": ""
+   "en": "\"They say the Silvel Knights finally took{nl} back Silvel Castle!{page}\"It was worth sending them food behind{nl} Guld's back."
   },
   {
    "id": "r109_0991",
    "addr": "0991",
    "size": 170,
    "jp": "「グルドに 盗られた分とは別に{nl} かくしていた 麦のしゅうかくが{nl} あってね。{page}「山にかくれた 騎士団の人たちに{nl} その中から ひそかに{nl} 食料を 送りだしていたんだよ。",
-   "en": ""
+   "en": "\"Apart from what Guld took, we had{nl} some wheat hidden away.{page}\"We were secretly sending food from it{nl} to the knights hiding in the mountains."
   },
   {
    "id": "r109_0A3D",
    "addr": "0A3D",
    "size": 132,
    "jp": "「この戦いは{nl} まだまだ 続くのだろうか？{page}「戦いが ながびけば{nl} 村にある 秘密のたくわえも{nl} こころぼそくなるが{wait}・{wait}・{wait}・{wait}。",
-   "en": ""
+   "en": "\"Will this war go on much longer?{page}\"If it drags on, the village's secret{nl} stores will run low{wait}.{wait}.{wait}.{wait}."
   },
   {
    "id": "r109_0AC3",
    "addr": "0AC3",
    "size": 138,
    "jp": "「ワシらの戦いは やっぱり{nl} この 大地との戦いさ。{page}「麦も 豆も ジャガイモだって{nl} わしらが たんせいこめて{nl} 大豊作にしてみせるよ。",
-   "en": ""
+   "en": "\"Our fight is a fight with this earth,{nl} after all.{page}\"Wheat, beans, potatoes too, we'll put{nl} our hearts in and bring a bumper crop."
   },
   {
    "id": "r109_0B5D",
    "addr": "0B5D",
    "size": 224,
    "jp": "「う－ん できない。{wait}{wait}{nl} グルドの 勝利の詩なんか{nl} 作りたくないわ。{page}「だけど シルヴェルのひげき{wait}{nl} なんて 詩を作ってたら{nl} 囚人島に 送られちゃう！{page}{FB00}「わたしの 畑仕事のあいだの{nl} 楽しみが なくなっちゃったわ。",
-   "en": ""
+   "en": "\"Mmm, I can't. {wait}{wait}I don't want to write{nl} poems about Guld's victory.{page}\"But if I write a poem called 'Silvel's{nl} Tragedy',{wait} they'll send me to Prison{nl} Island!{page}{FB00}\"My little joy between field chores is{nl} gone."
   },
   {
    "id": "r109_0C47",
    "addr": "0C47",
    "size": 62,
    "jp": "「美しくないわ！{nl} わたしの {wait}美意識が{nl} ゆがんでしまうわ。",
-   "en": ""
+   "en": "\"It's not beautiful! It'll warp my {wait}sense{nl} of beauty."
   },
   {
    "id": "r109_0C8F",
    "addr": "0C8F",
    "size": 268,
    "jp": "「あの－ うちの人・・・{wait}{wait}{wait}{nl} 思わず くちにセッケン流しこんで{nl} 洗って やりたくなるような{page} 言葉使いや 態度をとったり{nl} しませんでしたか？{page}「・・・いえ なんでもないんです。{page}{FB00}「はぁ {wait}{wait}いつまで・・・{nl} こんな 心配をしなきゃ{nl} いけないのかしら・・・。",
-   "en": ""
+   "en": "\"Um, my husband...{wait}{wait}{wait}{page} he didn't talk or act in a way that'd{nl} make you want to wash his mouth out{nl} with soap, did he?{page}\"...No, it's nothing.{page}{FB00}\"Sigh. {wait}{wait}How long... will I have to{nl} worry like this..."
   },
   {
    "id": "r109_0D9D",
    "addr": "0D9D",
    "size": 218,
    "jp": "「みんなで すきや くわを持って{nl} グルドの兵隊さんを 囲んでね。{page} シルヴェル城は 奪回されて{nl} もう グルド軍は このあたりには{nl} いないことを おしえてあげたら{page}{FB00}「うふっ！{wait}{wait}{wait}{wait}{nl} すっとんで 逃げてったわ。",
-   "en": ""
+   "en": "\"We all took our plows and hoes and{nl} surrounded the Guld soldiers.{page} We told them Silvel Castle had been{nl} retaken and the Guld army was gone{nl} from these parts,{page}{FB00}\"Tee hee! {wait}{wait}{wait}{wait}And off they ran like{nl} the wind."
   },
   {
    "id": "r109_0E79",
    "addr": "0E79",
    "size": 48,
    "jp": "「ラントブルク村の勝利！{page} いい詩が できそう。",
-   "en": ""
+   "en": "\"Victory for Landburg village!{page} I can feel a good poem coming."
   },
   {
    "id": "r109_0EAB",
    "addr": "0EAB",
    "size": 74,
    "jp": "「この村の人の かつやくを{nl} すばらしい詩にまとめて{nl} 残してあげたいわ。",
-   "en": ""
+   "en": "\"I want to put the deeds of this{nl} village's people into a wonderful poem{nl} and leave it behind."
   },
   {
    "id": "r109_0EF7",
    "addr": "0EF7",
    "size": 178,
    "jp": "「うちの人も 本当は{nl} 戦いに いきたいのよ。{page}「でも だれかが 来年みんなが{nl} 食べられるだけの食料を{nl} 作っておかなきゃ・・・。{page}{FB00}「魔法じゃ お腹は{nl} ふくれませんものね。",
-   "en": ""
+   "en": "\"My husband really wants to go to the{nl} fighting too.{page}\"But someone has to grow enough food{nl} for everyone to eat next year...{page}{FB00}\"Magic won't fill your belly, after all."
   },
   {
    "id": "r109_0FAB",
    "addr": "0FAB",
    "size": 202,
    "jp": "「シルヴェルも グルドも{nl} 戦場になってしまって{nl} ひどいことになっているのでしょ？{page}「せっかく このあたりの土地を{nl} 無キズで とり返すことが{nl} できたんですもの。{page}「わたしたちが がんばんなきゃね。",
-   "en": ""
+   "en": "\"Silvel and Guld have both become{nl} battlefields, and it's terrible there, isn't{nl} it?{page}\"We managed to take back the land{nl} around here without a scratch.{page}\"So we have to do our best."
   },
   {
    "id": "r109_1077",
    "addr": "1077",
    "size": 146,
    "jp": "「くちずさむだけで{nl} 元気に なれるような{nl} 詩をつくりましょ。{page}{FB00}「みんなの願いが{nl} 大地に とどくよう{wait}{wait}{nl} 麦の畑が 黄金の原になるように。",
-   "en": ""
+   "en": "\"Let's make a poem that cheers you up{nl} just by humming it.{page}{FB00}\"So that everyone's wishes reach the{nl} earth,{wait}{wait} and the wheat fields{nl} become fields of gold."
   },
   {
    "id": "r109_1119",
    "addr": "1119",
    "size": 162,
    "jp": "「ヤ－ク村のロ－グさん！{nl} ちょっと しゅうりしてほしい{nl} 物があるんだけど。{page}{FB00}「あら {wait}いつもの道具屋さんじゃ{nl} なかったのね？{page}「まちがえて ごめんなさい。",
-   "en": ""
+   "en": "\"Rogue-san from the Yaak village! I've{nl} got something I need fixed.{page}{FB00}\"Oh, {wait}you're not the usual item seller?{page}\"Sorry, my mistake."
   },
   {
    "id": "r109_11C5",
    "addr": "11C5",
    "size": 248,
    "jp": "「いつもなら そろそろ{nl} ヤ－ク村から 道具屋さんが{nl} 来てくれる はずなのに。{page}「やっぱり 村で グルドに{nl} ひどいことを されているって話は{nl} 本当なのかしら？{page}{FB00}「あら いけない！{wait}{wait}{wait}{nl} わたしは 何も 知らないのよ{nl} おほほほほ・・・・。",
-   "en": ""
+   "en": "\"The item seller from the Yaak village{nl} usually comes around about now.{page}\"Is it true, then, what they say about{nl} Guld treating that village terribly?{page}{FB00}\"Oh dear, no! {wait}{wait}{wait}I don't know a{nl} thing. Ohohoho...."
   },
   {
    "id": "r109_12C7",
    "addr": "12C7",
    "size": 110,
    "jp": "「ヤ－ク村の 道具屋さんが{nl} しゅうりに 来てくれないなんて！{page}「どうしましょう？{wait}{nl} うちの おなべ・・・。",
-   "en": ""
+   "en": "\"The item seller from the Yaak village{nl} won't come do repairs!{page}\"What'll I do?{wait} My pot..."
   },
   {
    "id": "r109_1337",
    "addr": "1337",
    "size": 72,
    "jp": "「うちの おなべは直ったけど{nl} 心配ごとが ひとつ{nl} ふえちまったよ。{page}",
-   "en": ""
+   "en": "\"My pot got fixed, but now I've got one{nl} more worry.{page}"
   },
   {
    "id": "r109_137F",
    "addr": "137F",
    "size": 80,
    "jp": "「無事に 帰れたかしらねぇ{nl} ベルクスタットの方だって{nl} これからが大変なのに。",
-   "en": ""
+   "en": "\"I wonder if they got home safe. Things{nl} will be hard over Bergstadt way from{nl} now on."
   },
   {
    "id": "r109_13D1",
    "addr": "13D1",
    "size": 120,
    "jp": "「この グルドの支配している村に{nl} よくも まぁ・・・。{page}「いくら 夜の闇にまぎれてだって{nl} 危なかっただろうに・・・。",
-   "en": ""
+   "en": "\"To come into this Guld-ruled village, of{nl} all things...{page}\"Even under cover of night, it must{nl} have been dangerous..."
   },
   {
    "id": "r109_144B",
    "addr": "144B",
    "size": 170,
    "jp": "「シルヴェル軍が グルドの{nl} ゴロツキどもを 城から{nl} たたきだしたのを 知ってるかい？{page}「この村にいた 見はりのやつらも{nl} あたしたち みんなで{nl} 放りだしてやったよ。",
-   "en": ""
+   "en": "\"Did you hear the Silvel army kicked{nl} those Guld thugs out of the castle?{page}\"We all threw out the guards who were{nl} in this village too."
   },
   {
    "id": "r109_14F7",
    "addr": "14F7",
    "size": 158,
    "jp": "「あの家はね。{nl} あの子が 育った家だもの{page} 昔のように きれいにして{nl} そのままにしておくさ。{page}「この村 じまんの娘だからね。{nl} あの シルヴェル王妃様は。",
-   "en": ""
+   "en": "\"That house, well, it's the house that{nl} girl grew up in.{page} I'll keep it clean like the old days, just{nl} as it was.{page}\"She's this village's pride and joy, you{nl} know. The Queen of Silvel."
   },
   {
    "id": "r109_1597",
    "addr": "1597",
    "size": 78,
    "jp": "「あの子も もうすぐ母親。{nl} シルヴェルの およつぎ様を{nl} 産むんだね・・・。",
-   "en": ""
+   "en": "\"That girl will be a mother soon. She'll{nl} give birth to Silvel's heir..."
   },
   {
    "id": "r109_15F5",

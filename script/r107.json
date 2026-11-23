@@ -11,49 +11,49 @@
    "addr": "029D",
    "size": 24,
    "jp": "そこには何もありません。",
-   "en": ""
+   "en": "There is nothing there."
   },
   {
    "id": "r107_02B7",
    "addr": "02B7",
    "size": 58,
    "jp": "扉は かたく閉ざされている。{nl}魔法で封印されているようだ。",
-   "en": ""
+   "en": "The door is shut tight.{nl}It seems to be sealed by magic."
   },
   {
    "id": "r107_0381",
    "addr": "0381",
    "size": 376,
    "jp": "水の精霊像から 流れるような{nl}やさしい声が聞こえる・・・{wait}{wait}{wait}{wait}{page2}{F9FF}「われらの{nl} フェナムンを知る者は{nl} さいわいである・・・{page} それは われらの{nl} 約束のあかし・・・{page} とこしえに続く{nl} マナの加護の しるし・・・{page}{FB00}「水のフェナムン ヴァテンは{nl} おまえのもの・・・{page} われらの名を 心にきざめ{nl} そして 忘れ去るがいい・・・{wait}{wait}{wait}{wait}{nl} 新しき力を 手にするために・・・{page2}",
-   "en": ""
+   "en": "A gentle, flowing voice comes from the{nl}water spirit statue...{wait}{wait}{wait}{wait}{page2}{F9FF}\"Blessed are those who know our{nl} Fenamun...{page} It is the proof of our promise...{page} The sign of the mana's blessing, lasting{nl} forever...{page}{FB00}\"Vatten, the Fenamun of water, is{nl} yours...{page} Carve our name in your heart, and then{nl} forget it...{wait}{wait}{wait}{wait} so that you may{nl} gain new power...{page2}"
   },
   {
    "id": "r107_052D",
    "addr": "052D",
    "size": 40,
    "jp": "クルトは 水のフェナムンを{nl}おぼえた！{page2}",
-   "en": ""
+   "en": "Kurt learned the Fenamun of water!{page2}"
   },
   {
    "id": "r107_056B",
    "addr": "056B",
    "size": 102,
    "jp": "「さあ もう ゆくがよい{nl} {FA03}よ。{page} 水の聖なる力は{nl} つねに おまえと ともに{nl} あるだろう・・・。",
-   "en": ""
+   "en": "\"Now go, {FA03}.{page} The holy power of water will always be{nl} with you..."
   },
   {
    "id": "r107_05D3",
    "addr": "05D3",
    "size": 30,
    "jp": "水のマナの精霊像が立っている。",
-   "en": ""
+   "en": "The water mana spirit statue stands{nl}here."
   },
   {
    "id": "r107_05F3",
    "addr": "05F3",
    "size": 68,
    "jp": "青なら赤に赤なら青に{nl}ふんだら変わる色ボタン{nl}ぜんぶ赤なら 扉が開く",
-   "en": ""
+   "en": "Blue turns red, red turns blue:{nl}step and the buttons change.{nl}All red, and the door opens."
   }
  ]
 }

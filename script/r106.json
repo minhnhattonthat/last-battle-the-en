@@ -32,28 +32,28 @@
    "addr": "02C2",
    "size": 40,
    "jp": "クルトは 風のフェナムンを{nl}おぼえた！{page2}",
-   "en": ""
+   "en": "Kurt learned the Fenamun of wind!{page2}"
   },
   {
    "id": "r106_0300",
    "addr": "0300",
    "size": 102,
    "jp": "「さあ もう ゆくがよい{nl} {FA03}よ。{page} 風の聖なる力は{nl} つねに おまえと ともに{nl} あるだろう・・・。",
-   "en": ""
+   "en": "\"Now go, {FA03}.{page} The holy power of wind will always be{nl} with you..."
   },
   {
    "id": "r106_0368",
    "addr": "0368",
    "size": 30,
    "jp": "風のマナの精霊像が立っている。",
-   "en": ""
+   "en": "The wind mana spirit statue stands here."
   },
   {
    "id": "r106_0388",
    "addr": "0388",
    "size": 82,
    "jp": "みどりのしるしの１つから{nl}右回りに いち に さん{page}でも まんなか通れば 水のアワ",
-   "en": ""
+   "en": "From one of the green marks,{nl}go clockwise: one, two, three.{page}Cut through the middle and{nl}it all goes down the drain."
   }
  ]
 }
