@@ -222,11 +222,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   0. **Phase 8: QA in the emulator** (done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
      `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
-     **Resume here:** the English tour on build 7879eacb was started into `work/qa/tour` (`run_scenes.py
-     build/lastbattle_en.sfc --jobs 3 --out work/qa/tour`, log `work/qa/tour_run.log`); if it didn't finish, re-run
-     it. Then `qa_gate.py init work/qa/manifest.tsv work/qa/tour --build build/lastbattle_en.sfc` (the manifest
-     exists from build 8b50fe77; init re-hashes), `todo work/qa/manifest.tsv work/qa/verdicts --size 30 --out-dir
-     work/qa/chunks`, and write verdicts chunk by chunk to `work/qa/verdicts/<chunk>.tsv` (brief
+     **Resume here:** English tour on build 7879eacb done (`work/qa/tour`, 119/119 scenes); gate initialised on it
+     (`work/qa/manifest.tsv`, 268 sheets, no verdicts yet; chunks `work/qa/chunks/chunk_d4affb8b3664_000-008.txt`).
+     Write verdicts chunk by chunk to `work/qa/verdicts/<chunk>.tsv` (brief
      `docs/visual-qa-brief.md`; compare `work/qa/tour_jp/<scene>`). Budget: 261 sheets are 520x456 with 128x112
      tiles, too small to read text, so for each scene zoom the text boxes (`sheet.py DIR --changed 0.03 --crop
      0,150,256,74 --div 1 --cols 3`; battle top boxes `--crop 0,0,256,64`) and read `final.png`; about 3 chunks
