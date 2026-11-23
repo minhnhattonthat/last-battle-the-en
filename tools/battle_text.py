@@ -32,7 +32,12 @@ MIN_KANA = 3
 # scanned runs that are data, not text (checked by eye): the battle name tile table (0x140C38-0x140CB7, 29:B2B6)
 # and short odd-aligned matches inside code/graphics
 EXCLUDE = [(0x140B80, 0x140CB8), (0x16FC00, 0x16FC08), (0x170100, 0x170108), (0x1743A6, 0x1743AE),
-           (0x18475E, 0x184766), (0x199DAC, 0x199DB6)]
+           (0x18475E, 0x184766), (0x199DAC, 0x199DB6),
+           (0x1A8DA9, 0x1A8DAF), (0x1C868F, 0x1C8695), (0x1DCE00, 0x1DCE08), (0x1EC899, 0x1EC89F), (0x1EEA5E, 0x1EEA64)]
+# Window-script rects in bank $3E (victory EX / mana / LEVEL UP windows) that the kana-run search misses: names of
+# two kana (メイ) or broken by ー (レジーナ), and dakuten-only rows over names (blanked by an English row).
+EXTRA_RECTS = [(0x1F0090, 12, 2), (0x1F00F0, 12, 2), (0x1F0258, 24, 2), (0x1F0318, 24, 2),
+               (0x1F04E8, 16, 1), (0x1F0508, 16, 1), (0x1F0548, 16, 1), (0x1F0568, 16, 1), (0x1F05B8, 24, 1)]
 
 
 def off(bank, a):
@@ -114,7 +119,7 @@ def table_rects(rom, runs):
     lo = SCRIPT_BANK << 15
     for i in range(lo + 3, lo + 0x8000 - 5):
         b, a, w, h = rom[i + 2], u16(rom, i), rom[i + 3], rom[i + 4]
-        if not (0x28 <= b <= 0x3A and a >= 0x8000 and 1 <= w <= 32 and 1 <= h <= 28 and rom[i - 3] <= 0xFC):
+        if not (0x28 <= b <= 0x3F and a >= 0x8000 and 1 <= w <= 32 and 1 <= h <= 28 and rom[i - 3] <= 0xFC):
             continue
         o = off(b, a)
         for st, n in runs:
@@ -141,6 +146,10 @@ def entries(rom):
     cov = set()
     for o, w, h, _ in found:
         cov.update(range(o, o + 2 * w * h))
+    for o, w, h in EXTRA_RECTS:
+        assert not any(k in cov for k in range(o, o + 2 * w * h)), f"extra rect {o:X} overlaps a found one"
+        found.append((o, w, h, "extra"))
+        cov.update(range(o, o + 2 * w * h))
     for st, n in runs:
         if not any(st + k in cov for k in range(n)):
             found.append((st, n // 2, 1, "scan"))
@@ -148,7 +157,7 @@ def entries(rom):
     for o, w, h, geom in sorted(found):
         ws = words(rom, o, w * h)
         attrs = [x & ATTR_MASK for x in ws if is_kana(km.get(x & 0x3FF, ""))]
-        attr = max(set(attrs), key=attrs.count)
+        attr = max(set(attrs), key=attrs.count) if attrs else 0x2000
         c = codec(rom, attr)
         rows = [c.decode(rom[o + 2 * w * r:o + 2 * w * (r + 1)]) for r in range(h)]
         out.append({"id": f"bt_{o:06X}", "file": f"{o:06X}", "size": 2 * w * h, "w": w, "h": h,
@@ -160,7 +169,11 @@ def en_codec(rom, attr):
     """English: digits, capitals and the font_bg3 lowercase/punctuation tiles with the string's attribute bits;
     Japanese characters (fullwidth ＨＰ, kana kept on purpose) still encode to their original tiles."""
     from textcodec import bg3_en
-    return WordCodec({**codec(rom, attr).dec, **{attr | w: ch for w, ch in bg3_en().dec.items()}})
+    jp = codec(rom, attr)
+    c = WordCodec({**jp.dec, **{attr | w: ch for w, ch in bg3_en().dec.items()}})
+    for ch, w in jp.enc.items():  # fullwidth ＨＰ etc. share a word with ASCII H: keep the JP spelling encodable
+        c.enc.setdefault(ch, w)
+    return c
 
 
 def encode(rom, e):

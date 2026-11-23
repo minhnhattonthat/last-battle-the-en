@@ -51,6 +51,15 @@ org $02D7F9             ; was PHA / LDA $1A8015 (5 bytes): the staff roll's glyp
 org $29B2B6             ; was PHY / STA $3C / LDA [$30]: battle name -> two BG3 tile rows (enemy, spell, tactics)
     jml bt_name
     nop
+org $3C8041             ; victory line: was a forward scan of the name's bottom row for its first space ($2093),
+    ldx #$011C          ; which hits the leading space of a centred English name ("s defeated!" over "Slime").
+-   dex                 ; Now: back from past column 7 to the last non-space; the suffix starts right after it.
+    dex                 ; Same 16 bytes; 3C:8051 LDA #$000B / JSR $805C follow unchanged.
+    lda $7EB800,x
+    cmp #$2093
+    beq -
+    inx
+    inx
 
 ; ---- code -----------------------------------------------------------------------------------------------------
 org $FD8000

@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from textcodec import bg3_tiles  # noqa: E402
 
-BANKS = range(0x28, 0x34)
+BANKS = range(0x28, 0x40)  # $34-$3F since phase 8: bank $3E holds raw window rects (victory, level up, spell info)
 MIN_KANA = 3
 
 
