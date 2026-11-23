@@ -51,6 +51,12 @@ MENU_CAP = {**{f"bg3_{a}": 9 for a in "A1B6 A1C6 A1D8 A1E2 A1EC A1FA A20A A218 A
             "bg3_A729": 4, "bg3_A737": 4, "bg3_A73D": 4}  # forms whose JP layout tokens (dakuten rows {2094}...) the English may drop
 # 2-tile slots the build moves whole (insert.BG3_PTRS, insert.MOVED_WINDOWS; D18): no slot limit, at most this many lines
 REPOINTED = {"bg3_9EF0": 1, "bg3_9EF8": 1, "bg3_A687": 7, "bg3_A729": 1, "bg3_A737": 1, "bg3_A73D": 1}
+# Name inserts in BG3 messages at their longest English width (asm nm_feaa): FA18 item name 9 (D18, return $FC70),
+# character names 8 (FA0F/FA42 via 01:FE3B, spell names FA2B/FA2F 8). The JP drew every one of them at 8.
+INSERT_TILES = {"{FA18}": NAME_CAP, "{FA0F}": 8, "{FA42}": 8, "{FA2B}": 8, "{FA2F}": 8}
+# The one-line prompt box at the top of the field menus ("Do what with items?", "Gave X to Y."): 26 tiles inside
+# (measured: work/qa/i1d, text column 0 at x=24, right border tile at x=232)
+MSG_BOX = {f"bg3_{a}": 26 for a in "86A6 87A6 8886 892A 8ADA 8BFA 8C1A 8C3A 8C64 8D56 8E26 8E44".split()}
 _ROM = None
 
 
@@ -250,7 +256,24 @@ def width_problems(e, en):
                 out.append(f"{len(lines)} lines > {most}")
         elif len(lines) != len(TOKEN.sub(lambda m: "" if m[0] != "{nl}" else "\n", e["jp"]).split("\n")):
             out.append("line count differs from the JP")
-        out += [f"line over {cap} chars: {ln!r}" for ln in lines if len(ln) > cap]
+        # a line with a name insert counts it at its longest English width; it may use the whole message box, or
+        # as much as the JP line did with 8-tile names
+        def widths(s, en_caps):
+            def tiles(t):
+                return 0 if t not in INSERT_TILES else INSERT_TILES[t] if en_caps else 8
+            s = re.sub(r"\{FA[0-9A-F]{2}\}", lambda m: "#" * tiles(m[0]), s)
+            return [len(TOKEN.sub("", ln)) for ln in s.split("{nl}")]
+        named = [any(t in ln for t in INSERT_TILES) for ln in en.split("{nl}")]
+        jp_w = widths(e["jp"], False)
+        for i, (ln, w) in enumerate(zip(lines, widths(en, True))):
+            if not named[i]:
+                if len(ln) > cap:
+                    out.append(f"line over {cap} chars: {ln!r}")
+                continue
+            most = max(MSG_BOX.get(e["id"], 0), jp_w[i] if i < len(jp_w) else 0)
+            if w > most:
+                out.append(f"line {w} tiles with names at their longest (item {NAME_CAP}, character 8) > {most}: "
+                           f"{en.split('{nl}')[i]!r}")
         # {009E} draws a number right-aligned over the blanks before it (status screen: "Attack  {009E}" lost its
         # "k"): keep at least the JP's blanks in front of each one
         gaps = lambda s: [len(m[1]) for m in re.finditer(r"( *)\{009E\}", s)]  # noqa: E731

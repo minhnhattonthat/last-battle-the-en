@@ -213,14 +213,18 @@ class BankPools:
         writer.put(at, data, f"pool:{by}")
         return at
 
-    def repoint(self, off, data, e, writer):
+    def repoint(self, off, data, e, writer, orig):
         base = off & ~0x7FFF
         if base not in BANK_POOLS:
             raise ValueError(f"{e['id']}: {len(data)} bytes for a {e['size']}-byte slot and no pool in its bank")
+        for p in e["ptrs"]:  # a wrong slot id would pass romdiff (the log's expected bytes come from that slot)
+            p = int(p, 16)
+            assert p & ~0x7FFF == base, f"{e['id']}: pointer {p:06X} outside the string's bank"
+            was = int.from_bytes(orig[p:p + 2], "little")
+            assert was == (off & 0x7FFF) | 0x8000, f"{e['id']}: pointer {p:06X} holds ${was:04X}, not the string"
         at = self.place(base, data, e["id"], writer)
         for p in e["ptrs"]:
             p = int(p, 16)
-            assert p & ~0x7FFF == base, f"{e['id']}: pointer {p:06X} outside the string's bank"
             writer.put(p, ((at & 0x7FFF) | 0x8000).to_bytes(2, "little"), f"ptr:{e['id']}")
 
 
@@ -497,7 +501,7 @@ def apply(orig, region, writer, files, alloc=None):
                     continue
                 if len(enc) > size and e["id"] in BG3_PTRS:
                     assert orig[off + size:off + size + 2] == b"\x00\xff", e["id"]
-                    pools.repoint(off, enc + b"\x00\xff", {**e, "ptrs": BG3_PTRS[e["id"]]}, writer)
+                    pools.repoint(off, enc + b"\x00\xff", {**e, "ptrs": BG3_PTRS[e["id"]]}, writer, orig)
                     continue
                 ret = int(src["bank"], 16) << 16 | (int(e["addr"], 16) + size)
                 writer.put(off, fit(enc, size, ret, alloc, writer, e["id"], b3sp), f"text:{e['id']}")
@@ -548,7 +552,7 @@ def apply(orig, region, writer, files, alloc=None):
             else:
                 ret = int(src["bank"], 16) << 16 | (a + size)
                 if len(enc) > size and size < FAR_LEN and e.get("ptrs"):
-                    pools.repoint(int(e["file"], 16), enc + far(ret), e, writer)
+                    pools.repoint(int(e["file"], 16), enc + far(ret), e, writer, orig)
                     continue
                 writer.put(int(e["file"], 16), fit(enc, size, ret, alloc, writer, e["id"]), f"text:{e['id']}")
         if src["kind"] == "block":

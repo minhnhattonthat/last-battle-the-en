@@ -155,7 +155,9 @@ Not yet walked: top entries 14-28 (other formats: 18/19 hold plain text, 20-27 t
 - Unknown tiles stay `{XXXX}` tokens: `{009F}` ends messages (likely 。), `{0096}`/`{00A3}`/`{009E}` are layout
   tiles in the magic/status templates.
 - FA inserts in BG3 strings: op table `01:E679` (FA00-FA54); FA2F = FA8A (name from `$0C98` via 01:FE09), FA18 =
-  FC55 (item record via 01:FE59), FA2B = FBC0. All print through 01:FEAA (BG3 tiles, cap 8).
+  FC55 (item record, `LDA #8 / JSR $FEAA` at 01:FC6B; only the op table reaches FC55), FA2B = FBC0. All print
+  through 01:FEAA (BG3 tiles, cap 8 in the JP); the English hook `nm_feaa` gives FA18 9 (return $FC70) and the
+  F3C0 item lists their `nm_icap` width. Lint: `batches.INSERT_TILES` + `MSG_BOX` (26-tile prompt box).
 - **Battle names, battle font, battle messages**: `battle.md` (enemies and tactics extracted as `script/enemies.json`,
   `script/tactics.json`; default battle spell names become spell escapes; battle messages surveyed only).
 

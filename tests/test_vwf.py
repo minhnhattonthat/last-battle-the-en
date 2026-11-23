@@ -62,12 +62,16 @@ def test_fit_same_pad_jump_move():
 def test_bank_pool_repoints_short_slot():
     w, p = W(), insert.BankPools()
     data = EN.encode("Mei") + insert.far(0x04B2E6)
-    p.repoint(0x232E2, data, {"id": "b04_B2E2", "size": 4, "ptrs": ["0232D4"]}, w)
-    p.repoint(0x232E2, data, {"id": "b04_B2E2", "size": 4, "ptrs": ["0232D4"]}, w)
+    orig = bytearray(0x40000)
+    orig[0x232D4:0x232D6] = (0xB2E2).to_bytes(2, "little")  # the slot points at the string, as in the ROM
+    p.repoint(0x232E2, data, {"id": "b04_B2E2", "size": 4, "ptrs": ["0232D4"]}, w, orig)
+    p.repoint(0x232E2, data, {"id": "b04_B2E2", "size": 4, "ptrs": ["0232D4"]}, w, orig)
     assert w.puts == [(0x27F00, data), (0x232D4, b"\x00\xff"),
                       (0x27F00 + len(data), data), (0x232D4, (0xFF00 + len(data)).to_bytes(2, "little"))]
     with pytest.raises(ValueError):
-        p.repoint(0x12345, data, {"id": "r", "size": 2, "ptrs": ["012340"]}, w)
+        p.repoint(0x12345, data, {"id": "r", "size": 2, "ptrs": ["012340"]}, w, orig)
+    with pytest.raises(AssertionError):  # a wrong slot id: its bytes are not the string's address
+        p.repoint(0x232E2, data, {"id": "b04_B2E2", "size": 4, "ptrs": ["0232D6"]}, w, orig)
 
 
 ORIG = ROOT / "rom" / "Last Battle, The (Japan).sfc"

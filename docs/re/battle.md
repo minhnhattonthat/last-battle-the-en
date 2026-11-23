@@ -56,7 +56,7 @@ tiles, <= h rows, padded with space tile $93; a 2-row rect (dakuten row + kana r
 Verified on the marker build (`work/qa/bcmd`): command label `bt_1987A5` (4x2) shows `87A5`; the spell-cast window
 (30:ACB0) shows `spell 00 / The qui`. Excluded as data (`battle_text.EXCLUDE`): the name tile table and 5 short
 odd-aligned matches. Single-tile particles (`bt_198045` の, `bt_1980E3` に, `bt_19D534+` し/ま/た) are pieces of
-messages built at run time: English needs engine work there (phase 7).
+messages built at run time: English needs engine work there (moved to phase 8: `script/keep_jp.txt`).
 Coverage (`tools/debug/battle_cover.py`, routes `tools/debug/battle_routes.tsv`): the command, orders sub-command
 (まほう/ねらう/アイテム/そうび: only the selected label is drawn, so left/right before A picks it), who/what/whom
 prompts, target frames, item descriptions (5 x n box right of the 2-column item list) and some item-use messages

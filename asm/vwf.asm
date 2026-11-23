@@ -314,8 +314,14 @@ nm_feaa:                ; as nm_fee3, for the BG3 tile map ($04:AEAB)
 +   pha
     lda 5,s             ; the caller's count (stack: kind, X, count): the BG3 field is that many tiles
     sta.l !tmp
-    lda 9,s             ; return into 01:FE59: item record names, drawn by 01:F3C0 in a field nm_icap sizes per list
-    cmp #$FE76
+    lda 9,s             ; return address of the JSR $FEAA
+    cmp #$FC70          ; 01:FC55 = the FA18 handler only (op table 01:E6A9): item name in a BG3 message, 9 (D18)
+    bne .icap
+    lda #$0009
+    sta.l !tmp
+    bra +
+.icap:
+    cmp #$FE76          ; 01:FE59: item record names, drawn by 01:F3C0 in a field nm_icap sizes per list
     bne +
     lda 15,s            ; return into 01:F3C0's caller
     jsr nm_icap

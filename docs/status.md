@@ -6,6 +6,13 @@ Updated at the end of every session. Keep it to what the next session needs; his
   new keep-list and `{009E}` rules, 40 tests; 3077/3085 translated, the 8 left are battle-only in
   `script/keep_jp.txt`). `build/lastbattle_en.sfc` smoke ok, 2026-11-24 session 19, sha1 489d308c.
 - **Done:**
+  - **Phase 7 review, session 2026-11-24 (20):** `.harness/reviews/last-battle-the-en-phase7.md` I1: FA18 item
+    names in BG3 messages now print 9 (asm `nm_feaa`, return $FC70; FC55 is reached only from the op table), shot
+    "Gave Kurt Longsword." / "Equipped Longsword." / "Dropped Rare Herb." (`work/qa/i1e`, `work/qa/i1d`). M1: lint
+    counts name inserts at their longest (`batches.INSERT_TILES`, prompt box 26 tiles measured, `MSG_BOX`); it
+    found 2 lines over at worst-case names, fixed in b062 ("Gave {FA42} {FA18}.", "No {FA18} for {FA0F}."). M2:
+    D18 reworded (headers keep the full form where the list name is a squeeze). M3: `BankPools.repoint` asserts
+    each slot's original pointer. M5: `docs/re/battle.md` note. M4 stays on the phase-8 list. Next free fix: b063.
   - **Phase 7, session 2026-11-24 (19), phase closed:** D18 (replaces D10's 12-letter names): both FA0E field item
     windows moved to x=0 and widened by 2 (`insert.WINDOW_HEADERS`, asm `nm_icap` FA0E = 9), so every item list
     holds 9 tiles; tactics list stays 8 (01:FE7A). Fix batch b061: 90 item names fitted to 9 (real names first,

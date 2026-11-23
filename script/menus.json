@@ -352,7 +352,7 @@
    "addr": "8C1A",
    "size": 30,
    "jp": "{FA0F}は {FA18}を そうびできません{009F}",
-   "en": "{FA0F} can't use {FA18}.",
+   "en": "No {FA18} for {FA0F}.",
    "file": "020C1A",
    "tiles": 12
   },
@@ -478,7 +478,7 @@
    "addr": "8E44",
    "size": 28,
    "jp": " {FA18}を {FA42}に わたしました{009F}",
-   "en": " Gave {FA18} to {FA42}.",
+   "en": "  Gave {FA42} {FA18}.",
    "file": "020E44",
    "tiles": 11
   },
