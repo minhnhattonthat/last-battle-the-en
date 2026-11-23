@@ -2,7 +2,7 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 1. Research and recon in progress (text, pointers, free space done; graphics static sweep left). Last build: none yet (2026-11-23).
+- **Phase:** 2. Debug tool not started (phase 1 recon done 2026-11-23). Last build: none yet.
 - **Done:**
   - Step 0 complete: MesenCE qa-1 in `tools/mesen/`, smoke boots the original (`tools/routes/boot.txt`), Start changes
     the screen, Lua probe logs, pre-commit rejects a failing test, guard hook blocks the `sed -i` canary (hook block
@@ -23,17 +23,18 @@ Updated at the end of every session. Keep it to what the next session needs; his
     Free-space trap test: 0 reads of any candidate over boot + first room (`tools/lua/trap_reads.lua`), with a
     positive control; plan to expand to 4 MB for new data. Recon scanners: `re_textscan.py`, `re_names.py`,
     `re_dumptext.py`, `re_trap.py`, `re_chain.py`, `re_sweep.py`, `re_blocksheets.py`.
-- **Next (finish phase 1):**
-  1. **Graphics-text static sweep: sheets are rendered but not yet read** (`docs/re/graphics.md` §Static sweep).
-     Codex review attempt failed (usage limit until 2026-11-26; script `work/sweep/run_codex.sh`, brief
-     `work/sweep/codex_brief.md`). Read `work/sweep/blocks/snes4_*.png` (21) and `work/sweep/raw_*_snes2.png` (16)
-     yourself in a fresh context, or first identify the graphics formats from a VRAM dump (name-entry screen,
-     menu) with `vramfind.py` and read only the relevant blocks. Record each text graphic as a row in
-     `docs/re/graphics.md`. The tour half of the survey (menus, battle, cards, ending) waits for the phase-2 debug
-     tool: note that in graphics.md and then move to phase 2.
-  2. Not found anywhere (raw or LZ, word or byte encoding): **enemy names**, menu command labels, save-screen labels.
-     Probably BG3 tile strings like `0x22CA7` or graphics; find on screen in phase 2 with `romreads_addr.lua`.
-  3. Carried to phase 4: the 18 unreferenced text runs `script_dis.py --gaps` lists (+4 in top15) live in LZ
+  - Session 2026-11-23 (3): static graphics sweep read (`docs/re/graphics.md` §Static sweep: result): no Japanese
+    lettering in any decompressed block or raw graphics region; raw `0x30000-0x54000` is SNES 8bpp; a hex-digit
+    font at LZ block `0x318A0` hints at a leftover debug display.
+- **Next (phase 2, debug tool; `references/emulator-qa.md` §Debug tool):**
+  1. Build `tools/debug/` (warp.lua + `scenes.tsv`, AGENTS.md already names the warp command): room id / story
+     flags / party / god mode from a cold boot. Look for a leftover debug menu first (hex font `0x318A0`).
+  2. Scene list must include the screens the graphics survey still needs (graphics.md "Tour half"): field menu,
+     status, items, equipment, shops, battle, save/load, game over, chapter cards, ending, credits. On each, dump
+     VRAM and finish the survey rows.
+  3. Not found anywhere (raw or LZ, word or byte encoding): **enemy names**, menu command labels, save-screen labels.
+     Probably BG3 tile strings like `0x22CA7` or graphics; find on screen with `romreads_addr.lua`.
+  4. Carried to phase 4: the 18 unreferenced text runs `script_dis.py --gaps` lists (+4 in top15) live in LZ
      blocks (WRAM `$7F`), so a ROM-read probe can't see them; extract them anyway and check with `textcover`.
      The code that selects top entries 14-28 is not yet traced.
 - **Open bugs:** none.
