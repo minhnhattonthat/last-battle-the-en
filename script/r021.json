@@ -186,189 +186,189 @@
    "addr": "0E0E",
    "size": 184,
    "jp": "「この城の魔法司は 私１人だし{nl} ケガ人は ほっておけないし・・・{page}「王様の病気の 原因を{nl} 調べるだけでも 大変なのに！{page}「これ以上 仕事がふえたら{nl} こっちが 病気になっちゃうわ！",
-   "en": ""
+   "en": "\"I'm the only mage in this castle, and I{nl} can't just leave the wounded...{page}\"Just looking into what's causing the{nl} King's illness is hard enough!{page}\"If I get any more work, I'll be the one{nl} falling ill!"
   },
   {
    "id": "r021_0ED8",
    "addr": "0ED8",
    "size": 96,
    "jp": "「大変だわ！{nl} 本当に戦いがおきるなんて！{page}「いったい どれくらい{nl} ケガ人が出るかしら・・・？",
-   "en": ""
+   "en": "\"Oh no! A real battle is happening!{page}\"Just how many wounded will there{nl} be...?"
   },
   {
    "id": "r021_0F3A",
    "addr": "0F3A",
    "size": 84,
    "jp": "「とにかく 治療の準備をしなきゃ！{page}「ほら じゃまよっ！{nl} そこ どいて どいて！！",
-   "en": ""
+   "en": "\"Anyway, I have to get ready to treat{nl} them!{page}\"Hey, you're in the way! Move, move!!"
   },
   {
    "id": "r021_0F90",
    "addr": "0F90",
    "size": 64,
    "jp": "「イザとなれば{nl} 私たちも戦います。{page} 安心してお出かけ下さい。",
-   "en": ""
+   "en": "\"If it comes to it, we will fight too.{page} Go without worry."
   },
   {
    "id": "r021_0FD2",
    "addr": "0FD2",
    "size": 98,
    "jp": "「王様のご病気は いっこうに{nl} 治る様子がありません。{page}「本当に心配で心配で{nl} 夜も眠れませんよ。",
-   "en": ""
+   "en": "\"The King's illness shows no sign of{nl} getting better.{page}\"I'm so very worried, I can't sleep at{nl} night."
   },
   {
    "id": "r021_1036",
    "addr": "1036",
    "size": 92,
    "jp": "「今は ここで{nl} 治療 しています。{wait}{nl} お金は いりませんよ。{page} あなたも 治療しますか？",
-   "en": ""
+   "en": "\"I'm treating people here for now.{nl} {wait}There's no charge.{page} Shall I treat you too?"
   },
   {
    "id": "r021_1098",
    "addr": "1098",
    "size": 96,
    "jp": "「わかりました では・・・{wait}{wait}{wait}{wait}{page}「ヴァテン{wait}{wait}{wait}{wait}{nl} ブレックフェ－ル{wait}{wait}{wait}{nl} レ－カ！{wait}{page2}",
-   "en": ""
+   "en": "\"Very well, then... {wait}{wait}{wait}{wait}{page}\"Vatten... {wait}{wait}{wait}{wait}{nl} Bleckfel... {wait}{wait}{wait}{nl} Reka! {wait}{page2}"
   },
   {
    "id": "r021_1106",
    "addr": "1106",
    "size": 62,
    "jp": "「これで もう{nl} だいじょうぶですよ。{page}「では お気をつけて。",
-   "en": ""
+   "en": "\"There, you'll be fine now.{page}\"Take care, then."
   },
   {
    "id": "r021_1148",
    "addr": "1148",
    "size": 84,
    "jp": "「そうですか お気をつけて。{page}「治療が 必要なときには{nl} いつでも きてくださいね。",
-   "en": ""
+   "en": "\"I see. Take care.{page}\"Come any time you need treatment."
   },
   {
    "id": "r021_11B9",
    "addr": "11B9",
    "size": 108,
    "jp": "「ここを みはるのが{nl} われわれの つとめなのです。{page} ほんとは 腕がなって{nl} うずうず してるんだけどね。",
-   "en": ""
+   "en": "\"Keeping watch here is our duty.{page} Truth is, my arms are itching for a{nl} fight."
   },
   {
    "id": "r021_1227",
    "addr": "1227",
    "size": 88,
    "jp": "「・・・ここだけの話だが{nl} おれも 外で戦いたいっ！！{nl} でもそんなこと 言えないんだ。",
-   "en": ""
+   "en": "\"...Just between us, I want to go out{nl} and fight too!! But I can't say that."
   },
   {
    "id": "r021_1287",
    "addr": "1287",
    "size": 76,
    "jp": "「がんばってください！！{nl} われわれには ここを守る{nl} 役目が あるのです。",
-   "en": ""
+   "en": "\"Do your best!! Our duty is to guard this{nl} place."
   },
   {
    "id": "r021_12D5",
    "addr": "12D5",
    "size": 88,
    "jp": "「あぁ こんな 若者まで{nl} たよりに しなくては いけない。{nl} われわれも つらいです。",
-   "en": ""
+   "en": "\"Ah, that we must rely even on{nl} youngsters like you. It pains us too."
   },
   {
    "id": "r021_1335",
    "addr": "1335",
    "size": 80,
    "jp": "「ここは 補給所だよ。{nl} ハ－ブくらいしか ないけど{nl} ひとつ 持っていくかい？",
-   "en": ""
+   "en": "\"This is the supply post. We've only got{nl} herbs, but want one?"
   },
   {
    "id": "r021_1391",
    "addr": "1391",
    "size": 36,
    "jp": "「ほらよっ！{nl} がんばってくれよ！！",
-   "en": ""
+   "en": "\"Here you go! Give it your best!!"
   },
   {
    "id": "r021_13B9",
    "addr": "13B9",
    "size": 104,
    "jp": "「ん？{wait} みんな持ち物が{nl} いっぱいじゃないか。{page} じゃ ハ－ブがたりなくなったら{nl} また きてくれよ。",
-   "en": ""
+   "en": "\"Hm? {wait}Your packs are all full.{page} Well, come back when you run short of{nl} herbs."
   },
   {
    "id": "r021_1425",
    "addr": "1425",
    "size": 44,
    "jp": "「そうか 必要になったら{nl} いつでもこいよ。",
-   "en": ""
+   "en": "\"I see. Come any time you need one."
   },
   {
    "id": "r021_1459",
    "addr": "1459",
    "size": 68,
    "jp": "「いや－ びっくりしたってば！！{nl} やつらは いきなり現われたんだ。",
-   "en": ""
+   "en": "\"Wow, that gave me a scare!! They just{nl} appeared out of nowhere."
   },
   {
    "id": "r021_149F",
    "addr": "149F",
    "size": 72,
    "jp": "「今までの 平和は{nl} どこへいったんだ？{nl} こんなことに なるなんて！！",
-   "en": ""
+   "en": "\"Where did all our peace go? Who'd{nl} have thought it would come to this!!"
   },
   {
    "id": "r021_14E9",
    "addr": "14E9",
    "size": 50,
    "jp": "「ほかの 人たちは{nl} だいじょうぶ なんだろうか？",
-   "en": ""
+   "en": "\"I wonder if everyone else is all right."
   },
   {
    "id": "r021_1523",
    "addr": "1523",
    "size": 64,
    "jp": "「とっさに 逃げこんだんです。{nl} とうぶん 出られないんですね。",
-   "en": ""
+   "en": "\"I ran in here on the spur of the{nl} moment. I guess I can't leave for a{nl} while."
   },
   {
    "id": "r021_1565",
    "addr": "1565",
    "size": 78,
    "jp": "「どうなって しまうんでしょう？{nl} こんな おそろしいことは{nl} 初めてですよ。",
-   "en": ""
+   "en": "\"What's going to become of us? I've{nl} never known anything so frightening."
   },
   {
    "id": "r021_15B5",
    "addr": "15B5",
    "size": 32,
    "jp": "「まだ 終わらないんですかねぇ。",
-   "en": ""
+   "en": "\"Isn't it over yet?"
   },
   {
    "id": "r021_15DD",
    "addr": "15DD",
    "size": 92,
    "jp": "「ここは まかせて ください{nl} この人たちは 守ってみせます。{nl} ね？ おちついてください。",
-   "en": ""
+   "en": "\"Leave this to me. I'll protect these{nl} people. There now, please calm down."
   },
   {
    "id": "r021_163B",
    "addr": "163B",
    "size": 62,
    "jp": "「そう おちついて おちついて{nl} ええ だいじょうぶですとも！",
-   "en": ""
+   "en": "\"That's it, calm down, calm down. Yes,{nl} everything will be fine!"
   },
   {
    "id": "r021_1681",
    "addr": "1681",
    "size": 76,
    "jp": "「がんばってください！！{nl} われわれには ここを守る{nl} 役目が あるのです。",
-   "en": ""
+   "en": "\"Do your best!! Our duty is to guard this{nl} place."
   },
   {
    "id": "r021_16CF",
    "addr": "16CF",
    "size": 88,
    "jp": "「あぁ こんな 若者まで{nl} たよりに しなくては いけない。{nl} われわれも つらいです。",
-   "en": ""
+   "en": "\"Ah, that we must rely even on{nl} youngsters like you. It pains us too."
   }
  ]
 }

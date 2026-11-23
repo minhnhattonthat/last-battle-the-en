@@ -11,210 +11,210 @@
    "addr": "0137",
    "size": 464,
    "jp": "ユ－リ{nl}「君か？ 私に{nl} 会いたいという 少年は？{page}「私に なんの用だね？{page2}{F9FF}クルトは ユ－リに{nl}グルドの密書を わたした。{page2}{F9FF}{B6FF}{B8C2}{D320}ユ－リ{nl}「こ・・これは{wait}{nl} シルヴェル攻撃作戦の書かれた{nl} グルド軍の密書！{page}「なに！ エルダ－ル村が{nl} グルド兵に 攻められたのか！？{page} そうだったのか・・・{page}「実は最近 北の王国グルドリ－ケが{nl} このエットミランシェル各地を{nl} 侵略している らしいんだ。{page} そこで 部下をグルドに送りこみ{nl} いろいろ 調べていたんだが・・・{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Are you the boy who wishes to see{nl} me?{page}\"What business do you have with me?{page2}{F9FF}Kurt handed Yuri the Guld secret letter.{page2}{F9FF}{B6FF}{B8C2}{D320}Yuri{nl}\"Wh..what's this? {wait}A secret Guld army{nl} letter with plans to attack Silvel!{page}\"What! Guld soldiers attacked Eldar{nl} Village?!{page} So that's what happened...{page}\"In truth, the northern kingdom of{nl} Guldrike seems to have been invading{nl} lands all over Ettmiranshel lately.{page} So I sent my men into Guld to look into{nl} things, but...{page2}"
   },
   {
    "id": "r022_0312",
    "addr": "0312",
    "size": 128,
    "jp": "メイ{nl}「ユ－リ様。 やっぱり{nl} あたしの 言ったとおりでしょ？{page} エルフ王 ロベルト様の予言は{nl} まちがって なかったんだわ！{page2}",
-   "en": ""
+   "en": "Mei{nl}\"Yuri-sama, it's just as I said, isn't it?{page} The prophecy of Robert-sama, the Elf{nl} King, was right after all!{page2}"
   },
   {
    "id": "r022_0399",
    "addr": "0399",
    "size": 168,
    "jp": "ユ－リ{nl}「すまなかったな メイ。{page} しかし このシルヴェルリ－ケと{nl} グルドリ－ケは兄弟国だ。{page} もちろん 私も{nl} 用心していたんだが{nl} しょうこが つかめなくてね。{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"I'm sorry, Mei.{page} But Silvelrike and Guldrike are brother{nl} nations.{page} Of course I was on my guard too, but I{nl} couldn't find any proof.{page2}"
   },
   {
    "id": "r022_0448",
    "addr": "0448",
    "size": 124,
    "jp": "ユ－リ{nl}「ああ この女の子は{nl} エルフ族のメイといってね。{page} 実は この密書と同じことを{nl} 伝えにきて くれたのだが・・・{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Ah, this girl is Mei, of the elves.{page} In fact, she came to tell me the very{nl} same thing as this letter, but...{page2}"
   },
   {
    "id": "r022_04D2",
    "addr": "04D2",
    "size": 270,
    "jp": "メイ{nl}「エルフ族の中には{wait}{nl} 未来を見とおせる人が{wait}{nl} まれに いるの。{page}「でね ゆうべ{nl} エルフ王のロベルト様が{nl} 幻を見たのよ。{page} グルド軍に攻められる{nl} シルヴェル城の 幻をね。{page}「だから 知らせにきたのに{nl} ユ－リ様ったら ちっとも{nl} 信じてくれないんだもの！{page2}",
-   "en": ""
+   "en": "Mei{nl}\"Among the elves, {wait}there are rare few{nl} {wait}who can see the future.{page}\"And last night, Robert-sama, the Elf{nl} King, had a vision.{page} A vision of Silvel Castle under attack by{nl} the Guld army.{page}\"So I came to warn you, but Yuri-sama{nl} wouldn't believe me one bit!{page2}"
   },
   {
    "id": "r022_05E7",
    "addr": "05E7",
    "size": 210,
    "jp": "ユ－リ{nl}「わかったから{nl} そう おこるな。{page} とにかく これで{nl} グルド軍が攻めてくるのは{nl} はっきりしたんだ。{page}「この密書によると{nl} グルド軍の攻撃は ３日後だ。{page}「急いで 防戦の準備を{nl} しなければ・・・{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"All right, all right, don't be so angry.{page} In any case, this makes it clear the Guld{nl} army is coming.{page}\"According to this letter, the Guld{nl} attack comes in three days.{page}\"We must hurry and prepare our{nl} defenses...{page2}"
   },
   {
    "id": "r022_06CA",
    "addr": "06CA",
    "size": 50,
    "jp": "「ユ－リ様っ！{nl} 町の外に グルドの大軍がっ！！{page2}",
-   "en": ""
+   "en": "\"Yuri-sama! A huge Guld army outside{nl} the town!!{page2}"
   },
   {
    "id": "r022_070E",
    "addr": "070E",
    "size": 144,
    "jp": "ユ－リ{nl}「なんだと！ グルド軍め{nl} 作戦を はやめたのか！？{page}「とにかく反撃だ！{nl} すべての門をかため{nl} 敵を 城下に入れるな！{page2}{F9FF}「ははっ！{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"What! Has the Guld army moved up its{nl} plans?!{page}\"Strike back at once! Secure every gate,{nl} and keep the enemy out of the town!{page2}{F9FF}\"Yes, sir!{page2}"
   },
   {
    "id": "r022_07D5",
    "addr": "07D5",
    "size": 112,
    "jp": "「町の外門が 破られましたっ！{page} 敵には 鳥人兵も多く{nl} 城壁を飛びこえてくる敵は{nl} 防ぎようがありません！！{page2}",
-   "en": ""
+   "en": "\"The town's outer gate has been{nl} broken!{page} Many of the enemy are birdmen, and{nl} we can't stop foes that fly over the{nl} walls!!{page2}"
   },
   {
    "id": "r022_084C",
    "addr": "084C",
    "size": 166,
    "jp": "ユ－リ{nl}「しまった！ グルド軍は{nl} 鳥人兵を 使っているのか！{page} しかたない・・・{wait}{nl} 兵士の一部を まわして{nl} 鳥人兵を迎え撃つのだ！{page2}{F9FF}「はっ！ 了解しました！{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Curses! The Guld army is using birdmen!{page} No choice... {wait}Send part of our soldiers{nl} to meet the birdmen!{page2}{F9FF}\"Yes, sir! Understood!{page2}"
   },
   {
    "id": "r022_091D",
    "addr": "091D",
    "size": 132,
    "jp": "ユ－リ{nl}「・・・敵は かなりの大軍を{nl} 送りこんで きたようだな。{page} しかも 鳥人兵を{nl} 連れているとなると{nl} やっかいだぞ・・・{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"...It seems the enemy has sent a very{nl} large army.{page} And with birdmen among them, this is{nl} trouble...{page2}"
   },
   {
    "id": "r022_09C9",
    "addr": "09C9",
    "size": 146,
    "jp": "ユ－リ{nl}「もうすこし戦力があれば・・・{page} せめて あと２部隊・・・{nl} いや １部隊でもあれば・・・{wait}{wait}{nl} 鳥人兵さえ 撃退できれば・{wait}{wait}・{wait}{wait}・{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"If only we had a little more strength...{page} Two more units at least... no, even one...{nl} {wait}{wait}If only we could drive off the{nl} birdmen.{wait}{wait}.{wait}{wait}.{page2}"
   },
   {
    "id": "r022_0A71",
    "addr": "0A71",
    "size": 46,
    "jp": "メイ{nl}「ユ－リ様{nl} あたしたちも 戦います！{page2}",
-   "en": ""
+   "en": "Mei{nl}\"Yuri-sama, we'll fight too!{page2}"
   },
   {
    "id": "r022_0AA8",
    "addr": "0AA8",
    "size": 42,
    "jp": "ユ－リ{nl}「メイ！ なにを言い出すんだ！？{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Mei! What are you saying?!{page2}"
   },
   {
    "id": "r022_0AE7",
    "addr": "0AE7",
    "size": 130,
    "jp": "メイ{nl}「あなた フェナムンの儀式は{nl} すんでるわね？{page}「なら もう 一人前よね。{nl} じゃ おねがい{nl} あたしと いっしょに戦って！",
-   "en": ""
+   "en": "Mei{nl}\"You've had your Fenamun rite, haven't{nl} you?{page}\"Then you're a grown man. So please,{nl} fight alongside me!"
   },
   {
    "id": "r022_0B6F",
    "addr": "0B6F",
    "size": 58,
    "jp": "メイ{nl}「そうこなくっちゃ！{nl} いっしょに がんばろうね！{page2}",
-   "en": ""
+   "en": "Mei{nl}\"That's the spirit! Let's do our best{nl} together!{page2}"
   },
   {
    "id": "r022_0BB1",
    "addr": "0BB1",
    "size": 148,
    "jp": "メイ{nl}「なによ いくじなし！{page}「かよわい エルフの女の子が{nl} 戦おうとしてるのに{nl} だまって見てるつもり？{page}「ねえ いっしょに戦って{nl} くれるわね？",
-   "en": ""
+   "en": "Mei{nl}\"What, you coward!{page}\"A delicate elf girl is about to fight, and{nl} you'll just stand there and watch?{page}\"Come on, you'll fight with me, won't{nl} you?"
   },
   {
    "id": "r022_0C4F",
    "addr": "0C4F",
    "size": 136,
    "jp": "メイ{nl}「なんて なさけない人なの！？{page} あなただって 村を{nl} めちゃくちゃに されたんでしょ？{page}「ねえ いっしょに戦って{nl} くれるわね？",
-   "en": ""
+   "en": "Mei{nl}\"How pathetic can you be?!{page} Your village was torn apart too, wasn't{nl} it?{page}\"Come on, you'll fight with me, won't{nl} you?"
   },
   {
    "id": "r022_0CE5",
    "addr": "0CE5",
    "size": 58,
    "jp": "ユ－リ{nl}「メイ！ ムチャなことを{nl} 言うもんじゃない！！{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Mei! Don't say such reckless things!!{page2}"
   },
   {
    "id": "r022_0D2E",
    "addr": "0D2E",
    "size": 120,
    "jp": "メイ{nl}「やらせてください ユ－リ様！{page} あたしも 少しは魔法が使えるし{nl} この人だって きっと{nl} いないよりマシだわ。{page2}",
-   "en": ""
+   "en": "Mei{nl}\"Please let us, Yuri-sama!{page} I can use a little magic, and this guy is{nl} surely better than nothing.{page2}"
   },
   {
    "id": "r022_0DB2",
    "addr": "0DB2",
    "size": 168,
    "jp": "ユ－リ{nl}「しかし 君たちでは・・・{page2}{F9FF}メイ{nl}「兵士だけじゃ お城が守れないなら{nl} みんなで 戦わなくちゃ！{page}「ほかの人の あしでまといには{nl} 絶対に なりませんから！{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"But the two of you...{page2}{F9FF}Mei{nl}\"If soldiers alone can't protect the{nl} castle, everyone has to fight!{page}\"We'll never get in anyone's way, I{nl} promise!{page2}"
   },
   {
    "id": "r022_0E68",
    "addr": "0E68",
    "size": 98,
    "jp": "ユ－リ{nl}「・・・ありがとう。{page} では 危険な役目だが{nl} 少しの間だけ ２人の力を{nl} かしてくれ！{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"...Thank you.{page} It's a dangerous task, but lend me your{nl} strength, both of you, just for a while!{page2}"
   },
   {
    "id": "r022_0ED2",
    "addr": "0ED2",
    "size": 72,
    "jp": "ユ－リ{nl}「城壁を飛びこえてくる{nl} 鳥人兵と戦うんだ！{page} たのんだぞ！！{page2}",
-   "en": ""
+   "en": "Yuri{nl}\"Fight the birdmen flying over the{nl} castle walls!{page} I'm counting on you!!{page2}"
   },
   {
    "id": "r022_0F50",
    "addr": "0F50",
    "size": 98,
    "jp": "ユ－リ{nl}「城内に 補給所と治療所を{nl} 用意しておこう。{page}「キズをおったら{nl} すぐに もどりなさい。",
-   "en": ""
+   "en": "Yuri{nl}\"I'll have a supply post and an infirmary{nl} set up inside the castle.{page}\"If you get hurt, come back at once."
   },
   {
    "id": "r022_0FB8",
    "addr": "0FB8",
    "size": 102,
    "jp": "ユ－リ{nl}「危険な目にあわせて すまん。{page}「だが 少しだけ{nl} ２人の力を かしてくれ！{nl} たのんだぞ！！",
-   "en": ""
+   "en": "Yuri{nl}\"I'm sorry to put you in danger.{page}\"But lend me your strength, both of{nl} you, just for a while! I'm counting on{nl} you!!"
   },
   {
    "id": "r022_1026",
    "addr": "1026",
    "size": 186,
    "jp": "メイ{nl}「あなた 誰？{page} ふ－ん クルトっていうの？{nl} なんだか 偉そうな名前ね。{page} だってクルトって 古い言葉で{nl} 儀式って意味でしょ？{page}「え？{wait} 知らなかったの？{nl} たよりないわねえ。",
-   "en": ""
+   "en": "Mei{nl}\"Who are you?{page} Hmm, Kurt, is it? What a grand-sounding{nl} name.{page} After all, Kurt means 'rite' in the old{nl} tongue, doesn't it?{page}\"Huh? {wait}You didn't know? You're{nl} hopeless."
   },
   {
    "id": "r022_10E2",
    "addr": "10E2",
    "size": 84,
    "jp": "メイ{nl}「あたし ユ－リ様と{nl} 大切な お話があるの。{wait}{nl} じゃましないで くれない？",
-   "en": ""
+   "en": "Mei{nl}\"I have important business with{nl} Yuri-sama. {wait}Would you not get in the{nl} way?"
   },
   {
    "id": "r022_1138",
    "addr": "1138",
    "size": 92,
    "jp": "メイ{nl}「さっきから{nl} 出たり入ったりして・・・{page} あなた いったい{nl} なにしに きたのよ！！",
-   "en": ""
+   "en": "Mei{nl}\"You've been coming in and out all this{nl} time...{page} What on earth are you here for?!"
   },
   {
    "id": "r022_119C",
    "addr": "119C",
    "size": 68,
    "jp": "「この上は{nl} 王様や王妃様の お部屋だ。{nl} 誰も 入っては ならん。",
-   "en": ""
+   "en": "\"Above here are the rooms of the King{nl} and Queen. No one may enter."
   },
   {
    "id": "r022_11E2",
    "addr": "11E2",
    "size": 148,
    "jp": "「われらの命は とっくに{nl} 王様と ユ－リ様に{nl} おあずけしてある。{page}「なにが 起きようと{nl} われらは ここを一歩たりとも{nl} 動くわけには いかん！",
-   "en": ""
+   "en": "\"We entrusted our lives to the King and{nl} Yuri-sama long ago.{page}\"Whatever happens, we will not move{nl} one step from this spot!"
   },
   {
    "id": "r022_1286",
