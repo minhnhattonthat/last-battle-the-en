@@ -3,11 +3,16 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 5. Engine spike and marker build in progress (VWF, far jumps, staff roll, item/spell name escapes,
-  BG3 menu strings, spell ranks, the English name-entry grid, battle names and the battle font work; left: battle
-  messages (BG3 tile words in window scripts), per-caller BG3 name caps, the rest of the width gate, a full
-  re-tour). Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) and
-  `build/lastbattle_en.sfc` boot (smoke ok, 2026-11-23 session 6).
+  BG3 menu strings, spell ranks, the English name-entry grid, battle names, the battle font and battle tile text
+  done; left: a battle-window marker tour, per-caller BG3 name caps, the rest of the width gate, a full re-tour).
+  Builds are 4 MB with `asm/vwf.asm`: `build/marker.sfc` (`build.py --marker`) and `build/lastbattle_en.sfc` boot
+  (smoke ok, 2026-11-23 session 7).
 - **Done:**
+  - **Phase 5, session 2026-11-23 (7):** battle tile text extracted (`docs/re/battle.md` §Battle messages):
+    window-script format of 29:A1EA decoded; `tools/battle_text.py` -> `script/battle.json` (133 in-place rects:
+    34 direct scripts, 87 table-reached script ops, 12 scanned runs), roundtrip in `test_roundtrip`, marker and
+    English encode (`test_battle_text_rects`), write ranges in `tools/ranges.txt`. Marker build verified in battle
+    (`work/qa/bcmd`): command label `87A5`, spell-cast window `spell 00 / The qui` (first time seen in game).
   - **Phase 5, session 2026-11-23 (6):** battle names (`docs/re/battle.md`): enemies (93) and tactics (8) extracted
     (`script/enemies.json`, `script/tactics.json`, FF-padded fields, `"field"` = where the escape goes); hook 29:B2B6
     (`bt_name`) draws English escapes as two 8-tile rows (`insert.battle_rows`: names up to 16 chars, split at a
@@ -91,17 +96,17 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   1. **Finish phase 5** (done-when: marker ROM boots, every text box shows its id, non-text strings excluded, every
      box variant measured). Left:
-     - **1a. Battle messages** (`docs/re/battle.md` §Battle messages): BG3 tile words with palette bits in window
-       scripts run by 29:A1EA (`$33:D4A1` is one). `python -X utf8 tools/re_battle_text.py work/qa/battle_text.txt`
-       lists 264 candidate runs in banks $28-$33 (victory "を やっつけた！！" `0x140017`, mana/spell info screens bank
-       $2D `0x16EF44+`, battle equip/status labels bank $30 `0x186344+`). Walk the window-script ops, find how each
-       run is reached, add a `battle` kind (tile words keep their palette bits; marker = tile-count-preserving like
-       `bg3_marker_text`; English needs far jumps or relocation in that interpreter) and mark them. Tiles >= $100
-       are kanji / two-row pieces: decode them for the jp text. Still unverified in game: the spell-cast name window
-       (30:ACB0) and the rank form: add a scene that casts a spell (battle command menu: the 4 icons; the 3 probe
-       routes in `work/qa/bmag` did not cast). The 8-byte table at `0x182C57` (クルト, メイ, ボルグ, レジーナ) had no
-       reader in `battle_field`; find its user. Enemy names `enemy_40` / `enemy_69` use two-row kanji bytes: shoot
-       them in battle for the translator (warp pokes `@1DDF` pick the encounter).
+     - **1a. Battle-window marker tour** (`script/battle.json` is done): add scenes.tsv rows that open each battle
+       window and screen on `build/marker.sfc` (command menu 4 icons, orders, tactics select, items in battle,
+       spells, equip/status, run, victory, mana screen) and check every `bt_` id shows. Timing: with pokes
+       `god,@1DDF:0053` from room 0x00 40 30, READY is f2149 and the gray command menu is up at ~f3390, so keys
+       start with `1100 -` (`tools/debug/probe.py work/qa/bcmd --rom build/marker.sfc --frames 4400 "0x00 40 30 1100
+       -;6 right;30 -;6 a;60 -;6 a;200 -|-|god,@1DDF:0053"`). The battle
+       auto-fights first: menus need the right moment. Confirm or fix the 12 `scan` geometries (one row, guessed):
+       find the reader of `0x140017` (victory), `0x16EF84+` (mana screen, bank $2D), `0x19895C+` with
+       `snes_romreads.lua`. Rank form of the spell-cast window still unseen. The 8-byte table at `0x182C57`
+       (クルト, メイ, ボルグ, レジーナ) had no reader in `battle_field`; find its user. Enemy names `enemy_40` /
+       `enemy_69` use two-row kanji bytes: shoot them in battle for the translator (`@1DDF` picks the encounter).
      - **1b. Re-run the full marker tour** (113 + `name_type`) on the current marker build and list what is still
        Japanese (`work/qa/mt_sheets` is from before the BG3 strings).
      - Name entry opens with rows `56789` / `: +` above the cursor row `ABCDE` (the view shows 2 rows before row 0,

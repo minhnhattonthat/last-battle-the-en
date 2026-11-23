@@ -39,13 +39,23 @@ name graphics** (クルト = tiles $1A4-$1A6 in the status box): graphics text, 
 pos - (x << 4 | y); `10nnnnnn` = n+1 literals; `11e mm nnn [lo]` = fill, count n+2 (or (n << 8 | lo) + 2 with e),
 pattern of mm+1 bytes. The decoder runs while the source < start + length - 1.
 
-## Battle messages and screens (not extracted yet)
-BG3 tile words with palette bits (`$20xx`/`$21xx`, tiles >= $100 are kanji or two-row pieces) inside window
-scripts run by 29:A1EA (ops like `01 <dest> <src> 08 02`, see `$33:D4A1`). `tools/re_battle_text.py` lists 264
-runs / 3171 tile words in banks $28-$33 (`work/qa/battle_text.txt`): victory lines (`0x140017`
-"を やっつけた！！"), the mana / spell info screens in bank $2D (`0x16EF44+`: ほのおのマナ, けんえいすう...), battle
-equip/status labels in bank $30 (`0x186344+`: そうびできる ぶきを もっていません, こうげき, すばやさ...). Many runs
-are blank-tile padding. Next: walk the window-script format of 29:A1EA, find how each run is reached (pointer or
-inline), add a `battle` kind (tile words + palette) with marker text and far jumps or relocation.
+## Battle messages and screens (extracted: `script/battle.json`, kind `battle`, `tools/battle_text.py`)
+BG3 tile words with attribute bits (`$20xx`/`$21xx`/`$60A0`; tiles >= $100 are kanji or two-row pieces, `$94` is the
+dakuten on the row above the kana). Window-script interpreter **29:A1EA** (A = script address in bank $33):
+`00 dest(2,$7E) src(3) w h` copies a w x h rectangle of tile words (rows contiguous at src) into the WRAM tilemap;
+`01..FC` = wait that many frames, then the same copy; `FE ptr(2)` + copy (30:927A draws the number at ptr);
+`FD addr(2)` jump; `FF` end. Strings are the ROM rectangles those copies read (133):
+- `script` (34): scripts reached by `LDA #addr; JSL $29A1EA` (60 starts);
+- `table` (87): copy ops elsewhere in bank $33 (scripts picked from tables, e.g. 29:B3FC `LDA $9286,X`, the 18
+  callers without an immediate) whose rectangle reads a kana run of `tools/re_battle_text.py`;
+- `scan` (12): runs nothing above reads, one row, geometry a guess: the victory line `0x140017` (bank $28 code), the
+  bank-$2D mana/spell info screen (`0x16EF84+`; reader not found, maybe a field screen), `たれか？`/`たれを？`/
+  `さくせんセレクト` (`0x19895C+`).
+Write-back is in place with the same tile count (`battle_text.encode`): English rows split by `{nl}`, each <= w
+tiles, <= h rows, padded with space tile $93; a 2-row rect (dakuten row + kana row) can hold two English rows.
+Verified on the marker build (`work/qa/bcmd`): command label `bt_1987A5` (4x2) shows `87A5`; the spell-cast window
+(30:ACB0) shows `spell 00 / The qui`. Excluded as data (`battle_text.EXCLUDE`): the name tile table and 5 short
+odd-aligned matches. Single-tile particles (`bt_198045` の, `bt_1980E3` に, `bt_19D534+` し/ま/た) are pieces of
+messages built at run time: English needs engine work there (phase 7).
 The battle command label たたかう is drawn with the hiragana tiles that now hold English lowercase: it reads "uukf"
 in the 4 MB build until phase 8 redraws it.
