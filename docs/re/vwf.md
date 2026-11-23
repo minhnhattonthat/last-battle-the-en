@@ -44,4 +44,13 @@ Strings shorter than 5 bytes can't hold a jump: `r095_00FE` (「) and `b04_B2E2`
 | 01:B13C | LDA $5C / STA $24 | odd window width = 4 px start offset |
 | 01:BA96 | PHP / REP / XBA / PHA | control dispatch: far jump F7 |
 | 01:B485 | LDA [$10] / CMP #$FF00 | menu string fetch: far jump |
-Not hooked yet: a second glyph renderer in bank 02 (02:D7FA reads the font pointer too; credits or battle text?).
+| 02:D7A8 | LDA [$B2],y / CMP #$FE00 | staff roll fetch: far jump |
+| 02:D7F9 | PHA / LDA $1A8015 | staff roll glyph: English VWF (`cr_glyph`) |
+
+## Staff roll (bank 02, verified: `credits` scene on the marker and ruler builds)
+02:D71F draws entry `$C2` (pointer table `02:E215`, bank `$B4` = 2) with 02:D789: clears the 2bpp tile image
+`$7E6C80` (`$1400` bytes, DMA'd to VRAM `$6000`), X = `$10`, then per word: FE00 = X += `$400` (next 32 px slot), FF00
+= end, else 02:D7F9 draws a 16x16 glyph at tile column X (`$10` bytes per tile, 16 tiles per row, rows 8-15 `$100`
+on; wrap: low byte 0 -> +`$110`), 12 px packing with `$B8` bit 0. `cr_glyph` ORs English glyphs at pixel P of
+column X (P = 4 if `$B8` is odd, else `$B8`/2; stores `$B8` = P*2), plane 0 only, as the game does. WRAM
+`$7EFFF6-$7EFFFD`. The game's per-glyph call to 02:D7CD (fiddles `$08BB`) is skipped for English.

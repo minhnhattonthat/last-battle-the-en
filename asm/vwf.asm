@@ -30,6 +30,12 @@ org $01BA96             ; was PHP / REP #$20 / XBA / PHA: script control-word di
 org $01B485             ; was LDA [$10] / CMP #$FF00: the menu string drawer's fetch (01:B467)
     jml menu_fetch
     nop
+org $02D7A8             ; was LDA [$B2],y / CMP #$FE00: the staff roll's fetch (02:D789)
+    jml cr_fetch
+    nop
+org $02D7F9             ; was PHA / LDA $1A8015 (5 bytes): the staff roll's glyph draw (bank-02 renderer)
+    jml cr_glyph
+    nop
 
 ; ---- code -----------------------------------------------------------------------------------------------------
 org $FD8000
@@ -232,6 +238,136 @@ menu_fetch:             ; M=16 X=16 D=$0C00: next word of a menu string, followi
     bra menu_fetch
 +   cmp #$FF00
     jml $01B48A         ; BNE $B490 / end
+
+; ---- staff roll (bank 02, docs/re/vwf.md §Staff roll) -------------------------------------------------------------
+; The staff roll draws each line into a 2bpp tile image at $7E6C80 (16 tiles per row, $10 bytes per tile, the bottom
+; half of a 16 px line $100 further on), X = byte offset of the current tile column, $B8 = phase. Japanese glyphs keep
+; the game's 12 px packing (bit 0 of $B8 = the column's left 4 px are used). English glyphs are ORed in at pixel P of
+; column X, P = 4 if bit 0 of $B8 is set, else $B8 / 2; afterwards $B8 = P * 2.
+!crP   = $7EFFF6
+!crX   = $7EFFF8
+!crX2  = $7EFFFA
+!crSrc = $7EFFFC
+
+cr_fetch:               ; M=16 X=16, [$B2],y = next word; far jumps followed here
+    lda [$B2],y
+    cmp #$F700
+    bne +
+    iny
+    iny
+    lda [$B2],y         ; low word of the target
+    pha
+    iny
+    iny
+    lda [$B2],y
+    and #$00FF
+    sta $B4
+    pla
+    sta $B2
+    ldy #$0000
+    bra cr_fetch
++   cmp #$FE00
+    jml $02D7AD         ; BEQ newline / CMP #$FF00 ...
+
+cr_glyph:               ; M=16 X=16, A = glyph word, X = tile column; JSR'd from 02:D7B5, returns X = next column
+    cmp #$0800
+    bcs .en
+    pha                 ; the displaced instructions, then the game's Japanese draw
+    lda.l $1A8015
+    jml $02D7FE
+.en:
+    and #$007F
+    sta.l !code
+    asl
+    asl
+    asl
+    asl
+    sta.l !crSrc
+    lda $B8
+    lsr
+    bcc +
+    lda #$0004
++   sta.l !crP
+    txa
+    sta.l !crX
+    jsr cr_next
+    sta.l !crX2
+    ldy #$0000          ; Y = pixel row 0-15
+.row:
+    tya
+    clc
+    adc.l !crSrc
+    tax
+    lda.l font_en,x
+    and #$00FF
+    xba
+    sta.l !tmp
+    lda.l !crP
+    tax
+    lda.l !tmp
+    cpx #$0000
+    beq +
+-   lsr
+    dex
+    bne -
++   sta.l !tmp          ; high byte -> column X, low byte -> the next column
+    tya                 ; row offset: 2 bytes per row, rows 8-15 in the tile row below ($100 on)
+    asl
+    cmp #$0010
+    bcc +
+    adc #$00EF          ; carry set: +$F0
++   pha
+    clc
+    adc.l !crX
+    tax
+    sep #$20
+    lda.l !tmp+1
+    ora.l $7E6C80,x
+    sta.l $7E6C80,x
+    rep #$20
+    pla
+    clc
+    adc.l !crX2
+    tax
+    sep #$20
+    lda.l !tmp
+    ora.l $7E6C80,x
+    sta.l $7E6C80,x
+    rep #$20
+    iny
+    cpy #$0010
+    bne .row
+    lda.l !code
+    tax
+    lda.l font_en_widths,x
+    and #$00FF
+    clc
+    adc.l !crP
+-   cmp #$0008
+    bcc +
+    sbc #$0008
+    sta.l !crP
+    lda.l !crX
+    tax
+    jsr cr_next
+    sta.l !crX
+    lda.l !crP
+    bra -
++   asl
+    sta $B8
+    lda.l !crX
+    tax
+    jml $02D7F8         ; RTS in bank 02
+
+cr_next:                ; A = the tile column after column X (the game's wrap: low byte 0 -> skip $110)
+    txa
+    clc
+    adc #$0010
+    bit #$00FF
+    bne +
+    clc
+    adc #$0110
++   rts
 
 bgword:                 ; A = the empty-pixel word of text mode $2A (mode 0: plane 0 set)
     lda $2A
