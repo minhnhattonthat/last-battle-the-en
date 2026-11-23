@@ -25,14 +25,14 @@
    "addr": "01B5",
    "size": 218,
    "jp": "「ぼくですか？{wait}{page}「ぼくは お客さんが来たら{nl} きちんと 説明するように{nl} 頼まれているんです。{page}「言わないと ぼくが{nl} あの子に 怒られるんです。{page}{FB00}{wait}{wait}「これからは 仲よくしましょう{nl} なんて 言ってたのに・・・。",
-   "en": "\"Me?{wait}{page}\"I've been asked to explain properly{nl} whenever customers come.{page}\"If I don't, she gets mad at me.{page}{FB00}{wait}{wait}\"And she said we'd be friends from{nl}now on..."
+   "en": "\"Me?{wait}{page}\"I've been asked to explain properly{nl} whenever customers come.{page}\"If I don't, she gets mad at me.{page}{FB00}{wait}{wait}\"And she said we'd be friends from{nl} now on..."
   },
   {
    "id": "r125_0291",
    "addr": "0291",
    "size": 154,
    "jp": "「あの子も だんだん お父さんに{nl} そっくりに なってきたって{nl} ひょうばんです。{page}{FB00}{wait}{wait}「本当に お父さんみたいに{nl} なっちゃうの～{nl} ぼく やだよ－！",
-   "en": "\"People say she's getting more and{nl} more like her father.{page}{FB00}{wait}{wait}\"Is she really going to turn out like{nl}her father~? I don't want that!"
+   "en": "\"People say she's getting more and{nl} more like her father.{page}{FB00}{wait}{wait}\"Is she really going to turn out like{nl} her father~? I don't want that!"
   },
   {
    "id": "r125_032D",

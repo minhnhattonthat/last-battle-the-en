@@ -18,7 +18,7 @@
    "addr": "0129",
    "size": 52,
    "jp": "イェルト{nl}「エルダ－ルも{nl} 昔に もどったなあ。{D350}{nl}",
-   "en": "Yelt{nl}\"Eldar is back{nl}to how it used to be.{D350}{nl}"
+   "en": "Yelt{nl}\"Eldar is back{nl} to how it used to be.{D350}{nl}"
   },
   {
    "id": "r319_0165",
@@ -32,7 +32,7 @@
    "addr": "01BA",
    "size": 78,
    "jp": "長老{nl}「そうは言っても{D320}{nl} 血が さわいでるんじゃあ{nl} ないのか？ イェルト。",
-   "en": "Elder{nl}\"Even so,{D320}{nl}isn't your blood{nl}stirring, Yelt?"
+   "en": "Elder{nl}\"Even so,{D320}{nl} isn't your blood{nl} stirring, Yelt?"
   },
   {
    "id": "r319_021F",
@@ -53,7 +53,7 @@
    "addr": "0378",
    "size": 82,
    "jp": "キュ－ケンホフ先生{nl}「わたしも またがんばって{nl} りっぱな生徒を 育てなくちゃな。",
-   "en": "Keukenhof-sensei{nl}\"I must work hard again{nl}and raise fine pupils."
+   "en": "Keukenhof-sensei{nl}\"I must work hard again{nl} and raise fine pupils."
   },
   {
    "id": "r319_03E2",

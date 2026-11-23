@@ -11,7 +11,7 @@
    "addr": "00B7",
    "size": 336,
    "jp": "「あの グルドが攻めてきた日の{nl} ことですか{wait}・{wait}・{wait}・{wait}{page}「グルド軍に 村を囲まれたときに{nl} 去年の 麦のしゅうかくを{nl} みんなで 差し出したんです。{page}「おかげで 見はりの兵士こそ{nl} 村に残されましたが 人や畑に{nl} 手をだされずに すみました。{page}{FB00}{wait}{wait}「わたしらが 手にしてるのは{nl} すきや くわで{nl} 戦いの道具ではありませんからね。",
-   "en": "\"The day Guld attacked{wait}.{wait}.{wait}.{wait}?{page}\"When the Guld army surrounded the{nl} village, we all handed over last year's{nl} wheat harvest.{page}\"Thanks to that, they left guards in the{nl} village, but they didn't touch our people{nl} or fields.{page}{FB00}{wait}{wait}\"What we hold are plows and hoes,{nl}not tools of war."
+   "en": "\"The day Guld attacked{wait}.{wait}.{wait}.{wait}?{page}\"When the Guld army surrounded the{nl} village, we all handed over last year's{nl} wheat harvest.{page}\"Thanks to that, they left guards in the{nl} village, but they didn't touch our people{nl} or fields.{page}{FB00}{wait}{wait}\"What we hold are plows and hoes,{nl} not tools of war."
   },
   {
    "id": "r109_0211",

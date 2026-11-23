@@ -205,9 +205,9 @@ def wrap(e, en):
         head = []
         if "{nl}" in body:
             first, rest = body.split("{nl}", 1)
-            if "{nl}" not in rest and rest.strip().startswith('"') and not first.strip().startswith('"'):
+            if quoted(rest) and not quoted(first) and speaker_line(first):
                 head, body = [first.strip()], rest
-        if body.strip().startswith('"'):
+        if quoted(body):
             speech = True
         elif k // 2 < len(narration) and narration[k // 2]:
             speech = False
@@ -216,9 +216,26 @@ def wrap(e, en):
         else:
             lines = wrap_page(body.strip(), DLG_PX - 4 * speech - (0 if head else px(lead)))
         # choice lines ({F600} = choice cursor) keep their place
-        lines = [ln if not speech or ln.startswith(('"', "{F600}")) or ln == "" else " " + ln for ln in lines]
+        lines = [ln if not speech or quoted(ln) or ln.startswith("{F600}") or ln == "" or indented(ln) else " " + ln
+                 for ln in lines]
         out.append(lead + "{nl}".join(head + lines))
     return "".join(out)
+
+
+def quoted(s):
+    """Text opening with `"` once leading control tokens ({wait}, {D320}, {FB00}...) are skipped."""
+    return re.sub(r"^(?:\{[0-9A-Za-z]+\})*", "", s.strip()).startswith('"')
+
+
+def indented(s):
+    """A line already indented after its leading control tokens (`{D320} I have no words.`)."""
+    return bool(re.match(r"^(?:\{[0-9A-Za-z]+\})+ ", s))
+
+
+def speaker_line(s):
+    """A speaker name line above speech: short, no sentence punctuation (`King of Guld`, `Keukenhof-sensei`)."""
+    t = TOKEN.sub("", s).strip()
+    return 0 < len(t) <= 20 and not re.search(r"[.!?,\"]", t)
 
 
 def pages(en):

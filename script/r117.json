@@ -11,7 +11,7 @@
    "addr": "005D",
    "size": 118,
    "jp": "「図書館に なにか御用ですか？{page}{FB00}{wait}{wait}「いつもの{wait} 本の行商の方では{nl} ないですわね？{wait}{wait}{nl} どうしましょう・・・・。",
-   "en": "\"Can I help you at the library?{page}{FB00}{wait}{wait}\"You're not{wait} the usual book{nl}peddlers, are you? {wait}{wait}Oh, what to do...."
+   "en": "\"Can I help you at the library?{page}{FB00}{wait}{wait}\"You're not{wait} the usual book{nl} peddlers, are you? {wait}{wait}Oh, what to do...."
   },
   {
    "id": "r117_00E1",

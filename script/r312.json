@@ -18,7 +18,7 @@
    "addr": "010B",
    "size": 58,
    "jp": "ヤ－ク族魔法司{nl}「治療が 必要な時は{nl} 言ってくださいね。",
-   "en": "Yaak Mage{nl}\"When you need healing,{nl}just tell me."
+   "en": "Yaak Mage{nl}\"When you need healing,{nl} just tell me."
   },
   {
    "id": "r312_0147",
@@ -53,14 +53,14 @@
    "addr": "023D",
    "size": 54,
    "jp": "族長の娘{nl}「ボルグ・・・{nl} おねがい みんなを助けて！",
-   "en": "Chief's Daughter{nl}\"Borg...{nl}Please, save everyone!"
+   "en": "Chief's Daughter{nl}\"Borg...{nl} Please, save everyone!"
   },
   {
    "id": "r312_0275",
    "addr": "0275",
    "size": 42,
    "jp": "族長の娘{nl}「ボルグ！！{nl} 死んじゃいやよ。",
-   "en": "Chief's Daughter{nl}\"Borg!!{nl}Don't you dare die."
+   "en": "Chief's Daughter{nl}\"Borg!!{nl} Don't you dare die."
   },
   {
    "id": "r312_02A7",
