@@ -55,3 +55,12 @@ script refuses to run while any line is unticked. Sources: `docs/review-phase6.m
 - [ ] bg3_98B6 - same JP as bg3_89D2: unify (M1)
 - [ ] r075_01FE - Guld captain's archaic ござる/つかまつる register rendered plain (session 18 re-read)
 - [ ] top21_02FE, top23_0244, top23_03A4 - 合成 "combine" vs glossary 魔法合成 "spell synthesis": pick one wording with the menu label (session 18 re-read)
+- [ ] shop buy list (FA3C): with 9-tile names the price ends one column right of the JP, so the sol sign is in the last
+  inner column, touching the border (svc_00_13 "30000"); a 1-tile shift left of the price column would match the JP
+  (session 23 visual QA)
+- [ ] battle tactic box: "Basic" sits left in the 8-tile box the JP filled (ベーシックタイプ); the name rows are centred
+  only by `insert.battle_rows` for the two-row form (battle_field, session 23)
+- [ ] spell-cast box "Fireball / A": the rank letter alone on the bottom row; "Fireball A" fits 10 tiles, the box has
+  8 (battle_room, session 23)
+- [ ] field prompts with a character-name insert (`{FA0F} has no items.`) centre with the name at 8 tiles, so "Kurt"
+  lines sit about a tile left (as the JP did with クルト); fine for 8-letter names (session 23)

@@ -23,6 +23,7 @@ import font_bg3  # noqa: E402
 import font_en  # noqa: E402
 import insert  # noqa: E402
 import romdiff  # noqa: E402
+import strings_tsv  # noqa: E402
 
 ORIG_PATH = ROOT / "rom" / "Last Battle, The (Japan).sfc"
 OUT = ROOT / "build" / "lastbattle_en.sfc"
@@ -113,7 +114,7 @@ def build(out=OUT, recompress=False, orig_path=ORIG_PATH, script_dir=insert.SCRI
         font_bg3.battle_patch(orig, w)
         battle_text.column_messages(orig, w)  # "Enemy ambush!!" / "Surprise attack!" (typed column by column)
         battle_text.found_message(orig, w)    # "<item> found!" after a battle
-    region.pack(w.rom, w.put, recompress=recompress, free=blocks.FREE + ([blocks.EXPANSION] if asm else []))
+    placed = region.pack(w.rom, w.put, recompress=recompress, free=blocks.FREE + ([blocks.EXPANSION] if asm else []))
     if asm:
         apply_asm(w)
     rom = bytes(w.rom)
@@ -125,6 +126,7 @@ def build(out=OUT, recompress=False, orig_path=ORIG_PATH, script_dir=insert.SCRI
     out.write_bytes(rom)
     lines = [f"{o:X} {a.hex()} {b.hex()} {by}" for o, a, b, by in w.log]
     out.with_name("writes.txt").write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8", newline="\n")
+    strings_tsv.write(out.with_name("strings.tsv"), files, placed, w.log)  # text-coverage keys (textcover.lua)
     return rom, w.log
 
 

@@ -339,3 +339,21 @@ def test_english_build_moves(tmp_path):
         for r, text in enumerate((top, bottom)):
             want = c.words(text) + [word(rom, src) & battle_text.ATTR_MASK | battle_text.SPACE] * (n - len(text))
             assert [rows[i][r] for i in range(n)] == want, text
+    # strings.tsv (text coverage): one key per string; a block key names a stream of this build that decompresses
+    # far enough to hold the string's slot, a ROM key lies in the ROM
+    import lz
+    import strings_tsv
+    rows = [line.split("\t") for line in (tmp_path / "strings.tsv").read_text(encoding="utf-8").splitlines()
+            if not line.startswith("#")]
+    ids = {e["id"] for f in insert.load().values() for e in f["entries"]}
+    assert sorted(r[0] for r in rows) == sorted(ids)
+    streams = {}
+    for _, k in rows:
+        k = int(k, 16)
+        if k & strings_tsv.BLOCK_KEY:
+            off = k >> 16 & 0xFFFFFF
+            if off not in streams:
+                streams[off] = lz.decompress(rom, off)[0]
+            assert k & 0xFFFF < len(streams[off]), hex(k)
+        else:
+            assert k < len(rom)

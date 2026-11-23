@@ -84,3 +84,18 @@ Everything `tools/debug/warp.lua` relies on. Addresses are WRAM (`$7E`) unless a
   roll: 24 entries, pointer table `02:E215` -> text `0x16245`, one per `$78` frames (`02:D71F`).
 - The chapter 4 title (『第四章 ウ－ドの滅亡』) is NPC dialogue in room 198 (`$7F:015A`), not a card screen; no
   other chapter titles exist in the text.
+
+## Text coverage (verified: `work/qa/cover`, session 23)
+- `build.py` writes `build/strings.tsv` (`tools/strings_tsv.py`): ROM strings keyed by the file offset of the first
+  byte read (slot, or bank-pool copy), block strings by `1<<40 | stream offset << 16 | offset in block`: every
+  script block decompresses over `$7F:0000`, so the key needs the stream.
+- `tools/debug/textcover.lua` (after warp.lua): at the decompressor `00:83A7` the pointers are DP-relative (callers
+  run with D = `$0000` or `$0D00`): source `$AC-$AE`, destination `$B0-$B2`; a destination of `$7F:0000` sets the
+  current stream. Reads of `$7F` and of the ROM banks in RANGES log `TEXT <key>`.
+- RUNS: each entry runs as the field loop runs e1 (`$0634` = 1, VM call `00:D64C` pointed at it); the script has
+  ended when the field loop calls `00:D634` again. A place-name label (rooms entered from the map) holds the field
+  loop until a button: the probe taps B while a run is armed. A mashed through text; B after 1500 frames backs
+  out of shops (E4).
+- `tools/debug/textcover_run.py OUT` runs every room (and the 14 story-variant blocks with their pokes), restarting
+  after any entry that leaves the room or sticks. Report: `textcover.py OUT build/strings.tsv --waive
+  docs/text_unshown.tsv --mask 0xFFFFFFFFFFFF`.
