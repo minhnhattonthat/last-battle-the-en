@@ -11,35 +11,35 @@
    "addr": "0043",
    "size": 68,
    "jp": "「うちの子ったら{nl} やたらと魔法を 使いたがって{nl} 困っちゃうのよ。",
-   "en": ""
+   "en": "\"That child of mine is forever wanting{nl} to use magic. It's such a bother."
   },
   {
    "id": "r004_0089",
    "addr": "0089",
    "size": 124,
    "jp": "「おそうじも お料理も{nl} なんでも 魔法でやればいいと{nl} 思ってるんだから！{page}「あれじゃ おヨメに{nl} いけなくなっちゃうわ。",
-   "en": ""
+   "en": "\"Cleaning, cooking, she thinks magic can{nl} do it all!{page}\"At this rate, no one will ever marry{nl} her."
   },
   {
    "id": "r004_010D",
    "addr": "010D",
    "size": 44,
    "jp": "「よお！ クルト{nl} なんか 買ってくかい？{page}",
-   "en": ""
+   "en": "\"Hey! Kurt, buying anything today?{page}"
   },
   {
    "id": "r004_0142",
    "addr": "0142",
    "size": 268,
    "jp": "「そうだ{wait}{nl} 今日は おまえの誕生日だろ？{page} いよいよ おまえも{nl} フェナムンの儀式をうけるのか。{page}「{wait}・{wait}・{wait}・あれから もう１６年{wait}{nl} 早いもんだよなあ。{page}「おまえの おやじも おふくろも{nl} どんなに この日を{nl} 待っていたことか・・・{page}「クルト がんばるんだぞ。",
-   "en": ""
+   "en": "\"Oh, right, {wait}today's your birthday, isn't{nl} it?{page} So you're finally going to take the{nl} Fenamun rite.{page}\"{wait}.{wait}.{wait}. Sixteen years already since{nl} then. {wait}Time sure flies.{page}\"Your father and mother have been{nl} waiting for this day for so long...{page}\"Do your best, Kurt."
   },
   {
    "id": "r004_0252",
    "addr": "0252",
    "size": 62,
    "jp": "「どうした クルト？{wait}{nl} 買い忘れたものでも{nl} あるのかい？{page}",
-   "en": ""
+   "en": "\"What's up, Kurt? {wait}Forget to buy{nl} something?{page}"
   }
  ]
 }

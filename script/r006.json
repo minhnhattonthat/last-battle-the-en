@@ -11,119 +11,119 @@
    "addr": "009F",
    "size": 114,
    "jp": "イェルト{nl}「おはよう {FA03}。{page} おや どうしたんだ？{wait}{nl} まさか 自分のフェナムンを{nl} 忘れたんじゃ ないだろうな？",
-   "en": ""
+   "en": "Yelt{nl}\"Good morning, {FA03}.{page} Hm? What's wrong? {wait}Don't tell me{nl} you've forgotten your own Fenamun?"
   },
   {
    "id": "r006_0117",
    "addr": "0117",
    "size": 236,
    "jp": "イェルト{nl}「フェナムンは おまえだけの{nl} 大切な名前だ。{page} しっかり おぼえておけよ。{page}「それから フェナムンは{nl} むやみに人に知られちゃ{nl} いけないものなんだ。{page}「だから ふだんは{nl} 今までどおりの クルトとして{nl} 生きていくんだぞ。",
-   "en": ""
+   "en": "Yelt{nl}\"Your Fenamun is a precious name that{nl} is yours alone.{page} Make sure you remember it.{page}\"And your Fenamun is something others{nl} must not learn carelessly.{page}\"So day to day, you'll go on living as{nl} Kurt, the same as always."
   },
   {
    "id": "r006_0205",
    "addr": "0205",
    "size": 64,
    "jp": "イェルト{nl}「・・・・・・・・・・・{page}イェルトは{nl}気を失っている。",
-   "en": ""
+   "en": "Yelt{nl}\"...........{page}Yelt has lost consciousness."
   },
   {
    "id": "r006_0259",
    "addr": "0259",
    "size": 118,
    "jp": "ユ－ス{nl}「お帰りなさい クルト。{page}「２階の あなたの部屋で{nl} 父さんが 待っているわよ。{nl} 早く いってごらんなさい。",
-   "en": ""
+   "en": "Yuse{nl}\"Welcome home, Kurt.{page}\"Your father is waiting in your room{nl} upstairs. Go on up."
   },
   {
    "id": "r006_02DD",
    "addr": "02DD",
    "size": 78,
    "jp": "ユ－ス{nl}「どうしたの クルト？{page} 父さん さっきから{nl} ２階で 待ってるわよ。",
-   "en": ""
+   "en": "Yuse{nl}\"What's the matter, Kurt?{page} Your father's been waiting upstairs for{nl} a while now."
   },
   {
    "id": "r006_033D",
    "addr": "033D",
    "size": 284,
    "jp": "ユ－ス{nl}「フェナムンの儀式といっても{nl} ちょっと冒険するだけよ。{page} クルトは男の子だものね。{nl} きっと無事に やりとげるわ。{page}「でも ハ－ブくらいは{nl} 必要になるでしょう。{page2}{F9FF}「はい{wait} 少しだけど{nl} おこづかいを あげるわ。{page}「お店にいって必要なものを{nl} 自分で えらんできなさい。{page}",
-   "en": ""
+   "en": "Yuse{nl}\"The Fenamun rite is only a small{nl} adventure.{page} You're a boy, Kurt. I'm sure you'll come{nl} through it safely.{page}\"Still, you'll need some herbs at least.{page2}{F9FF}\"Here. {wait}It's not much, but it's some{nl} spending money.{page}\"Go to the shop and choose what you{nl} need yourself.{page}"
   },
   {
    "id": "r006_0460",
    "addr": "0460",
    "size": 34,
    "jp": "クルトは １００ソルを{nl}もらった！",
-   "en": ""
+   "en": "Kurt received 100 Sol!"
   },
   {
    "id": "r006_0484",
    "addr": "0484",
    "size": 188,
    "jp": "ユ－ス{nl}「どうしたの クルト？{nl} 早く 行ってらっしゃい。{page}「父さんも すぐ帰ってくるわ。{nl} それまでに ちゃんと{nl} 準備しておかなきゃ だめでしょ？{page}「それとも 準備は{nl} もう いいの？",
-   "en": ""
+   "en": "Yuse{nl}\"What's the matter, Kurt? Off you go.{page}\"Your father will be home soon. You{nl} need to be ready by then, don't you?{page}\"Or are you already prepared?"
   },
   {
    "id": "r006_0548",
    "addr": "0548",
    "size": 64,
    "jp": "ユ－ス{nl}「あらクルト はやかったのね。{nl} もう 準備はできたの？",
-   "en": ""
+   "en": "Yuse{nl}\"Oh Kurt, that was quick. Are you ready{nl} already?"
   },
   {
    "id": "r006_058E",
    "addr": "058E",
    "size": 76,
    "jp": "「あとで 気づいても{nl} 買いにいくヒマは ないのよ。{page} ほんとに いいのね？",
-   "en": ""
+   "en": "\"If you notice something later, there{nl} won't be time to go buy it.{page} Are you really sure?"
   },
   {
    "id": "r006_05E0",
    "addr": "05E0",
    "size": 116,
    "jp": "ユ－ス{nl}「そう・・・だったらいいけど。{page} でもクルトは{nl} ちょっと そそっかしいから{nl} 母さん それが心配で・・・{page2}",
-   "en": ""
+   "en": "Yuse{nl}\"Well... if you say so.{page} But you're a little careless, Kurt, and{nl} that worries me...{page2}"
   },
   {
    "id": "r006_0660",
    "addr": "0660",
    "size": 72,
    "jp": "ユ－ス{nl}「じゃ 早く準備を すませなさい。{nl} もう あまり時間がないわ。",
-   "en": ""
+   "en": "Yuse{nl}\"Then hurry and get ready. There isn't{nl} much time left."
   },
   {
    "id": "r006_06AA",
    "addr": "06AA",
    "size": 64,
    "jp": "ユ－ス{nl}「もう おきたの？ クルト{page} いえ {FA03}{nl} だったわね。{page2}",
-   "en": ""
+   "en": "Yuse{nl}\"Up already, Kurt?{page} No, {FA03}, I mean.{page2}"
   },
   {
    "id": "r006_06EC",
    "addr": "06EC",
    "size": 230,
    "jp": "ユ－ス{nl}「よく聞いて {FA03}。{page} フェナムンは その人の{nl} すべてを あらわす{nl} 聖なる名前なのよ。{page}「だから ふだんは{nl} 秘密にしなきゃいけないし{page} 父さんや母さんも{nl} あなたのことは 今までどおり{nl} クルトって 呼ぶことにするわ。",
-   "en": ""
+   "en": "Yuse{nl}\"Listen carefully, {FA03}.{page} A Fenamun is a sacred name that shows{nl} all that a person is.{page}\"So you must keep it secret in daily life,{page} and your father and I will keep calling{nl} you Kurt, just as before."
   },
   {
    "id": "r006_07D4",
    "addr": "07D4",
    "size": 66,
    "jp": "ユ－ス{nl}「父さんなら 心配いらないわ。{nl} さあ 早く いきなさい。",
-   "en": ""
+   "en": "Yuse{nl}\"Don't worry about your father. Now{nl} hurry along."
   },
   {
    "id": "r006_0818",
    "addr": "0818",
    "size": 106,
    "jp": "ユ－ス{nl}「どうしたの クルト？{page}「クルトには 大事な役目が{nl} あるでしょう。{nl} まず それを果たしなさい。",
-   "en": ""
+   "en": "Yuse{nl}\"What's the matter, Kurt?{page}\"You have an important duty. See it{nl} through first."
   },
   {
    "id": "r006_08F1",
    "addr": "08F1",
    "size": 54,
    "jp": "イェルト{nl}「お－い 母さん クルト！{nl} お客様だぞ！{page2}",
-   "en": ""
+   "en": "Yelt{nl}\"Hey, Mother! Kurt! We have a guest!{page2}"
   },
   {
    "id": "r006_093C",

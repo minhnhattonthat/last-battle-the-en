@@ -11,119 +11,119 @@
    "addr": "0087",
    "size": 124,
    "jp": "「あいたた・・・{nl} ちくしょう グルドのやつらめ！{page}「グルド王国は このシルヴェルと{nl} 兄弟国のはずじゃ{nl} なかったのかよ！",
-   "en": ""
+   "en": "\"Ow, ow... Curse those Guld dogs!{page}\"Wasn't the Kingdom of Guld supposed{nl} to be a brother nation to Silvel?!"
   },
   {
    "id": "r003_0105",
    "addr": "0105",
    "size": 48,
    "jp": "「もう グルド人なんか{nl} 絶対に信用しないぞ！！",
-   "en": ""
+   "en": "\"I'll never trust a Guld again!!"
   },
   {
    "id": "r003_013D",
    "addr": "013D",
    "size": 126,
    "jp": "長老{nl}「グルド兵の ねらいは{nl} その密書だったようじゃな。{page} やつらが ここまで するからには{nl} よほど重要なものに違いない。",
-   "en": ""
+   "en": "Elder{nl}\"It seems the Guld soldiers were after{nl} that secret letter.{page} If they would go this far, it must be{nl} something very important."
   },
   {
    "id": "r003_01BD",
    "addr": "01BD",
    "size": 98,
    "jp": "長老{nl}「クルト 急いでくれ！{page} 密書は かならず{nl} シルヴェル城のユ－リ様に{nl} とどけるのじゃぞ！",
-   "en": ""
+   "en": "Elder{nl}\"Kurt, hurry!{page} You must deliver the secret letter to{nl} Yuri-sama at Silvel Castle!"
   },
   {
    "id": "r003_0227",
    "addr": "0227",
    "size": 64,
    "jp": "イェルト{nl}「・・・・・・・・・・・{page}イェルトは{nl}気を失っている。",
-   "en": ""
+   "en": "Yelt{nl}\"...........{page}Yelt has lost consciousness."
   },
   {
    "id": "r003_026F",
    "addr": "026F",
    "size": 66,
    "jp": "ユ－ス{nl}「父さんなら 心配いらないわ。{nl} さあ 早く いきなさい。",
-   "en": ""
+   "en": "Yuse{nl}\"Don't worry about your father. Now{nl} hurry along."
   },
   {
    "id": "r003_02B3",
    "addr": "02B3",
    "size": 106,
    "jp": "ユ－ス{nl}「どうしたの クルト？{page} クルトには 大事な役目が{nl} あるでしょう。{nl} まず それを果たしなさい。",
-   "en": ""
+   "en": "Yuse{nl}\"What's the matter, Kurt?{page} You have an important duty. See it{nl} through first."
   },
   {
    "id": "r003_0321",
    "addr": "0321",
    "size": 170,
    "jp": "イェルト{nl}「はぁ・・{wait}はぁ・・・{wait}{nl} ク{wait}・{wait}クルトは・・・？{page}「ああ クルト{wait}{wait}{nl} 無事・・だったようだな。{page2}{FB00}「クルト・・・{wait}{nl} おまえも もう{wait} りっぱな大人だ。{page}",
-   "en": ""
+   "en": "Yelt{nl}\"Hah.. {wait}hah... {wait}K{wait}.{wait}Kurt...?{page}\"Ah, Kurt... {wait}{wait}You're... safe, I see.{page2}{FB00}\"Kurt... {wait}You're a fine {wait}grown man{nl} now.{page}"
   },
   {
    "id": "r003_03CD",
    "addr": "03CD",
    "size": 68,
    "jp": "「これからは{wait}{wait}{nl} 父さんの 助けがなくても{wait}{nl} だいじょうぶだな？",
-   "en": ""
+   "en": "\"From now on, {wait}{wait}you'll be all right{nl} {wait}without your father's help, won't{nl} you?"
   },
   {
    "id": "r003_0417",
    "addr": "0417",
    "size": 44,
    "jp": "イェルト{nl}「そうか・・{wait}安心したよ・・・{wait}{page2}",
-   "en": ""
+   "en": "Yelt{nl}\"I see... {wait}That's a relief...{wait}{page2}"
   },
   {
    "id": "r003_0452",
    "addr": "0452",
    "size": 100,
    "jp": "イェルト{nl}「わからないことを・・{wait}{nl} ・・・言うんじゃない・・{wait}{wait}{nl}「おまえは{wait} もう大人だろう？{page}",
-   "en": ""
+   "en": "Yelt{nl}\"Don't say... {wait}such foolish things... {wait}{wait}{nl}\"You're a grown man, {wait}aren't you?{page}"
   },
   {
    "id": "r003_04BA",
    "addr": "04BA",
    "size": 40,
    "jp": "長老{nl}「イェルト！{wait} しっかりせんか！{page2}",
-   "en": ""
+   "en": "Elder{nl}\"Yelt! {wait}Pull yourself together!{page2}"
   },
   {
    "id": "r003_04ED",
    "addr": "04ED",
    "size": 64,
    "jp": "ユ－ス{nl}「長老 だいじょうぶです。{nl} 気を 失っただけですわ。{page2}",
-   "en": ""
+   "en": "Yuse{nl}\"He'll be all right, Elder. He has only{nl} fainted.{page2}"
   },
   {
    "id": "r003_053F",
    "addr": "053F",
    "size": 44,
    "jp": "長老{nl}「クルト{nl} こっちへ きてくれんか？{page2}",
-   "en": ""
+   "en": "Elder{nl}\"Kurt, would you come over here?{page2}"
   },
   {
    "id": "r003_0573",
    "addr": "0573",
    "size": 186,
    "jp": "長老{nl}「クルト すまんが{nl} わしの かわりに{page} このグルドの密書を{nl} シルヴェル城のユ－リ様に{nl} とどけてくれんか。{page}「わしも このキズだし{nl} 村の男で 無事なのは{nl} おまえだけじゃ。{page2}",
-   "en": ""
+   "en": "Elder{nl}\"Kurt, I'm sorry, but in my place...{page} would you take this Guld secret letter{nl} to Yuri-sama at Silvel Castle?{page}\"I'm wounded, and of the village men,{nl} you're the only one unhurt.{page2}"
   },
   {
    "id": "r003_0633",
    "addr": "0633",
    "size": 124,
    "jp": "クルトは グルドの密書を{nl}手に入れた。{C11E}{C1FF}{C101}{page2}{F9FF}{B7C2}長老{nl}「たのんだぞ クルト。{page}「かならず ユ－リ様に{nl} とどけるのじゃぞ。",
-   "en": ""
+   "en": "Kurt received the Guld secret{nl}letter.{C11E}{C1FF}{C101}{page2}{F9FF}{B7C2}Elder{nl}\"I'm counting on you, Kurt.{page}\"Be sure to deliver it to Yuri-sama."
   },
   {
    "id": "r003_06B1",
    "addr": "06B1",
    "size": 156,
    "jp": "長老{nl}「おや？ おまえ持ち物が{nl} いっぱいのようじゃな。{page}「では なにか１つ{nl} わしに あずけるがいい。{page}「となりの部屋の宝箱に{nl} しまっておいてやろう。{page2}",
-   "en": ""
+   "en": "Elder{nl}\"Hm? Your pack seems to be full.{page}\"Then leave one thing with me.{page}\"I'll put it away in the chest in the next{nl} room.{page2}"
   }
  ]
 }

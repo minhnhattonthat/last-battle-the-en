@@ -11,21 +11,21 @@
    "addr": "0038",
    "size": 206,
    "jp": "長老{nl}「おや クルト{nl} 学校は もう終わったのか？{page}「そういえば 今日は{nl} おまえの誕生日じゃろ{page} いくつに なるんじゃね？{page2}{FB00}「なに！ とうとう１６才か！{wait}{nl} そうか いよいよ おまえも{nl} 一人前じゃな。",
-   "en": ""
+   "en": "Elder{nl}\"Oh, Kurt. Is school over already?{page}\"Come to think of it, today is your{nl} birthday, isn't it?{page} How old are you now?{page2}{FB00}\"What! Sixteen at last! {wait}Well, well, so{nl} you're a grown man now."
   },
   {
    "id": "r002_0108",
    "addr": "0108",
    "size": 244,
    "jp": "長老{nl}「よいか クルトよ。{page} この村は 昔{nl} シルヴェルの王様につかえた{nl} 騎士たちの作った村なんじゃ。{page}「その中でも おまえの父イェルトは{nl} すばらしく 勇かんな{nl} 騎士じゃった。{page}「おまえも 父さんに負けない{nl} りっぱな人間になるんじゃぞ。",
-   "en": ""
+   "en": "Elder{nl}\"Listen, Kurt.{page} Long ago, this village was built by{nl} knights who served the King of Silvel.{page}\"And among them, your father Yelt was{nl} a splendid, brave knight.{page}\"You must grow into a fine man, every{nl} bit your father's equal."
   },
   {
    "id": "r002_01FE",
    "addr": "01FE",
    "size": 118,
    "jp": "長老{nl}「そうか・・・{nl} クルトも もう１６才か・・・{page}「あの小さかった子が{nl} よく ここまで{nl} 大きくなったもんじゃ。",
-   "en": ""
+   "en": "Elder{nl}\"I see... So Kurt is sixteen already...{page}\"To think that little boy has grown so{nl} big."
   }
  ]
 }

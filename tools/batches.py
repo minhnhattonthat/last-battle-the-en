@@ -162,9 +162,18 @@ def wrap(e, en):
     # Speech state runs across pages: a page opening with `"` (after any leading control tokens such as {FB00}) starts
     # speech, a page opening with a speaker name line (`Name{nl}"...`) too; continuation pages stay indented.
     # A page `Name{nl}"speech` keeps the name line and wraps the speech (the name counts as one of the 3 lines).
+    # When the English has as many pages as the JP, each JP page decides: a page whose text starts with a letter
+    # (no 「, no leading space, no name line) is narration and ends the speech.
     speech = False
     out = []
-    for part in re.split(r"(\{page2?\})", en):
+    jp_pages = re.split(r"\{page2?\}", e["jp"])
+    en_parts = re.split(r"(\{page2?\})", en)
+    narration = [False] * len(jp_pages)
+    if len(jp_pages) == (len(en_parts) + 1) // 2:
+        for i, p in enumerate(jp_pages):
+            t = re.sub(r"^(?:\{[0-9A-F]{4}\})*", "", p)
+            narration[i] = bool(t) and t[0] not in "「 " and "{nl}「" not in t
+    for k, part in enumerate(en_parts):
         if part in ("{page}", "{page2}"):
             out.append(part)
             continue
@@ -180,6 +189,8 @@ def wrap(e, en):
                 head, body = [first.strip()], rest
         if body.strip().startswith('"'):
             speech = True
+        elif k // 2 < len(narration) and narration[k // 2]:
+            speech = False
         if "{nl}" in body:
             lines = [ln.strip() for ln in body.split("{nl}")]
         else:
