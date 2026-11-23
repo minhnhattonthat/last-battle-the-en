@@ -6,6 +6,17 @@ Updated at the end of every session. Keep it to what the next session needs; his
   new keep-list and `{009E}` rules, 40 tests; 3077/3085 translated, the 8 left are battle-only in
   `script/keep_jp.txt`). `build/lastbattle_en.sfc` smoke ok, 2026-11-24 session 19, sha1 489d308c.
 - **Done:**
+  - **Phase 8, session 2026-11-24 (20), started:** status screen bottom-right `↓まほう` was `↓まMg`: the extractor's
+    byte-at-a-time resync swallowed a window header and the first tile; `extract.bg3_strings` now skips a 4-byte
+    header after FF00 (only change ROM-wide: `bg3_915C` -> `bg3_9158` "{00A1}Mag"). Status "Fenamun" label one
+    column left (it touched its dot field). Stress save `stress_items.srm` (16 slots of 9-letter items, file name
+    WWWWWWWW, money 9,999,999; character names are fixed ROM strings, `$0024` is only the file name) and scenes
+    `stress_load/status/itemlist/itemuse/equip`: all read ok (`work/qa/stress`). `docs/visual-qa-brief.md` with
+    the game's standing non-bugs. Full tour `work/qa/tour` on build sha1 8b50fe77: 119/119 scenes reached. The
+    JP reference tour (`work/qa/tour_jp`) was killed by Claude Code for low system memory; **resume here**: re-run
+    `run_scenes.py "rom/Last Battle, The (Japan).sfc" --jobs 3 --out work/qa/tour_jp`, then `qa_gate.py init
+    work/qa/manifest.tsv work/qa/tour --build build/lastbattle_en.sfc`, `todo ... --size 30`, verdicts per chunk
+    (fresh read-only pass, `docs/visual-qa-brief.md`). Use `--jobs 3` (5 jobs + the session ran memory out).
   - **Phase 7 review, session 2026-11-24 (20):** `.harness/reviews/last-battle-the-en-phase7.md` I1: FA18 item
     names in BG3 messages now print 9 (asm `nm_feaa`, return $FC70; FC55 is reached only from the op table), shot
     "Gave Kurt Longsword." / "Equipped Longsword." / "Dropped Rare Herb." (`work/qa/i1e`, `work/qa/i1d`). M1: lint
