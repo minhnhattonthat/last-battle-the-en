@@ -11,14 +11,14 @@
    "addr": "0066",
    "size": 36,
    "jp": "「うお～！{nl} 戦いだ～ 戦いだ～！！",
-   "en": ""
+   "en": "\"Wooo! Battle~ Battle~!!"
   },
   {
    "id": "r134_0092",
    "addr": "0092",
    "size": 82,
    "jp": "「うるさい！{page} おまえたちなら{nl} こいつを かたずけてから{nl} きりきざんで やる。",
-   "en": ""
+   "en": "\"Shut up!{page} As for you lot, I'll finish this one off{nl} and then cut you to pieces."
   }
  ]
 }

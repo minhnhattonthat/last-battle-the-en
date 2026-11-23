@@ -11,105 +11,105 @@
    "addr": "00B7",
    "size": 160,
    "jp": "「おい おまえ！{nl} 手配書にあった にがおえに{nl} にているな！？{page}{FB00}「おまえなんかに レジ－ナ王女を{nl} ゆうかい できるようには{nl} 見えないから 別人だろうが。",
-   "en": ""
+   "en": "\"Hey, you! You look like the portrait on{nl} the wanted poster!?{page}{FB00}\"But you don't look like you could kidnap{nl} Princess Regina, so it must be someone{nl} else."
   },
   {
    "id": "r130_015D",
    "addr": "015D",
    "size": 142,
    "jp": "「まぁ あの王女は{nl} グルドには 不必要な人間だ。{page}{FB00}「グルドリ－ケの 未来は{nl} 枢機卿様に おまかせしておけば{nl} まちがいはないのだからな。",
-   "en": ""
+   "en": "\"Well, that princess is a person Guld{nl} doesn't need.{page}{FB00}\"Leave Guldrike's future to the Cardinal,{nl} and nothing can go wrong."
   },
   {
    "id": "r130_01ED",
    "addr": "01ED",
    "size": 92,
    "jp": "「ゆうかいされた 王女のことか？{page} 王や 枢機卿様の決定に逆らう{nl} とんでもない 小娘だな。",
-   "en": ""
+   "en": "\"The kidnapped princess?{page} A terrible little girl who defies the{nl} decisions of the King and the Cardinal."
   },
   {
    "id": "r130_024B",
    "addr": "024B",
    "size": 150,
    "jp": "「なに？{nl} ほかの 兵士どもだと。{page}「この家に 全員が入るわけは{nl} ないではないか。{page}{FB00}「新兵どもは みんな 向こう側の{nl} ぼろ家で ザコ寝をしとる。",
-   "en": ""
+   "en": "\"What? The other soldiers?{page}\"They couldn't all fit in this house.{page}{FB00}\"The recruits are all sleeping in a heap{nl} in the shack on the other side."
   },
   {
    "id": "r130_02E3",
    "addr": "02E3",
    "size": 134,
    "jp": "「半人前の 新兵どもに{nl} ベットなど 必要ない！{page}{FB00}「どんどん きたえて{nl} 枢機卿様の 手足となる{nl} 強い兵士に なってもらわねばな。",
-   "en": ""
+   "en": "\"Half-trained recruits don't need beds!{page}{FB00}\"We have to drill them hard, so they{nl} become strong soldiers who serve as{nl} the Cardinal's hands and feet."
   },
   {
    "id": "r130_0379",
    "addr": "0379",
    "size": 608,
    "jp": "スヴァルト{nl}「この町の これからのことが{nl} 心配のようですな。{page}「よろしい 説明しましょう。{page}{FB00}「シルヴェル城の グルド軍は{nl} まだ 城の再建中で{nl} 大きな兵力は 動かせないはず。{page}「あえて城から 出てくるようなら{nl} シルヴェル騎士の 残党が{nl} そのスキに お城を襲うと・・・{page} そう ウワサを流しておけば{nl} グルド軍は うごけなくなるさ。{page}「加えて 鳥人族と グルド兵が{nl} なかまわれしたとなれば{nl} 空からの攻撃は なくなった。{page}{FB00}「気になるとすれば 港から{nl} 船で 川を さかのぼって{nl} 攻めて こられることだが・・・{page} ハンスタッドでも 我ヶの仲間は{nl} 動きはじめている。{page} 彼らの 働きに期待するさ。",
-   "en": ""
+   "en": "Svart{nl}\"You seem worried about what comes{nl} next for this town.{page}\"Very well, let me explain.{page}{FB00}\"The Guld army at Silvel Castle is still{nl} rebuilding the castle, so it can't move a{nl} large force.{page}\"If they dare to leave the castle, the{nl} remaining Silvel knights will attack it{nl} while they're away...{page} Spread that rumor, and the Guld army{nl} can't move.{page}\"On top of that, the birdmen and the{nl} Guld soldiers have fallen out, so there{nl} will be no attacks from the sky.{page}{FB00}\"The only worry is an attack by ship{nl} from the port, up the river...{page} but our friends in Hanstad have started{nl} moving too.{page} We'll count on them."
   },
   {
    "id": "r130_05E3",
    "addr": "05E3",
    "size": 256,
    "jp": "スヴァルト{nl}「ふふふふっ わたしは{nl} みんな おみとおしさ。{page}「今度は ハンスタッドの港町{nl} あたりが キミたちの{nl} かつやくの場になりそうだな？{page}{FB00}「きみたちの 働きに{nl} 期待しているよ。{page}「４人の フェナムンが{nl} 幸運と栄光と ともに{nl} あらんことを。",
-   "en": ""
+   "en": "Svart{nl}\"Heh heh heh, I see through it all.{page}\"Next, the port town of Hanstad looks{nl} to be where you'll shine, doesn't it?{page}{FB00}\"I'm counting on you.{page}\"I pray all four of your Fenamuns are{nl} blessed with luck and glory."
   },
   {
    "id": "r130_06E9",
    "addr": "06E9",
    "size": 112,
    "jp": "スヴァルト{nl}「グルドの支配は これから{nl} くずれはじめる。{page}「ヤ－ク村や この町の戦いは{nl} その 最初の戦いさ。",
-   "en": ""
+   "en": "Svart{nl}\"Guld's rule will start to crumble now.{page}\"The battles at the Yaak village and{nl} this town are only the first."
   },
   {
    "id": "r130_075B",
    "addr": "075B",
    "size": 194,
    "jp": "スヴァルト{nl}「囚人島から 宰相のユ－リ殿と{nl} ともに 脱出してきたって！？{page}{wait}{wait}{wait}「これはまた とんでもない{nl} 札を 引き当てたもんだ！！{page}{FB00}「・・・・・・・・これで{nl} 戦いの流れが 変わるぞ。",
-   "en": ""
+   "en": "Svart{nl}\"You escaped from Prison Island{nl} together with Chancellor Yuri-dono?!{page}{wait}{wait}{wait}\"Now that's a card you've drawn!!{page}{FB00}\"........This will change the tide of the war."
   },
   {
    "id": "r130_081F",
    "addr": "081F",
    "size": 170,
    "jp": "スヴァルト{nl}「わたしの計画も ずいぶん{nl} くり上がる事に なりそうだ。{page}「よし！ 援軍はだせないが{nl} グルド軍の注意を 引き付けておく{nl} くらいのことは させてもらおう。",
-   "en": ""
+   "en": "Svart{nl}\"My plans will have to move up a good{nl} deal.{page}\"Right! I can't send troops, but at least{nl} let me keep the Guld army's attention{nl} busy."
   },
   {
    "id": "r130_08CB",
    "addr": "08CB",
    "size": 176,
    "jp": "スヴァルト{nl}「きみたちが 囚人島で ひとさわぎ{nl} 起してくれた おかげで・・・{page} グルドの この町に対する攻撃は{nl} こぜりあいが 数回。{wait}{wait}{nl} すべて 追い返すことができたよ。",
-   "en": ""
+   "en": "Svart{nl}\"Thanks to the stir you caused on{nl} Prison Island...{page} Guld's attacks on this town were just a{nl} few skirmishes. {wait}{wait}We drove them all{nl} back."
   },
   {
    "id": "r130_097D",
    "addr": "097D",
    "size": 174,
    "jp": "スヴァルト{nl}「レジ－ナ様の母上が 亡くなられ{nl} わたしが グルドを出て１０年。{page}{FB00}「あのころの グルドリ－ケは{nl} 今度のような 戦争をはじめる{nl} 国では なかったはずなのに。",
-   "en": ""
+   "en": "Svart{nl}\"Ten years since Regina-sama's mother{nl} died and I left Guld.{page}{FB00}\"The Guldrike of those days was not a{nl} country that would start a war like{nl} this."
   },
   {
    "id": "r130_0A2D",
    "addr": "0A2D",
    "size": 126,
    "jp": "スヴァルト{nl}「枢機卿のケッテリが{nl} なにか たくらんでいるとなれば。{page} ことは これだけでは{nl} すまないかも しれないですな。",
-   "en": ""
+   "en": "Svart{nl}\"If Cardinal Ketteri is plotting{nl} something,{page} this may not be the end of it."
   },
   {
    "id": "r130_0ABD",
    "addr": "0ABD",
    "size": 138,
    "jp": "「枢機卿の こしぎんちゃくめ{nl} 寝る前に いっぱいやったって{nl} いいじゃねえか・・・{page}「枢機卿様 枢機卿様って{nl} うるせえんだから・・・。",
-   "en": ""
+   "en": "\"That Cardinal's toady. What's wrong{nl} with a drink before bed...{page}\"'The Cardinal-sama, the Cardinal-sama,'{nl} he never shuts up..."
   },
   {
    "id": "r130_0B67",
    "addr": "0B67",
    "size": 210,
    "jp": "スヴァルト{nl}「きみたち よくやってくれた。{page} おかげで ベルクスタットの町を{nl} グルドの支配から{nl} 解放することができた。{page}「この町も これからが大変だが{nl} わたしが なんとかするから{nl} 安心してくれたまえ。{page2}",
-   "en": ""
+   "en": "Svart{nl}\"You did well.{page} Thanks to you, we have freed the town{nl} of Bergstadt from Guld's rule.{page}\"Hard times are ahead for this town,{nl} but I'll handle it, so rest easy.{page2}"
   }
  ]
 }

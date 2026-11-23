@@ -11,21 +11,21 @@
    "addr": "0086",
    "size": 88,
    "jp": "「商売ひとすじの オレでもよ{nl} ガキの 寝顔を見ているときは{nl} 商売のことは 忘れるね。",
-   "en": ""
+   "en": "\"Even a man who lives for trade like me{nl} forgets business when I watch the kids{nl} sleep."
   },
   {
    "id": "r128_00E4",
    "addr": "00E4",
    "size": 110,
    "jp": "「オレたちゃよう{nl} 国のためでも 王様の{nl} ためでもなく・・・・。{page}「この 寝顔を守るために{nl} 戦ってんだぜ。",
-   "en": ""
+   "en": "\"We're not fighting for our country, or{nl} for the king....{page}\"We're fighting to protect these{nl} sleeping faces."
   },
   {
    "id": "r128_0154",
    "addr": "0154",
    "size": 82,
    "jp": "「しかしよう ヤ－ク族の寝言が{nl} あんなに うるさいとは{nl} 思わなかったぜ・・・。",
-   "en": ""
+   "en": "\"But I never thought Yaak sleep-talk{nl} could be so loud..."
   }
  ]
 }

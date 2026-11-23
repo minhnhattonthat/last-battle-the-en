@@ -11,98 +11,98 @@
    "addr": "00E9",
    "size": 48,
    "jp": "「いらっしゃい。{nl} おとまりで ございますか？{page}",
-   "en": ""
+   "en": "\"Welcome. Will you be staying the night?{page}"
   },
   {
    "id": "r127_0124",
    "addr": "0124",
    "size": 146,
    "jp": "「いらっしゃいませ。{nl} おとまりでございますか？{page}「ただいまは この町のために{nl} 戦ってくださる みなさんのために{nl} 特別料金になっております。{page}",
-   "en": ""
+   "en": "\"Welcome. Will you be staying the night?{page}\"Right now we have a special rate for{nl} everyone fighting for this town.{page}"
   },
   {
    "id": "r127_01C5",
    "addr": "01C5",
    "size": 162,
    "jp": "「聞きましたか？{wait}{nl} しばらく 閑所を通って{nl} 港町には行けそうもないんですよ。{page}「わたしなんか もう{nl} ずっ～と あしどめされていて{nl} 商売にならないんですよ。",
-   "en": ""
+   "en": "\"Have you heard?{wait} It looks like we{nl} can't get through the checkpoint to the{nl} port town for a while.{page}\"I've been stuck here for ages and can't{nl} do any business."
   },
   {
    "id": "r127_026D",
    "addr": "026D",
    "size": 470,
    "jp": "「こんな カッコをしていますが{nl} 戦士でも 何でもないんですよ。{nl} ただの 商人なんです。{page}「昔より 旅がキケンになったもんで{nl} ヨロイを着てるんですけどね。{page}「しかし ヨロイが重い！{nl} こしが たたなくなりそうです。{page}「これで {wait}頭にカブトなんか{nl} かぶって 本を売り歩いた日にゃあ{nl}{wait}{wait} もう！{page} あたまなんか ムレムレで！！{page}{FB00}「わたしゃ この年で{nl} ハゲるなんて いやですよ。{page}「いや－ すいませんね{nl} 長いぐちに なっちゃって{nl} み～んな グルドが悪いんです。",
-   "en": ""
+   "en": "\"I may look like this, but I'm no warrior{nl} or anything. Just a merchant.{page}\"Travel's gotten more dangerous than it{nl} used to be, so I wear armor.{page}\"But the armor's heavy! My back's about{nl} to give out.{page}\"And {wait}if I had to wear a helmet on{nl} top, peddling books all day, {wait}{wait}oh!{page} My head would get so sweaty!!{page}{FB00}\"I don't want to go bald at my age.{page}\"Oh, sorry, that turned into a long{nl} gripe. It's all Guld's fault."
   },
   {
    "id": "r127_0445",
    "addr": "0445",
    "size": 46,
    "jp": "「わたし 商売は{nl} 本の行商をしてるんです。{page}",
-   "en": ""
+   "en": "\"I'm in business as a book peddler.{page}"
   },
   {
    "id": "r127_0473",
    "addr": "0473",
    "size": 148,
    "jp": "「ラントブルク村に{nl} 新しい本を 売りにいったら{nl} いきなり 追い出されましてね。{page}{FB00}「わたし なにか悪いことでも{nl} やっちゃったんでしょうかねぇ？",
-   "en": ""
+   "en": "\"When I went to sell new books in{nl} Landburg village, they suddenly threw{nl} me out.{page}{FB00}\"Did I do something wrong, I wonder?"
   },
   {
    "id": "r127_0509",
    "addr": "0509",
    "size": 46,
    "jp": "「なんか・・・{nl} 眠れなく なっちゃいました。",
-   "en": ""
+   "en": "\"Somehow... I can't sleep."
   },
   {
    "id": "r127_053F",
    "addr": "053F",
    "size": 62,
    "jp": "ヘ－グ{nl}「こいつも まったく{nl} あきらめが わるいんだからな。",
-   "en": ""
+   "en": "Heeg{nl}\"This guy just never knows when to{nl} give up."
   },
   {
    "id": "r127_0585",
    "addr": "0585",
    "size": 8,
    "jp": "ロ－グ{nl}",
-   "en": ""
+   "en": "Rogue{nl}"
   },
   {
    "id": "r127_0591",
    "addr": "0591",
    "size": 144,
    "jp": "ロ－グ{nl}「だめだよ～ おかみさん。{page} おなべのそこに{nl} こんな 大穴あけちゃ～っ。{page}「こんど壊れたら うちの店で{nl} 買っとくれよ・・・ぐぅ－っ。",
-   "en": ""
+   "en": "Rogue{nl}\"No good, missus~.{page} Putting a big hole like this in the bottom{nl} of your pot~.{page}\"Next time it breaks, buy one at our{nl} shop... snore."
   },
   {
    "id": "r127_0629",
    "addr": "0629",
    "size": 66,
    "jp": "「うお～！！{nl} ヤ－ク族の 戦いの血が{nl} 熱く 燃えているぞ～～。",
-   "en": ""
+   "en": "\"Wooo!! The fighting blood of the Yaak is{nl} burning hot~~."
   },
   {
    "id": "r127_0673",
    "addr": "0673",
    "size": 54,
    "jp": "「ボルグの ばかやろ～{nl} オレは～ オレはな～～っ。{page}",
-   "en": ""
+   "en": "\"Borg, you idiot~ I... I'm~~.{page}"
   },
   {
    "id": "r127_06AD",
    "addr": "06AD",
    "size": 30,
    "jp": "「お嬢さんを 返えせ～～～。{page}",
-   "en": ""
+   "en": "\"Give me back the chief's daughter~~~.{page}"
   },
   {
    "id": "r127_06CF",
    "addr": "06CF",
    "size": 54,
    "jp": "「ボルグの ばかやろ～{nl} オレは～ オレはな～～っ。{page}",
-   "en": ""
+   "en": "\"Borg, you idiot~ I... I'm~~.{page}"
   }
  ]
 }
