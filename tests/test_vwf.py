@@ -91,3 +91,27 @@ def test_ruler_text():
     a, b = insert.ruler_text(e).split("{nl}")
     assert a == insert.RULER[:12] and b == insert.RULER
     assert insert.ruler_text({"jp": "{nl}", "id": "y"}).endswith("{nl}")
+
+
+def test_bg3_marker_keeps_tile_count():
+    """BG3 marker text: same tiles per line and the same tokens, so no BG3 string moves or reflows."""
+    from textcodec import TOKEN
+    e = {"id": "bg3_8F1C", "jp": "    {FA0F}は アイテムを もっていません{009F}{nl}はい"}
+    m = insert.bg3_marker_text(e)
+    assert m.startswith("8F1C") and TOKEN.findall(m) == TOKEN.findall(e["jp"])
+    assert [len(TOKEN.sub("", x)) for x in m.split("{nl}")] == [len(TOKEN.sub("", x)) for x in e["jp"].split("{nl}")]
+    assert insert.bg3_marker_text({"id": "bg3_8600", "jp": "        どうしますか？"}).startswith("8600:")
+
+
+@pytest.mark.skipif(not ORIG.exists(), reason="no ROM")
+def test_spell_rank_records():
+    """Spell names with a rank letter in character records (raw new-game record + party members in blocks): found
+    by insert.spell_refs; the build writes `02 n RANK 0..` there and asm nm_fee3/nm_feaa print ` RANK`."""
+    import json
+    import blocks
+    from textcodec import JP, ByteCodec
+    orig = ORIG.read_bytes()
+    spells = json.loads((ROOT / "script" / "spells.json").read_text(encoding="utf-8"))["entries"]
+    refs = insert.spell_refs(orig, blocks.unpack(orig), ByteCodec(orig, JP), spells)
+    assert refs[0] == (None, 0x1FE36, 1, 0x41)
+    assert len(refs) == 11 and {r[0] for r in refs[1:]} == {14, 23, 36, 81}

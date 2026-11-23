@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 import blocks  # noqa: E402
 import script_dis as S  # noqa: E402
-from textcodec import JP, ByteCodec  # noqa: E402
+from textcodec import JP, TOKEN, ByteCodec  # noqa: E402
 
 ROM_PATH = ROOT / "rom" / "Last Battle, The (Japan).sfc"
 SCRIPT = ROOT / "script"
@@ -218,6 +218,56 @@ def raw_strings(rom, file_base, ptr_slots, data_ranges, text_range, src):
     return out
 
 
+B04_BG3 = (0x20600, 0x22CA7)  # BG3 tile-word strings (menu prompts/labels, description boxes); 0x20400-0x205FF
+# is the debug flag viewer (hex grid) and 0x22CA7 on the name-entry grid rows (graphics, handled with the name maps)
+BG3_MIN_KANA = 2
+
+
+def bg3_strings(rom, lo=B04_BG3[0], hi=B04_BG3[1]):
+    """Tile-word strings in [lo, hi) of bank 04: decoded linearly as VM script (resyncing a byte at a time over data
+    the decoder refuses, restarting after every instruction), a string is a run of tile words and argument-free FA/FE
+    words holding >= BG3_MIN_KANA kana tiles and no glyph word. Checked against the VM's reads (01:B7A1) in the menu
+    scenes: every read range starts at a string or a window script, never inside a string."""
+    from textcodec import bg3_jp, bg3_tiles
+    jp = bg3_jp(rom)
+    kana = {t for t, c in bg3_tiles(rom).items() if "ぁ" <= c <= "ヶ" and c != "・"}
+    instrs, pos = {}, lo
+    while pos < hi:
+        try:
+            ins = S.decode(rom, pos)
+        except ValueError:
+            pos += 1
+            continue
+        if pos + ins["size"] > hi:
+            break
+        instrs[pos] = ins
+        pos += ins["size"]
+    runs, run = [], []
+    for p in sorted(instrs):
+        x = instrs[p]
+        inline = x["kind"] == "tile" or (x["kind"] == "ctrl" and x["size"] == 2 and x["op"] in (0xFA, 0xFE))
+        if inline and run and p == run[-1] + instrs[run[-1]]["size"]:
+            run.append(p)
+            continue
+        runs.append(run)
+        run = [p] if inline else []
+    runs.append(run)
+    out = []
+    for r in runs:
+        while r and instrs[r[-1]]["kind"] == "ctrl" and instrs[r[-1]]["op"] == 0xFE:
+            r = r[:-1]
+        while r and instrs[r[0]]["kind"] == "ctrl" and instrs[r[0]]["op"] == 0xFE:
+            r = r[1:]
+        if sum(instrs[p]["word"] in kana for p in r) < BG3_MIN_KANA:
+            continue
+        pos, size = r[0], r[-1] + 2 - r[0]
+        text = jp.decode(rom[pos:pos + size])
+        width = max(len(TOKEN.sub("", ln)) for ln in text.split("{nl}"))
+        out.append({"id": f"bg3_{pos - B04_FILE + BANK_BASE:04X}", "addr": f"{pos - B04_FILE + BANK_BASE:04X}",
+                    "size": size, "jp": text, "en": "", "file": f"{pos:06X}", "tiles": width})
+    return out
+
+
 def name_entries(rom, bc, src, offsets):
     out = []
     for key, off in offsets:
@@ -241,6 +291,8 @@ def extract_all(rom):
     slots, data = bank04_tables(rom)
     files["bank04"] = {"source": {"kind": "raw", "file": f"{B04_FILE:06X}", "bank": "04"},
                        "entries": raw_strings(rom, B04_FILE, slots, data + B04_DATA, B04_TEXT, "b04")}
+    files["menus"] = {"source": {"kind": "bg3", "file": f"{B04_FILE:06X}", "bank": "04"},
+                      "entries": bg3_strings(rom)}
     cslots = [(CREDITS_TABLE, CREDITS_TABLE + 2 * i, u16(rom, CREDITS_TABLE + 2 * i)) for i in range(CREDITS_N)]
     files["credits"] = {"source": {"kind": "raw", "file": f"{B02_FILE:06X}", "bank": "02"},
                         "entries": raw_strings(rom, B02_FILE, cslots, [], CREDITS_TEXT, "cr")}

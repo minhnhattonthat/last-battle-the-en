@@ -8,6 +8,12 @@ Updated at the end of every session. Keep it to what the next session needs; his
   ok) and reaches name_entry, newgame, menu_item, place_00, svc_00_00, battle_win, variant_ec01 (`work/qa/marker2`)
   and the staff roll (`work/qa/cr1`) with `[id]` markers.
 - **Done:**
+  - **Phase 5, session 2026-11-23 (5):** BG3 tile strings extracted: `script/menus.json` (260, kind `bg3`, codec
+    `textcodec.bg3_jp/bg3_en`, `docs/re/text.md` §BG3 strings), written back by `insert.apply` (far jumps through
+    the VM), marked in the marker build (`addr:` + filler, same tile count). Marker tour of 22 menu/save/shop/battle
+    scenes (`work/qa/bg3m`): prompts, yes/no, stereo/mono, status labels, save/load prompts show their ids. Spell
+    names with rank in character records (`insert.spell_refs`, asm ` RANK`): "Fire A" in `menu_magic`.
+    Tests: `test_bg3_strings`, `test_bg3_marker_keeps_tile_count`, `test_spell_rank_records`.
   - **Phase 5, session 2026-11-23 (4):** marker tour of all 113 scenes (`work/qa/marker_tour`, sheets of the final
     frames `work/qa/mt_sheets/sheet*.png`): every scene reached, dialogue, shop/inn/healer talk, place banners,
     ending and variants show `[id]` markers. **Japanese / garbled left** (text not extracted yet), see Next 1a-1c.

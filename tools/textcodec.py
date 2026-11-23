@@ -125,3 +125,38 @@ JP = WordCodec(load_tbl())
 # English: printable ASCII c -> word EN_BASE + c, drawn by the VWF (asm/vwf.asm, font tools/font_en.txt)
 EN_BASE = 0x0800
 EN = WordCodec({EN_BASE + c: chr(c) for c in range(0x20, 0x7F)})
+
+# BG3 tile words (< $0300, 8x8 fixed tiles written straight to the BG3 map by the VM, 01:B7D1): menu prompts and
+# labels, description boxes in bank 04 (docs/re/text.md §BG3 strings). Tile -> kana through the byte maps of 01:FEAA
+# ($04:AEAB, byte -> tile) and 01:FEE3 ($04:B053, byte -> glyph word). English: digits and capitals are tiles
+# $01-$24, lowercase and `',.-!?&/:+` the tiles tools/font_bg3.py draws over the hiragana, space tile $93.
+BG3_MAP_OFF = 0x22EAB
+BG3_SPACE = 0x93
+
+
+def bg3_tiles(rom):
+    """{tile word: char} for every tile the byte maps name (first byte wins)."""
+    out = {}
+    for i in range(0x100 - BYTE_MAP_FIRST):
+        t = rom[BG3_MAP_OFF + 2 * i] | rom[BG3_MAP_OFF + 2 * i + 1] << 8
+        g = rom[BYTE_MAP_OFF + 2 * i] | rom[BYTE_MAP_OFF + 2 * i + 1] << 8
+        ch = JP.dec.get(g)
+        if t < 0x300 and ch and len(ch) == 1 and JP.enc.get(ch) == g:
+            out.setdefault(t, ch)
+    return out
+
+
+def bg3_jp(rom):
+    """Japanese side of BG3 strings: tile words decode to kana (a glyph word with the same character decodes to
+    `{XXXX}`, so decode -> encode stays byte-exact)."""
+    return WordCodec({**JP.dec, **bg3_tiles(rom)})
+
+
+def bg3_en():
+    """English side of BG3 strings: printable ASCII the BG3 font can show -> tile word."""
+    import font_bg3
+    m = {BG3_SPACE: " "}
+    m.update({1 + i: str(i) for i in range(10)})
+    m.update({0x0B + i: chr(0x41 + i) for i in range(26)})
+    m.update({t: c for c, t in font_bg3.TILE.items()})
+    return WordCodec(m)

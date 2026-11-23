@@ -90,9 +90,43 @@ def ruler_text(e, n=len(RULER)):
     return "".join(out)
 
 
+def bg3_marker_text(e):
+    """Marker build, BG3 tile strings (fixed 8 px tiles): every line keeps its tile count and tokens, so nothing moves;
+    the first line shows `addr:` (the id without `bg3_`), or as much of addr as fits, then filler."""
+    from textcodec import TOKEN
+    tag, out, first, pos = e["id"].split("_", 1)[1], [], True, 0
+    i, text = 0, e["jp"]
+    while i <= len(text):
+        m = TOKEN.search(text, i)
+        seg = text[i:m.start() if m else len(text)]
+        if seg:
+            n = len(seg)
+            s = ""
+            if first:
+                s = f"{tag}:" if n >= len(tag) + 1 else tag[-n:]  # the BG3 font has no brackets
+                first = False
+            while len(s) < n:
+                c = FILLER[pos % len(FILLER)]
+                s += c if c != " " or len(s) + 1 < n else "x"
+                pos += 1
+            out.append(s[:n])
+        if not m:
+            break
+        out.append(m[0])
+        if m[0] == "{nl}":
+            pos = 0
+        i = m.end()
+    return "".join(out)
+
+
 def mark(files, fn=marker_text):
-    """Marker build: every script string and byte name gets marker_text (ruler build: ruler_text)."""
+    """Marker build: every script string and byte name gets marker_text (ruler build: ruler_text); BG3 tile strings
+    get bg3_marker_text in the marker build and stay Japanese in the ruler build (their width is their tile count)."""
     for doc in files.values():
+        if doc["source"]["kind"] == "bg3":
+            for e in doc["entries"]:
+                e["en"] = bg3_marker_text(e) if fn is marker_text else ""
+            continue
         if doc["source"]["kind"] == "names":
             for e in doc["entries"]:
                 e["en"] = fn(e)
@@ -135,13 +169,14 @@ class TextAlloc:
         return off
 
 
-def fit(enc, size, ret, alloc, writer, eid):
-    """The bytes for a size-byte slot holding enc; ret = CPU address of the byte after the slot."""
+def fit(enc, size, ret, alloc, writer, eid, space=None):
+    """The bytes for a size-byte slot holding enc; ret = CPU address of the byte after the slot; space = the pad word
+    (default the VWF space)."""
     diff = size - len(enc)
     if diff == 0:
         return enc
     if 0 < diff <= PAD_MAX:
-        return enc + EN.encode(" ") * (diff // 2)
+        return enc + (space or EN.encode(" ")) * (diff // 2)
     if diff > PAD_MAX:
         return (enc + far(ret)).ljust(size, b"\0")
     if size < FAR_LEN:
@@ -214,15 +249,61 @@ class NameTable:
         writer.put(NAMES_AREA, blob, "names:en")
 
 
+RANK_FIELD = 8
+SPELL_RAW_REFS = [0x1FE36]  # new-game character record (bank 03): Kurt's first spell, ファイアボールA
+
+
+def spell_refs(orig, region, bc, spells):
+    """Copies of spell names in character records: an 8-byte field `name + rank capital + 0 pad` (ファイアボールA),
+    in raw ROM (SPELL_RAW_REFS) and in the decompressed blocks (party members joining with spells).
+    Returns [(block index or None, offset, spell n, rank byte)]."""
+    by_name = {}
+    for n, e in enumerate(spells, 1):
+        by_name.setdefault(bc.encode(e["jp"]), n)
+
+    def field(d, i):
+        for enc, n in by_name.items():
+            j = i + len(enc)
+            if (d[i:j] == enc and j < i + RANK_FIELD and 0x41 <= d[j] <= 0x5A
+                    and not any(d[j + 1:i + RANK_FIELD])):
+                return n, d[j]
+        return None
+
+    out = []
+    for off in SPELL_RAW_REFS:
+        f = field(orig, off)
+        assert f, f"spell record at {off:06X} moved"
+        out.append((None, off, *f))
+    firsts = {enc[0] for enc in by_name}
+    for b in region.blocks:
+        d = b.orig_data
+        for i in range(len(d) - RANK_FIELD):
+            if d[i] in firsts:
+                f = field(d, i)
+                if f:
+                    out.append((b.index, i, *f))
+    return out
+
+
 def apply(orig, region, writer, files, alloc=None):
     """Splice every entry into region (block data) or writer (raw bytes). Strings longer than their slot move to
     TEXT_AREA through alloc, behind a far jump (and back); shorter ones jump over the rest. Returns the number of
     changed strings."""
+    from textcodec import BG3_SPACE, bg3_en, bg3_jp
     changed = 0
     bc = ByteCodec(orig, JP)
+    b3jp, b3en, b3sp = bg3_jp(orig), bg3_en(), BG3_SPACE.to_bytes(2, "little")
     names = NameTable(orig) if alloc is not None else None
     for name, doc in files.items():
         src = doc["source"]
+        if src["kind"] == "bg3":
+            for e in doc["entries"]:
+                changed += bool(e["en"])
+                enc = b3en.encode(e["en"]) if e["en"] else b3jp.encode(e["jp"])
+                ret = int(src["bank"], 16) << 16 | (int(e["addr"], 16) + e["size"])
+                writer.put(int(e["file"], 16), fit(enc, e["size"], ret, alloc, writer, e["id"], b3sp),
+                           f"text:{e['id']}")
+            continue
         if src["kind"] == "block":
             b = region.blocks[src["block"]]
             assert f"{b.orig_off:06X}" == src["file"], f"{name}: block {src['block']} moved; re-run extract.py"
@@ -254,4 +335,15 @@ def apply(orig, region, writer, files, alloc=None):
             b.data = bytes(data)
     if names is not None:
         names.write(writer)
+        spells = files.get("spells", {"entries": []})["entries"]
+        if any(e["en"] for e in spells):
+            for bi, off, n, rank in spell_refs(orig, region, bc, spells):
+                if not spells[n - 1]["en"]:
+                    continue
+                rec = bytes([NAME_KIND["spells"], n, rank]).ljust(RANK_FIELD, b"\0")
+                if bi is None:
+                    writer.put(off, rec, f"spellref:{off:06X}")
+                else:
+                    b = region.blocks[bi]
+                    b.data = b.data[:off] + rec + b.data[off + RANK_FIELD:]
     return changed

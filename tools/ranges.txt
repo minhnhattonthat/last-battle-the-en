@@ -3,8 +3,10 @@ D0000-D041F   top table (43 slots) + room table (309 slots), and the sub-tables 
 D0420-1068B8  LZ blocks, first free area
 1068F9-107CF2 LZ blocks, second free area (0x1068B9-0x1068F8 is top entry 1's raw data, fixed)
 16215-16877   credits: pointer table (24 words) + staff-roll text (script/credits.json)
+20600-22CA6   bank-04 BG3 tile strings: menu prompts/labels, description boxes (script/menus.json)
 232D2-247E3   bank-04 script text and its pointer tables (script/bank04.json; byte map 0x23053-0x231FB stays)
 24AD1-256FF   item records 20 bytes each, names = first 8 bytes (script/items.json)
+1FE36-1FE3D   new-game character record: first spell name + rank (insert.SPELL_RAW_REFS, English escape)
 14E20F-14E30A spell records 9 bytes each, names = first 8 bytes (script/spells.json)
 7FD7          header ROM size byte: $0C = 4 MB (build.py)
 B13C-B13F     asm/vwf.asm hook 01:B13C (start phase of a windowed text run)

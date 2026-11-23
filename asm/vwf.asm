@@ -261,16 +261,35 @@ nm_fee3:                ; M=16 X=16 DB=$7E; stack: count, X; X = byte index in $
     bcs .norm
     cmp #$0000
     beq .end
+    phx                 ; index of the kind byte
     jsr nm_ptr
 -   lda.l $FC0000,x
     and #$00FF
-    beq .end
+    beq .rank
     ora #$0800          ; English glyph word
     sta $6C80,y
     iny
     iny
     inx
     bra -
+.rank:                  ; a capital after the escape (`kind, n, RANK`: spell rank in a character record) -> " RANK"
+    plx
+    lda $6D82,x
+    and #$00FF
+    cmp #$0041
+    bcc .end
+    cmp #$005B
+    bcs .end
+    ora #$0800
+    pha
+    lda #$0820
+    sta $6C80,y
+    pla
+    sta $6C82,y
+    iny
+    iny
+    iny
+    iny
 .end:
     jml $01FF11         ; PLX / PLA / FF00 end / return
 .norm:
@@ -287,24 +306,50 @@ nm_feaa:                ; as nm_fee3, for the BG3 tile map ($04:AEAB)
     lda 5,s             ; the caller's count (stack: kind, X, count): the BG3 field is that many tiles
     sta.l !tmp
     pla
+    phx                 ; index of the kind byte
     jsr nm_ptr
 -   lda.l !tmp
-    beq .end
-    dec
-    sta.l !tmp
+    beq .full
     lda.l $FC0000,x
     and #$007F
-    beq .end
+    beq .rank
     phx
     asl
     tax
     lda.l !NM_BG3,x
     plx
     sta $6C80,y
+    lda.l !tmp
+    dec
+    sta.l !tmp
     iny
     iny
     inx
     bra -
+.full:
+    plx
+    bra .end
+.rank:                  ; as nm_fee3: " RANK" after the name while the field has room (!tmp tiles left)
+    plx
+    lda $6D82,x
+    and #$00FF
+    cmp #$0041
+    bcc .end
+    cmp #$005B
+    bcs .end
+    asl
+    tax
+    lda.l !tmp
+    cmp #$0002
+    bcc .end
+    lda.l !NM_BG3+$40   ; ASCII space
+    sta $6C80,y
+    lda.l !NM_BG3,x
+    sta $6C82,y
+    iny
+    iny
+    iny
+    iny
 .end:
     jml $01FED8
 .norm:

@@ -63,6 +63,13 @@ the names). FEE3 emits `$0800+c` (any length); FEAA emits BG3 tiles, capped at t
 lowercase and `',.-!?&/:+` get the English 8x8 tiles `tools/font_bg3.py` draws over the hiragana tiles `$25-$48`
 of the BG3 font, LZ block 319, loaded at VRAM byte `$C000`; build.py patches it only in the 4 MB build). Party
 names stay plain bytes (the name-entry grid is the map order).
+Spell names in character records carry a rank: `name + capital + 0 pad` in 8 bytes (ファイアボールA). English
+record = `02 n RANK 0..` (`insert.spell_refs`: the raw new-game record `0x1FE36` and 10 party-member records in
+blocks 14, 23, 36, 81); both hooks print ` RANK` after the English name (nm_feaa only with 2 tiles of cap left).
+Verified: `--qa spell_00=Fire` shows "Fire A" in `menu_magic` (`work/qa/rank`).
+Callers of 01:FEAA (stack_log over the menu, shop, battle, load scenes): FE1E (FE09 `$0C98`, called from FA8F =
+FA2F insert), FE55 (FE3B character names, from EF07), FE76 (FE59 item records, from F3C2 shop list), title_load
+E768 (direct, from E674).
 BG3 chr (shop scene dump): tiles `$00-$AE` font (block 319, 2800 bytes), `$AF-$BF` empty, `$C0-$17F` the text
 canvas, map `$D800`; BG1/BG2 maps at byte `$E000`/`$F000`, so no free BG3 tiles beyond `$BF` (no room for a tile
 VWF pool unless the katakana tiles are retired too).

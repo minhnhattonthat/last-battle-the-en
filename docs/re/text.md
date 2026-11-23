@@ -140,9 +140,26 @@ Not yet walked: top entries 14-28 (other formats: 18/19 hold plain text, 20-27 t
   table: indices $5C-$BF land in the key-item records (or past them), so only $01-$5B are real low items.
 - Insertion (`tools/insert.py`, called by `build.py`): `en`, else `jp`, spliced at the same address; a size change
   is refused until the block reassembler and pointer rewriting exist (phase 5).
-- **Not extracted (graphics, phase 5/8):** BG3 tile-word labels (menus, windows) in bank 04 file
-  `0x20400-0x22300` and the 12-byte tile rows at `0x22CA7`; enemy names (the battle screen shows none in the
-  `battle_field` scene; the phase-8 tour confirms).
+- **Not extracted:** the 12-byte tile rows at `0x22CA7` (name-entry grid, done with the name maps); the debug flag
+  viewer `0x20400-0x205FF`; enemy names (none on the battle screen); the battle command label たたかう (no tile, byte
+  or glyph copy in the ROM: graphics, phase 8); battle default spell names (below).
+
+## BG3 strings (phase 5, verified: marker tour `work/qa/bg3m`, 2026-11-23)
+- Menu prompts and labels, yes/no, stereo/mono, status template, shop/spell description boxes: bank 04 file
+  `0x20600-0x22CA6`, FF00-terminated runs of BG3 tile words (`< $0300`, one 8x8 tile each) with FAxx name inserts
+  and FE00 newlines, run by the script VM (ROM-read probe: 01:B7A1 reads them in the menu scenes), so far jumps work.
+- `extract.bg3_strings` -> `script/menus.json` (kind `bg3`, ids `bg3_<$04 addr>`, `tiles` = widest line in tiles
+  without inserts): linear decode with byte resync, a string = a run of tile words + FA/FE words with >= 2 kana
+  tiles and no glyph word (260 strings). Codecs `textcodec.bg3_jp(rom)` (tile -> kana through the byte maps
+  `$04:AEAB` and `$04:B053`) and `bg3_en()` (digits/capitals `$01-$24`, `font_bg3` lowercase, space `$93`).
+- Unknown tiles stay `{XXXX}` tokens: `{009F}` ends messages (likely 。), `{0096}`/`{00A3}`/`{009E}` are layout
+  tiles in the magic/status templates.
+- FA inserts in BG3 strings: op table `01:E679` (FA00-FA54); FA2F = FA8A (name from `$0C98` via 01:FE09), FA18 =
+  FC55 (item record via 01:FE59), FA2B = FBC0. All print through 01:FEAA (BG3 tiles, cap 8).
+- **Battle default spell names**: 22 8-byte FF-padded slots at `$33:D3F1` (file `0x19D3F1`), indexed by spell type
+  (`$30:ACD5`: `(type & $1F) * 8`), copied to `$14CE` and printed by the battle message interpreter (29:A1EA, script
+  `$33:D4A1`) unless the record has a custom name (`$30:ACCA`: record + 4). Not hooked yet: needs a battle scene
+  that casts a spell.
 
 ## Probes and helpers (tools/)
 - `script_dis.py` (VM disassembler + room walker), `re_flow.py` (65816 flow walk: script-pointer accesses),

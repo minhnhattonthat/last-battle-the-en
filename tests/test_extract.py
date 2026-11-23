@@ -36,10 +36,11 @@ def test_codec_roundtrip_synthetic():
 @need_rom
 def test_roundtrip(ext):
     import blocks
-    from textcodec import JP, ByteCodec
+    from textcodec import JP, ByteCodec, bg3_jp
     rom, files = ext
     region = blocks.unpack(rom)
     bc = ByteCodec(rom, JP)
+    codec = {"names": bc, "bg3": bg3_jp(rom)}
     n = 0
     for name, doc in files.items():
         src = doc["source"]
@@ -51,7 +52,7 @@ def test_roundtrip(ext):
             else:
                 f = int(e["file"], 16)
                 want = rom[f:f + e["size"]]
-                got = (bc if src["kind"] == "names" else JP).encode(e["jp"])
+                got = codec.get(src["kind"], JP).encode(e["jp"])
             assert got == want, e["id"]
             n += 1
     assert n > 2500
@@ -67,6 +68,21 @@ def test_script_dir_in_sync(ext):
         assert disk["source"] == doc["source"], name
         key = [(e["id"], e.get("addr"), e.get("file"), e["size"], e["jp"]) for e in doc["entries"]]
         assert [(e["id"], e.get("addr"), e.get("file"), e["size"], e["jp"]) for e in disk["entries"]] == key, name
+
+
+@need_rom
+def test_bg3_strings(ext):
+    """BG3 tile strings: the menu prompts and labels the marker tour showed in Japanese are extracted, each one inside
+    its write range, and English encodes to BG3 tiles (capitals, digits, the font_bg3 lowercase, space $93)."""
+    from textcodec import bg3_en
+    rom, files = ext
+    es = files["menus"]["entries"]
+    jp = {e["jp"].strip() for e in es}
+    for want in ("どうしますか？", "はい", "いいえ", "モノラル", "ステレオ", "どのファイルに セ－ブしますか？",
+                 "{0112} どのファイルを ロ－ドしますか？", "よろしいですか？"):
+        assert want in jp, want
+    assert all(0x20600 <= int(e["file"], 16) and int(e["file"], 16) + e["size"] <= 0x22CA7 for e in es)
+    assert bg3_en().encode("Ab1 z?{nl}") == bytes.fromhex("0b00 2600 0200 9300 3e00 4400 00fe".replace(" ", ""))
 
 
 @need_rom
