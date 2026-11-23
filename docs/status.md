@@ -2,7 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress (session 15: batches b001-b030 merged; b031-b049 left).
+- **Phase:** 7. Insert, fit, check (phase 6 done in session 15: b001-b049 merged, 3071/3085 translated, review in
+  `docs/review-phase6.md`, no Critical/Important).
   Builds are 4 MB with `asm/vwf.asm`: `build/lastbattle_en.sfc` boots (smoke ok, 2026-11-24 session 14, sha1
   8909f4fa).
 - **Done:**
@@ -162,13 +163,12 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
-  0. **Phase 6: translate** (done-when: batch check 0 errors, glossary updated, reviewer pass with no
-     Critical/Important). Follow `docs/translator-brief.md`: next batch **b031** (story order through b046; spells/tactics/shops in b047-b049). `sh tools/merge_batch.sh bNNN` after each batch; add new names to `glossary.md` as they appear (all names so far are there). When all are
-     merged: `batches.py split` again (picks up anything left; skip enemy_40/69, bg3_9EF0/9EF8/A687), write
-     `docs/synopsis.md` + `docs/style-reference.md` from the merged script, then the review pass (`codex exec -s
-     read-only` once its quota is back on 2026-11-26, else a fresh read-only pass of your own) on pairs files;
-     Minors -> `docs/polish.md`.
-     Phase-7 items found here: widen item/tactic name fields to 12 (D10); repoint the 2-tile shop Buy/Sell slots and
+  0. **Phase 7: insert, fit, check** (done-when: build green, width/overflow lint clean, control codes matched,
+     `romdiff.py` no writes outside allowed ranges). Phase 6 left: `work/tl/b050.tsv` (11 engine-bound fragments:
+     battle particles `bt_198045/1980E3/19D4BB/19D534+`, enemy_40/69, 2-tile slot labels `bg3_A729/A737/A73D`),
+     Minors in `docs/polish.md`; worth a `codex exec -s read-only` story pass once its quota is back (2026-11-26),
+     reading `docs/synopsis.md` + `docs/style-reference.md`.
+     Phase-7 items: widen item/tactic name fields to 12 (D10); repoint the 2-tile shop Buy/Sell slots and
      `bg3_A687`; check by eye the D11 labels, the status template (`bg3_8F96`, "Luck" is 2 tiles longer than うん)
      and the teleport list at 9 letters (`MENU_CAP`).
   1. **Carried from phase 5** (not blocking translation; the battle part belongs to the phase-8 coverage pass):
