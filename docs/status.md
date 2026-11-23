@@ -2,8 +2,18 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 3. Identity build next (phase 2 debug tool done 2026-11-23). Last build: none yet.
+- **Phase:** 4. Extract next (phase 3 identity build done 2026-11-23). Last build: `build/lastbattle_en.sfc`
+  identity, sha1 2474c7aa8451d51784a3b852b9806495b4147cfb (= original), smoke ok.
 - **Done:**
+  - **Phase 3 (identity build):** `build.py` (rom.sha1 check -> `tools/blocks.py` unpack -> repack -> romdiff with
+    the write log `build/writes.txt`; writes only inside `tools/ranges.txt`). `tools/lz.py compress` (optimal parse,
+    0.5% smaller than the original). `tests/test_identity.py`: no-edit build == original; every block recompressed
+    and moved decodes through every slot; one edited block. `build.py --recompress` (all 324 blocks re-encoded and
+    moved) reaches all 113 debug scenes (`work/qa/scenes_recomp`). `tools/debug/compare_runs.py` pairs final frames
+    of two runs: scene runs are not frame-deterministic (two runs of the original differ in 20 scenes), and the
+    relocated build's extra differences were animation phase and different random encounters in the mash-A
+    `variant_*` scenes (decompression timing moves the RNG), checked by eye.
+    Bank-04 script and other raw text are passed through untouched until phase 4 adds writers for them.
   - Step 0 and phase 1 (recon): see `docs/re/` (encoding, font, LZ, pointers, control codes, room format, bank-04
     text map, byte-encoded names, free space, static graphics sweep).
   - **Phase 2 (debug tool), `docs/re/debug.md` has the RAM map, save format, story variants and ending:**
@@ -27,9 +37,11 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
-  1. **Phase 3 identity build** (`references/pipeline.md` §Identity): unpack (LZ blocks, room/top tables, text) and
-     repack with no edits; the rebuilt ROM must be byte-identical (a test). `build.py` + `rom.sha1` check first.
-  2. Carried to phase 4: 18 unreferenced text runs (`script_dis.py --gaps`); enemy names still not found; menu
+  1. **Phase 4 extract** (`references/pipeline.md` §Extract): `script/` JSON from the room/common/shop blocks
+     (`script_dis.py` walks them), bank-04 script and tables, item/spell byte names, credits; roundtrip test
+     (re-encode = original bytes) and coverage test; build.py writes them back through `blocks.Region` (block data)
+     and `Writer.put` (raw ranges, add them to `tools/ranges.txt`).
+  2. Also phase 4: 18 unreferenced text runs (`script_dis.py --gaps`); enemy names still not found; menu
      labels and window texts are bank-04 BG3 tile words (file `0x20400-0x22300`); credits text `0x16245-0x16877`
      (pointer table `02:E215`, 24 entries).
   3. Carried to phase 8: graphics tour (graphics.md "Tour half": VRAM dump per scene, classify every Japanese

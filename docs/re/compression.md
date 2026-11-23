@@ -1,9 +1,17 @@
 # Compression and block pointers
 
-## LZ format (verified on one block; roundtrip test still to write)
+## LZ format (verified: identity build and relocated-block build, `tests/test_identity.py`)
 Decompressor `00:83A7` (source `$AC-$AE`, dest `$B0-$B2`, DP `$0100`), byte reader `00:8417` (walks LoROM banks:
-after `$FFFF` it goes to the next bank at `$8000`). Python: `tools/lz.py` (`decompress(rom, off) -> (data, size)`).
-- Header: u16 L, u16 (= L-2 in the block checked). The stream is L+2 bytes in total, header included.
+after `$FFFF` it goes to the next bank at `$8000`). Python: `tools/lz.py` (`decompress(rom, off) -> (data, size)`,
+`compress(data) -> stream`).
+- Header: u16 L, u16 w1. The stream is L+2 bytes in total, header included. w1 = L-2 in 322 blocks; rooms 20 and
+  264 (0xD64BE, 0x102819) store the decompressed size instead. The decoder model ignores w1 (guess: unused);
+  `blocks.py` keeps each block's convention when it recompresses.
+- **Compressor** `lz.compress`: optimal parse over the command costs, back-references never overlap their own
+  output (the stale-ring quirk below) and may reach the zero-filled ring before the first byte. Not the original
+  tool's parse (that one is not greedy: 13 literal runs follow a literal run), so only 65 of 324 streams come out
+  identical; recompressing all 324 gives 226,305 bytes against the original 227,475 (2.4 s). The build keeps the
+  original bytes of every unchanged block, so a no-edit build is byte-identical.
 - Ring buffer 2 KB at `$7E6280`, zeroed at start, position 0; every output byte is written to it.
 - `c < $80`: back-reference. b = next byte, w = c<<8|b, length = (b & 15) + 2, distance = (w >> 4) & $7FF.
   The run is read from the ring in full **before** it is written back (`00:8607` then `00:861F`), so an overlapping
@@ -12,10 +20,19 @@ after `$FFFF` it goes to the next bank at `$8000`). Python: `tools/lz.py` (`deco
 - `$C0-$FF`: fill. n = c & 7, or (c & 7) << 8 | next byte when c & $20; n += 2. Pattern width
   ((c >> 3) & 3) + 1 bytes follows; written n times.
 - verified by: block at file 0xD3772 (the first room's script) equals WRAM `$7F0000` for the 3150 bytes the game
-  had written at the dump frame (`work/qa/dec3`, from `work/qa/play1/s001000.mss` + mash A, frame 270). Phase 3 needs a
-  full-WRAM check after the load finishes, then a recompressor with a byte-exact identity test.
+  had written at the dump frame (`work/qa/dec3`, from `work/qa/play1/s001000.mss` + mash A, frame 270), and by the
+  recompressed build (every block re-encoded by `lz.compress` and moved) reaching every debug scene (phase 3).
 
-## Block pointers (verified for one entry)
+## Unpack / repack (`tools/blocks.py`, `build.py`)
+`blocks.unpack(rom)` walks the run and attaches every pointer slot (top + room tables) to its block;
+`Region.pack(rom, put)` lays the blocks into the two free areas (`blocks.FREE`) in original order, zero-fills unused
+tails and rewrites every slot. `build.py --recompress` re-encodes every block (a relocation check);
+`python -X utf8 tools/blocks.py dump` writes every decompressed block and `manifest.tsv` to `work/unpack/`.
+No other code or data holds a block address: a whole-ROM scan for the 324 24-bit linear addresses outside the
+tables found 35 hits, all false (the bank-00 ones are `STA $AC` + `LDA $0B801D` byte pairs; the rest sit in
+graphics and LZ data).
+
+## Block pointers (verified: every block is reached by a table slot; relocated build runs)
 - Pointers are 24-bit **linear** addresses, converted by `01:FDDF`: file = 0xD0000 + (ptr - $1A8000)
   (font base `$1DFCF3` -> 0x107CF3, room script `$1AB772` -> 0xD3772).
 - Table region `0xD0000-0xD0420` (`$1A:8000`): top table of 43 3-byte pointers at 0xD0000. Entry 0 -> room table

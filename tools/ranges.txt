@@ -1,0 +1,4 @@
+# Ranges the build may write (hex file offsets, inclusive). build.py refuses any write outside them.
+D0000-D041F   top table (43 slots) + room table (309 slots), and the sub-tables that alias them
+D0420-1068B8  LZ blocks, first free area
+1068F9-107CF2 LZ blocks, second free area (0x1068B9-0x1068F8 is top entry 1's raw data, fixed)
