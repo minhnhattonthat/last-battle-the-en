@@ -34,7 +34,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ミアス | Mias | | Gustav's first queen, Kurt's real mother | |
 | 王妃 | Queen | | Gustav's present queen (pregnant) | |
 | グラッド | Glad | | Yuri's man, carries the Guld letter | |
-| キューケンホフ先生 | Mr. Keukenhof | | Eldar schoolteacher (speaker label; "sir" when addressed) | |
+| キューケンホフ先生 | Keukenhof-sensei | | Eldar schoolteacher (speaker label; pupils' 先生 = "Sensei"; D1, D12) | Mr. Keukenhof |
 | 長老 | Elder | | speaker label; "the Elder" in narration | |
 | ボルグ | Borg | | | |
 | レジーナ | Regina | | Princess Regina (レジーナ姫), hunted by Ketteri's men | |
@@ -130,7 +130,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 鳥人兵 | birdmen | | Guld flying troops | |
 | いやしの館 | House of Healing | | | |
 | 密書 | secret letter / Missive | | in talk "the secret letter"; the item and "received" messages: Guld Missive | |
-| ヴァテン ブレックフェール レーカ | Vatten... Bleckfel... Reka! | | healing chant; エット トヴォー トレー = Ett, tva, tre! (fireball); Guld mage chant = Vem... Stor... Dod! | |
+| ヴァテン ブレックフェール レーカ | Vatten... Bleckfel... Reka! | | healing chant; エット トヴォー トレー = Ett, tva, tre! (fireball); Guld mage chant = Vem... Stor... Dod!; seal-door chant ヴィール デュー ヴァーラ スネール エプナ デレン = Vill... du... vara... snall, oppna... dorren! (Swedish "would you please open the door") | |
+| グルド王 | King of Guld | | also the speaker label | Guld King |
 | ファイアボール / エクスプロード / ミラーイメージ / パラライズ | Fireball / Explode / Mirror / Paralyze | | spell names, 8 tiles | |
 | トーネード / アイスストーム / プロテクション / リストアヘルス / ライトニング | Tornado / Icestorm / Protect / Restore / Thunder | | spell names, 8 tiles | |
 | ヤーク族魔法司 / 族長の娘 / グルド隊長 | Yaak Mage / Chief's Daughter / Guld Captain | | speaker labels | |
@@ -138,7 +139,12 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 ## Decisions from earlier batches
 - Speaker pages are `Name{nl}"speech` (b006): the name line is one of the box's 3 lines; the batch tool wraps the
   speech and keeps the name line.
-- Shop templates `{actor}さん` drop the honorific (b014-b016): "{actor}, what'll you buy?", not "{actor}-san".
+- Shop templates `{actor}さん` drop the honorific (b014-b016): "{actor}, what'll you buy?", not "{actor}-san". The
+  same holds for fixed shop-clerk lines naming the hero (`top15_03B6` "Kurt can't carry anything more", D15).
+- 先生 on a name -> `-sensei` (Keukenhof-sensei), a pupil's bare 先生 -> "Sensei" (D12). 先生 as a job ("a
+  schoolteacher", r109/r115) stays English. A title before the name (城将グッベ様 "Commander Gubbe", 枢機卿ケッテリ殿
+  "Cardinal Ketteri") replaces the honorific; the bare name + 様 keeps it ("Gubbe-sama", "Lidar-sama"). くん/君 on a
+  name -> `-kun` ("Kurt-kun"). `tools/batches.py` enforces all of these (HONORIFICS).
 - Riyu / iruY (b026): Yuri's alias is "Riyu"; in the backwards book (r118_0115) the name is spelled "iruY" so the
   reversed reading still gives "Yuri".
 - Titles never carry an honorific (phase-6 review): 枢機卿様 -> "Your Eminence" / "His Eminence".

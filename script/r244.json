@@ -74,7 +74,7 @@
    "addr": "0693",
    "size": 178,
    "jp": "グルド兵{nl}「レジ－ナ様 こんなところで{nl} なにをして おいでです？{page}「リダ－ル様なら{wait}・{wait}・{wait}・{wait}{nl} リダ－ル様は どうしたんですか？{page} う－ん・・・{nl} あたまが いたい・・・。",
-   "en": "Guld Soldier{nl}\"Regina-sama, what are you doing in a{nl} place like this?{page}\"General Lidar{wait}.{wait}.{wait}.{wait} what{nl} happened to General Lidar?{page} Mmm... my head hurts..."
+   "en": "Guld Soldier{nl}\"Regina-sama, what are you doing in a{nl} place like this?{page}\"Lidar-sama{wait}.{wait}.{wait}.{wait} what happened{nl} to Lidar-sama?{page} Mmm... my head hurts..."
   },
   {
    "id": "r244_0751",

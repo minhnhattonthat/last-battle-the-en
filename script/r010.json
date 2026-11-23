@@ -81,14 +81,14 @@
    "addr": "04C2",
    "size": 102,
    "jp": "キュ－ケンホフ先生{nl}「グルドは はるか北の王国。{page} そのグルドの兵士が{nl} なぜ こんなところに・・・？",
-   "en": "Mr. Keukenhof{nl}\"Guld is a kingdom far to the north.{page} What would Guld soldiers be doing in a{nl} place like this...?"
+   "en": "Keukenhof-sensei{nl}\"Guld is a kingdom far to the north.{page} What would Guld soldiers be doing in a{nl} place like this...?"
   },
   {
    "id": "r010_052A",
    "addr": "052A",
    "size": 126,
    "jp": "キュ－ケンホフ先生{nl}「とにかく これは{nl} ただ事では ないぞ！{page}「クルト！{nl} 早く このことを{nl} シルヴェル城に 伝えるんだ！",
-   "en": "Mr. Keukenhof{nl}\"In any case, this is no small matter!{page}\"Kurt! Hurry and take word of this to{nl} Silvel Castle!"
+   "en": "Keukenhof-sensei{nl}\"In any case, this is no small matter!{page}\"Kurt! Hurry and take word of this to{nl} Silvel Castle!"
   },
   {
    "id": "r010_05CA",
@@ -130,7 +130,7 @@
    "addr": "08F6",
    "size": 116,
    "jp": "「女と子供 魔法司殿は{nl} ここに いてくれ。{page} キズをおった者の手当ては{nl} キュ－ケンホフ先生に{nl} お願いしよう。{page2}",
-   "en": "\"Women, children and the honored{nl} mage, stay here.{page} We'll ask Mr. Keukenhof to tend to the{nl} wounded.{page2}"
+   "en": "\"Women, children and the honored{nl} mage, stay here.{page} We'll ask Keukenhof-sensei to tend to{nl} the wounded.{page2}"
   },
   {
    "id": "r010_098F",

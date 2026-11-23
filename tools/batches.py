@@ -28,7 +28,13 @@ MAX_ENTRIES = 150
 TOKEN = re.compile(r"\{[0-9A-Za-z]+\}|\[[0-9A-F]{2}\]")
 FREE = {"{nl}", "{page}", "{wait}"}  # layout codes the English may place freely
 VARIABLE = r"\{num\}"
-HONORIFICS = {}  # D1 keeps honorifics, but this script's 様/さん are mostly titles: the glossary rows carry them
+# D1 keeps honorifics on names (glossary.md Rulings): a katakana name + honorific needs the EN suffix.
+HONORIFICS = {"様": "sama", "さま": "sama", "さん": "san", "ちゃん": "chan", "くん": "kun", "君": "kun",
+              "殿": "dono", "どの": "dono", "先生": "sensei"}
+HONORIFIC_RE = re.compile(r"([ァ-ヶ][ァ-ヶー－]+)(" + "|".join(sorted(HONORIFICS, key=len, reverse=True)) + ")")
+HONORIFIC_NOT_NAMES = {"オレ", "バア", "ヨメ", "ネ－", "ネー"}  # オレ様, バアさん, ヨメさん, ネーちゃん: not names
+HONORIFIC_TITLES = ("城将", "枢機卿", "卿")  # a title before the name: the English title replaces the honorific
+HONORIFIC_WAIVED = {"top15_03B6"}  # shop clerk addressing the hero: drops -san like the {actor} shop template
 DLG_PX = 208  # dialogue box 216 px (docs/re/windows.md), edge pixel kept free
 INSERT_PX = {"{actor}": 48, "{target}": 48, "{item}": 54, "{spell}": 54, "{spell2}": 54, "{num}": 24}
 BG3_CHARS = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz',.-!?&/:+ ")
@@ -323,7 +329,19 @@ def problems(entry, en, terms):
         if not tiny and any(has_term(jp_plain, j) for j in jps) and not any(" ".join(x.split()).lower() in en_terms for x in ens):
             out.append(f"glossary: {jps[0]} -> {ens[0]}")
         out += [f"glossary Avoid: {a}" for a in avoid if re.search(rf"\b{re.escape(a)}\b", en)]
-    return out + width_problems(entry, en)
+    return out + honorific_problems(entry, jp_plain, en) + width_problems(entry, en)
+
+
+def honorific_problems(entry, jp, en):
+    if entry.get("id") in HONORIFIC_WAIVED:
+        return []
+    names = {}
+    for m in HONORIFIC_RE.finditer(jp):
+        if m.group(1) in HONORIFIC_NOT_NAMES or jp[:m.start()].endswith(HONORIFIC_TITLES):
+            continue
+        names.setdefault(HONORIFICS[m.group(2)], set()).add(m.group(1))
+    return [f"honorific: {'/'.join(sorted(n))} + {s} -> '-{s}'"
+            for s, n in names.items() if len(re.findall(rf"-{s}", en, re.I)) < len(n)]
 
 
 def index():

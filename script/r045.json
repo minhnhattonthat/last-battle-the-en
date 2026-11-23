@@ -74,7 +74,7 @@
    "addr": "05E4",
    "size": 420,
    "jp": "「よしよし{nl} 話が わかるじゃねえか。{page} それじゃ ついでに{nl} いいこと教えてやらあ。{page}{FB00}「今 この第２グルド城を{nl} 治めていらっしゃる城将は{nl} グッベ様ってんだがよ。{page} このお方 強いことは強いが{nl} 性格が悪くてな。{page} シルヴェル人ばかりか{nl} おれたち グルドの兵士まで{nl} 虫ケラくらいに思ってやがる。{page} まったく・・・苦労して戦って{nl} このシルヴェルを手に入れたのは{nl} おれたち兵士だってのによ！{page} ちくしょ－っ！！",
-   "en": "\"Atta boy, you get it.{page} Then while we're at it, I'll tell you{nl} something good.{page}{FB00}\"The commander who runs this Second{nl} Guld Castle now is called Gubbe.{page} He's strong, sure, but he's nasty.{page} He treats not just the Silvel folk but{nl} even us Guld soldiers like bugs.{page} Honestly... it was us soldiers who fought{nl} hard to take this Silvel!{page} Dammit all!!"
+   "en": "\"Atta boy, you get it.{page} Then while we're at it, I'll tell you{nl} something good.{page}{FB00}\"The commander who runs this Second{nl} Guld Castle now is called Gubbe-sama.{page} He's strong, sure, but he's nasty.{page} He treats not just the Silvel folk but{nl} even us Guld soldiers like bugs.{page} Honestly... it was us soldiers who fought{nl} hard to take this Silvel!{page} Dammit all!!"
   },
   {
    "id": "r045_078E",
@@ -88,7 +88,7 @@
    "addr": "07D6",
    "size": 426,
    "jp": "「よしよし{nl} 話が わかるじゃねえか。{page} で・・そのグッベ様だがな。{nl} もともと 城将なんてできる{nl} 器じゃねえんだ。{page}「それが なぜか{nl} 枢機卿ケッテリ様のお力で{nl} 城将にしてもらったのさ。{page}「なにせ ケッテリ卿といやあ{nl} グルド王が 誰よりも信頼している{nl} １番の重臣だ。{page} そのケッテリ卿に{nl} 一体 どんな手を使って{nl} とりいったんだか・・・{page}「まったく お偉い方なんてな{nl} どいつもこいつも{nl} ロクなモンじゃねぇぜ！！",
-   "en": "\"Atta boy, you get it.{page} So.. about this Gubbe. He was never cut{nl} out to be a commander.{page}\"But somehow, through Cardinal{nl} Ketteri's power, they made him one.{page}\"Lord Ketteri, see, is the King of Guld's{nl} most trusted chief minister.{page} How on earth did Gubbe worm his way{nl} into Lord Ketteri's favor...{page}\"Honestly, these bigwigs, every last one{nl} of them is no good!!"
+   "en": "\"Atta boy, you get it.{page} So.. about this Gubbe-sama. He was{nl} never cut out to be a commander.{page}\"But somehow, through Cardinal{nl} Ketteri's power, they made him one.{page}\"Lord Ketteri, see, is the King of Guld's{nl} most trusted chief minister.{page} How on earth did Gubbe worm his way{nl} into Lord Ketteri's favor...{page}\"Honestly, these bigwigs, every last one{nl} of them is no good!!"
   },
   {
    "id": "r045_0984",
@@ -109,7 +109,7 @@
    "addr": "0A82",
    "size": 126,
    "jp": "「グッベ様は ユ－リ軍の力を{nl} あまく見ているのさ。{page} 本格的に攻めてこないのは{nl} 敵に戦力がないからだと{nl} 思っているんだ。",
-   "en": "\"Gubbe takes Yuri's army too lightly.{page} He thinks they don't attack in earnest{nl} because they've got no strength."
+   "en": "\"Gubbe-sama takes Yuri's army too{nl} lightly.{page} He thinks they don't attack in earnest{nl} because they've got no strength."
   }
  ]
 }

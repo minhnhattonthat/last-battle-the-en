@@ -11,7 +11,7 @@
    "addr": "0067",
    "size": 62,
    "jp": "キュ－ケンホフ先生{nl}「どうしたんだ クルト。{nl} 何か質問かい？",
-   "en": "Mr. Keukenhof{nl}\"What is it, Kurt? Do you have a{nl} question?"
+   "en": "Keukenhof-sensei{nl}\"What is it, Kurt? Do you have a{nl} question?"
   },
   {
    "id": "r001_00AD",
@@ -25,7 +25,7 @@
    "addr": "00F9",
    "size": 68,
    "jp": "キュ－ケンホフ先生{nl}「学校は もう終わりだよ。{nl} 早く 帰りなさい。",
-   "en": "Mr. Keukenhof{nl}\"School's over for today. Hurry on{nl} home."
+   "en": "Keukenhof-sensei{nl}\"School's over for today. Hurry on{nl} home."
   },
   {
    "id": "r001_0141",
@@ -46,28 +46,28 @@
    "addr": "0251",
    "size": 268,
    "jp": "キュ－ケンホフ先生{nl}「・{wait}・{wait}・いいかい？{page} そもそも 言葉とは{nl} 魔力を 持っているんだよ。{page}「その魔力を 引き出すのは{nl} 誰もが持っている本当の名前だ。{wait}{nl} それをフェナムンと言うんだよ。{page}「つまり 魔法を使うには{nl} フェナムンの 働きが{nl} とても大切なんだね。{page2}",
-   "en": "Mr. Keukenhof{nl}\".{wait}.{wait}. Are you listening?{page} Words themselves hold magic power,{nl} you see.{page}\"What draws that power out is the true{nl} name everyone has. {wait}We call it the{nl} Fenamun.{page}\"In other words, the Fenamun is vital to{nl} using magic.{page2}"
+   "en": "Keukenhof-sensei{nl}\".{wait}.{wait}. Are you listening?{page} Words themselves hold magic power,{nl} you see.{page}\"What draws that power out is the true{nl} name everyone has. {wait}We call it the{nl} Fenamun.{page}\"In other words, the Fenamun is vital to{nl} using magic.{page2}"
   },
   {
    "id": "r001_036E",
    "addr": "036E",
    "size": 200,
    "jp": "「先生！{wait}{nl} ぼくのフェナムンは{nl} なんて 言うんですか？{page2}{F9FF}キュ－ケンホフ先生{nl}「それは{nl} 先生にも わからないな。{page} それを知っているのは{nl} お父さん お母さんと{nl} 名付け親の ３人だけなんだ。{page2}",
-   "en": "\"Sir! {wait}What is my Fenamun?{page2}{F9FF}Mr. Keukenhof{nl}\"Even I don't know that.{page} The only ones who know it are your{nl} father, your mother and your{nl} godparent. Just those three.{page2}"
+   "en": "\"Sensei! {wait}What is my Fenamun?{page2}{F9FF}Keukenhof-sensei{nl}\"Even I don't know that.{page} The only ones who know it are your{nl} father, your mother and your{nl} godparent. Just those three.{page2}"
   },
   {
    "id": "r001_044E",
    "addr": "044E",
    "size": 194,
    "jp": "「じゃあ 先生{nl} 自分のフェナムンは{nl} ず－っと わからないんですか？{page2}{F9FF}キュ－ケンホフ先生{nl}「いやいや そうじゃないぞ。{page}「フェナムンは{nl} １６才の誕生日に{nl} ある儀式を受けるとわかるんだ。{page2}",
-   "en": "\"Then, sir, will I never know my own{nl} Fenamun?{page2}{F9FF}Mr. Keukenhof{nl}\"No, no, that's not so.{page}\"You learn your Fenamun on your 16th{nl} birthday, when you go through a{nl} certain rite.{page2}"
+   "en": "\"Then, Sensei, will I never know my own{nl} Fenamun?{page2}{F9FF}Keukenhof-sensei{nl}\"No, no, that's not so.{page}\"You learn your Fenamun on your 16th{nl} birthday, when you go through a{nl} certain rite.{page2}"
   },
   {
    "id": "r001_051E",
    "addr": "051E",
    "size": 64,
    "jp": "キュ－ケンホフ先生{nl}「ほかに なにか{nl} 聞きたい者は いるかね？",
-   "en": "Mr. Keukenhof{nl}\"Does anyone else have something to{nl} ask?"
+   "en": "Keukenhof-sensei{nl}\"Does anyone else have something to{nl} ask?"
   },
   {
    "id": "r001_0566",
@@ -95,56 +95,56 @@
    "addr": "06BE",
    "size": 110,
    "jp": "キュ－ケンホフ先生{nl}「では つづいて{nl} 魔法の使い方を 教えよう。{page}「まず 私が{nl} ひとつ やってみせるぞ。{page2}",
-   "en": "Mr. Keukenhof{nl}\"Next, I'll teach you how to use magic.{page}\"First, I'll show you myself.{page2}"
+   "en": "Keukenhof-sensei{nl}\"Next, I'll teach you how to use magic.{page}\"First, I'll show you myself.{page2}"
   },
   {
    "id": "r001_0737",
    "addr": "0737",
    "size": 60,
    "jp": "キュ－ケンホフ先生{nl}「エット{wait}{wait} トヴォ－{wait}{wait} トレ－！！{page2}",
-   "en": "Mr. Keukenhof{nl}\"Ett... {wait}{wait}tva... {wait}{wait}tre!!{page2}"
+   "en": "Keukenhof-sensei{nl}\"Ett... {wait}{wait}tva... {wait}{wait}tre!!{page2}"
   },
   {
    "id": "r001_077E",
    "addr": "077E",
    "size": 372,
    "jp": "キュ－ケンホフ先生{nl}「これが 火の玉の魔法だ。{page} ただし今は ほんの少ししか{nl} 魔力を使っていない。{page}「あんまり 大きな火の玉を出して{nl} 学校が 火事になっちゃ{nl} いけないからね。{page}「もちろん 魔力を大きくすれば{nl} 火の玉だって{nl} 恐ろしい魔法になるぞ。{page2}{FB00}「さて 今度は誰かに{nl} やってみて もらおうか。{page}「そうだね・・・{wait}{nl} じゃあ クルト{nl} こちらに出てきなさい。{page2}",
-   "en": "Mr. Keukenhof{nl}\"This is the fireball spell.{page} Right now I'm using only a tiny bit of{nl} magic power.{page}\"We can't have a big fireball setting the{nl} school on fire, after all.{page}\"Of course, with more power behind it,{nl} even a fireball becomes a fearsome{nl} spell.{page2}{FB00}\"Now, let's have someone else try it.{page}\"Let's see... {wait}Kurt, come up here.{page2}"
+   "en": "Keukenhof-sensei{nl}\"This is the fireball spell.{page} Right now I'm using only a tiny bit of{nl} magic power.{page}\"We can't have a big fireball setting the{nl} school on fire, after all.{page}\"Of course, with more power behind it,{nl} even a fireball becomes a fearsome{nl} spell.{page2}{FB00}\"Now, let's have someone else try it.{page}\"Let's see... {wait}Kurt, come up here.{page2}"
   },
   {
    "id": "r001_0910",
    "addr": "0910",
    "size": 220,
    "jp": "キュ－ケンホフ先生{nl}「まず 心を落ちつけて{nl} 炎を思いうかべなさい。{page}「そして 私の呪文に{nl} 息を合せて 魔力を集中するんだ。{page2}{F9FF}{D340}キュ－ケンホフ先生{nl}「さあ いいかい？{wait}{wait}{nl} エット{wait}{wait}{wait} トヴォ－{wait}{wait}{wait} トレ－！！{page2}",
-   "en": "Mr. Keukenhof{nl}\"First, calm your mind and picture a{nl} flame.{page}\"Then breathe in time with my chant{nl} and focus your magic power.{page2}{F9FF}{D340}Mr. Keukenhof{nl}\"Ready? {wait}{wait}Ett... {wait}{wait}{wait}tva...{nl} {wait}{wait}{wait}tre!!{page2}"
+   "en": "Keukenhof-sensei{nl}\"First, calm your mind and picture a{nl} flame.{page}\"Then breathe in time with my chant{nl} and focus your magic power.{page2}{F9FF}{D340}Keukenhof-sensei{nl}\"Ready? {wait}{wait}Ett... {wait}{wait}{wait}tva...{nl} {wait}{wait}{wait}tre!!{page2}"
   },
   {
    "id": "r001_09F2",
    "addr": "09F2",
    "size": 120,
    "jp": "キュ－ケンホフ先生{nl}「よし うまいぞ クルト{nl} 今の調子を 忘れるなよ。{page2}{F9FF}クルトは{nl}火の玉の魔法を おぼえた！{C11E}{C1FF}{C101}{page2}",
-   "en": "Mr. Keukenhof{nl}\"Good, well done, Kurt. Don't forget how{nl} that felt.{page2}{F9FF}Kurt learned the fireball spell!{C11E}{C1FF}{C101}{page2}"
+   "en": "Keukenhof-sensei{nl}\"Good, well done, Kurt. Don't forget how{nl} that felt.{page2}{F9FF}Kurt learned the fireball spell!{C11E}{C1FF}{C101}{page2}"
   },
   {
    "id": "r001_0A8B",
    "addr": "0A8B",
    "size": 190,
    "jp": "キュ－ケンホフ先生{nl}「いいかい みんな{nl} 火の玉は 魔法の第一歩だ。{page}「この魔法なら わかりやすいし{nl} 誰でも すぐ 使えるように{nl} なるだろう。{page}「みんなも 帰ったら{nl} 練習してごらん。{page2}",
-   "en": "Mr. Keukenhof{nl}\"Listen, everyone. The fireball is the{nl} first step in magic.{page}\"It's an easy spell to grasp, and anyone{nl} can soon learn to use it.{page}\"Practice it when you get home, all of{nl} you.{page2}"
+   "en": "Keukenhof-sensei{nl}\"Listen, everyone. The fireball is the{nl} first step in magic.{page}\"It's an easy spell to grasp, and anyone{nl} can soon learn to use it.{page}\"Practice it when you get home, all of{nl} you.{page2}"
   },
   {
    "id": "r001_0B74",
    "addr": "0B74",
    "size": 112,
    "jp": "キュ－ケンホフ先生{nl}「おや もう こんな時間か。{page}「では 今日は ここまで。{nl} つづきは 明日にするとしよう。{page2}",
-   "en": "Mr. Keukenhof{nl}\"Oh, is it this late already?{page}\"That's all for today. We'll continue{nl} tomorrow.{page2}"
+   "en": "Keukenhof-sensei{nl}\"Oh, is it this late already?{page}\"That's all for today. We'll continue{nl} tomorrow.{page2}"
   },
   {
    "id": "r001_0BEF",
    "addr": "0BEF",
    "size": 22,
    "jp": "「先生 さようなら！{page2}",
-   "en": "\"Goodbye, sir!{page2}"
+   "en": "\"Goodbye, Sensei!{page2}"
   },
   {
    "id": "r001_0C2A",

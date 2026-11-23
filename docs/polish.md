@@ -36,3 +36,16 @@ script refuses to run while any line is unticked. Sources: `docs/review-phase6.m
 - [ ] r085_0C94 - Ritten old man (r085_0C94..r085_11B0) and Gulva old man (r092_0127..r092_03EB): のぅ rendered as "eh" on nearly every sentence; vary the tag ("lad", "heh", dropped g's) so it reads less mechanical (b056 reworked r085_0D58/0DDA/0EDC)
 - [ ] r118_0067 - library narration in present tense ("you find a grubby book") between past-tense captions; pick one tense for the library book captions
 - [ ] top15_00E0 - secondhand-shop keeper ends with servile ハイ！ ("yessir!"); the EN drops it, the voice could carry it
+- [ ] r009_005A - same JP as r319_0068: unify the wording (phase-6 review M1)
+- [ ] r009_00D8 - same JP as r322_00A1 ("16" vs "sixteen", "had attacked" vs "attacked"): unify (M1)
+- [ ] r009_0144 - same JP as r321_0074: unify (M1)
+- [ ] r009_01C0 - same JP as r320_0059: unify (M1)
+- [ ] r247_030F - same JP as r322_0106: unify (M1)
+- [ ] r041_0F90 - same JP as r314_0192: unify (M1)
+- [ ] r185_0580 - same JP as r313_01E0: unify (M1)
+- [ ] r247_015A - same JP as r318_0121: unify (M1)
+- [ ] r247_0212 - same JP as r318_01CD: unify (M1)
+- [ ] r158_044F - healer line differs from r024_05DD/r065_0854: unify (M1)
+- [ ] r074_00FB - "It's locked." vs "It is locked." x3: pick one (M1)
+- [ ] b04_B65C - "There's nothing there." vs "There is nothing there." x10: pick one (M1)
+- [ ] bg3_98B6 - same JP as bg3_89D2: unify (M1)
