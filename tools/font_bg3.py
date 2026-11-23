@@ -79,6 +79,97 @@ def battle_patch(orig, writer):
     for at in BATTLE_LEN_AT:
         assert orig[at:at + 2] == BATTLE_LEN.to_bytes(2, "little"), f"battle load list moved ({at:X})"
         writer.put(at, len(enc).to_bytes(2, "little"), "battle font length")
+    battle_names_patch(orig, writer, BATTLE_FONT + len(enc))
+
+
+# Battle status-box party names (phase 8). The second battle stream (battle LZ, right after the font at $2A:8B34,
+# to VRAM word $6C00, i.e. BG3 tile $180 + n) holds the name graphics: クルト = tiles $1A4-$1A6, メイ $1A7-$1A8,
+# ボルグ = $1A9 $1A5 $1A4 (shares Kurt's kana), レジーナ $1AA-$1AD. The status-box tilemap is raw at file 0x1F084A
+# (one 15-word row per member, 4 name words before the bar tile $39AE). English names are drawn in a compact
+# 4 px font across their own tiles; Borg gets two new tiles after the stream's end ($1FB-$1FC, zero and unused in
+# battle VRAM, work/qa/bw7/battle_field ppu dump). Rows 1-7 like the kana; ink colour 3 on colour 0 (transparent).
+NAME_STREAM, NAME_LEN = 0x150B34, 0x509
+NAME_ENTRY = [0x1404A6, 0x14736E]          # load-list entries: +2 VRAM word, +4 24-bit source, +7 length
+NAME_GLYPHS = {
+    "K": ["....", "#..#", "#.#.", "##..", "##..", "#.#.", "#..#", "#..#"],
+    "M": [".....", "#...#", "##.##", "#.#.#", "#.#.#", "#...#", "#...#", "#...#"],
+    "B": ["....", "###.", "#..#", "#..#", "###.", "#..#", "#..#", "###."],
+    "R": ["....", "###.", "#..#", "#..#", "###.", "#.#.", "#..#", "#..#"],
+    "u": ["....", "....", "....", "#..#", "#..#", "#..#", "#..#", ".###"],
+    "r": ["...", "...", "...", "#.#", "##.", "#..", "#..", "#.."],
+    "t": ["...", ".#.", ".#.", "###", ".#.", ".#.", ".#.", "..#"],
+    "e": ["....", "....", "....", ".##.", "#..#", "####", "#...", ".###"],
+    "i": ["#", "#", ".", "#", "#", "#", "#", "#"],
+    "o": ["....", "....", "....", ".##.", "#..#", "#..#", "#..#", ".##."],
+    "g": ["....", "....", "....", ".###", "#..#", ".###", "...#", ".##."],
+    "n": ["....", "....", "....", "###.", "#..#", "#..#", "#..#", "#..#"],
+    "a": ["....", "....", "....", ".##.", "...#", ".###", "#..#", ".###"],
+}
+NAME_ROWS = {  # file offset of the name's first tilemap word -> (English name, BG3 tiles it is drawn on)
+    0x1F084A: ("Kurt", [0x1A4, 0x1A5, 0x1A6]),
+    0x1F0868: ("Mei", [0x1A7, 0x1A8]),
+    0x1F0886: ("Borg", [0x1A9, 0x1FB, 0x1FC]),
+    0x1F08A4: ("Regina", [0x1AA, 0x1AB, 0x1AC, 0x1AD]),
+}
+NAME_ORIG_ROWS = {0x1F084A: [0x1A4, 0x1A5, 0x1A6], 0x1F0868: [0x1A7, 0x1A8], 0x1F0886: [0x1A9, 0x1A5, 0x1A4],
+                  0x1F08A4: [0x1AA, 0x1AB, 0x1AC, 0x1AD]}
+
+
+def name_tiles(name, ntiles):
+    """English name -> ntiles 2bpp tiles: glyphs from x=1 with a 1 px gap, ink colour 3 on colour 0."""
+    width = 8 * ntiles
+    canvas = [[0] * width for _ in range(8)]
+    x = 1
+    for c in name:
+        g = NAME_GLYPHS[c]
+        w = len(g[0])
+        assert x + w <= width, f"{name!r} is wider than {ntiles} tiles"
+        for y, row in enumerate(g):
+            for i, p in enumerate(row):
+                if p == "#":
+                    canvas[y][x + i] = 3
+        x += w + 1
+    out = []
+    for t in range(ntiles):
+        tb = bytearray()
+        for y in range(8):
+            px = canvas[y][t * 8:(t + 1) * 8]
+            p0 = sum((v & 1) << (7 - i) for i, v in enumerate(px))
+            p1 = sum((v >> 1) << (7 - i) for i, v in enumerate(px))
+            tb += bytes([p0, p1])
+        out.append(bytes(tb))
+    return out
+
+
+def battle_names_patch(orig, writer, start):
+    """Redraw the battle status names (second battle stream), place the stream at `start` (right after the
+    re-encoded font, same bank $2A) and point both load lists at it; rewrite the tilemap rows."""
+    import blz
+    raw = blz.decode(orig[NAME_STREAM:], NAME_LEN)
+    size = int.from_bytes(raw[:2], "little")
+    d = bytearray(raw[2:2 + size])
+    top = max(t for _, tiles in NAME_ROWS.values() for t in tiles) - 0x180 + 1
+    assert top <= 0x200 - 0x180, "name tiles past BG3 tile $1FF"
+    d += bytes(max(0, top * 16 - len(d)))
+    for name, tiles in NAME_ROWS.values():
+        for t, tb in zip(tiles, name_tiles(name, len(tiles))):
+            d[(t - 0x180) * 16:(t - 0x180 + 1) * 16] = tb
+    enc = blz.encode(len(d).to_bytes(2, "little") + bytes(d))
+    end = NAME_STREAM + NAME_LEN
+    assert start + len(enc) <= end, f"battle name stream {len(enc)} bytes does not fit before {end:X}"
+    assert (start & ~0x7FFF) == (end - 1 & ~0x7FFF), "stream must stay in bank $2A"
+    writer.put(start, enc + b"\x00" * (end - start - len(enc)), "battle names: English status-box name tiles")
+    src = (0x2A << 16) | 0x8000 | (start & 0x7FFF)
+    for e in NAME_ENTRY:
+        assert orig[e + 2:e + 4] == b"\x00\x6c" and orig[e + 4:e + 9] == bytes([0x34, 0x8B, 0x2A, 0x09, 0x05]), \
+            f"battle name load entry moved ({e:X})"
+        writer.put(e + 4, src.to_bytes(3, "little") + len(enc).to_bytes(2, "little"), "battle names: source, length")
+    for at, (name, tiles) in NAME_ROWS.items():
+        old = [int.from_bytes(orig[at + 2 * i:at + 2 * i + 2], "little") for i in range(len(tiles))]
+        assert [w & 0x3FF for w in old] == NAME_ORIG_ROWS[at], f"battle name row moved ({at:X})"
+        new = b"".join(((w & 0xFC00) | t).to_bytes(2, "little") for w, t in zip(old, tiles))
+        if new != orig[at:at + len(new)]:
+            writer.put(at, new, f"battle names: {name} tilemap row")
 
 
 def patch(data):

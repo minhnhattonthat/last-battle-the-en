@@ -26,9 +26,12 @@ FB04-FB04     name entry row count (display, operand of CMP #$2B at 01:FB03)
 1987A5-19F88A battle tile text: command menu, windows and messages (bank $33)
 19FA10-19FAC9 battle tile text (bank $33)
 1D8281-1D835E battle tile text (bank $3A)
-150000-150B33 battle BG3 font, battle LZ (font_bg3.battle_patch: English tiles, re-encoded in place)
+150000-15103C battle BG3 font + status-name stream, battle LZ, re-encoded and packed back to back (font_bg3.battle_patch)
 1404A4-1404A5 battle load list: battle font compressed length
 14736C-14736D battle load list (second copy): battle font compressed length
+1404AA-1404AE battle load list: name stream source + length
+147372-147376 battle load list (second copy): name stream source + length
+1F0886-1F088B battle status-box tilemap: Borg's name row (font_bg3.NAME_ROWS)
 14B2B6-14B2BA asm/vwf.asm hook 29:B2B6 (battle names: English escapes)
 7FD7          header ROM size byte: $0C = 4 MB (build.py)
 B13C-B13F     asm/vwf.asm hook 01:B13C (start phase of a windowed text run)
