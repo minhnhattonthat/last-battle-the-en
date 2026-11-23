@@ -222,238 +222,238 @@
    "addr": "1198",
    "size": 84,
    "jp": "「敵が この町まで来たら{nl} 戦って 追いはらうなんて！{nl} オレの性格に あわね－よ。",
-   "en": ""
+   "en": "\"Fight the enemy off if they come to{nl} town?! That's just not my style."
   },
   {
    "id": "r119_11EE",
    "addr": "11EE",
    "size": 236,
    "jp": "「ここは 古道具屋だ。{nl} 買い物だったら 早くえらべ！{nl} オレは 気がみじかいんだ！{wait}{wait}{page}{FB00}「オレの・・・・・・{wait}{wait}{nl} オレの お気に入りのセリフを{nl} 娘に 取られちまった！{page}「いまじゃ あの店の主人て{nl} 呼ばれてるのは 娘のほうだぜ。",
-   "en": ""
+   "en": "\"This is a secondhand shop. If you're{nl} buying, pick fast! I'm short on patience!{nl} {wait}{wait}{page}{FB00}\"My...... {wait}{wait}my favorite line got stolen{nl} by my daughter!{page}\"Now it's my daughter folks call the{nl} master of that shop."
   },
   {
    "id": "r119_12DC",
    "addr": "12DC",
    "size": 408,
    "jp": "「ここは 古道具屋だ。{nl} 買い物だったら 早くえらべ！{nl} オレは 気がみじかいんだ！{wait}{wait}{wait}{wait}{nl}{nl} ここは 古道具屋だ。{nl} 買い物だったら 早くえらべ！{nl} オレは 気がみじかいんだ！{wait}{wait}{wait}{wait}{nl}{nl} ここは 古道具屋だ。{nl} 買い物だったら 早くえらべ！{nl} オレは 気がみじかいんだ！{wait}{wait}{wait}{wait}{nl}{nl} ここは 古道具屋だ。{nl} 買い物だったら 早くえらべ！{nl} オレは 気がみじかいんだ！{wait}{wait}{wait}{wait}{nl}{FB00}「あ～ {wait}ス－ッとした。",
-   "en": ""
+   "en": "\"This is a secondhand shop.{nl} If you're buying, pick fast!{nl} I'm short on patience! {wait}{wait}{wait}{wait}{nl}{nl} This is a secondhand shop.{nl} If you're buying, pick fast!{nl} I'm short on patience! {wait}{wait}{wait}{wait}{nl}{nl} This is a secondhand shop.{nl} If you're buying, pick fast!{nl} I'm short on patience! {wait}{wait}{wait}{wait}{nl}{nl} This is a secondhand shop.{nl} If you're buying, pick fast!{nl} I'm short on patience! {wait}{wait}{wait}{wait}{nl} {FB00}\"Ahh, {wait}that feels better."
   },
   {
    "id": "r119_1476",
    "addr": "1476",
    "size": 182,
    "jp": "「オレは 早いのは スキだが{nl} こんなに早く 店を 娘に{nl} ゆずるつもりは ね－ぞ！！{page}{FB00}「にいちゃんたち あそこにある{nl} 古道具屋の 本当の主人は{nl} オレなんだ 信じてくれるよな！",
-   "en": ""
+   "en": "\"I like things fast, but I never meant to{nl} hand the shop to my daughter THIS{nl} fast!!{page}{FB00}\"You kids believe me, right? I'm the real{nl} master of that secondhand shop over{nl} there!"
   },
   {
    "id": "r119_153C",
    "addr": "153C",
    "size": 184,
    "jp": "「グルド軍に そなえて{nl} 町の みんなで作ったのが{nl} わしら ベルクスタット自警団さ。{page}{FB00}「わしらは 昼の見まわり組で{nl} 夜は ヤ－ク村から来てくれた{nl} オレの仲間が 守りにつくのさ。",
-   "en": ""
+   "en": "\"We, the Bergstadt Watch, were formed{nl} by the whole town to stand against the{nl} Guld army.{page}{FB00}\"We're the day patrol. At night, my{nl} friends from the Yaak village stand{nl} guard."
   },
   {
    "id": "r119_15FE",
    "addr": "15FE",
    "size": 216,
    "jp": "「町のなかに グルド軍を{nl} 入れなきゃ なんとかなる。{page}{FB00}「いちどに 橋をわたって{nl} 突っこんで これる人数は{nl} たかがしれている。{page}「ヤ－ク村の仲間も 加われば{nl} そいつらを たたきふせるのは{nl} かんたんなことさ。",
-   "en": ""
+   "en": "\"As long as we keep the Guld army out{nl} of town, we'll manage.{page}{FB00}\"Only so many can charge across the{nl} bridge at once.{page}\"With our Yaak friends joining in, beating{nl} them down is easy."
   },
   {
    "id": "r119_16E0",
    "addr": "16E0",
    "size": 56,
    "jp": "「ここは オレ達の町だ{nl} オレ達の力で 守ってみせるさ。",
-   "en": ""
+   "en": "\"This is our town. We'll protect it with{nl} our own strength."
   },
   {
    "id": "r119_171A",
    "addr": "171A",
    "size": 170,
    "jp": "「ヤ－ク村の仲間なら 闇にまぎれて{nl} スヴァルトさんと いっしょに{nl} 別の場所へ 移動したよ。{page}{FB00}「どうやら・・・{wait}{wait}{wait}{nl} 近いうちに グルドと決戦が{nl} あるって話だな。",
-   "en": ""
+   "en": "\"Our Yaak friends slipped off in the dark{nl} with Svart-san to somewhere else.{page}{FB00}\"Seems like... {wait}{wait}{wait}there'll be a{nl} showdown with Guld soon."
   },
   {
    "id": "r119_17C6",
    "addr": "17C6",
    "size": 162,
    "jp": "「おれたち 町のモンも{nl} いっしょに 行きたかったが。{page}「なにかあっても ここで支えられる{nl} ようにしておいてくれ と{page} スヴァルトさんに{nl} たのまれてるんでね。",
-   "en": ""
+   "en": "\"Us townsfolk wanted to go too.{page}\"But Svart-san asked us to make sure{nl} we can hold out here,{page} whatever happens."
   },
   {
    "id": "r119_186E",
    "addr": "186E",
    "size": 72,
    "jp": "「そのうち また 商売やりに{nl} グルドまで 行けるように{nl} なるのかな？",
-   "en": ""
+   "en": "\"I wonder if someday we'll be able to{nl} go do business in Guld again?"
   },
   {
    "id": "r119_18C2",
    "addr": "18C2",
    "size": 108,
    "jp": "「エルフ族である ワタシは{nl} 人間族より 目がいいのさ。{page} グルドが 来たら{nl} 遠くからでも すぐわかるよ。",
-   "en": ""
+   "en": "\"I'm an elf, so my eyes are better than{nl} a human's.{page} If Guld comes, I'll know even from far{nl} away."
   },
   {
    "id": "r119_1934",
    "addr": "1934",
    "size": 174,
    "jp": "「里をでてきたエルフと いえど{nl} ここまで人間とは かかわらない{nl} ものなんだが{wait}・{wait}・{wait}・{wait}。{page}「このような 時だし{nl} それに ここはもう{nl} 第二の故郷のようなものだから。",
-   "en": ""
+   "en": "\"Even elves who've left the village{nl} don't usually get this mixed up with{nl} humans{wait}.{wait}.{wait}.{wait}{page}\"But times are what they are, and{nl} besides, this place is like a second home{nl} now."
   },
   {
    "id": "r119_19E4",
    "addr": "19E4",
    "size": 104,
    "jp": "「用心のための見まわりさ。{page}{FB00}「奥さんと いっしょだが{nl} 見まわりを おろそかにしては{nl} いないからね。",
-   "en": ""
+   "en": "\"Just patrolling to be safe.{page}{FB00}\"My wife is with me, but I'm not slacking{nl} on patrol."
   },
   {
    "id": "r119_1A4E",
    "addr": "1A4E",
    "size": 178,
    "jp": "「わたしひとりの はずなんだが{nl} ずっと奥さんを ほっておいたから{nl} スネちゃって・・・。{page}{FB00}「自分も つきあうなんて言って・・{page} まあ エルフ族の奥さんなら{nl} こういうものさ。",
-   "en": ""
+   "en": "\"It was supposed to be just me, but{nl} I've left my wife alone for so long,{nl} she's sulking...{page}{FB00}\"She says she's coming along..{page} Well, that's how elf wives are."
   },
   {
    "id": "r119_1B08",
    "addr": "1B08",
    "size": 162,
    "jp": "ヘ－グ{nl}「ロ－グのやつ スヴァルトさんの{nl} 用事で ときどき いなくなるんだ。{page}「へん！{wait}{wait}{wait}{wait}{nl} 特別な仕事を たのまれたんだって{nl} オレに じまんするんだぜ。",
-   "en": ""
+   "en": "Heeg{nl}\"Rogue keeps disappearing on errands{nl} for Svart-san.{page}\"Hmph! {wait}{wait}{wait}{wait}He brags to me that he{nl} got a special job."
   },
   {
    "id": "r119_1BAC",
    "addr": "1BAC",
    "size": 92,
    "jp": "ヘ－グ{nl}「オレも 特別な仕事！{wait}{nl} と やらがしてみたいぜ。{page} だって カッコよさそうだろ。",
-   "en": ""
+   "en": "Heeg{nl}\"I want to try one of these special jobs{nl} too!{wait}{page} They sound so cool."
   },
   {
    "id": "r119_1C10",
    "addr": "1C10",
    "size": 86,
    "jp": "ロ－グ{nl}「スヴァルトさんに たのまれて{nl} オレは すごい事やってんだ。{page} ヒミツだぜ！",
-   "en": ""
+   "en": "Rogue{nl}\"Svart-san asked me to do something{nl} big.{page} It's a secret!"
   },
   {
    "id": "r119_1C68",
    "addr": "1C68",
    "size": 176,
    "jp": "ロ－グ{wait}{wait}{nl}「ときどき 闇にまぎれて{nl} 近くの 町のようすを{nl} 見にいってんだ。{page}「ここらあたりは{nl} み～んな うちの店の{nl} おとくいさんだからな。{page} まぁ 庭みたいなもんさ。",
-   "en": ""
+   "en": "Rogue{wait}{wait}{nl}\"Sometimes I slip off in the dark to{nl} check on the nearby towns.{page}\"All the folks around here are our{nl} shop's regulars.{page} It's like my own backyard."
   },
   {
    "id": "r119_1D20",
    "addr": "1D20",
    "size": 160,
    "jp": "「夜の見はりなら{nl} オレたち ヤ－ク族にまかしときな。{page}「夜目もきくし ハナもきくからな。{wait}{wait}{wait}{wait}{wait}{nl} {wait}{wait}{wait}{wait}ハッ {wait}{wait}クション！！{nl} ぐすっ {wait}{wait}{wait}ぐすっ。",
-   "en": ""
+   "en": "\"Leave the night watch to us Yaak.{page}\"We see well in the dark, and we've got{nl} good noses.{nl} {wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}Ah-{wait}{wait}CHOO!!{page} Sniff, {wait}{wait}{wait}sniff."
   },
   {
    "id": "r119_1DC2",
    "addr": "1DC2",
    "size": 28,
    "jp": "「まぁ まかせておきなって。",
-   "en": ""
+   "en": "\"Just leave it to us."
   },
   {
    "id": "r119_1DE6",
    "addr": "1DE6",
    "size": 152,
    "jp": "「ボルグ！ おまえは{nl} 自分が 一人前になるまで{nl} 帰らないなんて わがまま言って{page} フェナムンを 交わす約束をした{nl} お嬢さんを またせているんだぞ。",
-   "en": ""
+   "en": "\"Borg! You selfishly said you wouldn't{nl} come back till you were a grown man,{page} and you've kept the girl you promised{nl} to share Fenamuns with waiting!"
   },
   {
    "id": "r119_1E80",
    "addr": "1E80",
    "size": 122,
    "jp": "「族長の お嬢さんを{nl} 泣かすんじゃないぞ！{page}「そんなことしてみろ！！{nl} おまえの 丸いしっぽを{nl} 三角にしてやるからな。",
-   "en": ""
+   "en": "\"Don't you make the chief's daughter{nl} cry!{page}\"You just try it!! I'll make that round{nl} tail of yours triangular."
   },
   {
    "id": "r119_1F02",
    "addr": "1F02",
    "size": 196,
    "jp": "「うちの人と いっしょに{nl} 夜の見まわりよ。{page}「このところ ふたりでいられる{nl} 時間がなかったから{nl} あたしも つきあうことにしたの。{page}「お星さまを みながら{nl} ふたりで おさんぽ。 {wait}{wait}{wait}ウフ！",
-   "en": ""
+   "en": "\"I'm on night patrol with my husband.{page}\"We haven't had any time together{nl} lately, so I'm tagging along.{page}\"A walk for two, looking at the stars.{nl} {wait}{wait}{wait}Tee hee!"
   },
   {
    "id": "r119_1FC8",
    "addr": "1FC8",
    "size": 68,
    "jp": " － 古道具屋『早い者勝ち』 －{nl}{nl} 売る物はふるいが 商売は早い！",
-   "en": ""
+   "en": "- 'First Come' Secondhand Shop -{nl}{nl}Old goods, fast service!"
   },
   {
    "id": "r119_2016",
    "addr": "2016",
    "size": 96,
    "jp": "     － 通 告 －{nl} しばらく 閑所の門は開かないぞ。{nl}     ・グルド軍 閑所警備隊・",
-   "en": ""
+   "en": "- Notice -{nl}The checkpoint gate stays shut{nl}for now. - Guld Checkpoint Guard"
   },
   {
    "id": "r119_2078",
    "addr": "2078",
    "size": 66,
    "jp": "  グルドなんかに 負けるな！{nl}{nl} － ベルクスタット 自警団 －",
-   "en": ""
+   "en": "Don't lose to Guld!{nl}{nl}- The Bergstadt Watch -"
   },
   {
    "id": "r119_20BC",
    "addr": "20BC",
    "size": 82,
    "jp": "  終戦は近い！{nl} 戦争終結記念大売り出しの準備。{nl}     ベルクスタット商店会",
-   "en": ""
+   "en": "The war's end is near!{nl}Getting ready for our War's End{nl}Sale. - Bergstadt Merchants"
   },
   {
    "id": "r119_2114",
    "addr": "2114",
    "size": 316,
    "jp": " ・・グルド王女 ゆうかい犯・・{nl}      指名手配！{nl}    賞金 ２０００ソル{page}{FB00}   人 間族   男 １人{nl}   エルフ族   女 １人{nl}   ヤ－ク族   男 １人{page}{FB00}   擾報では グルド王女は{nl} 彼らに捕まったまま移動中らしい。{page}{FB00} 見かけた者は 我ヶに連絡せよ。{nl} ・・・・・・・ ・・・・・・・・",
-   "en": ""
+   "en": ".. Kidnappers of Guld Princess ..{nl}WANTED!{nl}Reward: 2000 Sol{page}{FB00}Human     male   1{nl}Elf       female 1{nl}Yaak      male   1{page}{FB00}Reports say they still hold{nl}the princess and are on the move.{page}{FB00}Anyone who sees them, report to us.{nl}....... ........"
   },
   {
    "id": "r119_2252",
    "addr": "2252",
    "size": 100,
    "jp": " 来年から 町の解放記念の日は{nl}すべての商売を休み 祭の日とする。{nl}      ベルクスタット商店会",
-   "en": ""
+   "en": "From next year, Liberation Day{nl}is a festival: all shops closed.{nl}- Bergstadt Merchants"
   },
   {
    "id": "r119_22E7",
    "addr": "22E7",
    "size": 34,
    "jp": "グルド兵{nl}「うわ－－－－－っ！！{page2}",
-   "en": ""
+   "en": "Guld Soldier{nl}\"Waaaaaaah!!{page2}"
   },
   {
    "id": "r119_2345",
    "addr": "2345",
    "size": 58,
    "jp": "グルド兵{nl}「うわ－－－－－っ！{nl}  うわ－－－－－っ！！{page2}",
-   "en": ""
+   "en": "Guld Soldier{nl}\"Waaaaaaah!{nl}Waaaaaaah!!{page2}"
   },
   {
    "id": "r119_23C8",
    "addr": "23C8",
    "size": 66,
    "jp": "ヘ－グとロ－グ{nl}『ヤ－ク族が使えば{nl} 破城つちも こうなるぜ～！{page2}",
-   "en": ""
+   "en": "Heeg and Rogue{nl}\"When the Yaak swing a battering ram,{nl} this is what happens~!{page2}"
   },
   {
    "id": "r119_242A",
    "addr": "242A",
    "size": 44,
    "jp": "グルド兵{nl}「は・はっ・はんらんだ－－っ！！{page2}",
-   "en": ""
+   "en": "Guld Soldier{nl}\"R..re..revolt!!{page2}"
   },
   {
    "id": "r119_24BA",
    "addr": "24BA",
    "size": 30,
    "jp": "スヴァルト{nl}「さあ 突撃だ！{page2}",
-   "en": ""
+   "en": "Svart{nl}\"Now, charge!{page2}"
   }
  ]
 }

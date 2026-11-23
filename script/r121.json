@@ -11,21 +11,21 @@
    "addr": "006F",
    "size": 132,
    "jp": "スヴァルト{nl}「やれ やれ・・・{nl} やっと 来たか。{page}{FB00}「ボルグ そして 仲間のみなさん{nl} とりあえず 奥の方へ{nl} おいでください。{page2}",
-   "en": ""
+   "en": "Svart{nl}\"Well, well... You finally came.{page}{FB00}\"Borg, and his friends, please come on{nl} into the back for now.{page2}"
   },
   {
    "id": "r121_011F",
    "addr": "011F",
    "size": 122,
    "jp": "スヴァルト{nl}「ボルグ さっそくだが{nl} ちょっと むこうで話がしたい。{page} そちらの みなさんには{nl} ちょいと 失礼するよ。{page2}",
-   "en": ""
+   "en": "Svart{nl}\"Borg, straight to it: I want a word{nl} over there.{page} Pardon us a moment, everyone.{page2}"
   },
   {
    "id": "r121_01B0",
    "addr": "01B0",
    "size": 414,
    "jp": " ごにょ ごにょ{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} ぼそ ぼそ{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} うん うん そうか・・・{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} で もって・・・・{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} ほ－ そいつは なかなか{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} そうか そうか{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl} よし わかった！{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{page2}",
-   "en": ""
+   "en": "Mutter mutter{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}Murmur murmur{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}Uh-huh, I see...{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}And then....{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}Ohh, not bad{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}I see, I see{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{nl}All right, got it!{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{wait}{page2}"
   },
   {
    "id": "r121_0365",

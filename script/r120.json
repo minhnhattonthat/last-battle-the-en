@@ -11,42 +11,42 @@
    "addr": "0071",
    "size": 114,
    "jp": "「いらっしゃい。{nl} ここは ヤ－ク族の{nl} 武器・防具の店だ。{page}「まあ 今は たいした品は{nl} おいてないが・・・。{page}",
-   "en": ""
+   "en": "\"Welcome. This is the Yaak weapon and{nl} armor shop.{page}\"Well, we don't have much in stock right{nl} now...{page}"
   },
   {
    "id": "r120_00F6",
    "addr": "00F6",
    "size": 360,
    "jp": "「ヤ－ク村が あんなことに{nl} なってなきゃ もうちょっと{nl} 売り物も あったんだけどね。{page}{FB00}「なんだい{wait}{wait}{nl} 知らないのかい？{page}「いま ヤ－ク族が むりやりに{nl} 作らされてる品物は すべて{nl} グルドが 取っちまうんだよ。{page}{FB00}「そこにいるのは スヴァルトの{nl} 息子の ボルグだね・・・。{page}「ヤ－ク村のことは{nl} 聞いているんだろうね{nl} だから 帰って来たんだろう？",
-   "en": ""
+   "en": "\"If the Yaak village weren't in such a{nl} state, we'd have more to sell.{page}{FB00}\"What's this?{wait}{wait} You don't know?{page}\"Everything the Yaak are being forced{nl} to make right now, Guld takes.{page}{FB00}\"That there is Svart's son, Borg...{page}\"You've heard about the Yaak village,{nl} haven't you? That's why you came{nl} back?"
   },
   {
    "id": "r120_0268",
    "addr": "0268",
    "size": 138,
    "jp": "「ボルグ・・・・・。{page} この店の 地下室に{nl} アンタが来るのをまっていた者が{nl} いるんだよ。{page}「誰なのかは 会ってからの{nl} おたのしみさ。",
-   "en": ""
+   "en": "\"Borg.....{page} There's someone in this shop's cellar{nl} who's been waiting for you to come.{page}\"Who it is, you'll see when you meet."
   },
   {
    "id": "r120_0300",
    "addr": "0300",
    "size": 252,
    "jp": "「この町の人間が このまま{nl} グルドに やられっぱなしだと{nl} 思うかい？{page}「この町だって{nl} 港町ハンスタットほどじゃないが{nl} 自由な商売の町で 通ってんだ。{page}「このままじゃ いないよ{wait}{wait}{nl} そのために この町は あの人を{nl} 秘かに呼びよせたんだからね。",
-   "en": ""
+   "en": "\"Do you think the people of this town{nl} will just keep taking it from Guld?{page}\"This town may not match the port of{nl} Hanstad, but it's known as a town of{nl} free trade.{page}\"We won't stand for this{wait}{wait}. That's{nl} why this town secretly sent for that{nl} man."
   },
   {
    "id": "r120_03FE",
    "addr": "03FE",
    "size": 170,
    "jp": "「スヴァルトは 傭兵としても{nl} 指揮官としても 有名だからね。{nl} まかせておけば だいじょうぶさ。{page}{FB00}「人を丸めこんで{nl} いいように 使うのも{nl} うまいんだけどさ・・・。",
-   "en": ""
+   "en": "\"Svart is famous both as a mercenary{nl} and as a commander. Leave it to him{nl} and all's well.{page}{FB00}\"He's good at talking folks round and{nl} using them as he likes, too, mind..."
   },
   {
    "id": "r120_04AA",
    "addr": "04AA",
    "size": 74,
    "jp": "「さぁ さぁ あんたたちは{nl} あんたたちの やるべきことを{nl} やっとくれ。",
-   "en": "",
+   "en": "\"Now, now, you lot go do what you{nl} have to do.",
    "reached": false
   },
   {
@@ -54,7 +54,7 @@
    "addr": "04F6",
    "size": 144,
    "jp": "「いらっしゃいませ。{nl} ここは ヤ－ク族の{nl} 武器・防具の店です。{page}「やっと ヤ－ク村から{nl} 品物が とどいたんで{nl} ただいま 大売りだし中！{page}",
-   "en": ""
+   "en": "\"Welcome. This is the Yaak weapon and{nl} armor shop.{page}\"At last goods have arrived from the{nl} Yaak village, so we're having a big sale!{page}"
   }
  ]
 }
