@@ -89,6 +89,7 @@ def battle_patch(orig, writer):
 # 4 px font across their own tiles; Borg gets two new tiles after the stream's end ($1FB-$1FC, zero and unused in
 # battle VRAM, work/qa/bw7/battle_field ppu dump). Rows 1-7 like the kana; ink colour 3 on colour 0 (transparent).
 NAME_STREAM, NAME_LEN = 0x150B34, 0x509
+COLUMN_AT = 0x150FF0   # $2A:8FF0 up to the old stream's end: column data of battle_text.column_messages
 NAME_ENTRY = [0x1404A6, 0x14736E]          # load-list entries: +2 VRAM word, +4 24-bit source, +7 length
 NAME_GLYPHS = {
     "K": ["....", "#..#", "#.#.", "##..", "##..", "#.#.", "#..#", "#..#"],
@@ -155,7 +156,7 @@ def battle_names_patch(orig, writer, start):
         for t, tb in zip(tiles, name_tiles(name, len(tiles))):
             d[(t - 0x180) * 16:(t - 0x180 + 1) * 16] = tb
     enc = blz.encode(len(d).to_bytes(2, "little") + bytes(d))
-    end = NAME_STREAM + NAME_LEN
+    end = COLUMN_AT  # the rest of the old stream's space holds battle_text.column_messages
     assert start + len(enc) <= end, f"battle name stream {len(enc)} bytes does not fit before {end:X}"
     assert (start & ~0x7FFF) == (end - 1 & ~0x7FFF), "stream must stay in bank $2A"
     writer.put(start, enc + b"\x00" * (end - start - len(enc)), "battle names: English status-box name tiles")

@@ -1,7 +1,7 @@
 # Entries allowed to stay Japanese for now: `id reason`. tools/batches.py check fails on any other untranslated entry.
 # All of these are battle-only and wait on the phase-8 battle coverage pass (docs/status.md Next 1a).
-bt_198045 one-tile particle の of a battle message built at run time; meaning and partner rects unseen in game (phase 8)
-bt_1980E3 one-tile particle に of a run-time battle message; unseen in game (phase 8)
+bt_198045 の column of 敵の奇襲攻撃!!; no longer read: battle_text.column_messages repoints the message to English columns
+bt_1980E3 に column of 奇襲攻撃に成功!; no longer read (battle_text.column_messages)
 bt_19D4BB クルトに + kanji pieces, a battle message never shown yet; translate once seen (phase 8, docs/polish.md)
 bt_19D534 one-tile particle し (with ま/た: a run-time ...しました ending); unseen in game (phase 8)
 bt_19D538 one-tile particle ま of the same run-time message (phase 8)

@@ -183,6 +183,40 @@ def encode(rom, e):
     return out
 
 
+# Battle-start messages typed one 1x2 column per frame: 8 copy ops (8 bytes each: op, dest(2), src(3), w=1, h=2)
+# whose sources are kanji columns shared between the two messages (and the particles bt_198045 の, bt_1980E3 に).
+# English columns go to font_bg3.COLUMN_AT and each op is repointed there; the old columns stay unused.
+COLUMN_MSGS = [  # (script file offset, JP, top row, bottom row), each row <= 8 tiles
+    (0x198000, "敵の奇襲攻撃!!", "Enemy", "ambush!!"),
+    (0x1980A2, "奇襲攻撃に成功!", "Surprise", "attack!"),
+]
+
+
+def column_messages(orig, writer):
+    import font_bg3
+    cols, data = {}, bytearray()
+    for at, _, top, bottom in COLUMN_MSGS:
+        ops = [at + 8 * i for i in range(8)]
+        assert all(orig[o + 5] == SCRIPT_BANK and orig[o + 6:o + 8] == b"\x01\x02" for o in ops), f"script moved {at:X}"
+        attr = u16(orig, off(SCRIPT_BANK, u16(orig, ops[0] + 3))) & ATTR_MASK
+        c = en_codec(orig, attr)
+        t, b = c.words(top), c.words(bottom)
+        assert len(t) <= 8 and len(b) <= 8, (top, bottom)
+        t += [attr | SPACE] * (8 - len(t))
+        b += [attr | SPACE] * (8 - len(b))
+        for o, pair in zip(ops, zip(t, b)):
+            if pair not in cols:
+                cols[pair] = font_bg3.COLUMN_AT + len(data)
+                data += b"".join(w.to_bytes(2, "little") for w in pair)
+            f = cols[pair]
+            writer.put(o + 3, ((f // 0x8000) << 16 | 0x8000 | f & 0x7FFF).to_bytes(3, "little"),
+                       f"battle column message {at:X}")
+    end = font_bg3.NAME_STREAM + font_bg3.NAME_LEN
+    assert font_bg3.COLUMN_AT + len(data) <= end, f"column messages {len(data)} bytes"
+    writer.put(font_bg3.COLUMN_AT, bytes(data) + bytes(end - font_bg3.COLUMN_AT - len(data)),
+               "battle column messages: English columns")
+
+
 def marker_text(e):
     """Marker build: every row holding kana becomes the offset (the id without `bt_`) and filler, same tile count,
     tokens (borders, dakuten, kanji pieces) kept; other rows stay as they are."""

@@ -37,7 +37,10 @@ name graphics** (クルト = tiles $1A4-$1A6 in the status box): graphics text, 
 ### Battle LZ (tools/blz.py, decoder 30:F5C1)
 2 KB ring window at `$7EC000`, zero-filled, write position 0. `0xxxxxxx yyyyzzzz` = copy z+2 bytes from
 pos - (x << 4 | y); `10nnnnnn` = n+1 literals; `11e mm nnn [lo]` = fill, count n+2 (or (n << 8 | lo) + 2 with e),
-pattern of mm+1 bytes. The decoder runs while the source < start + length - 1.
+pattern of mm+1 bytes. The decoder runs while the source < start + length - 1. A copy reads its whole source
+before writing (offset < length does not repeat its own output, it reads the window's old bytes): until
+2026-11-24 the encoder emitted such copies and every battle showed garbage tiles (lines in the box borders, `!`
+as a cross); found by comparing a VRAM dump with `blz.decode`. The encoder now keeps length <= offset.
 
 ## Battle messages and screens (extracted: `script/battle.json`, kind `battle`, `tools/battle_text.py`)
 BG3 tile words with attribute bits (`$20xx`/`$21xx`/`$60A0`; tiles >= $100 are kanji or two-row pieces, `$94` is the

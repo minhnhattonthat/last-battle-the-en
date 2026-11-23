@@ -16,6 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "tools"))
+import battle_text  # noqa: E402
 import blocks  # noqa: E402
 import check_rom  # noqa: E402
 import font_bg3  # noqa: E402
@@ -110,6 +111,7 @@ def build(out=OUT, recompress=False, orig_path=ORIG_PATH, script_dir=insert.SCRI
         b = region.blocks[font_bg3.BLOCK]
         b.data = font_bg3.patch(b.data)
         font_bg3.battle_patch(orig, w)
+        battle_text.column_messages(orig, w)  # "Enemy ambush!!" / "Surprise attack!" (typed column by column)
     region.pack(w.rom, w.put, recompress=recompress, free=blocks.FREE + ([blocks.EXPANSION] if asm else []))
     if asm:
         apply_asm(w)
