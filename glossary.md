@@ -65,6 +65,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ハイラム | Hiram | | | |
 | ロベルト | Robert | | | |
 | ガッキンコ | Gakkinko | | | |
+| ティラン | Tiran | | King Tiran of Guld, Regina's father | |
 
 ## Places and peoples
 | JP | EN | max | notes | Avoid |
@@ -89,6 +90,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | ノルドリグ | Nordrig | | | |
 | クロケット | Kroket | | village | |
 | エルディス | Eldis | | island of fire and ice | |
+| ルドムの塔 | Tower of Rudom | | Febennels' training tower | |
+| 星の広場 | Star Square | | clearing where the elf village appears | |
 | ドキワ | Dokiwa | | cave | |
 | ブレックフェール | Bleckfel | | | |
 | キューケンホフ | Keukenhof | | | |
@@ -97,7 +100,8 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
 | マナ | mana / Mana | | 火/水/大地/風のマナ = Fire/Water/Earth/Wind Mana | |
-| ネファ | Nepha | | | |
+| ネファ | Nepha | | 銀/金/光のネファ = Silver/Gold/Light Nepha | |
+| ミランシェル | Miranchel | 8 | the finest armor (item_1D; 8-tile name field) | |
 | オーラソード | Aura Sword | | | |
 | ハーブ | herb / Herb | | | |
 | ソル | Sol | | currency | |

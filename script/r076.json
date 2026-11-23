@@ -292,301 +292,301 @@
    "addr": "1FED",
    "size": 376,
    "jp": "「よいか 本来 魔法とは{nl} 人に 教わるのではなく{nl} 自分で 作るものなのじゃ。{page}「そのためには{nl} ４つのマナ{wait}{wait}という力がいる。{page} なぜなら ほとんどの魔法は{nl} マナを 組み合わせることで{nl} 合成できるからなのじゃ。{page}「つまり 魔法の修行とは{nl} マナの力を高め 新たな魔法を{nl} 作ってゆくことなのじゃよ。{page}「どうじゃな{nl} 少しは この世界の魔法について{nl} わかったかな？{wait}{wait}",
-   "en": ""
+   "en": "\"Listen. Magic is not something others{nl} teach you. It is something you make{nl} yourself.{page}\"For that, you need a power called the{nl} four mana. {wait}{wait}{page} For nearly every spell can be made by{nl} combining mana.{page}\"So training in magic means raising your{nl} mana and making new spells.{page}\"Well? Do you understand a little about{nl} the magic of this world now? {wait}{wait}"
   },
   {
    "id": "r076_216B",
    "addr": "216B",
    "size": 184,
    "jp": "フェ－ベンネルス{nl}「では さっそく{nl} 移動するとしよう。{page}「なに どこへじゃと？{wait}{wait}{nl} きまっておるじゃろう。{page}「おまえたちが 修行する{nl} ルドムの塔へじゃよ。{wait}{wait}{nl} さあ ゆくぞ！{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Then let us move at once.{page}\"What, where to? {wait}{wait}Isn't it obvious?{page}\"To the Tower of Rudom, where you will{nl} train. {wait}{wait}Come, let's go!{page2}"
   },
   {
    "id": "r076_223F",
    "addr": "223F",
    "size": 72,
    "jp": "フェ－ベンネルス{nl}「では もう一度 説明するから{nl} よく聞くのじゃぞ。{page}",
-   "en": ""
+   "en": "Febennels{nl}\"Then I shall explain once more, so{nl} listen well.{page}"
   },
   {
    "id": "r076_228B",
    "addr": "228B",
    "size": 438,
    "jp": "フェ－ベンネルス{nl}「おお ２人とも帰ってきたか。{page}{FB00}「・・・ん？{wait}{wait}{nl} ほほう・・ついに 銀のネファを{nl} 見つけたのじゃな！{page} ２人とも よく がんばった！{nl} これでルドムの塔での修行は{nl} 終りじゃ。{page}「その銀のネファは{nl} おまえたちに あげよう。{page} それは特別な魔法を作るのに{nl} なくては ならぬもの。{nl} 大切にするがよい。{page2}{F9FF}{C11E}{C1FF}{C101}フェ－ベンネルス{nl}「おや ２人とも{nl} だいぶ つかれとるようじゃな。{page} さあ 力を回復してあげよう。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Oh, you two are back.{page}{FB00}\"...Hm? {wait}{wait}Ho ho.. So you found the{nl} Silver Nepha at last!{page} Well done, both of you! Your training in{nl} the Tower of Rudom is over.{page}\"I give that Silver Nepha to you.{page} You cannot make special spells without{nl} it. Take good care of it.{page2}{F9FF}{C11E}{C1FF}{C101}Febennels{nl}\"Oh, you both look very tired.{page} Come, let me restore your strength.{page2}"
   },
   {
    "id": "r076_244F",
    "addr": "244F",
    "size": 104,
    "jp": "フェ－ベンネルス{nl}「そうじゃ{nl} ちょうどよい機会じゃ。{page} おまえたちを お客様に{nl} しょうかいしよう。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Ah, yes. This is a good chance.{page} Let me introduce you to my guests.{page2}"
   },
   {
    "id": "r076_24CA",
    "addr": "24CA",
    "size": 90,
    "jp": "フェ－ベンネルス{nl}「レジ－ナ姫{wait}{wait}{wait}{wait}{nl} この２人が わしの弟子の{nl} クルトとメイじゃ。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Princess Regina, {wait}{wait}{wait}{wait}these two{nl} are my pupils, Kurt and Mei.{page2}"
   },
   {
    "id": "r076_252F",
    "addr": "252F",
    "size": 68,
    "jp": "レジ－ナ{nl}「こ・・この子たちが{nl} 老魔法使い殿の 弟子ですって！？{page2}",
-   "en": ""
+   "en": "Regina{nl}\"Th..these children are the old wizard's{nl} pupils?!{page2}"
   },
   {
    "id": "r076_2580",
    "addr": "2580",
    "size": 78,
    "jp": "フェ－ベンネルス{nl}「クルトよ こちらはレジ－ナ殿。{nl} グルド王国の姫様じゃ。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Kurt, this is Regina-dono. She is a{nl} princess of the Guld kingdom.{page2}"
   },
   {
    "id": "r076_25ED",
    "addr": "25ED",
    "size": 90,
    "jp": "「それから あっちにおるのが{nl} お供の ええと・・・{wait}{wait}{wait}{wait}{nl} ・・・なんじゃったかな？{page2}",
-   "en": ""
+   "en": "\"And the one over there is her escort,{nl} um... {wait}{wait}{wait}{wait}...what was it again?{page2}"
   },
   {
    "id": "r076_2652",
    "addr": "2652",
    "size": 86,
    "jp": "ボルグ{nl}「ヤ－ク族の戦士 ボルグだ。{page2}{F9FF}フェ－ベンネルス{nl}「そうそう そうじゃった。{page}",
-   "en": ""
+   "en": "Borg{nl}\"Borg, warrior of the Yaak.{page2}{F9FF}Febennels{nl}\"Yes, yes, that was it.{page}"
   },
   {
    "id": "r076_26B3",
    "addr": "26B3",
    "size": 76,
    "jp": "「クマみたいじゃが{nl} あれでも ヤ－ク族という{nl} りっぱな種族なんじゃぞ。{page2}",
-   "en": ""
+   "en": "\"He may look like a bear, but the Yaak{nl} are a fine people, you know.{page2}"
   },
   {
    "id": "r076_2716",
    "addr": "2716",
    "size": 92,
    "jp": "レジ－ナ{nl}「それより老魔法使い殿{nl} どうか考えなおして下さい！{page} この子たちでは無理です！{page2}",
-   "en": ""
+   "en": "Regina{nl}\"More importantly, old wizard, please{nl} reconsider!{page} These children can't do it!{page2}"
   },
   {
    "id": "r076_2788",
    "addr": "2788",
    "size": 110,
    "jp": "レジ－ナ{nl}「我が父ティラン王は{nl} いまや 野望のとりこ・・・{page} 父を正気に もどすことが{nl} できるのは・・・{page2}",
-   "en": ""
+   "en": "Regina{nl}\"My father, King Tiran, is now a slave to{nl} his ambition...{page} The only one who can bring him back to{nl} his senses...{page2}"
   },
   {
    "id": "r076_2801",
    "addr": "2801",
    "size": 68,
    "jp": "「そして{nl} 我がグルドリ－ケを救えるのは{nl} あなたしか いません！{page2}",
-   "en": ""
+   "en": "\"And the only one who can save our{nl} Guldrike, is you!{page2}"
   },
   {
    "id": "r076_284D",
    "addr": "284D",
    "size": 146,
    "jp": "レジ－ナ{nl}「すべては あの{nl} 枢機卿ケッテリの せいなのです。{page} やつが 現われてから{nl} 我がグルドリ－ケの すべてが{nl} 変わってしまった・・・{page2}",
-   "en": ""
+   "en": "Regina{nl}\"It is all the fault of that Cardinal{nl} Ketteri.{page} Ever since he appeared, everything in{nl} our Guldrike has changed...{page2}"
   },
   {
    "id": "r076_28E6",
    "addr": "28E6",
    "size": 156,
    "jp": "「ケッテリは あの優しかった{nl} 父王の心に おそろしい野心を{nl} ふきこみ・・{page} また いつの間にか{nl} 兵士たちも やつの言うままに{nl} なってしまいました。{page2}",
-   "en": ""
+   "en": "\"Ketteri filled my once-gentle father's{nl} heart with terrible ambition..{page} And before we knew it, the soldiers too{nl} were doing whatever he said.{page2}"
   },
   {
    "id": "r076_298A",
    "addr": "298A",
    "size": 160,
    "jp": "「さらに どこからか{nl} 魔導士や魔物を 連れてきて{nl} 軍に加え・・{page} そしてついに この戦争を起こして{nl} 兄弟国シルヴェルまでも{nl} 攻め滅ぼしてしまった・・・{page2}",
-   "en": ""
+   "en": "\"He even brought sorcerers and{nl} monsters from somewhere and added{nl} them to the army..{page} And at last he started this war and{nl} destroyed even our brother nation,{nl} Silvel...{page2}"
   },
   {
    "id": "r076_2A32",
    "addr": "2A32",
    "size": 34,
    "jp": "「だが こんなことが人ヶに・・・{page2}",
-   "en": ""
+   "en": "\"But such deeds can never be forgiven{nl} by the people...{page2}"
   },
   {
    "id": "r076_2A5F",
    "addr": "2A5F",
    "size": 88,
    "jp": "「このエットミランシェルの{nl} 天と地のすべてに いつまでも{nl} 許される はずはない！！{page2}",
-   "en": ""
+   "en": "\"...or by all of heaven and earth in{nl} Ettmiranshel, ever!!{page2}"
   },
   {
    "id": "r076_2AC4",
    "addr": "2AC4",
    "size": 124,
    "jp": "フェ－ベンネルス{nl}「その通りじゃ レジ－ナ姫。{page} このままでは グルド王国も{nl} 滅亡の道を たどることに{nl} なるじゃろう。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Just so, Princess Regina.{page} If this goes on, the Guld kingdom too{nl} will go down the road to ruin.{page2}"
   },
   {
    "id": "r076_2B51",
    "addr": "2B51",
    "size": 44,
    "jp": "レジ－ナ{nl}「ですから{nl} 老魔法使い殿・・・{page2}",
-   "en": ""
+   "en": "Regina{nl}\"That is why, old wizard...{page2}"
   },
   {
    "id": "r076_2B8A",
    "addr": "2B8A",
    "size": 112,
    "jp": "ボルグ{nl}「姫！{wait}{wait} のんびり話してるヒマは{nl} なさそうですぜ。{page} どうやら 追っ手に{nl} かぎつけられたようだ。{page2}",
-   "en": ""
+   "en": "Borg{nl}\"Princess! {wait}{wait}No time for a nice chat,{nl} looks like.{page} Seems the pursuers have sniffed us{nl} out.{page2}"
   },
   {
    "id": "r076_2C01",
    "addr": "2C01",
    "size": 36,
    "jp": "フェ－ベンネルス{nl}「追っ手じゃと？{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Pursuers?{page2}"
   },
   {
    "id": "r076_2C44",
    "addr": "2C44",
    "size": 178,
    "jp": "フェ－ベンネルス{nl}「・・・なるほど・・・{page} 姫といえども{nl} 今のグルドにとっては{nl} うらぎり者というわけか。{page2}{F9FF}レジ－ナ{nl}「はい・・・{wait}{wait}{wait}{wait}{nl} おそらく 枢機卿の手の者が・・{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"...I see...{page} Even a princess is a traitor to the Guld{nl} of today.{page2}{F9FF}Regina{nl}\"Yes... {wait}{wait}{wait}{wait}It must be the Cardinal's{nl} men..{page2}"
   },
   {
    "id": "r076_2D02",
    "addr": "2D02",
    "size": 98,
    "jp": "ボルグ{nl}「相手は ２部隊ほどだが{nl} どうします？{page} おれと姫だけじゃ{nl} 敵の数が ちと多い・・・{page2}",
-   "en": ""
+   "en": "Borg{nl}\"There's about two squads of them.{nl} What'll we do?{page} Just me and the princess, that's a few{nl} too many...{page2}"
   },
   {
    "id": "r076_2D6C",
    "addr": "2D6C",
    "size": 82,
    "jp": "レジ－ナ{nl}「しかし いまさら逃げられん。{page} しかたないだろう{nl} いくぞ ボルグ！{page2}",
-   "en": ""
+   "en": "Regina{nl}\"But we can't run now.{page} No choice. Let's go, Borg!{page2}"
   },
   {
    "id": "r076_2DCD",
    "addr": "2DCD",
    "size": 28,
    "jp": "フェ－ベンネルス{nl}「まて！{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Wait!{page2}"
   },
   {
    "id": "r076_2E23",
    "addr": "2E23",
    "size": 136,
    "jp": "フェ－ベンネルス{nl}「１隊は わしが引き受けよう。{page} 残る１隊は そなたら２人と{nl} このクルトとメイの{nl} ４人で 力を合せて戦うがよい。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"I shall take one squad.{page} The other, you two will fight together{nl} with Kurt and Mei here, the four of{nl} you.{page2}"
   },
   {
    "id": "r076_2EBF",
    "addr": "2EBF",
    "size": 56,
    "jp": "レジ－ナ{nl}「危険です！{nl} その子たちを 戦わすなど・・{page2}",
-   "en": ""
+   "en": "Regina{nl}\"That's dangerous! Making these children{nl} fight..{page2}"
   },
   {
    "id": "r076_2EFE",
    "addr": "2EFE",
    "size": 106,
    "jp": "フェ－ベンネルス{nl}「この２人は シルヴェル城の戦いを{nl} 生きぬいた者じゃ。{page2}{F9FF}レジ－ナ{nl}「あ・・・・・・{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"These two survived the battle of Silvel{nl} Castle.{page2}{F9FF}Regina{nl}\"Ah......{page2}"
   },
   {
    "id": "r076_2F6F",
    "addr": "2F6F",
    "size": 92,
    "jp": "フェ－ベンネルス{nl}「だいじょうぶじゃ。{nl} ４人の力を合せれば必ず勝てる。{page} さあ ゆくぞ！{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"It will be fine. With the four of you{nl} together, you are sure to win.{page} Now, let's go!{page2}"
   },
   {
    "id": "r076_3048",
    "addr": "3048",
    "size": 112,
    "jp": "レジ－ナ{nl}「クルト メイ ありがとう。{page} きみたちのおかげで{nl} ひとまず 追っ手に{nl} 勝つことができたようだ。{page2}",
-   "en": ""
+   "en": "Regina{nl}\"Kurt, Mei, thank you.{page} Thanks to you, it seems we have beaten{nl} the pursuers for now.{page2}"
   },
   {
    "id": "r076_30BF",
    "addr": "30BF",
    "size": 110,
    "jp": "フェ－ベンネルス{nl}「どうじゃな レジ－ナ姫。{page} わしの言った通り{nl} この２人 なかなか{nl} やりおるじゃろう。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Well, Princess Regina?{page} Just as I said, these two are quite{nl} something, aren't they?{page2}"
   },
   {
    "id": "r076_3134",
    "addr": "3134",
    "size": 148,
    "jp": "フェ－ベンネルス{nl}「クルト{wait} メイ{wait}{wait}{nl} ２人とも これからは{nl} レジ－ナ姫とともに ゆくがよい。{page} わしにかわって{nl} 姫に力をかしてやるのじゃ。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Kurt, {wait}Mei, {wait}{wait}from now on, you two{nl} shall go with Princess Regina.{page} Lend the princess your strength in my{nl} place.{page2}"
   },
   {
    "id": "r076_31ED",
    "addr": "31ED",
    "size": 138,
    "jp": "メイ{nl}「あたしたちが・・・{wait}{wait}{wait}{wait}{nl} グルド人の この人たちと{nl} いっしょに！？{page2}{F9FF}ボルグ{nl}「じいさん！{nl} そりゃ ムチャってもんだぜ！{page2}",
-   "en": ""
+   "en": "Mei{nl}\"Us..? {wait}{wait}{wait}{wait}Together with these{nl} Guld people?!{page2}{F9FF}Borg{nl}\"Old man! That's just crazy!{page2}"
   },
   {
    "id": "r076_3281",
    "addr": "3281",
    "size": 190,
    "jp": "フェ－ベンネルス{nl}「クルト メイ{nl} よく聞くがよい。{page}「ルドムの塔での{nl} おまえたちの修行は終った。{page} じゃが まだまだ{nl} 一人前の魔法使いとは言えぬ。{page} だから 修行の旅が必要なのじゃ。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Kurt, Mei, listen well.{page}\"Your training in the Tower of Rudom is{nl} over.{page} But you are not yet full mages.{page} That is why you need a journey of{nl} training.{page2}"
   },
   {
    "id": "r076_334A",
    "addr": "334A",
    "size": 90,
    "jp": "レジ－ナ{nl}「老魔法使い殿・・・{page} やはり いっしょに来ては{nl} いただけないのですか・・・{page2}",
-   "en": ""
+   "en": "Regina{nl}\"Old wizard...{page} So you really won't come with us...{page2}"
   },
   {
    "id": "r076_33AB",
    "addr": "33AB",
    "size": 274,
    "jp": "フェ－ベンネルス{nl}「レジ－ナ姫{nl} この２人の力は 見たじゃろ？{page} わしのような 老いぼれより{nl} 役に立つじゃろうよ。{page}「それに わしは しばらく{nl} 旅に出ようと思っておる。{page} 少し気になることがあってな。{nl} 調べてみたいのじゃ。{page2}{F9FF}レジ－ナ{nl}「わかりました 老魔法使い殿。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Princess Regina, you have seen what{nl} these two can do, yes?{page} They will be more use than an old{nl} fogey like me.{page}\"Besides, I mean to go on a journey for{nl} a while.{page} Something is on my mind. I want to look{nl} into it.{page2}{F9FF}Regina{nl}\"I understand, old wizard.{page2}"
   },
   {
    "id": "r076_34CB",
    "addr": "34CB",
    "size": 40,
    "jp": "レジ－ナ{nl}「クルト よろしく たのむ。{page2}",
-   "en": ""
+   "en": "Regina{nl}\"Kurt, I'm counting on you.{page2}"
   },
   {
    "id": "r076_34FD",
    "addr": "34FD",
    "size": 84,
    "jp": "メイ{nl}「そうね・・・{page} 旅は みちづれって言うし{nl} 味方は多いほうが いいわよね。{page2}",
-   "en": ""
+   "en": "Mei{nl}\"Well...{page} They say company makes the road{nl} shorter. The more friends, the better,{nl} right?{page2}"
   },
   {
    "id": "r076_355B",
    "addr": "355B",
    "size": 62,
    "jp": "ボルグ{nl}「ちっ・・ なんだか たよりね－が{nl} しかたねえな。{page2}",
-   "en": ""
+   "en": "Borg{nl}\"Tch.. They don't look like much, but I{nl} guess there's no choice.{page2}"
   },
   {
    "id": "r076_35A0",
    "addr": "35A0",
    "size": 112,
    "jp": "フェ－ベンネルス{nl}「よいな{nl} 今から そなたらは仲間じゃ。{page} これからは ４人で{nl} 力を合わせて ゆくがよい。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Very well. From now on, you are{nl} companions.{page} From here on, go forward as four, with{nl} your strength combined.{page2}"
   },
   {
    "id": "r076_364E",
    "addr": "364E",
    "size": 322,
    "jp": "フェ－ベンネルス{nl}「そうじゃ クルト。{nl} 一度 エルフ王に会うがよい。{page}「エルフの里は{nl} この すぐ北の森の中じゃ。{page}「里の姿は 外からは見えぬし{nl} たびたび場所も変わるが・・・{page} もうすぐ 星の広場という{nl} 小さな空地に現われるはずじゃ。{page}「ロベルト王や エルフたちの話は{nl} きっと おまえたちの{nl} 役に立つじゃろう。{page2}",
-   "en": ""
+   "en": "Febennels{nl}\"Ah yes, Kurt. You should meet the elf{nl} king once.{page}\"The elf village is in the forest just{nl} north of here.{page}\"The village cannot be seen from{nl} outside, and it often moves...{page} But it should soon appear in a small{nl} clearing called the Star Square.{page}\"What King Robert and the elves tell{nl} you will surely help you.{page2}"
   }
  ]
 }

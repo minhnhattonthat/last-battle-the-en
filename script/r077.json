@@ -11,35 +11,35 @@
    "addr": "009E",
    "size": 182,
    "jp": "「エルフの 森で{nl} わになって あそぼ。{page}「みんなで ネファを持って{nl} 魔法ごっこして あそぼ。{page}「銀のネファと 火のマナで{nl} だれも魔法は となえられない。{nl} さあ やってごらん！",
-   "en": ""
+   "en": "\"In the elf forest, let's play in a ring.{page}\"Everyone take a Nepha and play at{nl} magic.{page}\"With Silver Nepha and Fire Mana, no{nl} one can cast a spell. Come on, try it!"
   },
   {
    "id": "r077_015C",
    "addr": "015C",
    "size": 182,
    "jp": "「エルフの 森で{nl} わになって あそぼ。{page}「みんなで ネファを持って{nl} 魔法ごっこして あそぼ。{page}「光のネファと 風のマナで{nl} 好きなところへ とんでいける。{nl} さあ やってごらん！",
-   "en": ""
+   "en": "\"In the elf forest, let's play in a ring.{page}\"Everyone take a Nepha and play at{nl} magic.{page}\"With Light Nepha and Wind Mana, you{nl} can fly wherever you like. Come on, try{nl} it!"
   },
   {
    "id": "r077_021A",
    "addr": "021A",
    "size": 238,
    "jp": "「エルフの 森で{nl} わになって あそぼ。{page}「みんなで ネファを持って{nl} 魔法ごっこして あそぼ。{page}「銀のネファは シルヴェルリ－ケ{nl} 金のネファは グルドリ－ケ{nl} 光のネファは イカダ族のもの。{page}「さあ みんなで{nl} さがしに い・こ・う！",
-   "en": ""
+   "en": "\"In the elf forest, let's play in a ring.{page}\"Everyone take a Nepha and play at{nl} magic.{page}\"Silver Nepha is Silvelrike's, Gold Nepha{nl} is Guldrike's, Light Nepha belongs to the{nl} raft folk.{page}\"Come on, everyone, let's go and fi-nd{nl} them!"
   },
   {
    "id": "r077_0310",
    "addr": "0310",
    "size": 202,
    "jp": "「エットミランシェル１の{nl} 強い強い よろい。{page}「シルヴェル糸と 鳥人の羽と{nl} ヤ－ク族の たくみの腕。{nl} その名も ミランシェル。{page}「軽くて 強い{nl} ドラゴンの つばさのような{nl} 最上の よろいだよ。",
-   "en": ""
+   "en": "\"The strongest, strongest armor in all{nl} Ettmiranshel.{page}\"Silvel thread, birdman feathers and{nl} the craft of the Yaak. Its name is{nl} Miranchel.{page}\"Light and strong, like a dragon's wing,{nl} the finest armor there is."
   },
   {
    "id": "r077_03E2",
    "addr": "03E2",
    "size": 212,
    "jp": "「エルフの 森で{nl} わになって あそぼ。{page}「みんなで ネファを持って{nl} 魔法ごっこして あそぼ。{page}「ネファとマナの 組み合わせ。{nl} 変幻自在の 組み合わせ。{page} さあ みんなで わになって{nl} ためして み・よ・う！",
-   "en": ""
+   "en": "\"In the elf forest, let's play in a ring.{page}\"Everyone take a Nepha and play at{nl} magic.{page}\"Nepha and mana, put them together.{nl} Mix and match them any way.{page} Come on, everyone, make a ring and{nl} let's gi-ve it a try!"
   },
   {
    "id": "r077_04BE",
