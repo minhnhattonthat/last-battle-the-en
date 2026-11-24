@@ -98,22 +98,41 @@ def specs(kind):
         return [keys + "|-|" + ",".join(["god", "@1DDF:0053"] + kurt([(t, tn[t]) for t in ts]) + [MP99])
                 for ts in (range(0, 12), range(10, 22))]
     if kind == "bparty":  # battles with all four members: the battle party is the ids at $1DD4-$1DD7 (30:9CEA),
-        # not $3E/$0600; members 2-4 get HP so they stand. Victory windows, Run, item list walk + use.
+        # not $3E/$0600; members 2-4 get HP so they stand. The battle auto-fights unless a key is pressed while the
+        # COMMAND banner is up: that key (OPEN) brings up the command row ~250 frames later: Atk / Cmd / Plan / Run.
+        # Cmd > a gives Kurt's row Cast / Item / Gear / ...; Item > a shows "Who?" over Kurt's list, a again puts
+        # the cursor in the list (3 columns, the description box follows it), a uses, a picks the target.
         party = ["@1DD4:0201", "@1DD6:0403", "@003E:0004", "@0600:0100", "@0602:0302"]
         for rec in (0x19E4, 0x1AC8, 0x1BAC):
             party += [f"@{rec + 9:04X}:0050", f"@{rec + 0xB:04X}:0050", f"@{rec + 0xD:04X}:0020", f"@{rec + 0xF:04X}:0020"]
         items = [0x42, 0x43, 0x44, 0x45, 0x46, 0x47, 0x48, 0x49, 0x4A, 0x4B, 0x4C, 0x4D, 0x4E, 0x56, 0x57, 0x59]
         inv = [f"@{0x19CF + i:04X}:{items[i + 1]:02X}{items[i]:02X}" for i in range(0, 16, 2)]
-        b = "0x00 40 30 1100 -;"
-        mash = "6 a;120 -;" * 20
-        walk = "6 down;40 -;" * 8 + "6 right;40 -;" + "6 up;40 -;" * 8
-        use = "6 a;150 -;6 right;40 -;6 right;40 -;6 a;120 -;6 a;120 -;"
-        out = [b + mash + "60 -|-|" + ",".join(["god", "win", "@1DDF:0053"] + party),
-               b + ("6 right;40 -;6 right;40 -;6 a;300 -;" * 4) + "60 -|-|" + ",".join(["god", "@1DDF:0053"] + party),
-               b + use + walk + "6 a;120 -;6 a;120 -;6 a;200 -|-|" + ",".join(["god", "@1DDF:0053"] + party + inv)]
-        for k in range(1, 6):  # use item k (down k) on Kurt, HP and MP low: the use messages
-            out.append(b + use + "6 down;40 -;" * k + "6 a;120 -;6 a;120 -;6 a;200 -|-|" +
-                       ",".join(["@1DDF:0053", HPLOW, MP0] + party + inv))
+        b = "0x00 40 30 1100 -;6 a;250 -;"
+        cmd = "6 right;60 -;6 a;150 -;"
+        item = cmd + "6 right;60 -;6 a;150 -;6 a;150 -;"
+        mash = "6 a;120 -;" * 12
+        grp = ["god", "@1DDF:0053"]
+        out = [  # 0: win with the party, long enough for every LEVEL UP window
+               "0x00 40 30 1100 -;" + "6 a;120 -;" * 40 + "60 -|-|" + ",".join(["god", "win", "@1DDF:0053"] + party)]
+        for k in range(2):  # 1-2: Run > tactic k, with the party; 3-4: alone (Kurt ran away / can't escape)
+            out.append(b + "6 right;60 -;" * 3 + "6 a;150 -;" + "6 down;40 -;" * k + "6 a;200 -;" + mash + "|-|" +
+                       ",".join(grp + party))
+        for k in range(2):
+            out.append(b + "6 right;60 -;" * 3 + "6 a;150 -;" + "6 down;40 -;" * k + "6 a;200 -;" + mash + "|-|" +
+                       ",".join(grp))
+        # 5-6: walk the item list (descriptions), row-major and column-major
+        out.append(b + item + "6 right;40 -;" * 17 + "60 -|-|" + ",".join(grp + party + inv))
+        out.append(b + item + ("6 down;40 -;" * 6 + "6 right;40 -;") * 3 + "60 -|-|" + ",".join(grp + party + inv))
+        out.append(b + item + "6 a;150 -;" + mash + "|-|" + ",".join(grp + party))  # 7: no items
+        out.append(b + cmd + "6 right;60 -;6 right;60 -;6 a;150 -;6 a;150 -;" + mash + "|-|" +  # 8: Gear, no weapon
+                   ",".join(grp + party + ["@19E0:0000", "@19E2:0000"]))
+        for k in range(16):  # 9-24: use item k on Kurt (HP 1, MP 0): the use messages
+            out.append(b + item + "6 right;40 -;" * (k % 3) + "6 down;40 -;" * (k // 3) + "6 a;150 -;6 a;150 -;" +
+                       mash + "|-|" + ",".join(["@1DDF:0053", HPLOW, MP0] + party + inv))
+        tn = type_names()  # 25-33: cast a status spell from slot 0, then fight on until it wears off
+        for t in (18, 19, 20, 6, 10, 17, 12, 2, 7):
+            out.append(b + cmd + "6 a;150 -;6 a;150 -;6 a;150 -;6 a;150 -;" + "6 a;120 -;" * 30 + "|-|" +
+                       ",".join(grp + kurt([(t, tn[t])]) + [MP99]))
         return out
     raise SystemExit(kind)
 
@@ -138,7 +157,7 @@ def main():
     sp = specs(a.kind)
     if a.only:
         sp = [sp[int(i)] for i in a.only.split(",")]
-    frames = {"chest": 3000, "synth": 4400, "bmagic": 5200, "bparty": 5600}.get(a.kind, 3400)
+    frames = {"chest": 3000, "synth": 4400, "bmagic": 5200, "bparty": 8600}.get(a.kind, 3400)
     subprocess.run([sys.executable, "-X", "utf8", str(ROOT / "tools" / "debug" / "probe.py"), a.out, *sp,
                     "--rom", a.rom, "--frames", str(frames), "--jobs", a.jobs, *lua])
 

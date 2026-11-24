@@ -3,8 +3,20 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 8. QA in the emulator, in progress: 3150/3155 translated (the 5 left in `script/keep_jp.txt` are
-  particle columns no longer read), 43 tests green. 2026-11-24 session 27.
+  particle columns no longer read), 43 tests green. 2026-11-24 session 28.
 - **Done:**
+  - **Phase 8, session 2026-11-24 (28):** coverage 3094 -> **3108/3143 shown, 8 waived, 27 failing**. Party battle
+    key paths found (`docs/re/debug.md` §Battle: a key during the COMMAND banner opens Atk / Cmd / Plan / Run; Cmd >
+    Cast / Item / Gear); `svc_cover.py bparty` rewritten (34 specs). **Bug fixed:** the battle item list cut 9-letter
+    names at 8 ("AllElixi/r", "Bloodlur/e", "EraseWan/d"): `insert.battle_rows` now splits inside the word after a
+    "." or before an inner capital ("All/Elixir", "Sil./Sword") or at `insert.BT_HYPHEN` ("Long-/sword",
+    "Blood-/lure"); the lint checks items/tactics/enemies (`battle_fits`), test in `test_battle_rows`; shot on build
+    5d09a64b (the list reads All / Elixir, Blood- / lure, Speed / Herb, Erase / Wand). New scene `battle_items`
+    (not yet in the tour). Enemies: Iskar is group `$8888`, Sky Walker shows in the title attract demo
+    (`work/qa/cover/attract`, 20000 idle frames); the other 8 are waived in `docs/text_unshown.tsv` (only three
+    loaders fill `$1715/$1717`, none has them; 5 are placeholder records). Disk was full (0 B): per-frame PNGs in
+    `work/qa/cover_v1` deleted (20 GB free after). The bparty run was **killed by the system for low memory** after
+    specs 0-6.
   - **Phase 8, session 2026-11-24 (27):** coverage 2512 -> 3094/3143 shown (49 left: 39 `bt`, 10 `enemy`). Session 26's three runs had died
     (no DONE lines): redone. All room strings, all `b04`, all `bg3` now shown. **Bugs fixed:** (1) item > Examine
     printed "Gladius / 武器 / 攻撃力 / 8 UP": three bank-04 pointer tables were never extracted (`0x247D9` FA3E
@@ -310,7 +322,16 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   0. **Phase 8: QA in the emulator** (done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
      `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
-     **Resume here:** visual-QA gate PASSES (263/263) on build eb6d073d (session 27 re-shot battle_field/room/win
+     **Resume here (session 28):** (1) finish the bparty probe, at most 2 jobs because memory ran out:
+     `python -X utf8 tools/debug/svc_cover.py work/qa/cover/bparty3 bparty --jobs 2 --only 7,8,...,33` (specs
+     0-6 done in `bparty2`), then report. Still failing: battle use messages `bt_18617F-186662`, status effects
+     `bt_1D8245-830B`, item descriptions `bt_185F09`/`bt_18612F` (Nulls magic, Party defense: the walk missed them),
+     party LEVEL UP rows `bt_1F04E8-0568` (spec 0 won, but no member levelled: poke record +$23 EX near the next
+     level, +$22 level), "Kurt ran away"/"party ran away" `bt_1F0D06/0D36` (escape is random: more Run specs),
+     `bt_1F0DD6` (only one tactic), `bt_1F0F14` ("{nl}Party"). Waive what stays unreachable, with the reason.
+     (2) Build changed (5d09a64b, battle name split): re-shoot battle_field/battle_room/battle_win/wipeout plus the
+     new `battle_items` into a new tour dir, copy to tour2, `qa_gate.py init ... --build build/lastbattle_en.sfc`,
+     write verdicts for the changed sheets. Older note: visual-QA gate PASSED (263/263) on build eb6d073d (session 27 re-shot battle_field/room/win
      for the Who? fix into tour4, copied to tour2, verdicts `work/qa/verdicts/s27_battle.tsv`; the other scenes
      have no text this session changed). Smoke ok. Text coverage (all probes on `work/qa/cover_build/rom.sfc`,
      everything under `work/qa/cover`): report `python -X utf8 $SKILL/scripts/textcover.py work/qa/cover

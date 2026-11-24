@@ -1,2 +1,10 @@
 # id	reason it is never shown (textcover.py --waive); only strings shown to be unreachable
 b04_C83B	FA40 DOWN: 01:FD00 takes DOWN when bit (3 + stat) of item record +$0C is set; that byte is the category 1-5 for every item ($04:CAD1/D201 records), so only UP prints (session 27)
+enemy_16	Knight: placeholder record (level 1, HP 3, stats 1/2/1) in no enemy group or preset. Only $1715/$1717 pick battle enemies: 3C:832F (group table $2A:A31F, groups 0-$8B), 29:80D9 (group $8888 = Iskar), 29:B083 (the 4 attract-demo presets at $30:9CC6) (session 28)
+enemy_17	Trooper: placeholder record (level 1, HP 3, stats 1/2/1) in no enemy group or preset (see enemy_16)
+enemy_18	Dark Rider: placeholder record (level 1, HP 3, stats 1/2/1) in no enemy group or preset (see enemy_16)
+enemy_80	Iron Golem: placeholder record (level 1, HP 3, stats 1/2/1) in no enemy group or preset (see enemy_16)
+enemy_78	Sandworm: placeholder record (level 1, HP 3) only in the identical filler groups $75-$7F, which no encounter table uses (tools/re_encounters.py); forcing one gives a black screen (see enemy_16)
+enemy_76	Lamia: in no enemy group or preset (see enemy_16)
+enemy_85	Graviton: in no enemy group or preset (see enemy_16)
+enemy_86	Black Sphere: in no enemy group or preset (see enemy_16)

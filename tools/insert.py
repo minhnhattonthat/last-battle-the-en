@@ -294,10 +294,43 @@ def bg3_table(orig):
 RANK_MARK = "\x01"        # in a battle form: the record's rank capital goes here (asm/vwf.asm bt_tile)
 
 
+# One-word names over BT_W with no capital or "." inside: where the battle form hyphenates them (top row, bottom row).
+# The field lists squeeze names to 9 letters (D18); the battle form has two rows of 8, so it splits them instead.
+BT_HYPHEN = {"Longsword": "Long-|sword", "Flamberge": "Flam-|berge", "Spellwand": "Spell-|wand",
+             "Chainmail": "Chain-|mail", "Platemail": "Plate-|mail", "Miranchel": "Miran-|chel",
+             "Fullplate": "Full-|plate", "Bladeward": "Blade-|ward", "Longboots": "Long-|boots",
+             "Wingboots": "Wing-|boots", "Reflector": "Reflec-|tor", "Runesword": "Rune-|sword",
+             "Bloodlure": "Blood-|lure"}
+
+
+def _battle_split(text, w):
+    """(top, bottom) unpadded, or None when the name can only be cut mid-word."""
+    best = None
+    for i, c in enumerate(text):  # at a space
+        if c == " " and i <= w and len(text) - i - 1 <= w:
+            if best is None or max(i, len(text) - i - 1) < max(best, len(text) - best - 1):
+                best = i
+    if best is not None:
+        return text[:best], text[best + 1:]
+    word, _, rest = text.partition(" ")  # the first word over w: its squeezed or hyphenated split
+    if word in BT_HYPHEN:
+        top, bottom = BT_HYPHEN[word].split("|")
+    else:
+        cuts = [i for i in range(1, len(word)) if word[i - 1] == "." or (word[i - 1].islower() and word[i].isupper())]
+        cuts = [i for i in cuts if i <= w and len(word) - i <= w]
+        if not cuts:
+            return None
+        i = min(cuts, key=lambda i: max(i, len(word) - i))
+        top, bottom = word[:i], word[i:]
+    bottom = (bottom + " " + rest).rstrip()
+    return (top, bottom) if len(top) <= w and len(bottom) <= w else None
+
+
 def battle_rows(text, w=BT_W):
     """(top, bottom) rows of a battle name window, each w chars: a name that fits sits centred on the bottom row,
-    a longer one is split at a space (or after a marker's `[id]`) into two centred rows; with no such split it is
-    cut at w (battle_fits() says whether it fits)."""
+    a longer one is split at a space (or after a marker's `[id]`) into two centred rows, else inside its long word
+    (after a "." or before an inner capital: "Battle/Axe"; or at BT_HYPHEN: "Long-/sword"); with no such split it
+    is cut at w (battle_fits() says whether it split cleanly)."""
     def centre(s):
         return (" " * ((w - len(s)) // 2) + s).ljust(w)
 
@@ -306,19 +339,15 @@ def battle_rows(text, w=BT_W):
     if text.startswith("[") and "]" in text:  # marker: the id on top
         i = text.index("]")
         return centre(text[1:i][:w]), centre(text[i + 1:].strip()[:w])
-    best = None
-    for i, c in enumerate(text):
-        if c == " " and i <= w and len(text) - i - 1 <= w:
-            if best is None or max(i, len(text) - i - 1) < max(best, len(text) - best - 1):
-                best = i
-    if best is None:
+    split = _battle_split(text, w)
+    if split is None:
         return text[:w], text[w:2 * w].ljust(w)
-    return centre(text[:best]), centre(text[best + 1:])
+    return centre(split[0]), centre(split[1])
 
 
 def battle_fits(text, w=BT_W):
-    top, bottom = battle_rows(text, w)
-    return (top + bottom).replace(" ", "") == text.replace(" ", "")
+    """True when the name's battle form shows it whole, split at a space, a "." or capital, or a BT_HYPHEN point."""
+    return len(text) <= w or (text.startswith("[") and "]" in text) or _battle_split(text, w) is not None
 
 
 class NameTable:

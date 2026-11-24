@@ -104,6 +104,11 @@ def test_battle_rows():
     assert insert.battle_rows("Purple Slime") == (" Purple ", " Slime  ")
     assert insert.battle_rows("[enemy_07]The quick") == ("enemy_07", "The quic")
     assert insert.battle_fits("Thunder Dragon") and not insert.battle_fits("Will-o'-the-Wisp Lord")
+    # 9-letter field squeezes (D18) split inside the word, never cut at 8 ("AllElixi/r" in the battle item list)
+    assert insert.battle_rows("AllElixir") == ("  All   ", " Elixir ")
+    assert insert.battle_rows("Sil.Sword") == ("  Sil.  ", " Sword  ")
+    assert insert.battle_rows("Longsword") == (" Long-  ", " sword  ")
+    assert not insert.battle_fits("Abcdefghij")
     assert insert.battle_rows("Fire " + insert.RANK_MARK)[1].strip() == "Fire " + insert.RANK_MARK
 
 

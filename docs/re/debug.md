@@ -36,6 +36,17 @@ Everything `tools/debug/warp.lua` relies on. Addresses are WRAM (`$7E`) unless a
   Poking `$3E` = 4 and `$0600-03` = 1 at READY did not add party members to the battle: the battle party is the
   member ids (1 Kurt, 2 Mei, 3 Borg, 4 Regina) in `$1DD4-$1DD7` (30:9CEA, called from the unit setup 29:B1FA for
   units 2-4; Kurt's unit is always present). `svc_cover.py bparty` pokes `@1DD4:0201,@1DD6:0403` plus HP.
+- Commands (session 28): the battle auto-fights unless a key is pressed while the COMMAND banner is up (keys
+  `1100 -;6 a;250 -` from READY); the command row then reads **Atk / Cmd / Plan / Run** (party and solo). Cmd > a:
+  the member's row **Cast / Item / Gear / ...**; Item > a: "Who?" over that member's 3-column list, a again puts the
+  cursor in it. Run > a: a list of escape tactics ("See an opening, dash in at once!"), a picks.
+- Enemies: the only writers of the enemy slots `$1715`/`$1717` (id | count << 8) are 3C:832F (group pointer table
+  `$2A:A31F`, groups 0-$8B; a group is up to two (id, count byte) pairs, FF end; $75-$7F are identical filler),
+  29:80D9 (`$1DDF` = `$8888`: Iskar, `$013A`) and 29:B083 (`$1805` = 1-4: the title attract demo's 4 preset
+  battles, records at `$30:9CC6`; 29:8000 runs them and clears `$1805` for normal battles, so a `$1805` poke does
+  nothing: idle on the title instead). `enemy_NN` ids are decimal. Battle music `$180A` comes from the first
+  enemy id via `$28:8C0F` (id, track) pairs (0x14 = Guld's army).
+- Level and EX: record +$22 level, +$23 EX word.
 - Battle units `$1298 + i * $28` (party 0-3, enemies from `$1338`; copied by `29:B216`): +E HP, +10 max, +12 MP,
   +14 max, +16/+18/+1A the record's first three stats. GOD gives the party units 999 HP (a refill each frame lost to a
   killing blow); WIN sets their stats to 999 (the level-1 hero does no damage to group `$53` otherwise).

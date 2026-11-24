@@ -320,8 +320,8 @@ def width_problems(e, en):
         cap = {"enemies": 16, "spells": 8, "tactics": TACTIC_CAP}.get(e["_file"], NAME_CAP)
         if len(TOKEN.sub("", en)) > cap:
             out.append(f"over {cap} chars")
-        if e["_file"] == "enemies" and not insert.battle_fits(en):
-            out.append("does not split into two rows of 8")
+        if e["_file"] in ("enemies", "items", "tactics") and not insert.battle_fits(TOKEN.sub("", en)):
+            out.append("battle form cuts it mid-word: split it at a space/capital or add it to insert.BT_HYPHEN")
         if e["_file"] == "spells" and not insert.battle_fits(en + " A"):
             out.append("name + rank does not fit two rows of 8")
     return out
