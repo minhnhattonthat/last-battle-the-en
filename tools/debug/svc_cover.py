@@ -11,6 +11,8 @@ synth   E4 07 00 (top21): Combine / Review / Split with 3 or 12 known spells and
 review  Review with one known spell of each of the 22 types (descriptions and effect labels)
 bmagic  battle Cmd > Cast with 12 known spells (types 0-11, 10-21), walking the list (spell info column)
 bparty  battles with all four members ($1DD4-$1DD7): victory windows, Run, battle item list and item use
+bparty2 what bparty left: item descriptions (one item in slot 0), LEVEL UP from level 1, more Run timings, Plan
+        solo, Gear with a weapon, Erase Wand
 erased  title LOAD forced to fail (tools/debug/load_fail.lua, needs work/saves/base_file1.srm)
 Defaults: the frozen coverage build work/qa/cover_build (rom.sfc + strings.tsv). Report over work/qa/cover.
 Spell types (slot byte 0, low 5 bits) are the distinct spells in order of first appearance in spells.json.
@@ -134,13 +136,45 @@ def specs(kind):
             out.append(b + cmd + "6 a;150 -;6 a;150 -;6 a;150 -;6 a;150 -;" + "6 a;120 -;" * 30 + "|-|" +
                        ",".join(grp + kurt([(t, tn[t])]) + [MP99]))
         return out
+    if kind == "bparty2":  # session 29: what bparty left unshown
+        party = specs_party()
+        b = "0x00 40 30 1100 -;6 a;250 -;"
+        cmd = "6 right;60 -;6 a;150 -;"
+        item = cmd + "6 right;60 -;6 a;150 -;6 a;150 -;"
+        mash = "6 a;120 -;" * 12
+        grp = ["god", "@1DDF:0053"]
+        out = []
+        for it in (0x4D, 0x4B, 0x4E, 0x4C, 0x58, 0x5A, 0x5B):  # 0-6: item in slot 0 under the cursor: its description
+            out.append(b + item + "120 -|-|" + ",".join(grp + party + [f"@19CF:00{it:02X}"]))
+        lv = []  # 7: win with every member at level 1, EX 0 (record +$22 level, +$23 EX word): LEVEL UP rows
+        for rec in (0x1900, 0x19E4, 0x1AC8, 0x1BAC):
+            lv += [f"@{rec + 0x22:04X}:0001", f"@{rec + 0x23:04X}:0000"]
+        out.append("0x00 40 30 1100 -;" + "6 a;120 -;" * 40 + "60 -|-|" + ",".join(["god", "win", "@1DDF:0053"] +
+                                                                                   party + lv))
+        for d in (1103, 1117, 1131, 1149):  # 8-15: Run > first tactic at other frames (escape is random)
+            for p in (party, []):
+                out.append(f"0x00 40 30 {d} -;6 a;250 -;" + "6 right;60 -;" * 3 + "6 a;150 -;6 a;200 -;" + mash +
+                           "|-|" + ",".join(grp + p))
+        out.append(b + "6 right;60 -;6 right;60 -;6 a;150 -;6 a;150 -;" + mash + "|-|" + ",".join(grp))  # 16: Plan solo
+        out.append(b + cmd + "6 right;60 -;6 right;60 -;6 a;150 -;6 a;150 -;6 a;150 -;" + mash + "|-|" +
+                   ",".join(grp + party))  # 17: Gear with the weapon on (stat window)
+        out.append(b + item + "6 a;150 -;6 a;150 -;" + mash + "|-|" + ",".join(grp + party + ["@19CF:004D"]))  # 18
+        return out
     raise SystemExit(kind)
+
+
+def specs_party():
+    party = ["@1DD4:0201", "@1DD6:0403", "@003E:0004", "@0600:0100", "@0602:0302"]
+    for rec in (0x19E4, 0x1AC8, 0x1BAC):
+        party += [f"@{rec + 9:04X}:0050", f"@{rec + 0xB:04X}:0050", f"@{rec + 0xD:04X}:0020", f"@{rec + 0xF:04X}:0020"]
+    return party
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("out")
-    ap.add_argument("kind", choices=["chest", "magic", "seal", "synth", "review", "bmagic", "bparty", "erased"])
+    ap.add_argument("kind", choices=["chest", "magic", "seal", "synth", "review", "bmagic", "bparty", "bparty2",
+                                     "erased"])
     ap.add_argument("--rom", default=str(ROOT / "work" / "qa" / "cover_build" / "rom.sfc"))
     ap.add_argument("--strings", default=str(ROOT / "work" / "qa" / "cover_build" / "strings.tsv"))
     ap.add_argument("--only", default="", help="comma-separated spec indexes")
@@ -157,7 +191,7 @@ def main():
     sp = specs(a.kind)
     if a.only:
         sp = [sp[int(i)] for i in a.only.split(",")]
-    frames = {"chest": 3000, "synth": 4400, "bmagic": 5200, "bparty": 8600}.get(a.kind, 3400)
+    frames = {"chest": 3000, "synth": 4400, "bmagic": 5200, "bparty": 8600, "bparty2": 8600}.get(a.kind, 3400)
     subprocess.run([sys.executable, "-X", "utf8", str(ROOT / "tools" / "debug" / "probe.py"), a.out, *sp,
                     "--rom", a.rom, "--frames", str(frames), "--jobs", a.jobs, *lua])
 

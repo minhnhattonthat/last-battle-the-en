@@ -3,8 +3,19 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 8. QA in the emulator, in progress: 3150/3155 translated (the 5 left in `script/keep_jp.txt` are
-  particle columns no longer read), 43 tests green. 2026-11-24 session 28.
+  particle columns no longer read), 43 tests green. 2026-11-24 session 29.
 - **Done:**
+  - **Phase 8, session 2026-11-24 (29):** coverage 3108 -> **3124/3143 shown, 9 waived, 10 failing**. bparty specs
+    7-33 finished (`work/qa/cover/bparty3`: Agility/Defense up, all status effects `bt_1D82xx`, use messages).
+    New probe kind `svc_cover.py bparty2` (19 specs; specs 0-7 ran into `work/qa/cover/bparty4` before the system
+    **killed the run for low memory** at spec 8): one item in slot 0 shows its battle description (Erase Wand =
+    `bt_185F09` "Nulls all magic"; Torch/Bloodlure/Haste/Body/Life/Mind are not `bt_18612F`), and a win with all
+    four members at level 1 / EX 0 showed every LEVEL UP row `bt_1F04E8-0568`. Waived `bt_1865AE` "No effect on Ice
+    Dragon!" (no Ice Dragon anywhere in the game). **Visual gate passes on build 5d09a64b** (266 sheets): re-shot
+    battle_field/room/win, wipeout and the new `battle_items` into `work/qa/tour5`, copied to tour2, `qa_gate.py
+    init`, verdicts `work/qa/verdicts/s29_battle.tsv` (item list reads All / Elixir, Blood- / lure, Speed / Herb,
+    Erase / Wand). JP `battle_items` shot in `work/qa/tour_jp` (its battle runs on different timing: no item list).
+    Smoke ok.
   - **Phase 8, session 2026-11-24 (28):** coverage 3094 -> **3108/3143 shown, 8 waived, 27 failing**. Party battle
     key paths found (`docs/re/debug.md` §Battle: a key during the COMMAND banner opens Atk / Cmd / Plan / Run; Cmd >
     Cast / Item / Gear); `svc_cover.py bparty` rewritten (34 specs). **Bug fixed:** the battle item list cut 9-letter
@@ -322,7 +333,16 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   0. **Phase 8: QA in the emulator** (done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
      `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
-     **Resume here (session 28):** (1) finish the bparty probe, at most 2 jobs because memory ran out:
+     **Resume here (session 29):** 10 failing, all battle-only. (1) Re-run the rest of bparty2 with **one job**
+     (two emulators were killed for low memory twice): `python -X utf8 tools/debug/svc_cover.py work/qa/cover/bparty5
+     bparty2 --jobs 1 --only 8,9,10,11,12,13,14,15,16,17,18` (Run timings for `bt_1F0D06/0D36`, Plan solo for
+     `bt_1F0DD6`, Gear with a weapon for the Atk/Def window `bt_18640A`, Erase Wand use for `bt_186512` "Magic faded
+     away"). (2) `bt_18612F` "Party defense up by about 30": try AuraField (item $41, effect byte $9D) in slot 0.
+     (3) `bt_1865EA` Poison cured / `bt_186626` Confusion cleared / `bt_186562` Magic power fading need an afflicted
+     or buffed unit: find the status byte in the battle unit (`$1298 + i*$28`) or waive with the reason;
+     `bt_1F0F14` "{nl}Party" is a spell info column cell (a party-target spell). The window-script table that lists
+     these messages is data at `33:DD00-DE70` (0x19DD00), not code. Then report and gate.
+     Session 28 notes: (1) finish the bparty probe, at most 2 jobs because memory ran out:
      `python -X utf8 tools/debug/svc_cover.py work/qa/cover/bparty3 bparty --jobs 2 --only 7,8,...,33` (specs
      0-6 done in `bparty2`), then report. Still failing: battle use messages `bt_18617F-186662`, status effects
      `bt_1D8245-830B`, item descriptions `bt_185F09`/`bt_18612F` (Nulls magic, Party defense: the walk missed them),

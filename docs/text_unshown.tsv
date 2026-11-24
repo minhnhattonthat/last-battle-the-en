@@ -8,3 +8,4 @@ enemy_78	Sandworm: placeholder record (level 1, HP 3) only in the identical fill
 enemy_76	Lamia: in no enemy group or preset (see enemy_16)
 enemy_85	Graviton: in no enemy group or preset (see enemy_16)
 enemy_86	Black Sphere: in no enemy group or preset (see enemy_16)
+bt_1865AE	"No effect on Ice Dragon!" (アイストラコンには きかない!): no enemy, spell, item or room line in the game names an Ice Dragon (enemies.json dragons are Shadow/Thunder/Platinum/Earth); a leftover message (session 29)
