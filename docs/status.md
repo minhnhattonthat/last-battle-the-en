@@ -2,11 +2,12 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9, release. Owner asked to publish (D20, v1.0; D21 keeps the save fixture in history). Build
-  d8905718: tour9 (120/120) copied into tour2, gate re-inited on it (272 sheets, 34 carried from tour8, 238 under
-  review: `work/qa/chunks/chunk_f9474b7e3ea9_*`). Then `tools/release.py --version 1.0 --force`, push, repo public,
-  GitHub release. 2026-11-24 session 35.
-- **Next:** (1) gate verdicts on d8905718, release, publish (above); (2) the svc_cover runs `review bmagic bparty
+- **Phase:** 9, released. Owner asked to publish (D20, v1.0; D21 keeps the save fixture in history). Build
+  d8905718: tour9 (120/120) copied into tour2, gate re-inited on it, 272/272 ok (34 carried from tour8, 238 from 8
+  reviewers, `work/qa/verdicts/`). `tools/release.py --version 1.0 --force` passed: `release/LastBattle_EN_v1.0.zip`
+  (patched CRC32 9360A5FC, SHA-1 53d516ea; bps SHA-1 3fa818b1). Published as GitHub release v1.0, repo public.
+  2026-11-24 session 35.
+- **Next:** (1) player bug reports (`gh issue list --label bug`); (2) the svc_cover runs `review bmagic bparty
   bparty2` on the new build, one at a time (`--jobs 1`: two runs were stopped for low memory), looking for
   full-canvas fallbacks (a run left in fixed cells) and garbage tiles; (3) owner's call: VWF for the battle lists
   too (item/spell names come from WRAM rects, still fixed cells; needs the second canvas range `$1FD-$27F`).

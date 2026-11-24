@@ -5,8 +5,8 @@
 0x0928EB data bytes (81 00 E2 C2 00 C0 ...), not text
 0x093D63 data bytes, not text
 0x0B355F data bytes, not text
-0x0D5B18 inside the LZ-compressed room text blocks (bank $1A): compressed English stream bytes, not plain text
-0x0E2294 inside the LZ-compressed room text blocks: compressed stream bytes
+0x0D5B19 inside the LZ-compressed room text blocks (bank $1A): compressed English stream bytes, not plain text (was 0x0D5B18 before the session-35 r319/r320 edits)
+0x0E2295 inside the LZ-compressed room text blocks: compressed stream bytes (was 0x0E2294)
 0x0E2559 inside the LZ-compressed room text blocks: compressed stream bytes
 0x1C7B74 graphics/data bytes, not text
 0x1DAE0F graphics/data bytes, not text
