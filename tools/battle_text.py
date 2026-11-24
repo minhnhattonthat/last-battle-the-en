@@ -199,6 +199,26 @@ def encode(rom, e):
     return out
 
 
+# The bank-$2D mana / spell info screen (0x16EF84+, the magic healer's Combine screen) is a 32-word-wide tilemap:
+# a "scan" row's dakuten / handakuten tiles sit in the row above (file - 0x40). An English row blanks them, else
+# they float over the letters (High "Bal"ance, session 27).
+SCREEN_2D = (0x16EF84, 0x16F51E)
+DAKUTEN = (0x94, 0x95)
+
+
+def dakuten_above(orig, e):
+    """(file offset, bytes) blanking the dakuten row above an English scan row of the bank-$2D screen, or None."""
+    o = int(e["file"], 16)
+    up = o - 0x40
+    if not e["en"] or e["geom"] != "scan" or not (SCREEN_2D[0] <= up and o < SCREEN_2D[1]):
+        return None
+    ws = words(orig, up, e["w"])
+    new = [(w & 0xFC00) | SPACE if (w & 0x3FF) in DAKUTEN else w for w in ws]
+    if new == ws:
+        return None
+    return up, b"".join(x.to_bytes(2, "little") for x in new)
+
+
 # Messages typed one 1x2 column per frame: copy ops (8 bytes each: delay, VRAM dest(2), src(3), w=1, h=2, up to an
 # FF) whose sources are kanji/kana columns shared between messages (the particles bt_198045 の, bt_1980E3 に,
 # bt_19D534/38/3C し/ま/た). The column an op fills is its VRAM dest (2 bytes per column) from the first op's;

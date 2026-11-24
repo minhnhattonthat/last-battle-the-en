@@ -23,7 +23,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": " ほのおのマナ",
-   "en": "Fire"
+   "en": " Fire"
   },
   {
    "id": "bt_16F082",
@@ -34,7 +34,7 @@
    "attr": "2000",
    "geom": "scan",
    "jp": "  みすのマナ ",
-   "en": "Water"
+   "en": "  Water"
   },
   {
    "id": "bt_16F132",
@@ -716,7 +716,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "      {nl}ほのおのマナ",
-   "en": "Fire{nl}Mana"
+   "en": "{nl}Fire"
   },
   {
    "id": "bt_19E0B4",
@@ -727,7 +727,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094}    {nl}かせのマナ ",
-   "en": "Wind{nl}Mana"
+   "en": "{nl}Wind"
   },
   {
    "id": "bt_19E0CC",
@@ -738,7 +738,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": " {2094}    {nl}みすのマナ ",
-   "en": "Water{nl}Mana"
+   "en": "{nl}Water"
   },
   {
    "id": "bt_19E0E4",
@@ -749,7 +749,7 @@
    "attr": "2000",
    "geom": "table",
    "jp": "{2094}     {nl}たいちのマナ",
-   "en": "Earth{nl}Mana"
+   "en": "{nl}Earth"
   },
   {
    "id": "bt_19E0FC",

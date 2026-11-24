@@ -492,6 +492,9 @@ def apply(orig, region, writer, files, alloc=None):
             for e in doc["entries"]:
                 changed += bool(e["en"])
                 writer.put(int(e["file"], 16), battle_text.encode(orig, e), f"text:{e['id']}")
+                dk = battle_text.dakuten_above(orig, e)
+                if dk:
+                    writer.put(dk[0], dk[1], f"dakuten:{e['id']}")
             continue
         if src["kind"] == "bg3":
             moved = {w: {} for w in MOVED_WINDOWS}
