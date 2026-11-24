@@ -98,3 +98,10 @@ glyphs trimmed to their ink (+1 px, space 4 px), and points its cells at canvas 
 free again once its cell shows something else, so windows need no bookkeeping. Changed tiles go up in 16-tile chunks
 through the queue (descriptors `$28:FC08`, zero filler in the original). Full canvas: the run keeps its fixed tiles.
 Not drawn proportionally: rects copied from WRAM (names/numbers built by code), BG3 text drawn by other code.
+Centring (session 35): a run starts at its first non-space text cell and ends at its last, and the renderer only adds a
+glyph's width to the pen, so blank "pad" glyphs (`bvwf.PADS`: 13/16/19/22 px on the old kanji tiles `$F9 $FB $97
+$F3`, ASCII `{|}~`) shift text by any number of pixels. Typed messages start one column left of the JP's (blank
+window inside) with a pad sized to centre each row, and blank pads fill the cells after the text so the run spans
+the whole message (`battle_text.column_rows`). The LEVEL UP title row (0x1F0414, Latin in the JP) ended in two
+full-width ！ (`$9A`, not text): now ASCII `!` and moved a cell right. The status box keeps a dakuten row before
+each name row (5 words, tile `$1F4`); Borg's and Regina's are cleared (`font_bg3.battle_names_patch`).

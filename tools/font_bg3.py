@@ -115,6 +115,8 @@ NAME_ROWS = {  # file offset of the name's first tilemap word -> (English name, 
 }
 NAME_ORIG_ROWS = {0x1F084A: [0x1A4, 0x1A5, 0x1A6], 0x1F0868: [0x1A7, 0x1A8], 0x1F0886: [0x1A9, 0x1A5, 0x1A4],
                   0x1F08A4: [0x1AA, 0x1AB, 0x1AC, 0x1AD]}
+# The status-box rows are 5 words: dakuten row, name row, then the HP row; blank word $2000, dakuten tile $1F4.
+NAME_ROW_W, BLANK_WORD, DAKUTEN = 5, 0x2000, 0x1F4
 
 
 def name_tiles(name, ntiles):
@@ -172,6 +174,12 @@ def battle_names_patch(orig, writer, start):
         new = b"".join(((w & 0xFC00) | t).to_bytes(2, "little") for w, t in zip(old, tiles))
         if new != orig[at:at + len(new)]:
             writer.put(at, new, f"battle names: {name} tilemap row")
+        # the 5-word row before the name holds the kana's dakuten (tile $1F4: ボルグ, レジーナ); English has none
+        dak = at - 2 * NAME_ROW_W
+        words = [int.from_bytes(orig[dak + 2 * i:dak + 2 * i + 2], "little") for i in range(NAME_ROW_W)]
+        assert all(w == BLANK_WORD or w & 0x3FF == DAKUTEN for w in words), f"battle name dakuten row moved ({dak:X})"
+        if any(w != BLANK_WORD for w in words):
+            writer.put(dak, BLANK_WORD.to_bytes(2, "little") * NAME_ROW_W, f"battle names: {name} dakuten row cleared")
 
 
 def patch(data):

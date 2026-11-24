@@ -71,3 +71,20 @@ Polish pass done in session 31 (phase 9).
   differed from r009_023A (fixed session 32: same wording as r009)
 - [x] r264_064A - story pass ch6: Duken's ひとひねり as "I could crush you in a twist!" (fixed session 33: "squash you in a second")
 - [x] b04_C763 - dialogue {num} inserts print the old 12 px font digits ("Attack / 8 up", item Examine): taller than the VWF letters; check the other {num} lines (recovered {num} HP, {num} Sol) and draw the digits with the VWF if they all do this (session 27) (waived: the game's own number font, readable in every shot; VWF digits would be engine work)
+- [x] shop description panel (svc_00_13/14/16, svc_01_*, svc_00_00/04): "100 HP", "poison", "stun &", "confu-" were 6
+  tiles in the item shop's 5-tile panel (letter on the right frame), and a 5-tile last line ("30 HP") lost the frame
+  to the blank the game writes after it; in v1.0 too (fixed session 35: item descriptions 5 tiles per line, last line
+  4, `extract.DESC_BOXES`/`DESC_LAST_SHORT`, lint and test; 27 rewritten)
+- [x] battle status box: dakuten left over above "Borg" and "Regina" (the row before each name, ボルグ/レジーナ); in
+  v1.0 too (fixed session 35: `font_bg3.battle_names_patch` clears those rows)
+- [x] typed battle messages "Enemy / ambush!!", "All have / fallen..." leaned left after the battle VWF (12/28 px, JP
+  12/15) (fixed session 35: a blank pad glyph per row in an extra column, `bvwf.PADS`; 18/20 and 22/21 px)
+- [x] LEVEL UP window: "!!" were full-width ！ tiles the VWF left in fixed cells ("LEVEL UP  ! !") (fixed session 35:
+  ASCII !, title a cell right, 20/19 px)
+- [x] r320_021B: "What a lively / baby." and "Your Majesties, / congratulations." ended pages on one word (fixed
+  session 35: "What a lively baby." on one line, "Congratulations, / Your Majesties.")
+- [x] r319_021F: "Children leave home / someday." (fixed session 35: one line)
+- [x] camp "Quit" (bg3_9AC4) and field magic "Cast" (bg3_9B2C) labels sat left in their boxes (fixed session 35:
+  leading spaces like "  Save"; Quit 21/15 px)
+- [x] stress_equip: a 9-tile item name ("Longsword") in the equipment window covers the small "E" equipped marker at
+  x=16 (the JP starts names a tile later) (waived: D18 9-tile names, the window has no 10th tile)

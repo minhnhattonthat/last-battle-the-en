@@ -331,21 +331,29 @@ def test_english_build_moves(tmp_path):
     code = rom[battle_text.FOUND_AT:battle_text.FOUND_AT + 54]
     stored = [word(code, i + 1) for i in range(len(code) - 4) if code[i] == 0xA9 and code[i + 3:i + 5] == b"\x87\x50"]
     assert stored == battle_text.en_codec(orig, 0x2000).words(battle_text.FOUND_EN)
-    # column-typed messages: every op copies the message so far from column 0 (w = columns reached, h = 2), and
-    # the last one reads back as the English rows
+    # column-typed messages: every op copies the message so far from the pad column, one left of the old column 0
+    # (w = pad + columns reached, h = 2), and the last one reads back as a centring pad and the English rows
+    import bvwf
+    _, widths, chars = bvwf.tables(orig)
     for at, _, top, bottom in battle_text.COLUMN_MSGS:
         ops = battle_text.column_ops(orig, at)
         v0, reach = word(orig, ops[0] + 1), 0
         for o in ops:
-            reach = max(reach, (word(orig, o + 1) - v0) // 2 + 1)
+            reach = max(reach, (word(orig, o + 1) - v0) // 2 + 2)
             src = (rom[o + 5] & 0x7F) << 15 | word(rom, o + 3) & 0x7FFF
             assert battle_text.COLUMN_DATA <= src < battle_text.COLUMN_DATA + battle_text.COLUMN_LEN, hex(o)
-            assert word(rom, o + 1) == v0 and rom[o + 6:o + 8] == bytes([reach, 2]), hex(o)
+            assert word(rom, o + 1) == v0 - 2 and rom[o + 6:o + 8] == bytes([reach, 2]), hex(o)
         attr = word(rom, src) & battle_text.ATTR_MASK
         c = battle_text.en_codec(orig, attr)
         for r, text in enumerate((top, bottom)):
-            want = c.words(text) + [attr | battle_text.SPACE] * (reach - len(text))
-            assert [word(rom, src + 2 * (r * reach + i)) for i in range(reach)] == want, text
+            row = [word(rom, src + 2 * (r * reach + i)) for i in range(reach)]
+            fill = attr | bvwf.PADS[min(bvwf.PADS)][0]
+            assert row[1:] == c.words(text) + [fill] * (reach - 1 - len(text)), text
+            assert len(bvwf.runs([chr(chars[w & 0x3FF]) for w in row])) == 1, text   # one run, the whole width
+            pad = widths[chars[row[0] & 0x3FF] - 0x20]
+            ink = bvwf.width(widths, text) - bvwf.GAP
+            left, right = pad - 8, 8 * (reach - 1) - (pad - 8) - ink      # margins in the old columns
+            assert abs(left - right) <= 3 and pad + ink + bvwf.GAP <= 8 * reach, (text, left, right)
     # strings.tsv (text coverage): one key per string; a block key names a stream of this build that decompresses
     # far enough to hold the string's slot, a ROM key lies in the ROM
     import lz
@@ -387,7 +395,9 @@ def test_battle_vwf():
     assert bvwf.BASE + bvwf.COUNT <= 0x180                               # the status-name stream starts at $180
     f, widths, chars = bvwf.tables(orig)
     texts = {c for c in chars if c}
-    assert all(widths[c - 0x20] > 0 for c in texts) and max(widths) <= 9
+    pads = {ord(c) for _, c in bvwf.PADS.values()}
+    assert all(widths[c - 0x20] > 0 for c in texts) and max(widths[c - 0x20] for c in texts - pads) <= 9
+    assert all(not any(f[(c - 0x20) * 8:(c - 0x1F) * 8]) for c in pads)  # pads are blank
     assert chars[bvwf.SPACE] == 0x20 and chars[0x0B] == ord("A") and chars[font_bg3.TILE["a"]] == ord("a")
     assert not any(chars[1 + i] for i in range(10))                      # digits stay fixed-width tiles
     cells = list("Def  +") + [None] + list(" Kurt ran")

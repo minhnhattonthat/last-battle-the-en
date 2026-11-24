@@ -116,6 +116,7 @@ def build(out=OUT, recompress=False, orig_path=ORIG_PATH, script_dir=insert.SCRI
         font_bg3.battle_patch(orig, w)
         battle_text.column_messages(orig, w)  # "Enemy ambush!!" / "Surprise attack!" (typed column by column)
         battle_text.found_message(orig, w)    # "<item> found!" after a battle
+        battle_text.level_up_title(orig, w)   # "LEVEL UP!!" in one proportional run
     placed = region.pack(w.rom, w.put, recompress=recompress, free=blocks.FREE + ([blocks.EXPANSION] if asm else []))
     if asm:
         apply_asm(w)

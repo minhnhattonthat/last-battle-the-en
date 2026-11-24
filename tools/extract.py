@@ -229,11 +229,14 @@ B04_BG3 = (0x20600, 0x22CA7)  # BG3 tile-word strings (menu prompts/labels, desc
 # is the debug flag viewer (hex grid) and 0x22CA7 on the name-entry grid rows (graphics, handled with the name maps)
 BG3_MIN_KANA = 2
 # Description boxes (width gate, docs/re/windows.md; measured 2026-11-24, work/qa/desc*): $04 address ranges ->
-# (box, tiles per line, lines). Item descriptions show in the shop (8 x 7) and the field item menu (6 x 7): the
-# narrower one binds. Spell descriptions: 7 tiles; label lines keep tiles 0-3, the game draws the value at 4-5.
-# $A6ED (equip stat labels) is a template, not a description.
-DESC_BOXES = [(0xA331, 0xA6ED, ("desc_item", 6, 7)), (0xA751, 0xA8EB, ("desc_item", 6, 7)),
+# (box, tiles per line, lines). Item descriptions show in the item shop's panel (5 x 7: a 6th tile lands on the
+# right frame; tour8 svc_00/svc_01, session 35) and the field item menu (6 x 7): the narrower one binds. The game
+# also writes a blank tile after the last character, so an item description's last line holds one tile fewer
+# (DESC_LAST_SHORT; a 5-tile "30 HP" broke the shop frame). Spell descriptions: 7 tiles; label lines keep tiles
+# 0-3, the game draws the value at 4-5. $A6ED (equip stat labels) is a template, not a description.
+DESC_BOXES = [(0xA331, 0xA6ED, ("desc_item", 5, 7)), (0xA751, 0xA8EB, ("desc_item", 5, 7)),
               (0xA8EB, 0xAC9F, ("desc_spell", 7, 4))]
+DESC_LAST_SHORT = {"desc_item"}
 
 
 def desc_box(addr):

@@ -32,9 +32,18 @@ Standing non-bugs, `ok` (the controller adds the game's own below):
 - a map or scene still loading after a warp;
 - anything identical in the original's sheet.
 - Menus use the game's fixed 8 px BG3 font (all caps look, `g`/`p` sit on the line): that is the font, not garbage.
+  Since D19 its lowercase is bold (2 px stems) like the capitals; "OK"/"No", "Yes", "FILE1" in one style is right.
+- Battle windows (messages, victory/EX/LEVEL UP windows, descriptions, command labels) draw English in proportional
+  type from the same bold glyphs (D19, battle VWF); digits stay in fixed 8 px cells. Item and spell names in the
+  battle lists (and the spell-cast window) stay in fixed cells by design. Still flag a mix of the two styles inside
+  one message, clipped letters, or a gap that breaks a word.
 - `KLT`/`RLT` on the portrait icons and the `YES`/`NO` icons are the original's own graphics (Latin in the JP too).
 - Short item names are deliberate (D18: 9 tiles per list): `Drgn Tear`, `SilvelYrn`, `Sil.Sword`, `Kn.Shield`. Item
-  info headers keep the long form (`Dragon Tear/`). Status labels `Atk Def Agi Wis Lck` are deliberate (D11).
+  info headers keep the long form (`Dragon Tear/`). Status labels `Atk Def Agi Wis Lck` are deliberate (D11). A
+  9-tile name in the equipment window covers the small "E" equipped marker (the window has no 10th tile): waived.
+- Item descriptions are 5 tiles per line (the item shop's panel) and hyphenate long words (`Fena-/mun`, `con-/fu-/
+  sion`): deliberate. The typed battle messages (ambush, surprise attack, wipeout) reveal left to right while they
+  type, then sit centred; "LEVEL UP!!" is one proportional run.
 - Stray kana tiles at the right screen edge of `svc_0B_00`/`svc_0D_00` are leftover BG3 map from the room scroll.
 - Speaker pages are `Name` on line 1, then the speech indented after a `"`; dialogue has no closing quote mark.
 - Battle status-box names (`Kurt`, `Mei`, `Borg`, `Regina`) are a compact 4 px font with no descender on `g`: by design.

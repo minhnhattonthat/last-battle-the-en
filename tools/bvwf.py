@@ -28,6 +28,11 @@ CHUNK = 16            # tiles per upload descriptor
 SPACE = 0x93          # battle space tile
 SPACE_W = 4
 GAP = 1
+# Blank pad glyphs, width -> (BG3 tile, ASCII slot). Each row of a typed message (battle_text.column_messages) starts
+# with one in an extra cell left of the message, so the proportional row sits centred where the JP centred its
+# kanji. Tiles: kanji of those messages' old columns, read by nothing since they became English (keep_jp.txt);
+# ASCII slots the font leaves free. The asm only adds a glyph's width to the pen, so a pad may be wider than a cell.
+PADS = {13: (0xF9, "{"), 16: (0xFB, "|"), 19: (0x97, "}"), 22: (0xF3, "~")}
 MAX_RUN = 32          # chars per run the asm buffers (a row is at most 32 cells)
 CAPITALS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -76,7 +81,16 @@ def tables(orig):
     for c, t in font_bg3.TILE.items():
         chars[t] = ord(c)
     chars[SPACE] = 0x20
+    for w, (t, c) in PADS.items():
+        assert not chars[t] and c not in rows, (hex(t), c)
+        chars[t], widths[ord(c) - 0x20] = ord(c), w
     return bytes(font), bytes(widths), bytes(chars)
+
+
+def pad_for(widths, text, cells):
+    """The PADS width that centres `text` (ink width) in `cells` fixed cells, counted from the cell before them."""
+    ink = width(widths, text) - GAP
+    return min(PADS, key=lambda p: abs(p - 8 - (8 * cells - ink) / 2))
 
 
 def write(orig, outdir=ROOT / "build"):

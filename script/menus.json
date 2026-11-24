@@ -1135,7 +1135,7 @@
    "addr": "9AC4",
    "size": 14,
    "jp": "ゲ－ムをおわる",
-   "en": "Quit",
+   "en": "  Quit",
    "file": "021AC4",
    "tiles": 7
   },
@@ -1144,7 +1144,7 @@
    "addr": "9B2C",
    "size": 18,
    "jp": "まほうを となえる",
-   "en": "Cast",
+   "en": "   Cast",
    "file": "021B2C",
    "tiles": 9
   },
@@ -1495,11 +1495,11 @@
    "addr": "A331",
    "size": 36,
    "jp": "つかうと{nl}ＨＰを{nl}３０ほど{nl}かいふく",
-   "en": "Heals{nl}about{nl}30 HP",
+   "en": "Heals{nl}about{nl}30{nl}HP",
    "file": "022331",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1507,11 +1507,11 @@
    "addr": "A357",
    "size": 38,
    "jp": "つかうと{nl}ＨＰを{nl}１００ほど{nl}かいふく",
-   "en": "Heals{nl}about{nl}100 HP",
+   "en": "Heals{nl}about{nl}100{nl}HP",
    "file": "022357",
    "tiles": 5,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1519,11 +1519,11 @@
    "addr": "A37F",
    "size": 30,
    "jp": "どく{nl}まひ{nl}こんらん{nl}をなおす",
-   "en": "Cures{nl}poison{nl}stun &{nl}confu-{nl}sion",
+   "en": "Cures{nl}poi-{nl}son,{nl}stun,{nl}con-{nl}fu-{nl}sion",
    "file": "02237F",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1531,11 +1531,11 @@
    "addr": "A39F",
    "size": 36,
    "jp": "つかうと{nl}ＭＰを{nl}３０ほど{nl}かいふく",
-   "en": "Heals{nl}about{nl}30 MP",
+   "en": "Heals{nl}about{nl}30{nl}MP",
    "file": "02239F",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1547,7 +1547,7 @@
    "file": "0223C5",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1555,11 +1555,11 @@
    "addr": "A3EB",
    "size": 40,
    "jp": "つかうと{nl}ＨＰ{nl}ＭＰ{nl}かんぜん{nl}かいふく",
-   "en": "Fully{nl}heals{nl}HP and{nl}MP",
+   "en": "Fully{nl}heals{nl}HP{nl}and{nl}MP",
    "file": "0223EB",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1567,11 +1567,11 @@
    "addr": "A415",
    "size": 46,
    "jp": "つかうと{nl}なかま{nl}ぜんいん{nl}かんぜん{nl}かいふく",
-   "en": "Fully{nl}heals{nl}whole{nl}party",
+   "en": "Fully{nl}heals{nl}every{nl}ally",
    "file": "022415",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1579,11 +1579,11 @@
    "addr": "A445",
    "size": 28,
    "jp": "つかうと{nl}きぜつを{nl}かいふく",
-   "en": "Wakes{nl}a KO'd{nl}ally",
+   "en": "Wakes{nl}one{nl}KO'd{nl}ally",
    "file": "022445",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1591,11 +1591,11 @@
    "addr": "A463",
    "size": 28,
    "jp": "きぜつを{nl}じどうで{nl}かいふく",
-   "en": "Auto{nl}revive{nl}on KO",
+   "en": "Auto-{nl}wakes{nl}from{nl}KO",
    "file": "022463",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1603,11 +1603,11 @@
    "addr": "A481",
    "size": 30,
    "jp": "つかうと{nl}まものを{nl}おいはらう",
-   "en": "Drives{nl}off{nl}beasts",
+   "en": "Wards{nl}off{nl}foes",
    "file": "022481",
    "tiles": 5,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1615,11 +1615,11 @@
    "addr": "A4A1",
    "size": 28,
    "jp": "つかうと{nl}すばやさ{nl}１５ＵＰ",
-   "en": "Raises{nl}speed{nl}by 15",
+   "en": "Speed{nl}up by{nl}15",
    "file": "0224A1",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1627,11 +1627,11 @@
    "addr": "A4BF",
    "size": 38,
    "jp": "つかうと{nl}すべての{nl}まほうを{nl}うちけす",
-   "en": "Nulls{nl}all{nl}magic",
+   "en": "Nulls{nl}all{nl}magic{nl}at{nl}once",
    "file": "0224BF",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1639,11 +1639,11 @@
    "addr": "A4E7",
    "size": 28,
    "jp": "つかうと{nl}まものを{nl}あつめる",
-   "en": "Lures{nl}beasts",
+   "en": "Lures{nl}foes",
    "file": "0224E7",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1651,11 +1651,11 @@
    "addr": "A505",
    "size": 22,
    "jp": "うると{nl}おかねに{nl}なる",
-   "en": "Sell{nl}it for{nl}money",
+   "en": "Sell{nl}it{nl}for{nl}cash",
    "file": "022505",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1663,11 +1663,11 @@
    "addr": "A51D",
    "size": 34,
    "jp": "つかうと{nl}ちからが{nl}すこし{nl}あがる",
-   "en": "Raises{nl}power{nl}a bit",
+   "en": "Power{nl}up a{nl}bit",
    "file": "02251D",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1675,11 +1675,11 @@
    "addr": "A541",
    "size": 36,
    "jp": "つかうと{nl}かしこさが{nl}すこし{nl}あがる",
-   "en": "Raises{nl}wisdom{nl}a bit",
+   "en": "Wis-{nl}dom{nl}up a{nl}bit",
    "file": "022541",
    "tiles": 5,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1687,11 +1687,11 @@
    "addr": "A567",
    "size": 34,
    "jp": "つかうと{nl}しゅびが{nl}すこし{nl}あがる",
-   "en": "Raises{nl}guard{nl}a bit",
+   "en": "Guard{nl}up a{nl}bit",
    "file": "022567",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1699,11 +1699,11 @@
    "addr": "A58B",
    "size": 36,
    "jp": "つかうと{nl}すばやさが{nl}すこし{nl}あがる",
-   "en": "Raises{nl}speed{nl}a bit",
+   "en": "Speed{nl}up a{nl}bit",
    "file": "02258B",
    "tiles": 5,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1711,11 +1711,11 @@
    "addr": "A5B1",
    "size": 42,
    "jp": "つかうと{nl}さいだい{nl}ＨＰが{nl}すこし{nl}あがる",
-   "en": "Raises{nl}max HP{nl}a bit",
+   "en": "Max{nl}HP{nl}up a{nl}bit",
    "file": "0225B1",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1723,11 +1723,11 @@
    "addr": "A5DD",
    "size": 42,
    "jp": "つかうと{nl}さいだい{nl}ＭＰが{nl}すこし{nl}あがる",
-   "en": "Raises{nl}max MP{nl}a bit",
+   "en": "Max{nl}MP{nl}up a{nl}bit",
    "file": "0225DD",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1735,11 +1735,11 @@
    "addr": "A609",
    "size": 32,
    "jp": "フェナムン{nl}のぎしき{nl}でひつよう",
-   "en": "Needed{nl}for{nl}Fena-{nl}mun{nl}rite",
+   "en": "For{nl}the{nl}Fena-{nl}mun{nl}rite",
    "file": "022609",
    "tiles": 5,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1747,11 +1747,11 @@
    "addr": "A62B",
    "size": 48,
    "jp": "シルヴェル{nl}こうりゃく{nl}について{nl}かかれて{nl}いる",
-   "en": "Guld's{nl}plans{nl}to{nl}attack{nl}Silvel",
+   "en": "Plans{nl}to{nl}take{nl}Sil-{nl}vel",
    "file": "02262B",
    "tiles": 5,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1768,11 +1768,11 @@
    "addr": "A665",
    "size": 16,
    "jp": "ぎんいろの{nl}いと",
-   "en": "Silver{nl}thread",
+   "en": "Sil-{nl}very{nl}yarn",
    "file": "022665",
    "tiles": 5,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1784,7 +1784,7 @@
    "file": "022677",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1801,11 +1801,11 @@
    "addr": "A68D",
    "size": 28,
    "jp": "かぜの{nl}ちからで{nl}ひめたたま",
-   "en": "An orb{nl}sealed{nl}with{nl}wind",
+   "en": "Orb{nl}that{nl}holds{nl}wind",
    "file": "02268D",
    "tiles": 5,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1813,11 +1813,11 @@
    "addr": "A6AB",
    "size": 16,
    "jp": "りゅうの{nl}なみだ",
-   "en": "Dragon{nl}tear",
+   "en": "Drag-{nl}on's{nl}tear",
    "file": "0226AB",
    "tiles": 4,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1825,11 +1825,11 @@
    "addr": "A6BD",
    "size": 40,
    "jp": "とくべつな{nl}まほうを{nl}つくれる{nl}ほうじゅ",
-   "en": "Orb to{nl}create{nl}rare{nl}magic",
+   "en": "Rare{nl}magic{nl}is{nl}made{nl}with{nl}it",
    "file": "0226BD",
    "tiles": 5,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1891,11 +1891,11 @@
    "addr": "A751",
    "size": 38,
    "jp": "まほうを{nl}ふうにゅう{nl}できる{nl}アイテム",
-   "en": "Items{nl}that{nl}can{nl}hold{nl}spells",
+   "en": "Seal{nl}a{nl}spell{nl}into{nl}this",
    "file": "022751",
    "tiles": 5,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {
@@ -1903,11 +1903,11 @@
    "addr": "A779",
    "size": 42,
    "jp": "{FA51}{nl}のまほうが{nl}ふうにゅう{nl}されて{nl}います",
-   "en": "{FA51}{nl}spell{nl}sealed{nl}inside",
+   "en": "{FA51}{nl}spell{nl}is{nl}held{nl}in{nl}it",
    "file": "022779",
    "tiles": 5,
    "box": "desc_item",
-   "max_tiles": 6,
+   "max_tiles": 5,
    "max_lines": 7
   },
   {

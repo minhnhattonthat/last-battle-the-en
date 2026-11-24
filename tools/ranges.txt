@@ -23,7 +23,7 @@ FB04-FB04     name entry row count (display, operand of CMP #$2B at 01:FB03)
 16EF84-16F51D battle tile text: mana / spell info screen labels (bank $2D)
 185DF1-186685 battle tile text: battle item descriptions, equip/status labels, battle messages (bank $30)
 198045-1980E6 battle tile text: particles (bank $33)
-198003-19803E battle column-message script sources and widths (battle_text.column_messages; 1980A5-1980DD is inside the line above)
+198001-19803E battle column-message script dests, sources and widths (battle_text.column_messages; 1980A5-1980DD is inside the line above)
 1987A5-19F88A battle tile text: command menu, windows and messages (bank $33)
 19FA10-19FAC9 battle tile text (bank $33)
 1D8245-1D835E battle tile text (bank $3A)
@@ -35,6 +35,8 @@ FB04-FB04     name entry row count (display, operand of CMP #$2B at 01:FB03)
 1404AA-1404AE battle load list: name stream source + length
 147372-147376 battle load list (second copy): name stream source + length
 1F0886-1F088B battle status-box tilemap: Borg's name row (font_bg3.NAME_ROWS)
+1F087C-1F0885 battle status-box tilemap: Borg's dakuten row above the name (ボルグ), cleared
+1F089A-1F08A3 battle status-box tilemap: Regina's dakuten row above the name (レジーナ), cleared
 1E0041-1E005A asm/vwf.asm victory line: suffix after the name's last non-space (3C:8041), battle VWF hook 3C:8057
 14B2B6-14B2BA asm/vwf.asm hook 29:B2B6 (battle names: English escapes)
 14A278-14A27B asm/vwf.asm hook 29:A278 (window-script copy loop: battle VWF)

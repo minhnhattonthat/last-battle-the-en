@@ -251,7 +251,8 @@ def speaker_line(s):
 
 
 def pages(en):
-    return [p.split("{nl}") for p in re.split(r"\{page2?\}", en)]
+    # {F9FF} (ending and epilogue scenes) clears the box like a page: r319/r320 start a new speaker or line after it
+    return [p.split("{nl}") for p in re.split(r"\{page2?\}|\{F9FF\}", en)]
 
 
 def width_problems(e, en):
@@ -298,6 +299,8 @@ def width_problems(e, en):
             if not named[i]:
                 if len(ln) > cap:
                     out.append(f"line over {cap} chars: {ln!r}")
+                elif i == len(lines) - 1 and len(ln) >= cap and e.get("box") == "desc_item":
+                    out.append(f"last line {len(ln)} chars: the game writes a blank after it (max {cap - 1})")
                 continue
             most = max(MSG_BOX.get(e["id"], 0), jp_w[i] if i < len(jp_w) else 0)
             if w > most:

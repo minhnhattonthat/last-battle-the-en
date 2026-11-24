@@ -2,15 +2,23 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9. v1.0 zip built in session 33 (build 6b675807, not published). Session 34 changed the fonts on the
-  owner's request (D19), so **the v1.0 zip is stale**: before a release, re-shoot the tour on the new build, get
-  verdicts for the changed sheets (every BG3 menu with lowercase, every battle window), then `tools/release.py
-  --version 1.1`. Build 55bf5596, 44 tests green, smoke ok. 2026-11-24 session 34.
-- **Next:** (1) visual gate on build 55bf5596 (above); (2) the svc_cover runs `review bmagic bparty bparty2` on the
-  new build (session 34's run was stopped for low memory after `synth`; run them one at a time, `--jobs 1`), looking
-  for full-canvas fallbacks (a run left in fixed cells) and garbage tiles; (3) owner's call: VWF for the battle
-  lists too (item/spell names come from WRAM rects, still fixed cells; needs the second canvas range `$1FD-$27F`).
+- **Phase:** 9, release. Owner asked to publish (D20, v1.0; D21 keeps the save fixture in history). Build
+  d8905718: tour9 (120/120) copied into tour2, gate re-inited on it (272 sheets, 34 carried from tour8, 238 under
+  review: `work/qa/chunks/chunk_f9474b7e3ea9_*`). Then `tools/release.py --version 1.0 --force`, push, repo public,
+  GitHub release. 2026-11-24 session 35.
+- **Next:** (1) gate verdicts on d8905718, release, publish (above); (2) the svc_cover runs `review bmagic bparty
+  bparty2` on the new build, one at a time (`--jobs 1`: two runs were stopped for low memory), looking for
+  full-canvas fallbacks (a run left in fixed cells) and garbage tiles; (3) owner's call: VWF for the battle lists
+  too (item/spell names come from WRAM rects, still fixed cells; needs the second canvas range `$1FD-$27F`).
 - **Done:**
+  - **Phase 9, session 2026-11-24 (35):** visual gate on build 55bf5596 (tour8, 8 reviewers, round now in
+    `work/qa/s34_round`) found 10 problems, fixed or waived (`docs/polish.md`, session 35 lines): item descriptions
+    5 tiles per line and 4 on the last (shop panel; `extract.DESC_BOXES`/`DESC_LAST_SHORT`, lint, test; 27
+    rewritten), dakuten rows above Borg/Regina cleared, typed battle messages centred with blank pad glyphs
+    (`bvwf.PADS`, `battle_text.column_rows`), LEVEL UP!! one run and centred, r320/r319 one-word lines, "Quit"/"Cast"
+    labels padded, equipment "E" marker under 9-tile names waived (D18). Lint reads `{F9FF}` as a page break.
+    `battle_items` route waits 1400 frames (an enemy turn ate the first A; it showed Cast, not Item). Tour9 restarted
+    after a memory kill: batches of 12-30 scenes, `--jobs 1`, about 15 s a scene.
   - **Phase 9, session 2026-11-24 (34):** owner's playtest shots (D19). **Bold BG3 lowercase**: `tools/font_bg3.py`
     glyphs redrawn with 2 px stems like the capitals ("OK"/"No", "Yes", "FILE1" now match). **Battle VWF**:
     `tools/bvwf.py` + asm `bvwf_rect` (hooks 29:A278, 30:F242, 3C:8057, 30:AE2E; canvas BG3 $11A-$17F, shadow

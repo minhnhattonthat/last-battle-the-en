@@ -227,7 +227,9 @@ def dakuten_above(orig, e):
 # bt_19D534/38/3C し/ま/た). The column an op fills is its VRAM dest (2 bytes per column) from the first op's;
 # an op may refill a column (the wipeout's last dot). English: each op copies the whole message so far (columns 0 to
 # the highest it has reached, top row then bottom row) from COLUMN_DATA, so the battle VWF (tools/bvwf.py) redraws
-# the growing run in proportional type; the old columns stay unused.
+# the growing run in proportional type; the old columns stay unused. Every op starts one column left of the old
+# column 0 (blank window inside, 11-12 px from the frame) with a blank pad glyph per row (bvwf.PADS) whose width
+# centres that row's proportional text where the JP centred its kanji.
 COLUMN_MSGS = [  # (script file offset, JP, top row, bottom row), each row <= the message's column count
     (0x198000, "敵の奇襲攻撃!!", "Enemy", "ambush!!"),
     (0x1980A2, "奇襲攻撃に成功!", "Surprise", "attack!"),
@@ -247,36 +249,66 @@ def column_ops(orig, at):
     return ops
 
 
+def column_rows(orig, at):
+    """(VRAM dest of the pad column, columns incl. the pad, top row words, bottom row words) of a typed message."""
+    import bvwf
+    _, top, bottom = next(m[1:] for m in COLUMN_MSGS if m[0] == at)
+    ops = column_ops(orig, at)
+    v0 = u16(orig, ops[0] + 1)
+    n = max((u16(orig, o + 1) - v0) // 2 for o in ops) + 1
+    attr = u16(orig, off(SCRIPT_BANK, u16(orig, ops[0] + 3))) & ATTR_MASK
+    c = en_codec(orig, attr)
+    _, widths, _ = bvwf.tables(orig)
+    fill = attr | bvwf.PADS[min(bvwf.PADS)][0]
+    rows = []
+    for text in (top, bottom):
+        ws = c.words(text)
+        assert len(ws) <= n, (text, n)
+        pad = attr | bvwf.PADS[bvwf.pad_for(widths, text, n)][0]
+        # blank pads after the text too: a run ends at its last text cell, and the shifted text needs the cells
+        # up to the message's end (the VWF clips a run at its cells; only blank pixels fall past them)
+        rows.append([pad] + ws + [fill] * (n - len(ws)))
+    return v0 - 2, n + 1, rows[0], rows[1]
+
+
 def column_messages(orig, writer):
     import font_bg3
     cols, data = {}, bytearray()
-    for at, _, top, bottom in COLUMN_MSGS:
+    for at, *_ in COLUMN_MSGS:
         ops = column_ops(orig, at)
         v0 = u16(orig, ops[0] + 1)
         idx = [(u16(orig, o + 1) - v0) // 2 for o in ops]
-        n = max(idx) + 1
-        attr = u16(orig, off(SCRIPT_BANK, u16(orig, ops[0] + 3))) & ATTR_MASK
-        c = en_codec(orig, attr)
-        t, b = c.words(top), c.words(bottom)
-        assert len(t) <= n and len(b) <= n, (top, bottom, n)
-        t += [attr | SPACE] * (n - len(t))
-        b += [attr | SPACE] * (n - len(b))
+        dest, _, t, b = column_rows(orig, at)
         reach = 0
         for o, i in zip(ops, idx):
-            reach = max(reach, i + 1)
+            reach = max(reach, i + 2)          # the pad column and the columns up to this op's
             rect = tuple(t[:reach] + b[:reach])
             if rect not in cols:
                 cols[rect] = COLUMN_DATA + len(data)
                 data += b"".join(w.to_bytes(2, "little") for w in rect)
             f = cols[rect]
-            if u16(orig, o + 1) != v0:
-                writer.put(o + 1, v0.to_bytes(2, "little"), f"battle column message {at:X}: from column 0")
-            writer.put(o + 3, ((0x80 | f // 0x8000) << 16 | 0x8000 | f & 0x7FFF).to_bytes(3, "little") +
-                       bytes([reach]), f"battle column message {at:X}")
+            writer.put(o + 1, dest.to_bytes(2, "little") + ((0x80 | f // 0x8000) << 16 | 0x8000 | f & 0x7FFF)
+                       .to_bytes(3, "little") + bytes([reach]), f"battle column message {at:X}")
     assert len(data) <= COLUMN_LEN, f"column messages {len(data)} bytes"
     writer.put(COLUMN_DATA, bytes(data), "battle column messages: English columns")
     end = font_bg3.NAME_STREAM + font_bg3.NAME_LEN  # the old column area after the names stream, unused now
     writer.put(font_bg3.COLUMN_AT, bytes(end - font_bg3.COLUMN_AT), "battle column messages: old area cleared")
+
+
+# The LEVEL UP window's title row (bank $3E) is Latin in the JP: `LEVEL UP` in text tiles, two full-width ！ ($9A,
+# not text to the battle VWF) and a space, so the VWF packed "LEVEL UP" and left "!!" in their old cells. English:
+# the ASCII ! tile, so the title is one proportional run, moved a cell right (the space first) to sit centred.
+LEVEL_UP_ROW = 0x1F0414           # `L E V E L _ U P ！ ！ _` between the title window's borders
+
+
+def level_up_title(orig, writer):
+    import font_bg3
+    old = [u16(orig, LEVEL_UP_ROW + 2 * i) for i in range(11)]
+    assert [w & 0x3FF for w in old] == [0x16, 0x0F, 0x20, 0x0F, 0x16, SPACE, 0x1F, 0x1A, 0x9A, 0x9A, SPACE], \
+        "LEVEL UP row moved"
+    bang = lambda w: (w & 0xFC00) | font_bg3.TILE["!"] if w & 0x3FF == 0x9A else w  # noqa: E731
+    new = [old[10]] + [bang(w) for w in old[:10]]
+    writer.put(LEVEL_UP_ROW, b"".join(w.to_bytes(2, "little") for w in new), "battle LEVEL UP title: !!, centred")
 
 
 # Item found after a battle (30:AD9A): the item's battle name goes to two rows at $7E:BAD0/$BB10, then code scans
