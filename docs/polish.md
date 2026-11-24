@@ -69,4 +69,5 @@ Polish pass done in session 31 (phase 9).
 - [x] r293_06A7 - story pass ch7: Regina "You shall be one who ... cast aside Silvel!!" (fixed session 32: "casts")
 - [x] r320_0368 - story pass ch7: ending caption "nothing more was ever heard ... again" doubled the never-again and
   differed from r009_023A (fixed session 32: same wording as r009)
+- [x] r264_064A - story pass ch6: Duken's ひとひねり as "I could crush you in a twist!" (fixed session 33: "squash you in a second")
 - [x] b04_C763 - dialogue {num} inserts print the old 12 px font digits ("Attack / 8 up", item Examine): taller than the VWF letters; check the other {num} lines (recovered {num} HP, {num} Sol) and draw the digits with the VWF if they all do this (session 27) (waived: the game's own number font, readable in every shot; VWF digits would be engine work)

@@ -2,9 +2,22 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9. Release in progress (session 32): story pass 2/7 chapters (ch1, ch7 ok), visual gate 112 sheets
-  without a verdict on build aa13885f (crops ready in `work/qa/novel6`). 43 tests green. 2026-11-24 session 32.
+- **Phase:** 9. Release done (session 33): release zip built and verified, waiting on the user to publish.
+  Story pass 7/7 ok, visual gate 266/266 ok, `tools/release.py --version 1.0` exits 0 (with `--force` once the zip
+  exists). `release/LastBattle_EN_v1.0.zip`, patched CRC32 7708A99F, SHA-1 7ee0594c6e4a27c1a7e9af18fa405d20d0f2f7c5.
+  Build 6b675807. 43 tests green. 2026-11-24 session 33.
 - **Done:**
+  - **Phase 9, session 2026-11-24 (33):** **story pass finished**: ch2-ch6 read in full by the worker (codex out of
+    quota), all `ok` (reports `work/qa/story/reports/`). One Minor fixed: r264_064A Duken "I could squash you in a
+    second!" (was "crush you in a twist", ticked in `docs/polish.md`; r264 is in no tour scene, so nothing to
+    re-shoot). Rebuilt, re-ran `tools/story_chapters.py` and the story `init` (ch6 re-verdicted after its change).
+    **Visual gate closed**: the 112 open sheets judged from the `work/qa/novel6` old|new crops (all frame timing:
+    fades, typing, sprite and battle-RNG steps; text checks: menu_search "There is nothing there." fits,
+    stress_itemuse "Use whose item?" centred at 3x zoom). Ending + credits judged from new
+    `work/qa/novel7` (tour7 vs tour6/5/3); the r320 caption reads right. Verdicts in
+    `work/qa/verdicts/s33_a.tsv`, `s33_b.tsv`. Visual manifest re-init on the new build (0 sheets changed).
+    `tools/release.py --version 1.0 --force` exits 0: tests, smoke, jp_left 0, both gates, textcover, checksum
+    09C3, BPS made and re-applied to the clean original (CRC match). Nothing published.
   - **Phase 9, session 2026-11-24 (32):** story pass **ch1_eldar ok, ch7_last_battle ok** (reports
     `work/qa/story/reports/`, verdicts `work/qa/story/verdicts/`), read in full by the worker itself (codex still
     out of quota). ch7 Minors fixed in `script/` and ticked in `docs/polish.md`: r293 Iskar "Heh heh...", Regina
@@ -368,14 +381,12 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
-  000. **Session 32 hand-back, resume here.** (a) Story pass: ch2-ch6 left (ch1, ch7 done; ch2 lines 1-220 read
-     clean). Read EN+JP in 150-220-line parts; one fresh worker context fits about 2 chapters (ch4 alone is 1754
-     lines). Batch all story fixes before the next re-shoot. (b) Visual gate: `qa_gate.py todo work/qa/manifest.tsv
-     work/qa/verdicts` lists 112 sheets. For each, read `work/qa/novel6/<scene>.png` (ending/credits: compare
-     tour7 vs tour6 instead, `tour_novel.py work/qa/tour7 work/qa/tour6 --out work/qa/novel7`) and write
-     `<id>\tok|issue\tnote` to `work/qa/verdicts/s32_<chunk>.tsv`. After any later text fix: rebuild, re-shoot only
-     the scenes showing it, copy into tour2, `qa_gate.py init ... --build`, re-run `tools/story_chapters.py` + story
-     `init`. (c) `tools/release.py --version 1.0` must exit 0.
+  000. **Session 33 hand-back: release ready, the user publishes.** `release/LastBattle_EN_v1.0.zip` is built and
+     verified (see the Phase line). Publishing (`gh release create`, repo visibility) is the user's call; never do it
+     unasked. If text changes before then: fix in `script/`, rebuild, re-shoot only the scenes showing it, copy into
+     tour2, `qa_gate.py init work/qa/manifest.tsv work/qa/tour2 --build build/lastbattle_en.sfc`, judge the new
+     crops with `tour_novel.py`, re-run `tools/story_chapters.py` + story `init` (a changed chapter needs a new
+     verdict), then `tools/release.py --version 1.0 --force`.
   00. **Phase 9: Release (session 31 notes).** (1) **Story pass**, 7 chapters: `qa_gate.py todo work/qa/story/manifest.tsv
      work/qa/story/verdicts --size 1`. For each chapter, a fresh read-only reviewer (brief
      `$SKILL/assets/story-reviewer-brief.md` with this game's names; inputs `docs/synopsis.md`,
