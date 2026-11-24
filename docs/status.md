@@ -2,9 +2,17 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator, in progress: 3150/3155 translated (the 5 left in `script/keep_jp.txt` are
-  particle columns no longer read), 43 tests green. 2026-11-24 session 29.
+- **Phase:** 9. Release, not started (phase 8 done-when met session 30): 3150/3155 translated (the 5 left in
+  `script/keep_jp.txt` are particle columns no longer read), 43 tests green. 2026-11-24 session 30.
 - **Done:**
+  - **Phase 8 done, session 2026-11-24 (30):** `textcover.py` exits 0: **3134/3143 shown, 9 waived, 0 failing**.
+    The last three battle messages are RNG/status gated, so two new Lua hooks force the branch (used with
+    `svc_cover.py bparty2` specs through a scratch runner): `tools/debug/bfade.lua` clears carry at 29:89CD (the
+    Seal Stone fade roll, JSL 2A:9D70 vs $55/$40) -> `bt_186512` "Magic faded away" (`work/qa/cover/fade1`, spec 30);
+    `tools/debug/bherb.lua --var BST=1|4` sets A at 29:9270 (Cure Herb target status) -> `bt_1865EA` Poison cured /
+    `bt_186626` Confusion cleared (`work/qa/cover/herb1`, `herb4`, spec 21). Build still 5d09a64b: `qa_gate.py check
+    work/qa/manifest.tsv work/qa/verdicts` 266/266 ok, smoke ok, check.py 0 problems. Inkbox, graphics text and
+    stress saves were done in sessions 22-27 (below).
   - **Phase 8, session 2026-11-24 (29):** coverage 3108 -> **3131/3143 shown, 9 waived, 3 failing**. bparty specs
     7-33 finished (`work/qa/cover/bparty3`: Agility/Defense up, all status effects `bt_1D82xx`, use messages).
     New probe kind `svc_cover.py bparty2` (38 specs, runs `bparty4`-`bparty10`; the system killed two runs for low
@@ -338,7 +346,12 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
-  0. **Phase 8: QA in the emulator** (done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
+  00. **Phase 9: Release** (done-when in the skill table): story-pass verdict per chapter (`work/qa/story/manifest.tsv`,
+     `references/translation.md` §Review; do it in a fresh read-only pass or `codex exec -s read-only`, quota back
+     2026-11-26), tick or move every line of `docs/polish.md`, then `tools/release.py` (patch + verify). Never run
+     `gh release create`. Phase-8 leftovers judged non-blocking: equip-label screen `bg3_A729/A737/A73D`, teleport
+     list at 9 letters, name-entry grid order. The phase-8 notes below are history.
+  0. **Phase 8: QA in the emulator** (DONE session 30; done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
      `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
      **Resume here (session 29 end):** 3 failing, all battle messages. Run probes with `--jobs 1`, a few specs a
      run (memory). (1) `bt_186512` "Magic faded away": 29:8992 handles a used item id >= $F5; at 29:89B4 a Seal
