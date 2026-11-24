@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "tools"))
 import battle_text  # noqa: E402
 import blocks  # noqa: E402
+import bvwf  # noqa: E402
 import check_rom  # noqa: E402
 import font_bg3  # noqa: E402
 import font_en  # noqa: E402
@@ -68,7 +69,8 @@ def apply_asm(w, asm_files=ASM):
     if not ASAR.exists():
         sys.exit(f"{ASAR} missing: unzip asar 1.91 from github.com/RPGHacker/asar/releases into tools/asar/")
     font_en.write(ROOT / "build")
-    tmp = ROOT / "build" / "asar_tmp.sfc"
+    bvwf.write(w.orig, ROOT / "build")  # battle VWF font, widths, tile -> ASCII
+    tmp =ROOT / "build" / "asar_tmp.sfc"
     tmp.write_bytes(w.rom)
     for asm in asm_files:
         r = subprocess.run([str(ASAR), "--fix-checksum=off", str(ROOT / "asm" / asm), str(tmp)],

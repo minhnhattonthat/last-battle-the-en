@@ -225,8 +225,9 @@ def dakuten_above(orig, e):
 # Messages typed one 1x2 column per frame: copy ops (8 bytes each: delay, VRAM dest(2), src(3), w=1, h=2, up to an
 # FF) whose sources are kanji/kana columns shared between messages (the particles bt_198045 の, bt_1980E3 に,
 # bt_19D534/38/3C し/ま/た). The column an op fills is its VRAM dest (2 bytes per column) from the first op's;
-# an op may refill a column (the wipeout's last dot). English columns go to font_bg3.COLUMN_AT and each op is
-# repointed there; the old columns stay unused.
+# an op may refill a column (the wipeout's last dot). English: each op copies the whole message so far (columns 0 to
+# the highest it has reached, top row then bottom row) from COLUMN_DATA, so the battle VWF (tools/bvwf.py) redraws
+# the growing run in proportional type; the old columns stay unused.
 COLUMN_MSGS = [  # (script file offset, JP, top row, bottom row), each row <= the message's column count
     (0x198000, "敵の奇襲攻撃!!", "Enemy", "ambush!!"),
     (0x1980A2, "奇襲攻撃に成功!", "Surprise", "attack!"),
@@ -234,7 +235,7 @@ COLUMN_MSGS = [  # (script file offset, JP, top row, bottom row), each row <= th
 ]
 
 
-COLUMN_DATA, COLUMN_LEN = 0x3F0000, 0x100  # $FE:8000 (FastROM mirror: bank $7E would be WRAM); tools/ranges.txt
+COLUMN_DATA, COLUMN_LEN = 0x3F0000, 0x400  # $FE:8000 (FastROM mirror: bank $7E would be WRAM); tools/ranges.txt
 
 
 def column_ops(orig, at):
@@ -260,14 +261,18 @@ def column_messages(orig, writer):
         assert len(t) <= n and len(b) <= n, (top, bottom, n)
         t += [attr | SPACE] * (n - len(t))
         b += [attr | SPACE] * (n - len(b))
+        reach = 0
         for o, i in zip(ops, idx):
-            pair = (t[i], b[i])
-            if pair not in cols:
-                cols[pair] = COLUMN_DATA + len(data)
-                data += b"".join(w.to_bytes(2, "little") for w in pair)
-            f = cols[pair]
-            writer.put(o + 3, ((0x80 | f // 0x8000) << 16 | 0x8000 | f & 0x7FFF).to_bytes(3, "little"),
-                       f"battle column message {at:X}")
+            reach = max(reach, i + 1)
+            rect = tuple(t[:reach] + b[:reach])
+            if rect not in cols:
+                cols[rect] = COLUMN_DATA + len(data)
+                data += b"".join(w.to_bytes(2, "little") for w in rect)
+            f = cols[rect]
+            if u16(orig, o + 1) != v0:
+                writer.put(o + 1, v0.to_bytes(2, "little"), f"battle column message {at:X}: from column 0")
+            writer.put(o + 3, ((0x80 | f // 0x8000) << 16 | 0x8000 | f & 0x7FFF).to_bytes(3, "little") +
+                       bytes([reach]), f"battle column message {at:X}")
     assert len(data) <= COLUMN_LEN, f"column messages {len(data)} bytes"
     writer.put(COLUMN_DATA, bytes(data), "battle column messages: English columns")
     end = font_bg3.NAME_STREAM + font_bg3.NAME_LEN  # the old column area after the names stream, unused now

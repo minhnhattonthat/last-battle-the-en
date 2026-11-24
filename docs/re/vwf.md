@@ -49,6 +49,10 @@ Strings shorter than 5 bytes can't hold a jump: `r095_00FE` (「) and `b04_B2E2`
 | 02:D7A8 | LDA [$B2],y / CMP #$FE00 | staff roll fetch: far jump |
 | 02:D7F9 | PHA / LDA $1A8015 | staff roll glyph: English VWF (`cr_glyph`) |
 | 29:B2B6 | PHY / STA $3C / LDA [$30] | battle name -> two BG3 tile rows: English escapes (`bt_name`, `battle.md`) |
+| 29:A278 | LDA $34 / STA $34 | window-script copy loop: battle VWF on ROM rects (`bv_copy`, `battle.md` §Battle VWF) |
+| 30:F242 | LDA $0000,x / STA $34 | 7-byte rect copier (escape messages): battle VWF (`bv_rectcopy`) |
+| 3C:8057 | JSL $30F28C | victory line: battle VWF (`bv_victory`) |
+| 30:AE2E | JSL $30F28C | item-found line: battle VWF (`bv_found`) |
 
 ## Names (byte encoding; verified: shop list on the marker build, `work/qa/shop2`)
 Every byte name (8-byte fields) goes through one of two decoders in bank 01, both copy 8 bytes to `$7E6D80` first:

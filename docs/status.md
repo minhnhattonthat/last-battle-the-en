@@ -2,11 +2,24 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9. Release done (session 33): release zip built and verified, waiting on the user to publish.
-  Story pass 7/7 ok, visual gate 266/266 ok, `tools/release.py --version 1.0` exits 0 (with `--force` once the zip
-  exists). `release/LastBattle_EN_v1.0.zip`, patched CRC32 7708A99F, SHA-1 7ee0594c6e4a27c1a7e9af18fa405d20d0f2f7c5.
-  Build 6b675807. 43 tests green. 2026-11-24 session 33.
+- **Phase:** 9. v1.0 zip built in session 33 (build 6b675807, not published). Session 34 changed the fonts on the
+  owner's request (D19), so **the v1.0 zip is stale**: before a release, re-shoot the tour on the new build, get
+  verdicts for the changed sheets (every BG3 menu with lowercase, every battle window), then `tools/release.py
+  --version 1.1`. Build 55bf5596, 44 tests green, smoke ok. 2026-11-24 session 34.
+- **Next:** (1) visual gate on build 55bf5596 (above); (2) the svc_cover runs `review bmagic bparty bparty2` on the
+  new build (session 34's run was stopped for low memory after `synth`; run them one at a time, `--jobs 1`), looking
+  for full-canvas fallbacks (a run left in fixed cells) and garbage tiles; (3) owner's call: VWF for the battle
+  lists too (item/spell names come from WRAM rects, still fixed cells; needs the second canvas range `$1FD-$27F`).
 - **Done:**
+  - **Phase 9, session 2026-11-24 (34):** owner's playtest shots (D19). **Bold BG3 lowercase**: `tools/font_bg3.py`
+    glyphs redrawn with 2 px stems like the capitals ("OK"/"No", "Yes", "FILE1" now match). **Battle VWF**:
+    `tools/bvwf.py` + asm `bvwf_rect` (hooks 29:A278, 30:F242, 3C:8057, 30:AE2E; canvas BG3 $11A-$17F, shadow
+    `$7F:D800`, uploads through the NMI queue 2A:989A; `docs/re/battle.md` §Battle VWF); typed messages copy the
+    whole prefix per op (`battle_text.column_messages`). Seen in game: victory line, EX/LEVEL UP windows, item
+    descriptions, Kurt can't escape!, Agility up!, Magic power is fading..., No weapon equipped, See an opening,
+    tactic menu, All have fallen... (typed), synthesis Combine screens (`work/qa/bvwf4`, `bvwf5`, `bvwf_cover`,
+    `bvwf_svc/synth`). New test `test_battle_vwf` (asm constants, canvas range, no run wider than its cells).
+    The "What ?" gap in the Cast prompt is the original's two windows (same in v1.0).
   - **Phase 9, session 2026-11-24 (33):** **story pass finished**: ch2-ch6 read in full by the worker (codex out of
     quota), all `ok` (reports `work/qa/story/reports/`). One Minor fixed: r264_064A Duken "I could squash you in a
     second!" (was "crush you in a twist", ticked in `docs/polish.md`; r264 is in no tour scene, so nothing to

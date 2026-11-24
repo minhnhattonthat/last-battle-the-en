@@ -61,6 +61,29 @@ org $3C8041             ; victory line: was a forward scan of the name's bottom 
     inx
     inx
 
+; battle VWF (tools/bvwf.py, docs/re/battle.md §Battle VWF): English battle text redrawn in proportional type
+org $29A278             ; was LDA $34 / STA $34: start of 29:A249's copy loop (window scripts, 29:A1EA)
+    jml bv_copy
+org $3C8057             ; was JSL $30F28C after the victory line (name rows + suffix in tilemap rows 3-4)
+    jsl bv_victory
+org $30AE2E             ; was JSL $30F28C after the item-found line (rows 11-12)
+    jsl bv_found
+org $30F242             ; was LDA $0000,x / STA $34: rectangle copier for 7-byte records (escape messages)
+    jml bv_rectcopy
+org $28FC08             ; upload descriptors read by the NMI queue 2A:989A with DB = $28 (VRAM word, source, size);
+bv_desc:                ; zero filler in the original
+    !i = 0
+    while !i < 7
+        dw $6000+(($011A+(!i*16))*8)
+        dl $7FD800+(!i*256)
+        if !i == 6
+            dw (102-96)*16
+        else
+            dw 256
+        endif
+        !i #= !i+1
+    endwhile
+
 ; ---- code -----------------------------------------------------------------------------------------------------
 org $FD8000
 vwf_fetch:              ; M=16 X=16 DB=$7E D=$0C00; the glyph word is on the stack
@@ -651,6 +674,552 @@ bgword:                 ; A = the empty-pixel word of text mode $2A (mode 0: pla
     rts
 +   lda #$0000
     rts
+
+; ---- battle VWF (tools/bvwf.py, docs/re/battle.md §Battle VWF) ------------------------------------------------------
+; English runs in a tilemap rectangle are redrawn proportionally on canvas tiles BG3 $11A-$17F (free in battle VRAM).
+; A canvas tile is in use while the cell it was written to still shows it (bv_free), so tiles come back by themselves
+; when a window is redrawn or cleared. Tile images are kept in a WRAM shadow and uploaded in 16-tile chunks through
+; the game's NMI VRAM queue ($11E7 head, $11E9 tail, $11EB pointers; descriptors bv_desc in bank $28).
+!BV_BASE  = $011A
+!BV_N     = 102
+!bvShadow = $D800       ; the bv_ routines run with DB = $7F: $7F:D800 102 tiles x 16 bytes (plane 0 $FF, plane 1 ink)
+!bvOwner  = $DE60       ; 102 words: tilemap address ($7E:B800-BFFF) of the cell each canvas tile was written to
+!bvBuf    = $DF40       ; render buffer: 8 rows x 40 bytes, one plane-1 byte per tile column
+!bvNext   = $E080       ; next-fit allocation index
+!bvDirty  = $E082       ; chunks to upload (bit n = tiles 16n..16n+15)
+!bvRow    = $E084       ; tilemap address of the current row
+!bvW      = $E086
+!bvH      = $E088
+!bvI      = $E08A       ; cell index in the row
+!bvStart  = $E08C       ; run: first cell
+!bvLast   = $E08E       ; run: last text cell
+!bvLen    = $E090       ; run: chars in bvStr
+!bvAttr   = $E092       ; run: attribute bits of its first tile
+!bvPx     = $E094
+!bvK      = $E096       ; canvas tiles the run needs
+!bvN      = $E098       ; cells the run covers
+!bvCol    = $E09A
+!bvT      = $E09C
+!bvCell   = $E09E
+!bvTmp    = $E0A0
+!bvCnt    = $E0A2
+!bvCh     = $E0A4
+!bvSh     = $E0A6
+!bvB      = $E0A8
+!bvY      = $E0AA
+!bvStr    = $E0C0       ; 32 chars
+!bvParD   = $7FE0E0     ; parameters saved by the hooks (long: the caller's DB)
+!bvParW   = $7FE0E2
+!bvParH   = $7FE0E4
+!bvParS   = $7FE0E6
+!bvParSB  = $7FE0E8
+
+bv_copy:                ; JML from 29:A278; M=16 X=16: $34 = dest ($7E), [$38] = source, X = width, Y = height
+    lda $34
+    sta.l !bvParD
+    lda $38
+    sta.l !bvParS
+    lda $3A
+    sta.l !bvParSB
+    txa
+    sta.l !bvParW
+    tya
+    sta.l !bvParH
+    lda $34
+.row:                   ; the game's loop (29:A27A-A294)
+    sta $34
+    pha
+    phx
+.cell:
+    lda [$38]
+    inc $38
+    inc $38
+    sta [$34]
+    inc $34
+    inc $34
+    dex
+    bne .cell
+    plx
+    pla
+    clc
+    adc #$0040
+    dey
+    bne .row
+    lda.l !bvParS       ; ROM sources only: WRAM rectangles hold names and numbers put together by code
+    bpl .out
+    lda.l !bvParSB
+    and #$00FE
+    cmp #$007E
+    beq .out
+    jsr bv_params
+.out:
+    jml $29A296         ; PLY / RTS
+
+bv_rectcopy:            ; JML from 30:F242 (RTL'd): X = 7-byte record in bank DB: dest, src24, w, h
+    lda $0000,x
+    sta $34
+    lda #$007E
+    sta $36
+    sta $3A
+    lda $0002,x
+    sta $30
+    lda $0004,x
+    and #$00FF
+    sta $32
+    lda $0005,x
+    and #$00FF
+    sta $10
+    lda $0005,x
+    xba
+    and #$00FF
+    tay
+    lda $34
+    sta.l !bvParD
+    lda $10
+    sta.l !bvParW
+    tya
+    sta.l !bvParH
+.row:                   ; the game's loop (30:F26B-F289)
+    ldx $10
+    lda $34
+    sta $38
+.cell:
+    lda [$30]
+    inc $30
+    inc $30
+    sta [$38]
+    inc $38
+    inc $38
+    dex
+    bne .cell
+    lda $34
+    clc
+    adc #$0040
+    sta $34
+    dey
+    bne .row
+    jsr bv_params
+    rtl
+
+bv_params:
+    lda.l !bvParW
+    tax
+    lda.l !bvParH
+    tay
+    lda.l !bvParD
+    jsl bvwf_rect
+    rts
+
+bv_victory:             ; JSL from 3C:8057: the name rows and the suffix (row 3-4 from column 6), then JSL $30F28C
+    php
+    rep #$30
+    pha
+    phx
+    phy
+    lda #$B8CC
+    ldx #$0015
+    ldy #$0002
+    jsl bvwf_rect
+    ply
+    plx
+    pla
+    plp
+    jml $30F28C
+
+bv_found:               ; JSL from 30:AE2E: "<item> found!" (rows 11-12 from column 7), then JSL $30F28C
+    php
+    rep #$30
+    pha
+    phx
+    phy
+    lda #$BACE
+    ldx #$0011
+    ldy #$0002
+    jsl bvwf_rect
+    ply
+    plx
+    pla
+    plp
+    jml $30F28C
+
+bvwf_rect:              ; A = tilemap address of a rectangle ($7E:B800+), X = width, Y = height; keeps P and DB
+    php
+    rep #$30
+    phb
+    pha
+    pea $7F7F
+    plb
+    plb
+    pla
+    sta !bvRow
+    stx !bvW
+    sty !bvH
+    cpx #$0021          ; a row is at most 32 cells
+    bcs .done
+    cpy #$0000
+    beq .done
+.row:
+    stz !bvI
+.scan:
+    lda !bvI
+    cmp !bvW
+    bcs .nextrow
+    jsr bv_char
+    beq .skip
+    cmp #$0020
+    beq .skip
+    jsr bv_run
+    bra .scan
+.skip:
+    inc !bvI
+    bra .scan
+.nextrow:
+    lda !bvRow
+    clc
+    adc #$0040
+    sta !bvRow
+    dec !bvH
+    bne .row
+    jsr bv_flush
+.done:
+    plb
+    plp
+    rtl
+
+bv_run:                 ; a run starts at cell bvI: collect it, draw it, continue after its last text cell
+    lda !bvI
+    sta !bvStart
+    sta !bvLast
+    lda !bvTmp
+    and #$FC00
+    sta !bvAttr
+    stz !bvLen
+.collect:
+    jsr bv_char
+    beq .endrun
+    cmp #$0020
+    bne .put
+    lda !bvI            ; a space belongs to the run only before more text
+    inc
+    cmp !bvW
+    bcs .endrun
+    sta !bvI
+    jsr bv_char
+    sta !bvCh
+    dec !bvI
+    lda !bvCh
+    beq .endrun
+    cmp #$0020
+    beq .endrun
+    lda #$0020
+.put:
+    ldx !bvLen
+    cpx #$0020
+    bcs .endrun
+    sep #$20
+    sta !bvStr,x
+    rep #$20
+    inx
+    stx !bvLen
+    cmp #$0020
+    beq +
+    ldx !bvI
+    stx !bvLast
++   inc !bvI
+    lda !bvI
+    cmp !bvW
+    bcc .collect
+.endrun:
+    jsr bv_render
+    lda !bvLast
+    inc
+    sta !bvI
+    rts
+
+bv_char:                ; A = ASCII of cell bvI in row bvRow (0, Z set = not text); bvTmp = its tile word
+    lda !bvI
+    asl
+    clc
+    adc !bvRow
+    tax
+    lda.l $7E0000,x
+    sta !bvTmp
+    and #$03FF
+    cmp #$0100
+    bcs .no
+    tax
+    lda.l bv_chars,x
+    and #$00FF
+    rts
+.no:
+    lda #$0000
+    rts
+
+bv_render:              ; draw bvStr over cells bvStart..bvLast of row bvRow on canvas tiles; the rest become spaces
+    lda !bvLen
+    bne +
+    rts
++   lda !bvLast
+    sec
+    sbc !bvStart
+    inc
+    sta !bvN
+    stz !bvPx
+    ldy #$0000
+-   lda !bvStr,y
+    and #$00FF
+    tax
+    lda.l bv_widths-$20,x
+    and #$00FF
+    clc
+    adc !bvPx
+    sta !bvPx
+    iny
+    cpy !bvLen
+    bcc -
+    lda !bvPx
+    clc
+    adc #$0007
+    lsr
+    lsr
+    lsr
+    cmp !bvN
+    bcc +
+    lda !bvN            ; wider than its cells: clipped (tools/bvwf.py overflow() keeps the script clear of it)
++   sta !bvK
+    jsr bv_count
+    bcs +
+    rts                 ; canvas full: the run keeps its fixed-width tiles
++   ldx #$013E
+-   stz !bvBuf,x
+    dex
+    dex
+    bpl -
+    stz !bvPx
+    ldy #$0000
+.glyph:
+    lda !bvPx
+    lsr
+    lsr
+    lsr
+    cmp !bvK
+    bcs .tiles
+    sta !bvB            ; buffer index of row 0
+    lda !bvPx
+    and #$0007
+    sta !bvSh
+    lda !bvStr,y
+    and #$00FF
+    sec
+    sbc #$0020
+    sta !bvCh
+    asl
+    asl
+    asl
+    tax
+    lda #$0008
+    sta !bvY
+.grow:
+    lda.l bv_font,x
+    and #$00FF
+    xba
+    phx
+    ldx !bvSh
+    beq +
+-   lsr
+    dex
+    bne -
++   xba                 ; low byte = this tile column, high byte = the next
+    ldx !bvB
+    ora !bvBuf,x
+    sta !bvBuf,x
+    txa
+    clc
+    adc #$0028
+    sta !bvB
+    plx
+    inx
+    dec !bvY
+    bne .grow
+    ldx !bvCh
+    lda.l bv_widths,x
+    and #$00FF
+    clc
+    adc !bvPx
+    sta !bvPx
+    iny
+    cpy !bvLen
+    bcc .glyph
+.tiles:
+    stz !bvCol
+.tile:
+    lda !bvCol
+    cmp !bvK
+    bcs .pad
+    jsr bv_alloc
+    sta !bvT
+    lda !bvStart
+    clc
+    adc !bvCol
+    asl
+    clc
+    adc !bvRow
+    sta !bvCell
+    lda !bvT
+    asl
+    tax
+    lda !bvCell
+    sta !bvOwner,x
+    lda !bvT
+    clc
+    adc.w #!BV_BASE
+    ora !bvAttr
+    ldx !bvCell
+    sta.l $7E0000,x
+    lda !bvT
+    asl
+    asl
+    asl
+    asl
+    tax
+    ldy !bvCol
+    lda #$0008
+    sta !bvY
+-   lda !bvBuf,y
+    xba
+    ora #$00FF          ; plane 0 = background colour 1, plane 1 = ink (colour 3)
+    sta !bvShadow,x
+    inx
+    inx
+    tya
+    clc
+    adc #$0028
+    tay
+    dec !bvY
+    bne -
+    lda !bvT
+    lsr
+    lsr
+    lsr
+    and #$00FE          ; (tile / 16) * 2
+    tax
+    lda.l bv_bits,x
+    ora !bvDirty
+    sta !bvDirty
+    inc !bvCol
+    bra .tile
+.pad:
+    lda !bvCol
+    cmp !bvN
+    bcs .done
+    lda !bvStart
+    clc
+    adc !bvCol
+    asl
+    clc
+    adc !bvRow
+    tax
+    lda !bvAttr
+    ora #$0093
+    sta.l $7E0000,x
+    inc !bvCol
+    bra .pad
+.done:
+    rts
+
+bv_count:               ; carry set if at least bvK canvas tiles are free
+    lda !bvK
+    beq .yes
+    sta !bvCnt
+    ldy #$0000
+-   jsr bv_free
+    bcc +
+    dec !bvCnt
+    beq .yes
++   iny
+    cpy.w #!BV_N
+    bcc -
+    clc
+    rts
+.yes:
+    sec
+    rts
+
+bv_free:                ; carry set if canvas tile Y is free (its cell shows something else); keeps Y
+    tya
+    asl
+    tax
+    lda !bvOwner,x
+    and #$07FE
+    ora #$B800
+    tax
+    lda.l $7E0000,x
+    and #$03FF
+    sta !bvTmp
+    tya
+    clc
+    adc.w #!BV_BASE
+    cmp !bvTmp
+    beq .used
+    sec
+    rts
+.used:
+    clc
+    rts
+
+bv_alloc:               ; A = a free canvas tile, next-fit (bv_count made sure there is one)
+    ldy !bvNext
+-   cpy.w #!BV_N
+    bcc +
+    ldy #$0000
++   jsr bv_free
+    iny                 ; (keeps carry)
+    bcc -
+    sty !bvNext
+    dey
+    tya
+    rts
+
+bv_flush:               ; queue the dirty chunks on the NMI's VRAM queue (as 30:F28C queues the tilemap)
+    ldy #$0000
+.chunk:
+    lda !bvDirty
+    and #$007F
+    beq .done
+    lsr
+    sta !bvDirty
+    bcc .next
+    tya
+    asl
+    tax
+    lda.l bv_descp,x
+    pha
+    lda.l $7E11E7
+    and #$003F
+    asl
+    tax
+    pla
+    sta.l $7E11EB,x
+    lda.l $7E11E7
+    inc
+    sta.l $7E11E7
+.next:
+    iny
+    bra .chunk
+.done:
+    stz !bvDirty
+    rts
+
+bv_descp:
+    dw bv_desc, bv_desc+7, bv_desc+14, bv_desc+21, bv_desc+28, bv_desc+35, bv_desc+42
+bv_bits:
+    dw $0001, $0002, $0004, $0008, $0010, $0020, $0040, $0080
+bv_chars:
+    incbin "../build/bvwf_chars.bin"
+bv_widths:
+    incbin "../build/bvwf_widths.bin"
+bv_font:
+    incbin "../build/bvwf_font.bin"
 
 font_en:
     incbin "../build/font_en.bin"

@@ -331,19 +331,21 @@ def test_english_build_moves(tmp_path):
     code = rom[battle_text.FOUND_AT:battle_text.FOUND_AT + 54]
     stored = [word(code, i + 1) for i in range(len(code) - 4) if code[i] == 0xA9 and code[i + 3:i + 5] == b"\x87\x50"]
     assert stored == battle_text.en_codec(orig, 0x2000).words(battle_text.FOUND_EN)
-    # column-typed messages read back as their English rows
+    # column-typed messages: every op copies the message so far from column 0 (w = columns reached, h = 2), and
+    # the last one reads back as the English rows
     for at, _, top, bottom in battle_text.COLUMN_MSGS:
         ops = battle_text.column_ops(orig, at)
-        v0, rows = word(orig, ops[0] + 1), {}
+        v0, reach = word(orig, ops[0] + 1), 0
         for o in ops:
+            reach = max(reach, (word(orig, o + 1) - v0) // 2 + 1)
             src = (rom[o + 5] & 0x7F) << 15 | word(rom, o + 3) & 0x7FFF
             assert battle_text.COLUMN_DATA <= src < battle_text.COLUMN_DATA + battle_text.COLUMN_LEN, hex(o)
-            rows[(word(orig, o + 1) - v0) // 2] = (word(rom, src), word(rom, src + 2))
-        c = battle_text.en_codec(orig, word(rom, src) & battle_text.ATTR_MASK)
-        n = len(rows)
+            assert word(rom, o + 1) == v0 and rom[o + 6:o + 8] == bytes([reach, 2]), hex(o)
+        attr = word(rom, src) & battle_text.ATTR_MASK
+        c = battle_text.en_codec(orig, attr)
         for r, text in enumerate((top, bottom)):
-            want = c.words(text) + [word(rom, src) & battle_text.ATTR_MASK | battle_text.SPACE] * (n - len(text))
-            assert [rows[i][r] for i in range(n)] == want, text
+            want = c.words(text) + [attr | battle_text.SPACE] * (reach - len(text))
+            assert [word(rom, src + 2 * (r * reach + i)) for i in range(reach)] == want, text
     # strings.tsv (text coverage): one key per string; a block key names a stream of this build that decompresses
     # far enough to hold the string's slot, a ROM key lies in the ROM
     import lz
@@ -362,3 +364,43 @@ def test_english_build_moves(tmp_path):
             assert k & 0xFFFF < len(streams[off]), hex(k)
         else:
             assert k < len(rom)
+
+
+@pytest.mark.skipif(not ORIG.exists(), reason="no ROM")
+def test_battle_vwf():
+    """Battle VWF (tools/bvwf.py, asm bvwf_rect): the asm constants match bvwf.py, the canvas lies between the battle
+    font and the status-name stream, every text tile has a glyph, the run model splits as specified, and no English
+    run in script/battle.json is wider in proportional type than the cells it replaces."""
+    import json
+    import re
+    import battle_text
+    import blz
+    import bvwf
+    import font_bg3
+    asm = (ROOT / "asm" / "vwf.asm").read_text(encoding="utf-8")
+    assert int(re.search(r"!BV_BASE\s*=\s*\$([0-9A-F]+)", asm).group(1), 16) == bvwf.BASE
+    assert int(re.search(r"!BV_N\s*=\s*(\d+)", asm).group(1)) == bvwf.COUNT
+    assert re.search(r"!i < (\d+)", asm).group(1) == str(-(-bvwf.COUNT // bvwf.CHUNK))   # one descriptor per chunk
+    orig = ORIG.read_bytes()
+    font = blz.decode(orig[font_bg3.BATTLE_FONT:], font_bg3.BATTLE_LEN)
+    assert int.from_bytes(font[:2], "little") // 16 <= bvwf.BASE        # the battle font ends before the canvas
+    assert bvwf.BASE + bvwf.COUNT <= 0x180                               # the status-name stream starts at $180
+    f, widths, chars = bvwf.tables(orig)
+    texts = {c for c in chars if c}
+    assert all(widths[c - 0x20] > 0 for c in texts) and max(widths) <= 9
+    assert chars[bvwf.SPACE] == 0x20 and chars[0x0B] == ord("A") and chars[font_bg3.TILE["a"]] == ord("a")
+    assert not any(chars[1 + i] for i in range(10))                      # digits stay fixed-width tiles
+    cells = list("Def  +") + [None] + list(" Kurt ran")
+    assert bvwf.runs(cells) == [(0, 2, "Def"), (5, 5, "+"), (8, 15, "Kurt ran")]
+    doc = json.loads((ROOT / "script" / "battle.json").read_text(encoding="utf-8"))
+    bad = []
+    for e in doc["entries"]:
+        if not e["en"]:
+            continue
+        ws = battle_text.encode(orig, e)
+        ws = [int.from_bytes(ws[i:i + 2], "little") for i in range(0, len(ws), 2)]
+        for r in range(e["h"]):
+            row = [chr(chars[w & 0x3FF]) if (w & 0x3FF) < 0x100 and chars[w & 0x3FF] else None
+                   for w in ws[r * e["w"]:(r + 1) * e["w"]]]
+            bad += [(e["id"], o) for o in bvwf.overflow(widths, row)]
+    assert not bad, bad

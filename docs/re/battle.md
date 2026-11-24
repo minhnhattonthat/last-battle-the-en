@@ -80,3 +80,21 @@ battle status names). `tools/lua/bank_reads.lua` (every distinct address read in
 `snes_romreads.lua` (one line per PC) hid the copies.
 The battle command label たたかう is drawn with the hiragana tiles that now hold English lowercase: it reads "uukf"
 in the 4 MB build until phase 8 redraws it.
+
+## Battle VWF (2026-11-24, D19; `tools/bvwf.py`, asm `bvwf_rect`)
+Battle layout (ppu dumps `work/qa/bvwf0`): BG1 chr `$5000` map `$7400`, BG2 chr `$2000` map `$7800`, BG3 chr `$6000`
+map `$7C00` (VRAM words). BG3 tilemap shadow **`$7E:B800`** (32 x 32 words), uploaded by the NMI VRAM queue
+**2A:989A**: ring of 64 descriptor pointers at `$11EB`, head `$11E7`, tail `$11E9`, descriptors (VRAM word, 24-bit
+source, size) read with DB = `$28`, so they live in bank `$28` or low WRAM; 30:F28C queues the tilemap (`$28:F44D`,
+once per frame through `$1512`). BG3 tiles in use during battle: `$001-$119` (battle font), `$180-$1FC` (status
+stream), so **`$11A-$17F` (102 tiles) is the VWF canvas** (`$1FD-$27F` look free too, unused so far). WRAM
+`$7F:D800-$7F:E0EF` (zero in every field and battle dump; the largest script block ends at `$7F:37D7`): canvas shadow,
+owner table, render buffer, state.
+Hooks: 29:A278 (window-script copy loop, ROM sources only), 30:F242 (7-byte rect records: escape messages), 3C:8057
+(victory line, rows 3-4), 30:AE2E (item-found line, rows 11-12). Typed messages (`battle_text.COLUMN_MSGS`) copy the
+message so far from column 0 on every op, so the run is redrawn as it grows. The renderer splits each row into runs
+(single spaces inside, two spaces / non-text tile / digit end one), draws a run at its first cell from the bold 8x8
+glyphs trimmed to their ink (+1 px, space 4 px), and points its cells at canvas tiles allocated next-fit; a tile is
+free again once its cell shows something else, so windows need no bookkeeping. Changed tiles go up in 16-tile chunks
+through the queue (descriptors `$28:FC08`, zero filler in the original). Full canvas: the run keeps its fixed tiles.
+Not drawn proportionally: rects copied from WRAM (names/numbers built by code), BG3 text drawn by other code.
