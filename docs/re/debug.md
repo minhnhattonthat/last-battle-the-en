@@ -33,8 +33,9 @@ Everything `tools/debug/warp.lua` relies on. Addresses are WRAM (`$7E`) unless a
 - Character records `$1900 + slot * $E4` (`01:8B14`): +0/+2/+4 stat words, +9 HP, +B max HP, +D MP, +F max MP,
   **+$CF.. item ids** (one byte per slot, 0 = empty; two herbs bought in a shop wrote `$42` to `$19CF/$19D0`).
   Poking them at READY (`@19CF:4342,...`) gives Kurt that inventory in battle (`battle_routes.tsv` `s*`/`iscroll*`).
-  Poking `$3E` = 4 and `$0600-03` = 1 at READY did not add party members to the battle (unit setup reads something
-  else; not found yet).
+  Poking `$3E` = 4 and `$0600-03` = 1 at READY did not add party members to the battle: the battle party is the
+  member ids (1 Kurt, 2 Mei, 3 Borg, 4 Regina) in `$1DD4-$1DD7` (30:9CEA, called from the unit setup 29:B1FA for
+  units 2-4; Kurt's unit is always present). `svc_cover.py bparty` pokes `@1DD4:0201,@1DD6:0403` plus HP.
 - Battle units `$1298 + i * $28` (party 0-3, enemies from `$1338`; copied by `29:B216`): +E HP, +10 max, +12 MP,
   +14 max, +16/+18/+1A the record's first three stats. GOD gives the party units 999 HP (a refill each frame lost to a
   killing blow); WIN sets their stats to 999 (the level-1 hero does no damage to group `$53` otherwise).

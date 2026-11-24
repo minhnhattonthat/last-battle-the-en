@@ -5,7 +5,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Phase:** 8. QA in the emulator, in progress: 3150/3155 translated (the 5 left in `script/keep_jp.txt` are
   particle columns no longer read), 43 tests green. 2026-11-24 session 27.
 - **Done:**
-  - **Phase 8, session 2026-11-24 (27):** coverage 2512 -> SESSION27_COUNT. Session 26's three runs had died
+  - **Phase 8, session 2026-11-24 (27):** coverage 2512 -> 3094/3143 shown (49 left: 39 `bt`, 10 `enemy`). Session 26's three runs had died
     (no DONE lines): redone. All room strings, all `b04`, all `bg3` now shown. **Bugs fixed:** (1) item > Examine
     printed "Gladius / 武器 / 攻撃力 / 8 UP": three bank-04 pointer tables were never extracted (`0x247D9` FA3E
     categories, `0x24805` FA3F stats, `0x24831` FA40 UP/DOWN; `extract.B04_TABLES`, ranges `232D2-24844`, b069:
@@ -18,7 +18,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
     mana names `bt_19E09C-E4` in the bottom row only; b070, b071). Shot on the current build: `work/qa/synth_en`
     vs `work/qa/synth_jp`. New probe tool `tools/debug/svc_cover.py` (chest, magic, seal, synth, review, bmagic,
     erased) and `load_fail.lua`; `names_cover.py --ids`, `owmenus`. `{num}` digits in dialogue are the old tall
-    font (polish.md b04_C763).
+    font (polish.md b04_C763). (3) Battle Cmd > Cast prompt showed `"ho?` under a stray W: だれが？/だれを？ are 4x2
+    rects (dakuten row first), not the guessed one-row scans (`battle_text.EXTRA_RECTS`, ids now `bt_198956` /
+    `bt_198986`, `extract.RENAMED`), both "{nl}Who?". The battle spell list/info column ("Spell Seal / All / Rate")
+    reads fine; "What ?" with a gap is the JP's own leftover ？. Battle party = `$1DD4-$1DD7` (found).
   - **Phase 8, session 2026-11-24 (26):** session-25 re-run finished (`cover_rooms3.log` "RERUN DONE", 119/119
     scenes). With the decompression reads gone the true gap showed: ~900 room strings sit in branches behind story
     flags that no room run takes. New probes: `tools/debug/strings_cover.py` runs the VM straight at each unshown
@@ -307,35 +310,27 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   0. **Phase 8: QA in the emulator** (done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
      `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
-     **Resume here:** visual-QA gate PASSES (263/263, build ac401138; re-shoot + new verdicts after any text
-     change). Text coverage (all probes on `work/qa/cover_build/rom.sfc`, everything under `work/qa/cover`): report
-     `python -X utf8 $SKILL/scripts/textcover.py work/qa/cover work/qa/cover_build/strings.tsv --waive
-     docs/text_unshown.tsv --mask 0xFFFFFFFFFFFF > work/qa/cover_report.txt`. Session 26, before its last three
-     runs finished: 2461/3143 shown, 682 missing (296 `r###`, 180 `bt`, 99 `bg3`, 78 `enemy`, 29 `b04`; `top`,
-     `common`, `cr` all shown). Runs started then, check their logs end with DONE:
-     `cover_str.log` (STR DONE: strings_cover rooms), `cover_battles.log` (BATTLES DONE: group sweep + cover_battle.sh),
-     `cover_menus.log` (MENUS DONE). If a log has no DONE line, re-run its command (strings_cover skips nothing:
-     pass `--rooms` for the rooms after the last logged one). Then re-report and attack what is left: room strings
-     still missing after strings_cover (look at the run's LEFT/STUCK notes: a string whose run leaves the room may
-     need the entry run alone), `bt` battle text (item 1a below), menu `bg3` paths the walks missed (tactics plan
-     editor `bg3_9730-9E74`, teleport town list `bg3_A1B6-A27E`, give/drop/unequip/offer prompts `bg3_87A6-8E44`),
-     `b04` chest messages (`B69E-B794`: a chest needs an entry run; find a room with one), field cast/MP messages,
-     seal messages, a few item descriptions. The old numbers below
-     (721, then 600 in session 25) counted decompression reads as shown, so expect more `r###`/`top`/`common`
-     missing after the re-run. Keep the total to ~4 emulators (16 GB machine). Closed in session 25: spell names,
-     item/spell/seal description boxes (bg3 `A3C5-AC7D` except `AA39`), probably the b04 item descriptions
-     (`examine`) and field use messages (`use`): check them in the report. Missing by family (session 24 counts,
-     before the fixes): 197 room strings (`r###`: conditional branches/flags in room scripts:
-     group by room, find the flag, add `textcover_run.VARIANTS`-style pokes), 192 `bg3` (menu messages for actions
-     not taken, item/spell description boxes `bg3_A3C5-AC7D`: item info per id with poked inventory, like the item
-     lists), 177 `bt` (battle: synthesis/mana screen 1a below, status effects, use messages), 92 `b04` (party names
-     Mei/Borg/Regina need a party, a few banners (scene pass may cover), item descriptions `b04_B69E+`), 33 `common`
-     (shared NPC lines: find which rooms call them), 28 `spell` (the field spell list shows only one entry with
-     Kurt's spell fields poked at `$192A + 8i` (`02 n 41`): the spell count lives elsewhere; or show them in battle /
-     the magic healer screens), `top15_03EC`, `top28_0006`. Probe recipe: `tools/debug/names_cover.py` pattern =
-     `probe.py OUT "0x4D 10 6 KEYS|-|@19CF:...,..." --rom work/qa/cover_build/rom.sfc --frames 3200 --jobs 3
-     --script tools/debug/textcover.lua --var "RANGES='<textcover_run.rom_ranges(cover_build/strings.tsv)>'"`.
-     Waive only what is shown unreachable in `docs/text_unshown.tsv` (created, empty).
+     **Resume here:** visual-QA gate PASSES (263/263) on build eb6d073d (session 27 re-shot battle_field/room/win
+     for the Who? fix into tour4, copied to tour2, verdicts `work/qa/verdicts/s27_battle.tsv`; the other scenes
+     have no text this session changed). Smoke ok. Text coverage (all probes on `work/qa/cover_build/rom.sfc`,
+     everything under `work/qa/cover`): report `python -X utf8 $SKILL/scripts/textcover.py work/qa/cover
+     work/qa/cover_build/strings.tsv --waive docs/text_unshown.tsv --mask 0xFFFFFFFFFFFF > work/qa/cover_report.txt`.
+     **3094/3143 shown, 1 waived (b04_C83B, not in the set's tsv), 49 failing**; every room/top/common/b04/bg3/menu
+     string is shown (group sweep and `cover_battle.sh` done: `cover_battles.log` BATTLES DONE). Left, all battle-only:
+     (a) **party battles**: `svc_cover.py bparty` gets all four members into a battle (`$1DD4-$1DD7`, docs/re/debug.md)
+     and closed the victory-window names, but its Run and Item key paths were wrong with a party (the command order
+     differs: `right;right;a` opened the tactic list). Find the path (shoot a party battle, read the menus), then:
+     escape messages `bt_1F0D06-0DD6` ("Kurt's party ran away" etc., also "There is only one tactic"), LEVEL UP rows
+     for Mei/Borg/Regina `bt_1F04E8-0568` (win with the party and enough EX: poke their level/EX low), battle item
+     descriptions `bt_185DF1-18612F` (cursor over Herb..AllElixir in the battle item list), battle use messages
+     `bt_18617F-186662` (No items, No weapon, Magic faded, Agility up, Poison cured...), status effects
+     `bt_1D8245-830B` (Wis up / Atk up: cast MagicArm/Haste in battle via `svc_cover.py bmagic`-style keys + A).
+     (b) enemy names still unseen after the full group sweep (`names_cover.py battles`, ids 0x00-0xBF): check
+     `re_encounters.py` / scripted boss battles (room scripts start fixed battles: find the op) or waive with the
+     reason. (c) Everything frozen to cover_build: the 12 new Examine strings (b069) are covered separately on
+     build c98763d5 (see Done); bt_198956/198986 replace bt_19895C/198988 (same rect, read in the old set).
+     When the battle gaps are closed or waived, rebuild a fresh coverage set on the final build only if a later
+     text change shifts streams (see `docs/re/debug.md` §Text coverage).
      Write verdicts chunk by chunk to `work/qa/verdicts/<chunk>.tsv` (brief
      `docs/visual-qa-brief.md`; compare `work/qa/tour_jp/<scene>`). Budget: 261 sheets are 520x456 with 128x112
      tiles, too small to read text, so for each scene zoom the text boxes (`sheet.py DIR --changed 0.03 --crop

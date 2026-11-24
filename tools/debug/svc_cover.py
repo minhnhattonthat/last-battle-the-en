@@ -10,6 +10,7 @@ seal    Seal Tome with no spell / one spell; Seal Stone ($F5) holding Restore / 
 synth   E4 07 00 (top21): Combine / Review / Split with 3 or 12 known spells and 9,999,999 Sol
 review  Review with one known spell of each of the 22 types (descriptions and effect labels)
 bmagic  battle Cmd > Cast with 12 known spells (types 0-11, 10-21), walking the list (spell info column)
+bparty  battles with all four members ($1DD4-$1DD7): victory windows, Run, battle item list and item use
 erased  title LOAD forced to fail (tools/debug/load_fail.lua, needs work/saves/base_file1.srm)
 Defaults: the frozen coverage build work/qa/cover_build (rom.sfc + strings.tsv). Report over work/qa/cover.
 Spell types (slot byte 0, low 5 bits) are the distinct spells in order of first appearance in spells.json.
@@ -96,13 +97,31 @@ def specs(kind):
         tn = type_names()
         return [keys + "|-|" + ",".join(["god", "@1DDF:0053"] + kurt([(t, tn[t]) for t in ts]) + [MP99])
                 for ts in (range(0, 12), range(10, 22))]
+    if kind == "bparty":  # battles with all four members: the battle party is the ids at $1DD4-$1DD7 (30:9CEA),
+        # not $3E/$0600; members 2-4 get HP so they stand. Victory windows, Run, item list walk + use.
+        party = ["@1DD4:0201", "@1DD6:0403", "@003E:0004", "@0600:0100", "@0602:0302"]
+        for rec in (0x19E4, 0x1AC8, 0x1BAC):
+            party += [f"@{rec + 9:04X}:0050", f"@{rec + 0xB:04X}:0050", f"@{rec + 0xD:04X}:0020", f"@{rec + 0xF:04X}:0020"]
+        items = [0x42, 0x43, 0x44, 0x45, 0x46, 0x47, 0x48, 0x49, 0x4A, 0x4B, 0x4C, 0x4D, 0x4E, 0x56, 0x57, 0x59]
+        inv = [f"@{0x19CF + i:04X}:{items[i + 1]:02X}{items[i]:02X}" for i in range(0, 16, 2)]
+        b = "0x00 40 30 1100 -;"
+        mash = "6 a;120 -;" * 20
+        walk = "6 down;40 -;" * 8 + "6 right;40 -;" + "6 up;40 -;" * 8
+        use = "6 a;150 -;6 right;40 -;6 right;40 -;6 a;120 -;6 a;120 -;"
+        out = [b + mash + "60 -|-|" + ",".join(["god", "win", "@1DDF:0053"] + party),
+               b + ("6 right;40 -;6 right;40 -;6 a;300 -;" * 4) + "60 -|-|" + ",".join(["god", "@1DDF:0053"] + party),
+               b + use + walk + "6 a;120 -;6 a;120 -;6 a;200 -|-|" + ",".join(["god", "@1DDF:0053"] + party + inv)]
+        for k in range(1, 6):  # use item k (down k) on Kurt, HP and MP low: the use messages
+            out.append(b + use + "6 down;40 -;" * k + "6 a;120 -;6 a;120 -;6 a;200 -|-|" +
+                       ",".join(["@1DDF:0053", HPLOW, MP0] + party + inv))
+        return out
     raise SystemExit(kind)
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("out")
-    ap.add_argument("kind", choices=["chest", "magic", "seal", "synth", "review", "bmagic", "erased"])
+    ap.add_argument("kind", choices=["chest", "magic", "seal", "synth", "review", "bmagic", "bparty", "erased"])
     ap.add_argument("--rom", default=str(ROOT / "work" / "qa" / "cover_build" / "rom.sfc"))
     ap.add_argument("--strings", default=str(ROOT / "work" / "qa" / "cover_build" / "strings.tsv"))
     ap.add_argument("--only", default="", help="comma-separated spec indexes")
@@ -119,7 +138,7 @@ def main():
     sp = specs(a.kind)
     if a.only:
         sp = [sp[int(i)] for i in a.only.split(",")]
-    frames = {"chest": 3000, "synth": 4400, "bmagic": 4200}.get(a.kind, 3400)
+    frames = {"chest": 3000, "synth": 4400, "bmagic": 5200, "bparty": 5600}.get(a.kind, 3400)
     subprocess.run([sys.executable, "-X", "utf8", str(ROOT / "tools" / "debug" / "probe.py"), a.out, *sp,
                     "--rom", a.rom, "--frames", str(frames), "--jobs", a.jobs, *lua])
 
