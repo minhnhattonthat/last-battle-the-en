@@ -65,4 +65,8 @@ Polish pass done in session 31 (phase 9).
   8 (battle_room, session 23) (waived: box is 8 tiles, D10)
 - [x] field prompts with a character-name insert (`{FA0F} has no items.`) centre with the name at 8 tiles, so "Kurt"
   lines sit about a tile left (as the JP did with クルト); fine for 8-letter names (session 23) (waived: same behaviour as the JP)
+- [x] r293_0392 - story pass ch7: Iskar's フフフ as "Hee hee..." read as a giggle (fixed session 32: "Heh heh...")
+- [x] r293_06A7 - story pass ch7: Regina "You shall be one who ... cast aside Silvel!!" (fixed session 32: "casts")
+- [x] r320_0368 - story pass ch7: ending caption "nothing more was ever heard ... again" doubled the never-again and
+  differed from r009_023A (fixed session 32: same wording as r009)
 - [x] b04_C763 - dialogue {num} inserts print the old 12 px font digits ("Attack / 8 up", item Examine): taller than the VWF letters; check the other {num} lines (recovered {num} HP, {num} Sol) and draw the digits with the VWF if they all do this (session 27) (waived: the game's own number font, readable in every shot; VWF digits would be engine work)

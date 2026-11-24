@@ -2,9 +2,20 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9. Release in progress (session 31): polish pass done, `tools/release.py` written, story pass not
-  started (codex out of quota until 2026-11-26). 3150/3155 translated, 43 tests green. 2026-11-24 session 31.
+- **Phase:** 9. Release in progress (session 32): story pass 2/7 chapters (ch1, ch7 ok), visual gate 112 sheets
+  without a verdict on build aa13885f (crops ready in `work/qa/novel6`). 43 tests green. 2026-11-24 session 32.
 - **Done:**
+  - **Phase 9, session 2026-11-24 (32):** story pass **ch1_eldar ok, ch7_last_battle ok** (reports
+    `work/qa/story/reports/`, verdicts `work/qa/story/verdicts/`), read in full by the worker itself (codex still
+    out of quota). ch7 Minors fixed in `script/` and ticked in `docs/polish.md`: r293 Iskar "Heh heh...", Regina
+    "casts aside Silvel", r320_0368 ending caption now the r009 wording. ch2 read to line 220 of 869 with nothing found
+    (not a verdict). Build **aa13885f**, check.py 0 problems. Re-shot `ending` + `credits` into `work/qa/tour7` (the
+    new caption is at `tour7/ending/f014160.png`, reads right), copied into tour2, `qa_gate.py init --build` again.
+    Timing check on the 87 tour6 sheets: **88 of 120 final frames are pixel-identical** to tour5/tour3, the other 32
+    differ only by cursor blink, sprite animation or palette fade, apart from the intended "There is nothing there."
+    (menu_search). New tool **`tools/debug/tour_novel.py`**: for each re-shot scene, crops (old | new) of every frame
+    region no earlier tour showed, to `work/qa/novel6/<scene>.png` (+ `summary.tsv`); those crops are what the
+    verdicts need reading, not the whole sheets.
   - **Phase 9, session 2026-11-24 (31):** **polish pass**: every `docs/polish.md` line ticked (fixed: the M1
     duplicate-JP lines now share one wording, r009 copies the r319-r322 ending text; "It is locked." / "There is
     nothing there." everywhere; Ritten/Gulva old men's "eh" tags cut by about half; `common_0384` "Zzz... zzz....";
@@ -357,7 +368,15 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
-  00. **Phase 9: Release, resume here.** (1) **Story pass**, 7 chapters: `qa_gate.py todo work/qa/story/manifest.tsv
+  000. **Session 32 hand-back, resume here.** (a) Story pass: ch2-ch6 left (ch1, ch7 done; ch2 lines 1-220 read
+     clean). Read EN+JP in 150-220-line parts; one fresh worker context fits about 2 chapters (ch4 alone is 1754
+     lines). Batch all story fixes before the next re-shoot. (b) Visual gate: `qa_gate.py todo work/qa/manifest.tsv
+     work/qa/verdicts` lists 112 sheets. For each, read `work/qa/novel6/<scene>.png` (ending/credits: compare
+     tour7 vs tour6 instead, `tour_novel.py work/qa/tour7 work/qa/tour6 --out work/qa/novel7`) and write
+     `<id>\tok|issue\tnote` to `work/qa/verdicts/s32_<chunk>.tsv`. After any later text fix: rebuild, re-shoot only
+     the scenes showing it, copy into tour2, `qa_gate.py init ... --build`, re-run `tools/story_chapters.py` + story
+     `init`. (c) `tools/release.py --version 1.0` must exit 0.
+  00. **Phase 9: Release (session 31 notes).** (1) **Story pass**, 7 chapters: `qa_gate.py todo work/qa/story/manifest.tsv
      work/qa/story/verdicts --size 1`. For each chapter, a fresh read-only reviewer (brief
      `$SKILL/assets/story-reviewer-brief.md` with this game's names; inputs `docs/synopsis.md`,
      `docs/style-reference.md`, `glossary.md`) reads the whole file in parts (Read with offset/limit, 60-75 rows:
