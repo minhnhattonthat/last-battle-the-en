@@ -159,6 +159,54 @@ def specs(kind):
         out.append(b + cmd + "6 right;60 -;6 right;60 -;6 a;150 -;6 a;150 -;6 a;150 -;" + mash + "|-|" +
                    ",".join(grp + party))  # 17: Gear with the weapon on (stat window)
         out.append(b + item + "6 a;150 -;6 a;150 -;" + mash + "|-|" + ",".join(grp + party + ["@19CF:004D"]))  # 18
+        out.append(b + item + "120 -|-|" + ",".join(grp + party + ["@19CF:0041"]))  # 19: AuraField's description
+        # 20: Erase Wand against Iskar (group $8888, enemy $3A): 29:91F5 prints "No effect on Ice Dragon!" for $3A
+        out.append(b + item + "6 a;150 -;6 a;150 -;" + mash + "|-|" + ",".join(["god", "@1DDF:8888", "@19CF:004D"]))
+        # 21-22: Cure Herb on Kurt poisoned / confused: 29:9259 reads the record's +1 & 7 (1 poison, 2 stun,
+        # 4 confusion), clears it and prints Poison cured / Can move again / Confusion cleared
+        for st in (1, 4):
+            out.append(b + item + "6 a;150 -;6 a;150 -;" + mash + "|-|" +
+                       ",".join(grp + party + ["@19CF:0044", f"@1901={st:02X}"]))
+        # 23-24: battle Cast list with 12 Protect slots, slot byte +1 (then +2) = 0..11: the info column's target
+        # cell ("Party", bt_1F0F14, is the one never drawn with +1 = +2 = 3)
+        walk = "6 down;40 -;" * 6 + "6 right;40 -;" + "6 up;40 -;" * 6 + "6 left;40 -;"
+        keys = "0x00 40 30 1100 -;6 a;150 -;6 right;40 -;6 a;120 -;6 a;120 -;6 a;120 -;" + walk * 2 + "60 -"
+        prot = type_names()[6]
+        for off in (1, 2):
+            pk = []
+            for j in range(12):
+                s = slot(0x1927 + 14 * j, 6, prot)
+                pk += s + [f"@{0x1927 + 14 * j + off:04X}={j:02X}"]
+            out.append(keys + "|-|" + ",".join(grp + pk + [MP99]))
+        # 25-26: Run at level 99 (record +$22): 29:86A5 compares the party's level ($12A5) with the highest enemy
+        # level and a roll, success 29:86F0 -> "Kurt ran away" / "Kurt's party ran away" ($12C0 bit 7 = member 2)
+        run = b + "6 right;60 -;" * 3 + "6 a;150 -;6 a;200 -;" + mash
+        lv99 = [f"@{r + 0x22:04X}=63" for r in (0x1900, 0x19E4, 0x1AC8, 0x1BAC)]
+        out.append(run + "|-|" + ",".join(grp + lv99))
+        out.append(run + "|-|" + ",".join(grp + party + lv99))
+        # 27: Plan with tactic records 1-7 ($1C91 + 12k, 8-byte names) blanked. Result: the battle goes black; the
+        # "only one tactic" record $28:9613 is never loaded anyway (waived in docs/text_unshown.tsv)
+        blank = [f"@{0x1C91 + 12 * k + w:04X}:0000" for k in range(1, 8) for w in range(0, 12, 2)]
+        out.append(b + "6 right;60 -;6 right;60 -;6 a;150 -;6 a;150 -;" + mash + "|-|" + ",".join(grp + blank))
+        # 28: Pendant ($C7, effect byte $99): the battle description table ($30:DD73, 0x185D73) is indexed by
+        # (item record +$0B & $3F) - 1, so $19 -> entry 24 = bt_18612F "Party defense up by about 30"
+        out.append(b + item + "120 -|-|" + ",".join(grp + party + ["@19CF:00C7"]))
+        # 29: Gear with two swords carried (Old Sword $CC, Eld Sword $CE; category nibble 1): the Atk/Def window
+        out.append(b + cmd + "6 right;60 -;6 right;60 -;6 a;150 -;6 a;150 -;6 a;150 -;6 down;60 -;6 a;150 -;" + mash +
+                   "|-|" + ",".join(grp + party + ["@19CF:CECC"]))
+        # 30-35: Seal Stone ($F5) used in battle: 29:8992 (item id >= $F5), then a roll (< $55 for a stone, 29:89B4)
+        # prints "Magic faded away" and empties it. Restore with power +$0D bit 7 (30:8043), or Fireball; 3 timings
+        tn = type_names()
+        for t, extra in ((7, ["@1CFD:D012"]), (0, [])):
+            for d in (1100, 1113, 1127):
+                out.append(f"0x00 40 30 {d} -;6 a;250 -;" + item + "6 a;150 -;6 a;150 -;" + mash + "|-|" +
+                           ",".join(grp + party + slot(0x1CF1, t, tn[t]) + extra + ["@19CF:00F5"]))
+        # 36-37: battle Cast list, every type with power byte +$0D bit 7 set (30:8043: Restore + bit 7 = party):
+        # the info column's "Party" cell (bt_1F0F14); slot bytes +1/+2 change nothing there (specs 23-24)
+        for ts in (range(0, 12), range(10, 22)):
+            pk = kurt([(t, tn[t]) for t in ts])
+            pk += [f"@{0x1927 + 14 * j + 13:04X}=D0" for j in range(12)]
+            out.append(keys + "|-|" + ",".join(grp + pk + [MP99]))
         return out
     raise SystemExit(kind)
 
@@ -182,6 +230,8 @@ def main():
     a = ap.parse_args()
     ranges = textcover_run.rom_ranges(Path(a.strings))
     lua = ["--script", str(ROOT / "tools" / "debug" / "textcover.lua"), "--var", f"RANGES='{ranges}'"]
+    if a.kind == "bparty2":  # specs that poke Kurt's record +1 get that battle status in battle
+        lua += ["--script", str(ROOT / "tools" / "debug" / "bstatus.lua")]
     if a.kind == "erased":
         subprocess.run([sys.executable, "-X", "utf8", str(Path(SKILL) / "scripts" / "emu.py"), a.rom, "--out", a.out,
                         "--script", str(ROOT / "tools" / "debug" / "warp.lua"), "--var", "SCENE='load_file1'",

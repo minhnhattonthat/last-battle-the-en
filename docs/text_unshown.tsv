@@ -8,4 +8,4 @@ enemy_78	Sandworm: placeholder record (level 1, HP 3) only in the identical fill
 enemy_76	Lamia: in no enemy group or preset (see enemy_16)
 enemy_85	Graviton: in no enemy group or preset (see enemy_16)
 enemy_86	Black Sphere: in no enemy group or preset (see enemy_16)
-bt_1865AE	"No effect on Ice Dragon!" (アイストラコンには きかない!): no enemy, spell, item or room line in the game names an Ice Dragon (enemies.json dragons are Shadow/Thunder/Platinum/Earth); a leftover message (session 29)
+bt_1F0DD6	"There is only one tactic for now!": its window record $28:9613 (0x141613, the only pointer to 3E:8DD6) is never loaded; the neighbouring records $28:95E2-960C each have an LDX # in bank 29 (29:C721/C737/C744/C751/C75E/BB96/C563), and no byte pair 13 96 in the ROM is an operand (session 29)

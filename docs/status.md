@@ -5,13 +5,20 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Phase:** 8. QA in the emulator, in progress: 3150/3155 translated (the 5 left in `script/keep_jp.txt` are
   particle columns no longer read), 43 tests green. 2026-11-24 session 29.
 - **Done:**
-  - **Phase 8, session 2026-11-24 (29):** coverage 3108 -> **3124/3143 shown, 9 waived, 10 failing**. bparty specs
+  - **Phase 8, session 2026-11-24 (29):** coverage 3108 -> **3131/3143 shown, 9 waived, 3 failing**. bparty specs
     7-33 finished (`work/qa/cover/bparty3`: Agility/Defense up, all status effects `bt_1D82xx`, use messages).
-    New probe kind `svc_cover.py bparty2` (19 specs; specs 0-7 ran into `work/qa/cover/bparty4` before the system
-    **killed the run for low memory** at spec 8): one item in slot 0 shows its battle description (Erase Wand =
-    `bt_185F09` "Nulls all magic"; Torch/Bloodlure/Haste/Body/Life/Mind are not `bt_18612F`), and a win with all
-    four members at level 1 / EX 0 showed every LEVEL UP row `bt_1F04E8-0568`. Waived `bt_1865AE` "No effect on Ice
-    Dragon!" (no Ice Dragon anywhere in the game). **Visual gate passes on build 5d09a64b** (266 sheets): re-shot
+    New probe kind `svc_cover.py bparty2` (38 specs, runs `bparty4`-`bparty10`; the system killed two runs for low
+    memory, so run it with `--jobs 1` and a few specs at a time). Found and shown: the battle item description
+    table `$30:DD73` (0x185D73) is indexed by (item record +$0B & $3F) - 1 (Erase Wand $8B -> "Nulls all magic",
+    Pendant $C7/$99 -> "Party defense up"); LEVEL UP rows for Mei/Borg/Regina (win with every member at level 1,
+    EX 0: record +$22/+$23); escape 29:86A5 compares the party level `$12A5` with the top enemy level + a roll, so
+    Run at level 99 (record +$22 = $63) shows "Kurt ran away" / "Kurt's party ran away"; Gear with two swords
+    carried (`@19CF:CECC`) shows the Atk/Def window `bt_18640A`; Erase Wand vs Iskar (enemy $3A, 29:91F5) shows "No
+    effect on Ice Dragon!" (Iskar is the JP's Ice Dragon; the non-Iskar branch is "Magic power is fading...");
+    a Seal Stone holding Restore with power byte +$0D bit 7 (30:8043) shows the spell info "Party" cell. Waived
+    `bt_1F0DD6` "only one tactic" (record `$28:9613` is never loaded, see `docs/text_unshown.tsv`).
+    `tools/debug/bstatus.lua` holds a battle status in unit 0 +1 (`$1299`) from a record poke `@1901=0s`.
+    **Visual gate passes on build 5d09a64b** (266 sheets): re-shot
     battle_field/room/win, wipeout and the new `battle_items` into `work/qa/tour5`, copied to tour2, `qa_gate.py
     init`, verdicts `work/qa/verdicts/s29_battle.tsv` (item list reads All / Elixir, Blood- / lure, Speed / Herb,
     Erase / Wand). JP `battle_items` shot in `work/qa/tour_jp` (its battle runs on different timing: no item list).
@@ -333,15 +340,19 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   0. **Phase 8: QA in the emulator** (done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
      `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
-     **Resume here (session 29):** 10 failing, all battle-only. (1) Re-run the rest of bparty2 with **one job**
-     (two emulators were killed for low memory twice): `python -X utf8 tools/debug/svc_cover.py work/qa/cover/bparty5
-     bparty2 --jobs 1 --only 8,9,10,11,12,13,14,15,16,17,18` (Run timings for `bt_1F0D06/0D36`, Plan solo for
-     `bt_1F0DD6`, Gear with a weapon for the Atk/Def window `bt_18640A`, Erase Wand use for `bt_186512` "Magic faded
-     away"). (2) `bt_18612F` "Party defense up by about 30": try AuraField (item $41, effect byte $9D) in slot 0.
-     (3) `bt_1865EA` Poison cured / `bt_186626` Confusion cleared / `bt_186562` Magic power fading need an afflicted
-     or buffed unit: find the status byte in the battle unit (`$1298 + i*$28`) or waive with the reason;
-     `bt_1F0F14` "{nl}Party" is a spell info column cell (a party-target spell). The window-script table that lists
-     these messages is data at `33:DD00-DE70` (0x19DD00), not code. Then report and gate.
+     **Resume here (session 29 end):** 3 failing, all battle messages. Run probes with `--jobs 1`, a few specs a
+     run (memory). (1) `bt_186512` "Magic faded away": 29:8992 handles a used item id >= $F5; at 29:89B4 a Seal
+     Stone fades on a roll < $55/256, a Seal Tome on < $40 (then the slot is cleared). Specs 30-35 (stone with
+     Restore / Fireball) ran 4 times with no fade: check in one run's frames that the stone was really used (maybe
+     30:8043/30:806E send it to 29:8AFE first), then run specs 32-35 or add more timings. (2) `bt_1865EA` Poison
+     cured / `bt_186626` Confusion cleared: Cure Herb (effect $0C) -> item jump table 29:9176 -> 29:924E -> 29:9259:
+     status = battle unit +1 & 7 (`$1400` from 30:8F1D = `$1298 + i*$28`; 1 poison -> DE36, 2 stun, 4 confusion ->
+     DE48), and a bit in the table at `$00E8` (29:CCEA) also routes to the confusion branch. Specs 21-22 with
+     `bstatus.lua` held unit0+1 = 1 / 4 from f2357 on, the herb was queued on Kurt ("OK!"), yet no use message showed
+     at all: read the frames after f4290 in `work/qa/cover/bparty9/p00*`, and log unit0+1 and the action with
+     `tools/lua/watch_value.lua` (maybe status 1 stops Kurt acting, so let Mei use the herb on Kurt). Or a natural
+     route: an enemy that poisons (find its group). Waive only with the reason. (3) Then the report must exit 0.
+     Older (pre-session-29) notes follow.
      Session 28 notes: (1) finish the bparty probe, at most 2 jobs because memory ran out:
      `python -X utf8 tools/debug/svc_cover.py work/qa/cover/bparty3 bparty --jobs 2 --only 7,8,...,33` (specs
      0-6 done in `bparty2`), then report. Still failing: battle use messages `bt_18617F-186662`, status effects

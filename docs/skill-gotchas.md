@@ -35,3 +35,4 @@
 - `scripts/qa_gate.py`: `init MANIFEST DIR1 DIR2` ids sheets under DIR2 as `../DIR2/...`, a second copy of every scene; to refresh some scenes, copy the new sheets into the manifest's own first dir and init with that dir only.
 - Windows: `probe.py`-style drivers passing many long spec strings hit the 32K command-line cap (WinError 206); chunk them (`tools/debug/names_cover.py`).
 - Claude Code: a background `until grep ...; sleep` wait loop can be reaped under memory pressure while the session idles (the job it watched kept running); check the job's own log rather than trusting the waiter.
+- references/emulator-qa.md: Claude Code reaps background emulator runs under system memory pressure while the session idles (Mesen probe runs killed at 2 jobs and again at 1 job on a 16 GB machine); run long probe sets in small batches and check each run dir for final.png before trusting the report (session 29).
