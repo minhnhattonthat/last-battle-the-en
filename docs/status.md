@@ -2,9 +2,23 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator, in progress: 3138/3143 translated (the 5 left in `script/keep_jp.txt` are
-  particle columns no longer read), 43 tests green. 2026-11-24 session 26.
+- **Phase:** 8. QA in the emulator, in progress: 3150/3155 translated (the 5 left in `script/keep_jp.txt` are
+  particle columns no longer read), 43 tests green. 2026-11-24 session 27.
 - **Done:**
+  - **Phase 8, session 2026-11-24 (27):** coverage 2512 -> SESSION27_COUNT. Session 26's three runs had died
+    (no DONE lines): redone. All room strings, all `b04`, all `bg3` now shown. **Bugs fixed:** (1) item > Examine
+    printed "Gladius / 武器 / 攻撃力 / 8 UP": three bank-04 pointer tables were never extracted (`0x247D9` FA3E
+    categories, `0x24805` FA3F stats, `0x24831` FA40 UP/DOWN; `extract.B04_TABLES`, ranges `232D2-24844`, b069:
+    Weapon/Armor/Shield/Footwear/Accessory, Attack/Defense/Agility/Wisdom/Luck, up/down); shot "Gladius / Weapon /
+    Attack / 8 up" (`work/qa/exam_cat`). These 12 ids are not in the frozen coverage set: covered on build c98763d5
+    (`work/qa/exam_cat2`, `exam_cat_rom.sfc` + `exam_cat_strings.tsv`): 11/12, DOWN waived (unreachable, see
+    `docs/text_unshown.tsv`). (2) The magic synthesis screen (healer E4 07 00 > Combine/Review/Split, first reached
+    this session) showed `High "Bal"ance` (dakuten row 0x40 above a bank-$2D scan row: `battle_text.dakuten_above`
+    blanks it) and "FWind"/"WaFire" in the mana boxes (template rows `bt_16EF84`/`bt_16F082` now aligned like the JP,
+    mana names `bt_19E09C-E4` in the bottom row only; b070, b071). Shot on the current build: `work/qa/synth_en`
+    vs `work/qa/synth_jp`. New probe tool `tools/debug/svc_cover.py` (chest, magic, seal, synth, review, bmagic,
+    erased) and `load_fail.lua`; `names_cover.py --ids`, `owmenus`. `{num}` digits in dialogue are the old tall
+    font (polish.md b04_C763).
   - **Phase 8, session 2026-11-24 (26):** session-25 re-run finished (`cover_rooms3.log` "RERUN DONE", 119/119
     scenes). With the decompression reads gone the true gap showed: ~900 room strings sit in branches behind story
     flags that no room run takes. New probes: `tools/debug/strings_cover.py` runs the VM straight at each unshown

@@ -1,1 +1,2 @@
 # id	reason it is never shown (textcover.py --waive); only strings shown to be unreachable
+b04_C83B	FA40 DOWN: 01:FD00 takes DOWN when bit (3 + stat) of item record +$0C is set; that byte is the category 1-5 for every item ($04:CAD1/D201 records), so only UP prints (session 27)
