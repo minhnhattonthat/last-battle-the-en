@@ -402,6 +402,9 @@ def coverage(rom, files=None):
     return probs
 
 
+RENAMED = {"bt_198956": "bt_19895C", "bt_198986": "bt_198988"}  # new id: old id (battle_text.EXTRA_RECTS, s27)
+
+
 def write(files, force=False):
     SCRIPT.mkdir(exist_ok=True)
     wrote = kept = 0
@@ -412,6 +415,9 @@ def write(files, force=False):
                 kept += 1
                 continue
             old = {e["id"]: e for e in json.loads(path.read_text(encoding="utf-8"))["entries"]}
+            for new_id, old_id in RENAMED.items():  # an entry whose geometry (and so id) was corrected
+                if old_id in old and new_id not in old:
+                    old[new_id] = old.pop(old_id)
             for e in doc["entries"]:
                 for k in ("en", "notes", "status"):
                     if old.get(e["id"], {}).get(k):

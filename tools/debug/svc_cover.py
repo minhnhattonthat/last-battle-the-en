@@ -92,7 +92,7 @@ def specs(kind):
         return [keys + "|07E400|" + ",".join(kurt([(t, n)]) + MONEY + [MP99]) for t, n in enumerate(type_names())]
     if kind == "bmagic":  # battle: Cmd > Cast > Kurt, walk the spell list (info column per spell type)
         walk = "6 down;40 -;" * 6 + "6 right;40 -;" + "6 up;40 -;" * 6 + "6 left;40 -;"
-        keys = "0x00 40 30 1100 -;6 a;150 -;6 right;40 -;6 a;120 -;6 a;120 -;" + walk * 2 + "60 -"
+        keys = "0x00 40 30 1100 -;6 a;150 -;6 right;40 -;6 a;120 -;6 a;120 -;6 a;120 -;" + walk * 2 + "60 -"
         tn = type_names()
         return [keys + "|-|" + ",".join(["god", "@1DDF:0053"] + kurt([(t, tn[t]) for t in ts]) + [MP99])
                 for ts in (range(0, 12), range(10, 22))]
