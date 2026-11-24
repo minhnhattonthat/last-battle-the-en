@@ -296,8 +296,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
      **Resume here:** visual-QA gate PASSES (263/263, build ac401138; re-shoot + new verdicts after any text
      change). Text coverage (all probes on `work/qa/cover_build/rom.sfc`, everything under `work/qa/cover`): report
      `python -X utf8 $SKILL/scripts/textcover.py work/qa/cover work/qa/cover_build/strings.tsv --waive
-     docs/text_unshown.tsv --mask 0xFFFFFFFFFFFF > work/qa/cover_report.txt`. Session 26 at hand-back: see the
-     counts in the session-26 line under "Coverage left" below; runs started then, check their logs end with DONE:
+     docs/text_unshown.tsv --mask 0xFFFFFFFFFFFF > work/qa/cover_report.txt`. Session 26, before its last three
+     runs finished: 2461/3143 shown, 682 missing (296 `r###`, 180 `bt`, 99 `bg3`, 78 `enemy`, 29 `b04`; `top`,
+     `common`, `cr` all shown). Runs started then, check their logs end with DONE:
      `cover_str.log` (STR DONE: strings_cover rooms), `cover_battles.log` (BATTLES DONE: group sweep + cover_battle.sh),
      `cover_menus.log` (MENUS DONE). If a log has no DONE line, re-run its command (strings_cover skips nothing:
      pass `--rooms` for the rooms after the last logged one). Then re-report and attack what is left: room strings
