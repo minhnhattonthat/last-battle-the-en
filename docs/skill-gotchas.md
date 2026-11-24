@@ -36,3 +36,4 @@
 - Windows: `probe.py`-style drivers passing many long spec strings hit the 32K command-line cap (WinError 206); chunk them (`tools/debug/names_cover.py`).
 - Claude Code: a background `until grep ...; sleep` wait loop can be reaped under memory pressure while the session idles (the job it watched kept running); check the job's own log rather than trusting the waiter.
 - references/emulator-qa.md: Claude Code reaps background emulator runs under system memory pressure while the session idles (Mesen probe runs killed at 2 jobs and again at 1 job on a 16 GB machine); run long probe sets in small batches and check each run dir for final.png before trusting the report (session 29).
+- emulator-qa.md §Visual QA: on this repo a full run_scenes re-shoot after dialogue-only edits changed 87 of 266 sheets (most scenes show none of the edited text), so a rebuild re-opens much of the gate; compare against the previous tour before re-reviewing.

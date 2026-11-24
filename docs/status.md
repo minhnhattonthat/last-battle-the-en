@@ -2,9 +2,20 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9. Release, not started (phase 8 done-when met session 30): 3150/3155 translated (the 5 left in
-  `script/keep_jp.txt` are particle columns no longer read), 43 tests green. 2026-11-24 session 30.
+- **Phase:** 9. Release in progress (session 31): polish pass done, `tools/release.py` written, story pass not
+  started (codex out of quota until 2026-11-26). 3150/3155 translated, 43 tests green. 2026-11-24 session 31.
 - **Done:**
+  - **Phase 9, session 2026-11-24 (31):** **polish pass**: every `docs/polish.md` line ticked (fixed: the M1
+    duplicate-JP lines now share one wording, r009 copies the r319-r322 ending text; "It is locked." / "There is
+    nothing there." everywhere; Ritten/Gulva old men's "eh" tags cut by about half; `common_0384` "Zzz... zzz....";
+    library caption past tense; shopkeeper "yessir!"; waived with reasons: battle rects too narrow, D9/D10/D18
+    limits, cosmetic layout). **`tools/release.py`** (build, tests, smoke, `jp_left.py --known docs/jp_known.txt`
+    (12 runs, all code/data/compressed bytes), `qa_gate.py check` on every `work/qa/**/manifest.tsv`, textcover on
+    the frozen `work/qa/cover_build/strings.tsv`, polish, README placeholders + base SHA-1, checksum, BPS make +
+    re-apply compare, zip `release/LastBattle_EN_vX.Y.zip` = .bps + README.txt from `docs/release-readme.txt`).
+    README.md filled (status table, base ROM hashes). **Story pass set up:** `tools/story_chapters.py` writes the 7
+    chapter files (synopsis room ranges) to `work/qa/story/chapters/`, manifest `work/qa/story/manifest.tsv`
+    (init done, 0/7 verdicts).
   - **Phase 8 done, session 2026-11-24 (30):** `textcover.py` exits 0: **3134/3143 shown, 9 waived, 0 failing**.
     The last three battle messages are RNG/status gated, so two new Lua hooks force the branch (used with
     `svc_cover.py bparty2` specs through a scratch runner): `tools/debug/bfade.lua` clears carry at 29:89CD (the
@@ -346,11 +357,27 @@ Updated at the end of every session. Keep it to what the next session needs; his
       room and money in WRAM (`save_check.lua`): stress_money (9,999,999) loads clean, no corruption message.
     - Probes: `tools/lua/{exec_log,pc_sample,skip_apu_wait,...}.lua`; `tools/debug/probe.py` ad-hoc warps.
 - **Next:**
-  00. **Phase 9: Release** (done-when in the skill table): story-pass verdict per chapter (`work/qa/story/manifest.tsv`,
-     `references/translation.md` §Review; do it in a fresh read-only pass or `codex exec -s read-only`, quota back
-     2026-11-26), tick or move every line of `docs/polish.md`, then `tools/release.py` (patch + verify). Never run
-     `gh release create`. Phase-8 leftovers judged non-blocking: equip-label screen `bg3_A729/A737/A73D`, teleport
-     list at 9 letters, name-entry grid order. The phase-8 notes below are history.
+  00. **Phase 9: Release, resume here.** (1) **Story pass**, 7 chapters: `qa_gate.py todo work/qa/story/manifest.tsv
+     work/qa/story/verdicts --size 1`. For each chapter, a fresh read-only reviewer (brief
+     `$SKILL/assets/story-reviewer-brief.md` with this game's names; inputs `docs/synopsis.md`,
+     `docs/style-reference.md`, `glossary.md`) reads the whole file in parts (Read with offset/limit, 60-75 rows:
+     the files are 41-208 KB, ch4 is the largest) and returns Issues + Assessment. `codex exec -s read-only` is out
+     of quota until 2026-11-26 10:32; without it, do one or two chapters per fresh worker context yourself. Save
+     reports to `work/qa/story/reports/<ch>.md`, write `<ch><TAB>ok|issue<TAB>note` to
+     `work/qa/story/verdicts/<ch>.tsv`, fix every Critical/Important in `script/` (then rebuild, re-run
+     `tools/story_chapters.py` and `qa_gate.py init` again: a changed chapter needs a new verdict), Minors to
+     `docs/polish.md` (tick them before release). (2) **Visual gate is open on build 8934b957:** session 31 re-shot
+     all 120 scenes into `work/qa/tour6` (120/120 reached), copied each `sheet.png`/`final.png` into `work/qa/tour2`
+     and ran `qa_gate.py init work/qa/manifest.tsv work/qa/tour2 --build build/lastbattle_en.sfc`: **87 of 266
+     sheets changed** and need verdicts (`qa_gate.py todo work/qa/manifest.tsv work/qa/verdicts --size 30` lists
+     them: battle_*, camp_menu, credits, ending, menus, name entry, saves, stress_*...). Most are probably frame
+     timing, not text (the session-31 edits touch only dialogue, the ending text r009 and two field messages):
+     check with `sheet.py --compare` against `work/qa/tour5`/`tour4`/`tour3` first, then write verdicts chunk by chunk
+     (`docs/visual-qa-brief.md`) to `work/qa/verdicts/s31_<chunk>.tsv`. If text changes again later, re-shoot only
+     the scenes showing it and re-init. (3) `python -X utf8
+     tools/release.py --version 1.0` must exit 0 (it checks everything else). Never run `gh release create`.
+     Phase-8 leftovers judged non-blocking: equip-label screen `bg3_A729/A737/A73D`, teleport list at 9 letters,
+     name-entry grid order. The phase-8 notes below are history.
   0. **Phase 8: QA in the emulator** (DONE session 30; done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
      `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
      **Resume here (session 29 end):** 3 failing, all battle messages. Run probes with `--jobs 1`, a few specs a
