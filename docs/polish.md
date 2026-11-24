@@ -64,3 +64,4 @@ script refuses to run while any line is unticked. Sources: `docs/review-phase6.m
   8 (battle_room, session 23)
 - [ ] field prompts with a character-name insert (`{FA0F} has no items.`) centre with the name at 8 tiles, so "Kurt"
   lines sit about a tile left (as the JP did with クルト); fine for 8-letter names (session 23)
+- [ ] b04_C763 - dialogue {num} inserts print the old 12 px font digits ("Attack / 8 up", item Examine): taller than the VWF letters; check the other {num} lines (recovered {num} HP, {num} Sol) and draw the digits with the VWF if they all do this (session 27)

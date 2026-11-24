@@ -1433,6 +1433,138 @@
    "ptrs": [
     "02474F"
    ]
+  },
+  {
+   "id": "b04_C7E3",
+   "addr": "C7E3",
+   "size": 4,
+   "jp": "武器",
+   "en": "Weapon",
+   "file": "0247E3",
+   "ptrs": [
+    "0247D9"
+   ]
+  },
+  {
+   "id": "b04_C7E9",
+   "addr": "C7E9",
+   "size": 6,
+   "jp": "よろい",
+   "en": "Armor",
+   "file": "0247E9",
+   "ptrs": [
+    "0247DB"
+   ]
+  },
+  {
+   "id": "b04_C7F1",
+   "addr": "C7F1",
+   "size": 4,
+   "jp": "たて",
+   "en": "Shield",
+   "file": "0247F1",
+   "ptrs": [
+    "0247DD"
+   ]
+  },
+  {
+   "id": "b04_C7F7",
+   "addr": "C7F7",
+   "size": 4,
+   "jp": "足用",
+   "en": "Footwear",
+   "file": "0247F7",
+   "ptrs": [
+    "0247DF"
+   ]
+  },
+  {
+   "id": "b04_C7FD",
+   "addr": "C7FD",
+   "size": 6,
+   "jp": "装備品",
+   "en": "Accessory",
+   "file": "0247FD",
+   "ptrs": [
+    "0247E1"
+   ]
+  },
+  {
+   "id": "b04_C80F",
+   "addr": "C80F",
+   "size": 6,
+   "jp": "攻撃力",
+   "en": "Attack",
+   "file": "02480F",
+   "ptrs": [
+    "024805"
+   ]
+  },
+  {
+   "id": "b04_C817",
+   "addr": "C817",
+   "size": 6,
+   "jp": "守備力",
+   "en": "Defense",
+   "file": "024817",
+   "ptrs": [
+    "024807"
+   ]
+  },
+  {
+   "id": "b04_C81F",
+   "addr": "C81F",
+   "size": 6,
+   "jp": "素早さ",
+   "en": "Agility",
+   "file": "02481F",
+   "ptrs": [
+    "024809"
+   ]
+  },
+  {
+   "id": "b04_C827",
+   "addr": "C827",
+   "size": 4,
+   "jp": "賢さ",
+   "en": "Wisdom",
+   "file": "024827",
+   "ptrs": [
+    "02480B"
+   ]
+  },
+  {
+   "id": "b04_C82D",
+   "addr": "C82D",
+   "size": 2,
+   "jp": "運",
+   "en": "Luck",
+   "file": "02482D",
+   "ptrs": [
+    "02480D"
+   ]
+  },
+  {
+   "id": "b04_C835",
+   "addr": "C835",
+   "size": 4,
+   "jp": "ＵＰ",
+   "en": "up",
+   "file": "024835",
+   "ptrs": [
+    "024831"
+   ]
+  },
+  {
+   "id": "b04_C83B",
+   "addr": "C83B",
+   "size": 8,
+   "jp": "ＤＯＷＮ",
+   "en": "down",
+   "file": "02483B",
+   "ptrs": [
+    "024833"
+   ]
   }
  ]
 }

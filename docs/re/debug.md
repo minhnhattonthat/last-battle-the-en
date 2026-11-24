@@ -108,6 +108,14 @@ Everything `tools/debug/warp.lua` relies on. Addresses are WRAM (`$7E`) unless a
   Spell names live only in the character records in WRAM (copied from the new-game record / joining blocks), so
   their key is the English name in the `$FC:8000` name table (`insert.NameTable`, pointer per kind * 256 + n).
   `tools/debug/names_cover.py` pokes unseen item ids into Kurt's 16 slots (`$19CF`) and opens the item list.
+- Session 27 probes: chest messages run the chest op from warp.lua OPS (`00A042` = A0 flag 0 item $42: found;
+  `00A1640000` = A1 money 100: Sol; `00A000` item 0: nothing inside; `80A000`: already empty; 16 items poked: no
+  room; all four records' slots full and `$3E` = 4: party no room). "File erased" (b04_B966): `load_fail.lua`
+  forces the title LOAD's result (01:8387) to fail. Spell types (slot byte 0 low 5 bits) are the 22 distinct spells
+  in order of first appearance in spells.json: 0 Fireball ... 7 Restore, 10 Silence, 13 Escape, 15 Teleport.
+  The magic healer's menu (E4 07 00, top21) opens with its question: Treat / Combine / Check / Break down.
+  **emu.py `--mash` starts at power-on**, not after warp.lua's KEYS, so in a probe it presses A in the menus the
+  keys are walking: put the A presses in KEYS instead.
 - Any text edit can shift every block stream (session 24: -1 byte), so a coverage set is tied to one build: keep the
   ROM and its `strings.tsv` together (`work/qa/cover_build/`) and run every probe of the set on that ROM.
 - `tools/debug/textcover_run.py OUT` runs every room (and the 14 story-variant blocks with their pokes), restarting

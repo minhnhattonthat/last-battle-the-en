@@ -43,10 +43,13 @@ B04_TABLES = [  # (file offset, format, count or None = until terminator, what)
     (0x239C4, "ptr", 11, "stat-up and sealing messages (01:933A)"),
     (0x23BB2, "triple", None, "(item id, description) triples, 00 end (01:9493)"),
     (0x24747, "ptr", 7, "equip-screen templates"),
+    (0x247D9, "ptr", 5, "item category names, insert FA3E (item > Examine header)"),
+    (0x24805, "ptr", 5, "stat names, insert FA3F (Examine stat line)"),
+    (0x24831, "ptr", 2, "UP / DOWN, insert FA40 (Examine stat line)"),
 ]
 B04_CODE_PTRS = [0x0A287]  # LDA #$B632 at 01:A286: "nobody here"
 B04_DATA = [(0x23053, 0x231FC, "byte-to-glyph map / name-entry grid (01:FEE3)")]
-B04_TEXT = (0x23053, 0x247E4)  # the text area the coverage test sweeps (tile rows at 0x22CA7 are graphics)
+B04_TEXT = (0x23053, 0x24845)  # the text area the coverage test sweeps (tile rows at 0x22CA7 are graphics)
 B02_FILE = 0x10000
 CREDITS_TABLE, CREDITS_N = 0x16215, 24
 CREDITS_TEXT = (0x16245, 0x16878)

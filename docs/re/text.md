@@ -106,6 +106,7 @@ Not yet walked: top entries 14-28 (other formats: 18/19 hold plain text, 20-27 t
   | `0x23BB2-0x23C86` | pointer table (odd-aligned) -> item descriptions | words |
   | `0x23C87-0x24747` | item descriptions (FF01 between lines of a description) | script words |
   | `0x24748-0x247E3` | equip-screen templates (`{FA3A}／{FA3E}`, 装備できる人) | script words |
+  | `0x247D9-0x24844` | item > Examine inserts: category names (FA3E, pointers `0x247D9`, index = low nibble of item record +$0C, 01:FCD0), stat names (FA3F, `0x24805`), ＵＰ/ＤＯＷＮ (FA40, `0x24831`; 01:FD00 picks DOWN from bits 3-7 of record +$0C, which no item sets: DOWN never prints). Missed by the extraction until session 27 ("武器" on screen) | script words |
   | `0x24AD1` / `0x25201` | **item records, 20 bytes, name = first 8 bytes in the byte encoding** (0-terminated if shorter); index < $C0 at `$04:CAD1`, >= $C0 at `$04:D201` (01:8B2D). Items $01-$5B ($5C+ alias the key-item table), key items $C0-$D8, $E0-$E2, $F0-$FF | byte names |
 - **Spell names**: `0x14E20F`, 28 records of 9 bytes (8-byte name in the byte encoding, then 1 byte), ファイアボール ...
   スターブラスト (`tools/re_names.py at 14E20F 9 8 28`; record layout a guess from the stride, verify with the

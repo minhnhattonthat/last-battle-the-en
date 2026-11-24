@@ -19,6 +19,7 @@ import textcover_run  # noqa: E402
 
 ITEM_KEYS = "60 -;6 a;40 -;6 right;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;120 -"
 MAGIC_KEYS = "60 -;6 a;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;120 -"
+IDS = []  # --ids
 
 
 def specs(kind, miss):
@@ -38,7 +39,7 @@ def specs(kind, miss):
     elif kind == "examine":  # item > Examine prints the long description (b04 text) and returns to the field; the
         # menus keep their cursors, so the second cycle only reopens them; later cycles drift: 2 items per run
         doc = json.loads((ROOT / "script" / "items.json").read_text(encoding="utf-8"))
-        ids = [int(e["id"][5:], 16) for e in doc["entries"]] + [0]
+        ids = (IDS or [int(e["id"][5:], 16) for e in doc["entries"]]) + [0]
         close = "6 a;150 -;6 a;100 -;6 b;60 -;6 b;60 -;6 b;60 -"
         keys = (ITEM_KEYS.replace("6 a;90 -;6 a;120 -", "6 a;90 -;6 right;40 -;6 a;120 -;6 a;120 -") +
                 f";{close};6 a;60 -;6 a;60 -;6 a;80 -;6 a;80 -;6 right;30 -;{close}")
@@ -46,7 +47,7 @@ def specs(kind, miss):
             out.append(f"0x4D 10 6 {keys}|-|@19CF:{ids[g + 1]:02X}{ids[g]:02X}")
     elif kind == "use":  # item > Use on Kurt: recovery / stat-rise / seal messages (b04 B864-BB72); one item a run,
         # Kurt's HP and MP poked low first so recovery has something to do
-        ids = list(range(0x42, 0x50)) + list(range(0x56, 0x5C)) + [0xF5, 0xFA]
+        ids = IDS or list(range(0x42, 0x50)) + list(range(0x56, 0x5C)) + [0xF5, 0xFA]
         keys = ITEM_KEYS + ";6 a;120 -;6 a;120 -;6 a;150 -;6 a;150 -;6 a;150 -;6 a;150 -;6 a;150 -"
         for i in ids:
             out.append(f"0x4D 10 6 {keys}|-|@19CF:00{i:02X},@1909:0001,@190D:0001")
@@ -61,7 +62,7 @@ def specs(kind, miss):
                 pk += [f"@{a:04X}:03{0x80 | t:02X}", f"@{a + 2:04X}:0303", f"@{a + 4:04X}:{t + 1:02X}02",
                        f"@{a + 6:04X}:0041"]
             out.append(f"0x4D 10 6 {keys}|-|" + ",".join(pk))
-    elif kind == "menus":  # field-menu paths with a 4-member party ($3E = 4, $0600 list 0-3: the HP/MP box shows
+    elif kind in ("menus", "owmenus"):  # field-menu paths with a 4-member party ($3E = 4, $0600 list 0-3: the HP/MP box shows
         # all four), gear and herbs in Kurt's slots and 12 known spells (names 11-22, types 10-21: Teleport among
         # them); five cursor walks under each of the 8 menu icons
         pk = ["@003E:0004", "@0600:0100", "@0602:0302", "@19CF:0201", "@19D1:4342", "@19D3:0A09"]
@@ -74,9 +75,15 @@ def specs(kind, miss):
                  "6 right;40 -;6 a;90 -;6 down;40 -;6 a;90 -;6 a;90 -;6 a;90 -",
                  "6 right;40 -;6 right;40 -;6 a;90 -;6 a;90 -;6 down;40 -;6 a;90 -;6 a;90 -",
                  "6 right;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;90 -;6 a;90 -;6 a;90 -"]
-        for i in range(8):
+        # owmenus: the overworld menu (5 icons: magic, item, status, tactics, camp; its first A after READY is
+        # ignored), random encounters off
+        start, icons = (("0x00 40 30 60 -;6 a;40 -;6 a;40 -;", 5) if kind == "owmenus"
+                        else ("0x4D 10 6 60 -;6 a;40 -;", 8))
+        if kind == "owmenus":
+            pk = ["noenc"] + pk
+        for i in range(icons):
             for w in walks:
-                out.append("0x4D 10 6 60 -;6 a;40 -;" + "6 right;40 -;" * i + f"6 a;90 -;{w}|-|" + ",".join(pk))
+                out.append(start + "6 right;40 -;" * i + f"6 a;90 -;{w}|-|" + ",".join(pk))
     elif kind == "battles":  # enemy names: one forced battle per encounter group id ($1DDF, 0x00-0xBF), idle in
         # god mode; the battle start draws each enemy's name (30:AD08)
         for g in range(0xC0):
@@ -105,13 +112,16 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("out")
     ap.add_argument("kind", choices=["items", "itemdesc", "examine", "use", "sealdesc", "spells", "spelldesc",
-                                     "battles", "menus"])
+                                     "battles", "menus", "owmenus"])
     ap.add_argument("--jobs", default="3")
     ap.add_argument("--frames", type=int, default=3200)
     ap.add_argument("--report", default=str(ROOT / "work" / "qa" / "cover_report.txt"))
     ap.add_argument("--rom", default=str(ROOT / "work" / "qa" / "cover_build" / "rom.sfc"))
     ap.add_argument("--strings", default=str(ROOT / "work" / "qa" / "cover_build" / "strings.tsv"))
+    ap.add_argument("--ids", default="", help="use/examine: item ids to try instead of the default list (hex, comma-separated)")
     a = ap.parse_args()
+    global IDS
+    IDS = [int(x, 16) for x in a.ids.split(",") if x]
     miss = [line.split()[2] for line in open(a.report, encoding="utf-8") if line.startswith("NEVER SHOWN")]
     sp = specs(a.kind, miss)
     if not sp:
