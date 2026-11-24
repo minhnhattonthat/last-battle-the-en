@@ -1,7 +1,7 @@
-# <Game title> English translation
+# The Last Battle English translation
 
-Unofficial English fan translation of **<Game title>** (<platform>, <publisher>, <year>): the source text and tools
-that build the patch.
+Unofficial English fan translation of **The Last Battle** (ザ・ラストバトル; Super Famicom, Teichiku, 1994): the
+source text and tools that build the patch.
 
 **Just want to play?** Download the patch from [Releases](../../releases) and follow its README. This repository holds
 no game data you can play; you need your own dump of the Japanese game.
@@ -13,13 +13,30 @@ helps most.
 
 | Part | Status |
 |---|---|
-| <Dialogue / story> | <Translated> |
-| <Menus, items, skills, system messages> | <Translated> |
-| <Title screen, logos, graphics with text> | <Translated / Left in Japanese> |
-| <Name entry> | <Translated / Japanese kana only> |
-| <Songs, voiced lines, credits roll> | <Left in Japanese> |
+| Dialogue / story | Translated |
+| Menus, items, spells, shops, system messages | Translated (item names fit 9 letters, battle spell names 8; a few abbreviated) |
+| Battle text and windows | Translated |
+| Title screen, logos, graphics with text | Translated |
+| Name entry | English letters |
+| Staff credits | Translated |
 
-Known issues: <none known / see [Issues](../../issues)>.
+Known issues: item and spell description boxes are small fixed-tile boxes, so descriptions are terse; see
+[Issues](../../issues) for anything else.
+
+Tested in Mesen 2 (this repo's MesenCE build). Start from a cold boot: savestates from the Japanese ROM or an older
+build carry old code and text.
+
+## Base ROM
+
+| | |
+|---|---|
+| File (No-Intro) | `Last Battle, The (Japan).sfc` (no copier header) |
+| Size | 2097152 bytes |
+| CRC32 | `200EC9C8` |
+| MD5 | `3c9f29d6e1c457156005f90bd9ea2b10` |
+| SHA-1 | `2474c7aa8451d51784a3b852b9806495b4147cfb` |
+
+The patched ROM is expanded to 4 MiB; its hashes are in the release README.
 
 ## What's here
 
@@ -40,11 +57,11 @@ Known issues: <none known / see [Issues](../../issues)>.
 Needs Python 3.12+ and your own dump of the Japanese game.
 
 ```sh
-git clone https://github.com/minhnhattonthat/<repo>
-cd <repo>
-# copy your dump to: rom/<file>
-#   (<size> bytes, SHA-1 <sha1>; the build refuses any other dump, see rom.sha1)
-python -X utf8 tools/build.py                          # -> build/<game>_en.<ext>
+git clone https://github.com/minhnhattonthat/last-battle-the-en
+cd last-battle-the-en
+# copy your dump to: rom/Last Battle, The (Japan).sfc
+#   (2097152 bytes, SHA-1 2474c7aa8451d51784a3b852b9806495b4147cfb; the build refuses any other dump, see rom.sha1)
+python -X utf8 build.py                                # -> build/lastbattle_en.sfc
 python -X utf8 tools/check.py                          # tests + text lint
 ```
 
@@ -56,8 +73,8 @@ If you enjoy this translation, you can support my work on Ko-fi:
 
 ## Licence
 
-Tools and English translation: MIT. The original Japanese text in `script/` is <publisher>'s and is included only so
-the translation can be checked against it. <Game title> is (c) <publisher>; this project is not affiliated with them.
-Do not share patched ROMs.
+Tools and English translation: MIT. The original Japanese text in `script/` is Teichiku's and is included only so
+the translation can be checked against it. The Last Battle is (c) 1994 Teichiku; this project is not affiliated with
+them. Do not share patched ROMs.
 
 The translation was made with extensive AI assistance (Claude by Anthropic). Corrections are very welcome.

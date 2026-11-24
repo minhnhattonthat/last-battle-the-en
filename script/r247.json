@@ -18,7 +18,7 @@
    "addr": "015A",
    "size": 62,
    "jp": "「背すじと しっぽに{nl} キュ キュ キュッと{nl} 寒気が走るぜ！",
-   "en": "\"Chills are running up my spine and tail,{nl} brrr!"
+   "en": "\"It sends a chill{nl} right down my spine{nl} and tail!"
   },
   {
    "id": "r247_01A0",
@@ -39,7 +39,7 @@
    "addr": "0212",
    "size": 46,
    "jp": "「こいつを 倒したら{nl} つぎは おまえだ－－！",
-   "en": "\"Once I beat this one, you're next!!"
+   "en": "\"Once I beat this one,{nl} you're next!!"
   },
   {
    "id": "r247_0248",
@@ -67,7 +67,7 @@
    "addr": "030F",
    "size": 66,
    "jp": "「・・・以上で{nl} レジ－ナ姫の王位継承と{nl} 結婚の儀式は終了です。",
-   "en": "\"...With this, the rites of Princess{nl} Regina's succession to the throne and{nl} her marriage are complete."
+   "en": "\"...That concludes{nl} Princess Regina's coronation{nl} and wedding ceremony."
   },
   {
    "id": "r247_0403",

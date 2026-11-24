@@ -11,28 +11,28 @@
    "addr": "005A",
    "size": 104,
    "jp": "氷の女王イスカ－ルは{nl}{D318}１６年前{nl}{D318}シルヴェルの王子の誕生を恐れて{nl}{D318}シルヴェルを襲ったのではなかった。",
-   "en": "Iskar, the Ice Queen,{nl}{D318}had not attacked Silvel 16 years ago{nl}{D318}out of fear of the birth{nl}{D318}of Silvel's prince."
+   "en": "Sixteen years ago, Iskar,{nl}{D318}Queen of Ice, did not attack{nl}{D318}Silvel out of fear of{nl}{D318}the birth of Silvel's prince."
   },
   {
    "id": "r009_00D8",
    "addr": "00D8",
    "size": 86,
    "jp": "イスカ－ルは{nl}{D318}真の言葉の使い手の誕生を恐れて{nl}{D318}１６年前シルヴェルを{nl}{D318}襲ったのだ。",
-   "en": "Iskar had attacked Silvel{nl}{D318}16 years ago in fear{nl}{D318}of the birth{nl}{D318}of the true word-speaker."
+   "en": "Iskar attacked Silvel{nl}{D318}sixteen years ago out of fear{nl}{D318}of the birth of{nl}{D318}the true word-speaker."
   },
   {
    "id": "r009_0144",
    "addr": "0144",
    "size": 102,
    "jp": "平和がもどった{nl}{D318}エットミランシェルでは{nl}{D318}真の言葉の使い手の誕生の物語が{nl}{D318}ひっそりと語り継がれた。",
-   "en": "In Ettmiranshel,{nl}{D318}where peace had returned, the tale{nl}{D318}of the birth of the true word-speaker{nl}{D318}was quietly passed down."
+   "en": "In Ettmiranshel, at peace again,{nl}{D318}the tale of the birth of the{nl}{D318}true word-speaker{nl}{D318}was quietly handed down."
   },
   {
    "id": "r009_01C0",
    "addr": "01C0",
    "size": 100,
    "jp": "そしてあの最後の戦いは{nl}{D318}ザ・ラストバトルとして{nl}{D318}長く みんなの心に{nl}{D318}明るい光を ともし続けた。",
-   "en": "And that final battle{nl}{D318}lived on for a long time as{nl}{D318}The Last Battle, a bright light{nl}{D318}burning in everyone's hearts."
+   "en": "And that last battle,{nl}{D318}remembered as The Last Battle,{nl}{D318}long kept a bright light{nl}{D318}burning in everyone's hearts."
   },
   {
    "id": "r009_023A",

@@ -11,7 +11,7 @@
    "addr": "0067",
    "size": 160,
    "jp": "奥の方から うすよごれ{nl}中は 手書きの文字で書かれた{nl}本を 見つけた。{page}{FB00}『  しっぽから よむ本{nl} ～ えつらん禁・持ち出し禁 ～』{nl}{wait}{wait}{wait}{wait}読んでみますか？",
-   "en": "From deep inside, you find a grubby{nl}book written by hand.{page}{FB00}'A Book to Read from the Tail{nl}- Do Not Read, Do Not Remove -'{nl}{wait}{wait}{wait}{wait}Read it?"
+   "en": "From deep inside, Kurt found a grubby{nl}book written by hand.{page}{FB00}'A Book to Read from the Tail{nl}- Do Not Read, Do Not Remove -'{nl}{wait}{wait}{wait}{wait}Read it?"
   },
   {
    "id": "r118_0115",

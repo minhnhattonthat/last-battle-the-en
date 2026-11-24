@@ -25,7 +25,7 @@
    "addr": "0127",
    "size": 248,
    "jp": "「みんな いそがしいからのぅ。{nl} ヒマなのは わしくらいかのぅ。{nl} そもそも じゃ・・・{page}「宰相のユ－リ様から{nl} この村をみこんで 急ぎの仕事を{nl} たのまれてのぅ。{page}{FB00}「なんでも 急いで武器や防具を{nl} そろえてほしいという{nl} 話じゃったんだがのぅ。",
-   "en": "\"Everyone's so busy, eh. I'm about the{nl} only one with time, eh. Now then...{page}\"Chancellor Yuri-sama trusted this{nl} village with a rush job, eh.{page}{FB00}\"Seems he wanted weapons and armor{nl} gathered in a hurry, eh."
+   "en": "\"Everyone's so busy. I'm about the{nl} only one with time, eh. Now then...{page}\"Chancellor Yuri-sama trusted this{nl} village with a rush job.{page}{FB00}\"Seems he wanted weapons and armor{nl} gathered in a hurry, he did."
   },
   {
    "id": "r092_0229",
@@ -46,14 +46,14 @@
    "addr": "02D3",
    "size": 208,
    "jp": "「武器を 作ったはいいが{nl} シルヴェル王国は もう{nl} なくなってしまったからのぅ{page}{FB00}「いまから 思えば{nl} グルドとの 戦いに備えての{nl} 話だったんじゃろうが・・・{page}「あの 品物は{nl} どうなったんじゃろうのぅ。",
-   "en": "\"We made the weapons, but the Silvel{nl} kingdom is gone now, eh.{page}{FB00}\"Thinking back, it must have been to get{nl} ready for war with Guld...{page}\"I wonder what became of those goods,{nl} eh."
+   "en": "\"We made the weapons, but the Silvel{nl} kingdom is gone now, eh.{page}{FB00}\"Thinking back, it must have been to get{nl} ready for war with Guld...{page}\"I wonder what became of those goods."
   },
   {
    "id": "r092_03A5",
    "addr": "03A5",
    "size": 68,
    "jp": "「はぁ・・・・。{page} こんな 世の中になると{nl} ためいきしかでんのぅ。",
-   "en": "\"Sigh....{page} In a world like this, all I can do is sigh,{nl} eh."
+   "en": "\"Sigh....{page} In a world like this, all I can do is sigh."
   },
   {
    "id": "r092_03EB",

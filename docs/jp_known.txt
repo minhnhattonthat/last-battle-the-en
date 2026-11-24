@@ -1,0 +1,12 @@
+0x01CD18 bank-03 65816 code (E0 0F 0A E0 ...), not text
+0x01DD7B word table rising in steps of $0B (0B03 1603 2003 ...), not text
+0x01DF3B copy of the same rising table
+0x0651A3 graphics/data bytes, not reached by any text pointer
+0x0928EB data bytes (81 00 E2 C2 00 C0 ...), not text
+0x093D63 data bytes, not text
+0x0B355F data bytes, not text
+0x0D5B18 inside the LZ-compressed room text blocks (bank $1A): compressed English stream bytes, not plain text
+0x0E2294 inside the LZ-compressed room text blocks: compressed stream bytes
+0x0E2559 inside the LZ-compressed room text blocks: compressed stream bytes
+0x1C7B74 graphics/data bytes, not text
+0x1DAE0F graphics/data bytes, not text

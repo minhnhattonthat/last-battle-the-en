@@ -440,7 +440,7 @@
    "addr": "B65C",
    "size": 24,
    "jp": "そこには何もありません。",
-   "en": "There's nothing there.",
+   "en": "There is nothing there.",
    "file": "02365C",
    "ptrs": [
     "02364A"

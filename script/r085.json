@@ -207,14 +207,14 @@
    "addr": "0E54",
    "size": 58,
    "jp": "「なんとか せねばのぅ{nl} なんとか なんとか せねばのぅ。",
-   "en": "\"Something must be done, eh.{nl} Something, something must be done, eh."
+   "en": "\"Something must be done, eh.{nl} Something, something must be done."
   },
   {
    "id": "r085_0E90",
    "addr": "0E90",
    "size": 74,
    "jp": "「まさか こんな日が来るのを{nl} この目で 見ようとはのぅ。{page}「つらいのぅ。",
-   "en": "\"To think I'd see a day like this with my{nl} own eyes, eh.{page}\"It's hard, eh."
+   "en": "\"To think I'd see a day like this with my{nl} own eyes.{page}\"Hard times, these. Hard times."
   },
   {
    "id": "r085_0EDC",
@@ -228,7 +228,7 @@
    "addr": "0FC0",
    "size": 148,
    "jp": "「ほんに あと２・３才若ければのぅ{nl} なんなら もう１・２才でも{nl} いいんじゃがのぅ。{page}「・・・・・・・・・・{wait}{wait}{nl} おぬしたちは 若くていいのぅ。",
-   "en": "\"Truly, if only I were two or three{nl} years younger, eh. Or even just one or{nl} two, eh.{page}\"..........{wait}{wait}You youngsters are lucky, eh."
+   "en": "\"Truly, if only I were two or three{nl} years younger, eh. Or even just one or{nl} two.{page}\"..........{wait}{wait}You youngsters are lucky,{nl} I tell you."
   },
   {
    "id": "r085_1056",
@@ -242,14 +242,14 @@
    "addr": "108E",
    "size": 126,
    "jp": "「長生きは するもんじゃのぅ{page}「まさか この日が来るのを{nl} この目で 見ることが{nl} できようとはのぅ。{page}「うれしいものよのぅ。",
-   "en": "\"It pays to live long, eh.{page}\"To think I'd live to see this day with my{nl} own eyes, eh.{page}\"It makes me happy, eh."
+   "en": "\"It pays to live long, eh.{page}\"To think I'd live to see this day with my{nl} own eyes!{page}\"Makes an old man happy, it does."
   },
   {
    "id": "r085_110E",
    "addr": "110E",
    "size": 160,
    "jp": "「ユ－リ様は{nl} ここでは リ－ユと名のって{page} 正体を かくしていたと{nl} わびとったが そんなことは{nl} とっくに知っとったのぅ。{page}「偉い人も なにかと大変だのぅ。",
-   "en": "\"Yuri-sama said sorry for hiding who he{nl} was by calling himself Riyu here,{page} but we knew all along, eh.{page}\"Important folks have it hard, eh."
+   "en": "\"Yuri-sama said sorry for hiding who he{nl} was by calling himself Riyu here,{page} but we knew all along, heh.{page}\"Important folks have it hard."
   },
   {
    "id": "r085_11B0",
