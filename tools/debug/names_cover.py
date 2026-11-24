@@ -61,6 +61,26 @@ def specs(kind, miss):
                 pk += [f"@{a:04X}:03{0x80 | t:02X}", f"@{a + 2:04X}:0303", f"@{a + 4:04X}:{t + 1:02X}02",
                        f"@{a + 6:04X}:0041"]
             out.append(f"0x4D 10 6 {keys}|-|" + ",".join(pk))
+    elif kind == "menus":  # field-menu paths with a 4-member party ($3E = 4, $0600 list 0-3: the HP/MP box shows
+        # all four), gear and herbs in Kurt's slots and 12 known spells (names 11-22, types 10-21: Teleport among
+        # them); five cursor walks under each of the 8 menu icons
+        pk = ["@003E:0004", "@0600:0100", "@0602:0302", "@19CF:0201", "@19D1:4342", "@19D3:0A09"]
+        for j in range(12):
+            a, n, t = 0x1927 + 14 * j, j + 11, j + 10
+            pk += [f"@{a:04X}:03{0x80 | t:02X}", f"@{a + 2:04X}:0303", f"@{a + 4:04X}:{n:02X}02",
+                   f"@{a + 6:04X}:0041", f"@{a + 8:04X}:0000", f"@{a + 10:04X}:0000", f"@{a + 12:04X}:5012"]
+        walks = ["6 a;90 -;6 a;90 -;6 a;90 -;6 a;90 -;6 b;60 -;6 b;60 -",
+                 "6 down;40 -;6 a;90 -;6 a;90 -;6 a;90 -;6 a;90 -",
+                 "6 right;40 -;6 a;90 -;6 down;40 -;6 a;90 -;6 a;90 -;6 a;90 -",
+                 "6 right;40 -;6 right;40 -;6 a;90 -;6 a;90 -;6 down;40 -;6 a;90 -;6 a;90 -",
+                 "6 right;40 -;6 right;40 -;6 right;40 -;6 a;90 -;6 a;90 -;6 a;90 -;6 a;90 -"]
+        for i in range(8):
+            for w in walks:
+                out.append("0x4D 10 6 60 -;6 a;40 -;" + "6 right;40 -;" * i + f"6 a;90 -;{w}|-|" + ",".join(pk))
+    elif kind == "battles":  # enemy names: one forced battle per encounter group id ($1DDF, 0x00-0xBF), idle in
+        # god mode; the battle start draws each enemy's name (30:AD08)
+        for g in range(0xC0):
+            out.append(f"0x00 40 30 1100 -|-|god,@1DDF:00{g:02X}")
     else:
         doc = json.loads((ROOT / "script" / "spells.json").read_text(encoding="utf-8"))
         pos = {e["id"]: n for n, e in enumerate(doc["entries"], 1)}
@@ -84,7 +104,9 @@ def specs(kind, miss):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("out")
-    ap.add_argument("kind", choices=["items", "itemdesc", "examine", "use", "sealdesc", "spells", "spelldesc"])
+    ap.add_argument("kind", choices=["items", "itemdesc", "examine", "use", "sealdesc", "spells", "spelldesc",
+                                     "battles", "menus"])
+    ap.add_argument("--jobs", default="3")
     ap.add_argument("--frames", type=int, default=3200)
     ap.add_argument("--report", default=str(ROOT / "work" / "qa" / "cover_report.txt"))
     ap.add_argument("--rom", default=str(ROOT / "work" / "qa" / "cover_build" / "rom.sfc"))
@@ -96,9 +118,13 @@ def main():
         print("nothing missing")
         return
     ranges = textcover_run.rom_ranges(Path(a.strings))
-    subprocess.run([sys.executable, "-X", "utf8", str(ROOT / "tools" / "debug" / "probe.py"), a.out, *sp,
-                    "--rom", a.rom, "--frames", str(a.frames), "--jobs", "3",
-                    "--script", str(ROOT / "tools" / "debug" / "textcover.lua"), "--var", f"RANGES='{ranges}'"])
+    # Windows caps a command line at 32K: long poke lists go in chunks, each to its own OUT/c<k> (one chunk: OUT)
+    n = 8 if len(" ".join(sp)) > 20000 else len(sp)
+    for k in range(0, len(sp), n):
+        out = a.out if n == len(sp) else str(Path(a.out) / f"c{k // n}")
+        subprocess.run([sys.executable, "-X", "utf8", str(ROOT / "tools" / "debug" / "probe.py"), out, *sp[k:k + n],
+                        "--rom", a.rom, "--frames", str(a.frames), "--jobs", a.jobs,
+                        "--script", str(ROOT / "tools" / "debug" / "textcover.lua"), "--var", f"RANGES='{ranges}'"])
 
 
 if __name__ == "__main__":

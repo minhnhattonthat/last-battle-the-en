@@ -3,8 +3,21 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 8. QA in the emulator, in progress: 3138/3143 translated (the 5 left in `script/keep_jp.txt` are
-  particle columns no longer read), 43 tests green. 2026-11-24 session 25.
+  particle columns no longer read), 43 tests green. 2026-11-24 session 26.
 - **Done:**
+  - **Phase 8, session 2026-11-24 (26):** session-25 re-run finished (`cover_rooms3.log` "RERUN DONE", 119/119
+    scenes). With the decompression reads gone the true gap showed: ~900 room strings sit in branches behind story
+    flags that no room run takes. New probes: `tools/debug/strings_cover.py` runs the VM straight at each unshown
+    room string (text is inline in the VM stream: textcover_run.run_room with the string offsets as entries; room 2
+    test: 16/16 shown) and, with `--top`, the shop/inn/healer and common-block strings via `tools/debug/topstr.lua`
+    (op E4 lo / E5 00 in room 0x4D; when the block's stream is decompressed (00:83A7 entry, exit 00:8410) every used
+    slot of its word table is pointed at the string): **all 126 top/common strings shown**. `names_cover.py battles`
+    (one idle god-mode battle per group id 0x00-0xBF for enemy names), `names_cover.py menus` (field-menu walks with
+    a 4-member party: poking `$3E` = 4 and `$0600` = 0,1,2,3 at READY works in the field), `tools/debug/cover_battle.sh`
+    (the session-24 battle probes, redone). Re-shot the 44 scenes changed in session 24 (`place_*`, menus,
+    `stress_itemlist`) into tour3 and copied their sheets to `work/qa/tour2` (the manifest's dir: never pass tour3
+    as a second init dir, it duplicates every id as `../tour3/...`); 30 changed sheets got verdicts
+    (`verdicts/chunk_fbbaff1ab064.tsv`, banners inkbox-centred within 3 px); **gate passes on build ac401138**.
   - **Phase 8, session 2026-11-24 (25):** scene coverage pass finished (`place_22`+, all `svc_*`). New probes in
     `tools/debug/names_cover.py`: `spells` (Kurt's 12 spell slots are `$1927 + 14i`, flag byte bit 7 = known; all 28
     spell names drawn), `itemdesc` (cursor walked over 16 poked items: the description box left of the item list),
@@ -280,12 +293,19 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Next:**
   0. **Phase 8: QA in the emulator** (done-when in the skill table: smoke, tour sheets with visual-QA verdicts via
      `qa_gate.py`, graphics text English, `inkbox.py` on choice/centred boxes, stress saves, `textcover.py` 0).
-     **Resume here:** visual-QA gate PASSES on `work/qa/tour3` (263/263 sheets ok; the session-24 text fixes
-     (banners b068, 3 prompts) need their scenes re-shot: `place_*`, `camp_menu`, `ow_menu`, `menu_*`, `stress_itemlist`,
-     then verdicts). Text coverage: **first check `work/qa/cover_rooms3.log` ends with "RERUN DONE"**; if not
-     (the session-25 background run was cut off), run `sh tools/debug/cover_all.sh` again (rooms resume with
-     `--skip-done`; scenes re-run whole), then report `python -X utf8 $SKILL/scripts/textcover.py work/qa/cover
-     work/qa/cover_build/strings.tsv --waive docs/text_unshown.tsv --mask 0xFFFFFFFFFFFF`. The old numbers below
+     **Resume here:** visual-QA gate PASSES (263/263, build ac401138; re-shoot + new verdicts after any text
+     change). Text coverage (all probes on `work/qa/cover_build/rom.sfc`, everything under `work/qa/cover`): report
+     `python -X utf8 $SKILL/scripts/textcover.py work/qa/cover work/qa/cover_build/strings.tsv --waive
+     docs/text_unshown.tsv --mask 0xFFFFFFFFFFFF > work/qa/cover_report.txt`. Session 26 at hand-back: see the
+     counts in the session-26 line under "Coverage left" below; runs started then, check their logs end with DONE:
+     `cover_str.log` (STR DONE: strings_cover rooms), `cover_battles.log` (BATTLES DONE: group sweep + cover_battle.sh),
+     `cover_menus.log` (MENUS DONE). If a log has no DONE line, re-run its command (strings_cover skips nothing:
+     pass `--rooms` for the rooms after the last logged one). Then re-report and attack what is left: room strings
+     still missing after strings_cover (look at the run's LEFT/STUCK notes: a string whose run leaves the room may
+     need the entry run alone), `bt` battle text (item 1a below), menu `bg3` paths the walks missed (tactics plan
+     editor `bg3_9730-9E74`, teleport town list `bg3_A1B6-A27E`, give/drop/unequip/offer prompts `bg3_87A6-8E44`),
+     `b04` chest messages (`B69E-B794`: a chest needs an entry run; find a room with one), field cast/MP messages,
+     seal messages, a few item descriptions. The old numbers below
      (721, then 600 in session 25) counted decompression reads as shown, so expect more `r###`/`top`/`common`
      missing after the re-run. Keep the total to ~4 emulators (16 GB machine). Closed in session 25: spell names,
      item/spell/seal description boxes (bg3 `A3C5-AC7D` except `AA39`), probably the b04 item descriptions
